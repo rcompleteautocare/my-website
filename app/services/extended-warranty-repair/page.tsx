@@ -1,11 +1,11 @@
 export const metadata = {
-  title: 'Extended Warranty Auto Repair Crown Point IN | R Complete Auto Care',
-  description: 'Extended warranty auto repair in Crown Point, IN. We work with CarShield, Endurance, CARS Protection, AmTrust and more. We handle the paperwork. Call (219) 262-2711.',
-  alternates: { canonical: 'https://www.rcompleteautocare.com/services/extended-warranty-repair' },
+  title: 'AC Repair Crown Point IN — Car Heat Not Working | R Complete Auto Care',
+  description: 'AC and heating repair in Crown Point, IN. No cold air or no heat? We diagnose the real cause and fix it right. All makes and models. Call (219) 262-2711.',
+  alternates: { canonical: 'https://www.rcompleteautocare.com/services/ac-heating-repair' },
 }
 
 import Link from "next/link";
-export default function ExtendedWarrantyRepair() {
+export default function AcHeatingRepair() {
   return (
     <div style={{ color: "#1a1a1a" }}>
 
@@ -13,13 +13,13 @@ export default function ExtendedWarrantyRepair() {
       <section style={{ background: "#1a1a1a", color: "#fff", padding: "60px 24px", textAlign: "center" }}>
         <p style={{ color: "#e63946", fontWeight: "bold", fontSize: "13px", letterSpacing: "1px", marginBottom: "12px" }}>CROWN POINT, INDIANA</p>
         <h1 style={{ fontSize: "38px", fontWeight: "bold", marginBottom: "16px" }}>
-          Extended Warranty Auto Repair in Crown Point, IN
+          AC & Heating Repair in Crown Point, IN
         </h1>
         <p style={{ fontSize: "18px", color: "#ccc", maxWidth: "600px", margin: "0 auto 32px" }}>
-          We work with most major extended warranty providers and handle the entire claims process for you — so you can focus on getting your car fixed, not fighting with your warranty company.
+          No cold air in summer or no heat in winter? We diagnose the real cause — not just recharge the system and send you on your way.
         </p>
         <a href="tel:2192622711" style={{ background: "#e63946", color: "#fff", padding: "14px 32px", borderRadius: "6px", fontWeight: "bold", textDecoration: "none", fontSize: "18px" }}>
-          📞 Call (219) 262-2711 — Verify Your Coverage
+          📞 Call (219) 262-2711
         </a>
         <p style={{ color: "#666", fontSize: "13px", marginTop: "16px" }}>1305 E Summit St, Crown Point, IN 46307 · Mon–Fri 8am–6pm · Sat 8am–2pm</p>
       </section>
@@ -31,119 +31,103 @@ export default function ExtendedWarrantyRepair() {
 
       {/* Intro */}
       <section style={{ padding: "60px 24px", maxWidth: "800px", margin: "0 auto" }}>
-        <h2 style={{ fontSize: "28px", marginBottom: "16px" }}>We Handle the Warranty — You Just Approve the Work</h2>
+        <h2 style={{ fontSize: "28px", marginBottom: "16px" }}>Diagnose First — Not Just Recharge and Hope</h2>
         <p style={{ lineHeight: 1.8, color: "#444", marginBottom: "20px" }}>
-          Extended warranty repairs are one of our specialties at R Complete Auto Care. Most auto repair shops avoid warranty work because of the paperwork and the back-and-forth with warranty companies. We embrace it — because it means our customers get major repairs done at little to no out-of-pocket cost.
+          A lot of shops will recharge your AC system without checking why it lost refrigerant in the first place. If there's a leak — and there usually is — you'll be back in the same situation within months. At R Complete Auto Care in Crown Point, we find the actual cause of the problem before recommending any repair.
         </p>
         <p style={{ lineHeight: 1.8, color: "#444", marginBottom: "20px" }}>
-          When you bring your vehicle to us with an extended warranty, we handle everything: we verify your coverage before any work begins, perform a documented diagnostic that meets warranty adjuster requirements, make the pre-authorization call, complete the repair using approved parts and procedures, and submit all documentation to your warranty provider. You pay your deductible — we handle the rest.
+          Whether your AC is blowing warm air, your heat isn't working, you're getting a musty smell from the vents, or your defrost isn't clearing the windshield — we diagnose the full HVAC system and tell you exactly what's wrong before we do any work.
         </p>
         <p style={{ lineHeight: 1.8, color: "#444", marginBottom: "40px" }}>
-          Don't assume a repair isn't covered without calling us first. Extended warranty policies cover more than most people realize — including engine components, transmission, electrical systems, fuel systems, cooling systems, and more. Call us with your warranty provider name and we'll tell you what we can do.
+          Northwest Indiana summers are hot and humid, and winters are brutal. A properly functioning climate system isn't just comfort — it's safety. Defrost that doesn't work or windows that fog up in winter are genuine visibility hazards. We take HVAC seriously.
         </p>
 
-        {/* Warranty providers */}
-        <h2 style={{ fontSize: "28px", marginBottom: "16px" }}>Warranty Providers We Work With</h2>
-        <div style={{ display: "grid", gridTemplateColumns: "repeat(auto-fit, minmax(180px, 1fr))", gap: "12px", marginBottom: "40px" }}>
+        {/* Symptoms */}
+        <h2 style={{ fontSize: "28px", marginBottom: "16px" }}>AC & Heating Symptoms We Diagnose</h2>
+        <ul style={{ lineHeight: 2.2, color: "#444", paddingLeft: "20px" }}>
+          <li>AC blowing warm or hot air instead of cold</li>
+          <li>AC works sometimes but not consistently</li>
+          <li>Weak airflow from vents even on high fan setting</li>
+          <li>Musty, moldy, or burning smell from vents</li>
+          <li>Heater blowing cold air instead of warm</li>
+          <li>Only one side of the cabin gets heat or AC (dual-zone issue)</li>
+          <li>Defrost not clearing windshield effectively</li>
+          <li>AC compressor clutch not engaging</li>
+          <li>Clicking or banging noise when AC is turned on</li>
+          <li>Water leaking into the cabin from HVAC system</li>
+          <li>AC light flashing or climate control not responding</li>
+          <li>Engine overheating when AC is running</li>
+        </ul>
+      </section>
+
+      {/* CTA 2 */}
+      <section style={{ background: "#f5f5f5", padding: "40px 24px", textAlign: "center" }}>
+        <p style={{ fontSize: "20px", fontWeight: "bold", marginBottom: "12px" }}>No cold air or no heat? Get it diagnosed right.</p>
+        <a href="tel:2192622711" style={{ background: "#e63946", color: "#fff", padding: "12px 28px", borderRadius: "6px", fontWeight: "bold", textDecoration: "none" }}>
+          Call (219) 262-2711 →
+        </a>
+      </section>
+
+      {/* Services */}
+      <section style={{ padding: "60px 24px", maxWidth: "800px", margin: "0 auto" }}>
+        <h2 style={{ fontSize: "28px", marginBottom: "24px" }}>AC & Heating Services We Perform</h2>
+        <div style={{ display: "grid", gridTemplateColumns: "repeat(auto-fit, minmax(200px, 1fr))", gap: "12px" }}>
           {[
-            "CarShield",
-            "Endurance",
-            "CARS Protection Plus",
-            "AmTrust / National Auto Care",
-            "Zurich",
-            "Fidelity Warranty Services",
-            "Safe-Guard",
-            "Assurant",
-            "Cornerstone United",
-            "Old Republic",
-            "Portfolio",
-            "Most other providers",
+            "AC system diagnosis & inspection",
+            "Refrigerant leak detection",
+            "AC recharge (R-134a & R-1234yf)",
+            "AC compressor replacement",
+            "AC condenser replacement",
+            "AC evaporator replacement",
+            "Expansion valve replacement",
+            "Cabin air filter replacement",
+            "Blower motor & resistor replacement",
+            "Heater core replacement",
+            "Thermostat replacement",
+            "Climate control module diagnosis",
+            "Blend door actuator replacement",
+            "Defrost system diagnosis & repair",
           ].map(item => (
             <div key={item} style={{ border: "1px solid #e0e0e0", borderLeft: "4px solid #e63946", padding: "12px 14px", fontSize: "14px", color: "#333" }}>
               {item}
             </div>
           ))}
         </div>
-
-        {/* What's covered */}
-        <h2 style={{ fontSize: "28px", marginBottom: "16px" }}>Repairs Commonly Covered by Extended Warranties</h2>
-        <ul style={{ lineHeight: 2.2, color: "#444", paddingLeft: "20px" }}>
-          <li>Engine repairs — internal components, gaskets, seals, timing components</li>
-          <li>Transmission repairs — automatic, manual, and CVT transmissions</li>
-          <li>Electrical system repairs — modules, sensors, wiring</li>
-          <li>Fuel system repairs — fuel pump, injectors, fuel pressure regulator</li>
-          <li>Cooling system repairs — water pump, thermostat, radiator</li>
-          <li>Air conditioning and heating system repairs</li>
-          <li>Starter and alternator replacement</li>
-          <li>Power steering system repairs</li>
-          <li>Brake system components (varies by policy)</li>
-          <li>Suspension components (varies by policy)</li>
-          <li>Turbocharger and supercharger components</li>
-          <li>Transfer case and differential components</li>
-        </ul>
-      </section>
-
-      {/* CTA 2 */}
-      <section style={{ background: "#f5f5f5", padding: "40px 24px", textAlign: "center" }}>
-        <p style={{ fontSize: "20px", fontWeight: "bold", marginBottom: "12px" }}>Call us before you assume you're not covered.</p>
-        <a href="tel:2192622711" style={{ background: "#e63946", color: "#fff", padding: "12px 28px", borderRadius: "6px", fontWeight: "bold", textDecoration: "none" }}>
-          Call (219) 262-2711 →
-        </a>
       </section>
 
       {/* Process */}
-      <section style={{ padding: "60px 24px", maxWidth: "800px", margin: "0 auto" }}>
-        <h2 style={{ fontSize: "28px", marginBottom: "24px" }}>How Extended Warranty Repairs Work at R Complete Auto Care</h2>
-        {[
-          { step: "1", title: "Call Us First", desc: "Before you bring the vehicle in, call us with your warranty provider name and policy number. We'll confirm we work with your provider and let you know what information to have ready." },
-          { step: "2", title: "We Verify Your Coverage", desc: "We contact your warranty company to verify your coverage and understand what's included in your policy. Different policies have different covered components — we find out exactly what you have before doing any work." },
-          { step: "3", title: "Diagnostic & Pre-Authorization", desc: "We perform a documented diagnostic that meets your warranty company's requirements. We then contact the warranty adjuster, explain our findings, and obtain pre-authorization for the repair before any work begins." },
-          { step: "4", title: "You Approve the Work", desc: "Once we have warranty approval, we review the repair plan with you. You confirm the work and pay your deductible amount. We handle everything else." },
-          { step: "5", title: "Repair & Documentation", desc: "We complete the repair using parts and procedures that meet warranty requirements. We document everything and submit the completed claim to your warranty provider. You pick up your repaired vehicle." },
-        ].map(item => (
-          <div key={item.step} style={{ display: "flex", gap: "16px", marginBottom: "28px", alignItems: "flex-start" }}>
-            <div style={{ background: "#e63946", color: "#fff", borderRadius: "50%", width: "36px", height: "36px", display: "flex", alignItems: "center", justifyContent: "center", fontWeight: "bold", flexShrink: 0 }}>{item.step}</div>
-            <div>
-              <div style={{ fontWeight: "bold", marginBottom: "6px", fontSize: "17px" }}>{item.title}</div>
-              <div style={{ color: "#555", lineHeight: 1.7 }}>{item.desc}</div>
-            </div>
-          </div>
-        ))}
-      </section>
-
-      {/* Why Choose Us */}
       <section style={{ background: "#f5f5f5", padding: "60px 24px" }}>
         <div style={{ maxWidth: "800px", margin: "0 auto" }}>
-          <h2 style={{ fontSize: "28px", marginBottom: "24px" }}>Why Choose R Complete Auto Care for Extended Warranty Repairs</h2>
-          <div style={{ display: "grid", gridTemplateColumns: "repeat(auto-fit, minmax(220px, 1fr))", gap: "16px" }}>
-            {[
-              { title: "We Handle Everything", desc: "Verification, pre-authorization, documentation, and claim submission. You just approve the work and pay your deductible." },
-              { title: "Diagnostic-First Approach", desc: "We find the real cause before recommending any repair — which means accurate claims and repairs that actually fix the problem." },
-              { title: "Most Providers Accepted", desc: "We work with CarShield, Endurance, CARS Protection, AmTrust, and most other major providers." },
-              { title: "No Surprises", desc: "We tell you exactly what's covered and what isn't before any work begins. Clear communication throughout." },
-              { title: "Quality Repairs", desc: "We use quality parts that meet warranty requirements. No shortcuts that could void your claim." },
-              { title: "25+ Years Experience", desc: "We understand how warranty claims work and how to document repairs properly to get claims approved." },
-            ].map(item => (
-              <div key={item.title} style={{ border: "1px solid #e0e0e0", borderLeft: "4px solid #e63946", borderRadius: "4px", padding: "16px" }}>
-                <div style={{ fontWeight: "bold", marginBottom: "8px" }}>{item.title}</div>
-                <div style={{ fontSize: "14px", color: "#555", lineHeight: 1.6 }}>{item.desc}</div>
+          <h2 style={{ fontSize: "28px", marginBottom: "24px" }}>Our AC & Heating Diagnostic Process</h2>
+          {[
+            { step: "1", title: "System Pressure Test", desc: "We connect manifold gauges to the AC system to check high and low side pressures. Pressure readings tell us immediately whether the system has the right refrigerant charge, has a restriction, or has a component failure." },
+            { step: "2", title: "Leak Detection", desc: "If the system is low on refrigerant, we find out why before adding more. We use UV dye and electronic leak detectors to find the exact location of any refrigerant leak — whether it's at a hose fitting, the compressor, condenser, or evaporator." },
+            { step: "3", title: "Component Testing", desc: "We test the compressor clutch engagement, condenser fan operation, blower motor output, and temperature door operation. A systematic component test identifies failures that pressure testing alone won't reveal." },
+            { step: "4", title: "Heater System Check", desc: "For heating problems, we check coolant level and condition, thermostat operation, heater core flow, and blend door actuator function. Many heating problems are actually cooling system problems in disguise." },
+            { step: "5", title: "Clear Estimate & Repair", desc: "We explain exactly what we found and what it costs to fix. You approve the repair before we start. After the repair, we retest the system to confirm proper operation before returning the vehicle." },
+          ].map(item => (
+            <div key={item.step} style={{ display: "flex", gap: "16px", marginBottom: "28px", alignItems: "flex-start" }}>
+              <div style={{ background: "#e63946", color: "#fff", borderRadius: "50%", width: "36px", height: "36px", display: "flex", alignItems: "center", justifyContent: "center", fontWeight: "bold", flexShrink: 0 }}>{item.step}</div>
+              <div>
+                <div style={{ fontWeight: "bold", marginBottom: "6px", fontSize: "17px" }}>{item.title}</div>
+                <div style={{ color: "#555", lineHeight: 1.7 }}>{item.desc}</div>
               </div>
-            ))}
-          </div>
+            </div>
+          ))}
         </div>
       </section>
 
       {/* FAQ */}
       <section style={{ padding: "60px 24px" }}>
         <div style={{ maxWidth: "800px", margin: "0 auto" }}>
-          <h2 style={{ fontSize: "28px", marginBottom: "24px" }}>Frequently Asked Questions — Extended Warranty Repairs</h2>
+          <h2 style={{ fontSize: "28px", marginBottom: "24px" }}>Frequently Asked Questions — AC & Heating Repair</h2>
           {[
-            { q: "Do I need to go to a dealership for extended warranty repairs?", a: "No — most extended warranty policies allow you to use any licensed repair facility, not just dealerships. R Complete Auto Care is a licensed auto repair shop and we work directly with warranty providers. You do not need to go to a dealership." },
-            { q: "How do I know if my repair is covered?", a: "Call us with your warranty provider and policy number. We'll contact them to verify your coverage and tell you exactly what's covered before any work begins. Don't assume you're not covered without checking — policies cover more than most people realize." },
-            { q: "What if my warranty company denies the claim?", a: "If a claim is denied, we'll explain exactly why and what your options are. Sometimes denials can be appealed with additional documentation. We'll help you understand your situation and make the best decision for your vehicle." },
-            { q: "Will I owe anything out of pocket?", a: "Most extended warranty policies require a deductible — typically $100–$200 per repair visit. Beyond that, covered repairs are paid directly by the warranty company to us. You pay your deductible and we handle the rest." },
-            { q: "How long does the warranty repair process take?", a: "Getting pre-authorization typically adds a day to the process — we contact the adjuster, they may want to send an inspector, and then they issue approval. Once approved, the repair timeline is the same as any other repair. We'll give you an accurate timeline once we have authorization." },
-            { q: "What if I have CarShield — do you accept it?", a: "Yes — we work with CarShield and handle CarShield claims regularly. Call us with your policy number and we'll verify your specific coverage before you bring the vehicle in." },
+            { q: "Why is my AC blowing warm air?", a: "The most common causes are low refrigerant from a leak, a failed AC compressor, a clogged condenser, or a failed expansion valve. Simply recharging the system without finding the leak means you'll be in the same situation within months. We find the cause first." },
+            { q: "How do I know if my AC has a refrigerant leak?", a: "Signs of a refrigerant leak include AC that works when the car is first started but gradually blows warmer, AC that works fine one day and not the next, or a visible oily residue around AC fittings or components. We use UV dye and electronic detectors to find leaks precisely." },
+            { q: "Why is my heater blowing cold air?", a: "Common causes include a stuck-open thermostat (engine never reaches operating temperature), a clogged heater core, low coolant level, a failed blend door actuator, or air in the cooling system. We diagnose the heating and cooling systems together since they share components." },
+            { q: "What's a heater core and how do I know if it's bad?", a: "The heater core is a small radiator inside your dashboard that circulates hot coolant to heat the cabin. Signs of a failing heater core include no heat, a sweet smell inside the cabin, foggy windows that don't clear with defrost, or coolant dripping onto the passenger floor." },
+            { q: "Can I just add refrigerant myself?", a: "You can, but if there's a leak — which is why the refrigerant was low — adding more is a temporary fix. The refrigerant will leak out again. We find and fix the leak so the repair actually lasts." },
+            { q: "Do you accept extended warranties for AC and heating repair?", a: "Yes — AC compressors, condensers, and some other HVAC components are frequently covered under extended warranty policies. Call us with your warranty information and we'll verify what's covered before any work begins." },
           ].map(item => (
             <div key={item.q} style={{ marginBottom: "20px", borderBottom: "1px solid #e0e0e0", paddingBottom: "20px" }}>
               <div style={{ fontWeight: "bold", fontSize: "16px", marginBottom: "8px" }}>{item.q}</div>
@@ -159,10 +143,9 @@ export default function ExtendedWarrantyRepair() {
           <h2 style={{ fontSize: "24px", marginBottom: "16px" }}>Related Services</h2>
           <ul style={{ lineHeight: 2, paddingLeft: "20px" }}>
             <li><Link href="/services/engine-repair" style={{ color: "#e63946" }}>Engine Repair Crown Point, IN</Link></li>
-            <li><Link href="/services/transmission-repair" style={{ color: "#e63946" }}>Transmission Repair Crown Point, IN</Link></li>
             <li><Link href="/services/electrical-diagnostics" style={{ color: "#e63946" }}>Electrical Diagnostics Crown Point, IN</Link></li>
-            <li><Link href="/services/check-engine-light" style={{ color: "#e63946" }}>Check Engine Light Diagnostics Crown Point, IN</Link></li>
-            <li><Link href="/extended-warranty-auto-repair-crown-point-in" style={{ color: "#e63946" }}>Extended Warranty Auto Repair Crown Point — Full Guide</Link></li>
+            <li><Link href="/services/extended-warranty-repair" style={{ color: "#e63946" }}>Extended Warranty Repairs Crown Point, IN</Link></li>
+            <li><Link href="/services/oil-change-maintenance" style={{ color: "#e63946" }}>Oil Change & Maintenance Crown Point, IN</Link></li>
             <li><Link href="/auto-repair-crown-point-in" style={{ color: "#e63946" }}>Auto Repair Crown Point, IN</Link></li>
           </ul>
         </div>
@@ -170,8 +153,8 @@ export default function ExtendedWarrantyRepair() {
 
       {/* Final CTA */}
       <section style={{ background: "#e63946", color: "#fff", textAlign: "center", padding: "60px 24px" }}>
-        <h2 style={{ fontSize: "28px", marginBottom: "12px" }}>Have an Extended Warranty? Call Us Before You Pay Out of Pocket.</h2>
-        <p style={{ marginBottom: "8px", opacity: 0.9 }}>We verify your coverage, handle the claim, and do the repair. You just pay your deductible.</p>
+        <h2 style={{ fontSize: "28px", marginBottom: "12px" }}>AC or Heating Problem in Crown Point? Call Us Today.</h2>
+        <p style={{ marginBottom: "8px", opacity: 0.9 }}>Honest diagnostics. Quality repairs. All makes and models.</p>
         <p style={{ marginBottom: "24px", opacity: 0.75, fontSize: "14px" }}>1305 E Summit St, Crown Point, IN 46307 · Mon–Fri 8am–6pm · Sat 8am–2pm</p>
         <a href="tel:2192622711" style={{ background: "#fff", color: "#e63946", padding: "14px 36px", borderRadius: "6px", fontWeight: "bold", textDecoration: "none", fontSize: "18px" }}>
           📞 Call (219) 262-2711
