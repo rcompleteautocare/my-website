@@ -14,7 +14,7 @@ export default function Contact() {
   const handleSubmit = async (e: React.MouseEvent) => {
     e.preventDefault();
     try {
-      await fetch("https://formspree.io/f/xpwzgkjd", {
+      await fetch("https://formspree.io/f/xykbqraj", {
         method: "POST",
         headers: { "Content-Type": "application/json" },
         body: JSON.stringify(form),
