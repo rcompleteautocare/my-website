@@ -157,4 +157,24 @@ export default function BrakeRepair() {
       <section style={{ padding: "60px 24px", maxWidth: "800px", margin: "0 auto" }}>
         <h2 style={{ fontSize: "24px", marginBottom: "16px" }}>Related Services</h2>
         <ul style={{ lineHeight: 2, paddingLeft: "20px" }}>
-          <li><Link href="/services/suspension-steering" style={
+          <li><Link href="/services/suspension-steering" style={{ color: "#e63946" }}>Suspension & Steering Repair Crown Point, IN</Link></li>
+          <li><Link href="/services/check-engine-light" style={{ color: "#e63946" }}>Check Engine Light Diagnostics Crown Point, IN</Link></li>
+          <li><Link href="/services/extended-warranty-repair" style={{ color: "#e63946" }}>Extended Warranty Repairs Crown Point, IN</Link></li>
+          <li><Link href="/brake-grinding-crown-point-in" style={{ color: "#e63946" }}>Grinding Brakes in Crown Point — What It Means</Link></li>
+          <li><Link href="/auto-repair-crown-point-in" style={{ color: "#e63946" }}>Auto Repair Crown Point, IN</Link></li>
+        </ul>
+      </section>
+
+      {/* Final CTA */}
+      <section style={{ background: "#e63946", color: "#fff", textAlign: "center", padding: "60px 24px" }}>
+        <h2 style={{ fontSize: "28px", marginBottom: "12px" }}>Brake Problems in Crown Point? Call Us Today.</h2>
+        <p style={{ marginBottom: "8px", opacity: 0.9 }}>Honest inspections. Quality repairs. No pressure.</p>
+        <p style={{ marginBottom: "24px", opacity: 0.75, fontSize: "14px" }}>1305 E Summit St, Crown Point, IN 46307 · Mon–Fri 8am–6pm · Sat 8am–2pm</p>
+        <a href="tel:2192622711" style={{ background: "#fff", color: "#e63946", padding: "14px 36px", borderRadius: "6px", fontWeight: "bold", textDecoration: "none", fontSize: "18px" }}>
+          📞 Call (219) 262-2711
+        </a>
+      </section>
+
+    </div>
+  );
+}
