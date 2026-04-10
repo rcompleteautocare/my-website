@@ -1,9 +1,10 @@
 import Link from "next/link";
 
 export const metadata = {
-  title: "Transmission Repair Crown Point IN | R Complete Auto Care | (219) 262-2711",
-  description: "Transmission slipping, shaking, or won't shift in Crown Point IN? R Complete Auto Care diagnoses and repairs all transmission problems. Foreign & domestic. Extended warranty accepted. Call (219) 262-2711.",
-};
+  title: 'Transmission Repair Crown Point IN — Diagnose Before You Spend | R Complete Auto Care',
+  description: 'Transmission slipping in Crown Point? Get a real diagnosis before spending thousands. Extended warranty accepted. Call (219) 262-2711.',
+  alternates: { canonical: 'https://www.rcompleteautocare.com/services/transmission-repair' },
+}
 
 export default function TransmissionRepair() {
   return (
