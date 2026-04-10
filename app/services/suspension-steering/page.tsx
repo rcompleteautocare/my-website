@@ -1,136 +1,169 @@
-import Link from "next/link";
-
 export const metadata = {
   title: 'Suspension Repair Crown Point IN — Struts, Shocks, Alignment | R Complete Auto Care',
-  description: 'Suspension and steering repair in Crown Point, IN. Struts, shocks, alignments, control arms. Indiana road damage specialists. Call (219) 262-2711.',
+  description: 'Suspension repair in Crown Point, IN. Struts, shocks, tie rods, alignments. Indiana roads are rough — we keep your ride safe and controlled. Call (219) 262-2711.',
   alternates: { canonical: 'https://www.rcompleteautocare.com/services/suspension-steering' },
 }
 
+import Link from "next/link";
 export default function SuspensionSteering() {
   return (
     <div style={{ color: "#1a1a1a" }}>
 
+      {/* Hero */}
       <section style={{ background: "#1a1a1a", color: "#fff", padding: "60px 24px", textAlign: "center" }}>
-        <p style={{ color: "#e63946", fontWeight: "bold", fontSize: "13px", letterSpacing: "0.1em", textTransform: "uppercase", marginBottom: "12px" }}>
-          Crown Point, Indiana
-        </p>
-        <h1 style={{ fontSize: "38px", fontWeight: "bold", marginBottom: "16px", lineHeight: 1.2 }}>
+        <p style={{ color: "#e63946", fontWeight: "bold", fontSize: "13px", letterSpacing: "1px", marginBottom: "12px" }}>CROWN POINT, INDIANA</p>
+        <h1 style={{ fontSize: "38px", fontWeight: "bold", marginBottom: "16px" }}>
           Suspension & Steering Repair in Crown Point, IN
         </h1>
         <p style={{ fontSize: "18px", color: "#ccc", maxWidth: "600px", margin: "0 auto 32px" }}>
-          Rough ride, pulling, wandering, or clunking over bumps? We diagnose and fix suspension and steering problems right the first time.
+          Indiana roads are hard on suspension. Potholes, frost heaves, and rough pavement wear out struts, shocks, and steering components faster than anywhere else. We keep your ride safe, stable, and in control.
         </p>
-        <a href="tel:2192622711" style={{ background: "#e63946", color: "#fff", padding: "14px 32px", borderRadius: "6px", fontWeight: "bold", fontSize: "18px", textDecoration: "none" }}>
+        <a href="tel:2192622711" style={{ background: "#e63946", color: "#fff", padding: "14px 32px", borderRadius: "6px", fontWeight: "bold", textDecoration: "none", fontSize: "18px" }}>
           📞 Call (219) 262-2711
         </a>
-        <p style={{ color: "#666", fontSize: "13px", marginTop: "16px" }}>
-          1305 E Summit St, Crown Point, IN 46307 · Mon–Fri 8am–6pm · Sat 8am–2pm
-        </p>
+        <p style={{ color: "#666", fontSize: "13px", marginTop: "16px" }}>1305 E Summit St, Crown Point, IN 46307 · Mon–Fri 8am–6pm · Sat 8am–2pm</p>
       </section>
 
-      <section style={{ background: "#e63946", color: "#fff", padding: "14px 24px", textAlign: "center", fontSize: "14px", fontWeight: "500" }}>
-        📍 Serving Crown Point · St. John · Schererville · Merrillville · Cedar Lake, Indiana
+      {/* Serving bar */}
+      <section style={{ background: "#e63946", color: "#fff", padding: "14px 24px", textAlign: "center", fontSize: "14px" }}>
+        📍 Serving Crown Point · St. John · Schererville · Merrillville · Cedar Lake, IN
       </section>
 
+      {/* Intro */}
       <section style={{ padding: "60px 24px", maxWidth: "800px", margin: "0 auto" }}>
-        <h2 style={{ fontSize: "28px", marginBottom: "16px" }}>Expert Suspension & Steering Repair in Crown Point</h2>
+        <h2 style={{ fontSize: "28px", marginBottom: "16px" }}>Crown Point Suspension & Steering Specialists</h2>
         <p style={{ lineHeight: 1.8, color: "#444", marginBottom: "20px" }}>
-          A worn suspension or steering system affects your safety, your comfort, and the life of your tires. At R Complete Auto Care in Crown Point, Indiana, we inspect your entire suspension and steering system to identify exactly what's worn or damaged — and we only recommend what actually needs to be fixed.
+          Your suspension system does more than just absorb bumps — it controls how your vehicle handles, steers, and stops. Worn struts and shocks don't just make the ride uncomfortable — they increase stopping distances, cause uneven tire wear, and reduce your ability to control the vehicle in emergency situations.
         </p>
         <p style={{ lineHeight: 1.8, color: "#444", marginBottom: "20px" }}>
-          Indiana roads are tough on suspension components. Potholes, harsh winters, and heavy use all take a toll. Whether you're hearing clunks, feeling a rough ride, or noticing uneven tire wear, our technicians in Crown Point have the expertise to diagnose and repair it correctly.
+          At R Complete Auto Care in Crown Point, we perform thorough suspension inspections before recommending any repair. We check every component — struts, shocks, control arms, ball joints, tie rods, sway bar links, and steering components — and tell you what's worn, what's safe, and what can wait.
         </p>
         <p style={{ lineHeight: 1.8, color: "#444", marginBottom: "40px" }}>
-          We work on all foreign and domestic vehicles and accept most extended warranty plans. Serving Crown Point, St. John, Schererville, Merrillville, and Cedar Lake, Indiana.
+          Northwest Indiana roads are some of the toughest on suspension in the country. We understand what the local conditions do to these components and we see the failure patterns that result. If you're hearing clunks, feeling shimmy at highway speeds, or noticing your car pulling to one side, bring it in.
         </p>
 
-        <h2 style={{ fontSize: "28px", marginBottom: "24px" }}>Signs Your Suspension or Steering Needs Repair</h2>
-        <div style={{ display: "grid", gridTemplateColumns: "repeat(auto-fit, minmax(220px, 1fr))", gap: "12px", marginBottom: "40px" }}>
-          {[
-            "Rough or bouncy ride",
-            "Pulling to one side",
-            "Wandering or loose steering",
-            "Clunking over bumps",
-            "Uneven tire wear",
-            "Vehicle nose-dives when braking",
-            "Squeaking over bumps",
-            "Difficulty steering",
-          ].map(item => (
-            <div key={item} style={{ border: "1px solid #e0e0e0", borderLeft: "4px solid #e63946", borderRadius: "6px", padding: "12px 16px", fontSize: "14px", fontWeight: "500" }}>
-              {item}
-            </div>
-          ))}
-        </div>
+        {/* Symptoms */}
+        <h2 style={{ fontSize: "28px", marginBottom: "16px" }}>Signs Your Suspension or Steering Needs Attention</h2>
+        <ul style={{ lineHeight: 2.2, color: "#444", paddingLeft: "20px" }}>
+          <li>Clunking or knocking noises over bumps or when turning</li>
+          <li>Car pulling to one side while driving on a straight road</li>
+          <li>Steering wheel vibration or shimmy at highway speeds</li>
+          <li>Excessive bouncing after going over a bump</li>
+          <li>Vehicle nose-diving when braking or squatting when accelerating</li>
+          <li>Uneven or accelerated tire wear — cupping, feathering, or edge wear</li>
+          <li>Loose, wandering, or vague steering feel</li>
+          <li>Squeaking or creaking from the suspension when going over bumps</li>
+          <li>Visible fluid leaks on struts or shock absorbers</li>
+          <li>Car sitting noticeably lower on one corner</li>
+        </ul>
+      </section>
 
-        <h2 style={{ fontSize: "28px", marginBottom: "24px" }}>Suspension & Steering Services in Crown Point</h2>
-        <div style={{ display: "grid", gridTemplateColumns: "repeat(auto-fit, minmax(220px, 1fr))", gap: "12px", marginBottom: "40px" }}>
+      {/* CTA 2 */}
+      <section style={{ background: "#f5f5f5", padding: "40px 24px", textAlign: "center" }}>
+        <p style={{ fontSize: "20px", fontWeight: "bold", marginBottom: "12px" }}>Hearing clunks or feeling shimmy? Get it inspected.</p>
+        <a href="tel:2192622711" style={{ background: "#e63946", color: "#fff", padding: "12px 28px", borderRadius: "6px", fontWeight: "bold", textDecoration: "none" }}>
+          Call (219) 262-2711 →
+        </a>
+      </section>
+
+      {/* Services */}
+      <section style={{ padding: "60px 24px", maxWidth: "800px", margin: "0 auto" }}>
+        <h2 style={{ fontSize: "28px", marginBottom: "24px" }}>Suspension & Steering Services We Perform</h2>
+        <div style={{ display: "grid", gridTemplateColumns: "repeat(auto-fit, minmax(200px, 1fr))", gap: "12px" }}>
           {[
-            "Shocks & struts replacement",
-            "Control arm repair",
+            "Strut replacement",
+            "Shock absorber replacement",
+            "Control arm replacement",
             "Ball joint replacement",
-            "Tie rod replacement",
-            "Power steering repair",
-            "Rack & pinion repair",
+            "Tie rod end replacement",
+            "Sway bar link replacement",
+            "Sway bar bushing replacement",
             "Wheel alignment",
-            "Sway bar & end links",
+            "Power steering diagnosis & repair",
+            "Electric power steering repair",
+            "Steering rack replacement",
+            "Wheel bearing replacement",
+            "Hub assembly replacement",
+            "Coil spring replacement",
           ].map(item => (
-            <div key={item} style={{ border: "1px solid #e0e0e0", borderLeft: "4px solid #e63946", borderRadius: "6px", padding: "12px 16px", fontSize: "14px", fontWeight: "500" }}>
+            <div key={item} style={{ border: "1px solid #e0e0e0", borderLeft: "4px solid #e63946", padding: "12px 14px", fontSize: "14px", color: "#333" }}>
               {item}
             </div>
-          ))}
-        </div>
-
-        <h2 style={{ fontSize: "28px", marginBottom: "24px" }}>Why Crown Point Drivers Trust Us</h2>
-        <div style={{ display: "grid", gridTemplateColumns: "repeat(auto-fit, minmax(220px, 1fr))", gap: "16px", marginBottom: "40px" }}>
-          {[
-            { title: "Full Inspection First", desc: "We inspect the entire suspension and steering system before recommending any repair." },
-            { title: "Honest Estimates", desc: "Clear pricing before we start. We only replace what actually needs to be replaced." },
-            { title: "Extended Warranty Accepted", desc: "We work with most warranty providers and handle the paperwork for you." },
-            { title: "All Makes & Models", desc: "Foreign and domestic vehicles — Honda, Toyota, BMW, Ford, Chevy, and more." },
-          ].map(item => (
-            <div key={item.title} style={{ border: "1px solid #e0e0e0", borderLeft: "4px solid #e63946", borderRadius: "6px", padding: "16px" }}>
-              <div style={{ fontWeight: "bold", marginBottom: "8px" }}>{item.title}</div>
-              <div style={{ fontSize: "14px", color: "#555", lineHeight: 1.6 }}>{item.desc}</div>
-            </div>
-          ))}
-        </div>
-
-        <h2 style={{ fontSize: "28px", marginBottom: "24px" }}>Frequently Asked Questions — Suspension & Steering Repair in Crown Point, IN</h2>
-        {[
-          { q: "Where can I get suspension repair in Crown Point, IN?", a: "R Complete Auto Care at 1305 E Summit St, Crown Point, IN 46307. Call (219) 262-2711. Open Mon–Fri 8am–6pm, Sat 8am–2pm." },
-          { q: "How do I know if my suspension needs repair?", a: "Common signs include a rough or bouncy ride, pulling to one side, clunking over bumps, uneven tire wear, or a loose steering wheel. If you're experiencing any of these in Crown Point, bring it in for an inspection." },
-          { q: "Is a bad suspension dangerous?", a: "Yes — worn shocks and struts increase your stopping distance and make your vehicle harder to control, especially in emergency situations on Crown Point roads." },
-          { q: "How much does suspension repair cost in Crown Point?", a: "Cost depends on what needs to be repaired. We inspect everything first and give you a clear estimate before starting any work." },
-          { q: "Do you do wheel alignments in Crown Point?", a: "Yes — proper alignment is critical after any suspension repair to ensure even tire wear and proper handling. We perform alignments at our Crown Point location." },
-          { q: "Do you serve St. John, Schererville, and Merrillville for suspension repair?", a: "Yes! We're located in Crown Point and serve all of Lake County including St. John, Schererville, Merrillville, and Cedar Lake, Indiana." },
-          { q: "Do you accept extended warranties for suspension repair?", a: "Yes! We work with most extended warranty providers. Call us to verify your coverage before scheduling." },
-        ].map(item => (
-          <div key={item.q} style={{ marginBottom: "20px", borderBottom: "1px solid #e0e0e0", paddingBottom: "20px" }}>
-            <div style={{ fontWeight: "bold", fontSize: "16px", marginBottom: "8px" }}>{item.q}</div>
-            <div style={{ color: "#555", lineHeight: 1.7 }}>{item.a}</div>
-          </div>
-        ))}
-
-        <h2 style={{ fontSize: "24px", marginBottom: "16px" }}>Related Services</h2>
-        <div style={{ display: "grid", gridTemplateColumns: "repeat(auto-fit, minmax(220px, 1fr))", gap: "12px" }}>
-          {[
-            { name: "Brake Repair", href: "/services/brake-repair" },
-            { name: "Oil Change & Maintenance", href: "/services/oil-change-maintenance" },
-            { name: "Extended Warranty Repairs", href: "/services/extended-warranty-repair" },
-            { name: "Auto Repair Crown Point", href: "/auto-repair-crown-point-in" },
-          ].map(s => (
-            <Link key={s.href} href={s.href} style={{ border: "1px solid #e0e0e0", borderLeft: "4px solid #e63946", borderRadius: "6px", padding: "12px 16px", textDecoration: "none", color: "#1a1a1a", fontSize: "14px", fontWeight: "500", display: "block" }}>
-              {s.name} →
-            </Link>
           ))}
         </div>
       </section>
 
+      {/* Process */}
+      <section style={{ background: "#f5f5f5", padding: "60px 24px" }}>
+        <div style={{ maxWidth: "800px", margin: "0 auto" }}>
+          <h2 style={{ fontSize: "28px", marginBottom: "24px" }}>Our Suspension Inspection Process</h2>
+          {[
+            { step: "1", title: "Visual Inspection", desc: "We start with a thorough visual inspection of all suspension and steering components — looking for obvious damage, leaking struts, broken springs, cracked boots, and loose components." },
+            { step: "2", title: "Component Testing", desc: "We physically check ball joints, tie rod ends, wheel bearings, and sway bar links for play and wear. Many suspension problems only reveal themselves under load — we check them the right way." },
+            { step: "3", title: "Tire Wear Analysis", desc: "Tire wear patterns tell us a lot about suspension health. Cupped tires indicate worn shocks or struts. Edge wear points to alignment issues. Feathering suggests worn tie rod ends or control arm bushings." },
+            { step: "4", title: "Alignment Check", desc: "After suspension repairs, proper wheel alignment is critical. Misaligned wheels accelerate tire wear, cause pulling, and put stress on suspension components. We check alignment after any steering or suspension repair." },
+            { step: "5", title: "Road Test", desc: "We road test the vehicle before and after the repair to confirm the problem is resolved. We check for returning noises, pulling, vibration, and handling characteristics to make sure everything is right." },
+          ].map(item => (
+            <div key={item.step} style={{ display: "flex", gap: "16px", marginBottom: "28px", alignItems: "flex-start" }}>
+              <div style={{ background: "#e63946", color: "#fff", borderRadius: "50%", width: "36px", height: "36px", display: "flex", alignItems: "center", justifyContent: "center", fontWeight: "bold", flexShrink: 0 }}>{item.step}</div>
+              <div>
+                <div style={{ fontWeight: "bold", marginBottom: "6px", fontSize: "17px" }}>{item.title}</div>
+                <div style={{ color: "#555", lineHeight: 1.7 }}>{item.desc}</div>
+              </div>
+            </div>
+          ))}
+        </div>
+      </section>
+
+      {/* Indiana roads angle */}
+      <section style={{ padding: "60px 24px", maxWidth: "800px", margin: "0 auto" }}>
+        <h2 style={{ fontSize: "28px", marginBottom: "16px" }}>Indiana Roads & Your Suspension</h2>
+        <p style={{ lineHeight: 1.8, color: "#444", marginBottom: "16px" }}>
+          Northwest Indiana winters are brutal on suspension components. The freeze-thaw cycle creates potholes that can destroy struts and bend control arms in a single hit. Salt and moisture accelerate corrosion on bushings, ball joints, and tie rod ends. And the sheer number of rough roads in Lake County means your suspension is working harder than it would in most parts of the country.
+        </p>
+        <p style={{ lineHeight: 1.8, color: "#444" }}>
+          We recommend having your suspension inspected at least once a year — and immediately after any significant pothole impact. Catching a bent control arm or cracked strut mount early is far less expensive than the alignment damage, tire wear, and handling problems that develop when you drive on worn suspension components for months.
+        </p>
+      </section>
+
+      {/* FAQ */}
+      <section style={{ background: "#f5f5f5", padding: "60px 24px" }}>
+        <div style={{ maxWidth: "800px", margin: "0 auto" }}>
+          <h2 style={{ fontSize: "28px", marginBottom: "24px" }}>Frequently Asked Questions — Suspension & Steering</h2>
+          {[
+            { q: "How do I know if my struts are bad?", a: "Common signs include excessive bouncing after bumps, nose-diving when braking, a rough or uncomfortable ride, clunking noises, or visible fluid leaking from the strut body. A bounce test — pushing down on each corner of the car — can reveal worn struts, but a proper inspection is the only definitive way to assess their condition." },
+            { q: "Can I drive with bad struts or shocks?", a: "Technically yes, but it's not safe. Worn struts increase stopping distances, reduce your ability to control the vehicle in emergency maneuvers, and cause accelerated tire wear. The longer you drive on them, the more secondary damage accumulates." },
+            { q: "Why is my steering wheel shaking at highway speeds?", a: "Steering wheel vibration at highway speeds is usually caused by wheel imbalance, worn tie rod ends, worn ball joints, or loose wheel bearings. Less commonly it can be a bent wheel or tire with a flat spot. A proper inspection will identify the exact cause." },
+            { q: "How often should I get an alignment?", a: "We recommend an alignment check once a year and any time you replace steering or suspension components. In Northwest Indiana, we also recommend checking alignment after any significant pothole impact — hitting a deep pothole at speed can knock your alignment out noticeably." },
+            { q: "Why are my tires wearing unevenly?", a: "Uneven tire wear almost always points to a suspension or alignment issue. Edge wear suggests misalignment. Cupping or scalloping indicates worn shocks or struts. Feathering suggests worn tie rod ends. We can diagnose the cause from the wear pattern." },
+            { q: "Do you accept extended warranties for suspension repairs?", a: "Some suspension components are covered under extended warranty policies. Call us with your warranty information and we'll verify what's covered before any work begins." },
+          ].map(item => (
+            <div key={item.q} style={{ marginBottom: "20px", borderBottom: "1px solid #e0e0e0", paddingBottom: "20px" }}>
+              <div style={{ fontWeight: "bold", fontSize: "16px", marginBottom: "8px" }}>{item.q}</div>
+              <div style={{ color: "#555", lineHeight: 1.7 }}>{item.a}</div>
+            </div>
+          ))}
+        </div>
+      </section>
+
+      {/* Related */}
+      <section style={{ padding: "60px 24px", maxWidth: "800px", margin: "0 auto" }}>
+        <h2 style={{ fontSize: "24px", marginBottom: "16px" }}>Related Services</h2>
+        <ul style={{ lineHeight: 2, paddingLeft: "20px" }}>
+          <li><Link href="/services/brake-repair" style={{ color: "#e63946" }}>Brake Repair Crown Point, IN</Link></li>
+          <li><Link href="/services/engine-repair" style={{ color: "#e63946" }}>Engine Repair Crown Point, IN</Link></li>
+          <li><Link href="/services/extended-warranty-repair" style={{ color: "#e63946" }}>Extended Warranty Repairs Crown Point, IN</Link></li>
+          <li><Link href="/car-shaking-crown-point-in" style={{ color: "#e63946" }}>Car Shaking While Driving in Crown Point</Link></li>
+          <li><Link href="/auto-repair-crown-point-in" style={{ color: "#e63946" }}>Auto Repair Crown Point, IN</Link></li>
+        </ul>
+      </section>
+
+      {/* Final CTA */}
       <section style={{ background: "#e63946", color: "#fff", textAlign: "center", padding: "60px 24px" }}>
-        <h2 style={{ fontSize: "28px", marginBottom: "12px" }}>Suspension or Steering Issues in Crown Point? Call Us Today.</h2>
-        <p style={{ marginBottom: "8px", opacity: 0.9 }}>Honest diagnostics. Expert repairs. No guesswork.</p>
-        <p style={{ marginBottom: "24px", opacity: 0.75, fontSize: "14px" }}>1305 E Summit St, Crown Point, IN 46307</p>
-        <a href="tel:2192622711" style={{ background: "#fff", color: "#e63946", padding: "14px 36px", borderRadius: "6px", fontWeight: "bold", fontSize: "18px", textDecoration: "none" }}>
+        <h2 style={{ fontSize: "28px", marginBottom: "12px" }}>Suspension Problems in Crown Point? Call Us Today.</h2>
+        <p style={{ marginBottom: "8px", opacity: 0.9 }}>Thorough inspections. Honest recommendations. Quality repairs.</p>
+        <p style={{ marginBottom: "24px", opacity: 0.75, fontSize: "14px" }}>1305 E Summit St, Crown Point, IN 46307 · Mon–Fri 8am–6pm · Sat 8am–2pm</p>
+        <a href="tel:2192622711" style={{ background: "#fff", color: "#e63946", padding: "14px 36px", borderRadius: "6px", fontWeight: "bold", textDecoration: "none", fontSize: "18px" }}>
           📞 Call (219) 262-2711
         </a>
       </section>
