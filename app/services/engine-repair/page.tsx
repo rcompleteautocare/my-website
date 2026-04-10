@@ -1,9 +1,11 @@
-import Link from "next/link";
-
 export const metadata = {
-  title: "Engine Repair Crown Point IN | R Complete Auto Care | (219) 262-2711",
-  description: "Expert engine repair in Crown Point IN. R Complete Auto Care diagnoses first, then fixes it right. Foreign & domestic. Extended warranty accepted. Call (219) 262-2711.",
-};
+  title: 'Engine Repair Crown Point IN — Complex Diagnosis Specialists | R Complete Auto Care',
+  description: 'Engine repair in Crown Point, IN. We find WHY it failed before recommending parts. Head gaskets, timing, overheating. Call (219) 262-2711.',
+  alternates: { canonical: 'https://www.rcompleteautocare.com/services/engine-repair' },
+}
+  
+
+import Link from "next/link";
 
 export default function EngineRepair() {
   return (
