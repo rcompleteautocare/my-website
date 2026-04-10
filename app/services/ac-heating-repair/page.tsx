@@ -1,9 +1,10 @@
 import Link from "next/link";
 
 export const metadata = {
-  title: "A/C & Heating Repair Crown Point IN | R Complete Auto Care | (219) 262-2711",
-  description: "A/C and heating repair in Crown Point IN. No cold air or no heat? R Complete Auto Care diagnoses and fixes all climate control problems. Extended warranty accepted. Call (219) 262-2711.",
-};
+  title: 'AC Repair Crown Point IN | Car Heat Not Working | R Complete Auto Care',
+  description: 'AC and heating repair in Crown Point, IN. Car AC not blowing cold or heat not working? Same-day diagnostics available. Call (219) 262-2711.',
+  alternates: { canonical: 'https://www.rcompleteautocare.com/services/ac-heating-repair' },
+}
 
 export default function AcHeatingRepair() {
   return (
