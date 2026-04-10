@@ -54,6 +54,24 @@ export default function Nav() {
           </a>
         </nav>
       </header>
+      {/* Trust Bar */}
+<div style={{
+  background: "#e63946",
+  color: "#fff",
+  textAlign: "center",
+  padding: "8px 16px",
+  fontSize: "13px",
+  fontWeight: "500",
+  display: "flex",
+  justifyContent: "center",
+  gap: "24px",
+  flexWrap: "wrap"
+}}>
+  <span>⭐ 4.8 Google Rating</span>
+  <span>✓ Extended Warranty Accepted</span>
+  <span>✓ Same-Day Diagnostics</span>
+  <span>📞 <a href="tel:2192622711" style={{ color: "#fff", textDecoration: "none" }}>(219) 262-2711</a></span>
+</div>
     </>
   );
 }
