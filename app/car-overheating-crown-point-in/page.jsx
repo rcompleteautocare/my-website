@@ -1,5 +1,5 @@
 import Link from 'next/link'
-import FaqAccordion from '../components/FaqAccordion'
+import FaqAccordion from '../../components/FaqAccordion'
 
 export const metadata = {
   title: 'Car Overheating Crown Point IN | What to Do Right Now | R Complete Auto Care',
