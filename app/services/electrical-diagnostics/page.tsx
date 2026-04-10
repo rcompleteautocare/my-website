@@ -1,9 +1,10 @@
 import Link from "next/link";
 
 export const metadata = {
-  title: "Electrical Diagnostics Crown Point IN | R Complete Auto Care | (219) 262-2711",
-  description: "Auto electrical diagnostics in Crown Point IN. Battery, alternator, wiring, sensors and more. R Complete Auto Care finds the real problem fast. Call (219) 262-2711.",
-};
+  title: 'Electrical Diagnostics Crown Point IN — Parasitic Draw, No-Start, Shorts | R Complete Auto Care',
+  description: 'Auto electrical diagnostics in Crown Point, IN. Parasitic drain, no-start, shorts, and warning lights. Same-day diagnostics. Call (219) 262-2711.',
+  alternates: { canonical: 'https://www.rcompleteautocare.com/services/electrical-diagnostics' },
+}
 
 export default function ElectricalDiagnostics() {
   return (
