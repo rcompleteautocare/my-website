@@ -3,6 +3,7 @@ export const metadata = {
   description: 'Check engine light on in Crown Point? We trace fault codes to root cause — not just clear it. Same-day diagnostics. Extended warranty accepted. Call (219) 262-2711.',
   alternates: { canonical: 'https://www.rcompleteautocare.com/services/check-engine-light' },
 }
+
   import Link from "next/link";
 export default function CheckEngineLight() {
   return (
