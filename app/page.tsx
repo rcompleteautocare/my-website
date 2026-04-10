@@ -211,7 +211,27 @@ export default function Home() {
         </div>
       </section>
 
-      {/* Final CTA */}
+      {/* Common Problems */}
+<section style={{ padding: "60px 24px", background: "#f5f5f5" }}>
+  <div style={{ maxWidth: "900px", margin: "0 auto", textAlign: "center" }}>
+    <h2 style={{ fontSize: "28px", fontWeight: "bold", marginBottom: "12px" }}>Common Problems We Fix in Crown Point</h2>
+    <p style={{ color: "#555", marginBottom: "32px", fontSize: "16px" }}>Having a specific problem? We've built dedicated pages for the most common emergency situations.</p>
+    <div style={{ display: "grid", gridTemplateColumns: "repeat(auto-fit, minmax(220px, 1fr))", gap: "16px", textAlign: "left" }}>
+      {[
+        { title: "Car Won't Start", desc: "Dead battery, failed starter, fuel pump, or crank sensor — we find the exact cause.", href: "/car-wont-start-crown-point-in" },
+        { title: "Check Engine Light Flashing", desc: "A flashing CEL means active misfire — serious damage risk. Call us immediately.", href: "/check-engine-light-flashing-crown-point" },
+        { title: "Car Overheating", desc: "Pull over now. Overheating causes major engine damage fast. We diagnose the cause.", href: "/car-overheating-crown-point-in" },
+        { title: "Extended Warranty Repair", desc: "We work with CarShield, Endurance, CARS Protection and most major providers.", href: "/extended-warranty-auto-repair-crown-point-in" },
+      ].map(item => (
+        <a key={item.href} href={item.href} style={{ display: "block", background: "#fff", border: "1px solid #e0e0e0", borderLeft: "4px solid #e63946", borderRadius: "4px", padding: "20px", textDecoration: "none", color: "#1a1a1a" }}>
+          <div style={{ fontWeight: "bold", fontSize: "16px", marginBottom: "8px", color: "#e63946" }}>{item.title}</div>
+          <div style={{ fontSize: "14px", color: "#555", lineHeight: 1.6 }}>{item.desc}</div>
+        </a>
+      ))}
+    </div>
+  </div>
+</section>
+{/* Final CTA */}
       <section style={{ background: "#e63946", color: "#fff", textAlign: "center", padding: "70px 24px" }}>
         <h2 style={{ fontSize: "32px", marginBottom: "12px" }}>Crown Point's Auto Repair Shop You Can Actually Trust</h2>
         <p style={{ fontSize: "16px", marginBottom: "8px", opacity: 0.9 }}>Honest diagnostics. Expert repairs. No guesswork.</p>
