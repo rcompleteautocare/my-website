@@ -1,9 +1,10 @@
 import Link from "next/link";
 
 export const metadata = {
-  title: "Brake Repair Crown Point IN | R Complete Auto Care | (219) 262-2711",
-  description: "Expert brake repair in Crown Point IN. Squeaking, grinding, or soft pedal? R Complete Auto Care fixes it fast. Foreign & domestic. Extended warranty accepted. Call (219) 262-2711.",
-};
+  title: 'Brake Repair Crown Point IN — Honest Inspections | R Complete Auto Care',
+  description: 'Brake repair in Crown Point, IN. Thorough inspections with measurements — not a 10-minute upsell. Honest pricing. Call (219) 262-2711.',
+  alternates: { canonical: 'https://www.rcompleteautocare.com/services/brake-repair' },
+}
 
 export default function BrakeRepair() {
   return (
