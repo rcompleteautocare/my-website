@@ -5,6 +5,7 @@ export const metadata = {
   description: 'Suspension and steering repair in Crown Point, IN. Struts, shocks, alignments, control arms. Indiana road damage specialists. Call (219) 262-2711.',
   alternates: { canonical: 'https://www.rcompleteautocare.com/services/suspension-steering' },
 }
+}
 
 export default function SuspensionSteering() {
   return (
