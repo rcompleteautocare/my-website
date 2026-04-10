@@ -1,118 +1,178 @@
-import Link from "next/link";
-
 export const metadata = {
-  title: 'Oil Change Crown Point IN | Full-Service Maintenance | R Complete Auto Care',
-  description: 'Oil change and full-service maintenance in Crown Point, IN. Foreign and domestic. Extended warranty accepted. Call (219) 262-2711.',
+  title: 'Oil Change Crown Point IN — Full-Service Maintenance | R Complete Auto Care',
+  description: 'Oil change and maintenance in Crown Point, IN. Conventional and synthetic oil with multi-point inspection. Honest service, no upsell. Call (219) 262-2711.',
   alternates: { canonical: 'https://www.rcompleteautocare.com/services/oil-change-maintenance' },
 }
 
+import Link from "next/link";
 export default function OilChangeMaintenance() {
   return (
     <div style={{ color: "#1a1a1a" }}>
 
+      {/* Hero */}
       <section style={{ background: "#1a1a1a", color: "#fff", padding: "60px 24px", textAlign: "center" }}>
-        <p style={{ color: "#e63946", fontWeight: "bold", fontSize: "13px", letterSpacing: "0.1em", textTransform: "uppercase", marginBottom: "12px" }}>
-          Crown Point, Indiana
-        </p>
-        <h1 style={{ fontSize: "38px", fontWeight: "bold", marginBottom: "16px", lineHeight: 1.2 }}>
+        <p style={{ color: "#e63946", fontWeight: "bold", fontSize: "13px", letterSpacing: "1px", marginBottom: "12px" }}>CROWN POINT, INDIANA</p>
+        <h1 style={{ fontSize: "38px", fontWeight: "bold", marginBottom: "16px" }}>
           Oil Change & Maintenance in Crown Point, IN
         </h1>
         <p style={{ fontSize: "18px", color: "#ccc", maxWidth: "600px", margin: "0 auto 32px" }}>
-          Keep your vehicle running its best with regular oil changes and honest maintenance from a shop you can trust in Crown Point.
+          Conventional and synthetic oil changes with a thorough multi-point inspection — so you know what's coming before it becomes an emergency.
         </p>
-        <a href="tel:2192622711" style={{ background: "#e63946", color: "#fff", padding: "14px 32px", borderRadius: "6px", fontWeight: "bold", fontSize: "18px", textDecoration: "none" }}>
+        <a href="tel:2192622711" style={{ background: "#e63946", color: "#fff", padding: "14px 32px", borderRadius: "6px", fontWeight: "bold", textDecoration: "none", fontSize: "18px" }}>
           📞 Call (219) 262-2711
         </a>
-        <p style={{ color: "#666", fontSize: "13px", marginTop: "16px" }}>
-          1305 E Summit St, Crown Point, IN 46307 · Mon–Fri 8am–6pm · Sat 8am–2pm
-        </p>
+        <p style={{ color: "#666", fontSize: "13px", marginTop: "16px" }}>1305 E Summit St, Crown Point, IN 46307 · Mon–Fri 8am–6pm · Sat 8am–2pm</p>
       </section>
 
-      <section style={{ background: "#e63946", color: "#fff", padding: "14px 24px", textAlign: "center", fontSize: "14px", fontWeight: "500" }}>
-        📍 Serving Crown Point · St. John · Schererville · Merrillville · Cedar Lake, Indiana
+      {/* Serving bar */}
+      <section style={{ background: "#e63946", color: "#fff", padding: "14px 24px", textAlign: "center", fontSize: "14px" }}>
+        📍 Serving Crown Point · St. John · Schererville · Merrillville · Cedar Lake, IN
       </section>
 
+      {/* Intro */}
       <section style={{ padding: "60px 24px", maxWidth: "800px", margin: "0 auto" }}>
-        <h2 style={{ fontSize: "28px", marginBottom: "16px" }}>Crown Point's Honest Oil Change Shop</h2>
+        <h2 style={{ fontSize: "28px", marginBottom: "16px" }}>More Than Just an Oil Change</h2>
         <p style={{ lineHeight: 1.8, color: "#444", marginBottom: "20px" }}>
-          Regular oil changes are the single most important thing you can do to protect your engine and avoid costly repairs. At R Complete Auto Care in Crown Point, Indiana, we use quality oils and filters and perform a multi-point inspection with every service — so you always know the true condition of your vehicle.
+          At R Complete Auto Care in Crown Point, an oil change is never just an oil change. Every service includes a thorough multi-point inspection — we check fluid levels, brake pad thickness, tire condition, belt and hose condition, filters, lights, and anything else that could affect your vehicle's safety and reliability.
         </p>
         <p style={{ lineHeight: 1.8, color: "#444", marginBottom: "20px" }}>
-          Unlike quick-lube chains, we're a full-service diagnostic shop. That means if we notice something during your oil change — a brake issue, a leaking seal, or a worn belt — we'll tell you about it honestly, without pressure to fix it on the spot.
+          We give you an honest report on what we find. If something needs attention, we tell you — along with how urgent it is and what it costs. If everything looks good, we tell you that too. No invented maintenance items, no pressure, no upsell.
         </p>
         <p style={{ lineHeight: 1.8, color: "#444", marginBottom: "40px" }}>
-          We work on all foreign and domestic vehicles and serve drivers from Crown Point, St. John, Schererville, Merrillville, and Cedar Lake, Indiana.
+          Regular oil changes are the single most important thing you can do to extend the life of your engine. We make it easy — fast service, honest inspection, and the same diagnostic-first approach we bring to every vehicle that comes through our doors.
         </p>
 
-        <h2 style={{ fontSize: "28px", marginBottom: "24px" }}>Oil Change & Maintenance Services in Crown Point</h2>
-        <div style={{ display: "grid", gridTemplateColumns: "repeat(auto-fit, minmax(220px, 1fr))", gap: "12px", marginBottom: "40px" }}>
+        {/* Services */}
+        <h2 style={{ fontSize: "28px", marginBottom: "24px" }}>Oil Change & Maintenance Services</h2>
+        <div style={{ display: "grid", gridTemplateColumns: "repeat(auto-fit, minmax(200px, 1fr))", gap: "12px", marginBottom: "40px" }}>
           {[
             "Conventional oil change",
             "Synthetic oil change",
-            "Oil filter replacement",
-            "Tire rotation",
+            "Synthetic blend oil change",
+            "High-mileage oil change",
             "Multi-point inspection",
             "Air filter replacement",
             "Cabin air filter replacement",
-            "Fluid top-off & check",
+            "Tire rotation",
+            "Fluid top-off",
+            "Coolant flush & fill",
+            "Transmission fluid service",
+            "Brake fluid flush",
+            "Power steering fluid flush",
+            "Fuel system cleaning",
+            "Spark plug replacement",
+            "Belt & hose inspection",
           ].map(item => (
-            <div key={item} style={{ border: "1px solid #e0e0e0", borderLeft: "4px solid #e63946", borderRadius: "6px", padding: "12px 16px", fontSize: "14px", fontWeight: "500" }}>
+            <div key={item} style={{ border: "1px solid #e0e0e0", borderLeft: "4px solid #e63946", padding: "12px 14px", fontSize: "14px", color: "#333" }}>
               {item}
             </div>
           ))}
         </div>
 
-        <h2 style={{ fontSize: "28px", marginBottom: "24px" }}>Why Crown Point Drivers Choose Us for Oil Changes</h2>
-        <div style={{ display: "grid", gridTemplateColumns: "repeat(auto-fit, minmax(220px, 1fr))", gap: "16px", marginBottom: "40px" }}>
+        {/* What's included */}
+        <h2 style={{ fontSize: "28px", marginBottom: "16px" }}>What's Included in Our Multi-Point Inspection</h2>
+        <ul style={{ lineHeight: 2.2, color: "#444", paddingLeft: "20px" }}>
+          <li>Engine oil level and condition check</li>
+          <li>Coolant level and condition</li>
+          <li>Brake fluid level and condition</li>
+          <li>Power steering fluid level</li>
+          <li>Transmission fluid level and condition</li>
+          <li>Windshield washer fluid</li>
+          <li>Brake pad thickness — all four corners</li>
+          <li>Tire tread depth and condition</li>
+          <li>Tire pressure check and adjustment</li>
+          <li>Air filter and cabin air filter condition</li>
+          <li>Belt and hose visual inspection</li>
+          <li>Exterior lights — headlights, taillights, brake lights</li>
+          <li>Battery terminals and visible condition</li>
+          <li>Visible fluid leaks under the vehicle</li>
+        </ul>
+      </section>
+
+      {/* CTA 2 */}
+      <section style={{ background: "#f5f5f5", padding: "40px 24px", textAlign: "center" }}>
+        <p style={{ fontSize: "20px", fontWeight: "bold", marginBottom: "12px" }}>Due for an oil change? We'll have you in and out fast.</p>
+        <a href="tel:2192622711" style={{ background: "#e63946", color: "#fff", padding: "12px 28px", borderRadius: "6px", fontWeight: "bold", textDecoration: "none" }}>
+          Call (219) 262-2711 →
+        </a>
+      </section>
+
+      {/* Oil types */}
+      <section style={{ padding: "60px 24px", maxWidth: "800px", margin: "0 auto" }}>
+        <h2 style={{ fontSize: "28px", marginBottom: "24px" }}>Conventional vs. Synthetic Oil — Which Do You Need?</h2>
+        <div style={{ display: "grid", gridTemplateColumns: "repeat(auto-fit, minmax(300px, 1fr))", gap: "24px" }}>
           {[
-            { title: "Multi-Point Inspection Included", desc: "Every oil change includes a thorough inspection so you always know the true condition of your vehicle." },
-            { title: "No Pressure Upselling", desc: "If we find something during your service, we tell you honestly — without pressure to fix it on the spot." },
-            { title: "Fast & Convenient", desc: "Most oil changes at our Crown Point location are completed in 30–45 minutes." },
-            { title: "All Makes & Models", desc: "Foreign and domestic vehicles. We use the right oil for your specific vehicle." },
+            {
+              title: "Conventional Oil",
+              desc: "Refined from crude oil. Suitable for older vehicles, simple engine designs, and drivers with regular driving patterns. Typically changed every 3,000–5,000 miles.",
+              best: "Best for: Older vehicles, high-mileage engines on a budget, vehicles with simple engine designs"
+            },
+            {
+              title: "Synthetic Oil",
+              desc: "Engineered for superior performance, better protection at extreme temperatures, and longer change intervals. Required by most modern vehicles. Typically changed every 7,500–10,000 miles.",
+              best: "Best for: Modern vehicles, turbocharged engines, extreme temperature climates, extended drain intervals"
+            },
+            {
+              title: "High-Mileage Oil",
+              desc: "Formulated for vehicles over 75,000 miles. Contains seal conditioners to reduce leaks and additional additives to protect higher-mileage engine components.",
+              best: "Best for: Vehicles with 75,000+ miles, engines with minor oil leaks or consumption"
+            },
+            {
+              title: "Synthetic Blend",
+              desc: "A mix of conventional and synthetic base oils. Offers better protection than conventional at a lower cost than full synthetic.",
+              best: "Best for: Trucks, SUVs, and vehicles with moderate towing or load demands"
+            },
           ].map(item => (
-            <div key={item.title} style={{ border: "1px solid #e0e0e0", borderLeft: "4px solid #e63946", borderRadius: "6px", padding: "16px" }}>
-              <div style={{ fontWeight: "bold", marginBottom: "8px" }}>{item.title}</div>
-              <div style={{ fontSize: "14px", color: "#555", lineHeight: 1.6 }}>{item.desc}</div>
+            <div key={item.title} style={{ border: "1px solid #e0e0e0", borderLeft: "4px solid #e63946", padding: "20px", borderRadius: "4px" }}>
+              <div style={{ fontWeight: "bold", fontSize: "18px", marginBottom: "10px" }}>{item.title}</div>
+              <div style={{ color: "#444", lineHeight: 1.7, marginBottom: "10px", fontSize: "14px" }}>{item.desc}</div>
+              <div style={{ color: "#e63946", fontSize: "13px", fontWeight: "500" }}>{item.best}</div>
             </div>
           ))}
         </div>
+        <p style={{ lineHeight: 1.8, color: "#444", marginTop: "24px" }}>
+          Not sure which oil your vehicle needs? We'll check your owner's manual specifications and recommend the correct oil type and viscosity for your specific vehicle. Using the wrong oil type can affect fuel economy, engine protection, and warranty compliance.
+        </p>
+      </section>
 
-        <h2 style={{ fontSize: "28px", marginBottom: "24px" }}>Frequently Asked Questions — Oil Change in Crown Point, IN</h2>
-        {[
-          { q: "Where can I get an oil change in Crown Point, IN?", a: "R Complete Auto Care at 1305 E Summit St, Crown Point, IN 46307. Call (219) 262-2711. Open Mon–Fri 8am–6pm, Sat 8am–2pm. Most oil changes completed in 30–45 minutes." },
-          { q: "How often should I change my oil in Crown Point?", a: "Most modern vehicles with synthetic oil need an oil change every 5,000–7,500 miles. Older vehicles or those using conventional oil may need it every 3,000 miles. We'll let you know what's right for your specific vehicle." },
-          { q: "Do you do synthetic oil changes in Crown Point?", a: "Yes — we stock both conventional and full synthetic oils and use whichever your vehicle manufacturer recommends." },
-          { q: "What's included with your oil change in Crown Point?", a: "Every oil change at R Complete Auto Care includes an oil and filter change plus a multi-point inspection. We check your brakes, tires, fluids, belts, and more — and report what we find honestly." },
-          { q: "How long does an oil change take?", a: "Most oil changes at our Crown Point location are completed in 30–45 minutes." },
-          { q: "Do you rotate tires with an oil change?", a: "Yes — we can perform a tire rotation at the same time to maximize tire life and ensure even wear." },
-          { q: "Do you serve St. John, Schererville, and Merrillville for oil changes?", a: "Yes! We're located in Crown Point and serve all of Lake County including St. John, Schererville, Merrillville, and Cedar Lake, Indiana." },
-        ].map(item => (
-          <div key={item.q} style={{ marginBottom: "20px", borderBottom: "1px solid #e0e0e0", paddingBottom: "20px" }}>
-            <div style={{ fontWeight: "bold", fontSize: "16px", marginBottom: "8px" }}>{item.q}</div>
-            <div style={{ color: "#555", lineHeight: 1.7 }}>{item.a}</div>
-          </div>
-        ))}
-
-        <h2 style={{ fontSize: "24px", marginBottom: "16px" }}>Related Services</h2>
-        <div style={{ display: "grid", gridTemplateColumns: "repeat(auto-fit, minmax(220px, 1fr))", gap: "12px" }}>
+      {/* FAQ */}
+      <section style={{ background: "#f5f5f5", padding: "60px 24px" }}>
+        <div style={{ maxWidth: "800px", margin: "0 auto" }}>
+          <h2 style={{ fontSize: "28px", marginBottom: "24px" }}>Frequently Asked Questions — Oil Change & Maintenance</h2>
           {[
-            { name: "Brake Repair", href: "/services/brake-repair" },
-            { name: "Suspension & Steering", href: "/services/suspension-steering" },
-            { name: "Check Engine Light", href: "/services/check-engine-light" },
-            { name: "Auto Repair Crown Point", href: "/auto-repair-crown-point-in" },
-          ].map(s => (
-            <Link key={s.href} href={s.href} style={{ border: "1px solid #e0e0e0", borderLeft: "4px solid #e63946", borderRadius: "6px", padding: "12px 16px", textDecoration: "none", color: "#1a1a1a", fontSize: "14px", fontWeight: "500", display: "block" }}>
-              {s.name} →
-            </Link>
+            { q: "How often should I change my oil?", a: "It depends on your vehicle and oil type. Conventional oil typically needs changing every 3,000–5,000 miles. Full synthetic oil can last 7,500–10,000 miles or more. The best reference is your owner's manual — and we'll check it for you when you come in." },
+            { q: "Can I go longer between oil changes with synthetic oil?", a: "Yes — modern full synthetic oils are engineered for extended drain intervals. Many manufacturers specify 7,500–10,000 mile intervals with synthetic oil. However, if you do a lot of short trips, tow frequently, or drive in extreme temperatures, more frequent changes are beneficial." },
+            { q: "What happens if I don't change my oil regularly?", a: "Oil breaks down over time and loses its ability to lubricate and protect engine components. Old oil becomes thick and sludgy, restricts oil flow, and allows metal-on-metal contact inside the engine. Skipping oil changes is one of the most common causes of premature engine failure." },
+            { q: "Do you rotate tires with an oil change?", a: "Yes — we can perform a tire rotation with your oil change service. Rotating tires every 5,000–7,500 miles ensures even wear and extends tire life significantly." },
+            { q: "Will you tell me if you find something wrong during the inspection?", a: "Always — that's the point of the inspection. We give you a written report of what we found, what's urgent, and what can wait. We never do additional work without your approval. No surprises on your bill." },
+            { q: "Do you service all makes and models?", a: "Yes — all foreign and domestic vehicles. Honda, Toyota, BMW, Mercedes, Subaru, Ford, Chevrolet, Dodge, GMC, Jeep, and more. We use the correct oil specification for your specific vehicle." },
+          ].map(item => (
+            <div key={item.q} style={{ marginBottom: "20px", borderBottom: "1px solid #e0e0e0", paddingBottom: "20px" }}>
+              <div style={{ fontWeight: "bold", fontSize: "16px", marginBottom: "8px" }}>{item.q}</div>
+              <div style={{ color: "#555", lineHeight: 1.7 }}>{item.a}</div>
+            </div>
           ))}
         </div>
       </section>
 
+      {/* Related */}
+      <section style={{ padding: "60px 24px", maxWidth: "800px", margin: "0 auto" }}>
+        <h2 style={{ fontSize: "24px", marginBottom: "16px" }}>Related Services</h2>
+        <ul style={{ lineHeight: 2, paddingLeft: "20px" }}>
+          <li><Link href="/services/brake-repair" style={{ color: "#e63946" }}>Brake Repair Crown Point, IN</Link></li>
+          <li><Link href="/services/suspension-steering" style={{ color: "#e63946" }}>Suspension & Steering Crown Point, IN</Link></li>
+          <li><Link href="/services/engine-repair" style={{ color: "#e63946" }}>Engine Repair Crown Point, IN</Link></li>
+          <li><Link href="/services/ac-heating-repair" style={{ color: "#e63946" }}>AC & Heating Repair Crown Point, IN</Link></li>
+          <li><Link href="/auto-repair-crown-point-in" style={{ color: "#e63946" }}>Auto Repair Crown Point, IN</Link></li>
+        </ul>
+      </section>
+
+      {/* Final CTA */}
       <section style={{ background: "#e63946", color: "#fff", textAlign: "center", padding: "60px 24px" }}>
-        <h2 style={{ fontSize: "28px", marginBottom: "12px" }}>Due for an Oil Change in Crown Point? Call Us Today.</h2>
-        <p style={{ marginBottom: "8px", opacity: 0.9 }}>Quick, honest, and done right. No pressure, no upselling.</p>
-        <p style={{ marginBottom: "24px", opacity: 0.75, fontSize: "14px" }}>1305 E Summit St, Crown Point, IN 46307</p>
-        <a href="tel:2192622711" style={{ background: "#fff", color: "#e63946", padding: "14px 36px", borderRadius: "6px", fontWeight: "bold", fontSize: "18px", textDecoration: "none" }}>
+        <h2 style={{ fontSize: "28px", marginBottom: "12px" }}>Ready for an Oil Change in Crown Point?</h2>
+        <p style={{ marginBottom: "8px", opacity: 0.9 }}>Fast service. Honest inspection. No pressure.</p>
+        <p style={{ marginBottom: "24px", opacity: 0.75, fontSize: "14px" }}>1305 E Summit St, Crown Point, IN 46307 · Mon–Fri 8am–6pm · Sat 8am–2pm</p>
+        <a href="tel:2192622711" style={{ background: "#fff", color: "#e63946", padding: "14px 36px", borderRadius: "6px", fontWeight: "bold", textDecoration: "none", fontSize: "18px" }}>
           📞 Call (219) 262-2711
         </a>
       </section>
