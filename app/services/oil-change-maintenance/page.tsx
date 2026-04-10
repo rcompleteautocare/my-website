@@ -1,9 +1,10 @@
 import Link from "next/link";
 
 export const metadata = {
-  title: "Oil Change Crown Point IN | R Complete Auto Care | (219) 262-2711",
-  description: "Fast, honest oil changes and vehicle maintenance in Crown Point IN. Conventional and synthetic oil. Multi-point inspection included. Call (219) 262-2711.",
-};
+  title: 'Oil Change Crown Point IN | Full-Service Maintenance | R Complete Auto Care',
+  description: 'Oil change and full-service maintenance in Crown Point, IN. Foreign and domestic. Extended warranty accepted. Call (219) 262-2711.',
+  alternates: { canonical: 'https://www.rcompleteautocare.com/services/oil-change-maintenance' },
+}
 
 export default function OilChangeMaintenance() {
   return (
