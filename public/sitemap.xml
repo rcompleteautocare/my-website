@@ -1,22 +1,4 @@
 <?xml version="1.0" encoding="UTF-8"?>
-<urlset xmlns="http://www.sitemaps.org/schemas/sitemap/0.9">
-  <url><loc>https://rcompleteautocare.com/</loc></url>
-  <url><loc>https://rcompleteautocare.com/about</loc></url>
-  <url><loc>https://rcompleteautocare.com/contact</loc></url>
-  <url><loc>https://rcompleteautocare.com/services/diagnostics</loc></url>
-  <url><loc>https://rcompleteautocare.com/services/check-engine-light</loc></url>
-  <url><loc>https://rcompleteautocare.com/services/electrical-diagnostics</loc></url>
-  <url><loc>https://rcompleteautocare.com/services/no-start-diagnostics</loc></url>
-  <url><loc>https://rcompleteautocare.com/services/engine-repair</loc></url>
-  <url><loc>https://rcompleteautocare.com/services/transmission-repair</loc></url>
-  <url><loc>https://rcompleteautocare.com/services/brake-repair</loc></url>
-  <url><loc>https://rcompleteautocare.com/services/suspension-steering</loc></url>
-  <url><loc>https://rcompleteautocare.com/services/oil-change-maintenance</loc></url>
-  <url><loc>https://rcompleteautocare.com/services/ac-heating-repair</loc></url>
-  <url><loc>https://rcompleteautocare.com/services/extended-warranty-repair</loc></url>
-  <url><loc>https://rcompleteautocare.com/auto-repair-crown-point-in</loc></url>
-  <url><loc>https://rcompleteautocare.com/auto-repair-st-john-in</loc></url>
-  <url><loc>https://rcompleteautocare.com/auto-repair-schererville-in</loc></url>
-  <url><loc>https://rcompleteautocare.com/auto-repair-merrillville-in</loc></url>
-  <url><loc>https://rcompleteautocare.com/auto-repair-cedar-lake-in</loc></url>
-</urlset>
+<sitemapindex xmlns="http://www.sitemaps.org/schemas/sitemap/0.9">
+<sitemap><loc>https://www.rcompleteautocare.com/sitemap-0.xml</loc></sitemap>
+</sitemapindex>
