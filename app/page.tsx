@@ -36,6 +36,12 @@ export default function Home() {
       </section>
 
       {/* Trust bar */}
+      {/* Google Reviews */}
+<section style={{ padding: "60px 24px", background: "#f9f9f9" }}>
+  <div style={{ maxWidth: "1000px", margin: "0 auto", textAlign: "center" }}>
+    <div className="elfsight-app-10ba8f91-d08e-4d50-8d8e-3a7fb77e4247" data-elfsight-app-lazy></div>
+  </div>
+</section>
       <section style={{ background: "#e63946", color: "#fff", padding: "20px 24px" }}>
         <div style={{ maxWidth: "1000px", margin: "0 auto", display: "flex", justifyContent: "center", gap: "40px", flexWrap: "wrap", fontSize: "14px", fontWeight: "500" }}>
           <span>✓ Diagnostic-First Approach</span>
