@@ -19,7 +19,7 @@ export default function NoStartDiagnostics() {
           A no-start condition can have dozens of causes. We don't guess and replace parts — we diagnose the exact reason your car won't start before recommending any repair.
         </p>
         <a href="tel:2192622711" style={{ background: "#e63946", color: "#fff", padding: "14px 32px", borderRadius: "6px", fontWeight: "bold", textDecoration: "none", fontSize: "18px" }}>
-          📞 Call (219) 262-2711 — Same-Day Diagnostics
+          📞 Call (219) 262-2711
         </a>
         <p style={{ color: "#666", fontSize: "13px", marginTop: "16px" }}>1305 E Summit St, Crown Point, IN 46307 · Mon–Fri 8am–6pm · Sat 8am–2pm</p>
       </section>

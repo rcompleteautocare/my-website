@@ -258,3 +258,8 @@ ul li strong, ol li strong {
 .related-links li a:hover {
   text-decoration: underline;
 }
+@media (max-width: 768px) {
+  h1 { font-size: 28px !important; line-height: 1.3 !important; }
+  h2 { font-size: 22px !important; }
+  section { padding-left: 16px !important; padding-right: 16px !important; }
+}
