@@ -1,5 +1,5 @@
 import Link from 'next/link'
-import FaqAccordion from '../components/FaqAccordion'
+import FaqAccordion from '../FaqAccordion'
 
 export const metadata = {
   title: "Car Won't Start Crown Point IN | Same-Day Diagnostics | R Complete Auto Care",
