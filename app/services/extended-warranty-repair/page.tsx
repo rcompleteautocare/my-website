@@ -1,9 +1,10 @@
 import Link from "next/link";
 
 export const metadata = {
-  title: "Extended Warranty Repair Crown Point IN | R Complete Auto Care | (219) 262-2711",
-  description: "Extended warranty repairs accepted in Crown Point IN. R Complete Auto Care works with most warranty providers and handles the claims process for you. Call (219) 262-2711.",
-};
+  title: 'Extended Warranty Auto Repair Crown Point IN | R Complete Auto Care',
+  description: 'Extended warranty auto repair in Crown Point, IN. We handle pre-authorisation, documentation, and the entire claims process. Call (219) 262-2711.',
+  alternates: { canonical: 'https://www.rcompleteautocare.com/services/extended-warranty-repair' },
+}
 
 export default function ExtendedWarrantyRepair() {
   return (
