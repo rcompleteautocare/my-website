@@ -1,4 +1,4 @@
-'use client'
+'use client'../../components/FaqAccordion
 
 // This file is shared by all 4 pages.
 // Save as: app/components/FaqAccordion.jsx
