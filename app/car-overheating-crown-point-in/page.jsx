@@ -41,8 +41,17 @@ const FAQS = [
   },
 ]
 
-export default function CarOverheating() 
+export default function CarOverheating() {
   return (
+    <>
+      <FaqSchema faqs={FAQS} />
+      <div className="page-content">
+        <p className="location-badge">Crown Point, Indiana</p>
+        ...
+      </div>
+    </>
+  )
+}
     <>
 <FaqSchema faqs={FAQS} />
 <div className="page-content">
