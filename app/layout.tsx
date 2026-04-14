@@ -5,9 +5,10 @@ import Nav from "./components/Nav";
 import Footer from "./components/Footer";
 
 export const metadata: Metadata = {
+  metadataBase: new URL("https://www.rcompleteautocare.com"),
   title: "R Complete Auto Care | Auto Repair Crown Point, IN",
   description: "Diagnostic-first auto repair shop in Crown Point, IN. Honest estimates, expert repairs, extended warranty accepted. Serving Crown Point, St. John, Schererville, Merrillville, Cedar Lake.",
-};
+}
 
 const SCHEMA = {
   "@context": "https://schema.org",
@@ -62,9 +63,8 @@ export default function RootLayout({ children }: { children: React.ReactNode }) 
       <body style={{ margin: 0, fontFamily: "sans-serif" }}>
         <script
           type="application/ld+json"
-          dangerouslySetInnerHTML={{ __html: JSON.stringify(SCHEMA) }}
+         dangerouslySetInnerHTML={{ __html: JSON.stringify(SCHEMA).replace(/</g, "\\u003c") }}
         />
-        <Script src="https://elfsightcdn.com/platform.js" async />
         <Nav />
         <main>{children}</main>
         <Footer />

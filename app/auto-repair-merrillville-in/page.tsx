@@ -3,6 +3,9 @@ import Link from "next/link";
 export const metadata = {
   title: "Auto Repair Near Merrillville IN | R Complete Auto Care | (219) 262-2711",
   description: "Auto repair near Merrillville IN. R Complete Auto Care in Crown Point serves Merrillville drivers with honest diagnostics and expert repairs. Extended warranty accepted. Call (219) 262-2711.",
+  alternates: {
+    canonical: "https://www.rcompleteautocare.com/auto-repair-merrillville-in",
+  },
 };
 
 export default function Merrillville() {
@@ -39,10 +42,15 @@ export default function Merrillville() {
         <p style={{ lineHeight: 1.8, color: "#444", marginBottom: "20px" }}>
           Merrillville drivers come to us because we give straight answers, fair prices, and repairs that actually fix the problem. Whether you need a check engine light diagnosed, brakes replaced, a transmission repair, or a major engine job — we have the expertise and equipment to handle it right.
         </p>
-        <p style={{ lineHeight: 1.8, color: "#444", marginBottom: "40px" }}>
+        <p style={{ lineHeight: 1.8, color: "#444", marginBottom: "20px" }}>
           Built on over 25 years of family experience in auto repair, we work on all foreign and domestic vehicles and proudly accept most extended warranty plans. Serving Merrillville, Crown Point, St. John, Schererville, and all of Lake County, Indiana.
         </p>
-
+<p style={{ lineHeight: 1.8, color: "#444", marginBottom: "20px" }}>
+  Merrillville's commercial strip along US-30 near Southlake Mall is one of the most heavily trafficked areas in Northwest Indiana. The constant stop-and-go past the hotels, big-box retailers, and restaurants puts real wear on brakes and transmissions. We regularly see Merrillville drivers who have been told by a national chain that they need a major repair — and find the actual fix is considerably simpler once we run a proper diagnostic.
+</p>
+<p style={{ lineHeight: 1.8, color: "#444", marginBottom: "40px" }}>
+  From Merrillville, take US-30 West directly into Crown Point — it's a straight shot with no turns until Summit Street. Most Merrillville drivers are at our shop in 10–12 minutes. We also serve drivers from the Taft area and from the neighborhoods south of US-30 near Broadway.
+</p>
         <h2 style={{ fontSize: "28px", marginBottom: "24px" }}>Auto Repair Services for Merrillville Drivers</h2>
         <div style={{ display: "grid", gridTemplateColumns: "repeat(auto-fit, minmax(250px, 1fr))", gap: "16px", marginBottom: "40px" }}>
           {[
@@ -107,6 +115,44 @@ export default function Merrillville() {
         </a>
       </section>
 
-    </div>
+    <script
+  type="application/ld+json"
+  dangerouslySetInnerHTML={{ __html: JSON.stringify({
+    "@context": "https://schema.org",
+    "@type": "FAQPage",
+    "mainEntity": [
+      {
+        "@type": "Question",
+        "name": "Where is the best auto repair shop near Merrillville, IN?",
+        "acceptedAnswer": { "@type": "Answer", "text": "R Complete Auto Care at 1305 E Summit St, Crown Point, IN 46307 — about 10 minutes from Merrillville. Call (219) 262-2711." }
+      },
+      {
+        "@type": "Question",
+        "name": "How far is R Complete Auto Care from Merrillville?",
+        "acceptedAnswer": { "@type": "Answer", "text": "We're located about 10 minutes from Merrillville, Indiana at 1305 E Summit St in Crown Point, IN 46307." }
+      },
+      {
+        "@type": "Question",
+        "name": "Do you accept extended warranties for Merrillville drivers?",
+        "acceptedAnswer": { "@type": "Answer", "text": "Yes! We work with most extended warranty providers and handle the entire claims process. Merrillville drivers are welcome — call us at (219) 262-2711." }
+      },
+      {
+        "@type": "Question",
+        "name": "Do you work on foreign and domestic vehicles?",
+        "acceptedAnswer": { "@type": "Answer", "text": "Absolutely — all makes and models including Honda, Toyota, BMW, Mercedes, Ford, Chevrolet, Dodge, Subaru, and more." }
+      },
+      {
+        "@type": "Question",
+        "name": "What are your hours?",
+        "acceptedAnswer": { "@type": "Answer", "text": "Monday through Friday 8:00 AM to 6:00 PM and Saturday 8:00 AM to 2:00 PM. Closed Sunday." }
+      },
+      {
+        "@type": "Question",
+        "name": "Do you offer same-day service for Merrillville drivers?",
+        "acceptedAnswer": { "@type": "Answer", "text": "Yes — most diagnostic appointments and many repairs are completed the same day. Call (219) 262-2711 to schedule." }
+      }
+    ]
+  })}}
+/></div>
   );
 }

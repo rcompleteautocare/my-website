@@ -1,6 +1,6 @@
 import Link from 'next/link'
 import FaqAccordion from '../components/FaqAccordion'
-
+import FaqSchema from '../components/FaqSchema'
 export const metadata = {
   title: 'Car Overheating Crown Point IN | What to Do Right Now | R Complete Auto Care',
   description:
@@ -8,36 +8,6 @@ export const metadata = {
   alternates: {
     canonical: 'https://www.rcompleteautocare.com/car-overheating-crown-point-in',
   },
-}
-
-const SCHEMA = {
-  '@context': 'https://schema.org',
-  '@type': ['AutoRepair', 'LocalBusiness'],
-  name: 'R Complete Auto Care',
-  url: 'https://www.rcompleteautocare.com',
-  telephone: '(219) 262-2711',
-  image: 'https://www.rcompleteautocare.com/logo.png',
-  priceRange: '$$',
-  address: {
-    '@type': 'PostalAddress',
-    streetAddress: '1305 E Summit St',
-    addressLocality: 'Crown Point',
-    addressRegion: 'IN',
-    postalCode: '46307',
-    addressCountry: 'US',
-  },
-  geo: { '@type': 'GeoCoordinates', latitude: 41.4175, longitude: -87.3648 },
-  openingHoursSpecification: [
-    {
-      '@type': 'OpeningHoursSpecification',
-      dayOfWeek: ['Monday', 'Tuesday', 'Wednesday', 'Thursday', 'Friday'],
-      opens: '08:00',
-      closes: '18:00',
-    },
-    { '@type': 'OpeningHoursSpecification', dayOfWeek: 'Saturday', opens: '08:00', closes: '14:00' },
-  ],
-  description: 'Crown Point, Indiana diagnostic-first auto repair shop. Engine overheating diagnostics and cooling system repair. Extended warranty accepted.',
-  areaServed: ['Crown Point, IN', 'St. John, IN', 'Schererville, IN', 'Merrillville, IN', 'Cedar Lake, IN'],
 }
 
 const FAQS = [
@@ -71,12 +41,11 @@ const FAQS = [
   },
 ]
 
-export default function CarOverheating() {
+export default function CarOverheating() 
   return (
     <>
-      <script type="application/ld+json" dangerouslySetInnerHTML={{ __html: JSON.stringify(SCHEMA) }} />
-
-      {/* ── HERO ── */}
+<FaqSchema faqs={FAQS} />
+<div className="page-content">
       <p className="location-badge">Crown Point, Indiana</p>
       <h1>Car Overheating in Crown Point, IN — What to Do Right Now</h1>
       <p className="hero-description">
@@ -242,7 +211,4 @@ export default function CarOverheating() {
       <h2>Car Overheating in Crown Point? Pull Over and Call Us.</h2>
       <p>Same-day diagnostics. We find the root cause before recommending a single repair. Extended warranty accepted.</p>
       <p>1305 E Summit St, Crown Point, IN 46307</p>
-      <a href="tel:2192622711" className="cta-button">📞 Call (219) 262-2711</a>
-    </>
-  )
-}
+      <a href="tel:2192622711" className="cta-button">📞 Call (219) 262-2711</a></div></>

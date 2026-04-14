@@ -160,7 +160,6 @@ export default function BrakeRepair() {
           <li><Link href="/services/suspension-steering" style={{ color: "#e63946" }}>Suspension & Steering Repair Crown Point, IN</Link></li>
           <li><Link href="/services/check-engine-light" style={{ color: "#e63946" }}>Check Engine Light Diagnostics Crown Point, IN</Link></li>
           <li><Link href="/services/extended-warranty-repair" style={{ color: "#e63946" }}>Extended Warranty Repairs Crown Point, IN</Link></li>
-          <li><Link href="/brake-grinding-crown-point-in" style={{ color: "#e63946" }}>Grinding Brakes in Crown Point — What It Means</Link></li>
           <li><Link href="/auto-repair-crown-point-in" style={{ color: "#e63946" }}>Auto Repair Crown Point, IN</Link></li>
         </ul>
       </section>
@@ -175,6 +174,45 @@ export default function BrakeRepair() {
         </a>
       </section>
 
-    </div>
+    <script
+  type="application/ld+json"
+  dangerouslySetInnerHTML={{ __html: JSON.stringify({
+    "@context": "https://schema.org",
+    "@type": "FAQPage",
+    "mainEntity": [
+      {
+        "@type": "Question",
+        "name": "How do I know when my brakes need to be replaced?",
+        "acceptedAnswer": { "@type": "Answer", "text": "Common signs include squealing, grinding, a soft pedal, pulling to one side, or a brake warning light. The most accurate way is a proper inspection with pad thickness and rotor measurements — which we provide at every brake service." }
+      },
+      {
+        "@type": "Question",
+        "name": "Is it safe to drive with grinding brakes?",
+        "acceptedAnswer": { "@type": "Answer", "text": "No. Grinding means your brake pads are worn through to the metal backing plate, which is metal-on-metal contact with your rotors. This reduces stopping power and damages your rotors quickly. Get it in as soon as possible." }
+      },
+      {
+        "@type": "Question",
+        "name": "How long do brake pads last?",
+        "acceptedAnswer": { "@type": "Answer", "text": "It depends heavily on driving habits and conditions. City driving with frequent stops wears pads much faster than highway driving. Most pads last between 30,000 and 70,000 miles — but the only way to know for sure is a measurement." }
+      },
+      {
+        "@type": "Question",
+        "name": "Why is my car shaking when I brake?",
+        "acceptedAnswer": { "@type": "Answer", "text": "Shaking when braking — especially at highway speeds — is almost always warped rotors. Heat and stress cause rotors to develop thickness variations that cause vibration when the pads clamp down. Rotor replacement or resurfacing resolves this." }
+      },
+      {
+        "@type": "Question",
+        "name": "My ABS light is on — is that a brake problem?",
+        "acceptedAnswer": { "@type": "Answer", "text": "The ABS warning light indicates a fault in the ABS system, which can include wheel speed sensors, the ABS module, or hydraulic components. Your regular brakes will still work, but ABS may not activate in an emergency. We can diagnose and repair it." }
+      },
+      {
+        "@type": "Question",
+        "name": "Do you accept extended warranties for brake repair?",
+        "acceptedAnswer": { "@type": "Answer", "text": "Yes — some brake components are covered under extended warranty policies. Call us with your warranty information and we'll verify what's covered before any work begins." }
+      }
+    ]
+  })}}
+/><script type="application/ld+json" dangerouslySetInnerHTML={{ __html: JSON.stringify({ "@context": "https://schema.org", "@type": "BreadcrumbList", "itemListElement": [{ "@type": "ListItem", "position": 1, "name": "Home", "item": "https://www.rcompleteautocare.com" }, { "@type": "ListItem", "position": 2, "name": "Services", "item": "https://www.rcompleteautocare.com/services/diagnostics" }, { "@type": "ListItem", "position": 3, "name": "Brake Repair" }] }) }} />
+</div>
   );
 }

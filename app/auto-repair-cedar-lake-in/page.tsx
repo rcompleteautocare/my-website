@@ -3,6 +3,9 @@ import Link from "next/link";
 export const metadata = {
   title: "Auto Repair Near Cedar Lake IN | R Complete Auto Care | (219) 262-2711",
   description: "Auto repair near Cedar Lake IN. R Complete Auto Care in Crown Point serves Cedar Lake drivers with honest diagnostics and expert repairs. Extended warranty accepted. Call (219) 262-2711.",
+  alternates: {
+    canonical: "https://www.rcompleteautocare.com/auto-repair-cedar-lake-in",
+  },
 };
 
 export default function CedarLake() {
@@ -42,7 +45,12 @@ export default function CedarLake() {
         <p style={{ lineHeight: 1.8, color: "#444", marginBottom: "40px" }}>
           Built on over 25 years of family experience in auto repair, we work on all foreign and domestic vehicles and proudly accept most extended warranty plans. Serving Cedar Lake, Crown Point, St. John, Schererville, Merrillville, and all of Lake County, Indiana.
         </p>
-
+<p style={{ lineHeight: 1.8, color: "#444", marginBottom: "20px" }}>
+  Cedar Lake's rural roads and the IN-2 corridor see a different kind of wear than the highway commuters to the north — more gravel road debris, more pothole damage from county roads that don't get resurfaced as frequently, and more towing and hauling from trucks and SUVs used for Lake Dalecarlia and Cedar Lake access. Suspension and steering components take a beating on those roads, and we see it regularly in the vehicles that come in from that area.
+</p>
+<p style={{ lineHeight: 1.8, color: "#444", marginBottom: "20px" }}>
+  The drive from Cedar Lake to our shop is easy — IN-2 East straight into Crown Point, about 10 minutes from the Parrish Avenue area. We serve drivers from throughout the Cedar Lake, Lowell, and Hebron corridor who want a diagnostic-first shop rather than the nearest parts-swapper.
+</p>
         <h2 style={{ fontSize: "28px", marginBottom: "24px" }}>Auto Repair Services for Cedar Lake Drivers</h2>
         <div style={{ display: "grid", gridTemplateColumns: "repeat(auto-fit, minmax(250px, 1fr))", gap: "16px", marginBottom: "40px" }}>
           {[
@@ -107,6 +115,44 @@ export default function CedarLake() {
         </a>
       </section>
 
-    </div>
+    <script
+  type="application/ld+json"
+  dangerouslySetInnerHTML={{ __html: JSON.stringify({
+    "@context": "https://schema.org",
+    "@type": "FAQPage",
+    "mainEntity": [
+      {
+        "@type": "Question",
+        "name": "Where is the best auto repair shop near Cedar Lake, IN?",
+        "acceptedAnswer": { "@type": "Answer", "text": "R Complete Auto Care at 1305 E Summit St, Crown Point, IN 46307 — about 10 minutes from Cedar Lake. Call (219) 262-2711." }
+      },
+      {
+        "@type": "Question",
+        "name": "How far is R Complete Auto Care from Cedar Lake?",
+        "acceptedAnswer": { "@type": "Answer", "text": "We're located about 10 minutes from Cedar Lake, Indiana at 1305 E Summit St in Crown Point, IN 46307." }
+      },
+      {
+        "@type": "Question",
+        "name": "Do you accept extended warranties for Cedar Lake drivers?",
+        "acceptedAnswer": { "@type": "Answer", "text": "Yes! We work with most extended warranty providers and handle the entire claims process. Cedar Lake drivers are welcome — call us at (219) 262-2711." }
+      },
+      {
+        "@type": "Question",
+        "name": "Do you work on foreign and domestic vehicles?",
+        "acceptedAnswer": { "@type": "Answer", "text": "Absolutely — all makes and models including Honda, Toyota, BMW, Mercedes, Ford, Chevrolet, Dodge, Subaru, and more." }
+      },
+      {
+        "@type": "Question",
+        "name": "What are your hours?",
+        "acceptedAnswer": { "@type": "Answer", "text": "Monday through Friday 8:00 AM to 6:00 PM and Saturday 8:00 AM to 2:00 PM. Closed Sunday." }
+      },
+      {
+        "@type": "Question",
+        "name": "Do you offer same-day service for Cedar Lake drivers?",
+        "acceptedAnswer": { "@type": "Answer", "text": "Yes — most diagnostic appointments and many repairs are completed the same day. Call (219) 262-2711 to schedule." }
+      }
+    ]
+  })}}
+/></div>
   );
 }

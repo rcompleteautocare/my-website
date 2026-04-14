@@ -4,4 +4,9 @@ module.exports = {
   generateRobotsTxt: true,
   changefreq: 'weekly',
   priority: 0.8,
+  exclude: [
+    '/components/*',
+    '/car-wont-start-crown-point-in/car-wont-start-crown-point-in',
+    '/sitemap.xml',
+  ],
 }

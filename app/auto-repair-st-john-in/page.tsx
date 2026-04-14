@@ -3,6 +3,9 @@ import Link from "next/link";
 export const metadata = {
   title: "Auto Repair Near St. John IN | R Complete Auto Care | (219) 262-2711",
   description: "Auto repair near St. John IN. R Complete Auto Care in Crown Point serves St. John drivers with honest diagnostics and expert repairs. Extended warranty accepted. Call (219) 262-2711.",
+  alternates: {
+    canonical: "https://www.rcompleteautocare.com/auto-repair-st-john-in",
+  },
 };
 
 export default function StJohn() {
@@ -39,10 +42,15 @@ export default function StJohn() {
         <p style={{ lineHeight: 1.8, color: "#444", marginBottom: "20px" }}>
           St. John drivers come to us because we give straight answers, fair prices, and repairs that actually fix the problem. We work on all foreign and domestic vehicles and proudly accept most extended warranty plans.
         </p>
-        <p style={{ lineHeight: 1.8, color: "#444", marginBottom: "40px" }}>
+        <p style={{ lineHeight: 1.8, color: "#444", marginBottom: "20px" }}>
           Built on over 25 years of family experience in auto repair, we serve St. John, Crown Point, Dyer, Lowell, and all of Lake County, Indiana.
         </p>
-
+<p style={{ lineHeight: 1.8, color: "#444", marginBottom: "20px" }}>
+  St. John sits at the crossroads of US-41 and Route 231, which means a lot of daily commuting — and a lot of miles accumulating on vehicles faster than most drivers expect. The Lake Hills and Heron Lake neighborhoods feed directly into Summit Street via US-41 North, making our Crown Point shop a straightforward 10-minute drive with no highway required. Many St. John drivers heading to work in Crown Point or Lowell pass within a mile of our shop.
+</p>
+<p style={{ lineHeight: 1.8, color: "#444", marginBottom: "40px" }}>
+  We see a regular pattern of vehicles from St. John with extended warranty coverage through dealership-sold plans from the US-41 corridor dealerships. If you purchased a vehicle from one of those dealers and have a warranty through Zurich or a similar provider, we work with those plans directly. Call us with your contract number before you bring it in.
+</p>
         <h2 style={{ fontSize: "28px", marginBottom: "24px" }}>Auto Repair Services for St. John Drivers</h2>
         <div style={{ display: "grid", gridTemplateColumns: "repeat(auto-fit, minmax(250px, 1fr))", gap: "16px", marginBottom: "40px" }}>
           {[
@@ -107,6 +115,44 @@ export default function StJohn() {
         </a>
       </section>
 
-    </div>
+    <script
+  type="application/ld+json"
+  dangerouslySetInnerHTML={{ __html: JSON.stringify({
+    "@context": "https://schema.org",
+    "@type": "FAQPage",
+    "mainEntity": [
+      {
+        "@type": "Question",
+        "name": "Where is the best auto repair shop near St. John, IN?",
+        "acceptedAnswer": { "@type": "Answer", "text": "R Complete Auto Care at 1305 E Summit St, Crown Point, IN 46307 — just about 10 minutes from St. John. Call (219) 262-2711." }
+      },
+      {
+        "@type": "Question",
+        "name": "How far is R Complete Auto Care from St. John?",
+        "acceptedAnswer": { "@type": "Answer", "text": "We're located about 10 minutes from St. John, Indiana at 1305 E Summit St in Crown Point, IN 46307." }
+      },
+      {
+        "@type": "Question",
+        "name": "Do you accept extended warranties for St. John drivers?",
+        "acceptedAnswer": { "@type": "Answer", "text": "Yes! We work with most extended warranty providers and handle the entire claims process. St. John drivers are welcome — just give us a call at (219) 262-2711." }
+      },
+      {
+        "@type": "Question",
+        "name": "Do you work on foreign and domestic vehicles?",
+        "acceptedAnswer": { "@type": "Answer", "text": "Absolutely — all makes and models including Honda, Toyota, BMW, Mercedes, Ford, Chevrolet, Dodge, Subaru, and more." }
+      },
+      {
+        "@type": "Question",
+        "name": "What are your hours?",
+        "acceptedAnswer": { "@type": "Answer", "text": "Monday through Friday 8:00 AM to 6:00 PM and Saturday 8:00 AM to 2:00 PM. Closed Sunday." }
+      },
+      {
+        "@type": "Question",
+        "name": "Do you offer same-day service for St. John drivers?",
+        "acceptedAnswer": { "@type": "Answer", "text": "Yes — most diagnostic appointments and many repairs are completed the same day. Call us at (219) 262-2711 to schedule." }
+      }
+    ]
+  })}}
+/></div>
   );
 }

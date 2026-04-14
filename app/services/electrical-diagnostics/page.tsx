@@ -117,6 +117,49 @@ export default function ElectricalDiagnostics() {
         </a>
       </section>
 
-    </div>
+    <script
+  type="application/ld+json"
+  dangerouslySetInnerHTML={{ __html: JSON.stringify({
+    "@context": "https://schema.org",
+    "@type": "FAQPage",
+    "mainEntity": [
+      {
+        "@type": "Question",
+        "name": "Where can I get auto electrical diagnostics in Crown Point, IN?",
+        "acceptedAnswer": { "@type": "Answer", "text": "R Complete Auto Care at 1305 E Summit St, Crown Point, IN 46307. Call (219) 262-2711. Open Mon–Fri 8am–6pm, Sat 8am–2pm." }
+      },
+      {
+        "@type": "Question",
+        "name": "How do I know if I have an electrical problem?",
+        "acceptedAnswer": { "@type": "Answer", "text": "Common signs include dim or flickering lights, a car that won't start, warning lights on the dashboard, blown fuses, power windows or locks not working, or a battery that keeps dying." }
+      },
+      {
+        "@type": "Question",
+        "name": "Can electrical problems cause my check engine light to come on?",
+        "acceptedAnswer": { "@type": "Answer", "text": "Yes — faulty sensors, bad wiring, and module issues can all trigger warning lights. We perform a full diagnostic scan to identify the exact cause at our Crown Point shop." }
+      },
+      {
+        "@type": "Question",
+        "name": "How much does an electrical diagnostic cost in Crown Point?",
+        "acceptedAnswer": { "@type": "Answer", "text": "We charge a diagnostic fee to properly identify the electrical issue. This fee is applied toward your repair cost if you choose to have us fix it." }
+      },
+      {
+        "@type": "Question",
+        "name": "Do you work on all makes and models for electrical issues?",
+        "acceptedAnswer": { "@type": "Answer", "text": "Yes — all foreign and domestic vehicles including Honda, Toyota, BMW, Mercedes, Ford, Chevrolet, Dodge, and more." }
+      },
+      {
+        "@type": "Question",
+        "name": "Do you serve St. John, Schererville, and Merrillville for electrical diagnostics?",
+        "acceptedAnswer": { "@type": "Answer", "text": "Yes! We're located in Crown Point and serve all of Lake County including St. John, Schererville, Merrillville, and Cedar Lake, Indiana." }
+      },
+      {
+        "@type": "Question",
+        "name": "Do you accept extended warranties for electrical repairs?",
+        "acceptedAnswer": { "@type": "Answer", "text": "Yes! We work with most extended warranty providers. Call us to verify your coverage before scheduling." }
+      }
+    ]
+  })}}
+/><script type="application/ld+json" dangerouslySetInnerHTML={{ __html: JSON.stringify({ "@context": "https://schema.org", "@type": "BreadcrumbList", "itemListElement": [{ "@type": "ListItem", "position": 1, "name": "Home", "item": "https://www.rcompleteautocare.com" }, { "@type": "ListItem", "position": 2, "name": "Services", "item": "https://www.rcompleteautocare.com/services/diagnostics" }, { "@type": "ListItem", "position": 3, "name": "Electrical Diagnostics" }] }) }} /></div>
   );
 }

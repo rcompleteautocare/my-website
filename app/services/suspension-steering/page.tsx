@@ -153,7 +153,6 @@ export default function SuspensionSteering() {
           <li><Link href="/services/brake-repair" style={{ color: "#e63946" }}>Brake Repair Crown Point, IN</Link></li>
           <li><Link href="/services/engine-repair" style={{ color: "#e63946" }}>Engine Repair Crown Point, IN</Link></li>
           <li><Link href="/services/extended-warranty-repair" style={{ color: "#e63946" }}>Extended Warranty Repairs Crown Point, IN</Link></li>
-          <li><Link href="/car-shaking-crown-point-in" style={{ color: "#e63946" }}>Car Shaking While Driving in Crown Point</Link></li>
           <li><Link href="/auto-repair-crown-point-in" style={{ color: "#e63946" }}>Auto Repair Crown Point, IN</Link></li>
         </ul>
       </section>
@@ -168,6 +167,44 @@ export default function SuspensionSteering() {
         </a>
       </section>
 
-    </div>
+    <script
+  type="application/ld+json"
+  dangerouslySetInnerHTML={{ __html: JSON.stringify({
+    "@context": "https://schema.org",
+    "@type": "FAQPage",
+    "mainEntity": [
+      {
+        "@type": "Question",
+        "name": "How do I know if my struts are bad?",
+        "acceptedAnswer": { "@type": "Answer", "text": "Common signs include excessive bouncing after bumps, nose-diving when braking, a rough or uncomfortable ride, clunking noises, or visible fluid leaking from the strut body. A bounce test can reveal worn struts, but a proper inspection is the only definitive way to assess their condition." }
+      },
+      {
+        "@type": "Question",
+        "name": "Can I drive with bad struts or shocks?",
+        "acceptedAnswer": { "@type": "Answer", "text": "Technically yes, but it's not safe. Worn struts increase stopping distances, reduce your ability to control the vehicle in emergency maneuvers, and cause accelerated tire wear. The longer you drive on them, the more secondary damage accumulates." }
+      },
+      {
+        "@type": "Question",
+        "name": "Why is my steering wheel shaking at highway speeds?",
+        "acceptedAnswer": { "@type": "Answer", "text": "Steering wheel vibration at highway speeds is usually caused by wheel imbalance, worn tie rod ends, worn ball joints, or loose wheel bearings. Less commonly it can be a bent wheel or tire with a flat spot. A proper inspection will identify the exact cause." }
+      },
+      {
+        "@type": "Question",
+        "name": "How often should I get an alignment?",
+        "acceptedAnswer": { "@type": "Answer", "text": "We recommend an alignment check once a year and any time you replace steering or suspension components. In Northwest Indiana, we also recommend checking alignment after any significant pothole impact — hitting a deep pothole at speed can knock your alignment out noticeably." }
+      },
+      {
+        "@type": "Question",
+        "name": "Why are my tires wearing unevenly?",
+        "acceptedAnswer": { "@type": "Answer", "text": "Uneven tire wear almost always points to a suspension or alignment issue. Edge wear suggests misalignment. Cupping or scalloping indicates worn shocks or struts. Feathering suggests worn tie rod ends. We can diagnose the cause from the wear pattern." }
+      },
+      {
+        "@type": "Question",
+        "name": "Do you accept extended warranties for suspension repairs?",
+        "acceptedAnswer": { "@type": "Answer", "text": "Some suspension components are covered under extended warranty policies. Call us with your warranty information and we'll verify what's covered before any work begins." }
+      }
+    ]
+  })}}
+/><script type="application/ld+json" dangerouslySetInnerHTML={{ __html: JSON.stringify({ "@context": "https://schema.org", "@type": "BreadcrumbList", "itemListElement": [{ "@type": "ListItem", "position": 1, "name": "Home", "item": "https://www.rcompleteautocare.com" }, { "@type": "ListItem", "position": 2, "name": "Services", "item": "https://www.rcompleteautocare.com/services/diagnostics" }, { "@type": "ListItem", "position": 3, "name": "Suspension & Steering Repair" }] }) }} /></div>
   );
 }

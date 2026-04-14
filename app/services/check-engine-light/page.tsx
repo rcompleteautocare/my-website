@@ -155,6 +155,44 @@ export default function CheckEngineLight() {
         </a>
       </section>
 
-    </div>
+    <script
+  type="application/ld+json"
+  dangerouslySetInnerHTML={{ __html: JSON.stringify({
+    "@context": "https://schema.org",
+    "@type": "FAQPage",
+    "mainEntity": [
+      {
+        "@type": "Question",
+        "name": "Is it safe to drive with my check engine light on?",
+        "acceptedAnswer": { "@type": "Answer", "text": "It depends. If the light is flashing, pull over immediately — it indicates a serious misfire that can damage your catalytic converter. If it's solid, it's generally safe to drive short distances but you should get it checked within a day or two." }
+      },
+      {
+        "@type": "Question",
+        "name": "Can you just clear the code without diagnosing it?",
+        "acceptedAnswer": { "@type": "Answer", "text": "We don't recommend it and we won't do it. Clearing the code without fixing the underlying issue means the light will come back on — often within 50–100 miles. We find the root cause first." }
+      },
+      {
+        "@type": "Question",
+        "name": "How much does a check engine light diagnostic cost?",
+        "acceptedAnswer": { "@type": "Answer", "text": "We charge a diagnostic fee to properly identify the issue. This fee is applied toward your repair cost if you choose to have us fix it. Call us for current pricing." }
+      },
+      {
+        "@type": "Question",
+        "name": "How long does the diagnostic take?",
+        "acceptedAnswer": { "@type": "Answer", "text": "Most diagnostics are completed the same day, often within a few hours. We'll call you with our findings before doing any work." }
+      },
+      {
+        "@type": "Question",
+        "name": "My check engine light came back on after another shop fixed it — what do I do?",
+        "acceptedAnswer": { "@type": "Answer", "text": "This is one of the most common reasons people come to us. Many shops clear codes and replace the most obvious part without finding the actual root cause. We dig deeper. Bring it in and we'll find what was missed." }
+      },
+      {
+        "@type": "Question",
+        "name": "Do you accept extended warranties for this repair?",
+        "acceptedAnswer": { "@type": "Answer", "text": "Yes! We work with most extended warranty providers and handle the entire claims process for you. Call us with your warranty info and we'll verify coverage before any work begins." }
+      }
+    ]
+  })}}
+/><script type="application/ld+json" dangerouslySetInnerHTML={{ __html: JSON.stringify({ "@context": "https://schema.org", "@type": "BreadcrumbList", "itemListElement": [{ "@type": "ListItem", "position": 1, "name": "Home", "item": "https://www.rcompleteautocare.com" }, { "@type": "ListItem", "position": 2, "name": "Services", "item": "https://www.rcompleteautocare.com/services/diagnostics" }, { "@type": "ListItem", "position": 3, "name": "Check Engine Light Diagnostics" }] }) }} /></div>
   );
 }

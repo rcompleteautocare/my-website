@@ -154,7 +154,6 @@ export default function TransmissionRepair() {
           <li><Link href="/services/engine-repair" style={{ color: "#e63946" }}>Engine Repair Crown Point, IN</Link></li>
           <li><Link href="/services/check-engine-light" style={{ color: "#e63946" }}>Check Engine Light Diagnostics Crown Point, IN</Link></li>
           <li><Link href="/services/extended-warranty-repair" style={{ color: "#e63946" }}>Extended Warranty Repairs Crown Point, IN</Link></li>
-          <li><Link href="/transmission-slipping-crown-point" style={{ color: "#e63946" }}>Transmission Slipping in Crown Point — What It Means</Link></li>
           <li><Link href="/auto-repair-crown-point-in" style={{ color: "#e63946" }}>Auto Repair Crown Point, IN</Link></li>
         </ul>
       </section>
@@ -169,6 +168,44 @@ export default function TransmissionRepair() {
         </a>
       </section>
 
-    </div>
+    <script
+  type="application/ld+json"
+  dangerouslySetInnerHTML={{ __html: JSON.stringify({
+    "@context": "https://schema.org",
+    "@type": "FAQPage",
+    "mainEntity": [
+      {
+        "@type": "Question",
+        "name": "How do I know if my transmission is slipping?",
+        "acceptedAnswer": { "@type": "Answer", "text": "Transmission slipping feels like your engine revs up but the car doesn't accelerate the way it should — like the power isn't connecting. You may also notice the car shifting at the wrong times or feeling like it's hunting for a gear." }
+      },
+      {
+        "@type": "Question",
+        "name": "How much does transmission repair cost in Crown Point?",
+        "acceptedAnswer": { "@type": "Answer", "text": "It depends entirely on what's actually wrong. A fluid service or solenoid replacement is a fraction of the cost of a full rebuild. That's why we always diagnose first — so you're not paying for a rebuild when a sensor fix would solve it." }
+      },
+      {
+        "@type": "Question",
+        "name": "Can I drive with a slipping transmission?",
+        "acceptedAnswer": { "@type": "Answer", "text": "Short distances only, and with caution. Continuing to drive on a slipping transmission can cause additional damage and turn a smaller repair into a much larger one. Get it diagnosed as soon as possible." }
+      },
+      {
+        "@type": "Question",
+        "name": "What is torque converter shudder?",
+        "acceptedAnswer": { "@type": "Answer", "text": "Torque converter shudder feels like driving over rumble strips at 40–50mph during light acceleration. It's caused by the torque converter clutch not locking up smoothly and is often mistaken for an engine misfire. It can sometimes be resolved with a fluid service — but it requires a proper diagnosis to confirm." }
+      },
+      {
+        "@type": "Question",
+        "name": "Do you work on CVT transmissions?",
+        "acceptedAnswer": { "@type": "Answer", "text": "Yes — CVT transmissions require specific expertise and fluid. We have the equipment and experience to properly diagnose and service CVT transmissions found in Nissan, Subaru, Honda, Toyota, and other vehicles." }
+      },
+      {
+        "@type": "Question",
+        "name": "Do you accept extended warranties for transmission repair?",
+        "acceptedAnswer": { "@type": "Answer", "text": "Yes — transmission repairs are among the most commonly covered repairs on extended warranty policies. Call us with your warranty info and we'll verify coverage before any work begins." }
+      }
+    ]
+  })}}
+/><script type="application/ld+json" dangerouslySetInnerHTML={{ __html: JSON.stringify({ "@context": "https://schema.org", "@type": "BreadcrumbList", "itemListElement": [{ "@type": "ListItem", "position": 1, "name": "Home", "item": "https://www.rcompleteautocare.com" }, { "@type": "ListItem", "position": 2, "name": "Services", "item": "https://www.rcompleteautocare.com/services/diagnostics" }, { "@type": "ListItem", "position": 3, "name": "Transmission Repair" }] }) }} /></div>
   );
 }

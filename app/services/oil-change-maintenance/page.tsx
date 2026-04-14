@@ -177,6 +177,44 @@ export default function OilChangeMaintenance() {
         </a>
       </section>
 
-    </div>
+    <script
+  type="application/ld+json"
+  dangerouslySetInnerHTML={{ __html: JSON.stringify({
+    "@context": "https://schema.org",
+    "@type": "FAQPage",
+    "mainEntity": [
+      {
+        "@type": "Question",
+        "name": "How often should I change my oil?",
+        "acceptedAnswer": { "@type": "Answer", "text": "It depends on your vehicle and oil type. Conventional oil typically needs changing every 3,000–5,000 miles. Full synthetic oil can last 7,500–10,000 miles or more. The best reference is your owner's manual — and we'll check it for you when you come in." }
+      },
+      {
+        "@type": "Question",
+        "name": "Can I go longer between oil changes with synthetic oil?",
+        "acceptedAnswer": { "@type": "Answer", "text": "Yes — modern full synthetic oils are engineered for extended drain intervals. Many manufacturers specify 7,500–10,000 mile intervals with synthetic oil. However, if you do a lot of short trips, tow frequently, or drive in extreme temperatures, more frequent changes are beneficial." }
+      },
+      {
+        "@type": "Question",
+        "name": "What happens if I don't change my oil regularly?",
+        "acceptedAnswer": { "@type": "Answer", "text": "Oil breaks down over time and loses its ability to lubricate and protect engine components. Old oil becomes thick and sludgy, restricts oil flow, and allows metal-on-metal contact inside the engine. Skipping oil changes is one of the most common causes of premature engine failure." }
+      },
+      {
+        "@type": "Question",
+        "name": "Do you rotate tires with an oil change?",
+        "acceptedAnswer": { "@type": "Answer", "text": "Yes — we can perform a tire rotation with your oil change service. Rotating tires every 5,000–7,500 miles ensures even wear and extends tire life significantly." }
+      },
+      {
+        "@type": "Question",
+        "name": "Will you tell me if you find something wrong during the inspection?",
+        "acceptedAnswer": { "@type": "Answer", "text": "Always — that's the point of the inspection. We give you a written report of what we found, what's urgent, and what can wait. We never do additional work without your approval. No surprises on your bill." }
+      },
+      {
+        "@type": "Question",
+        "name": "Do you service all makes and models?",
+        "acceptedAnswer": { "@type": "Answer", "text": "Yes — all foreign and domestic vehicles. Honda, Toyota, BMW, Mercedes, Subaru, Ford, Chevrolet, Dodge, GMC, Jeep, and more. We use the correct oil specification for your specific vehicle." }
+      }
+    ]
+  })}}
+/><script type="application/ld+json" dangerouslySetInnerHTML={{ __html: JSON.stringify({ "@context": "https://schema.org", "@type": "BreadcrumbList", "itemListElement": [{ "@type": "ListItem", "position": 1, "name": "Home", "item": "https://www.rcompleteautocare.com" }, { "@type": "ListItem", "position": 2, "name": "Services", "item": "https://www.rcompleteautocare.com/services/diagnostics" }, { "@type": "ListItem", "position": 3, "name": "Suspension & Steering Repair" }] }) }} /></div>
   );
 }

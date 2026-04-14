@@ -1,5 +1,5 @@
 import Link from "next/link";
-
+import Script from "next/script";
 export const metadata = {
   title: "Auto Repair Crown Point IN | R Complete Auto Care | (219) 262-2711",
   description: "Crown Point's diagnostic-first auto repair shop. Honest estimates, expert repairs, extended warranty work welcome. Serving Crown Point, St. John, Schererville & Merrillville. Call (219) 262-2711.",
@@ -14,8 +14,9 @@ export default function Home() {
         <p style={{ color: "#e63946", fontWeight: "bold", fontSize: "14px", letterSpacing: "0.1em", textTransform: "uppercase", marginBottom: "16px" }}>
           Crown Point, Indiana's Diagnostic-First Auto Repair Shop
         </p>
-        <h1 style={{ fontSize: "44px", fontWeight: "bold", margin: "0 0 20px", lineHeight: 1.2, maxWidth: "800px", marginLeft: "auto", marginRight: "auto" }}>
-        </h1>Crown Point's Diagnostic-First Auto Repair Shop — We Fix What Others Miss
+       <h1 style={{ fontSize: "44px", fontWeight: "bold", margin: "0 0 20px", lineHeight: 1.2, maxWidth: "800px", marginLeft: "auto", marginRight: "auto" }}>
+          Crown Point&apos;s Diagnostic-First Auto Repair Shop — We Fix What Others Miss
+        </h1>
         <p style={{ fontSize: "18px", color: "#ccc", maxWidth: "620px", margin: "0 auto 16px", lineHeight: 1.7 }}>
           If your car is making noise, shaking, or a warning light is on, we find the problem and fix it right the first time — no guessing.
         </p>
@@ -241,6 +242,6 @@ export default function Home() {
         </a>
       </section>
 
-    </div>
+    <Script src="https://elfsightcdn.com/platform.js" strategy="lazyOnload" /></div>
   );
 }

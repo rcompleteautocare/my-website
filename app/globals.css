@@ -5,26 +5,13 @@
   --foreground: #171717;
 }
 
-@theme inline {
-  --color-background: var(--background);
-  --color-foreground: var(--foreground);
-  --font-sans: var(--font-geist-sans);
-  --font-mono: var(--font-geist-mono);
-}
-
-@media (prefers-color-scheme: dark) {
-  :root {
-    --background: #0a0a0a;
-    --foreground: #ededed;
-  }
-}
-
 body {
   background: var(--background);
   color: var(--foreground);
   font-family: Arial, Helvetica, sans-serif;
 }
-/* New symptom pages */
+
+New symptom pages */
 .location-badge { display:inline-block; background:#c0392b; color:#fff; font-size:13px; font-weight:600; letter-spacing:.08em; text-transform:uppercase; padding:4px 12px; border-radius:4px; margin-bottom:16px; }
 .hero-description { font-size:18px; line-height:1.7; color:#444; margin-bottom:24px; }
 .address-line, .serving-line { font-size:14px; color:#666; margin-top:8px; }

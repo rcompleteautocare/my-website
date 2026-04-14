@@ -1,3 +1,4 @@
+import FaqSchema from '../components/FaqSchema'
 import Link from 'next/link'
 import FaqAccordion from '../components/FaqAccordion'
 
@@ -8,36 +9,6 @@ export const metadata = {
   alternates: {
     canonical: 'https://www.rcompleteautocare.com/extended-warranty-auto-repair-crown-point-in',
   },
-}
-
-const SCHEMA = {
-  '@context': 'https://schema.org',
-  '@type': ['AutoRepair', 'LocalBusiness'],
-  name: 'R Complete Auto Care',
-  url: 'https://www.rcompleteautocare.com',
-  telephone: '(219) 262-2711',
-  image: 'https://www.rcompleteautocare.com/logo.png',
-  priceRange: '$$',
-  address: {
-    '@type': 'PostalAddress',
-    streetAddress: '1305 E Summit St',
-    addressLocality: 'Crown Point',
-    addressRegion: 'IN',
-    postalCode: '46307',
-    addressCountry: 'US',
-  },
-  geo: { '@type': 'GeoCoordinates', latitude: 41.4175, longitude: -87.3648 },
-  openingHoursSpecification: [
-    {
-      '@type': 'OpeningHoursSpecification',
-      dayOfWeek: ['Monday', 'Tuesday', 'Wednesday', 'Thursday', 'Friday'],
-      opens: '08:00',
-      closes: '18:00',
-    },
-    { '@type': 'OpeningHoursSpecification', dayOfWeek: 'Saturday', opens: '08:00', closes: '14:00' },
-  ],
-  description: 'Extended warranty auto repair in Crown Point, IN. R Complete Auto Care handles pre-authorisation, documentation, and the entire claims process.',
-  areaServed: ['Crown Point, IN', 'St. John, IN', 'Schererville, IN', 'Merrillville, IN', 'Cedar Lake, IN'],
 }
 
 const FAQS = [
@@ -74,9 +45,8 @@ const FAQS = [
 export default function ExtendedWarrantyRepair() {
   return (
     <>
-      <script type="application/ld+json" dangerouslySetInnerHTML={{ __html: JSON.stringify(SCHEMA) }} />
-
-      {/* ── HERO ── */}
+     <FaqSchema faqs={FAQS} />
+     <div className="page-content"></div>
       <p className="location-badge">Crown Point, Indiana</p>
       <h1>Extended Warranty Auto Repair in Crown Point, IN — We Handle the Entire Process</h1>
       <p className="hero-description">
@@ -223,6 +193,6 @@ export default function ExtendedWarrantyRepair() {
       <p>We verify your coverage before you bring the vehicle in. We handle everything from pre-authorisation to final documentation. You pay only your deductible.</p>
       <p>1305 E Summit St, Crown Point, IN 46307</p>
       <a href="tel:2192622711" className="cta-button">📞 Call (219) 262-2711</a>
-    </>
+    </div>
+  </>
   )
-}
