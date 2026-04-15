@@ -2,6 +2,7 @@ export const metadata = {
   title: 'No-Start Diagnostics Crown Point IN — Car Won\'t Start | R Complete Auto Care',
   description: 'Car won\'t start in Crown Point, IN? We find the exact reason — no guessing. Same-day diagnostics. Extended warranty accepted. Call (219) 262-2711.',
   alternates: { canonical: 'https://www.rcompleteautocare.com/services/no-start-diagnostics' },
+  other: { dateModified: "2025-04-15" },
 }
 
 import Link from "next/link";
@@ -12,11 +13,14 @@ export default function NoStartDiagnostics() {
       {/* Hero */}
       <section style={{ background: "#1a1a1a", color: "#fff", padding: "60px 24px", textAlign: "center" }}>
         <p style={{ color: "#e63946", fontWeight: "bold", fontSize: "13px", letterSpacing: "1px", marginBottom: "12px" }}>CROWN POINT, INDIANA</p>
-        <h1 style={{ fontSize: "38px", fontWeight: "bold", marginBottom: "16px" }}>
-          Car Won't Start in Crown Point, IN? We Find the Cause.
+        <h1 style={{ fontSize: "38px", fontWeight: "bold", marginBottom: "12px" }}>
+          Car Won&apos;t Start in Crown Point, IN? We Find the Cause.
         </h1>
+        <p style={{ fontSize: "16px", color: "#e63946", fontWeight: "600", marginBottom: "16px", fontStyle: "italic" }}>
+          TL;DR: No-start diagnostics are completed same day in most cases. We test battery, starter, fuel delivery, spark, and electronic signals to find the exact cause — not guess with parts. Fuel pump, starter, and sensor failures are often covered by extended warranties.
+        </p>
         <p style={{ fontSize: "18px", color: "#ccc", maxWidth: "600px", margin: "0 auto 32px" }}>
-          A no-start condition can have dozens of causes. We don't guess and replace parts — we diagnose the exact reason your car won't start before recommending any repair.
+          A no-start condition can have dozens of causes. We don&apos;t guess and replace parts — we diagnose the exact reason your car won&apos;t start before recommending any repair.
         </p>
         <a href="tel:2192622711" style={{ background: "#e63946", color: "#fff", padding: "14px 32px", borderRadius: "6px", fontWeight: "bold", textDecoration: "none", fontSize: "18px" }}>
           📞 Call (219) 262-2711
@@ -31,6 +35,7 @@ export default function NoStartDiagnostics() {
 
       {/* Intro */}
       <section style={{ padding: "60px 24px", maxWidth: "800px", margin: "0 auto" }}>
+        <p style={{ color: "#888", fontSize: "13px", marginBottom: "24px" }}>Last updated: April 2025</p>
         <h2 style={{ fontSize: "28px", marginBottom: "16px" }}>No-Start Diagnosis — Done Right the First Time</h2>
         <p style={{ lineHeight: 1.8, color: "#444", marginBottom: "20px" }}>
           When your car won't start, the instinct is to start replacing parts — battery, starter, alternator. But no-start conditions have many possible causes, and replacing parts without a proper diagnosis is expensive and often doesn't solve the problem. We've seen customers spend hundreds of dollars on parts at other shops, only to bring the car to us and find a failed crankshaft position sensor or a fuel pump issue that a proper diagnostic would have caught immediately.
@@ -196,7 +201,29 @@ export default function NoStartDiagnostics() {
       }
     ]
   })}}
-/><script type="application/ld+json" dangerouslySetInnerHTML={{ __html: JSON.stringify({ "@context": "https://schema.org", "@type": "BreadcrumbList", "itemListElement": [{ "@type": "ListItem", "position": 1, "name": "Home", "item": "https://www.rcompleteautocare.com" }, { "@type": "ListItem", "position": 2, "name": "Services", "item": "https://www.rcompleteautocare.com/services/diagnostics" }, { "@type": "ListItem", "position": 3, "name": "No-Start Diagnostics" }] }) }} />
+/>
+<script type="application/ld+json" dangerouslySetInnerHTML={{ __html: JSON.stringify({
+  "@context": "https://schema.org",
+  "@type": "HowTo",
+  "name": "How No-Start Diagnostics Work at R Complete Auto Care",
+  "description": "Our 5-step no-start diagnostic process in Crown Point, IN.",
+  "step": [
+    { "@type": "HowToStep", "position": 1, "name": "Battery & Charging System Test", "text": "We perform a proper battery load test and charging system test to rule out or confirm electrical power issues." },
+    { "@type": "HowToStep", "position": 2, "name": "Fault Code Scan", "text": "We scan all modules for fault codes pointing to the no-start cause — crank sensor, cam sensor, fuel system, or security system." },
+    { "@type": "HowToStep", "position": 3, "name": "Spark & Ignition Check", "text": "We verify spark is present at the plugs and test ignition components in sequence to find the exact failure." },
+    { "@type": "HowToStep", "position": 4, "name": "Fuel Pressure & Delivery Test", "text": "We measure fuel pressure at the rail to confirm adequate fuel delivery from the pump." },
+    { "@type": "HowToStep", "position": 5, "name": "Compression Test if Needed", "text": "If spark and fuel are confirmed, we test compression to rule out internal engine mechanical failure." }
+  ]
+}) }} />
+<script type="application/ld+json" dangerouslySetInnerHTML={{ __html: JSON.stringify({
+  "@context": "https://schema.org",
+  "@type": "BreadcrumbList",
+  "itemListElement": [
+    { "@type": "ListItem", "position": 1, "name": "Home", "item": "https://www.rcompleteautocare.com" },
+    { "@type": "ListItem", "position": 2, "name": "Services", "item": "https://www.rcompleteautocare.com/services/diagnostics" },
+    { "@type": "ListItem", "position": 3, "name": "No-Start Diagnostics" }
+  ]
+}) }} />
 </div>
   );
 }

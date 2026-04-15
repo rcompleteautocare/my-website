@@ -2,6 +2,7 @@ export const metadata = {
   title: 'Engine Repair Crown Point IN — Complex Diagnosis Specialists | R Complete Auto Care',
   description: 'Engine repair in Crown Point, IN. We find WHY it failed before recommending parts — so it does not happen again. Head gaskets, timing, overheating. Call (219) 262-2711.',
   alternates: { canonical: 'https://www.rcompleteautocare.com/services/engine-repair' },
+  other: { dateModified: "2025-04-15" },
 }
 
 import Link from "next/link";
@@ -12,9 +13,12 @@ export default function EngineRepair() {
       {/* Hero */}
       <section style={{ background: "#1a1a1a", color: "#fff", padding: "60px 24px", textAlign: "center" }}>
         <p style={{ color: "#e63946", fontWeight: "bold", fontSize: "13px", letterSpacing: "1px", marginBottom: "12px" }}>CROWN POINT, INDIANA</p>
-        <h1 style={{ fontSize: "38px", fontWeight: "bold", marginBottom: "16px" }}>
+        <h1 style={{ fontSize: "38px", fontWeight: "bold", marginBottom: "12px" }}>
           Engine Repair in Crown Point, IN
         </h1>
+        <p style={{ fontSize: "16px", color: "#e63946", fontWeight: "600", marginBottom: "16px", fontStyle: "italic" }}>
+          TL;DR: Engine repair costs vary widely — minor repairs (valve cover gasket, sensors) start in the hundreds; major repairs (head gaskets, timing chains) are more significant. We give you a clear estimate after diagnosis. Extended warranties often cover engine repairs. Same-day diagnostics available.
+        </p>
         <p style={{ fontSize: "18px", color: "#ccc", maxWidth: "600px", margin: "0 auto 32px" }}>
           From minor engine repairs to major overhauls — we diagnose the real problem first so you only pay for what your vehicle actually needs.
         </p>
@@ -31,7 +35,8 @@ export default function EngineRepair() {
 
       {/* Intro */}
       <section style={{ padding: "60px 24px", maxWidth: "800px", margin: "0 auto" }}>
-        <h2 style={{ fontSize: "28px", marginBottom: "16px" }}>Crown Point's Engine Repair Specialists</h2>
+        <p style={{ color: "#888", fontSize: "13px", marginBottom: "24px" }}>Last updated: April 2025</p>
+        <h2 style={{ fontSize: "28px", marginBottom: "16px" }}>Crown Point&apos;s Engine Repair Specialists</h2>
         <p style={{ lineHeight: 1.8, color: "#444", marginBottom: "20px" }}>
           Your engine is the heart of your vehicle. At R Complete Auto Care in Crown Point, we treat engine problems with the diagnostic rigor they deserve. We don't replace parts and hope — we find the exact root cause of the failure before we recommend a single repair. That means fewer comebacks, no unnecessary expenses, and a fix that actually holds.
         </p>
@@ -232,6 +237,28 @@ export default function EngineRepair() {
       }
     ]
   })}}
-/><script type="application/ld+json" dangerouslySetInnerHTML={{ __html: JSON.stringify({ "@context": "https://schema.org", "@type": "BreadcrumbList", "itemListElement": [{ "@type": "ListItem", "position": 1, "name": "Home", "item": "https://www.rcompleteautocare.com" }, { "@type": "ListItem", "position": 2, "name": "Services", "item": "https://www.rcompleteautocare.com/services/diagnostics" }, { "@type": "ListItem", "position": 3, "name": "Engine Repair" }] }) }} /></div>
+/>
+<script type="application/ld+json" dangerouslySetInnerHTML={{ __html: JSON.stringify({
+  "@context": "https://schema.org",
+  "@type": "HowTo",
+  "name": "How Engine Repair Works at R Complete Auto Care",
+  "description": "Our diagnostic-first engine repair process in Crown Point, IN.",
+  "step": [
+    { "@type": "HowToStep", "position": 1, "name": "Comprehensive Diagnostic Scan", "text": "We scan all modules for fault codes, live data, and a complete picture of what the engine management system is reporting." },
+    { "@type": "HowToStep", "position": 2, "name": "Physical Inspection", "text": "We check compression, oil condition, cooling system pressure, and any visible damage before recommending anything." },
+    { "@type": "HowToStep", "position": 3, "name": "Root Cause Identification", "text": "We find WHY it failed — not just what failed — before picking up a tool." },
+    { "@type": "HowToStep", "position": 4, "name": "Clear Estimate & Your Approval", "text": "We call you with exactly what we found and a straight price. You approve everything before any work begins." },
+    { "@type": "HowToStep", "position": 5, "name": "Quality Repair & Verification", "text": "We complete the repair, road test, and re-scan all modules to confirm the problem is fully resolved." }
+  ]
+}) }} />
+<script type="application/ld+json" dangerouslySetInnerHTML={{ __html: JSON.stringify({
+  "@context": "https://schema.org",
+  "@type": "BreadcrumbList",
+  "itemListElement": [
+    { "@type": "ListItem", "position": 1, "name": "Home", "item": "https://www.rcompleteautocare.com" },
+    { "@type": "ListItem", "position": 2, "name": "Services", "item": "https://www.rcompleteautocare.com/services/diagnostics" },
+    { "@type": "ListItem", "position": 3, "name": "Engine Repair" }
+  ]
+}) }} /></div>
   );
 }

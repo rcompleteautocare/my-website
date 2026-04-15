@@ -1,7 +1,8 @@
 export const metadata = {
   title: 'Brake Repair Crown Point IN — Honest Inspections | R Complete Auto Care',
-  description: 'Brake repair in Crown Point, IN. Thorough inspections with measurements — not a 10-minute upsell. Honest pricing, quality parts. Call (219) 262-2711.',
+  description: 'Brake repair in Crown Point, IN. Thorough inspections with measurements — not a 10-minute upsell. Honest pricing, quality parts. Same-day service available. Call (219) 262-2711.',
   alternates: { canonical: 'https://www.rcompleteautocare.com/services/brake-repair' },
+  other: { dateModified: "2025-04-15" },
 }
 
 import Link from "next/link";
@@ -12,9 +13,12 @@ export default function BrakeRepair() {
       {/* Hero */}
       <section style={{ background: "#1a1a1a", color: "#fff", padding: "60px 24px", textAlign: "center" }}>
         <p style={{ color: "#e63946", fontWeight: "bold", fontSize: "13px", letterSpacing: "1px", marginBottom: "12px" }}>CROWN POINT, INDIANA</p>
-        <h1 style={{ fontSize: "38px", fontWeight: "bold", marginBottom: "16px" }}>
+        <h1 style={{ fontSize: "38px", fontWeight: "bold", marginBottom: "12px" }}>
           Brake Repair in Crown Point, IN
         </h1>
+        <p style={{ fontSize: "16px", color: "#e63946", fontWeight: "600", marginBottom: "16px", fontStyle: "italic" }}>
+          TL;DR: Brake pad replacement typically takes 1–2 hours. Full brake jobs (pads + rotors) usually run $150–$400 per axle depending on vehicle and parts. We give you exact measurements and a clear estimate before touching anything.
+        </p>
         <p style={{ fontSize: "18px", color: "#ccc", maxWidth: "600px", margin: "0 auto 32px" }}>
           Your brakes are the most important safety system on your vehicle. We perform thorough inspections with actual measurements — not a quick visual and an upsell.
         </p>
@@ -31,6 +35,8 @@ export default function BrakeRepair() {
 
       {/* Intro */}
       <section style={{ padding: "60px 24px", maxWidth: "800px", margin: "0 auto" }}>
+        <p style={{ color: "#888", fontSize: "13px", marginBottom: "24px" }}>Last updated: April 2025</p>
+
         <h2 style={{ fontSize: "28px", marginBottom: "16px" }}>Honest Brake Inspections — No Pressure, No Upsell</h2>
         <p style={{ lineHeight: 1.8, color: "#444", marginBottom: "20px" }}>
           At R Complete Auto Care in Crown Point, we take brake repair seriously. Your braking system is your most critical safety system — and it deserves a proper inspection, not a rushed visual check designed to sell you pads you don't need yet.
@@ -138,11 +144,13 @@ export default function BrakeRepair() {
         <div style={{ maxWidth: "800px", margin: "0 auto" }}>
           <h2 style={{ fontSize: "28px", marginBottom: "24px" }}>Frequently Asked Questions — Brake Repair</h2>
           {[
+            { q: "How much does brake repair cost in Crown Point, IN?", a: "Brake pad replacement typically runs $150–$300 per axle for parts and labor. If rotors also need replacement, expect $250–$400 per axle depending on your vehicle. We give you the exact price after our inspection — no surprises." },
+            { q: "How long does brake repair take?", a: "Most brake pad replacements take 1–2 hours. A full brake job (pads and rotors on all four wheels) typically takes 2–3 hours. We work efficiently and most repairs are completed same day." },
+            { q: "Do I need an appointment for brake repair in Crown Point?", a: "We recommend calling ahead at (219) 262-2711. Same-day appointments are often available. We're open Mon–Fri 8am–6pm and Sat 8am–2pm." },
             { q: "How do I know when my brakes need to be replaced?", a: "Common signs include squealing, grinding, a soft pedal, pulling to one side, or a brake warning light. The most accurate way is a proper inspection with pad thickness and rotor measurements — which we provide at every brake service." },
             { q: "Is it safe to drive with grinding brakes?", a: "No. Grinding means your brake pads are worn through to the metal backing plate, which is metal-on-metal contact with your rotors. This reduces stopping power and damages your rotors quickly. Get it in as soon as possible." },
             { q: "How long do brake pads last?", a: "It depends heavily on driving habits and conditions. City driving with frequent stops wears pads much faster than highway driving. Most pads last between 30,000 and 70,000 miles — but the only way to know for sure is a measurement." },
             { q: "Why is my car shaking when I brake?", a: "Shaking when braking — especially at highway speeds — is almost always warped rotors. Heat and stress cause rotors to develop thickness variations that cause vibration when the pads clamp down. Rotor replacement or resurfacing resolves this." },
-            { q: "My ABS light is on — is that a brake problem?", a: "The ABS (anti-lock braking system) warning light indicates a fault in the ABS system, which can include wheel speed sensors, the ABS module, or hydraulic components. Your regular brakes will still work, but ABS may not activate in an emergency. We can diagnose and repair it." },
             { q: "Do you accept extended warranties for brake repair?", a: "Yes — some brake components are covered under extended warranty policies. Call us with your warranty information and we'll verify what's covered before any work begins." },
           ].map(item => (
             <div key={item.q} style={{ marginBottom: "20px", borderBottom: "1px solid #e0e0e0", paddingBottom: "20px" }}>
@@ -174,45 +182,45 @@ export default function BrakeRepair() {
         </a>
       </section>
 
-    <script
-  type="application/ld+json"
-  dangerouslySetInnerHTML={{ __html: JSON.stringify({
-    "@context": "https://schema.org",
-    "@type": "FAQPage",
-    "mainEntity": [
-      {
-        "@type": "Question",
-        "name": "How do I know when my brakes need to be replaced?",
-        "acceptedAnswer": { "@type": "Answer", "text": "Common signs include squealing, grinding, a soft pedal, pulling to one side, or a brake warning light. The most accurate way is a proper inspection with pad thickness and rotor measurements — which we provide at every brake service." }
-      },
-      {
-        "@type": "Question",
-        "name": "Is it safe to drive with grinding brakes?",
-        "acceptedAnswer": { "@type": "Answer", "text": "No. Grinding means your brake pads are worn through to the metal backing plate, which is metal-on-metal contact with your rotors. This reduces stopping power and damages your rotors quickly. Get it in as soon as possible." }
-      },
-      {
-        "@type": "Question",
-        "name": "How long do brake pads last?",
-        "acceptedAnswer": { "@type": "Answer", "text": "It depends heavily on driving habits and conditions. City driving with frequent stops wears pads much faster than highway driving. Most pads last between 30,000 and 70,000 miles — but the only way to know for sure is a measurement." }
-      },
-      {
-        "@type": "Question",
-        "name": "Why is my car shaking when I brake?",
-        "acceptedAnswer": { "@type": "Answer", "text": "Shaking when braking — especially at highway speeds — is almost always warped rotors. Heat and stress cause rotors to develop thickness variations that cause vibration when the pads clamp down. Rotor replacement or resurfacing resolves this." }
-      },
-      {
-        "@type": "Question",
-        "name": "My ABS light is on — is that a brake problem?",
-        "acceptedAnswer": { "@type": "Answer", "text": "The ABS warning light indicates a fault in the ABS system, which can include wheel speed sensors, the ABS module, or hydraulic components. Your regular brakes will still work, but ABS may not activate in an emergency. We can diagnose and repair it." }
-      },
-      {
-        "@type": "Question",
-        "name": "Do you accept extended warranties for brake repair?",
-        "acceptedAnswer": { "@type": "Answer", "text": "Yes — some brake components are covered under extended warranty policies. Call us with your warranty information and we'll verify what's covered before any work begins." }
-      }
-    ]
-  })}}
-/><script type="application/ld+json" dangerouslySetInnerHTML={{ __html: JSON.stringify({ "@context": "https://schema.org", "@type": "BreadcrumbList", "itemListElement": [{ "@type": "ListItem", "position": 1, "name": "Home", "item": "https://www.rcompleteautocare.com" }, { "@type": "ListItem", "position": 2, "name": "Services", "item": "https://www.rcompleteautocare.com/services/diagnostics" }, { "@type": "ListItem", "position": 3, "name": "Brake Repair" }] }) }} />
-</div>
+    <script type="application/ld+json" dangerouslySetInnerHTML={{ __html: JSON.stringify({
+      "@context": "https://schema.org",
+      "@type": "FAQPage",
+      "mainEntity": [
+        { "@type": "Question", "name": "How much does brake repair cost in Crown Point, IN?", "acceptedAnswer": { "@type": "Answer", "text": "Brake pad replacement typically runs $150–$300 per axle for parts and labor. If rotors also need replacement, expect $250–$400 per axle depending on your vehicle. We give you the exact price after our inspection — no surprises." } },
+        { "@type": "Question", "name": "How long does brake repair take?", "acceptedAnswer": { "@type": "Answer", "text": "Most brake pad replacements take 1–2 hours. A full brake job (pads and rotors on all four wheels) typically takes 2–3 hours. We work efficiently and most repairs are completed same day." } },
+        { "@type": "Question", "name": "Do I need an appointment for brake repair in Crown Point?", "acceptedAnswer": { "@type": "Answer", "text": "We recommend calling ahead at (219) 262-2711. Same-day appointments are often available. We're open Mon–Fri 8am–6pm and Sat 8am–2pm." } },
+        { "@type": "Question", "name": "How do I know when my brakes need to be replaced?", "acceptedAnswer": { "@type": "Answer", "text": "Common signs include squealing, grinding, a soft pedal, pulling to one side, or a brake warning light. The most accurate way is a proper inspection with pad thickness and rotor measurements — which we provide at every brake service." } },
+        { "@type": "Question", "name": "Is it safe to drive with grinding brakes?", "acceptedAnswer": { "@type": "Answer", "text": "No. Grinding means your brake pads are worn through to the metal backing plate, which is metal-on-metal contact with your rotors. This reduces stopping power and damages your rotors quickly. Get it in as soon as possible." } },
+        { "@type": "Question", "name": "How long do brake pads last?", "acceptedAnswer": { "@type": "Answer", "text": "It depends heavily on driving habits and conditions. City driving with frequent stops wears pads much faster than highway driving. Most pads last between 30,000 and 70,000 miles — but the only way to know for sure is a measurement." } },
+        { "@type": "Question", "name": "Why is my car shaking when I brake?", "acceptedAnswer": { "@type": "Answer", "text": "Shaking when braking — especially at highway speeds — is almost always warped rotors. Heat and stress cause rotors to develop thickness variations that cause vibration when the pads clamp down. Rotor replacement or resurfacing resolves this." } },
+        { "@type": "Question", "name": "Do you accept extended warranties for brake repair?", "acceptedAnswer": { "@type": "Answer", "text": "Yes — some brake components are covered under extended warranty policies. Call us with your warranty information and we'll verify what's covered before any work begins." } }
+      ]
+    }) }} />
+
+    <script type="application/ld+json" dangerouslySetInnerHTML={{ __html: JSON.stringify({
+      "@context": "https://schema.org",
+      "@type": "HowTo",
+      "name": "How Brake Repair Works at R Complete Auto Care",
+      "description": "Our 5-step brake inspection and repair process in Crown Point, IN.",
+      "totalTime": "PT2H",
+      "step": [
+        { "@type": "HowToStep", "position": 1, "name": "Pad Thickness Measurement", "text": "We measure brake pad thickness on all four corners using a proper gauge and report the exact measurement." },
+        { "@type": "HowToStep", "position": 2, "name": "Rotor Inspection & Measurement", "text": "We measure rotor thickness and check for warping, scoring, and heat cracks." },
+        { "@type": "HowToStep", "position": 3, "name": "Caliper & Hardware Check", "text": "We check caliper operation, slide pins, and brake hardware for proper function." },
+        { "@type": "HowToStep", "position": 4, "name": "Brake Fluid Condition", "text": "We test fluid condition and recommend a flush only when actually needed." },
+        { "@type": "HowToStep", "position": 5, "name": "ABS & Warning Light Scan", "text": "We scan the ABS module for fault codes if any warning lights are on." }
+      ]
+    }) }} />
+
+    <script type="application/ld+json" dangerouslySetInnerHTML={{ __html: JSON.stringify({
+      "@context": "https://schema.org",
+      "@type": "BreadcrumbList",
+      "itemListElement": [
+        { "@type": "ListItem", "position": 1, "name": "Home", "item": "https://www.rcompleteautocare.com" },
+        { "@type": "ListItem", "position": 2, "name": "Services", "item": "https://www.rcompleteautocare.com/services/diagnostics" },
+        { "@type": "ListItem", "position": 3, "name": "Brake Repair" }
+      ]
+    }) }} />
+    </div>
   );
 }

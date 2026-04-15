@@ -4,6 +4,7 @@ export const metadata = {
   title: 'AC Repair Crown Point IN | Car Heat Not Working | R Complete Auto Care',
   description: 'AC and heating repair in Crown Point, IN. Car AC not blowing cold or heat not working? Same-day diagnostics available. Call (219) 262-2711.',
   alternates: { canonical: 'https://www.rcompleteautocare.com/services/ac-heating-repair' },
+  other: { dateModified: "2025-04-15" },
 }
 
 export default function AcHeatingRepair() {
@@ -14,9 +15,12 @@ export default function AcHeatingRepair() {
         <p style={{ color: "#e63946", fontWeight: "bold", fontSize: "13px", letterSpacing: "0.1em", textTransform: "uppercase", marginBottom: "12px" }}>
           Crown Point, Indiana
         </p>
-        <h1 style={{ fontSize: "38px", fontWeight: "bold", marginBottom: "16px", lineHeight: 1.2 }}>
-          A/C & Heating Repair in Crown Point, IN
+        <h1 style={{ fontSize: "38px", fontWeight: "bold", marginBottom: "12px", lineHeight: 1.2 }}>
+          A/C &amp; Heating Repair in Crown Point, IN
         </h1>
+        <p style={{ fontSize: "16px", color: "#e63946", fontWeight: "600", marginBottom: "16px", fontStyle: "italic" }}>
+          TL;DR: A refrigerant recharge starts around $100–$150. Compressor replacement is a larger repair. Heater core replacement varies significantly by vehicle. We diagnose before we recommend — same-day appointments available for Crown Point and surrounding areas.
+        </p>
         <p style={{ fontSize: "18px", color: "#ccc", maxWidth: "600px", margin: "0 auto 32px" }}>
           No cold air in summer? No heat in an Indiana winter? We diagnose and repair all A/C and heating problems — fast and right.
         </p>
@@ -33,7 +37,8 @@ export default function AcHeatingRepair() {
       </section>
 
       <section style={{ padding: "60px 24px", maxWidth: "800px", margin: "0 auto" }}>
-        <h2 style={{ fontSize: "28px", marginBottom: "16px" }}>Expert A/C & Heating Repair in Crown Point</h2>
+        <p style={{ color: "#888", fontSize: "13px", marginBottom: "24px" }}>Last updated: April 2025</p>
+        <h2 style={{ fontSize: "28px", marginBottom: "16px" }}>Expert A/C &amp; Heating Repair in Crown Point</h2>
         <p style={{ lineHeight: 1.8, color: "#444", marginBottom: "20px" }}>
           Crown Point summers are hot and Indiana winters are brutal. When your A/C or heat stops working, you need it fixed fast. At R Complete Auto Care, we perform a thorough diagnostic of your entire climate control system before recommending any repair — so you only pay for what you actually need.
         </p>
@@ -133,6 +138,27 @@ export default function AcHeatingRepair() {
           ]
         })}}
       />
-    <script type="application/ld+json" dangerouslySetInnerHTML={{ __html: JSON.stringify({ "@context": "https://schema.org", "@type": "BreadcrumbList", "itemListElement": [{ "@type": "ListItem", "position": 1, "name": "Home", "item": "https://www.rcompleteautocare.com" }, { "@type": "ListItem", "position": 2, "name": "Services", "item": "https://www.rcompleteautocare.com/services/diagnostics" }, { "@type": "ListItem", "position": 3, "name": "A/C & Heating Repair" }] }) }} /></div>
+
+    <script type="application/ld+json" dangerouslySetInnerHTML={{ __html: JSON.stringify({
+      "@context": "https://schema.org",
+      "@type": "HowTo",
+      "name": "How A/C & Heating Repair Works at R Complete Auto Care",
+      "description": "Our A/C and heating diagnostic and repair process in Crown Point, IN.",
+      "step": [
+        { "@type": "HowToStep", "position": 1, "name": "System Diagnosis", "text": "We perform a full A/C or heating system diagnostic — checking refrigerant pressure, component operation, and temperature output." },
+        { "@type": "HowToStep", "position": 2, "name": "Leak Detection if Needed", "text": "If refrigerant is low, we perform a leak detection test to find the source before recharging — otherwise the problem returns." },
+        { "@type": "HowToStep", "position": 3, "name": "Clear Estimate", "text": "We explain exactly what failed and give you a clear price before starting any repair." },
+        { "@type": "HowToStep", "position": 4, "name": "Repair & Verification", "text": "We complete the repair and verify correct system operation — checking vent temperatures to confirm the fix." }
+      ]
+    }) }} />
+    <script type="application/ld+json" dangerouslySetInnerHTML={{ __html: JSON.stringify({
+      "@context": "https://schema.org",
+      "@type": "BreadcrumbList",
+      "itemListElement": [
+        { "@type": "ListItem", "position": 1, "name": "Home", "item": "https://www.rcompleteautocare.com" },
+        { "@type": "ListItem", "position": 2, "name": "Services", "item": "https://www.rcompleteautocare.com/services/diagnostics" },
+        { "@type": "ListItem", "position": 3, "name": "A/C & Heating Repair" }
+      ]
+    }) }} /></div>
   );
 }

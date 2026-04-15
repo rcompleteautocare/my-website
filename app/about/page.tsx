@@ -2,7 +2,7 @@ import Link from "next/link";
 
 export const metadata = {
   title: "About R Complete Auto Care | Crown Point IN Auto Repair | (219) 262-2711",
-  description: "Learn about R Complete Auto Care in Crown Point IN. Diagnostic-first auto repair shop built on 25+ years of family experience. Honest estimates, expert repairs. Call (219) 262-2711.",
+  description: "Learn about R Complete Auto Care in Crown Point IN. Diagnostic-first auto repair shop with 35+ years of technician experience. ASE certified since 1993. Honest estimates, expert repairs. Call (219) 262-2711.",
   alternates: {
     canonical: "https://www.rcompleteautocare.com/about",
   },
@@ -19,8 +19,8 @@ export default function About() {
         <h1 style={{ fontSize: "38px", fontWeight: "bold", marginBottom: "16px", lineHeight: 1.2 }}>
           About R Complete Auto Care
         </h1>
-        <p style={{ fontSize: "18px", color: "#ccc", maxWidth: "600px", margin: "0 auto 32px" }}>
-          Crown Point's diagnostic-first auto repair shop. Built on 25+ years of family experience, honest communication, and repairs done right.
+        <p className="speakable" style={{ fontSize: "18px", color: "#ccc", maxWidth: "600px", margin: "0 auto 32px" }}>
+          Crown Point&apos;s diagnostic-first auto repair shop — located at 1305 E Summit St, Crown Point, IN 46307. Lead technician Dave has been repairing cars since 1989, ASE certified since 1993. Honest communication and repairs done right.
         </p>
         <a href="tel:2192622711" style={{ background: "#e63946", color: "#fff", padding: "14px 32px", borderRadius: "6px", fontWeight: "bold", fontSize: "18px", textDecoration: "none" }}>
           📞 Call (219) 262-2711
@@ -35,23 +35,72 @@ export default function About() {
       </section>
 
       <section style={{ padding: "60px 24px", maxWidth: "800px", margin: "0 auto" }}>
+        <p style={{ color: "#888", fontSize: "13px", marginBottom: "32px" }}>Last updated: April 2025</p>
+
         <h2 style={{ fontSize: "28px", marginBottom: "16px" }}>Why We Started R Complete Auto Care in Crown Point</h2>
         <p style={{ lineHeight: 1.8, color: "#444", marginBottom: "20px" }}>
           R Complete Auto Care was founded with a simple mission: to give Crown Point and Northwest Indiana drivers an auto repair shop they could actually trust. A shop that finds the real problem before recommending a repair. A shop that gives you a straight answer and a fair price. A shop that treats your vehicle like it matters.
         </p>
         <p style={{ lineHeight: 1.8, color: "#444", marginBottom: "20px" }}>
-          The knowledge and discipline behind this shop comes from over 25 years of family experience in the auto repair industry. We've seen what happens when shops skip the diagnostic process — customers get charged for parts they didn't need, problems come back, and trust is lost. We opened R Complete Auto Care to do things differently.
+          Our lead technician Dave has been working on cars since 1989 and earned his first ASE certification in 1993 — bringing over 35 years of hands-on experience to every diagnostic. Dave R brings 15 years of expertise alongside him. Together, they&apos;ve seen what happens when shops skip the diagnostic step — customers get charged for parts they didn&apos;t need, problems come back, and trust is lost. R Complete Auto Care was built to do things right.
         </p>
         <p style={{ lineHeight: 1.8, color: "#444", marginBottom: "40px" }}>
           We're located at 1305 E Summit St in Crown Point, Indiana, and we serve drivers throughout Lake County — including St. John, Schererville, Merrillville, and Cedar Lake.
         </p>
 
-        <h2 style={{ fontSize: "28px", marginBottom: "24px" }}>Built on 25+ Years of Family Experience</h2>
+        {/* Authority Signals */}
+        <div style={{ background: "#f9f9f9", border: "1px solid #e0e0e0", borderLeft: "4px solid #e63946", borderRadius: "8px", padding: "32px", marginBottom: "40px" }}>
+          <h2 style={{ fontSize: "24px", marginBottom: "20px" }}>Our Credentials &amp; Experience</h2>
+          <div style={{ display: "grid", gridTemplateColumns: "repeat(auto-fit, minmax(200px, 1fr))", gap: "20px" }}>
+            <div>
+              <div style={{ fontWeight: "bold", color: "#e63946", marginBottom: "6px" }}>ASE Certified Technicians</div>
+              <div style={{ color: "#444", lineHeight: 1.7 }}>Dave (ASE certified since 1993, 35+ years experience) &amp; Dave R (15 years experience) — both certified by the National Institute for Automotive Service Excellence</div>
+            </div>
+            <div>
+              <div style={{ fontWeight: "bold", color: "#e63946", marginBottom: "6px" }}>BBB Accredited</div>
+              <div style={{ color: "#444", lineHeight: 1.7 }}>
+                <a href="https://www.bbb.org/us/in/crown-point/profile/auto-repair/r-complete-auto-care-0352-90173711" target="_blank" rel="noopener noreferrer" style={{ color: "#1a1a1a" }}>Better Business Bureau member</a> — Crown Point, Indiana
+              </div>
+            </div>
+            <div>
+              <div style={{ fontWeight: "bold", color: "#e63946", marginBottom: "6px" }}>Chamber of Commerce</div>
+              <div style={{ color: "#444", lineHeight: 1.7 }}>
+                <a href="https://www.chamberofcommerce.com/business-directory/indiana/crown-point/auto-repair-shop/2034231063-r-complete-auto-care" target="_blank" rel="noopener noreferrer" style={{ color: "#1a1a1a" }}>Crown Point Chamber of Commerce member</a>
+              </div>
+            </div>
+            <div>
+              <div style={{ fontWeight: "bold", color: "#e63946", marginBottom: "6px" }}>Years in Business</div>
+              <div style={{ color: "#444", lineHeight: 1.7 }}>35+ years of combined technician experience — diagnostic-first auto repair since day one</div>
+            </div>
+            <div>
+              <div style={{ fontWeight: "bold", color: "#e63946", marginBottom: "6px" }}>Customer Rating</div>
+              <div style={{ color: "#444", lineHeight: 1.7 }}>
+                <a href="https://www.google.com/maps/place/R+Complete+Auto+Care/@41.4270614,-87.3410824,17z" target="_blank" rel="noopener noreferrer" style={{ color: "#1a1a1a" }}>4.8 stars on Google</a> — built on honest work and real results
+              </div>
+            </div>
+            <div>
+              <div style={{ fontWeight: "bold", color: "#e63946", marginBottom: "6px" }}>Extended Warranty Approved</div>
+              <div style={{ color: "#444", lineHeight: 1.7 }}>Licensed repair facility — accepted by CarShield, Endurance, CARS Protection, AmTrust, and all major extended warranty providers</div>
+            </div>
+            <div>
+              <div style={{ fontWeight: "bold", color: "#e63946", marginBottom: "6px" }}>Yelp &amp; Facebook</div>
+              <div style={{ color: "#444", lineHeight: 1.7 }}>
+                <a href="https://www.yelp.com/biz/r-complete-auto-care-crown-point" target="_blank" rel="noopener noreferrer" style={{ color: "#1a1a1a" }}>Find us on Yelp</a> · <a href="https://www.facebook.com/RCompleteAutoCare/" target="_blank" rel="noopener noreferrer" style={{ color: "#1a1a1a" }}>Facebook</a>
+              </div>
+            </div>
+            <div>
+              <div style={{ fontWeight: "bold", color: "#e63946", marginBottom: "6px" }}>Service Area</div>
+              <div style={{ color: "#444", lineHeight: 1.7 }}>Crown Point, St. John, Schererville, Merrillville, Cedar Lake — all of Lake County, IN</div>
+            </div>
+          </div>
+        </div>
+
+        <h2 style={{ fontSize: "28px", marginBottom: "24px" }}>35+ Years of Technician Experience</h2>
         <p style={{ lineHeight: 1.8, color: "#444", marginBottom: "20px" }}>
-          Auto repair isn't just a job for us — it's something that's been in our family for over two and a half decades. That experience shapes everything about how we run our shop. It's why we diagnose before we repair. It's why we explain what we find in plain language. It's why we don't recommend work that isn't needed.
+          Dave has been diagnosing and repairing vehicles since 1989. That depth of experience shapes everything about how we run our shop — it&apos;s why we diagnose before we repair, why we explain what we find in plain language, and why we don&apos;t recommend work that isn&apos;t needed.
         </p>
         <p style={{ lineHeight: 1.8, color: "#444", marginBottom: "40px" }}>
-          When you bring your vehicle to R Complete Auto Care in Crown Point, you're getting the benefit of that experience — applied honestly and directly to your specific situation.
+          When you bring your vehicle to R Complete Auto Care in Crown Point, you&apos;re getting the benefit of that experience — applied honestly and directly to your specific situation.
         </p>
 
         <h2 style={{ fontSize: "28px", marginBottom: "24px" }}>What We Stand For</h2>
@@ -122,6 +171,82 @@ export default function About() {
           📞 Call (219) 262-2711
         </a>
       </section>
+
+      <script type="application/ld+json" dangerouslySetInnerHTML={{ __html: JSON.stringify({
+        "@context": "https://schema.org",
+        "@type": "Person",
+        "name": "Dave",
+        "jobTitle": "Lead Technician",
+        "hasCredential": [
+          {
+            "@type": "EducationalOccupationalCredential",
+            "credentialCategory": "certification",
+            "name": "ASE Certified Technician",
+            "recognizedBy": { "@type": "Organization", "name": "National Institute for Automotive Service Excellence (ASE)" }
+          }
+        ],
+        "worksFor": {
+          "@type": "AutoRepair",
+          "name": "R Complete Auto Care",
+          "url": "https://www.rcompleteautocare.com",
+          "sameAs": [
+            "https://www.google.com/maps/place/R+Complete+Auto+Care/@41.4270614,-87.3410824,17z",
+            "https://www.yelp.com/biz/r-complete-auto-care-crown-point",
+            "https://www.facebook.com/RCompleteAutoCare/",
+            "https://www.bbb.org/us/in/crown-point/profile/auto-repair/r-complete-auto-care-0352-90173711"
+          ]
+        },
+        "knowsAbout": [
+          "Auto Diagnostics",
+          "Engine Repair",
+          "Transmission Repair",
+          "Electrical Diagnostics",
+          "Extended Warranty Repair",
+          "Brake Repair",
+          "Suspension Repair",
+          "ASE-standard diagnostic procedures"
+        ],
+        "description": "ASE-certified technician since 1993 with 35+ years of hands-on experience starting in 1989. Specializes in diagnostic-first auto repair, complex diagnostics, and extended warranty claims in Crown Point, Indiana."
+      }) }} />
+
+      <script type="application/ld+json" dangerouslySetInnerHTML={{ __html: JSON.stringify({
+        "@context": "https://schema.org",
+        "@type": "Person",
+        "name": "Dave R",
+        "jobTitle": "Lead Technician",
+        "hasCredential": [
+          {
+            "@type": "EducationalOccupationalCredential",
+            "credentialCategory": "certification",
+            "name": "ASE Certified Technician",
+            "recognizedBy": { "@type": "Organization", "name": "National Institute for Automotive Service Excellence (ASE)" }
+          }
+        ],
+        "worksFor": {
+          "@type": "AutoRepair",
+          "name": "R Complete Auto Care",
+          "url": "https://www.rcompleteautocare.com"
+        },
+        "knowsAbout": ["Auto Diagnostics", "Engine Repair", "Transmission Repair", "Electrical Diagnostics", "Extended Warranty Repair"],
+        "description": "ASE-certified technician with 15 years of experience at R Complete Auto Care in Crown Point, Indiana."
+      }) }} />
+
+      {/* BreadcrumbList */}
+      <script type="application/ld+json" dangerouslySetInnerHTML={{ __html: JSON.stringify({
+        "@context": "https://schema.org",
+        "@type": "BreadcrumbList",
+        "itemListElement": [
+          { "@type": "ListItem", "position": 1, "name": "Home", "item": "https://www.rcompleteautocare.com" },
+          { "@type": "ListItem", "position": 2, "name": "About" }
+        ]
+      }) }} />
+
+      {/* Speakable */}
+      <script type="application/ld+json" dangerouslySetInnerHTML={{ __html: JSON.stringify({
+        "@context": "https://schema.org",
+        "@type": "SpeakableSpecification",
+        "cssSelector": [".speakable", "h1"]
+      }) }} />
 
     </div>
   );

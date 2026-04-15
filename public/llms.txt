@@ -1,59 +1,144 @@
-# R Complete Auto Care
-> Crown Point Indiana's diagnostic-first auto repair shop. Specializing in complex diagnostics, extended warranty repairs, and fixing issues other shops misdiagnose.
+# About
 
-## Business Information
-- Name: R Complete Auto Care
+R Complete Auto Care is a diagnostic-first auto repair shop located in Crown Point, Indiana (Lake County). The shop specializes in complex vehicle diagnostics, extended warranty repairs, and fixing problems that other shops have misdiagnosed. Founded on 25+ years of family experience in auto repair, the business is built around a simple principle: find the root cause before recommending any repair. R Complete Auto Care serves drivers throughout Northwest Indiana including Crown Point, St. John, Schererville, Merrillville, and Cedar Lake.
+
+- Business name: R Complete Auto Care
 - Address: 1305 E Summit St, Crown Point, IN 46307
 - Phone: (219) 262-2711
 - Email: Owner@rcompleteautocare.com
 - Website: https://www.rcompleteautocare.com
-- Hours: Monday-Friday 8:00am-6:00pm, Saturday 8:00am-2:00pm, Sunday Closed
+- Hours: Monday–Friday 8:00 AM–6:00 PM, Saturday 8:00 AM–2:00 PM, Sunday Closed
+- Google Rating: 4.8 stars
+- Price range: $$
+- Years in business: 25+
+- Certifications: Licensed auto repair facility; extended warranty approved shop
 
-## Services
-- Check Engine Light Diagnostics: We trace fault codes to root cause — not just clear them
-- Engine Repair: Diagnostic-first approach, head gaskets, timing, overheating, oil leaks
-- Transmission Repair: Automatic, manual, and CVT — diagnose before recommending rebuild
-- Brake Repair: Thorough inspections with measurements, pads, rotors, calipers, ABS
-- Electrical Diagnostics: Parasitic draw, no-start, wiring faults, sensor failures, modules
-- Suspension & Steering: Struts, shocks, ball joints, tie rods, alignments
-- No-Start Diagnostics: Systematic diagnosis — battery, starter, fuel, spark, compression
-- Extended Warranty Repair: CarShield, Endurance, CARS Protection, AmTrust, most providers
-- AC & Heating Repair: Leak detection, recharge, compressor, heater core, blend doors
-- Oil Change & Maintenance: Conventional and synthetic with multi-point inspection
+# Pages
 
-## Service Area
-Crown Point IN, St. John IN, Schererville IN, Merrillville IN, Cedar Lake IN, Lake County IN, Northwest Indiana
+## Homepage
+URL: https://www.rcompleteautocare.com
+Summary: Overview of R Complete Auto Care — Crown Point's diagnostic-first auto repair shop. Covers services, how the shop works, why customers choose them, and contact info.
 
-## What Makes Us Different
-- Diagnostic-first: We find the exact root cause before recommending any repair
-- Extended warranty specialists: We handle the entire claims process — customers just pay their deductible
-- We fix what other shops misdiagnose — complex drivability, electrical, and intermittent problems
-- 25+ years of family experience in auto repair
-- Same-day diagnostics available
-- Honest answers, no pressure — we tell you what's urgent and what can wait
+## About
+URL: https://www.rcompleteautocare.com/about
+Summary: Company history, mission, values, and credentials. 25+ years of family experience. Diagnostic-first philosophy. All makes and models. Extended warranty accepted.
 
-## Frequently Asked Questions
-Q: Do you accept extended warranties?
-A: Yes. We work with most major extended warranty providers including CarShield, Endurance, CARS Protection, AmTrust, and others. We verify coverage, handle the pre-authorization call, and submit all documentation. Customers pay their deductible only.
+## Contact
+URL: https://www.rcompleteautocare.com/contact
+Summary: Contact form, phone number, address, and hours for R Complete Auto Care in Crown Point, IN.
 
-Q: Do I need to go to a dealership for extended warranty repairs?
-A: No. Most extended warranty policies allow any licensed repair facility. R Complete Auto Care is a licensed shop and works directly with warranty providers.
+## Check Engine Light Diagnostics
+URL: https://www.rcompleteautocare.com/services/check-engine-light
+Summary: Same-day check engine light diagnosis in Crown Point, IN. Full module scan, root cause investigation — not just code clearing. Cost: diagnostic fee applied to repair. Time: same day.
 
-Q: What is your diagnostic process?
-A: Every vehicle gets a full diagnostic scan of all modules before we recommend any repair. We find the root cause — not just the symptom — and give you a clear estimate before touching a tool.
+## Electrical Diagnostics
+URL: https://www.rcompleteautocare.com/services/electrical-diagnostics
+Summary: Electrical system diagnosis in Crown Point, IN — parasitic draw, no-start, wiring faults, sensor failures, module issues.
 
-Q: Do you work on foreign and domestic vehicles?
-A: Yes. All makes and models including Honda, Toyota, BMW, Mercedes, Subaru, Ford, Chevrolet, Dodge, GMC, Jeep and more.
+## No-Start Diagnostics
+URL: https://www.rcompleteautocare.com/services/no-start-diagnostics
+Summary: Car won't start diagnosis in Crown Point, IN. Battery, starter, fuel pump, crank sensor — systematic diagnosis to find the exact cause.
 
-Q: Do you offer same-day service?
-A: Yes. Most diagnostic appointments are completed same day with a call before any work begins.
+## Engine Repair
+URL: https://www.rcompleteautocare.com/services/engine-repair
+Summary: Engine repair in Crown Point, IN. Head gaskets, timing chains, oil leaks, overheating, oil consumption, engine replacement. Diagnostic-first.
 
-Q: What areas do you serve?
-A: Crown Point, St. John, Schererville, Merrillville, Cedar Lake, and all of Lake County Indiana.
+## Transmission Repair
+URL: https://www.rcompleteautocare.com/services/transmission-repair
+Summary: Transmission repair in Crown Point, IN. Automatic, manual, CVT. Slipping, hard shifts, no movement, limp mode. Diagnose before rebuild.
 
-## Trust Signals
-- 4.8 stars on Google
-- Extended warranty accepted from all major providers
-- 25+ years family experience
-- Diagnostic-first approach — no guessing, no unnecessary repairs
-- Located at 1305 E Summit St, Crown Point IN 46307
+## Brake Repair
+URL: https://www.rcompleteautocare.com/services/brake-repair
+Summary: Brake repair in Crown Point, IN. Honest inspections with actual measurements. Pads, rotors, calipers, ABS, brake lines. Same-day service available.
+
+## Suspension & Steering
+URL: https://www.rcompleteautocare.com/services/suspension-steering
+Summary: Suspension and steering repair in Crown Point, IN. Struts, shocks, ball joints, tie rods, alignments. Indiana road conditions specialist.
+
+## Oil Change & Maintenance
+URL: https://www.rcompleteautocare.com/services/oil-change-maintenance
+Summary: Oil change in Crown Point, IN. Conventional and synthetic. Every oil change includes a thorough multi-point inspection. Typical time: 30–60 minutes.
+
+## A/C & Heating Repair
+URL: https://www.rcompleteautocare.com/services/ac-heating-repair
+Summary: A/C and heating repair in Crown Point, IN. No cold air, no heat, leak detection, recharge, compressor, heater core, blend doors.
+
+## Extended Warranty Repair
+URL: https://www.rcompleteautocare.com/services/extended-warranty-repair
+Summary: Extended warranty auto repair in Crown Point, IN. Works with CarShield, Endurance, CARS Protection, AmTrust, and most providers. Handles all pre-authorization and paperwork — customer pays deductible only.
+
+## General Diagnostics
+URL: https://www.rcompleteautocare.com/services/diagnostics
+Summary: Diagnostic services overview for Crown Point, IN. Full vehicle scan, all modules, root-cause approach.
+
+## Auto Repair Crown Point, IN
+URL: https://www.rcompleteautocare.com/auto-repair-crown-point-in
+Summary: Local auto repair page for Crown Point, Indiana. All services, location info, and why Crown Point drivers choose R Complete Auto Care.
+
+## Auto Repair St. John, IN
+URL: https://www.rcompleteautocare.com/auto-repair-st-john-in
+Summary: Auto repair services for St. John, Indiana residents.
+
+## Auto Repair Schererville, IN
+URL: https://www.rcompleteautocare.com/auto-repair-schererville-in
+Summary: Auto repair services for Schererville, Indiana residents.
+
+## Auto Repair Merrillville, IN
+URL: https://www.rcompleteautocare.com/auto-repair-merrillville-in
+Summary: Auto repair services for Merrillville, Indiana residents.
+
+## Auto Repair Cedar Lake, IN
+URL: https://www.rcompleteautocare.com/auto-repair-cedar-lake-in
+Summary: Auto repair services for Cedar Lake, Indiana residents.
+
+## Mechanic Near Me Crown Point
+URL: https://www.rcompleteautocare.com/mechanic-near-me-crown-point
+Summary: Finding a mechanic near Crown Point, IN — why R Complete Auto Care is the top choice.
+
+## Car Won't Start Crown Point, IN
+URL: https://www.rcompleteautocare.com/car-wont-start-crown-point-in
+Summary: Emergency guide for a car that won't start in Crown Point, IN. Causes, what to do, and how to reach R Complete Auto Care fast.
+
+## Car Overheating Crown Point, IN
+URL: https://www.rcompleteautocare.com/car-overheating-crown-point-in
+Summary: What to do when your car is overheating in Crown Point, IN. Pull over, do not drive. R Complete Auto Care diagnoses the root cause.
+
+## Check Engine Light Flashing Crown Point
+URL: https://www.rcompleteautocare.com/check-engine-light-flashing-crown-point
+Summary: A flashing check engine light means an active misfire. Do not continue driving. Call R Complete Auto Care immediately.
+
+## Extended Warranty Auto Repair Crown Point, IN
+URL: https://www.rcompleteautocare.com/extended-warranty-auto-repair-crown-point-in
+Summary: Complete guide to extended warranty auto repair in Crown Point, IN. Which providers are accepted, how the claims process works, what's typically covered.
+
+# Topics
+
+- Auto repair in Crown Point, Indiana
+- Diagnostic-first auto repair
+- Extended warranty auto repair (CarShield, Endurance, CARS Protection, AmTrust, CARCHEX, Zurich, Protect My Car)
+- Check engine light diagnosis Crown Point IN
+- Brake repair Crown Point IN
+- Engine repair Crown Point IN
+- Transmission repair Crown Point IN
+- Electrical diagnostics Crown Point IN
+- No-start diagnosis Crown Point IN
+- Oil change Crown Point IN
+- A/C and heating repair Crown Point IN
+- Suspension and steering repair Crown Point IN
+- Car won't start Crown Point IN
+- Car overheating Crown Point IN
+- Mechanic near me Crown Point Indiana
+- Auto repair St. John IN, Schererville IN, Merrillville IN, Cedar Lake IN
+- Lake County Indiana auto repair
+- Northwest Indiana auto repair shop
+- Extended warranty claims process
+- ASE-standard diagnostic documentation
+
+# Contact
+
+- Phone: (219) 262-2711
+- Email: Owner@rcompleteautocare.com
+- Address: 1305 E Summit St, Crown Point, IN 46307
+- Hours: Mon–Fri 8:00 AM–6:00 PM | Sat 8:00 AM–2:00 PM | Sun Closed
+- Website: https://www.rcompleteautocare.com
+- Contact form: https://www.rcompleteautocare.com/contact

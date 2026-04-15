@@ -6,6 +6,7 @@ export const metadata = {
   alternates: {
     canonical: "https://www.rcompleteautocare.com/services/diagnostics",
   },
+  other: { dateModified: "2025-04-15" },
 };
 
 export default function Diagnostics() {
@@ -16,9 +17,12 @@ export default function Diagnostics() {
         <p style={{ color: "#e63946", fontWeight: "bold", fontSize: "13px", letterSpacing: "0.1em", textTransform: "uppercase", marginBottom: "12px" }}>
           Crown Point, Indiana
         </p>
-        <h1 style={{ fontSize: "38px", fontWeight: "bold", marginBottom: "16px", lineHeight: 1.2 }}>
+        <h1 style={{ fontSize: "38px", fontWeight: "bold", marginBottom: "12px", lineHeight: 1.2 }}>
           Auto Diagnostics in Crown Point, IN
         </h1>
+        <p style={{ fontSize: "16px", color: "#e63946", fontWeight: "600", marginBottom: "16px", fontStyle: "italic" }}>
+          TL;DR: We charge a diagnostic fee (applied toward repair cost) and complete most diagnostics same day. We scan all vehicle modules, find the root cause, and call you with a clear estimate before doing any work.
+        </p>
         <p style={{ fontSize: "18px", color: "#ccc", maxWidth: "600px", margin: "0 auto 32px" }}>
           We diagnose before we repair. Every time. No guesswork — just accurate answers and honest recommendations.
         </p>
@@ -35,7 +39,8 @@ export default function Diagnostics() {
       </section>
 
       <section style={{ padding: "60px 24px", maxWidth: "800px", margin: "0 auto" }}>
-        <h2 style={{ fontSize: "28px", marginBottom: "16px" }}>Crown Point's Diagnostic-First Auto Repair Shop</h2>
+        <p style={{ color: "#888", fontSize: "13px", marginBottom: "24px" }}>Last updated: April 2025</p>
+        <h2 style={{ fontSize: "28px", marginBottom: "16px" }}>Crown Point&apos;s Diagnostic-First Auto Repair Shop</h2>
         <p style={{ lineHeight: 1.8, color: "#444", marginBottom: "20px" }}>
           R Complete Auto Care is built around one principle: find the real problem before recommending a single repair. Too many shops skip the diagnostic process — they guess, replace parts, and hope for the best. That costs you time and money.
         </p>
@@ -158,6 +163,27 @@ export default function Diagnostics() {
       }
     ]
   })}}
-/><script type="application/ld+json" dangerouslySetInnerHTML={{ __html: JSON.stringify({ "@context": "https://schema.org", "@type": "BreadcrumbList", "itemListElement": [{ "@type": "ListItem", "position": 1, "name": "Home", "item": "https://www.rcompleteautocare.com" }, { "@type": "ListItem", "position": 2, "name": "Services", "item": "https://www.rcompleteautocare.com/services/diagnostics" }, { "@type": "ListItem", "position": 3, "name": "Auto Diagnostics" }] }) }} /></div>
+/>
+<script type="application/ld+json" dangerouslySetInnerHTML={{ __html: JSON.stringify({
+  "@context": "https://schema.org",
+  "@type": "HowTo",
+  "name": "How Auto Diagnostics Work at R Complete Auto Care",
+  "description": "Our diagnostic-first process in Crown Point, IN.",
+  "step": [
+    { "@type": "HowToStep", "position": 1, "name": "Full Module Scan", "text": "We scan all vehicle modules — not just the engine — for fault codes, live data, and system health." },
+    { "@type": "HowToStep", "position": 2, "name": "Root Cause Investigation", "text": "We perform hands-on inspection to find the actual failed component, not just the symptom." },
+    { "@type": "HowToStep", "position": 3, "name": "Clear Explanation", "text": "We call you with exactly what we found, what's urgent, and what can wait — in plain language." },
+    { "@type": "HowToStep", "position": 4, "name": "Your Approval, Then Repair", "text": "You approve the estimate before any work begins. We fix it right and verify the repair before returning the vehicle." }
+  ]
+}) }} />
+<script type="application/ld+json" dangerouslySetInnerHTML={{ __html: JSON.stringify({
+  "@context": "https://schema.org",
+  "@type": "BreadcrumbList",
+  "itemListElement": [
+    { "@type": "ListItem", "position": 1, "name": "Home", "item": "https://www.rcompleteautocare.com" },
+    { "@type": "ListItem", "position": 2, "name": "Services", "item": "https://www.rcompleteautocare.com/services/diagnostics" },
+    { "@type": "ListItem", "position": 3, "name": "Auto Diagnostics" }
+  ]
+}) }} /></div>
   );
 }

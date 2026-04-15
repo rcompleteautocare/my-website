@@ -4,6 +4,7 @@ export const metadata = {
   title: 'Electrical Diagnostics Crown Point IN — Parasitic Draw, No-Start, Shorts | R Complete Auto Care',
   description: 'Auto electrical diagnostics in Crown Point, IN. Parasitic drain, no-start, shorts, and warning lights. Same-day diagnostics. Call (219) 262-2711.',
   alternates: { canonical: 'https://www.rcompleteautocare.com/services/electrical-diagnostics' },
+  other: { dateModified: "2025-04-15" },
 }
 
 export default function ElectricalDiagnostics() {
@@ -14,9 +15,12 @@ export default function ElectricalDiagnostics() {
         <p style={{ color: "#e63946", fontWeight: "bold", fontSize: "13px", letterSpacing: "0.1em", textTransform: "uppercase", marginBottom: "12px" }}>
           Crown Point, Indiana
         </p>
-        <h1 style={{ fontSize: "38px", fontWeight: "bold", marginBottom: "16px", lineHeight: 1.2 }}>
+        <h1 style={{ fontSize: "38px", fontWeight: "bold", marginBottom: "12px", lineHeight: 1.2 }}>
           Electrical Diagnostics in Crown Point, IN
         </h1>
+        <p style={{ fontSize: "16px", color: "#e63946", fontWeight: "600", marginBottom: "16px", fontStyle: "italic" }}>
+          TL;DR: Electrical diagnostics in Crown Point are completed same day in most cases. We charge a diagnostic fee (applied toward repair). Covers battery, alternator, parasitic draw, wiring faults, sensors, and module issues.
+        </p>
         <p style={{ fontSize: "18px", color: "#ccc", maxWidth: "600px", margin: "0 auto 32px" }}>
           Electrical problems are complex. We have the tools, equipment, and expertise to find the exact cause — and fix it right.
         </p>
@@ -33,6 +37,7 @@ export default function ElectricalDiagnostics() {
       </section>
 
       <section style={{ padding: "60px 24px", maxWidth: "800px", margin: "0 auto" }}>
+        <p style={{ color: "#888", fontSize: "13px", marginBottom: "24px" }}>Last updated: April 2025</p>
         <h2 style={{ fontSize: "28px", marginBottom: "16px" }}>Expert Auto Electrical Diagnostics in Crown Point</h2>
         <p style={{ lineHeight: 1.8, color: "#444", marginBottom: "20px" }}>
           Modern vehicles have incredibly complex electrical systems. A single faulty sensor, bad ground, or failing module can cause symptoms that seem unrelated and are difficult to diagnose without the right equipment and expertise. At R Complete Auto Care in Crown Point, Indiana, we use professional-grade diagnostic tools to pinpoint electrical problems accurately — the first time.
@@ -160,6 +165,27 @@ export default function ElectricalDiagnostics() {
       }
     ]
   })}}
-/><script type="application/ld+json" dangerouslySetInnerHTML={{ __html: JSON.stringify({ "@context": "https://schema.org", "@type": "BreadcrumbList", "itemListElement": [{ "@type": "ListItem", "position": 1, "name": "Home", "item": "https://www.rcompleteautocare.com" }, { "@type": "ListItem", "position": 2, "name": "Services", "item": "https://www.rcompleteautocare.com/services/diagnostics" }, { "@type": "ListItem", "position": 3, "name": "Electrical Diagnostics" }] }) }} /></div>
+/>
+<script type="application/ld+json" dangerouslySetInnerHTML={{ __html: JSON.stringify({
+  "@context": "https://schema.org",
+  "@type": "HowTo",
+  "name": "How Electrical Diagnostics Work at R Complete Auto Care",
+  "description": "Our electrical diagnostic process in Crown Point, IN.",
+  "step": [
+    { "@type": "HowToStep", "position": 1, "name": "Full Module Scan", "text": "We scan all vehicle modules for fault codes related to electrical systems — body control, instrument cluster, charging, and more." },
+    { "@type": "HowToStep", "position": 2, "name": "Physical Testing", "text": "We test battery load, charging output, wiring continuity, and component function using professional diagnostic equipment." },
+    { "@type": "HowToStep", "position": 3, "name": "Root Cause Identification", "text": "We pinpoint the exact failed component — not just the symptom — before recommending any repair." },
+    { "@type": "HowToStep", "position": 4, "name": "Repair & Verification", "text": "We complete the repair, clear any fault codes, and verify proper system function before returning the vehicle." }
+  ]
+}) }} />
+<script type="application/ld+json" dangerouslySetInnerHTML={{ __html: JSON.stringify({
+  "@context": "https://schema.org",
+  "@type": "BreadcrumbList",
+  "itemListElement": [
+    { "@type": "ListItem", "position": 1, "name": "Home", "item": "https://www.rcompleteautocare.com" },
+    { "@type": "ListItem", "position": 2, "name": "Services", "item": "https://www.rcompleteautocare.com/services/diagnostics" },
+    { "@type": "ListItem", "position": 3, "name": "Electrical Diagnostics" }
+  ]
+}) }} /></div>
   );
 }

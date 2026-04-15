@@ -2,6 +2,7 @@ export const metadata = {
   title: 'Oil Change Crown Point IN — Full-Service Maintenance | R Complete Auto Care',
   description: 'Oil change and maintenance in Crown Point, IN. Conventional and synthetic oil with multi-point inspection. Honest service, no upsell. Call (219) 262-2711.',
   alternates: { canonical: 'https://www.rcompleteautocare.com/services/oil-change-maintenance' },
+  other: { dateModified: "2025-04-15" },
 }
 
 import Link from "next/link";
@@ -12,9 +13,12 @@ export default function OilChangeMaintenance() {
       {/* Hero */}
       <section style={{ background: "#1a1a1a", color: "#fff", padding: "60px 24px", textAlign: "center" }}>
         <p style={{ color: "#e63946", fontWeight: "bold", fontSize: "13px", letterSpacing: "1px", marginBottom: "12px" }}>CROWN POINT, INDIANA</p>
-        <h1 style={{ fontSize: "38px", fontWeight: "bold", marginBottom: "16px" }}>
+        <h1 style={{ fontSize: "38px", fontWeight: "bold", marginBottom: "12px" }}>
           Oil Change & Maintenance in Crown Point, IN
         </h1>
+        <p style={{ fontSize: "16px", color: "#e63946", fontWeight: "600", marginBottom: "16px", fontStyle: "italic" }}>
+          TL;DR: Conventional oil changes start around $40–$60; full synthetic starts around $70–$90. Service takes 30–60 minutes and includes a multi-point inspection. No appointment required — call ahead for same-day service.
+        </p>
         <p style={{ fontSize: "18px", color: "#ccc", maxWidth: "600px", margin: "0 auto 32px" }}>
           Conventional and synthetic oil changes with a thorough multi-point inspection — so you know what's coming before it becomes an emergency.
         </p>
@@ -31,6 +35,7 @@ export default function OilChangeMaintenance() {
 
       {/* Intro */}
       <section style={{ padding: "60px 24px", maxWidth: "800px", margin: "0 auto" }}>
+        <p style={{ color: "#888", fontSize: "13px", marginBottom: "24px" }}>Last updated: April 2025</p>
         <h2 style={{ fontSize: "28px", marginBottom: "16px" }}>More Than Just an Oil Change</h2>
         <p style={{ lineHeight: 1.8, color: "#444", marginBottom: "20px" }}>
           At R Complete Auto Care in Crown Point, an oil change is never just an oil change. Every service includes a thorough multi-point inspection — we check fluid levels, brake pad thickness, tire condition, belt and hose condition, filters, lights, and anything else that could affect your vehicle's safety and reliability.
@@ -140,12 +145,14 @@ export default function OilChangeMaintenance() {
         <div style={{ maxWidth: "800px", margin: "0 auto" }}>
           <h2 style={{ fontSize: "28px", marginBottom: "24px" }}>Frequently Asked Questions — Oil Change & Maintenance</h2>
           {[
+            { q: "How much does an oil change cost in Crown Point, IN?", a: "Conventional oil changes start around $40–$60. Full synthetic oil changes start around $70–$90 depending on your vehicle's oil capacity and type. We always check your owner's manual specs and use the correct oil for your vehicle." },
+            { q: "How long does an oil change take in Crown Point?", a: "Most oil changes at our Crown Point shop are completed in 30–60 minutes. If you add a tire rotation or other services, allow a bit more time." },
+            { q: "Do I need an appointment for an oil change?", a: "We recommend calling ahead at (219) 262-2711 for same-day service. Walk-ins are welcome based on availability. We're open Mon–Fri 8am–6pm and Sat 8am–2pm." },
             { q: "How often should I change my oil?", a: "It depends on your vehicle and oil type. Conventional oil typically needs changing every 3,000–5,000 miles. Full synthetic oil can last 7,500–10,000 miles or more. The best reference is your owner's manual — and we'll check it for you when you come in." },
             { q: "Can I go longer between oil changes with synthetic oil?", a: "Yes — modern full synthetic oils are engineered for extended drain intervals. Many manufacturers specify 7,500–10,000 mile intervals with synthetic oil. However, if you do a lot of short trips, tow frequently, or drive in extreme temperatures, more frequent changes are beneficial." },
             { q: "What happens if I don't change my oil regularly?", a: "Oil breaks down over time and loses its ability to lubricate and protect engine components. Old oil becomes thick and sludgy, restricts oil flow, and allows metal-on-metal contact inside the engine. Skipping oil changes is one of the most common causes of premature engine failure." },
             { q: "Do you rotate tires with an oil change?", a: "Yes — we can perform a tire rotation with your oil change service. Rotating tires every 5,000–7,500 miles ensures even wear and extends tire life significantly." },
             { q: "Will you tell me if you find something wrong during the inspection?", a: "Always — that's the point of the inspection. We give you a written report of what we found, what's urgent, and what can wait. We never do additional work without your approval. No surprises on your bill." },
-            { q: "Do you service all makes and models?", a: "Yes — all foreign and domestic vehicles. Honda, Toyota, BMW, Mercedes, Subaru, Ford, Chevrolet, Dodge, GMC, Jeep, and more. We use the correct oil specification for your specific vehicle." },
           ].map(item => (
             <div key={item.q} style={{ marginBottom: "20px", borderBottom: "1px solid #e0e0e0", paddingBottom: "20px" }}>
               <div style={{ fontWeight: "bold", fontSize: "16px", marginBottom: "8px" }}>{item.q}</div>
@@ -185,6 +192,21 @@ export default function OilChangeMaintenance() {
     "mainEntity": [
       {
         "@type": "Question",
+        "name": "How much does an oil change cost in Crown Point, IN?",
+        "acceptedAnswer": { "@type": "Answer", "text": "Conventional oil changes start around $40–$60. Full synthetic oil changes start around $70–$90 depending on your vehicle's oil capacity and type. We always check your owner's manual specs and use the correct oil for your vehicle." }
+      },
+      {
+        "@type": "Question",
+        "name": "How long does an oil change take in Crown Point?",
+        "acceptedAnswer": { "@type": "Answer", "text": "Most oil changes at our Crown Point shop are completed in 30–60 minutes. If you add a tire rotation or other services, allow a bit more time." }
+      },
+      {
+        "@type": "Question",
+        "name": "Do I need an appointment for an oil change?",
+        "acceptedAnswer": { "@type": "Answer", "text": "We recommend calling ahead at (219) 262-2711 for same-day service. Walk-ins are welcome based on availability. We're open Mon–Fri 8am–6pm and Sat 8am–2pm." }
+      },
+      {
+        "@type": "Question",
         "name": "How often should I change my oil?",
         "acceptedAnswer": { "@type": "Answer", "text": "It depends on your vehicle and oil type. Conventional oil typically needs changing every 3,000–5,000 miles. Full synthetic oil can last 7,500–10,000 miles or more. The best reference is your owner's manual — and we'll check it for you when you come in." }
       },
@@ -207,14 +229,31 @@ export default function OilChangeMaintenance() {
         "@type": "Question",
         "name": "Will you tell me if you find something wrong during the inspection?",
         "acceptedAnswer": { "@type": "Answer", "text": "Always — that's the point of the inspection. We give you a written report of what we found, what's urgent, and what can wait. We never do additional work without your approval. No surprises on your bill." }
-      },
-      {
-        "@type": "Question",
-        "name": "Do you service all makes and models?",
-        "acceptedAnswer": { "@type": "Answer", "text": "Yes — all foreign and domestic vehicles. Honda, Toyota, BMW, Mercedes, Subaru, Ford, Chevrolet, Dodge, GMC, Jeep, and more. We use the correct oil specification for your specific vehicle." }
       }
     ]
   })}}
-/><script type="application/ld+json" dangerouslySetInnerHTML={{ __html: JSON.stringify({ "@context": "https://schema.org", "@type": "BreadcrumbList", "itemListElement": [{ "@type": "ListItem", "position": 1, "name": "Home", "item": "https://www.rcompleteautocare.com" }, { "@type": "ListItem", "position": 2, "name": "Services", "item": "https://www.rcompleteautocare.com/services/diagnostics" }, { "@type": "ListItem", "position": 3, "name": "Suspension & Steering Repair" }] }) }} /></div>
+/>
+<script type="application/ld+json" dangerouslySetInnerHTML={{ __html: JSON.stringify({
+  "@context": "https://schema.org",
+  "@type": "HowTo",
+  "name": "How an Oil Change Works at R Complete Auto Care",
+  "description": "Our oil change process in Crown Point, IN — from drop-off to pick-up.",
+  "totalTime": "PT1H",
+  "step": [
+    { "@type": "HowToStep", "position": 1, "name": "Check In", "text": "Call or stop by. We confirm your vehicle's oil type and viscosity from the owner's manual specifications." },
+    { "@type": "HowToStep", "position": 2, "name": "Drain Old Oil & Replace Filter", "text": "We drain the old oil, replace the oil filter, and refill with the correct oil type and quantity for your vehicle." },
+    { "@type": "HowToStep", "position": 3, "name": "Multi-Point Inspection", "text": "While your vehicle is on the lift, we perform a thorough multi-point inspection — fluids, brakes, tires, belts, lights, and more." },
+    { "@type": "HowToStep", "position": 4, "name": "Report & Pick Up", "text": "We report our findings, tell you what's urgent and what can wait, and return your vehicle — typically within 30–60 minutes." }
+  ]
+}) }} />
+<script type="application/ld+json" dangerouslySetInnerHTML={{ __html: JSON.stringify({
+  "@context": "https://schema.org",
+  "@type": "BreadcrumbList",
+  "itemListElement": [
+    { "@type": "ListItem", "position": 1, "name": "Home", "item": "https://www.rcompleteautocare.com" },
+    { "@type": "ListItem", "position": 2, "name": "Services", "item": "https://www.rcompleteautocare.com/services/diagnostics" },
+    { "@type": "ListItem", "position": 3, "name": "Oil Change & Maintenance" }
+  ]
+}) }} /></div>
   );
 }

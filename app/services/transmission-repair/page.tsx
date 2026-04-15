@@ -2,6 +2,7 @@ export const metadata = {
   title: 'Transmission Repair Crown Point IN — Diagnose Before You Spend | R Complete Auto Care',
   description: 'Transmission slipping in Crown Point? Get a real diagnosis before spending thousands. We have saved customers from unnecessary rebuilds. Call (219) 262-2711.',
   alternates: { canonical: 'https://www.rcompleteautocare.com/services/transmission-repair' },
+  other: { dateModified: "2025-04-15" },
 }
 
 import Link from "next/link";
@@ -12,9 +13,12 @@ export default function TransmissionRepair() {
       {/* Hero */}
       <section style={{ background: "#1a1a1a", color: "#fff", padding: "60px 24px", textAlign: "center" }}>
         <p style={{ color: "#e63946", fontWeight: "bold", fontSize: "13px", letterSpacing: "1px", marginBottom: "12px" }}>CROWN POINT, INDIANA</p>
-        <h1 style={{ fontSize: "38px", fontWeight: "bold", marginBottom: "16px" }}>
+        <h1 style={{ fontSize: "38px", fontWeight: "bold", marginBottom: "12px" }}>
           Transmission Repair in Crown Point, IN
         </h1>
+        <p style={{ fontSize: "16px", color: "#e63946", fontWeight: "600", marginBottom: "16px", fontStyle: "italic" }}>
+          TL;DR: Transmission repair cost depends entirely on the actual problem — a solenoid or sensor fix is a fraction of a full rebuild. We diagnose first so you don&apos;t pay for a rebuild you don&apos;t need. Transmission repairs are among the most commonly covered items on extended warranty plans.
+        </p>
         <p style={{ fontSize: "18px", color: "#ccc", maxWidth: "600px", margin: "0 auto 32px" }}>
           Transmission problems are expensive — but the wrong diagnosis makes them even more expensive. We find the real cause before recommending a rebuild or replacement.
         </p>
@@ -31,6 +35,7 @@ export default function TransmissionRepair() {
 
       {/* Intro */}
       <section style={{ padding: "60px 24px", maxWidth: "800px", margin: "0 auto" }}>
+        <p style={{ color: "#888", fontSize: "13px", marginBottom: "24px" }}>Last updated: April 2025</p>
         <h2 style={{ fontSize: "28px", marginBottom: "16px" }}>Diagnose Before You Spend</h2>
         <p style={{ lineHeight: 1.8, color: "#444", marginBottom: "20px" }}>
           Transmission repair is one of the most misdiagnosed — and most expensive — areas of auto repair. Many shops jump straight to a rebuild or replacement at the first sign of slipping or shifting problems. At R Complete Auto Care in Crown Point, we do it differently. We diagnose first. Every time.
@@ -206,6 +211,28 @@ export default function TransmissionRepair() {
       }
     ]
   })}}
-/><script type="application/ld+json" dangerouslySetInnerHTML={{ __html: JSON.stringify({ "@context": "https://schema.org", "@type": "BreadcrumbList", "itemListElement": [{ "@type": "ListItem", "position": 1, "name": "Home", "item": "https://www.rcompleteautocare.com" }, { "@type": "ListItem", "position": 2, "name": "Services", "item": "https://www.rcompleteautocare.com/services/diagnostics" }, { "@type": "ListItem", "position": 3, "name": "Transmission Repair" }] }) }} /></div>
+/>
+<script type="application/ld+json" dangerouslySetInnerHTML={{ __html: JSON.stringify({
+  "@context": "https://schema.org",
+  "@type": "HowTo",
+  "name": "How Transmission Repair Works at R Complete Auto Care",
+  "description": "Our diagnostic-first transmission repair process in Crown Point, IN.",
+  "step": [
+    { "@type": "HowToStep", "position": 1, "name": "Full Transmission Scan", "text": "We scan all transmission modules, pull fault codes, and review live data including shift timing and solenoid operation." },
+    { "@type": "HowToStep", "position": 2, "name": "Road Test & Drive Cycle", "text": "We drive the vehicle to reproduce the symptom under real conditions before making any recommendation." },
+    { "@type": "HowToStep", "position": 3, "name": "Fluid Inspection", "text": "We inspect transmission fluid condition for signs of heat damage or internal wear." },
+    { "@type": "HowToStep", "position": 4, "name": "Root Cause & Repair Options", "text": "We tell you exactly what failed, why it failed, and give honest advice on repair vs. rebuild vs. replacement." },
+    { "@type": "HowToStep", "position": 5, "name": "Repair & Verification", "text": "After repair, we road test through the complete drive cycle and re-scan all modules before returning the vehicle." }
+  ]
+}) }} />
+<script type="application/ld+json" dangerouslySetInnerHTML={{ __html: JSON.stringify({
+  "@context": "https://schema.org",
+  "@type": "BreadcrumbList",
+  "itemListElement": [
+    { "@type": "ListItem", "position": 1, "name": "Home", "item": "https://www.rcompleteautocare.com" },
+    { "@type": "ListItem", "position": 2, "name": "Services", "item": "https://www.rcompleteautocare.com/services/diagnostics" },
+    { "@type": "ListItem", "position": 3, "name": "Transmission Repair" }
+  ]
+}) }} /></div>
   );
 }

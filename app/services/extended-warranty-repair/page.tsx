@@ -2,6 +2,7 @@ export const metadata = {
   title: 'Extended Warranty Auto Repair Crown Point IN | We Handle Everything | R Complete Auto Care',
   description: 'Extended warranty auto repair in Crown Point, IN. We verify coverage, handle pre-authorisation, complete the repair, and submit all paperwork. You pay only your deductible. Call (219) 262-2711.',
   alternates: { canonical: 'https://www.rcompleteautocare.com/services/extended-warranty-repair' },
+  other: { dateModified: "2025-04-15" },
 }
 
 import Link from "next/link";
@@ -12,9 +13,12 @@ export default function ExtendedWarrantyRepair() {
       {/* Hero */}
       <section style={{ background: "#1a1a1a", color: "#fff", padding: "60px 24px", textAlign: "center" }}>
         <p style={{ color: "#e63946", fontWeight: "bold", fontSize: "13px", letterSpacing: "1px", marginBottom: "12px" }}>CROWN POINT, INDIANA</p>
-        <h1 style={{ fontSize: "38px", fontWeight: "bold", marginBottom: "16px" }}>
+        <h1 style={{ fontSize: "38px", fontWeight: "bold", marginBottom: "12px" }}>
           Extended Warranty Auto Repair in Crown Point, IN
         </h1>
+        <p style={{ fontSize: "16px", color: "#e63946", fontWeight: "600", marginBottom: "16px", fontStyle: "italic" }}>
+          TL;DR: We work with CarShield, Endurance, CARS Protection, AmTrust, and most providers. Call us first with your contract info — we verify coverage, handle pre-authorization, complete the repair, and submit all paperwork. You pay only your deductible (typically $100–$200).
+        </p>
         <p style={{ fontSize: "18px", color: "#ccc", maxWidth: "600px", margin: "0 auto 32px" }}>
           Bring your contract. We verify coverage, handle pre-authorisation, complete the repair, and submit all paperwork. You pay only your deductible.
         </p>
@@ -31,6 +35,7 @@ export default function ExtendedWarrantyRepair() {
 
       {/* Intro */}
       <section style={{ padding: "60px 24px", maxWidth: "800px", margin: "0 auto" }}>
+        <p style={{ color: "#888", fontSize: "13px", marginBottom: "24px" }}>Last updated: April 2025</p>
         <h2 style={{ fontSize: "28px", marginBottom: "16px" }}>Crown Point&apos;s Extended Warranty Repair Specialists</h2>
         <p style={{ lineHeight: 1.8, color: "#444", marginBottom: "20px" }}>
           Most auto repair shops in Crown Point and Northwest Indiana refuse extended warranty work. The documentation requirements are too demanding, the pre-authorisation calls take too long, and the adjusters push back on claims that lack detailed diagnostic evidence. Those shops tell you to go somewhere else.
@@ -251,6 +256,28 @@ export default function ExtendedWarrantyRepair() {
       }
     ]
   })}}
-/><script type="application/ld+json" dangerouslySetInnerHTML={{ __html: JSON.stringify({ "@context": "https://schema.org", "@type": "BreadcrumbList", "itemListElement": [{ "@type": "ListItem", "position": 1, "name": "Home", "item": "https://www.rcompleteautocare.com" }, { "@type": "ListItem", "position": 2, "name": "Services", "item": "https://www.rcompleteautocare.com/services/diagnostics" }, { "@type": "ListItem", "position": 3, "name": "Extended Warranty Repairs" }] }) }} /></div>
+/>
+<script type="application/ld+json" dangerouslySetInnerHTML={{ __html: JSON.stringify({
+  "@context": "https://schema.org",
+  "@type": "HowTo",
+  "name": "How Extended Warranty Repair Works at R Complete Auto Care",
+  "description": "Our 5-step extended warranty repair process — from coverage verification to pick-up.",
+  "step": [
+    { "@type": "HowToStep", "position": 1, "name": "Call Us With Your Warranty Info", "text": "Call (219) 262-2711 with your warranty provider name and contract number. We verify your coverage before you bring the vehicle in." },
+    { "@type": "HowToStep", "position": 2, "name": "Diagnostic Documented to Warranty Standards", "text": "We perform a thorough diagnostic with fault codes, test results, and precise failure mode descriptions formatted for warranty adjuster review." },
+    { "@type": "HowToStep", "position": 3, "name": "Pre-Authorization Call", "text": "We contact your warranty company, present our findings, and obtain repair authorization before any parts are ordered." },
+    { "@type": "HowToStep", "position": 4, "name": "Repair With Approved Parts", "text": "We complete the repair using parts that meet your warranty company's requirements and document all labor operations." },
+    { "@type": "HowToStep", "position": 5, "name": "You Pay Only Your Deductible", "text": "The warranty company pays us directly for the covered amount. You pick up your vehicle and pay your deductible only — typically $100–$200." }
+  ]
+}) }} />
+<script type="application/ld+json" dangerouslySetInnerHTML={{ __html: JSON.stringify({
+  "@context": "https://schema.org",
+  "@type": "BreadcrumbList",
+  "itemListElement": [
+    { "@type": "ListItem", "position": 1, "name": "Home", "item": "https://www.rcompleteautocare.com" },
+    { "@type": "ListItem", "position": 2, "name": "Services", "item": "https://www.rcompleteautocare.com/services/diagnostics" },
+    { "@type": "ListItem", "position": 3, "name": "Extended Warranty Repairs" }
+  ]
+}) }} /></div>
   );
 }

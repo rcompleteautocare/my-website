@@ -2,6 +2,7 @@ export const metadata = {
   title: 'Check Engine Light Diagnostics Crown Point IN | R Complete Auto Care',
   description: 'Check engine light on in Crown Point? We trace fault codes to root cause — not just clear it. Same-day diagnostics. Extended warranty accepted. Call (219) 262-2711.',
   alternates: { canonical: 'https://www.rcompleteautocare.com/services/check-engine-light' },
+  other: { dateModified: "2025-04-15" },
 }
 
 import Link from "next/link";
@@ -11,11 +12,14 @@ export default function CheckEngineLight() {
 
       {/* Hero */}
       <section style={{ background: "#1a1a1a", color: "#fff", padding: "60px 24px", textAlign: "center" }}>
-        <h1 style={{ fontSize: "38px", fontWeight: "bold", marginBottom: "16px" }}>
+        <h1 style={{ fontSize: "38px", fontWeight: "bold", marginBottom: "12px" }}>
           Check Engine Light Diagnostics in Crown Point, IN
         </h1>
+        <p style={{ fontSize: "16px", color: "#e63946", fontWeight: "600", marginBottom: "16px", fontStyle: "italic" }}>
+          TL;DR: Check engine light diagnostics are completed same day in most cases. We charge a diagnostic fee (applied toward repair cost). A solid light = safe to drive briefly; a flashing light = pull over and call us immediately.
+        </p>
         <p style={{ fontSize: "18px", color: "#ccc", maxWidth: "600px", margin: "0 auto 32px" }}>
-          Don't ignore that warning light. Our diagnostic-first approach finds the real problem — fast. We trace fault codes to their root cause, not just clear them and hope for the best.
+          Don&apos;t ignore that warning light. Our diagnostic-first approach finds the real problem — fast. We trace fault codes to their root cause, not just clear them and hope for the best.
         </p>
         <a href="tel:2192622711" style={{ background: "#e63946", color: "#fff", padding: "14px 32px", borderRadius: "6px", fontWeight: "bold", textDecoration: "none", fontSize: "18px" }}>
           📞 Call (219) 262-2711 — Same-Day Diagnostics
@@ -25,6 +29,7 @@ export default function CheckEngineLight() {
 
       {/* What it means */}
       <section style={{ padding: "60px 24px", maxWidth: "800px", margin: "0 auto" }}>
+        <p style={{ color: "#888", fontSize: "13px", marginBottom: "24px" }}>Last updated: April 2025</p>
         <h2 style={{ fontSize: "28px", marginBottom: "16px" }}>What Does a Check Engine Light Mean?</h2>
         <p style={{ lineHeight: 1.8, color: "#444", marginBottom: "24px" }}>
           Your check engine light can mean dozens of different things — from a loose gas cap to a failing catalytic converter or serious engine issue. The only way to know for sure is a proper diagnostic scan combined with hands-on inspection. At R Complete Auto Care, we don't just read the code number and guess. We trace the fault to its root cause before recommending a single repair.
@@ -117,12 +122,14 @@ export default function CheckEngineLight() {
         <div style={{ maxWidth: "800px", margin: "0 auto" }}>
           <h2 style={{ fontSize: "28px", marginBottom: "24px" }}>Frequently Asked Questions — Check Engine Light</h2>
           {[
+            { q: "How much does a check engine light diagnostic cost in Crown Point?", a: "We charge a diagnostic fee to properly identify the issue. This fee is applied toward your repair cost if you choose to have us fix it. Call (219) 262-2711 for current pricing." },
+            { q: "How long does a check engine light diagnostic take?", a: "Most diagnostics are completed the same day, often within a few hours. We'll call you with our findings before doing any work." },
+            { q: "Do I need an appointment for check engine light diagnostics in Crown Point?", a: "We recommend calling ahead at (219) 262-2711. Same-day appointments are often available Mon–Fri 8am–6pm and Sat 8am–2pm." },
             { q: "Is it safe to drive with my check engine light on?", a: "It depends. If the light is flashing, pull over immediately — it indicates a serious misfire that can damage your catalytic converter. If it's solid, it's generally safe to drive short distances but you should get it checked within a day or two." },
             { q: "Can you just clear the code without diagnosing it?", a: "We don't recommend it and we won't do it. Clearing the code without fixing the underlying issue means the light will come back on — often within 50–100 miles. We find the root cause first." },
-            { q: "How much does a check engine light diagnostic cost?", a: "We charge a diagnostic fee to properly identify the issue. This fee is applied toward your repair cost if you choose to have us fix it. Call us for current pricing." },
-            { q: "How long does the diagnostic take?", a: "Most diagnostics are completed the same day, often within a few hours. We'll call you with our findings before doing any work." },
+            { q: "What are signs I need check engine light diagnosis?", a: "Any time the check engine light comes on — solid or flashing. Also if you notice rough running, reduced power, poor fuel economy, or if the light returned after another shop 'fixed' it." },
             { q: "My check engine light came back on after another shop fixed it — what do I do?", a: "This is one of the most common reasons people come to us. Many shops clear codes and replace the most obvious part without finding the actual root cause. We dig deeper. Bring it in and we'll find what was missed." },
-            { q: "Do you accept extended warranties for this repair?", a: "Yes! We work with most extended warranty providers and handle the entire claims process for you. Call us with your warranty info and we'll verify coverage before any work begins." },
+            { q: "Do you accept extended warranties for check engine light repairs?", a: "Yes! We work with most extended warranty providers and handle the entire claims process for you. Call us with your warranty info and we'll verify coverage before any work begins." },
           ].map(item => (
             <div key={item.q} style={{ marginBottom: "20px", borderBottom: "1px solid #e0e0e0", paddingBottom: "20px" }}>
               <div style={{ fontWeight: "bold", fontSize: "16px", marginBottom: "8px" }}>{item.q}</div>
@@ -163,6 +170,21 @@ export default function CheckEngineLight() {
     "mainEntity": [
       {
         "@type": "Question",
+        "name": "How much does a check engine light diagnostic cost in Crown Point?",
+        "acceptedAnswer": { "@type": "Answer", "text": "We charge a diagnostic fee to properly identify the issue. This fee is applied toward your repair cost if you choose to have us fix it. Call (219) 262-2711 for current pricing." }
+      },
+      {
+        "@type": "Question",
+        "name": "How long does a check engine light diagnostic take?",
+        "acceptedAnswer": { "@type": "Answer", "text": "Most diagnostics are completed the same day, often within a few hours. We'll call you with our findings before doing any work." }
+      },
+      {
+        "@type": "Question",
+        "name": "Do I need an appointment for check engine light diagnostics in Crown Point?",
+        "acceptedAnswer": { "@type": "Answer", "text": "We recommend calling ahead at (219) 262-2711. Same-day appointments are often available Mon–Fri 8am–6pm and Sat 8am–2pm." }
+      },
+      {
+        "@type": "Question",
         "name": "Is it safe to drive with my check engine light on?",
         "acceptedAnswer": { "@type": "Answer", "text": "It depends. If the light is flashing, pull over immediately — it indicates a serious misfire that can damage your catalytic converter. If it's solid, it's generally safe to drive short distances but you should get it checked within a day or two." }
       },
@@ -173,13 +195,8 @@ export default function CheckEngineLight() {
       },
       {
         "@type": "Question",
-        "name": "How much does a check engine light diagnostic cost?",
-        "acceptedAnswer": { "@type": "Answer", "text": "We charge a diagnostic fee to properly identify the issue. This fee is applied toward your repair cost if you choose to have us fix it. Call us for current pricing." }
-      },
-      {
-        "@type": "Question",
-        "name": "How long does the diagnostic take?",
-        "acceptedAnswer": { "@type": "Answer", "text": "Most diagnostics are completed the same day, often within a few hours. We'll call you with our findings before doing any work." }
+        "name": "What are signs I need check engine light diagnosis?",
+        "acceptedAnswer": { "@type": "Answer", "text": "Any time the check engine light comes on — solid or flashing. Also if you notice rough running, reduced power, poor fuel economy, or if the light returned after another shop 'fixed' it." }
       },
       {
         "@type": "Question",
@@ -188,11 +205,33 @@ export default function CheckEngineLight() {
       },
       {
         "@type": "Question",
-        "name": "Do you accept extended warranties for this repair?",
+        "name": "Do you accept extended warranties for check engine light repairs?",
         "acceptedAnswer": { "@type": "Answer", "text": "Yes! We work with most extended warranty providers and handle the entire claims process for you. Call us with your warranty info and we'll verify coverage before any work begins." }
       }
     ]
   })}}
-/><script type="application/ld+json" dangerouslySetInnerHTML={{ __html: JSON.stringify({ "@context": "https://schema.org", "@type": "BreadcrumbList", "itemListElement": [{ "@type": "ListItem", "position": 1, "name": "Home", "item": "https://www.rcompleteautocare.com" }, { "@type": "ListItem", "position": 2, "name": "Services", "item": "https://www.rcompleteautocare.com/services/diagnostics" }, { "@type": "ListItem", "position": 3, "name": "Check Engine Light Diagnostics" }] }) }} /></div>
+/>
+<script type="application/ld+json" dangerouslySetInnerHTML={{ __html: JSON.stringify({
+  "@context": "https://schema.org",
+  "@type": "HowTo",
+  "name": "How Check Engine Light Diagnosis Works at R Complete Auto Care",
+  "description": "Our 4-step check engine light diagnostic process in Crown Point, IN.",
+  "totalTime": "PT3H",
+  "step": [
+    { "@type": "HowToStep", "position": 1, "name": "Full Fault Code Scan", "text": "We scan all modules — not just the engine — to get a complete picture of every fault code present, including pending codes." },
+    { "@type": "HowToStep", "position": 2, "name": "Root Cause Investigation", "text": "We perform hands-on inspection and testing to find the actual failed component — not just replace parts and hope." },
+    { "@type": "HowToStep", "position": 3, "name": "Clear Explanation & Estimate", "text": "We call you with exactly what we found, what it means, and a straight price. You approve everything before we touch a tool." },
+    { "@type": "HowToStep", "position": 4, "name": "Precise Repair & Verification", "text": "We fix what's broken, clear the code, verify the fix, and road test the vehicle before returning it to you." }
+  ]
+}) }} />
+<script type="application/ld+json" dangerouslySetInnerHTML={{ __html: JSON.stringify({
+  "@context": "https://schema.org",
+  "@type": "BreadcrumbList",
+  "itemListElement": [
+    { "@type": "ListItem", "position": 1, "name": "Home", "item": "https://www.rcompleteautocare.com" },
+    { "@type": "ListItem", "position": 2, "name": "Services", "item": "https://www.rcompleteautocare.com/services/diagnostics" },
+    { "@type": "ListItem", "position": 3, "name": "Check Engine Light Diagnostics" }
+  ]
+}) }} /></div>
   );
 }

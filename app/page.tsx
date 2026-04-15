@@ -3,6 +3,7 @@ import Script from "next/script";
 export const metadata = {
   title: "Auto Repair Crown Point IN | R Complete Auto Care | (219) 262-2711",
   description: "Crown Point's diagnostic-first auto repair shop. Honest estimates, expert repairs, extended warranty work welcome. Serving Crown Point, St. John, Schererville & Merrillville. Call (219) 262-2711.",
+  other: { dateModified: "2025-04-15" },
 };
 
 export default function Home() {
@@ -242,6 +243,32 @@ export default function Home() {
         </a>
       </section>
 
-    <Script src="https://elfsightcdn.com/platform.js" strategy="lazyOnload" /></div>
+    <Script src="https://elfsightcdn.com/platform.js" strategy="lazyOnload" />
+
+    {/* FAQPage JSON-LD */}
+    <script type="application/ld+json" dangerouslySetInnerHTML={{ __html: JSON.stringify({
+      "@context": "https://schema.org",
+      "@type": "FAQPage",
+      "mainEntity": [
+        { "@type": "Question", "name": "Where is R Complete Auto Care located?", "acceptedAnswer": { "@type": "Answer", "text": "We're located at 1305 E Summit St, Crown Point, IN 46307 — conveniently serving all of Lake County including St. John, Schererville, Merrillville, and Cedar Lake." } },
+        { "@type": "Question", "name": "What are your hours?", "acceptedAnswer": { "@type": "Answer", "text": "We're open Monday through Friday 8:00 AM to 6:00 PM and Saturday 8:00 AM to 2:00 PM. Closed Sunday." } },
+        { "@type": "Question", "name": "Do you work on foreign and domestic vehicles?", "acceptedAnswer": { "@type": "Answer", "text": "Yes — all makes and models. Honda, Toyota, BMW, Mercedes, Subaru, Ford, Chevrolet, Dodge, GMC and more." } },
+        { "@type": "Question", "name": "Do you accept extended warranties?", "acceptedAnswer": { "@type": "Answer", "text": "Yes! We work with most extended warranty providers and handle the entire claims process for you. Call us with your warranty information and we'll verify coverage before any work begins." } },
+        { "@type": "Question", "name": "How does your diagnostic process work?", "acceptedAnswer": { "@type": "Answer", "text": "We start every vehicle with a thorough diagnostic to find the root cause of the problem. We call you with our findings and a clear estimate before doing any repair. You approve everything first." } },
+        { "@type": "Question", "name": "Do you offer same-day service?", "acceptedAnswer": { "@type": "Answer", "text": "Yes — most diagnostic appointments are completed same day. Repair time depends on the job, but we always give you an accurate timeline upfront." } },
+        { "@type": "Question", "name": "Why should I choose R Complete Auto Care over a dealership?", "acceptedAnswer": { "@type": "Answer", "text": "We offer dealership-level expertise without dealership prices or pressure. Our diagnostic-first approach means you only pay for what your vehicle actually needs — backed by over 25 years of family experience in auto repair." } },
+        { "@type": "Question", "name": "Do I need an appointment for auto repair in Crown Point?", "acceptedAnswer": { "@type": "Answer", "text": "We recommend calling ahead at (219) 262-2711 to schedule. Same-day appointments are often available for diagnostics. Walk-ins are welcome but scheduling ensures we have a bay ready for you." } },
+        { "@type": "Question", "name": "How much does auto repair cost in Crown Point, IN?", "acceptedAnswer": { "@type": "Answer", "text": "Costs vary by service. An oil change is one of our most affordable services. Diagnostics, brake repair, and other services are priced competitively — we give you a clear estimate before any work begins. No surprises." } },
+        { "@type": "Question", "name": "What are signs I need auto repair?", "acceptedAnswer": { "@type": "Answer", "text": "Warning signs include: check engine light on, unusual noises (knocking, squealing, grinding), vehicle pulling to one side, rough idle, poor fuel economy, leaking fluids, or dashboard warning lights. If you notice any of these, call us for a diagnostic." } },
+      ]
+    }) }} />
+
+    {/* Speakable schema */}
+    <script type="application/ld+json" dangerouslySetInnerHTML={{ __html: JSON.stringify({
+      "@context": "https://schema.org",
+      "@type": "SpeakableSpecification",
+      "cssSelector": ["h1", ".speakable"]
+    }) }} />
+    </div>
   );
 }

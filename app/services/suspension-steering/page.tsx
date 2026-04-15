@@ -2,6 +2,7 @@ export const metadata = {
   title: 'Suspension Repair Crown Point IN — Struts, Shocks, Alignment | R Complete Auto Care',
   description: 'Suspension repair in Crown Point, IN. Struts, shocks, tie rods, alignments. Indiana roads are rough — we keep your ride safe and controlled. Call (219) 262-2711.',
   alternates: { canonical: 'https://www.rcompleteautocare.com/services/suspension-steering' },
+  other: { dateModified: "2025-04-15" },
 }
 
 import Link from "next/link";
@@ -12,9 +13,12 @@ export default function SuspensionSteering() {
       {/* Hero */}
       <section style={{ background: "#1a1a1a", color: "#fff", padding: "60px 24px", textAlign: "center" }}>
         <p style={{ color: "#e63946", fontWeight: "bold", fontSize: "13px", letterSpacing: "1px", marginBottom: "12px" }}>CROWN POINT, INDIANA</p>
-        <h1 style={{ fontSize: "38px", fontWeight: "bold", marginBottom: "16px" }}>
-          Suspension & Steering Repair in Crown Point, IN
+        <h1 style={{ fontSize: "38px", fontWeight: "bold", marginBottom: "12px" }}>
+          Suspension &amp; Steering Repair in Crown Point, IN
         </h1>
+        <p style={{ fontSize: "16px", color: "#e63946", fontWeight: "600", marginBottom: "16px", fontStyle: "italic" }}>
+          TL;DR: Strut replacement typically runs $200–$400 per strut (parts + labor). Alignments are $80–$120. Ball joints, tie rod ends, and wheel bearings vary by vehicle. We inspect before recommending — and Indiana pothole damage is often more extensive than it first appears.
+        </p>
         <p style={{ fontSize: "18px", color: "#ccc", maxWidth: "600px", margin: "0 auto 32px" }}>
           Indiana roads are hard on suspension. Potholes, frost heaves, and rough pavement wear out struts, shocks, and steering components faster than anywhere else. We keep your ride safe, stable, and in control.
         </p>
@@ -31,7 +35,8 @@ export default function SuspensionSteering() {
 
       {/* Intro */}
       <section style={{ padding: "60px 24px", maxWidth: "800px", margin: "0 auto" }}>
-        <h2 style={{ fontSize: "28px", marginBottom: "16px" }}>Crown Point Suspension & Steering Specialists</h2>
+        <p style={{ color: "#888", fontSize: "13px", marginBottom: "24px" }}>Last updated: April 2025</p>
+        <h2 style={{ fontSize: "28px", marginBottom: "16px" }}>Crown Point Suspension &amp; Steering Specialists</h2>
         <p style={{ lineHeight: 1.8, color: "#444", marginBottom: "20px" }}>
           Your suspension system does more than just absorb bumps — it controls how your vehicle handles, steers, and stops. Worn struts and shocks don't just make the ride uncomfortable — they increase stopping distances, cause uneven tire wear, and reduce your ability to control the vehicle in emergency situations.
         </p>
@@ -205,6 +210,28 @@ export default function SuspensionSteering() {
       }
     ]
   })}}
-/><script type="application/ld+json" dangerouslySetInnerHTML={{ __html: JSON.stringify({ "@context": "https://schema.org", "@type": "BreadcrumbList", "itemListElement": [{ "@type": "ListItem", "position": 1, "name": "Home", "item": "https://www.rcompleteautocare.com" }, { "@type": "ListItem", "position": 2, "name": "Services", "item": "https://www.rcompleteautocare.com/services/diagnostics" }, { "@type": "ListItem", "position": 3, "name": "Suspension & Steering Repair" }] }) }} /></div>
+/>
+<script type="application/ld+json" dangerouslySetInnerHTML={{ __html: JSON.stringify({
+  "@context": "https://schema.org",
+  "@type": "HowTo",
+  "name": "How Suspension Inspection Works at R Complete Auto Care",
+  "description": "Our 5-step suspension and steering inspection process in Crown Point, IN.",
+  "step": [
+    { "@type": "HowToStep", "position": 1, "name": "Visual Inspection", "text": "We thoroughly inspect all suspension and steering components for obvious damage, leaking struts, broken springs, and loose components." },
+    { "@type": "HowToStep", "position": 2, "name": "Component Testing", "text": "We physically check ball joints, tie rod ends, wheel bearings, and sway bar links for play and wear under load." },
+    { "@type": "HowToStep", "position": 3, "name": "Tire Wear Analysis", "text": "We analyze tire wear patterns — cupping, edge wear, feathering — to identify suspension root causes." },
+    { "@type": "HowToStep", "position": 4, "name": "Alignment Check", "text": "After any suspension repair, we check alignment to prevent accelerated tire wear and handling issues." },
+    { "@type": "HowToStep", "position": 5, "name": "Road Test", "text": "We road test before and after repair to confirm noises, pulling, and vibration are fully resolved." }
+  ]
+}) }} />
+<script type="application/ld+json" dangerouslySetInnerHTML={{ __html: JSON.stringify({
+  "@context": "https://schema.org",
+  "@type": "BreadcrumbList",
+  "itemListElement": [
+    { "@type": "ListItem", "position": 1, "name": "Home", "item": "https://www.rcompleteautocare.com" },
+    { "@type": "ListItem", "position": 2, "name": "Services", "item": "https://www.rcompleteautocare.com/services/diagnostics" },
+    { "@type": "ListItem", "position": 3, "name": "Suspension & Steering Repair" }
+  ]
+}) }} /></div>
   );
 }
