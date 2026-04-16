@@ -14,6 +14,16 @@ const nextConfig: NextConfig = {
         destination: "/contact",
         permanent: true,
       },
+      {
+        source: "/engine-repair-crown-point-in",
+        destination: "/services/engine-repair",
+        permanent: true,
+      },
+      {
+        source: "/brake-repair-crown-point-in",
+        destination: "/services/brake-repair",
+        permanent: true,
+      },
     ];
   },
 };
