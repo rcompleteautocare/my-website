@@ -3,7 +3,7 @@ import Script from "next/script";
 export const metadata = {
   title: "Auto Repair Crown Point IN | R Complete Auto Care | (219) 262-2711",
   description: "Crown Point's diagnostic-first auto repair shop. Honest estimates, expert repairs, extended warranty work welcome. Serving Crown Point, St. John, Schererville & Merrillville. Call (219) 262-2711.",
-  other: { dateModified: "2025-04-15" },
+  other: { dateModified: "2026-04-15" },
 };
 
 export default function Home() {
