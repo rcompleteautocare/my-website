@@ -4,6 +4,7 @@ import Image from "next/image";
 import Link from "next/link";
 
 const services = [
+  { name: "Inspection Checklist", href: "/inspection-checklist" },
   { name: "Diagnostics", href: "/services/diagnostics" },
   { name: "Check Engine Light", href: "/services/check-engine-light" },
   { name: "Electrical Diagnostics", href: "/services/electrical-diagnostics" },

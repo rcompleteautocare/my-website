@@ -24,6 +24,11 @@ const nextConfig: NextConfig = {
         destination: "/services/brake-repair",
         permanent: true,
       },
+      {
+        source: "/INSPECTION-CHECKLIST",
+        destination: "/inspection-checklist",
+        permanent: true,
+      },
     ];
   },
 };
