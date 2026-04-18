@@ -116,19 +116,18 @@ export async function POST(req: Request) {
     }
 
     const searchData = await searchRes.json();
-    const customers = Array.isArray(searchData?.data)
+    const customers: TekmetricCustomer[] = Array.isArray(searchData?.data)
       ? searchData.data
       : Array.isArray(searchData)
       ? searchData
       : [];
 
-    // do client-side exact match on phone fields in case the server-side search is fuzzy
-    const typedCustomers = customers as TekmetricCustomer[];
-    const exactMatch = typedCustomers.find((c) =>
-      normalizeTekmetricPhone(c) === cleanPhone
+    const exactMatch = customers.find(
+      (c) => normalizeTekmetricPhone(c) === cleanPhone
     );
 
-    let customerId: string | number | null = exactMatch?.id ?? typedCustomers?.[0]?.id ?? null;
+    // Only trust an exact phone match. If none, fall through to create.
+    let customerId: string | number | null = exactMatch?.id ?? null;
 
     // Create customer if not found
     if (!customerId) {
