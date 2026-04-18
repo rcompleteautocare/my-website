@@ -7,6 +7,23 @@ export const metadata = {
   alternates: {
     canonical: "https://www.rcompleteautocare.com/services/diagnostics",
   },
+
+  openGraph: {
+    title: "Auto Diagnostics Crown Point IN | R Complete Auto Care",
+    description: "Auto diagnostics in Crown Point, IN — check engine light, electrical, no-start. We find the real problem before recommending repairs. (219) 262-2711.",
+    url: "https://www.rcompleteautocare.com/services/diagnostics",
+    siteName: "R Complete Auto Care",
+    locale: "en_US",
+    type: "article",
+    images: [{ url: "/logo.png" }],
+  },
+  twitter: {
+    card: "summary_large_image",
+    title: "Auto Diagnostics Crown Point IN | R Complete Auto Care",
+    description: "Auto diagnostics in Crown Point, IN — check engine light, electrical, no-start. We find the real problem before recommending repairs. (219) 262-2711.",
+    images: ["/logo.png"],
+  },
+  robots: { index: true, follow: true },
 };
 
 export default function Diagnostics() {

@@ -5,6 +5,23 @@ export const metadata = {
   title: 'Electrical Diagnostics Crown Point | R Complete Auto Care',
   description: 'Auto electrical diagnostics in Crown Point, IN. Parasitic drain, no-start, shorts, and warning lights. Same-day diagnostics. Call (219) 262-2711.',
   alternates: { canonical: 'https://www.rcompleteautocare.com/services/electrical-diagnostics' },
+
+  openGraph: {
+    title: "Electrical Diagnostics Crown Point | R Complete Auto Care",
+    description: "Auto electrical diagnostics in Crown Point, IN. Parasitic drain, no-start, shorts, and warning lights. Same-day diagnostics. Call (219) 262-2711.",
+    url: "https://www.rcompleteautocare.com/services/electrical-diagnostics",
+    siteName: "R Complete Auto Care",
+    locale: "en_US",
+    type: "article",
+    images: [{ url: "/logo.png" }],
+  },
+  twitter: {
+    card: "summary_large_image",
+    title: "Electrical Diagnostics Crown Point | R Complete Auto Care",
+    description: "Auto electrical diagnostics in Crown Point, IN. Parasitic drain, no-start, shorts, and warning lights. Same-day diagnostics. Call (219) 262-2711.",
+    images: ["/logo.png"],
+  },
+  robots: { index: true, follow: true },
 }
 
 export default function ElectricalDiagnostics() {

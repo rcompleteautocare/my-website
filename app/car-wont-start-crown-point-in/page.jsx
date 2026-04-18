@@ -9,6 +9,23 @@ export const metadata = {
   alternates: {
     canonical: 'https://www.rcompleteautocare.com/car-wont-start-crown-point-in',
   },
+
+  openGraph: {
+    title: "Car Won't Start in Crown Point, IN | R Complete Auto Care",
+    description: "Car won't start in Crown Point, IN? Systematic diagnostics — no guessing, no parts-swapping. Same-day service, extended warranty accepted. (219) 262-2711.",
+    url: "https://www.rcompleteautocare.com/car-wont-start-crown-point-in",
+    siteName: "R Complete Auto Care",
+    locale: "en_US",
+    type: "article",
+    images: [{ url: "/logo.png" }],
+  },
+  twitter: {
+    card: "summary_large_image",
+    title: "Car Won't Start in Crown Point, IN | R Complete Auto Care",
+    description: "Car won't start in Crown Point, IN? Systematic diagnostics — no guessing, no parts-swapping. Same-day service, extended warranty accepted. (219) 262-2711.",
+    images: ["/logo.png"],
+  },
+  robots: { index: true, follow: true },
 }
 
 const FAQS = [

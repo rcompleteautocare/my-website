@@ -6,6 +6,23 @@ export const metadata = {
   alternates: {
     canonical: "https://www.rcompleteautocare.com/auto-repair-schererville-in",
   },
+
+  openGraph: {
+    title: "Auto Repair in Schererville, IN | R Complete Auto Care",
+    description: "Auto repair near Schererville, IN — R Complete Auto Care in Crown Point. Honest diagnostics, expert repairs, extended warranty accepted. (219) 262-2711.",
+    url: "https://www.rcompleteautocare.com/auto-repair-schererville-in",
+    siteName: "R Complete Auto Care",
+    locale: "en_US",
+    type: "website",
+    images: [{ url: "/logo.png" }],
+  },
+  twitter: {
+    card: "summary_large_image",
+    title: "Auto Repair in Schererville, IN | R Complete Auto Care",
+    description: "Auto repair near Schererville, IN — R Complete Auto Care in Crown Point. Honest diagnostics, expert repairs, extended warranty accepted. (219) 262-2711.",
+    images: ["/logo.png"],
+  },
+  robots: { index: true, follow: true },
 };
 
 export default function Schererville() {

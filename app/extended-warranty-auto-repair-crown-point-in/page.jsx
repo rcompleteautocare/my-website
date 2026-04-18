@@ -9,6 +9,23 @@ export const metadata = {
   alternates: {
     canonical: 'https://www.rcompleteautocare.com/extended-warranty-auto-repair-crown-point-in',
   },
+
+  openGraph: {
+    title: "Warranty Claim Help Crown Point, IN | R Complete Auto Care",
+    description: "Denied claim, stuck warranty, or another shop turned you away in Crown Point, IN? We rescue extended warranty claims with documented diagnostics. (219) 262-2711.",
+    url: "https://www.rcompleteautocare.com/extended-warranty-auto-repair-crown-point-in",
+    siteName: "R Complete Auto Care",
+    locale: "en_US",
+    type: "article",
+    images: [{ url: "/logo.png" }],
+  },
+  twitter: {
+    card: "summary_large_image",
+    title: "Warranty Claim Help Crown Point, IN | R Complete Auto Care",
+    description: "Denied claim, stuck warranty, or another shop turned you away in Crown Point, IN? We rescue extended warranty claims with documented diagnostics. (219) 262-2711.",
+    images: ["/logo.png"],
+  },
+  robots: { index: true, follow: true },
 }
 
 const FAQS = [

@@ -2,6 +2,23 @@ export const metadata = {
   title: 'Engine Repair in Crown Point, IN | R Complete Auto Care',
   description: 'Engine repair in Crown Point, IN. We diagnose WHY it failed before replacing parts, so the problem stays fixed. Extended warranty accepted. (219) 262-2711.',
   alternates: { canonical: 'https://www.rcompleteautocare.com/services/engine-repair' },
+
+  openGraph: {
+    title: "Engine Repair in Crown Point, IN | R Complete Auto Care",
+    description: "Engine repair in Crown Point, IN. We diagnose WHY it failed before replacing parts, so the problem stays fixed. Extended warranty accepted. (219) 262-2711.",
+    url: "https://www.rcompleteautocare.com/services/engine-repair",
+    siteName: "R Complete Auto Care",
+    locale: "en_US",
+    type: "article",
+    images: [{ url: "/logo.png" }],
+  },
+  twitter: {
+    card: "summary_large_image",
+    title: "Engine Repair in Crown Point, IN | R Complete Auto Care",
+    description: "Engine repair in Crown Point, IN. We diagnose WHY it failed before replacing parts, so the problem stays fixed. Extended warranty accepted. (219) 262-2711.",
+    images: ["/logo.png"],
+  },
+  robots: { index: true, follow: true },
 }
 
 import Link from "next/link";

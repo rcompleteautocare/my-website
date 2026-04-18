@@ -2,6 +2,23 @@ export const metadata = {
   title: 'Check Engine Light in Crown Point, IN | R Complete Auto Care',
   description: 'Check engine light on in Crown Point? We trace fault codes to root cause — not just clear it. Same-day diagnostics. Extended warranty accepted. Call (219) 262-2711.',
   alternates: { canonical: 'https://www.rcompleteautocare.com/services/check-engine-light' },
+
+  openGraph: {
+    title: "Check Engine Light in Crown Point, IN | R Complete Auto Care",
+    description: "Check engine light on in Crown Point? We trace fault codes to root cause — not just clear it. Same-day diagnostics. Extended warranty accepted. Call (219) 262-2711.",
+    url: "https://www.rcompleteautocare.com/services/check-engine-light",
+    siteName: "R Complete Auto Care",
+    locale: "en_US",
+    type: "article",
+    images: [{ url: "/logo.png" }],
+  },
+  twitter: {
+    card: "summary_large_image",
+    title: "Check Engine Light in Crown Point, IN | R Complete Auto Care",
+    description: "Check engine light on in Crown Point? We trace fault codes to root cause — not just clear it. Same-day diagnostics. Extended warranty accepted. Call (219) 262-2711.",
+    images: ["/logo.png"],
+  },
+  robots: { index: true, follow: true },
 }
 
 import Link from "next/link";

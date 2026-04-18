@@ -2,6 +2,23 @@ export const metadata = {
   title: 'Extended Warranty Repairs | R Complete Auto Care',
   description: 'Extended warranty auto repair in Crown Point, IN. We verify coverage, handle pre-authorisation and paperwork — you pay only your deductible. (219) 262-2711.',
   alternates: { canonical: 'https://www.rcompleteautocare.com/services/extended-warranty-repair' },
+
+  openGraph: {
+    title: "Extended Warranty Repairs | R Complete Auto Care",
+    description: "Extended warranty auto repair in Crown Point, IN. We verify coverage, handle pre-authorisation and paperwork — you pay only your deductible. (219) 262-2711.",
+    url: "https://www.rcompleteautocare.com/services/extended-warranty-repair",
+    siteName: "R Complete Auto Care",
+    locale: "en_US",
+    type: "article",
+    images: [{ url: "/logo.png" }],
+  },
+  twitter: {
+    card: "summary_large_image",
+    title: "Extended Warranty Repairs | R Complete Auto Care",
+    description: "Extended warranty auto repair in Crown Point, IN. We verify coverage, handle pre-authorisation and paperwork — you pay only your deductible. (219) 262-2711.",
+    images: ["/logo.png"],
+  },
+  robots: { index: true, follow: true },
 }
 
 import Link from "next/link";

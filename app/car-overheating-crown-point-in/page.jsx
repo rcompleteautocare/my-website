@@ -8,6 +8,23 @@ export const metadata = {
   alternates: {
     canonical: 'https://www.rcompleteautocare.com/car-overheating-crown-point-in',
   },
+
+  openGraph: {
+    title: "Car Overheating in Crown Point, IN | R Complete Auto Care",
+    description: "Car overheating in Crown Point, IN? Pull over and call us. Same-day diagnostics — we find the root cause before recommending repairs. (219) 262-2711.",
+    url: "https://www.rcompleteautocare.com/car-overheating-crown-point-in",
+    siteName: "R Complete Auto Care",
+    locale: "en_US",
+    type: "article",
+    images: [{ url: "/logo.png" }],
+  },
+  twitter: {
+    card: "summary_large_image",
+    title: "Car Overheating in Crown Point, IN | R Complete Auto Care",
+    description: "Car overheating in Crown Point, IN? Pull over and call us. Same-day diagnostics — we find the root cause before recommending repairs. (219) 262-2711.",
+    images: ["/logo.png"],
+  },
+  robots: { index: true, follow: true },
 }
 
 const FAQS = [

@@ -7,6 +7,23 @@ export const metadata = {
   alternates: {
     canonical: "https://www.rcompleteautocare.com/about",
   },
+
+  openGraph: {
+    title: "About Crown Point Auto Repair Shop | R Complete Auto Care",
+    description: "R Complete Auto Care in Crown Point, IN — diagnostic-first auto repair, ASE certified since 1993, 35+ years of technician experience. (219) 262-2711.",
+    url: "https://www.rcompleteautocare.com/about",
+    siteName: "R Complete Auto Care",
+    locale: "en_US",
+    type: "website",
+    images: [{ url: "/logo.png" }],
+  },
+  twitter: {
+    card: "summary_large_image",
+    title: "About Crown Point Auto Repair Shop | R Complete Auto Care",
+    description: "R Complete Auto Care in Crown Point, IN — diagnostic-first auto repair, ASE certified since 1993, 35+ years of technician experience. (219) 262-2711.",
+    images: ["/logo.png"],
+  },
+  robots: { index: true, follow: true },
 };
 
 export default function About() {

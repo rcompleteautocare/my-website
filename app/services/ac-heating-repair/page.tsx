@@ -5,6 +5,23 @@ export const metadata = {
   title: 'AC & Heat Repair Crown Point, IN | R Complete Auto Care',
   description: 'AC and heating repair in Crown Point, IN. Car AC not blowing cold or heat not working? Same-day diagnostics available. Call (219) 262-2711.',
   alternates: { canonical: 'https://www.rcompleteautocare.com/services/ac-heating-repair' },
+
+  openGraph: {
+    title: "AC & Heat Repair Crown Point, IN | R Complete Auto Care",
+    description: "AC and heating repair in Crown Point, IN. Car AC not blowing cold or heat not working? Same-day diagnostics available. Call (219) 262-2711.",
+    url: "https://www.rcompleteautocare.com/services/ac-heating-repair",
+    siteName: "R Complete Auto Care",
+    locale: "en_US",
+    type: "article",
+    images: [{ url: "/logo.png" }],
+  },
+  twitter: {
+    card: "summary_large_image",
+    title: "AC & Heat Repair Crown Point, IN | R Complete Auto Care",
+    description: "AC and heating repair in Crown Point, IN. Car AC not blowing cold or heat not working? Same-day diagnostics available. Call (219) 262-2711.",
+    images: ["/logo.png"],
+  },
+  robots: { index: true, follow: true },
 }
 
 export default function AcHeatingRepair() {

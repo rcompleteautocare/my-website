@@ -6,6 +6,23 @@ export const metadata = {
   alternates: {
     canonical: "https://www.rcompleteautocare.com/auto-repair-crown-point-in",
   },
+
+  openGraph: {
+    title: "Auto Repair in Crown Point, IN | R Complete Auto Care",
+    description: "Top-rated auto repair shop in Crown Point, IN. Diagnostic-first approach, honest estimates, extended warranty accepted. (219) 262-2711.",
+    url: "https://www.rcompleteautocare.com/auto-repair-crown-point-in",
+    siteName: "R Complete Auto Care",
+    locale: "en_US",
+    type: "website",
+    images: [{ url: "/logo.png" }],
+  },
+  twitter: {
+    card: "summary_large_image",
+    title: "Auto Repair in Crown Point, IN | R Complete Auto Care",
+    description: "Top-rated auto repair shop in Crown Point, IN. Diagnostic-first approach, honest estimates, extended warranty accepted. (219) 262-2711.",
+    images: ["/logo.png"],
+  },
+  robots: { index: true, follow: true },
 };
 
 export default function CrownPoint() {
