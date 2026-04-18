@@ -255,7 +255,7 @@ export default function ExtendedWarrantyRepair() {
         "acceptedAnswer": { "@type": "Answer", "text": "We handle warranty claims for engine, transmission, electrical, suspension, A/C, fuel system, cooling system, and most other covered components. Call us with your provider name and we'll tell you exactly what's covered." }
       }
     ]
-  })}}
+  }).replace(/</g, "\u003c")}}
 />
 <script type="application/ld+json" dangerouslySetInnerHTML={{ __html: JSON.stringify({
   "@context": "https://schema.org",
@@ -269,15 +269,18 @@ export default function ExtendedWarrantyRepair() {
     { "@type": "HowToStep", "position": 4, "name": "Repair With Approved Parts", "text": "We complete the repair using parts that meet your warranty company's requirements and document all labor operations." },
     { "@type": "HowToStep", "position": 5, "name": "You Pay Only Your Deductible", "text": "The warranty company pays us directly for the covered amount. You pick up your vehicle and pay your deductible only — typically $100–$200." }
   ]
-}) }} />
+}).replace(/</g, "\u003c") }} />
 <script type="application/ld+json" dangerouslySetInnerHTML={{ __html: JSON.stringify({
   "@context": "https://schema.org",
   "@type": "BreadcrumbList",
   "itemListElement": [
     { "@type": "ListItem", "position": 1, "name": "Home", "item": "https://www.rcompleteautocare.com" },
-    { "@type": "ListItem", "position": 2, "name": "Services", "item": "https://www.rcompleteautocare.com/services/diagnostics" },
+    { "@type": "ListItem", "position": 2, "name": "Services", "item": "https://www.rcompleteautocare.com/services" },
     { "@type": "ListItem", "position": 3, "name": "Extended Warranty Repairs" }
   ]
-}) }} /></div>
+}).replace(/</g, "\u003c") }} />
+    <script type="application/ld+json" dangerouslySetInnerHTML={{ __html: "{\"@context\":\"https://schema.org\",\"@type\":\"Service\",\"@id\":\"https://www.rcompleteautocare.com/services/extended-warranty-repair#service\",\"name\":\"Extended Warranty Repairs\",\"serviceType\":\"Extended Warranty Auto Repair\",\"url\":\"https://www.rcompleteautocare.com/services/extended-warranty-repair\",\"provider\":{\"@id\":\"https://www.rcompleteautocare.com/#business\"},\"areaServed\":[{\"@type\":\"City\",\"name\":\"Crown Point\",\"containedIn\":{\"@type\":\"State\",\"name\":\"Indiana\"}},{\"@type\":\"City\",\"name\":\"St. John\",\"containedIn\":{\"@type\":\"State\",\"name\":\"Indiana\"}},{\"@type\":\"City\",\"name\":\"Schererville\",\"containedIn\":{\"@type\":\"State\",\"name\":\"Indiana\"}},{\"@type\":\"City\",\"name\":\"Merrillville\",\"containedIn\":{\"@type\":\"State\",\"name\":\"Indiana\"}},{\"@type\":\"City\",\"name\":\"Cedar Lake\",\"containedIn\":{\"@type\":\"State\",\"name\":\"Indiana\"}}],\"dateModified\":\"2026-04-18\"}".replace(/</g, "\u003c") }} />
+    <script type="application/ld+json" dangerouslySetInnerHTML={{ __html: "{\"@context\":\"https://schema.org\",\"@type\":\"WebPage\",\"@id\":\"https://www.rcompleteautocare.com/services/extended-warranty-repair#webpage\",\"url\":\"https://www.rcompleteautocare.com/services/extended-warranty-repair\",\"name\":\"Extended Warranty Repairs in Crown Point, IN\",\"dateModified\":\"2026-04-18\",\"about\":{\"@id\":\"https://www.rcompleteautocare.com/#business\"}}".replace(/</g, "\u003c") }} />
+  </div>
   );
 }

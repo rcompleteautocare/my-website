@@ -209,7 +209,7 @@ export default function SuspensionSteering() {
         "acceptedAnswer": { "@type": "Answer", "text": "Some suspension components are covered under extended warranty policies. Call us with your warranty information and we'll verify what's covered before any work begins." }
       }
     ]
-  })}}
+  }).replace(/</g, "\u003c")}}
 />
 <script type="application/ld+json" dangerouslySetInnerHTML={{ __html: JSON.stringify({
   "@context": "https://schema.org",
@@ -223,15 +223,18 @@ export default function SuspensionSteering() {
     { "@type": "HowToStep", "position": 4, "name": "Alignment Check", "text": "After any suspension repair, we check alignment to prevent accelerated tire wear and handling issues." },
     { "@type": "HowToStep", "position": 5, "name": "Road Test", "text": "We road test before and after repair to confirm noises, pulling, and vibration are fully resolved." }
   ]
-}) }} />
+}).replace(/</g, "\u003c") }} />
 <script type="application/ld+json" dangerouslySetInnerHTML={{ __html: JSON.stringify({
   "@context": "https://schema.org",
   "@type": "BreadcrumbList",
   "itemListElement": [
     { "@type": "ListItem", "position": 1, "name": "Home", "item": "https://www.rcompleteautocare.com" },
-    { "@type": "ListItem", "position": 2, "name": "Services", "item": "https://www.rcompleteautocare.com/services/diagnostics" },
+    { "@type": "ListItem", "position": 2, "name": "Services", "item": "https://www.rcompleteautocare.com/services" },
     { "@type": "ListItem", "position": 3, "name": "Suspension & Steering Repair" }
   ]
-}) }} /></div>
+}).replace(/</g, "\u003c") }} />
+    <script type="application/ld+json" dangerouslySetInnerHTML={{ __html: "{\"@context\":\"https://schema.org\",\"@type\":\"Service\",\"@id\":\"https://www.rcompleteautocare.com/services/suspension-steering#service\",\"name\":\"Suspension & Steering Repair\",\"serviceType\":\"Suspension and Steering Repair\",\"url\":\"https://www.rcompleteautocare.com/services/suspension-steering\",\"provider\":{\"@id\":\"https://www.rcompleteautocare.com/#business\"},\"areaServed\":[{\"@type\":\"City\",\"name\":\"Crown Point\",\"containedIn\":{\"@type\":\"State\",\"name\":\"Indiana\"}},{\"@type\":\"City\",\"name\":\"St. John\",\"containedIn\":{\"@type\":\"State\",\"name\":\"Indiana\"}},{\"@type\":\"City\",\"name\":\"Schererville\",\"containedIn\":{\"@type\":\"State\",\"name\":\"Indiana\"}},{\"@type\":\"City\",\"name\":\"Merrillville\",\"containedIn\":{\"@type\":\"State\",\"name\":\"Indiana\"}},{\"@type\":\"City\",\"name\":\"Cedar Lake\",\"containedIn\":{\"@type\":\"State\",\"name\":\"Indiana\"}}],\"dateModified\":\"2026-04-18\"}".replace(/</g, "\u003c") }} />
+    <script type="application/ld+json" dangerouslySetInnerHTML={{ __html: "{\"@context\":\"https://schema.org\",\"@type\":\"WebPage\",\"@id\":\"https://www.rcompleteautocare.com/services/suspension-steering#webpage\",\"url\":\"https://www.rcompleteautocare.com/services/suspension-steering\",\"name\":\"Suspension & Steering Repair in Crown Point, IN\",\"dateModified\":\"2026-04-18\",\"about\":{\"@id\":\"https://www.rcompleteautocare.com/#business\"}}".replace(/</g, "\u003c") }} />
+  </div>
   );
 }

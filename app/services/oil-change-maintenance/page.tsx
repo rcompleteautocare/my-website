@@ -231,7 +231,7 @@ export default function OilChangeMaintenance() {
         "acceptedAnswer": { "@type": "Answer", "text": "Always — that's the point of the inspection. We give you a written report of what we found, what's urgent, and what can wait. We never do additional work without your approval. No surprises on your bill." }
       }
     ]
-  })}}
+  }).replace(/</g, "\u003c")}}
 />
 <script type="application/ld+json" dangerouslySetInnerHTML={{ __html: JSON.stringify({
   "@context": "https://schema.org",
@@ -245,15 +245,18 @@ export default function OilChangeMaintenance() {
     { "@type": "HowToStep", "position": 3, "name": "Multi-Point Inspection", "text": "While your vehicle is on the lift, we perform a thorough multi-point inspection — fluids, brakes, tires, belts, lights, and more." },
     { "@type": "HowToStep", "position": 4, "name": "Report & Pick Up", "text": "We report our findings, tell you what's urgent and what can wait, and return your vehicle — typically within 30–60 minutes." }
   ]
-}) }} />
+}).replace(/</g, "\u003c") }} />
 <script type="application/ld+json" dangerouslySetInnerHTML={{ __html: JSON.stringify({
   "@context": "https://schema.org",
   "@type": "BreadcrumbList",
   "itemListElement": [
     { "@type": "ListItem", "position": 1, "name": "Home", "item": "https://www.rcompleteautocare.com" },
-    { "@type": "ListItem", "position": 2, "name": "Services", "item": "https://www.rcompleteautocare.com/services/diagnostics" },
+    { "@type": "ListItem", "position": 2, "name": "Services", "item": "https://www.rcompleteautocare.com/services" },
     { "@type": "ListItem", "position": 3, "name": "Oil Change & Maintenance" }
   ]
-}) }} /></div>
+}).replace(/</g, "\u003c") }} />
+    <script type="application/ld+json" dangerouslySetInnerHTML={{ __html: "{\"@context\":\"https://schema.org\",\"@type\":\"Service\",\"@id\":\"https://www.rcompleteautocare.com/services/oil-change-maintenance#service\",\"name\":\"Oil Change & Maintenance\",\"serviceType\":\"Oil Change and Maintenance\",\"url\":\"https://www.rcompleteautocare.com/services/oil-change-maintenance\",\"provider\":{\"@id\":\"https://www.rcompleteautocare.com/#business\"},\"areaServed\":[{\"@type\":\"City\",\"name\":\"Crown Point\",\"containedIn\":{\"@type\":\"State\",\"name\":\"Indiana\"}},{\"@type\":\"City\",\"name\":\"St. John\",\"containedIn\":{\"@type\":\"State\",\"name\":\"Indiana\"}},{\"@type\":\"City\",\"name\":\"Schererville\",\"containedIn\":{\"@type\":\"State\",\"name\":\"Indiana\"}},{\"@type\":\"City\",\"name\":\"Merrillville\",\"containedIn\":{\"@type\":\"State\",\"name\":\"Indiana\"}},{\"@type\":\"City\",\"name\":\"Cedar Lake\",\"containedIn\":{\"@type\":\"State\",\"name\":\"Indiana\"}}],\"dateModified\":\"2026-04-18\"}".replace(/</g, "\u003c") }} />
+    <script type="application/ld+json" dangerouslySetInnerHTML={{ __html: "{\"@context\":\"https://schema.org\",\"@type\":\"WebPage\",\"@id\":\"https://www.rcompleteautocare.com/services/oil-change-maintenance#webpage\",\"url\":\"https://www.rcompleteautocare.com/services/oil-change-maintenance\",\"name\":\"Oil Change & Maintenance in Crown Point, IN\",\"dateModified\":\"2026-04-18\",\"about\":{\"@id\":\"https://www.rcompleteautocare.com/#business\"}}".replace(/</g, "\u003c") }} />
+  </div>
   );
 }

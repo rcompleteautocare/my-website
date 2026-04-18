@@ -208,7 +208,7 @@ export default function About() {
           "ASE-standard diagnostic procedures"
         ],
         "description": "ASE-certified technician since 1993 with 35+ years of hands-on experience starting in 1989. Specializes in diagnostic-first auto repair, complex diagnostics, and extended warranty claims in Crown Point, Indiana."
-      }) }} />
+      }).replace(/</g, "\u003c") }} />
 
       <script type="application/ld+json" dangerouslySetInnerHTML={{ __html: JSON.stringify({
         "@context": "https://schema.org",
@@ -230,7 +230,7 @@ export default function About() {
         },
         "knowsAbout": ["Auto Diagnostics", "Engine Repair", "Transmission Repair", "Electrical Diagnostics", "Extended Warranty Repair"],
         "description": "ASE-certified technician with 15 years of experience at R Complete Auto Care in Crown Point, Indiana."
-      }) }} />
+      }).replace(/</g, "\u003c") }} />
 
       {/* BreadcrumbList */}
       <script type="application/ld+json" dangerouslySetInnerHTML={{ __html: JSON.stringify({
@@ -240,14 +240,14 @@ export default function About() {
           { "@type": "ListItem", "position": 1, "name": "Home", "item": "https://www.rcompleteautocare.com" },
           { "@type": "ListItem", "position": 2, "name": "About" }
         ]
-      }) }} />
+      }).replace(/</g, "\u003c") }} />
 
       {/* Speakable */}
       <script type="application/ld+json" dangerouslySetInnerHTML={{ __html: JSON.stringify({
         "@context": "https://schema.org",
         "@type": "SpeakableSpecification",
         "cssSelector": [".speakable", "h1"]
-      }) }} />
+      }).replace(/</g, "\u003c") }} />
 
     </div>
   );

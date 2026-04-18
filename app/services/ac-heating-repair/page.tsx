@@ -136,7 +136,7 @@ export default function AcHeatingRepair() {
             { "@type": "Question", "name": "Do you serve St. John, Schererville, and Merrillville for A/C repair?", "acceptedAnswer": { "@type": "Answer", "text": "Yes! We're located in Crown Point and serve all of Lake County including St. John, Schererville, Merrillville, and Cedar Lake, Indiana." } },
             { "@type": "Question", "name": "Do you accept extended warranties for A/C and heating repair?", "acceptedAnswer": { "@type": "Answer", "text": "Yes! We work with most extended warranty providers. Call us to verify your coverage before scheduling." } }
           ]
-        })}}
+        }).replace(/</g, "\u003c")}}
       />
 
     <script type="application/ld+json" dangerouslySetInnerHTML={{ __html: JSON.stringify({
@@ -150,15 +150,18 @@ export default function AcHeatingRepair() {
         { "@type": "HowToStep", "position": 3, "name": "Clear Estimate", "text": "We explain exactly what failed and give you a clear price before starting any repair." },
         { "@type": "HowToStep", "position": 4, "name": "Repair & Verification", "text": "We complete the repair and verify correct system operation — checking vent temperatures to confirm the fix." }
       ]
-    }) }} />
+    }).replace(/</g, "\u003c") }} />
     <script type="application/ld+json" dangerouslySetInnerHTML={{ __html: JSON.stringify({
       "@context": "https://schema.org",
       "@type": "BreadcrumbList",
       "itemListElement": [
         { "@type": "ListItem", "position": 1, "name": "Home", "item": "https://www.rcompleteautocare.com" },
-        { "@type": "ListItem", "position": 2, "name": "Services", "item": "https://www.rcompleteautocare.com/services/diagnostics" },
+        { "@type": "ListItem", "position": 2, "name": "Services", "item": "https://www.rcompleteautocare.com/services" },
         { "@type": "ListItem", "position": 3, "name": "A/C & Heating Repair" }
       ]
-    }) }} /></div>
+    }).replace(/</g, "\u003c") }} />
+    <script type="application/ld+json" dangerouslySetInnerHTML={{ __html: "{\"@context\":\"https://schema.org\",\"@type\":\"Service\",\"@id\":\"https://www.rcompleteautocare.com/services/ac-heating-repair#service\",\"name\":\"A/C & Heating Repair\",\"serviceType\":\"Automotive A/C and Heating Repair\",\"url\":\"https://www.rcompleteautocare.com/services/ac-heating-repair\",\"provider\":{\"@id\":\"https://www.rcompleteautocare.com/#business\"},\"areaServed\":[{\"@type\":\"City\",\"name\":\"Crown Point\",\"containedIn\":{\"@type\":\"State\",\"name\":\"Indiana\"}},{\"@type\":\"City\",\"name\":\"St. John\",\"containedIn\":{\"@type\":\"State\",\"name\":\"Indiana\"}},{\"@type\":\"City\",\"name\":\"Schererville\",\"containedIn\":{\"@type\":\"State\",\"name\":\"Indiana\"}},{\"@type\":\"City\",\"name\":\"Merrillville\",\"containedIn\":{\"@type\":\"State\",\"name\":\"Indiana\"}},{\"@type\":\"City\",\"name\":\"Cedar Lake\",\"containedIn\":{\"@type\":\"State\",\"name\":\"Indiana\"}}],\"dateModified\":\"2026-04-18\"}".replace(/</g, "\u003c") }} />
+    <script type="application/ld+json" dangerouslySetInnerHTML={{ __html: "{\"@context\":\"https://schema.org\",\"@type\":\"WebPage\",\"@id\":\"https://www.rcompleteautocare.com/services/ac-heating-repair#webpage\",\"url\":\"https://www.rcompleteautocare.com/services/ac-heating-repair\",\"name\":\"A/C & Heating Repair in Crown Point, IN\",\"dateModified\":\"2026-04-18\",\"about\":{\"@id\":\"https://www.rcompleteautocare.com/#business\"}}".replace(/</g, "\u003c") }} />
+  </div>
   );
 }

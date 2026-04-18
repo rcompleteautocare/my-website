@@ -13,6 +13,7 @@ export const metadata: Metadata = {
 const SCHEMA = {
   "@context": "https://schema.org",
   "@type": ["AutoRepair", "LocalBusiness"],
+  "@id": "https://www.rcompleteautocare.com/#business",
   name: "R Complete Auto Care",
   url: "https://www.rcompleteautocare.com",
   telephone: "(219) 262-2711",

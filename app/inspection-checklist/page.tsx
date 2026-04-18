@@ -269,7 +269,7 @@ export default function InspectionChecklist() {
           "name": f.q,
           "acceptedAnswer": { "@type": "Answer", "text": f.a }
         }))
-      }) }} />
+      }).replace(/</g, "\u003c") }} />
 
       <script type="application/ld+json" dangerouslySetInnerHTML={{ __html: JSON.stringify({
         "@context": "https://schema.org",
@@ -278,7 +278,10 @@ export default function InspectionChecklist() {
           { "@type": "ListItem", "position": 1, "name": "Home", "item": "https://www.rcompleteautocare.com" },
           { "@type": "ListItem", "position": 2, "name": "Inspection Checklist", "item": "https://www.rcompleteautocare.com/inspection-checklist" }
         ]
-      }) }} />
-    </div>
+      }).replace(/</g, "\u003c") }} />
+    
+    <script type="application/ld+json" dangerouslySetInnerHTML={{ __html: "{\"@context\":\"https://schema.org\",\"@type\":\"HowTo\",\"name\":\"Our 10-Section Vehicle Inspection Process\",\"description\":\"The exact inspection checklist performed at R Complete Auto Care in Crown Point, IN.\",\"totalTime\":\"PT1H30M\",\"step\":[{\"@type\":\"HowToStep\",\"position\":1,\"name\":\"Vehicle Basics\",\"text\":\"Record VIN, odometer, battery state of charge and health, tire pressures, and visible fluid conditions.\"},{\"@type\":\"HowToStep\",\"position\":2,\"name\":\"Under the Hood\",\"text\":\"Inspect belts, hoses, battery connections, engine oil level and condition, coolant, brake and power steering fluid.\"},{\"@type\":\"HowToStep\",\"position\":3,\"name\":\"Transmission & Driveline\",\"text\":\"Check transmission fluid condition, CV boots, driveshafts, differential, and transfer case for leaks and wear.\"},{\"@type\":\"HowToStep\",\"position\":4,\"name\":\"Steering & Suspension\",\"text\":\"Check ball joints, tie rods, control arm bushings, shocks and struts for play and leaks.\"},{\"@type\":\"HowToStep\",\"position\":5,\"name\":\"Brakes\",\"text\":\"Measure front and rear pad thickness, rotor thickness and condition, caliper operation, and fluid condition.\"},{\"@type\":\"HowToStep\",\"position\":6,\"name\":\"Tires & Wheels\",\"text\":\"Measure tread depth at multiple points, check wear pattern, tire age, and spare availability.\"},{\"@type\":\"HowToStep\",\"position\":7,\"name\":\"Exhaust & Emissions\",\"text\":\"Inspect exhaust system for leaks, damage, and mounting issues. Confirm catalytic converter integrity.\"},{\"@type\":\"HowToStep\",\"position\":8,\"name\":\"Electrical & Charging\",\"text\":\"Starter draw test, alternator output and ripple, battery load test, key electrical grounds verified.\"},{\"@type\":\"HowToStep\",\"position\":9,\"name\":\"Body & Safety\",\"text\":\"Lights, wipers, horn, seat belts, HVAC blower, and mirrors confirmed functional.\"},{\"@type\":\"HowToStep\",\"position\":10,\"name\":\"Road Test & Report\",\"text\":\"Verify drivability, note any symptoms, then deliver a color-coded written report with photos on red items.\"}]}".replace(/</g, "\u003c") }} />
+    <script type="application/ld+json" dangerouslySetInnerHTML={{ __html: "{\"@context\":\"https://schema.org\",\"@type\":\"WebPage\",\"@id\":\"https://www.rcompleteautocare.com/inspection-checklist#webpage\",\"url\":\"https://www.rcompleteautocare.com/inspection-checklist\",\"name\":\"Vehicle Inspection Checklist — Crown Point, IN\",\"dateModified\":\"2026-04-18\",\"about\":{\"@id\":\"https://www.rcompleteautocare.com/#business\"}}".replace(/</g, "\u003c") }} />
+  </div>
   );
 }

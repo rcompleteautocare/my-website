@@ -261,7 +261,10 @@ export default function MechanicNearMe() {
         "acceptedAnswer": { "@type": "Answer", "text": "Call R Complete Auto Care at (219) 262-2711. We're located at 1305 E Summit St, Crown Point IN 46307, open Mon–Fri 8am–6pm and Saturday 8am–2pm." }
       }
     ]
-  })}}
-/></div>
+  }).replace(/</g, "\u003c")}}
+/>
+    <script type="application/ld+json" dangerouslySetInnerHTML={{ __html: "{\"@context\":\"https://schema.org\",\"@type\":\"BreadcrumbList\",\"itemListElement\":[{\"@type\":\"ListItem\",\"position\":1,\"name\":\"Home\",\"item\":\"https://www.rcompleteautocare.com\"},{\"@type\":\"ListItem\",\"position\":2,\"name\":\"Mechanic Near Me Crown Point\"}]}".replace(/</g, "\u003c") }} />
+    <script type="application/ld+json" dangerouslySetInnerHTML={{ __html: "{\"@context\":\"https://schema.org\",\"@type\":\"WebPage\",\"@id\":\"https://www.rcompleteautocare.com/mechanic-near-me-crown-point#webpage\",\"url\":\"https://www.rcompleteautocare.com/mechanic-near-me-crown-point\",\"name\":\"Mechanic Near Me Crown Point, IN\",\"dateModified\":\"2026-04-18\",\"about\":{\"@id\":\"https://www.rcompleteautocare.com/#business\"}}".replace(/</g, "\u003c") }} />
+  </div>
   );
 }

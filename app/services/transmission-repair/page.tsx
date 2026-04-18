@@ -210,7 +210,7 @@ export default function TransmissionRepair() {
         "acceptedAnswer": { "@type": "Answer", "text": "Yes — transmission repairs are among the most commonly covered repairs on extended warranty policies. Call us with your warranty info and we'll verify coverage before any work begins." }
       }
     ]
-  })}}
+  }).replace(/</g, "\u003c")}}
 />
 <script type="application/ld+json" dangerouslySetInnerHTML={{ __html: JSON.stringify({
   "@context": "https://schema.org",
@@ -224,15 +224,18 @@ export default function TransmissionRepair() {
     { "@type": "HowToStep", "position": 4, "name": "Root Cause & Repair Options", "text": "We tell you exactly what failed, why it failed, and give honest advice on repair vs. rebuild vs. replacement." },
     { "@type": "HowToStep", "position": 5, "name": "Repair & Verification", "text": "After repair, we road test through the complete drive cycle and re-scan all modules before returning the vehicle." }
   ]
-}) }} />
+}).replace(/</g, "\u003c") }} />
 <script type="application/ld+json" dangerouslySetInnerHTML={{ __html: JSON.stringify({
   "@context": "https://schema.org",
   "@type": "BreadcrumbList",
   "itemListElement": [
     { "@type": "ListItem", "position": 1, "name": "Home", "item": "https://www.rcompleteautocare.com" },
-    { "@type": "ListItem", "position": 2, "name": "Services", "item": "https://www.rcompleteautocare.com/services/diagnostics" },
+    { "@type": "ListItem", "position": 2, "name": "Services", "item": "https://www.rcompleteautocare.com/services" },
     { "@type": "ListItem", "position": 3, "name": "Transmission Repair" }
   ]
-}) }} /></div>
+}).replace(/</g, "\u003c") }} />
+    <script type="application/ld+json" dangerouslySetInnerHTML={{ __html: "{\"@context\":\"https://schema.org\",\"@type\":\"Service\",\"@id\":\"https://www.rcompleteautocare.com/services/transmission-repair#service\",\"name\":\"Transmission Repair\",\"serviceType\":\"Transmission Repair\",\"url\":\"https://www.rcompleteautocare.com/services/transmission-repair\",\"provider\":{\"@id\":\"https://www.rcompleteautocare.com/#business\"},\"areaServed\":[{\"@type\":\"City\",\"name\":\"Crown Point\",\"containedIn\":{\"@type\":\"State\",\"name\":\"Indiana\"}},{\"@type\":\"City\",\"name\":\"St. John\",\"containedIn\":{\"@type\":\"State\",\"name\":\"Indiana\"}},{\"@type\":\"City\",\"name\":\"Schererville\",\"containedIn\":{\"@type\":\"State\",\"name\":\"Indiana\"}},{\"@type\":\"City\",\"name\":\"Merrillville\",\"containedIn\":{\"@type\":\"State\",\"name\":\"Indiana\"}},{\"@type\":\"City\",\"name\":\"Cedar Lake\",\"containedIn\":{\"@type\":\"State\",\"name\":\"Indiana\"}}],\"dateModified\":\"2026-04-18\"}".replace(/</g, "\u003c") }} />
+    <script type="application/ld+json" dangerouslySetInnerHTML={{ __html: "{\"@context\":\"https://schema.org\",\"@type\":\"WebPage\",\"@id\":\"https://www.rcompleteautocare.com/services/transmission-repair#webpage\",\"url\":\"https://www.rcompleteautocare.com/services/transmission-repair\",\"name\":\"Transmission Repair in Crown Point, IN\",\"dateModified\":\"2026-04-18\",\"about\":{\"@id\":\"https://www.rcompleteautocare.com/#business\"}}".replace(/</g, "\u003c") }} />
+  </div>
   );
 }

@@ -266,14 +266,17 @@ export default function Home() {
         { "@type": "Question", "name": "How much does auto repair cost in Crown Point, IN?", "acceptedAnswer": { "@type": "Answer", "text": "Costs vary by service. An oil change is one of our most affordable services. Diagnostics, brake repair, and other services are priced competitively — we give you a clear estimate before any work begins. No surprises." } },
         { "@type": "Question", "name": "What are signs I need auto repair?", "acceptedAnswer": { "@type": "Answer", "text": "Warning signs include: check engine light on, unusual noises (knocking, squealing, grinding), vehicle pulling to one side, rough idle, poor fuel economy, leaking fluids, or dashboard warning lights. If you notice any of these, call us for a diagnostic." } },
       ]
-    }) }} />
+    }).replace(/</g, "\u003c") }} />
 
     {/* Speakable schema */}
     <script type="application/ld+json" dangerouslySetInnerHTML={{ __html: JSON.stringify({
       "@context": "https://schema.org",
       "@type": "SpeakableSpecification",
       "cssSelector": ["h1", ".speakable"]
-    }) }} />
-    </div>
+    }).replace(/</g, "\u003c") }} />
+    
+    <script type="application/ld+json" dangerouslySetInnerHTML={{ __html: "{\"@context\":\"https://schema.org\",\"@type\":\"BreadcrumbList\",\"itemListElement\":[{\"@type\":\"ListItem\",\"position\":1,\"name\":\"Home\",\"item\":\"https://www.rcompleteautocare.com\"}]}".replace(/</g, "\u003c") }} />
+    <script type="application/ld+json" dangerouslySetInnerHTML={{ __html: "{\"@context\":\"https://schema.org\",\"@type\":\"WebPage\",\"@id\":\"https://www.rcompleteautocare.com/#webpage\",\"url\":\"https://www.rcompleteautocare.com\",\"name\":\"R Complete Auto Care | Auto Repair in Crown Point, IN\",\"dateModified\":\"2026-04-18\",\"about\":{\"@id\":\"https://www.rcompleteautocare.com/#business\"},\"isPartOf\":{\"@id\":\"https://www.rcompleteautocare.com/#website\"}}".replace(/</g, "\u003c") }} />
+  </div>
   );
 }
