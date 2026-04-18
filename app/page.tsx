@@ -20,6 +20,9 @@ export default function Home() {
        <h1 style={{ fontSize: "44px", fontWeight: "bold", margin: "0 0 20px", lineHeight: 1.2, maxWidth: "800px", marginLeft: "auto", marginRight: "auto" }}>
           Crown Point&apos;s Diagnostic-First Auto Repair Shop — We Fix What Others Miss
         </h1>
+        <p className="speakable" style={{ fontSize: "16px", color: "#e63946", fontWeight: "600", marginBottom: "16px", fontStyle: "italic", maxWidth: "700px", marginLeft: "auto", marginRight: "auto" }}>
+          TL;DR: R Complete Auto Care at 1305 E Summit St, Crown Point, IN is a diagnostic-first family shop — we run the full test protocol before recommending any repair, accept most extended warranties, and complete most diagnostics same day. Call (219) 262-2711.
+        </p>
         <p style={{ fontSize: "18px", color: "#ccc", maxWidth: "620px", margin: "0 auto 16px", lineHeight: 1.7 }}>
           If your car is making noise, shaking, or a warning light is on, we find the problem and fix it right the first time — no guessing.
         </p>

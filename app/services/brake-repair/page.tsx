@@ -16,8 +16,7 @@ export default function BrakeRepair() {
         <h1 style={{ fontSize: "38px", fontWeight: "bold", marginBottom: "12px" }}>
           Brake Repair in Crown Point, IN
         </h1>
-        <p style={{ fontSize: "16px", color: "#e63946", fontWeight: "600", marginBottom: "16px", fontStyle: "italic" }}>
-          TL;DR: Brake pad replacement typically takes 1–2 hours. Full brake jobs (pads + rotors) usually run $150–$400 per axle depending on vehicle and parts. We give you exact measurements and a clear estimate before touching anything.
+        <p className="speakable" style={{ fontSize: "16px", color: "#e63946", fontWeight: "600", marginBottom: "16px", fontStyle: "italic" }}>TL;DR: Brake pad replacement typically takes 1–2 hours. Full brake jobs (pads + rotors) usually run $150–$400 per axle depending on vehicle and parts. We give you exact measurements and a clear estimate before touching anything.
         </p>
         <p style={{ fontSize: "18px", color: "#ccc", maxWidth: "600px", margin: "0 auto 32px" }}>
           Your brakes are the most important safety system on your vehicle. We perform thorough inspections with actual measurements — not a quick visual and an upsell.

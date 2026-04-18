@@ -16,8 +16,7 @@ export default function NoStartDiagnostics() {
         <h1 style={{ fontSize: "38px", fontWeight: "bold", marginBottom: "12px" }}>
           Car Won&apos;t Start in Crown Point, IN? We Find the Cause.
         </h1>
-        <p style={{ fontSize: "16px", color: "#e63946", fontWeight: "600", marginBottom: "16px", fontStyle: "italic" }}>
-          TL;DR: No-start diagnostics are completed same day in most cases. We test battery, starter, fuel delivery, spark, and electronic signals to find the exact cause — not guess with parts. Fuel pump, starter, and sensor failures are often covered by extended warranties.
+        <p className="speakable" style={{ fontSize: "16px", color: "#e63946", fontWeight: "600", marginBottom: "16px", fontStyle: "italic" }}>TL;DR: No-start diagnostics are completed same day in most cases. We test battery, starter, fuel delivery, spark, and electronic signals to find the exact cause — not guess with parts. Fuel pump, starter, and sensor failures are often covered by extended warranties.
         </p>
         <p style={{ fontSize: "18px", color: "#ccc", maxWidth: "600px", margin: "0 auto 32px" }}>
           A no-start condition can have dozens of causes. We don&apos;t guess and replace parts — we diagnose the exact reason your car won&apos;t start before recommending any repair.

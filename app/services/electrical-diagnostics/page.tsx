@@ -18,8 +18,7 @@ export default function ElectricalDiagnostics() {
         <h1 style={{ fontSize: "38px", fontWeight: "bold", marginBottom: "12px", lineHeight: 1.2 }}>
           Electrical Diagnostics in Crown Point, IN
         </h1>
-        <p style={{ fontSize: "16px", color: "#e63946", fontWeight: "600", marginBottom: "16px", fontStyle: "italic" }}>
-          TL;DR: Electrical diagnostics in Crown Point are completed same day in most cases. We charge a diagnostic fee (applied toward repair). Covers battery, alternator, parasitic draw, wiring faults, sensors, and module issues.
+        <p className="speakable" style={{ fontSize: "16px", color: "#e63946", fontWeight: "600", marginBottom: "16px", fontStyle: "italic" }}>TL;DR: Electrical diagnostics in Crown Point are completed same day in most cases. We charge a diagnostic fee (applied toward repair). Covers battery, alternator, parasitic draw, wiring faults, sensors, and module issues.
         </p>
         <p style={{ fontSize: "18px", color: "#ccc", maxWidth: "600px", margin: "0 auto 32px" }}>
           Electrical problems are complex. We have the tools, equipment, and expertise to find the exact cause — and fix it right.

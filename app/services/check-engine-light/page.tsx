@@ -15,8 +15,7 @@ export default function CheckEngineLight() {
         <h1 style={{ fontSize: "38px", fontWeight: "bold", marginBottom: "12px" }}>
           Check Engine Light Diagnostics in Crown Point, IN
         </h1>
-        <p style={{ fontSize: "16px", color: "#e63946", fontWeight: "600", marginBottom: "16px", fontStyle: "italic" }}>
-          TL;DR: Check engine light diagnostics are completed same day in most cases. We charge a diagnostic fee (applied toward repair cost). A solid light = safe to drive briefly; a flashing light = pull over and call us immediately.
+        <p className="speakable" style={{ fontSize: "16px", color: "#e63946", fontWeight: "600", marginBottom: "16px", fontStyle: "italic" }}>TL;DR: Check engine light diagnostics are completed same day in most cases. We charge a diagnostic fee (applied toward repair cost). A solid light = safe to drive briefly; a flashing light = pull over and call us immediately.
         </p>
         <p style={{ fontSize: "18px", color: "#ccc", maxWidth: "600px", margin: "0 auto 32px" }}>
           Don&apos;t ignore that warning light. Our diagnostic-first approach finds the real problem — fast. We trace fault codes to their root cause, not just clear them and hope for the best.

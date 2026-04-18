@@ -16,8 +16,7 @@ export default function TransmissionRepair() {
         <h1 style={{ fontSize: "38px", fontWeight: "bold", marginBottom: "12px" }}>
           Transmission Repair in Crown Point, IN
         </h1>
-        <p style={{ fontSize: "16px", color: "#e63946", fontWeight: "600", marginBottom: "16px", fontStyle: "italic" }}>
-          TL;DR: Transmission repair cost depends entirely on the actual problem — a solenoid or sensor fix is a fraction of a full rebuild. We diagnose first so you don&apos;t pay for a rebuild you don&apos;t need. Transmission repairs are among the most commonly covered items on extended warranty plans.
+        <p className="speakable" style={{ fontSize: "16px", color: "#e63946", fontWeight: "600", marginBottom: "16px", fontStyle: "italic" }}>TL;DR: Transmission repair cost depends entirely on the actual problem — a solenoid or sensor fix is a fraction of a full rebuild. We diagnose first so you don&apos;t pay for a rebuild you don&apos;t need. Transmission repairs are among the most commonly covered items on extended warranty plans.
         </p>
         <p style={{ fontSize: "18px", color: "#ccc", maxWidth: "600px", margin: "0 auto 32px" }}>
           Transmission problems are expensive — but the wrong diagnosis makes them even more expensive. We find the real cause before recommending a rebuild or replacement.

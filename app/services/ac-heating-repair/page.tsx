@@ -18,8 +18,7 @@ export default function AcHeatingRepair() {
         <h1 style={{ fontSize: "38px", fontWeight: "bold", marginBottom: "12px", lineHeight: 1.2 }}>
           A/C &amp; Heating Repair in Crown Point, IN
         </h1>
-        <p style={{ fontSize: "16px", color: "#e63946", fontWeight: "600", marginBottom: "16px", fontStyle: "italic" }}>
-          TL;DR: A refrigerant recharge starts around $100–$150. Compressor replacement is a larger repair. Heater core replacement varies significantly by vehicle. We diagnose before we recommend — same-day appointments available for Crown Point and surrounding areas.
+        <p className="speakable" style={{ fontSize: "16px", color: "#e63946", fontWeight: "600", marginBottom: "16px", fontStyle: "italic" }}>TL;DR: A refrigerant recharge starts around $100–$150. Compressor replacement typically runs $700–$1,400. Heater core replacement usually runs $600–$1,500, higher when full dashboard removal is required. We diagnose before we recommend — same-day appointments available for Crown Point and surrounding areas.
         </p>
         <p style={{ fontSize: "18px", color: "#ccc", maxWidth: "600px", margin: "0 auto 32px" }}>
           No cold air in summer? No heat in an Indiana winter? We diagnose and repair all A/C and heating problems — fast and right.

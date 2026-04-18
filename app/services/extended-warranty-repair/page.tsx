@@ -16,8 +16,7 @@ export default function ExtendedWarrantyRepair() {
         <h1 style={{ fontSize: "38px", fontWeight: "bold", marginBottom: "12px" }}>
           Extended Warranty Auto Repair in Crown Point, IN
         </h1>
-        <p style={{ fontSize: "16px", color: "#e63946", fontWeight: "600", marginBottom: "16px", fontStyle: "italic" }}>
-          TL;DR: We work with CarShield, Endurance, CARS Protection, AmTrust, and most providers. Call us first with your contract info — we verify coverage, handle pre-authorization, complete the repair, and submit all paperwork. You pay only your deductible (typically $100–$200).
+        <p className="speakable" style={{ fontSize: "16px", color: "#e63946", fontWeight: "600", marginBottom: "16px", fontStyle: "italic" }}>TL;DR: We work with CarShield, Endurance, CARS Protection, AmTrust, and most providers. Call us first with your contract info — we verify coverage, handle pre-authorization, complete the repair, and submit all paperwork. You pay only your deductible (typically $100–$200).
         </p>
         <p style={{ fontSize: "18px", color: "#ccc", maxWidth: "600px", margin: "0 auto 32px" }}>
           Bring your contract. We verify coverage, handle pre-authorisation, complete the repair, and submit all paperwork. You pay only your deductible.
