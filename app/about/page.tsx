@@ -37,8 +37,8 @@ export default function About() {
         <h1 style={{ fontSize: "38px", fontWeight: "bold", marginBottom: "16px", lineHeight: 1.2 }}>
           About R Complete Auto Care
         </h1>
-        <p className="speakable" style={{ fontSize: "18px", color: "#ccc", maxWidth: "600px", margin: "0 auto 32px" }}>
-          Crown Point&apos;s diagnostic-first auto repair shop — located at 1305 E Summit St, Crown Point, IN 46307. Lead technician Dave has been repairing cars since 1989, ASE certified since 1993. Honest communication and repairs done right.
+        <p className="speakable" style={{ fontSize: "18px", color: "#ccc", maxWidth: "620px", margin: "0 auto 32px" }}>
+          Crown Point&apos;s diagnostic-first auto repair shop — located at 1305 E Summit St, Crown Point, IN 46307. Built on 25+ years of family experience. Honest communication and repairs done right.
         </p>
         <a href="tel:2192622711" style={{ background: "#e63946", color: "#fff", padding: "14px 32px", borderRadius: "6px", fontWeight: "bold", fontSize: "18px", textDecoration: "none" }}>
           📞 Call (219) 262-2711
