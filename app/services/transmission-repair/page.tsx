@@ -2,10 +2,10 @@ export const metadata = {
   title: 'Transmission Repair Crown Point, IN | R Complete Auto Care',
   description: 'Transmission slipping in Crown Point? Get a real diagnosis before spending thousands. We have saved customers from unnecessary rebuilds. Call (219) 262-2711.',
   alternates: { canonical: 'https://www.rcompleteautocare.com/services/transmission-repair' },
-  other: { dateModified: "2025-04-15" },
 }
 
 import Link from "next/link";
+import LastUpdated from "@/app/components/LastUpdated";
 export default function TransmissionRepair() {
   return (
     <div style={{ color: "#1a1a1a" }}>
@@ -35,7 +35,7 @@ export default function TransmissionRepair() {
 
       {/* Intro */}
       <section style={{ padding: "60px 24px", maxWidth: "800px", margin: "0 auto" }}>
-        <p style={{ color: "#888", fontSize: "13px", marginBottom: "24px" }}>Last updated: April 2025</p>
+        <LastUpdated date="2026-04-18" />
         <h2 style={{ fontSize: "28px", marginBottom: "16px" }}>Diagnose Before You Spend</h2>
         <p style={{ lineHeight: 1.8, color: "#444", marginBottom: "20px" }}>
           Transmission repair is one of the most misdiagnosed — and most expensive — areas of auto repair. Many shops jump straight to a rebuild or replacement at the first sign of slipping or shifting problems. At R Complete Auto Care in Crown Point, we do it differently. We diagnose first. Every time.

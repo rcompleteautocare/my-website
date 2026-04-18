@@ -2,10 +2,10 @@ export const metadata = {
   title: 'No-Start Diagnostics Crown Point, IN | R Complete Auto Care',
   description: 'Car won\'t start in Crown Point, IN? We find the exact reason — no guessing. Same-day diagnostics. Extended warranty accepted. Call (219) 262-2711.',
   alternates: { canonical: 'https://www.rcompleteautocare.com/services/no-start-diagnostics' },
-  other: { dateModified: "2025-04-15" },
 }
 
 import Link from "next/link";
+import LastUpdated from "@/app/components/LastUpdated";
 export default function NoStartDiagnostics() {
   return (
     <div style={{ color: "#1a1a1a" }}>
@@ -35,7 +35,7 @@ export default function NoStartDiagnostics() {
 
       {/* Intro */}
       <section style={{ padding: "60px 24px", maxWidth: "800px", margin: "0 auto" }}>
-        <p style={{ color: "#888", fontSize: "13px", marginBottom: "24px" }}>Last updated: April 2025</p>
+        <LastUpdated date="2026-04-18" />
         <h2 style={{ fontSize: "28px", marginBottom: "16px" }}>No-Start Diagnosis — Done Right the First Time</h2>
         <p style={{ lineHeight: 1.8, color: "#444", marginBottom: "20px" }}>
           When your car won't start, the instinct is to start replacing parts — battery, starter, alternator. But no-start conditions have many possible causes, and replacing parts without a proper diagnosis is expensive and often doesn't solve the problem. We've seen customers spend hundreds of dollars on parts at other shops, only to bring the car to us and find a failed crankshaft position sensor or a fuel pump issue that a proper diagnostic would have caught immediately.

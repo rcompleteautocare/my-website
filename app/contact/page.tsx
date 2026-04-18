@@ -157,7 +157,7 @@ export default function Contact() {
       <section style={{ padding: "0 24px 60px", maxWidth: "900px", margin: "0 auto" }}>
         <h2 style={{ fontSize: "24px", fontWeight: "bold", marginBottom: "16px" }}>Find Us</h2>
         <iframe
-          src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d2978.0!2d-87.3648!3d41.4175!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x8811b0e1e1e1e1e1%3A0x1!2s1305+E+Summit+St%2C+Crown+Point%2C+IN+46307!5e0!3m2!1sen!2sus!4v1"
+          src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d2978.0!2d-87.344627!3d41.427312!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x8811b0e1e1e1e1e1%3A0x1!2s1305+E+Summit+St%2C+Crown+Point%2C+IN+46307!5e0!3m2!1sen!2sus!4v1"
           width="100%"
           height="350"
           style={{ border: 0, borderRadius: "8px" }}

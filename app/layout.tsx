@@ -27,7 +27,7 @@ const SCHEMA = {
     postalCode: "46307",
     addressCountry: "US",
   },
-  geo: { "@type": "GeoCoordinates", latitude: 41.4175, longitude: -87.3648 },
+  geo: { "@type": "GeoCoordinates", latitude: 41.427312, longitude: -87.344627 },
   openingHoursSpecification: [
     {
       "@type": "OpeningHoursSpecification",

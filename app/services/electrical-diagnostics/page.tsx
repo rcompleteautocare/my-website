@@ -1,10 +1,10 @@
 import Link from "next/link";
+import LastUpdated from "@/app/components/LastUpdated";
 
 export const metadata = {
   title: 'Electrical Diagnostics Crown Point | R Complete Auto Care',
   description: 'Auto electrical diagnostics in Crown Point, IN. Parasitic drain, no-start, shorts, and warning lights. Same-day diagnostics. Call (219) 262-2711.',
   alternates: { canonical: 'https://www.rcompleteautocare.com/services/electrical-diagnostics' },
-  other: { dateModified: "2025-04-15" },
 }
 
 export default function ElectricalDiagnostics() {
@@ -37,7 +37,7 @@ export default function ElectricalDiagnostics() {
       </section>
 
       <section style={{ padding: "60px 24px", maxWidth: "800px", margin: "0 auto" }}>
-        <p style={{ color: "#888", fontSize: "13px", marginBottom: "24px" }}>Last updated: April 2025</p>
+        <LastUpdated date="2026-04-18" />
         <h2 style={{ fontSize: "28px", marginBottom: "16px" }}>Expert Auto Electrical Diagnostics in Crown Point</h2>
         <p style={{ lineHeight: 1.8, color: "#444", marginBottom: "20px" }}>
           Modern vehicles have incredibly complex electrical systems. A single faulty sensor, bad ground, or failing module can cause symptoms that seem unrelated and are difficult to diagnose without the right equipment and expertise. At R Complete Auto Care in Crown Point, Indiana, we use professional-grade diagnostic tools to pinpoint electrical problems accurately — the first time.

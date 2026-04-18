@@ -1,4 +1,5 @@
 import Link from "next/link";
+import LastUpdated from "@/app/components/LastUpdated";
 
 export const metadata = {
   title: "About Crown Point Auto Repair Shop | R Complete Auto Care",
@@ -35,7 +36,7 @@ export default function About() {
       </section>
 
       <section style={{ padding: "60px 24px", maxWidth: "800px", margin: "0 auto" }}>
-        <p style={{ color: "#888", fontSize: "13px", marginBottom: "32px" }}>Last updated: April 2025</p>
+        <LastUpdated date="2026-04-18" />
 
         <h2 style={{ fontSize: "28px", marginBottom: "16px" }}>Why We Started R Complete Auto Care in Crown Point</h2>
         <p style={{ lineHeight: 1.8, color: "#444", marginBottom: "20px" }}>

@@ -2,10 +2,10 @@ export const metadata = {
   title: 'What We Check on Every Inspection — R Complete Auto Care Crown Point, IN',
   description: 'See the full 10-section vehicle inspection we perform in Crown Point, IN. Real measurements, color-coded results, and photos on every red item. Honest, documented, no pressure. Call (219) 262-2711.',
   alternates: { canonical: 'https://www.rcompleteautocare.com/inspection-checklist' },
-  other: { dateModified: "2025-04-15" },
 }
 
 import Link from "next/link";
+import LastUpdated from "@/app/components/LastUpdated";
 
 const sections = [
   {
@@ -150,7 +150,7 @@ export default function InspectionChecklist() {
 
       {/* Intro */}
       <section style={{ padding: "60px 24px", maxWidth: "800px", margin: "0 auto" }}>
-        <p style={{ color: "#888", fontSize: "13px", marginBottom: "24px" }}>Last updated: April 2025</p>
+        <LastUpdated date="2026-04-18" />
 
         <h2 style={{ fontSize: "28px", marginBottom: "16px" }}>Measurements, Not Guesses</h2>
         <p style={{ lineHeight: 1.8, color: "#444", marginBottom: "20px" }}>

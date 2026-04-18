@@ -2,10 +2,10 @@ export const metadata = {
   title: 'Check Engine Light in Crown Point, IN | R Complete Auto Care',
   description: 'Check engine light on in Crown Point? We trace fault codes to root cause — not just clear it. Same-day diagnostics. Extended warranty accepted. Call (219) 262-2711.',
   alternates: { canonical: 'https://www.rcompleteautocare.com/services/check-engine-light' },
-  other: { dateModified: "2025-04-15" },
 }
 
 import Link from "next/link";
+import LastUpdated from "@/app/components/LastUpdated";
 export default function CheckEngineLight() {
   return (
     <div style={{ color: "#1a1a1a" }}>
@@ -29,7 +29,7 @@ export default function CheckEngineLight() {
 
       {/* What it means */}
       <section style={{ padding: "60px 24px", maxWidth: "800px", margin: "0 auto" }}>
-        <p style={{ color: "#888", fontSize: "13px", marginBottom: "24px" }}>Last updated: April 2025</p>
+        <LastUpdated date="2026-04-18" />
         <h2 style={{ fontSize: "28px", marginBottom: "16px" }}>What Does a Check Engine Light Mean?</h2>
         <p style={{ lineHeight: 1.8, color: "#444", marginBottom: "24px" }}>
           Your check engine light can mean dozens of different things — from a loose gas cap to a failing catalytic converter or serious engine issue. The only way to know for sure is a proper diagnostic scan combined with hands-on inspection. At R Complete Auto Care, we don't just read the code number and guess. We trace the fault to its root cause before recommending a single repair.

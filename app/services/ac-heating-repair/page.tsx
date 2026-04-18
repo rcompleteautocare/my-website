@@ -1,10 +1,10 @@
 import Link from "next/link";
+import LastUpdated from "@/app/components/LastUpdated";
 
 export const metadata = {
   title: 'AC & Heat Repair Crown Point, IN | R Complete Auto Care',
   description: 'AC and heating repair in Crown Point, IN. Car AC not blowing cold or heat not working? Same-day diagnostics available. Call (219) 262-2711.',
   alternates: { canonical: 'https://www.rcompleteautocare.com/services/ac-heating-repair' },
-  other: { dateModified: "2025-04-15" },
 }
 
 export default function AcHeatingRepair() {
@@ -37,7 +37,7 @@ export default function AcHeatingRepair() {
       </section>
 
       <section style={{ padding: "60px 24px", maxWidth: "800px", margin: "0 auto" }}>
-        <p style={{ color: "#888", fontSize: "13px", marginBottom: "24px" }}>Last updated: April 2025</p>
+        <LastUpdated date="2026-04-18" />
         <h2 style={{ fontSize: "28px", marginBottom: "16px" }}>Expert A/C &amp; Heating Repair in Crown Point</h2>
         <p style={{ lineHeight: 1.8, color: "#444", marginBottom: "20px" }}>
           Crown Point summers are hot and Indiana winters are brutal. When your A/C or heat stops working, you need it fixed fast. At R Complete Auto Care, we perform a thorough diagnostic of your entire climate control system before recommending any repair — so you only pay for what you actually need.

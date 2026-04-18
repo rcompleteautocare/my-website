@@ -2,10 +2,10 @@ export const metadata = {
   title: 'Oil Change & Maintenance Crown Point | R Complete Auto Care',
   description: 'Oil change and maintenance in Crown Point, IN. Conventional and synthetic oil with multi-point inspection. Honest service, no upsell. Call (219) 262-2711.',
   alternates: { canonical: 'https://www.rcompleteautocare.com/services/oil-change-maintenance' },
-  other: { dateModified: "2025-04-15" },
 }
 
 import Link from "next/link";
+import LastUpdated from "@/app/components/LastUpdated";
 export default function OilChangeMaintenance() {
   return (
     <div style={{ color: "#1a1a1a" }}>
@@ -35,7 +35,7 @@ export default function OilChangeMaintenance() {
 
       {/* Intro */}
       <section style={{ padding: "60px 24px", maxWidth: "800px", margin: "0 auto" }}>
-        <p style={{ color: "#888", fontSize: "13px", marginBottom: "24px" }}>Last updated: April 2025</p>
+        <LastUpdated date="2026-04-18" />
         <h2 style={{ fontSize: "28px", marginBottom: "16px" }}>More Than Just an Oil Change</h2>
         <p style={{ lineHeight: 1.8, color: "#444", marginBottom: "20px" }}>
           At R Complete Auto Care in Crown Point, an oil change is never just an oil change. Every service includes a thorough multi-point inspection — we check fluid levels, brake pad thickness, tire condition, belt and hose condition, filters, lights, and anything else that could affect your vehicle's safety and reliability.

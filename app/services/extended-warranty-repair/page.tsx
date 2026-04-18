@@ -2,10 +2,10 @@ export const metadata = {
   title: 'Extended Warranty Repairs | R Complete Auto Care',
   description: 'Extended warranty auto repair in Crown Point, IN. We verify coverage, handle pre-authorisation and paperwork — you pay only your deductible. (219) 262-2711.',
   alternates: { canonical: 'https://www.rcompleteautocare.com/services/extended-warranty-repair' },
-  other: { dateModified: "2025-04-15" },
 }
 
 import Link from "next/link";
+import LastUpdated from "@/app/components/LastUpdated";
 export default function ExtendedWarrantyRepair() {
   return (
     <div style={{ color: "#1a1a1a" }}>
@@ -35,7 +35,7 @@ export default function ExtendedWarrantyRepair() {
 
       {/* Intro */}
       <section style={{ padding: "60px 24px", maxWidth: "800px", margin: "0 auto" }}>
-        <p style={{ color: "#888", fontSize: "13px", marginBottom: "24px" }}>Last updated: April 2025</p>
+        <LastUpdated date="2026-04-18" />
         <h2 style={{ fontSize: "28px", marginBottom: "16px" }}>Crown Point&apos;s Extended Warranty Repair Specialists</h2>
         <p style={{ lineHeight: 1.8, color: "#444", marginBottom: "20px" }}>
           Most auto repair shops in Crown Point and Northwest Indiana refuse extended warranty work. The documentation requirements are too demanding, the pre-authorisation calls take too long, and the adjusters push back on claims that lack detailed diagnostic evidence. Those shops tell you to go somewhere else.

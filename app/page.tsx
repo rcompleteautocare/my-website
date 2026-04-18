@@ -6,7 +6,6 @@ export const metadata = {
   alternates: {
     canonical: "https://www.rcompleteautocare.com",
   },
-  other: { dateModified: "2026-04-15" },
 };
 
 export default function Home() {
@@ -207,6 +206,9 @@ export default function Home() {
             { q: "How does your diagnostic process work?", a: "We start every vehicle with a thorough diagnostic to find the root cause of the problem. We call you with our findings and a clear estimate before doing any repair. You approve everything first." },
             { q: "Do you offer same-day service?", a: "Yes — most diagnostic appointments are completed same day. Repair time depends on the job, but we always give you an accurate timeline upfront." },
             { q: "Why should I choose R Complete Auto Care over a dealership?", a: "We offer dealership-level expertise without dealership prices or pressure. Our diagnostic-first approach means you only pay for what your vehicle actually needs — backed by over 25 years of family experience in auto repair." },
+            { q: "Do I need an appointment for auto repair in Crown Point?", a: "We recommend calling ahead at (219) 262-2711 to schedule. Same-day appointments are often available for diagnostics. Walk-ins are welcome but scheduling ensures we have a bay ready for you." },
+            { q: "How much does auto repair cost in Crown Point, IN?", a: "Costs vary by service. An oil change is one of our most affordable services. Diagnostics, brake repair, and other services are priced competitively — we give you a clear estimate before any work begins. No surprises." },
+            { q: "What are signs I need auto repair?", a: "Warning signs include: check engine light on, unusual noises (knocking, squealing, grinding), vehicle pulling to one side, rough idle, poor fuel economy, leaking fluids, or dashboard warning lights. If you notice any of these, call us for a diagnostic." },
           ].map((item) => (
             <div key={item.q} style={{ marginBottom: "24px", borderBottom: "1px solid #e0e0e0", paddingBottom: "24px" }}>
               <div style={{ fontWeight: "bold", fontSize: "17px", marginBottom: "10px" }}>{item.q}</div>

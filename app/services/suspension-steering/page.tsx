@@ -2,10 +2,10 @@ export const metadata = {
   title: 'Suspension Repair Crown Point, IN | R Complete Auto Care',
   description: 'Suspension repair in Crown Point, IN. Struts, shocks, tie rods, alignments. Indiana roads are rough — we keep your ride safe and controlled. Call (219) 262-2711.',
   alternates: { canonical: 'https://www.rcompleteautocare.com/services/suspension-steering' },
-  other: { dateModified: "2025-04-15" },
 }
 
 import Link from "next/link";
+import LastUpdated from "@/app/components/LastUpdated";
 export default function SuspensionSteering() {
   return (
     <div style={{ color: "#1a1a1a" }}>
@@ -35,7 +35,7 @@ export default function SuspensionSteering() {
 
       {/* Intro */}
       <section style={{ padding: "60px 24px", maxWidth: "800px", margin: "0 auto" }}>
-        <p style={{ color: "#888", fontSize: "13px", marginBottom: "24px" }}>Last updated: April 2025</p>
+        <LastUpdated date="2026-04-18" />
         <h2 style={{ fontSize: "28px", marginBottom: "16px" }}>Crown Point Suspension &amp; Steering Specialists</h2>
         <p style={{ lineHeight: 1.8, color: "#444", marginBottom: "20px" }}>
           Your suspension system does more than just absorb bumps — it controls how your vehicle handles, steers, and stops. Worn struts and shocks don't just make the ride uncomfortable — they increase stopping distances, cause uneven tire wear, and reduce your ability to control the vehicle in emergency situations.
