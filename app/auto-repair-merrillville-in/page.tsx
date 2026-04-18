@@ -92,12 +92,12 @@ export default function Merrillville() {
 
         <h2 style={{ fontSize: "28px", marginBottom: "24px" }}>Frequently Asked Questions — Auto Repair Near Merrillville, IN</h2>
         {[
-          { q: "Where is the best auto repair shop near Merrillville, IN?", a: "R Complete Auto Care at 1305 E Summit St, Crown Point, IN 46307 — about 10 minutes from Merrillville. Call (219) 262-2711." },
-          { q: "How far is R Complete Auto Care from Merrillville?", a: "We're located about 10 minutes from Merrillville, Indiana at 1305 E Summit St in Crown Point, IN 46307." },
-          { q: "Do you accept extended warranties for Merrillville drivers?", a: "Yes! We work with most extended warranty providers and handle the entire claims process. Merrillville drivers are welcome — call us at (219) 262-2711." },
-          { q: "Do you work on foreign and domestic vehicles?", a: "Absolutely — all makes and models including Honda, Toyota, BMW, Mercedes, Ford, Chevrolet, Dodge, Subaru, and more." },
-          { q: "What are your hours?", a: "Monday through Friday 8:00 AM to 6:00 PM and Saturday 8:00 AM to 2:00 PM. Closed Sunday." },
-          { q: "Do you offer same-day service for Merrillville drivers?", a: "Yes — most diagnostic appointments and many repairs are completed the same day. Call (219) 262-2711 to schedule." },
+          { q: "Is there a diagnostic-first auto repair shop near Merrillville, IN?", a: "R Complete Auto Care in Crown Point — about 10–12 minutes from Merrillville via Broadway or I-65 south to US-231. We diagnose before we repair and accept most extended warranties. Call (219) 262-2711." },
+          { q: "My car takes a beating on US-30 near Southlake Mall — what wears out first?", a: "Commuter traffic around Southlake Mall and the US-30 corridor is hard on brakes, suspension bushings, and cooling systems. We see front brake pads, control-arm bushings, and radiator fan failures earliest on cars that live on that stretch." },
+          { q: "Do you handle I-65 commuter wear — the Chicago / south-shore run?", a: "Yes — long-haul I-65 vehicles show up with tire wear, wheel-bearing noise, and transmission complaints. We run the full diagnostic instead of guessing from the receipt of the last shop." },
+          { q: "How fast can I get from Merrillville to your shop?", a: "10–12 minutes via Broadway south, or 12–15 via I-65 to US-231 west. Light traffic both directions outside rush hour." },
+          { q: "Do you accept extended warranties for Merrillville drivers?", a: "Yes — we verify coverage before you bring the vehicle in and submit the entire claim to your warranty provider. You pay only your deductible." },
+          { q: "Do you work on the foreign brands common in Merrillville (Honda, Toyota, BMW, Hyundai)?", a: "Yes — all makes and models. We have the scan tools and experience for Japanese, European, and domestic vehicles alike." },
         ].map(item => (
           <div key={item.q} style={{ marginBottom: "20px", borderBottom: "1px solid #e0e0e0", paddingBottom: "20px" }}>
             <div style={{ fontWeight: "bold", fontSize: "16px", marginBottom: "8px" }}>{item.q}</div>

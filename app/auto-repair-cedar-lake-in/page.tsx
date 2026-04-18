@@ -92,12 +92,12 @@ export default function CedarLake() {
 
         <h2 style={{ fontSize: "28px", marginBottom: "24px" }}>Frequently Asked Questions — Auto Repair Near Cedar Lake, IN</h2>
         {[
-          { q: "Where is the best auto repair shop near Cedar Lake, IN?", a: "R Complete Auto Care at 1305 E Summit St, Crown Point, IN 46307 — about 10 minutes from Cedar Lake. Call (219) 262-2711." },
-          { q: "How far is R Complete Auto Care from Cedar Lake?", a: "We're located about 10 minutes from Cedar Lake, Indiana at 1305 E Summit St in Crown Point, IN 46307." },
-          { q: "Do you accept extended warranties for Cedar Lake drivers?", a: "Yes! We work with most extended warranty providers and handle the entire claims process. Cedar Lake drivers are welcome — call us at (219) 262-2711." },
-          { q: "Do you work on foreign and domestic vehicles?", a: "Absolutely — all makes and models including Honda, Toyota, BMW, Mercedes, Ford, Chevrolet, Dodge, Subaru, and more." },
-          { q: "What are your hours?", a: "Monday through Friday 8:00 AM to 6:00 PM and Saturday 8:00 AM to 2:00 PM. Closed Sunday." },
-          { q: "Do you offer same-day service for Cedar Lake drivers?", a: "Yes — most diagnostic appointments and many repairs are completed the same day. Call (219) 262-2711 to schedule." },
+          { q: "Is there an honest auto repair shop near Cedar Lake, IN?", a: "R Complete Auto Care in Crown Point — about 12–15 minutes from Cedar Lake via IN-2 or West 133rd Ave. We're a diagnostic-first shop, accept most extended warranties, and offer same-day service. Call (219) 262-2711." },
+          { q: "My vehicle runs rural Cedar Lake roads and gravel — what suffers most?", a: "Gravel and patched-pavement wear hits suspension bushings, tie rods, and wheel alignment first. We also regularly see stone-chip damage to brake lines and undercarriage plastics on Cedar Lake vehicles. A proper inspection catches it before it becomes a brake-line leak." },
+          { q: "Can you tow from Lake Dalecarlia or the Cedar Lake shoreline area?", a: "We coordinate with local tow partners and can have your vehicle recovered from Lake Dalecarlia, Town Center, or the US-41 / IN-2 corridor and brought to our Crown Point shop. Call (219) 262-2711 and we'll arrange it." },
+          { q: "I commute IN-2 to Crown Point every day — what should I plan for?", a: "IN-2 sees heavy truck traffic and patched asphalt through the seasons — that combination is hard on struts, tie-rod ends, and alignment. We recommend an alignment check every 15–20k miles on IN-2 commuters to preserve tire life." },
+          { q: "Do you accept extended warranties for Cedar Lake residents?", a: "Yes — we work with CarShield, Endurance, CARS Protection, Zurich, AmTrust and most providers. Call us first so we can verify coverage before the tow." },
+          { q: "How far am I from the shop if I'm by the lake?", a: "Most Cedar Lake neighborhoods are 12–15 minutes out via IN-2 east into Crown Point. Lake Dalecarlia is closer to 15. IN-2 is usually fastest outside rush hour." },
         ].map(item => (
           <div key={item.q} style={{ marginBottom: "20px", borderBottom: "1px solid #e0e0e0", paddingBottom: "20px" }}>
             <div style={{ fontWeight: "bold", fontSize: "16px", marginBottom: "8px" }}>{item.q}</div>
