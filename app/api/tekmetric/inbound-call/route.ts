@@ -18,6 +18,13 @@ function normalizeTekmetricPhone(customer: any): string {
 }
 
 export async function POST(req: Request) {
+  if (process.env.TEKMETRIC_ENABLED !== "true") {
+    return new Response(JSON.stringify({ ok: true, skipped: "tekmetric_disabled" }), {
+      status: 200,
+      headers: { "Content-Type": "application/json" },
+    });
+  }
+
   const INTERNAL_KEY = process.env.INTERNAL_KEY;
   if (!INTERNAL_KEY) {
     console.error("Missing INTERNAL_KEY env var");
@@ -110,6 +117,8 @@ export async function POST(req: Request) {
     // Create customer if not found
     if (!customerId) {
       const { firstName, lastName } = normalizeName(name);
+      // NOTE: shopId omitted — assumes single-shop API key scope.
+      // If rotating to a multi-shop key, add shopId to this body.
       const createRes = await fetch(`${TEKMETRIC_BASE_URL}/customers`, {
         method: "POST",
         headers: {
