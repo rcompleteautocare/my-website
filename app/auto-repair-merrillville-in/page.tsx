@@ -60,13 +60,13 @@ export default function Merrillville() {
           If you commute from Merrillville to Chicago, Gary, or elsewhere in the region, you need a shop that gets you back on the road without guessing. We diagnose first and repair second — so your money goes toward the actual problem instead of a parts-swap gamble. For a daily driver racking up 20,000+ miles a year, that difference adds up fast.
         </p>
         <p style={{ lineHeight: 1.8, color: "#444", marginBottom: "20px" }}>
-          We handle check-engine diagnostics, brake work, transmission repair, engine repair, and A/C and heating service on both foreign and domestic vehicles. Extended warranty claims are welcome — we've worked with most major providers and handle the paperwork for you. A lot of our Merrillville regulars came from the office parks and retail corridor along US-30 after getting a second opinion that saved them money.
+          We handle check-engine diagnostics, brake work, transmission repair, engine repair, and A/C and heating service on both foreign and domestic vehicles. Extended warranty claims are welcome — we&apos;ve worked with most major providers and handle the paperwork for you. A lot of our Merrillville regulars came from the office parks and retail corridor along US-30 after getting a second opinion that saved them money.
         </p>
 <p style={{ lineHeight: 1.8, color: "#444", marginBottom: "20px" }}>
-  Merrillville's commercial strip along US-30 near Southlake Mall is one of the most heavily trafficked areas in Northwest Indiana. The constant stop-and-go past the hotels, big-box retailers, and restaurants puts real wear on brakes and transmissions. We regularly see Merrillville drivers who have been told by a national chain that they need a major repair — and find the actual fix is considerably simpler once we run a proper diagnostic.
+  Merrillville&apos;s commercial strip along US-30 near Southlake Mall is one of the most heavily trafficked areas in Northwest Indiana. The constant stop-and-go past the hotels, big-box retailers, and restaurants puts real wear on brakes and transmissions. We regularly see Merrillville drivers who have been told by a national chain that they need a major repair — and find the actual fix is considerably simpler once we run a proper diagnostic.
 </p>
 <p style={{ lineHeight: 1.8, color: "#444", marginBottom: "40px" }}>
-  From Merrillville, take US-30 West directly into Crown Point — it's a straight shot with no turns until Summit Street. Most Merrillville drivers are at our shop in 10–12 minutes. We also serve drivers from the Taft area and from the neighborhoods south of US-30 near Broadway.
+  From Merrillville, take US-30 West directly into Crown Point — it&apos;s a straight shot with no turns until Summit Street. Most Merrillville drivers are at our shop in 10–12 minutes. We also serve drivers from the Taft area and from the neighborhoods south of US-30 near Broadway.
 </p>
         <h2 style={{ fontSize: "28px", marginBottom: "24px" }}>Auto Repair Services for Merrillville Drivers</h2>
         <div style={{ display: "grid", gridTemplateColumns: "repeat(auto-fit, minmax(250px, 1fr))", gap: "16px", marginBottom: "40px" }}>

@@ -55,10 +55,10 @@ export default function BrakeRepair() {
 
         <h2 style={{ fontSize: "28px", marginBottom: "16px" }}>Honest Brake Inspections — No Pressure, No Upsell</h2>
         <p style={{ lineHeight: 1.8, color: "#444", marginBottom: "20px" }}>
-          At R Complete Auto Care in Crown Point, we take brake repair seriously. Your braking system is your most critical safety system — and it deserves a proper inspection, not a rushed visual check designed to sell you pads you don't need yet.
+          At R Complete Auto Care in Crown Point, we take brake repair seriously. Your braking system is your most critical safety system — and it deserves a proper inspection, not a rushed visual check designed to sell you pads you don&apos;t need yet.
         </p>
         <p style={{ lineHeight: 1.8, color: "#444", marginBottom: "20px" }}>
-          Every brake inspection we perform includes actual pad thickness measurements, rotor thickness and condition assessment, caliper operation check, brake fluid condition, and brake line inspection. We give you the measurements, tell you what's urgent, and what can wait — then you decide.
+          Every brake inspection we perform includes actual pad thickness measurements, rotor thickness and condition assessment, caliper operation check, brake fluid condition, and brake line inspection. We give you the measurements, tell you what&apos;s urgent, and what can wait — then you decide.
         </p>
         <p style={{ lineHeight: 1.8, color: "#444", marginBottom: "40px" }}>
           We service all makes and models and accept most extended warranty plans. If your brake repair is covered under your warranty, we handle the entire claims process for you.
@@ -82,7 +82,7 @@ export default function BrakeRepair() {
 
       {/* CTA 2 */}
       <section style={{ background: "#f5f5f5", padding: "40px 24px", textAlign: "center" }}>
-        <p style={{ fontSize: "20px", fontWeight: "bold", marginBottom: "12px" }}>Hearing a squeal or grind? Don't wait on brakes.</p>
+        <p style={{ fontSize: "20px", fontWeight: "bold", marginBottom: "12px" }}>Hearing a squeal or grind? Don&apos;t wait on brakes.</p>
         <a href="tel:2192622711" style={{ background: "#e63946", color: "#fff", padding: "12px 28px", borderRadius: "6px", fontWeight: "bold", textDecoration: "none" }}>
           Call (219) 262-2711 →
         </a>

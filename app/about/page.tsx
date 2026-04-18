@@ -63,7 +63,7 @@ export default function About() {
           Our lead technician Dave has been working on cars since 1989 and earned his first ASE certification in 1993 — bringing over 35 years of hands-on experience to every diagnostic. Dave R brings 15 years of expertise alongside him. Together, they&apos;ve seen what happens when shops skip the diagnostic step — customers get charged for parts they didn&apos;t need, problems come back, and trust is lost. R Complete Auto Care was built to do things right.
         </p>
         <p style={{ lineHeight: 1.8, color: "#444", marginBottom: "40px" }}>
-          We're located at 1305 E Summit St in Crown Point, Indiana, and we serve drivers throughout Lake County — including St. John, Schererville, Merrillville, and Cedar Lake.
+          We&apos;re located at 1305 E Summit St in Crown Point, Indiana, and we serve drivers throughout Lake County — including St. John, Schererville, Merrillville, and Cedar Lake.
         </p>
 
         {/* Authority Signals */}

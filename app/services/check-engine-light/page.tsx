@@ -48,10 +48,10 @@ export default function CheckEngineLight() {
         <LastUpdated date="2026-04-18" />
         <h2 style={{ fontSize: "28px", marginBottom: "16px" }}>What Does a Check Engine Light Mean?</h2>
         <p style={{ lineHeight: 1.8, color: "#444", marginBottom: "24px" }}>
-          Your check engine light can mean dozens of different things — from a loose gas cap to a failing catalytic converter or serious engine issue. The only way to know for sure is a proper diagnostic scan combined with hands-on inspection. At R Complete Auto Care, we don't just read the code number and guess. We trace the fault to its root cause before recommending a single repair.
+          Your check engine light can mean dozens of different things — from a loose gas cap to a failing catalytic converter or serious engine issue. The only way to know for sure is a proper diagnostic scan combined with hands-on inspection. At R Complete Auto Care, we don&apos;t just read the code number and guess. We trace the fault to its root cause before recommending a single repair.
         </p>
         <p style={{ lineHeight: 1.8, color: "#444", marginBottom: "24px" }}>
-          Serving Crown Point, St. John, Schererville, Merrillville, and Cedar Lake, IN — we're the area's trusted diagnostic-first auto repair shop. If your check engine light is on, flashing, or came back after another shop "fixed it," bring it to us.
+          Serving Crown Point, St. John, Schererville, Merrillville, and Cedar Lake, IN — we&apos;re the area&apos;s trusted diagnostic-first auto repair shop. If your check engine light is on, flashing, or came back after another shop &quot;fixed it,&quot; bring it to us.
         </p>
 
         {/* Symptoms */}
@@ -126,7 +126,7 @@ export default function CheckEngineLight() {
           If your vehicle is covered by an extended warranty and your check engine light is on, you may owe nothing out of pocket for the diagnosis and repair. R Complete Auto Care works with most major extended warranty providers including CarShield, Endurance, CARS Protection, and AmTrust.
         </p>
         <p style={{ lineHeight: 1.8, color: "#444", marginBottom: "24px" }}>
-          Call us with your warranty information before you bring the vehicle in and we'll verify your coverage, handle the claim paperwork, and communicate directly with your warranty company. You just approve the work and pick up your car.
+          Call us with your warranty information before you bring the vehicle in and we&apos;ll verify your coverage, handle the claim paperwork, and communicate directly with your warranty company. You just approve the work and pick up your car.
         </p>
         <a href="tel:2192622711" style={{ background: "#e63946", color: "#fff", padding: "12px 28px", borderRadius: "6px", fontWeight: "bold", textDecoration: "none" }}>
           📞 Verify Your Coverage — Call (219) 262-2711
@@ -171,7 +171,7 @@ export default function CheckEngineLight() {
       {/* Final CTA */}
       <section style={{ background: "#e63946", color: "#fff", textAlign: "center", padding: "60px 24px" }}>
         <h2 style={{ fontSize: "28px", marginBottom: "12px" }}>Check Engine Light On? Call Us Today.</h2>
-        <p style={{ marginBottom: "24px", opacity: 0.9 }}>Crown Point's diagnostic-first auto repair shop. We find the real problem.</p>
+        <p style={{ marginBottom: "24px", opacity: 0.9 }}>Crown Point&apos;s diagnostic-first auto repair shop. We find the real problem.</p>
         <p style={{ marginBottom: "8px", fontSize: "14px" }}>1305 E Summit St, Crown Point, IN 46307 · Mon–Fri 8am–6pm · Sat 8am–2pm</p>
         <a href="tel:2192622711" style={{ background: "#fff", color: "#e63946", padding: "14px 36px", borderRadius: "6px", fontWeight: "bold", textDecoration: "none", fontSize: "18px" }}>
           📞 Call (219) 262-2711

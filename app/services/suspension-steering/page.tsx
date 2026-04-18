@@ -54,13 +54,13 @@ export default function SuspensionSteering() {
         <LastUpdated date="2026-04-18" />
         <h2 style={{ fontSize: "28px", marginBottom: "16px" }}>Crown Point Suspension &amp; Steering Specialists</h2>
         <p style={{ lineHeight: 1.8, color: "#444", marginBottom: "20px" }}>
-          Your suspension system does more than just absorb bumps — it controls how your vehicle handles, steers, and stops. Worn struts and shocks don't just make the ride uncomfortable — they increase stopping distances, cause uneven tire wear, and reduce your ability to control the vehicle in emergency situations.
+          Your suspension system does more than just absorb bumps — it controls how your vehicle handles, steers, and stops. Worn struts and shocks don&apos;t just make the ride uncomfortable — they increase stopping distances, cause uneven tire wear, and reduce your ability to control the vehicle in emergency situations.
         </p>
         <p style={{ lineHeight: 1.8, color: "#444", marginBottom: "20px" }}>
-          At R Complete Auto Care in Crown Point, we perform thorough suspension inspections before recommending any repair. We check every component — struts, shocks, control arms, ball joints, tie rods, sway bar links, and steering components — and tell you what's worn, what's safe, and what can wait.
+          At R Complete Auto Care in Crown Point, we perform thorough suspension inspections before recommending any repair. We check every component — struts, shocks, control arms, ball joints, tie rods, sway bar links, and steering components — and tell you what&apos;s worn, what&apos;s safe, and what can wait.
         </p>
         <p style={{ lineHeight: 1.8, color: "#444", marginBottom: "40px" }}>
-          Northwest Indiana roads are some of the toughest on suspension in the country. We understand what the local conditions do to these components and we see the failure patterns that result. If you're hearing clunks, feeling shimmy at highway speeds, or noticing your car pulling to one side, bring it in.
+          Northwest Indiana roads are some of the toughest on suspension in the country. We understand what the local conditions do to these components and we see the failure patterns that result. If you&apos;re hearing clunks, feeling shimmy at highway speeds, or noticing your car pulling to one side, bring it in.
         </p>
 
         {/* Symptoms */}

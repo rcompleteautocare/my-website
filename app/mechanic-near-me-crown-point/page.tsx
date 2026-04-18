@@ -74,13 +74,13 @@ export default function MechanicNearMe() {
       <section style={{ padding: "60px 24px", maxWidth: "800px", margin: "0 auto" }}>
         <h2 style={{ fontSize: "28px", marginBottom: "16px" }}>The Mechanic Near Crown Point That Actually Fixes the Problem</h2>
         <p style={{ lineHeight: 1.8, color: "#444", marginBottom: "20px" }}>
-          When you search "mechanic near me" in Crown Point, Indiana, you want a shop that's close, trustworthy, and capable of actually diagnosing and fixing your vehicle — not just the nearest place that will clear a code and send you on your way. R Complete Auto Care is Crown Point's diagnostic-first auto repair shop, and we're built for exactly that.
+          When you search &quot;mechanic near me&quot; in Crown Point, Indiana, you want a shop that&apos;s close, trustworthy, and capable of actually diagnosing and fixing your vehicle — not just the nearest place that will clear a code and send you on your way. R Complete Auto Care is Crown Point&apos;s diagnostic-first auto repair shop, and we&apos;re built for exactly that.
         </p>
         <p style={{ lineHeight: 1.8, color: "#444", marginBottom: "20px" }}>
-          We're located at 1305 E Summit St in Crown Point — minutes from downtown Crown Point and easily accessible from St. John, Schererville, Merrillville, and Cedar Lake. We specialize in complex diagnostics, extended warranty repairs, and fixing problems that other nearby mechanics have misdiagnosed or couldn't figure out.
+          We&apos;re located at 1305 E Summit St in Crown Point — minutes from downtown Crown Point and easily accessible from St. John, Schererville, Merrillville, and Cedar Lake. We specialize in complex diagnostics, extended warranty repairs, and fixing problems that other nearby mechanics have misdiagnosed or couldn&apos;t figure out.
         </p>
         <p style={{ lineHeight: 1.8, color: "#444", marginBottom: "40px" }}>
-          Every vehicle that comes to our shop gets a full diagnostic before we recommend any repair. We tell you exactly what's wrong, what it costs to fix, and what's urgent vs. what can wait — then you decide. No pressure. No guessing. No unnecessary repairs.
+          Every vehicle that comes to our shop gets a full diagnostic before we recommend any repair. We tell you exactly what&apos;s wrong, what it costs to fix, and what&apos;s urgent vs. what can wait — then you decide. No pressure. No guessing. No unnecessary repairs.
         </p>
 
         {/* Distance */}
@@ -113,7 +113,7 @@ export default function MechanicNearMe() {
           <li><strong>All makes and models</strong> — Honda, Toyota, BMW, Mercedes, Ford, Chevy, Subaru, Dodge — we handle all of them.</li>
           <li><strong>Strong local reviews</strong> — 4.8 stars on Google from real Crown Point area drivers.</li>
           <li><strong>Same-day diagnostics</strong> — Most vehicles diagnosed the same day.</li>
-          <li><strong>Specializes in complex repairs</strong> — If another mechanic near you couldn't figure it out, we probably can.</li>
+          <li><strong>Specializes in complex repairs</strong> — If another mechanic near you couldn&apos;t figure it out, we probably can.</li>
         </ul>
       </section>
 
@@ -216,7 +216,7 @@ export default function MechanicNearMe() {
             <li><Link href="/auto-repair-cedar-lake-in" style={{ color: "#e63946" }}>Auto Repair Cedar Lake, IN</Link></li>
             <li><Link href="/services/extended-warranty-repair" style={{ color: "#e63946" }}>Extended Warranty Repair Crown Point, IN</Link></li>
             <li><Link href="/services/check-engine-light" style={{ color: "#e63946" }}>Check Engine Light Diagnostics Crown Point, IN</Link></li>
-            <li><Link href="/car-wont-start-crown-point-in" style={{ color: "#e63946" }}>Car Won't Start in Crown Point</Link></li>
+            <li><Link href="/car-wont-start-crown-point-in" style={{ color: "#e63946" }}>Car Won&apos;t Start in Crown Point</Link></li>
           </ul>
         </div>
       </section>

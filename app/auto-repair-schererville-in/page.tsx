@@ -54,7 +54,7 @@ export default function Schererville() {
       <section style={{ padding: "60px 24px", maxWidth: "800px", margin: "0 auto" }}>
         <h2 style={{ fontSize: "28px", marginBottom: "16px" }}>The Auto Repair Shop Schererville Drivers Trust</h2>
         <p style={{ lineHeight: 1.8, color: "#444", marginBottom: "20px" }}>
-          If you're looking for honest, expert auto repair near Schererville, Indiana, R Complete Auto Care in Crown Point is just about 15 minutes away at 1305 E Summit St. We're a diagnostic-first shop — meaning we find the real problem before recommending any repair. No guesswork, no unnecessary work, just honest answers.
+          If you&apos;re looking for honest, expert auto repair near Schererville, Indiana, R Complete Auto Care in Crown Point is just about 15 minutes away at 1305 E Summit St. We&apos;re a diagnostic-first shop — meaning we find the real problem before recommending any repair. No guesswork, no unnecessary work, just honest answers.
         </p>
         <p style={{ lineHeight: 1.8, color: "#444", marginBottom: "20px" }}>
           Schererville drivers come to us because we give straight answers, fair prices, and repairs that actually fix the problem. Tired of dealership prices and upselling? We built this shop for drivers like you. We work on all foreign and domestic vehicles and proudly accept most extended warranty plans.
@@ -63,7 +63,7 @@ export default function Schererville() {
           Built on over 25 years of family experience in auto repair, we serve Schererville, Crown Point, St. John, Merrillville, and all of Lake County, Indiana.
         </p>
 <p style={{ lineHeight: 1.8, color: "#444", marginBottom: "20px" }}>
-  Schererville's US-30 corridor — past the Shops at Crosspoint and through the Wicker Park area — generates some of the heaviest stop-and-go traffic in Lake County. That kind of driving is particularly hard on brakes, transmissions, and cooling systems. Drivers along the US-30 and US-41 interchange frequently come to us after local quick-lube shops miss developing problems during routine oil changes.
+  Schererville&apos;s US-30 corridor — past the Shops at Crosspoint and through the Wicker Park area — generates some of the heaviest stop-and-go traffic in Lake County. That kind of driving is particularly hard on brakes, transmissions, and cooling systems. Drivers along the US-30 and US-41 interchange frequently come to us after local quick-lube shops miss developing problems during routine oil changes.
 </p>
 <p style={{ lineHeight: 1.8, color: "#444", marginBottom: "20px" }}>
   Getting to us from Schererville is straightforward — take US-30 East to US-231 South into Crown Point, or cut down through St. John via US-41. Either route puts you at our shop in about 15 minutes. We see a lot of vehicles from the newer subdivisions off Cline Avenue and from the commercial district near Target and Menards.

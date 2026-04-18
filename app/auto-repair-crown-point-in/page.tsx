@@ -37,7 +37,7 @@ export default function CrownPoint() {
           Auto Repair in Crown Point, IN
         </h1>
         <p style={{ fontSize: "18px", color: "#ccc", maxWidth: "600px", margin: "0 auto 32px" }}>
-          R Complete Auto Care is Crown Point's diagnostic-first auto repair shop. Honest estimates, expert repairs, extended warranty work welcome.
+          R Complete Auto Care is Crown Point&apos;s diagnostic-first auto repair shop. Honest estimates, expert repairs, extended warranty work welcome.
         </p>
         <a href="tel:2192622711" style={{ background: "#e63946", color: "#fff", padding: "14px 32px", borderRadius: "6px", fontWeight: "bold", fontSize: "18px", textDecoration: "none" }}>
           📞 Call (219) 262-2711
@@ -52,18 +52,18 @@ export default function CrownPoint() {
       </section>
 
       <section style={{ padding: "60px 24px", maxWidth: "800px", margin: "0 auto" }}>
-        <h2 style={{ fontSize: "28px", marginBottom: "16px" }}>Crown Point's Most Trusted Auto Repair Shop</h2>
+        <h2 style={{ fontSize: "28px", marginBottom: "16px" }}>Crown Point&apos;s Most Trusted Auto Repair Shop</h2>
         <p style={{ lineHeight: 1.8, color: "#444", marginBottom: "20px" }}>
-          Located at 1305 E Summit St in Crown Point, Indiana, R Complete Auto Care serves drivers throughout Lake County and Northwest Indiana. We're a diagnostic-first shop — meaning we find the real problem before recommending any repair. No guesswork, no unnecessary work, just honest answers and expert repairs.
+          Located at 1305 E Summit St in Crown Point, Indiana, R Complete Auto Care serves drivers throughout Lake County and Northwest Indiana. We&apos;re a diagnostic-first shop — meaning we find the real problem before recommending any repair. No guesswork, no unnecessary work, just honest answers and expert repairs.
         </p>
         <p style={{ lineHeight: 1.8, color: "#444", marginBottom: "20px" }}>
-          Built on over 25 years of family experience in the auto repair industry, we opened our Crown Point shop to give local drivers a place they could actually trust. A place that explains what's wrong, gives you a fair price, and fixes it right the first time.
+          Built on over 25 years of family experience in the auto repair industry, we opened our Crown Point shop to give local drivers a place they could actually trust. A place that explains what&apos;s wrong, gives you a fair price, and fixes it right the first time.
         </p>
         <p style={{ lineHeight: 1.8, color: "#444", marginBottom: "20px" }}>
           We work on all foreign and domestic vehicles and proudly accept most extended warranty plans. Whether you need a check engine light diagnosed, brakes replaced, or a major engine repair — we have the expertise to get it done right in Crown Point.
         </p>
 <p style={{ lineHeight: 1.8, color: "#444", marginBottom: "40px" }}>
-  We're located on E Summit St, a few blocks from the historic Crown Point courthouse square and easily accessible from the IN-55 and US-231 intersection. Whether you're coming from the Winfield area, from south of downtown near the Lake County Fairgrounds, or from the newer subdivisions off 109th Avenue, we're within 5 minutes of most of Crown Point.
+  We&apos;re located on E Summit St, a few blocks from the historic Crown Point courthouse square and easily accessible from the IN-55 and US-231 intersection. Whether you&apos;re coming from the Winfield area, from south of downtown near the Lake County Fairgrounds, or from the newer subdivisions off 109th Avenue, we&apos;re within 5 minutes of most of Crown Point.
 </p>
         <h2 style={{ fontSize: "28px", marginBottom: "24px" }}>Our Auto Repair Services in Crown Point, IN</h2>
         <div style={{ display: "grid", gridTemplateColumns: "repeat(auto-fit, minmax(250px, 1fr))", gap: "16px", marginBottom: "40px" }}>
@@ -121,7 +121,7 @@ export default function CrownPoint() {
       </section>
 
       <section style={{ background: "#e63946", color: "#fff", textAlign: "center", padding: "60px 24px" }}>
-        <h2 style={{ fontSize: "28px", marginBottom: "12px" }}>Crown Point's Trusted Auto Repair Shop</h2>
+        <h2 style={{ fontSize: "28px", marginBottom: "12px" }}>Crown Point&apos;s Trusted Auto Repair Shop</h2>
         <p style={{ marginBottom: "8px", opacity: 0.9 }}>Honest diagnostics. Expert repairs. No guesswork.</p>
         <p style={{ marginBottom: "24px", opacity: 0.75, fontSize: "14px" }}>1305 E Summit St, Crown Point, IN 46307</p>
         <a href="tel:2192622711" style={{ background: "#fff", color: "#e63946", padding: "14px 36px", borderRadius: "6px", fontWeight: "bold", fontSize: "18px", textDecoration: "none" }}>

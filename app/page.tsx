@@ -32,7 +32,7 @@ export default function Home() {
       {/* Hero */}
       <section style={{ background: "#1a1a1a", color: "#fff", padding: "80px 24px", textAlign: "center" }}>
         <p style={{ color: "#e63946", fontWeight: "bold", fontSize: "14px", letterSpacing: "0.1em", textTransform: "uppercase", marginBottom: "16px" }}>
-          Crown Point, Indiana's Diagnostic-First Auto Repair Shop
+          Crown Point, Indiana&apos;s Diagnostic-First Auto Repair Shop
         </p>
        <h1 style={{ fontSize: "44px", fontWeight: "bold", margin: "0 0 20px", lineHeight: 1.2, maxWidth: "800px", marginLeft: "auto", marginRight: "auto" }}>
           Crown Point&apos;s Diagnostic-First Auto Repair Shop — We Fix What Others Miss
@@ -80,13 +80,13 @@ export default function Home() {
       <section style={{ padding: "70px 24px", maxWidth: "800px", margin: "0 auto", textAlign: "center" }}>
         <h2 style={{ fontSize: "32px", marginBottom: "20px" }}>Crown Point is Built Around a Simple Promise</h2>
         <p style={{ fontSize: "17px", lineHeight: 1.8, color: "#444", marginBottom: "20px" }}>
-          R Complete Auto Care is built around a simple idea: find the real problem before recommending a single repair. Too many shops clear codes, replace parts, and hope for the best. We don't work that way.
+          R Complete Auto Care is built around a simple idea: find the real problem before recommending a single repair. Too many shops clear codes, replace parts, and hope for the best. We don&apos;t work that way.
         </p>
         <p style={{ fontSize: "17px", lineHeight: 1.8, color: "#444", marginBottom: "20px" }}>
-          Every vehicle that comes through our doors gets a thorough diagnostic first. We tell you exactly what's wrong, what's urgent, and what can wait — then we let you decide. No pressure. No unnecessary work. Just honest answers from a shop that respects your time and your money.
+          Every vehicle that comes through our doors gets a thorough diagnostic first. We tell you exactly what&apos;s wrong, what&apos;s urgent, and what can wait — then we let you decide. No pressure. No unnecessary work. Just honest answers from a shop that respects your time and your money.
         </p>
         <p style={{ fontSize: "17px", lineHeight: 1.8, color: "#444" }}>
-          We're located at 1305 E Summit St in Crown Point, Indiana, and we serve drivers throughout Lake County — including St. John, Schererville, Merrillville, and Cedar Lake.
+          We&apos;re located at 1305 E Summit St in Crown Point, Indiana, and we serve drivers throughout Lake County — including St. John, Schererville, Merrillville, and Cedar Lake.
         </p>
       </section>
 
@@ -169,13 +169,13 @@ export default function Home() {
       <section style={{ padding: "70px 24px", maxWidth: "800px", margin: "0 auto" }}>
         <h2 style={{ fontSize: "32px", marginBottom: "20px", textAlign: "center" }}>Built on 25+ Years of Family Experience</h2>
         <p style={{ fontSize: "17px", lineHeight: 1.8, color: "#444", marginBottom: "20px" }}>
-          R Complete Auto Care wasn't built overnight. The knowledge, work ethic, and diagnostic discipline behind this shop comes from over 25 years of family experience in the auto repair industry. We've seen what happens when shops skip the diagnostic process — customers get charged for parts they didn't need, problems come back, and trust is lost.
+          R Complete Auto Care wasn&apos;t built overnight. The knowledge, work ethic, and diagnostic discipline behind this shop comes from over 25 years of family experience in the auto repair industry. We&apos;ve seen what happens when shops skip the diagnostic process — customers get charged for parts they didn&apos;t need, problems come back, and trust is lost.
         </p>
         <p style={{ fontSize: "17px", lineHeight: 1.8, color: "#444", marginBottom: "20px" }}>
           We opened R Complete Auto Care in Crown Point to do things differently. To be the kind of shop that our own family would trust with their vehicles. A place where you get a straight answer, a fair price, and a repair that actually fixes the problem.
         </p>
         <p style={{ fontSize: "17px", lineHeight: 1.8, color: "#444" }}>
-          That's what we bring to every vehicle that comes through our doors — whether you're coming from Crown Point, St. John, Schererville, Merrillville, or Cedar Lake.
+          That&apos;s what we bring to every vehicle that comes through our doors — whether you&apos;re coming from Crown Point, St. John, Schererville, Merrillville, or Cedar Lake.
         </p>
       </section>
 
@@ -242,7 +242,7 @@ export default function Home() {
 <section style={{ padding: "60px 24px", background: "#f5f5f5" }}>
   <div style={{ maxWidth: "900px", margin: "0 auto", textAlign: "center" }}>
     <h2 style={{ fontSize: "28px", fontWeight: "bold", marginBottom: "12px" }}>Common Problems We Fix in Crown Point</h2>
-    <p style={{ color: "#555", marginBottom: "32px", fontSize: "16px" }}>Having a specific problem? We've built dedicated pages for the most common emergency situations.</p>
+    <p style={{ color: "#555", marginBottom: "32px", fontSize: "16px" }}>Having a specific problem? We&apos;ve built dedicated pages for the most common emergency situations.</p>
     <div style={{ display: "grid", gridTemplateColumns: "repeat(auto-fit, minmax(220px, 1fr))", gap: "16px", textAlign: "left" }}>
       {[
         { title: "Car Won't Start", desc: "Dead battery, failed starter, fuel pump, or crank sensor — we find the exact cause.", href: "/car-wont-start-crown-point-in" },
@@ -260,7 +260,7 @@ export default function Home() {
 </section>
 {/* Final CTA */}
       <section style={{ background: "#e63946", color: "#fff", textAlign: "center", padding: "70px 24px" }}>
-        <h2 style={{ fontSize: "32px", marginBottom: "12px" }}>Crown Point's Auto Repair Shop You Can Actually Trust</h2>
+        <h2 style={{ fontSize: "32px", marginBottom: "12px" }}>Crown Point&apos;s Auto Repair Shop You Can Actually Trust</h2>
         <p style={{ fontSize: "16px", marginBottom: "8px", opacity: 0.9 }}>Honest diagnostics. Expert repairs. No guesswork.</p>
         <p style={{ fontSize: "14px", marginBottom: "32px", opacity: 0.75 }}>1305 E Summit St, Crown Point, IN 46307</p>
         <a href="tel:2192622711" style={{ background: "#fff", color: "#e63946", padding: "16px 40px", borderRadius: "6px", fontWeight: "bold", fontSize: "20px", textDecoration: "none" }}>

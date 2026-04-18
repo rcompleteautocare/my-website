@@ -61,7 +61,7 @@ export default function Diagnostics() {
           R Complete Auto Care is built around one principle: find the real problem before recommending a single repair. Too many shops skip the diagnostic process — they guess, replace parts, and hope for the best. That costs you time and money.
         </p>
         <p style={{ lineHeight: 1.8, color: "#444", marginBottom: "20px" }}>
-          At our Crown Point, Indiana shop, every vehicle gets a thorough diagnostic first. We use professional-grade equipment to accurately identify the root cause of your vehicle's problem — then we give you a clear, honest explanation of what's wrong and what it will cost to fix it.
+          At our Crown Point, Indiana shop, every vehicle gets a thorough diagnostic first. We use professional-grade equipment to accurately identify the root cause of your vehicle&apos;s problem — then we give you a clear, honest explanation of what&apos;s wrong and what it will cost to fix it.
         </p>
         <p style={{ lineHeight: 1.8, color: "#444", marginBottom: "40px" }}>
           We work on all foreign and domestic vehicles and serve drivers from Crown Point, St. John, Schererville, Merrillville, and Cedar Lake, Indiana.

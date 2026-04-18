@@ -57,7 +57,7 @@ export default function TransmissionRepair() {
           Transmission repair is one of the most misdiagnosed — and most expensive — areas of auto repair. Many shops jump straight to a rebuild or replacement at the first sign of slipping or shifting problems. At R Complete Auto Care in Crown Point, we do it differently. We diagnose first. Every time.
         </p>
         <p style={{ lineHeight: 1.8, color: "#444", marginBottom: "20px" }}>
-          We have saved customers thousands of dollars by finding a simple solenoid failure, a low fluid condition, or a sensor issue that another shop wanted to rebuild the entire transmission for. A thorough diagnostic costs a fraction of an unnecessary rebuild — and it tells you exactly what you're dealing with before you commit to anything.
+          We have saved customers thousands of dollars by finding a simple solenoid failure, a low fluid condition, or a sensor issue that another shop wanted to rebuild the entire transmission for. A thorough diagnostic costs a fraction of an unnecessary rebuild — and it tells you exactly what you&apos;re dealing with before you commit to anything.
         </p>
         <p style={{ lineHeight: 1.8, color: "#444", marginBottom: "40px" }}>
           We service automatic, manual, and CVT transmissions on all makes and models. We also accept most extended warranty plans and handle the entire claims process — transmission repairs are among the most commonly covered repairs on extended warranty policies.
@@ -66,7 +66,7 @@ export default function TransmissionRepair() {
         {/* Symptoms */}
         <h2 style={{ fontSize: "28px", marginBottom: "16px" }}>Signs You May Have a Transmission Problem</h2>
         <ul style={{ lineHeight: 2.2, color: "#444", paddingLeft: "20px" }}>
-          <li>Transmission slipping — engine revs but the car doesn't accelerate properly</li>
+          <li>Transmission slipping — engine revs but the car doesn&apos;t accelerate properly</li>
           <li>Rough, hard, or delayed shifting between gears</li>
           <li>Shuddering or shaking during acceleration, especially at highway speeds</li>
           <li>Torque converter shudder — feels like driving over rumble strips at 40–50mph</li>
@@ -75,7 +75,7 @@ export default function TransmissionRepair() {
           <li>Red or brown fluid leaking under the vehicle</li>
           <li>Transmission stuck in one gear or going into limp mode</li>
           <li>Clunking noise when shifting into drive or reverse</li>
-          <li>Car won't move in drive or reverse at all</li>
+          <li>Car won&apos;t move in drive or reverse at all</li>
         </ul>
       </section>
 
@@ -141,7 +141,7 @@ export default function TransmissionRepair() {
           Transmission repairs are one of the most frequently covered items on extended warranty policies. If your vehicle has a warranty through CarShield, Endurance, CARS Protection, AmTrust, or another provider, you may owe nothing out of pocket for your transmission repair.
         </p>
         <p style={{ lineHeight: 1.8, color: "#444", marginBottom: "24px" }}>
-          Call us with your warranty information before you bring the vehicle in. We'll verify your coverage, communicate directly with your warranty company, and handle all the paperwork. We've helped dozens of Crown Point drivers get major transmission repairs covered — don't assume you're not covered without checking first.
+          Call us with your warranty information before you bring the vehicle in. We&apos;ll verify your coverage, communicate directly with your warranty company, and handle all the paperwork. We&apos;ve helped dozens of Crown Point drivers get major transmission repairs covered — don&apos;t assume you&apos;re not covered without checking first.
         </p>
         <a href="tel:2192622711" style={{ background: "#e63946", color: "#fff", padding: "12px 28px", borderRadius: "6px", fontWeight: "bold", textDecoration: "none" }}>
           📞 Verify Your Coverage — Call (219) 262-2711

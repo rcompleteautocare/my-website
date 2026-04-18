@@ -36,7 +36,7 @@ export default function OilChangeMaintenance() {
         <p className="speakable" style={{ fontSize: "16px", color: "#e63946", fontWeight: "600", marginBottom: "16px", fontStyle: "italic" }}>TL;DR: Conventional oil changes start around $40–$60; full synthetic starts around $70–$90. Service takes 30–60 minutes and includes a multi-point inspection. No appointment required — call ahead for same-day service.
         </p>
         <p style={{ fontSize: "18px", color: "#ccc", maxWidth: "600px", margin: "0 auto 32px" }}>
-          Conventional and synthetic oil changes with a thorough multi-point inspection — so you know what's coming before it becomes an emergency.
+          Conventional and synthetic oil changes with a thorough multi-point inspection — so you know what&apos;s coming before it becomes an emergency.
         </p>
         <a href="tel:2192622711" style={{ background: "#e63946", color: "#fff", padding: "14px 32px", borderRadius: "6px", fontWeight: "bold", textDecoration: "none", fontSize: "18px" }}>
           📞 Call (219) 262-2711
@@ -54,7 +54,7 @@ export default function OilChangeMaintenance() {
         <LastUpdated date="2026-04-18" />
         <h2 style={{ fontSize: "28px", marginBottom: "16px" }}>More Than Just an Oil Change</h2>
         <p style={{ lineHeight: 1.8, color: "#444", marginBottom: "20px" }}>
-          At R Complete Auto Care in Crown Point, an oil change is never just an oil change. Every service includes a thorough multi-point inspection — we check fluid levels, brake pad thickness, tire condition, belt and hose condition, filters, lights, and anything else that could affect your vehicle's safety and reliability.
+          At R Complete Auto Care in Crown Point, an oil change is never just an oil change. Every service includes a thorough multi-point inspection — we check fluid levels, brake pad thickness, tire condition, belt and hose condition, filters, lights, and anything else that could affect your vehicle&apos;s safety and reliability.
         </p>
         <p style={{ lineHeight: 1.8, color: "#444", marginBottom: "20px" }}>
           We give you an honest report on what we find. If something needs attention, we tell you — along with how urgent it is and what it costs. If everything looks good, we tell you that too. No invented maintenance items, no pressure, no upsell.
@@ -91,7 +91,7 @@ export default function OilChangeMaintenance() {
         </div>
 
         {/* What's included */}
-        <h2 style={{ fontSize: "28px", marginBottom: "16px" }}>What's Included in Our Multi-Point Inspection</h2>
+        <h2 style={{ fontSize: "28px", marginBottom: "16px" }}>What&apos;s Included in Our Multi-Point Inspection</h2>
         <ul style={{ lineHeight: 2.2, color: "#444", paddingLeft: "20px" }}>
           <li>Engine oil level and condition check</li>
           <li>Coolant level and condition</li>
@@ -112,7 +112,7 @@ export default function OilChangeMaintenance() {
 
       {/* CTA 2 */}
       <section style={{ background: "#f5f5f5", padding: "40px 24px", textAlign: "center" }}>
-        <p style={{ fontSize: "20px", fontWeight: "bold", marginBottom: "12px" }}>Due for an oil change? We'll have you in and out fast.</p>
+        <p style={{ fontSize: "20px", fontWeight: "bold", marginBottom: "12px" }}>Due for an oil change? We&apos;ll have you in and out fast.</p>
         <a href="tel:2192622711" style={{ background: "#e63946", color: "#fff", padding: "12px 28px", borderRadius: "6px", fontWeight: "bold", textDecoration: "none" }}>
           Call (219) 262-2711 →
         </a>
@@ -152,7 +152,7 @@ export default function OilChangeMaintenance() {
           ))}
         </div>
         <p style={{ lineHeight: 1.8, color: "#444", marginTop: "24px" }}>
-          Not sure which oil your vehicle needs? We'll check your owner's manual specifications and recommend the correct oil type and viscosity for your specific vehicle. Using the wrong oil type can affect fuel economy, engine protection, and warranty compliance.
+          Not sure which oil your vehicle needs? We&apos;ll check your owner&apos;s manual specifications and recommend the correct oil type and viscosity for your specific vehicle. Using the wrong oil type can affect fuel economy, engine protection, and warranty compliance.
         </p>
       </section>
 

@@ -54,10 +54,10 @@ export default function NoStartDiagnostics() {
         <LastUpdated date="2026-04-18" />
         <h2 style={{ fontSize: "28px", marginBottom: "16px" }}>No-Start Diagnosis — Done Right the First Time</h2>
         <p style={{ lineHeight: 1.8, color: "#444", marginBottom: "20px" }}>
-          When your car won't start, the instinct is to start replacing parts — battery, starter, alternator. But no-start conditions have many possible causes, and replacing parts without a proper diagnosis is expensive and often doesn't solve the problem. We've seen customers spend hundreds of dollars on parts at other shops, only to bring the car to us and find a failed crankshaft position sensor or a fuel pump issue that a proper diagnostic would have caught immediately.
+          When your car won&apos;t start, the instinct is to start replacing parts — battery, starter, alternator. But no-start conditions have many possible causes, and replacing parts without a proper diagnosis is expensive and often doesn&apos;t solve the problem. We&apos;ve seen customers spend hundreds of dollars on parts at other shops, only to bring the car to us and find a failed crankshaft position sensor or a fuel pump issue that a proper diagnostic would have caught immediately.
         </p>
         <p style={{ lineHeight: 1.8, color: "#444", marginBottom: "20px" }}>
-          At R Complete Auto Care in Crown Point, we use a systematic diagnostic process to identify the exact cause of a no-start condition — whether it's electrical, mechanical, fuel system, or ignition related. We tell you what's wrong and what it costs before we do any work.
+          At R Complete Auto Care in Crown Point, we use a systematic diagnostic process to identify the exact cause of a no-start condition — whether it&apos;s electrical, mechanical, fuel system, or ignition related. We tell you what&apos;s wrong and what it costs before we do any work.
         </p>
         <p style={{ lineHeight: 1.8, color: "#444", marginBottom: "40px" }}>
           Most no-start diagnostics are completed the same day. We also accept most extended warranty plans — no-start causes like fuel pump failure, starter failure, and certain sensor failures are frequently covered.
@@ -86,7 +86,7 @@ export default function NoStartDiagnostics() {
 
       {/* CTA 2 */}
       <section style={{ background: "#f5f5f5", padding: "40px 24px", textAlign: "center" }}>
-        <p style={{ fontSize: "20px", fontWeight: "bold", marginBottom: "12px" }}>Car won't start? Don't replace parts and guess — call us.</p>
+        <p style={{ fontSize: "20px", fontWeight: "bold", marginBottom: "12px" }}>Car won&apos;t start? Don&apos;t replace parts and guess — call us.</p>
         <a href="tel:2192622711" style={{ background: "#e63946", color: "#fff", padding: "12px 28px", borderRadius: "6px", fontWeight: "bold", textDecoration: "none" }}>
           Call (219) 262-2711 →
         </a>
@@ -115,7 +115,7 @@ export default function NoStartDiagnostics() {
       {/* Why Choose Us */}
       <section style={{ background: "#f5f5f5", padding: "60px 24px" }}>
         <div style={{ maxWidth: "800px", margin: "0 auto" }}>
-          <h2 style={{ fontSize: "28px", marginBottom: "24px" }}>Why Crown Point Drivers Call Us When Their Car Won't Start</h2>
+          <h2 style={{ fontSize: "28px", marginBottom: "24px" }}>Why Crown Point Drivers Call Us When Their Car Won&apos;t Start</h2>
           <div style={{ display: "grid", gridTemplateColumns: "repeat(auto-fit, minmax(220px, 1fr))", gap: "16px" }}>
             {[
               { title: "Same-Day Diagnostics", desc: "Most no-start diagnostics completed the same day. We know you need your car back." },
@@ -163,7 +163,7 @@ export default function NoStartDiagnostics() {
             <li><Link href="/services/check-engine-light" style={{ color: "#e63946" }}>Check Engine Light Diagnostics Crown Point, IN</Link></li>
             <li><Link href="/services/engine-repair" style={{ color: "#e63946" }}>Engine Repair Crown Point, IN</Link></li>
             <li><Link href="/services/extended-warranty-repair" style={{ color: "#e63946" }}>Extended Warranty Repairs Crown Point, IN</Link></li>
-            <li><Link href="/car-wont-start-crown-point-in" style={{ color: "#e63946" }}>Car Won't Start in Crown Point — Emergency Guide</Link></li>
+            <li><Link href="/car-wont-start-crown-point-in" style={{ color: "#e63946" }}>Car Won&apos;t Start in Crown Point — Emergency Guide</Link></li>
             <li><Link href="/auto-repair-crown-point-in" style={{ color: "#e63946" }}>Auto Repair Crown Point, IN</Link></li>
           </ul>
         </div>
@@ -171,7 +171,7 @@ export default function NoStartDiagnostics() {
 
       {/* Final CTA */}
       <section style={{ background: "#e63946", color: "#fff", textAlign: "center", padding: "60px 24px" }}>
-        <h2 style={{ fontSize: "28px", marginBottom: "12px" }}>Car Won't Start in Crown Point? Call Us Now.</h2>
+        <h2 style={{ fontSize: "28px", marginBottom: "12px" }}>Car Won&apos;t Start in Crown Point? Call Us Now.</h2>
         <p style={{ marginBottom: "8px", opacity: 0.9 }}>Same-day diagnostics. Honest answers. No guessing.</p>
         <p style={{ marginBottom: "24px", opacity: 0.75, fontSize: "14px" }}>1305 E Summit St, Crown Point, IN 46307 · Mon–Fri 8am–6pm · Sat 8am–2pm</p>
         <a href="tel:2192622711" style={{ background: "#fff", color: "#e63946", padding: "14px 36px", borderRadius: "6px", fontWeight: "bold", textDecoration: "none", fontSize: "18px" }}>

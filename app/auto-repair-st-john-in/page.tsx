@@ -54,7 +54,7 @@ export default function StJohn() {
       <section style={{ padding: "60px 24px", maxWidth: "800px", margin: "0 auto" }}>
         <h2 style={{ fontSize: "28px", marginBottom: "16px" }}>The Auto Repair Shop St. John Drivers Trust</h2>
         <p style={{ lineHeight: 1.8, color: "#444", marginBottom: "20px" }}>
-          If you're looking for honest, expert auto repair near St. John, Indiana, R Complete Auto Care in Crown Point is just about 10 minutes away at 1305 E Summit St. We're a diagnostic-first shop — meaning we find the real problem before recommending any repair. No guesswork, no unnecessary work.
+          If you&apos;re looking for honest, expert auto repair near St. John, Indiana, R Complete Auto Care in Crown Point is just about 10 minutes away at 1305 E Summit St. We&apos;re a diagnostic-first shop — meaning we find the real problem before recommending any repair. No guesswork, no unnecessary work.
         </p>
         <p style={{ lineHeight: 1.8, color: "#444", marginBottom: "20px" }}>
           St. John drivers come to us because we give straight answers, fair prices, and repairs that actually fix the problem. We work on all foreign and domestic vehicles and proudly accept most extended warranty plans.

@@ -54,7 +54,7 @@ export default function EngineRepair() {
         <LastUpdated date="2026-04-18" />
         <h2 style={{ fontSize: "28px", marginBottom: "16px" }}>Crown Point&apos;s Engine Repair Specialists</h2>
         <p style={{ lineHeight: 1.8, color: "#444", marginBottom: "20px" }}>
-          Your engine is the heart of your vehicle. At R Complete Auto Care in Crown Point, we treat engine problems with the diagnostic rigor they deserve. We don't replace parts and hope — we find the exact root cause of the failure before we recommend a single repair. That means fewer comebacks, no unnecessary expenses, and a fix that actually holds.
+          Your engine is the heart of your vehicle. At R Complete Auto Care in Crown Point, we treat engine problems with the diagnostic rigor they deserve. We don&apos;t replace parts and hope — we find the exact root cause of the failure before we recommend a single repair. That means fewer comebacks, no unnecessary expenses, and a fix that actually holds.
         </p>
         <p style={{ lineHeight: 1.8, color: "#444", marginBottom: "20px" }}>
           We work on all foreign and domestic vehicles — Honda, Toyota, BMW, Mercedes, Ford, Chevy, Dodge, Subaru, and more. Whether your engine has a minor oil leak or needs a full replacement, we have the tools, the equipment, and the experience to do it right.
@@ -81,7 +81,7 @@ export default function EngineRepair() {
 
       {/* CTA 2 */}
       <section style={{ background: "#f5f5f5", padding: "40px 24px", textAlign: "center" }}>
-        <p style={{ fontSize: "20px", fontWeight: "bold", marginBottom: "12px" }}>Hearing a knock or seeing smoke? Don't wait.</p>
+        <p style={{ fontSize: "20px", fontWeight: "bold", marginBottom: "12px" }}>Hearing a knock or seeing smoke? Don&apos;t wait.</p>
         <a href="tel:2192622711" style={{ background: "#e63946", color: "#fff", padding: "12px 28px", borderRadius: "6px", fontWeight: "bold", textDecoration: "none" }}>
           Call (219) 262-2711 →
         </a>
@@ -162,7 +162,7 @@ export default function EngineRepair() {
             Engine repairs are often the most expensive repairs a vehicle owner faces — and one of the most commonly covered by extended warranties. If your vehicle has an extended warranty through CarShield, Endurance, CARS Protection, AmTrust, or another provider, call us before you bring the car in.
           </p>
           <p style={{ lineHeight: 1.8, color: "#444", marginBottom: "24px" }}>
-            We'll verify your coverage, handle the claim directly with your warranty company, and keep you informed throughout the process. Many of our customers with engine problems pay little to nothing out of pocket. Don't assume you're not covered — call us first.
+            We&apos;ll verify your coverage, handle the claim directly with your warranty company, and keep you informed throughout the process. Many of our customers with engine problems pay little to nothing out of pocket. Don&apos;t assume you&apos;re not covered — call us first.
           </p>
           <a href="tel:2192622711" style={{ background: "#e63946", color: "#fff", padding: "12px 28px", borderRadius: "6px", fontWeight: "bold", textDecoration: "none" }}>
             📞 Verify Your Coverage — Call (219) 262-2711

@@ -35,7 +35,7 @@ export default function Contact() {
           Contact R Complete Auto Care in Crown Point, IN
         </h1>
         <p style={{ fontSize: "18px", color: "#ccc", maxWidth: "600px", margin: "0 auto 32px" }}>
-          Call us, email us, or fill out the form below. We're here Monday through Saturday and happy to help.
+          Call us, email us, or fill out the form below. We&apos;re here Monday through Saturday and happy to help.
         </p>
         <a href="tel:2192622711" style={{ background: "#e63946", color: "#fff", padding: "14px 32px", borderRadius: "6px", fontWeight: "bold", textDecoration: "none", fontSize: "18px" }}>
           📞 Call (219) 262-2711
@@ -83,7 +83,7 @@ export default function Contact() {
               <div style={{ background: "#f0fdf4", border: "1px solid #86efac", borderRadius: "8px", padding: "32px", textAlign: "center" }}>
                 <div style={{ fontSize: "48px", marginBottom: "16px" }}>✅</div>
                 <div style={{ fontWeight: "bold", fontSize: "20px", marginBottom: "8px" }}>Request Received!</div>
-                <p style={{ color: "#555" }}>We'll call you back shortly to confirm your appointment. If you need immediate assistance, call us at <a href="tel:2192622711" style={{ color: "#e63946" }}>(219) 262-2711</a>.</p>
+                <p style={{ color: "#555" }}>We&apos;ll call you back shortly to confirm your appointment. If you need immediate assistance, call us at <a href="tel:2192622711" style={{ color: "#e63946" }}>(219) 262-2711</a>.</p>
               </div>
             ) : (
               <div style={{ display: "flex", flexDirection: "column", gap: "16px" }}>
@@ -145,7 +145,7 @@ export default function Contact() {
                   📅 Request Service Appointment
                 </button>
                 <p style={{ fontSize: "12px", color: "#888", textAlign: "center", margin: 0 }}>
-                  We'll call you back to confirm. For same-day service call <a href="tel:2192622711" style={{ color: "#e63946" }}>(219) 262-2711</a>.
+                  We&apos;ll call you back to confirm. For same-day service call <a href="tel:2192622711" style={{ color: "#e63946" }}>(219) 262-2711</a>.
                 </p>
               </div>
             )}
