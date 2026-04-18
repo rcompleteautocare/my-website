@@ -187,7 +187,8 @@ export default function CheckEngineLightFlashing() {
           <li><Link href="/services/engine-repair">Engine Repair Crown Point, IN →</Link></li>
           <li><Link href="/services/electrical-diagnostics">Electrical Diagnostics →</Link></li>
           <li><Link href="/car-wont-start-crown-point-in">Car Won&apos;t Start in Crown Point →</Link></li>
-          <li><Link href="/extended-warranty-auto-repair-crown-point-in">Extended Warranty Auto Repair →</Link></li>
+          <li><Link href="/services/extended-warranty-repair">Extended Warranty Repairs →</Link></li>
+          <li><Link href="/extended-warranty-auto-repair-crown-point-in">Warranty Claim Help — Denied or Stuck Claims →</Link></li>
           <li><Link href="/auto-repair-crown-point-in">Auto Repair Crown Point, IN →</Link></li>
         </ul>
 

@@ -14,12 +14,12 @@ export default function ExtendedWarrantyRepair() {
       <section style={{ background: "#1a1a1a", color: "#fff", padding: "60px 24px", textAlign: "center" }}>
         <p style={{ color: "#e63946", fontWeight: "bold", fontSize: "13px", letterSpacing: "1px", marginBottom: "12px" }}>CROWN POINT, INDIANA</p>
         <h1 style={{ fontSize: "38px", fontWeight: "bold", marginBottom: "12px" }}>
-          Extended Warranty Auto Repair in Crown Point, IN
+          Extended Warranty Repairs — How We Do Warranty Work
         </h1>
-        <p className="speakable" style={{ fontSize: "16px", color: "#e63946", fontWeight: "600", marginBottom: "16px", fontStyle: "italic" }}>TL;DR: We work with CarShield, Endurance, CARS Protection, AmTrust, and most providers. Call us first with your contract info — we verify coverage, handle pre-authorization, complete the repair, and submit all paperwork. You pay only your deductible (typically $100–$200).
+        <p className="speakable" style={{ fontSize: "16px", color: "#e63946", fontWeight: "600", marginBottom: "16px", fontStyle: "italic" }}>TL;DR: We work with CarShield, Endurance, CARS Protection, AmTrust and most providers. This page explains our process, which repairs are typically covered, and what to expect. You pay only your deductible (typically $100–$200).
         </p>
         <p style={{ fontSize: "18px", color: "#ccc", maxWidth: "600px", margin: "0 auto 32px" }}>
-          Bring your contract. We verify coverage, handle pre-authorisation, complete the repair, and submit all paperwork. You pay only your deductible.
+          This is our operational warranty page. For urgent help with a denied or stuck claim, see our <Link href="/extended-warranty-auto-repair-crown-point-in" style={{ color: "#fff", textDecoration: "underline" }}>warranty claim help page →</Link>
         </p>
         <a href="tel:2192622711" style={{ background: "#e63946", color: "#fff", padding: "14px 32px", borderRadius: "6px", fontWeight: "bold", textDecoration: "none", fontSize: "18px" }}>
           📞 Call (219) 262-2711
@@ -197,7 +197,7 @@ export default function ExtendedWarrantyRepair() {
           <li><Link href="/services/electrical-diagnostics" style={{ color: "#e63946" }}>Electrical Diagnostics Crown Point, IN</Link></li>
           <li><Link href="/services/no-start-diagnostics" style={{ color: "#e63946" }}>No-Start Diagnostics Crown Point, IN</Link></li>
           <li><Link href="/services/ac-heating-repair" style={{ color: "#e63946" }}>AC &amp; Heating Repair Crown Point, IN</Link></li>
-          <li><Link href="/extended-warranty-auto-repair-crown-point-in" style={{ color: "#e63946" }}>Extended Warranty Auto Repair — Full Guide</Link></li>
+          <li><Link href="/extended-warranty-auto-repair-crown-point-in" style={{ color: "#e63946" }}>Warranty Claim Help — Denied or Stuck Claims</Link></li>
           <li><Link href="/auto-repair-crown-point-in" style={{ color: "#e63946" }}>Auto Repair Crown Point, IN</Link></li>
         </ul>
       </section>

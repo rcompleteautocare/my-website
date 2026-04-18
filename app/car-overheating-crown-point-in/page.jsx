@@ -202,7 +202,8 @@ export default function CarOverheating() {
         <li><Link href="/services/engine-repair">Engine Repair Crown Point, IN →</Link></li>
         <li><Link href="/services/check-engine-light">Check Engine Light Diagnostics →</Link></li>
         <li><Link href="/check-engine-light-flashing-crown-point">Check Engine Light Flashing Crown Point →</Link></li>
-        <li><Link href="/extended-warranty-auto-repair-crown-point-in">Extended Warranty Auto Repair →</Link></li>
+        <li><Link href="/services/extended-warranty-repair">Extended Warranty Repairs →</Link></li>
+        <li><Link href="/extended-warranty-auto-repair-crown-point-in">Warranty Claim Help — Denied or Stuck Claims →</Link></li>
         <li><Link href="/car-wont-start-crown-point-in">Car Won&apos;t Start Crown Point →</Link></li>
         <li><Link href="/auto-repair-crown-point-in">Auto Repair Crown Point, IN →</Link></li>
       </ul>
