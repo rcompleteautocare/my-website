@@ -44,15 +44,6 @@ const FAQS = [
 export default function CarOverheating() {
   return (
     <>
-      <FaqSchema faqs={FAQS} />
-      <div className="page-content">
-        <p className="location-badge">Crown Point, Indiana</p>
-        ...
-      </div>
-    </>
-  )
-}
-    <>
 <FaqSchema faqs={FAQS} />
 <div className="page-content">
       <p className="location-badge">Crown Point, Indiana</p>
@@ -221,3 +212,5 @@ export default function CarOverheating() {
       <p>Same-day diagnostics. We find the root cause before recommending a single repair. Extended warranty accepted.</p>
       <p>1305 E Summit St, Crown Point, IN 46307</p>
       <a href="tel:2192622711" className="cta-button">📞 Call (219) 262-2711</a></div></>
+  )
+}
