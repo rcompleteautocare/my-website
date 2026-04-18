@@ -1,5 +1,20 @@
 export const runtime = "edge";
 
+type TekmetricCustomer = {
+  id?: string | number;
+  mobilePhone?: string;
+  phone?: string;
+};
+
+type InboundCallPayload = {
+  phone?: string;
+  name?: string;
+  result?: string;
+  duration?: number | string;
+  timestamp?: string;
+  source?: string;
+};
+
 function cleanDigits(value: unknown): string {
   return String(value ?? "").replace(/\D/g, "").slice(-10);
 }
@@ -13,7 +28,7 @@ function normalizeName(input: unknown) {
   return { firstName, lastName };
 }
 
-function normalizeTekmetricPhone(customer: any): string {
+function normalizeTekmetricPhone(customer: TekmetricCustomer): string {
   return cleanDigits(customer?.mobilePhone || customer?.phone);
 }
 
@@ -45,9 +60,9 @@ export async function POST(req: Request) {
     });
   }
 
-  let body: any;
+  let body: InboundCallPayload;
   try {
-    body = await req.json();
+    body = (await req.json()) as InboundCallPayload;
   } catch (err) {
     console.error("Inbound call error: invalid JSON", err);
     return new Response(JSON.stringify({ error: "Invalid JSON" }), {
@@ -108,11 +123,12 @@ export async function POST(req: Request) {
       : [];
 
     // do client-side exact match on phone fields in case the server-side search is fuzzy
-    const exactMatch = customers.find((c: any) =>
+    const typedCustomers = customers as TekmetricCustomer[];
+    const exactMatch = typedCustomers.find((c) =>
       normalizeTekmetricPhone(c) === cleanPhone
     );
 
-    let customerId: string | number | null = exactMatch?.id ?? customers?.[0]?.id ?? null;
+    let customerId: string | number | null = exactMatch?.id ?? typedCustomers?.[0]?.id ?? null;
 
     // Create customer if not found
     if (!customerId) {
