@@ -20,7 +20,7 @@ export default function CedarLake() {
           Auto Repair Near Cedar Lake, IN
         </h1>
         <p style={{ fontSize: "18px", color: "#ccc", maxWidth: "600px", margin: "0 auto 32px" }}>
-          Cedar Lake drivers trust R Complete Auto Care in Crown Point for honest diagnostics, expert repairs, and extended warranty work. Just minutes away.
+          Diagnostic-first repair shop 10 minutes east of Lake Dalecarlia. Honest quotes on suspension, towing and trailer systems, and the kind of rural-road wear Cedar Lake drivers actually see.
         </p>
         <a href="tel:2192622711" style={{ background: "#e63946", color: "#fff", padding: "14px 32px", borderRadius: "6px", fontWeight: "bold", fontSize: "18px", textDecoration: "none" }}>
           📞 Call (219) 262-2711
@@ -37,13 +37,13 @@ export default function CedarLake() {
       <section style={{ padding: "60px 24px", maxWidth: "800px", margin: "0 auto" }}>
         <h2 style={{ fontSize: "28px", marginBottom: "16px" }}>The Auto Repair Shop Cedar Lake Drivers Trust</h2>
         <p style={{ lineHeight: 1.8, color: "#444", marginBottom: "20px" }}>
-          If you're looking for honest, expert auto repair near Cedar Lake, Indiana, R Complete Auto Care in Crown Point is just about 10 minutes away at 1305 E Summit St. We're a diagnostic-first shop — meaning we find the real problem before recommending any repair. No guesswork, no unnecessary work, just honest answers and expert repairs.
+          Cedar Lake is a different driving environment than the commuter towns to the north. A lot of unpaved driveways and gravel shoulders, seasonal towing of boats and campers out to Lake Dalecarlia or the lake itself, and plenty of older pickups and SUVs still in daily service. The repair patterns reflect that — suspension and steering issues, cooling-system stress from towing, and trailer-hitch electrical problems are what we see most from Cedar Lake vehicles.
         </p>
         <p style={{ lineHeight: 1.8, color: "#444", marginBottom: "20px" }}>
-          Cedar Lake drivers come to us because we give straight answers, fair prices, and repairs that actually fix the problem. We find the root cause before recommending anything — so you only pay for what your vehicle actually needs.
+          Many of our Cedar Lake customers first came in after being quoted a steep repair estimate somewhere else. We'd rather find the $180 fix than sell you the $1,800 one — and when the repair genuinely is major, we show you the diagnostic data and walk you through the options. For lake-country drivers who depend on their vehicle to tow, haul, or just get to work in Crown Point or Merrillville, straight answers matter more than glossy waiting rooms.
         </p>
         <p style={{ lineHeight: 1.8, color: "#444", marginBottom: "40px" }}>
-          Built on over 25 years of family experience in auto repair, we work on all foreign and domestic vehicles and proudly accept most extended warranty plans. Serving Cedar Lake, Crown Point, St. John, Schererville, Merrillville, and all of Lake County, Indiana.
+          We service foreign and domestic vehicles with emphasis on the work that keeps Cedar Lake trucks and daily drivers on the road: cooling and A/C, suspension and steering, brakes, electrical diagnostics, and engine and transmission repair. Most extended warranty plans are accepted. We regularly see customers from Cedar Lake proper, Lowell, the Lake Dalecarlia area, and the rural corridor out toward Shelby and Schneider.
         </p>
 <p style={{ lineHeight: 1.8, color: "#444", marginBottom: "20px" }}>
   Cedar Lake's rural roads and the IN-2 corridor see a different kind of wear than the highway commuters to the north — more gravel road debris, more pothole damage from county roads that don't get resurfaced as frequently, and more towing and hauling from trucks and SUVs used for Lake Dalecarlia and Cedar Lake access. Suspension and steering components take a beating on those roads, and we see it regularly in the vehicles that come in from that area.

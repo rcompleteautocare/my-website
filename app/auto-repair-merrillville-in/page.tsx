@@ -20,7 +20,7 @@ export default function Merrillville() {
           Auto Repair Near Merrillville, IN
         </h1>
         <p style={{ fontSize: "18px", color: "#ccc", maxWidth: "600px", margin: "0 auto 32px" }}>
-          Merrillville drivers trust R Complete Auto Care in Crown Point for honest diagnostics, expert repairs, and extended warranty work. Just minutes away.
+          Crown Point repair shop 10 minutes west of Southlake Mall. Straight answers on commuter wear, extended warranty claims, and the major repairs big-box shops oversell.
         </p>
         <a href="tel:2192622711" style={{ background: "#e63946", color: "#fff", padding: "14px 32px", borderRadius: "6px", fontWeight: "bold", fontSize: "18px", textDecoration: "none" }}>
           📞 Call (219) 262-2711
@@ -37,13 +37,13 @@ export default function Merrillville() {
       <section style={{ padding: "60px 24px", maxWidth: "800px", margin: "0 auto" }}>
         <h2 style={{ fontSize: "28px", marginBottom: "16px" }}>The Auto Repair Shop Merrillville Drivers Trust</h2>
         <p style={{ lineHeight: 1.8, color: "#444", marginBottom: "20px" }}>
-          If you're looking for honest, expert auto repair near Merrillville, Indiana, R Complete Auto Care in Crown Point is just about 10 minutes away at 1305 E Summit St. We're a diagnostic-first shop — meaning we find the real problem before recommending any repair. No guesswork, no unnecessary work.
+          Merrillville has some of the densest rush-hour traffic in Lake County — Broadway, US-30, and I-65 all converge here, and that kind of stop-and-go driving is hard on a car. Brake pads wear faster, transmission fluid breaks down sooner, and suspension components take more abuse than they would on open highway. R Complete Auto Care is 10 minutes west in Crown Point, and we see the specific wear patterns Merrillville commuters deal with every week.
         </p>
         <p style={{ lineHeight: 1.8, color: "#444", marginBottom: "20px" }}>
-          Merrillville drivers come to us because we give straight answers, fair prices, and repairs that actually fix the problem. Whether you need a check engine light diagnosed, brakes replaced, a transmission repair, or a major engine job — we have the expertise and equipment to handle it right.
+          If you commute from Merrillville to Chicago, Gary, or elsewhere in the region, you need a shop that gets you back on the road without guessing. We diagnose first and repair second — so your money goes toward the actual problem instead of a parts-swap gamble. For a daily driver racking up 20,000+ miles a year, that difference adds up fast.
         </p>
         <p style={{ lineHeight: 1.8, color: "#444", marginBottom: "20px" }}>
-          Built on over 25 years of family experience in auto repair, we work on all foreign and domestic vehicles and proudly accept most extended warranty plans. Serving Merrillville, Crown Point, St. John, Schererville, and all of Lake County, Indiana.
+          We handle check-engine diagnostics, brake work, transmission repair, engine repair, and A/C and heating service on both foreign and domestic vehicles. Extended warranty claims are welcome — we've worked with most major providers and handle the paperwork for you. A lot of our Merrillville regulars came from the office parks and retail corridor along US-30 after getting a second opinion that saved them money.
         </p>
 <p style={{ lineHeight: 1.8, color: "#444", marginBottom: "20px" }}>
   Merrillville's commercial strip along US-30 near Southlake Mall is one of the most heavily trafficked areas in Northwest Indiana. The constant stop-and-go past the hotels, big-box retailers, and restaurants puts real wear on brakes and transmissions. We regularly see Merrillville drivers who have been told by a national chain that they need a major repair — and find the actual fix is considerably simpler once we run a proper diagnostic.

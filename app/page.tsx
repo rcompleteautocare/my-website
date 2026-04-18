@@ -1,8 +1,11 @@
 import Link from "next/link";
 import Script from "next/script";
 export const metadata = {
-  title: "Auto Repair Crown Point IN | R Complete Auto Care | (219) 262-2711",
-  description: "Crown Point's diagnostic-first auto repair shop. Honest estimates, expert repairs, extended warranty work welcome. Serving Crown Point, St. John, Schererville & Merrillville. Call (219) 262-2711.",
+  title: "R Complete Auto Care | Auto Repair in Crown Point, IN",
+  description: "Family-owned auto repair shop in Crown Point, IN. Diagnostic-first approach, honest estimates, and extended warranty work. Call (219) 262-2711.",
+  alternates: {
+    canonical: "https://www.rcompleteautocare.com",
+  },
   other: { dateModified: "2026-04-15" },
 };
 
