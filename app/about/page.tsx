@@ -1,8 +1,8 @@
 import Link from "next/link";
 
 export const metadata = {
-  title: "About R Complete Auto Care | Crown Point IN Auto Repair | (219) 262-2711",
-  description: "Learn about R Complete Auto Care in Crown Point IN. Diagnostic-first auto repair shop with 35+ years of technician experience. ASE certified since 1993. Honest estimates, expert repairs. Call (219) 262-2711.",
+  title: "About Crown Point Auto Repair Shop | R Complete Auto Care",
+  description: "R Complete Auto Care in Crown Point, IN — diagnostic-first auto repair, ASE certified since 1993, 35+ years of technician experience. (219) 262-2711.",
   alternates: {
     canonical: "https://www.rcompleteautocare.com/about",
   },

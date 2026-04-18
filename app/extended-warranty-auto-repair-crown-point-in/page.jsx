@@ -3,9 +3,9 @@ import Link from 'next/link'
 import FaqAccordion from '../components/FaqAccordion'
 
 export const metadata = {
-  title: 'Extended Warranty Auto Repair Crown Point IN | R Complete Auto Care',
+  title: 'Extended Warranty Repair Crown Point | R Complete Auto Care',
   description:
-    'Extended warranty auto repair in Crown Point, IN. We handle pre-authorisation, documentation, and the entire claims process. You pay only your deductible. Call (219) 262-2711.',
+    'Extended warranty auto repair in Crown Point, IN. We handle pre-authorisation, documentation, and claims — you pay only your deductible. (219) 262-2711.',
   alternates: {
     canonical: 'https://www.rcompleteautocare.com/extended-warranty-auto-repair-crown-point-in',
   },

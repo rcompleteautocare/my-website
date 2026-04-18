@@ -3,9 +3,9 @@ import FaqAccordion from '../components/FaqAccordion'
 import FaqSchema from '../components/FaqSchema'
 
 export const metadata = {
-  title: "Car Won't Start Crown Point IN | Same-Day Diagnostics | R Complete Auto Care",
+  title: "Car Won't Start in Crown Point, IN | R Complete Auto Care",
   description:
-    "Car won't start in Crown Point, IN? We run a systematic diagnostic — no guessing, no parts-swapping. Same-day no-start diagnostics. Extended warranty accepted. Call (219) 262-2711.",
+    "Car won't start in Crown Point, IN? Systematic diagnostics — no guessing, no parts-swapping. Same-day service, extended warranty accepted. (219) 262-2711.",
   alternates: {
     canonical: 'https://www.rcompleteautocare.com/car-wont-start-crown-point-in',
   },

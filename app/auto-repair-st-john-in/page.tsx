@@ -1,8 +1,8 @@
 import Link from "next/link";
 
 export const metadata = {
-  title: "Auto Repair Near St. John IN | R Complete Auto Care | (219) 262-2711",
-  description: "Auto repair near St. John IN. R Complete Auto Care in Crown Point serves St. John drivers with honest diagnostics and expert repairs. Extended warranty accepted. Call (219) 262-2711.",
+  title: "Auto Repair in St. John, IN | R Complete Auto Care",
+  description: "Auto repair near St. John, IN — R Complete Auto Care in Crown Point. Honest diagnostics, expert repairs, extended warranty accepted. (219) 262-2711.",
   alternates: {
     canonical: "https://www.rcompleteautocare.com/auto-repair-st-john-in",
   },

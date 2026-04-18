@@ -1,8 +1,8 @@
 import Link from "next/link";
 
 export const metadata = {
-  title: "Auto Repair Crown Point IN | R Complete Auto Care | (219) 262-2711",
-  description: "Top-rated auto repair shop in Crown Point IN. Diagnostic-first approach, honest estimates, extended warranty accepted. Serving all of Lake County. Call (219) 262-2711.",
+  title: "Auto Repair in Crown Point, IN | R Complete Auto Care",
+  description: "Top-rated auto repair shop in Crown Point, IN. Diagnostic-first approach, honest estimates, extended warranty accepted. (219) 262-2711.",
   alternates: {
     canonical: "https://www.rcompleteautocare.com/auto-repair-crown-point-in",
   },

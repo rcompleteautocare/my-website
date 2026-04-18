@@ -1,5 +1,5 @@
 export const metadata = {
-  title: 'Transmission Repair Crown Point IN — Diagnose Before You Spend | R Complete Auto Care',
+  title: 'Transmission Repair Crown Point, IN | R Complete Auto Care',
   description: 'Transmission slipping in Crown Point? Get a real diagnosis before spending thousands. We have saved customers from unnecessary rebuilds. Call (219) 262-2711.',
   alternates: { canonical: 'https://www.rcompleteautocare.com/services/transmission-repair' },
   other: { dateModified: "2025-04-15" },

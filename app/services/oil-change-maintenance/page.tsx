@@ -1,5 +1,5 @@
 export const metadata = {
-  title: 'Oil Change Crown Point IN — Full-Service Maintenance | R Complete Auto Care',
+  title: 'Oil Change & Maintenance Crown Point | R Complete Auto Care',
   description: 'Oil change and maintenance in Crown Point, IN. Conventional and synthetic oil with multi-point inspection. Honest service, no upsell. Call (219) 262-2711.',
   alternates: { canonical: 'https://www.rcompleteautocare.com/services/oil-change-maintenance' },
   other: { dateModified: "2025-04-15" },

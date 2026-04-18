@@ -1,8 +1,8 @@
 import Link from "next/link";
 
 export const metadata = {
-  title: "Auto Diagnostics Crown Point IN | R Complete Auto Care | (219) 262-2711",
-  description: "Professional auto diagnostics in Crown Point IN. We find the real problem before recommending any repair. Check engine light, electrical, no-start and more. Call (219) 262-2711.",
+  title: "Auto Diagnostics Crown Point IN | R Complete Auto Care",
+  description: "Auto diagnostics in Crown Point, IN — check engine light, electrical, no-start. We find the real problem before recommending repairs. (219) 262-2711.",
   alternates: {
     canonical: "https://www.rcompleteautocare.com/services/diagnostics",
   },

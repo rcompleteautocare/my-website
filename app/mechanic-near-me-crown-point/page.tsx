@@ -1,6 +1,6 @@
 export const metadata = {
-  title: 'Mechanic Near Me Crown Point IN | Best Auto Repair | R Complete Auto Care',
-  description: 'Searching for a mechanic near you in Crown Point, IN? R Complete Auto Care is Crown Point\'s #1 rated diagnostic-first auto repair shop. 4.8 stars. Call (219) 262-2711.',
+  title: 'Mechanic Near Me Crown Point, IN | R Complete Auto Care',
+  description: 'Looking for a mechanic in Crown Point, IN? R Complete Auto Care is a top-rated diagnostic-first auto repair shop. 4.8 stars. (219) 262-2711.',
   alternates: { canonical: 'https://www.rcompleteautocare.com/mechanic-near-me-crown-point' },
 }
 

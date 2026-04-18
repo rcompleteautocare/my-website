@@ -1,5 +1,5 @@
 export const metadata = {
-  title: 'No-Start Diagnostics Crown Point IN — Car Won\'t Start | R Complete Auto Care',
+  title: 'No-Start Diagnostics Crown Point, IN | R Complete Auto Care',
   description: 'Car won\'t start in Crown Point, IN? We find the exact reason — no guessing. Same-day diagnostics. Extended warranty accepted. Call (219) 262-2711.',
   alternates: { canonical: 'https://www.rcompleteautocare.com/services/no-start-diagnostics' },
   other: { dateModified: "2025-04-15" },

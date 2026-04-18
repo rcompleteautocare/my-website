@@ -1,7 +1,7 @@
 import type { Metadata } from "next";
 
 export const metadata: Metadata = {
-  title: "Contact R Complete Auto Care | Crown Point IN Auto Repair | (219) 262-2711",
+  title: "Contact Crown Point Auto Repair | R Complete Auto Care",
   description: "Contact R Complete Auto Care in Crown Point, IN. Call, email, or fill out our form. Serving Crown Point, St. John, Schererville, Merrillville, and Cedar Lake.",
   alternates: {
     canonical: "https://www.rcompleteautocare.com/contact",

@@ -2,9 +2,9 @@ import Link from 'next/link'
 import FaqAccordion from '../components/FaqAccordion'
 import FaqSchema from '../components/FaqSchema'
 export const metadata = {
-  title: 'Car Overheating Crown Point IN | What to Do Right Now | R Complete Auto Care',
+  title: 'Car Overheating in Crown Point, IN | R Complete Auto Care',
   description:
-    'Car overheating in Crown Point, IN? Pull over immediately and call us. Same-day overheating diagnostics. We find the root cause before recommending a single repair. (219) 262-2711.',
+    'Car overheating in Crown Point, IN? Pull over and call us. Same-day diagnostics — we find the root cause before recommending repairs. (219) 262-2711.',
   alternates: {
     canonical: 'https://www.rcompleteautocare.com/car-overheating-crown-point-in',
   },

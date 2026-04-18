@@ -3,9 +3,9 @@ import Link from 'next/link'
 import FaqAccordion from '../components/FaqAccordion'
 
 export const metadata = {
-  title: 'Check Engine Light Flashing Crown Point IN | Stop Driving | R Complete Auto Care',
+  title: 'Flashing Check Engine Light Crown Point, IN | R Complete Auto Care',
   description:
-    'Check engine light flashing in Crown Point, IN? Stop driving immediately — every mile risks destroying your catalytic converter. Same-day misfire diagnostics. Call (219) 262-2711.',
+    'Check engine light flashing in Crown Point, IN? Stop driving — every mile risks your catalytic converter. Same-day diagnostics. (219) 262-2711.',
   alternates: {
     canonical: 'https://www.rcompleteautocare.com/check-engine-light-flashing-crown-point',
   },

@@ -1,6 +1,6 @@
 export const metadata = {
-  title: 'Brake Repair Crown Point IN — Honest Inspections | R Complete Auto Care',
-  description: 'Brake repair in Crown Point, IN. Thorough inspections with measurements — not a 10-minute upsell. Honest pricing, quality parts. Same-day service available. Call (219) 262-2711.',
+  title: 'Brake Repair in Crown Point, IN | R Complete Auto Care',
+  description: 'Brake repair in Crown Point, IN. Measurements-based inspections, honest pricing, quality parts. Extended warranty accepted. (219) 262-2711.',
   alternates: { canonical: 'https://www.rcompleteautocare.com/services/brake-repair' },
   other: { dateModified: "2025-04-15" },
 }

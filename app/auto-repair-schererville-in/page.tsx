@@ -1,8 +1,8 @@
 import Link from "next/link";
 
 export const metadata = {
-  title: "Auto Repair Near Schererville IN | R Complete Auto Care | (219) 262-2711",
-  description: "Auto repair near Schererville IN. R Complete Auto Care in Crown Point serves Schererville drivers with honest diagnostics and expert repairs. Extended warranty accepted. Call (219) 262-2711.",
+  title: "Auto Repair in Schererville, IN | R Complete Auto Care",
+  description: "Auto repair near Schererville, IN — R Complete Auto Care in Crown Point. Honest diagnostics, expert repairs, extended warranty accepted. (219) 262-2711.",
   alternates: {
     canonical: "https://www.rcompleteautocare.com/auto-repair-schererville-in",
   },

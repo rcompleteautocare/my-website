@@ -1,6 +1,6 @@
 export const metadata = {
-  title: 'Engine Repair Crown Point IN — Complex Diagnosis Specialists | R Complete Auto Care',
-  description: 'Engine repair in Crown Point, IN. We find WHY it failed before recommending parts — so it does not happen again. Head gaskets, timing, overheating. Call (219) 262-2711.',
+  title: 'Engine Repair in Crown Point, IN | R Complete Auto Care',
+  description: 'Engine repair in Crown Point, IN. We diagnose WHY it failed before replacing parts, so the problem stays fixed. Extended warranty accepted. (219) 262-2711.',
   alternates: { canonical: 'https://www.rcompleteautocare.com/services/engine-repair' },
   other: { dateModified: "2025-04-15" },
 }
