@@ -68,6 +68,23 @@ export default function CedarLake() {
 <p style={{ lineHeight: 1.8, color: "#444", marginBottom: "20px" }}>
   The drive from Cedar Lake to our shop is easy — IN-2 East straight into Crown Point, about 10 minutes from the Parrish Avenue area. We serve drivers from throughout the Cedar Lake, Lowell, and Hebron corridor who want a diagnostic-first shop rather than the nearest parts-swapper.
 </p>
+
+        <h2 style={{ fontSize: "28px", marginBottom: "16px" }}>Most Common Problems Cedar Lake Drivers Bring Us</h2>
+        <p style={{ lineHeight: 1.8, color: "#444", marginBottom: "20px" }}>
+          Cedar Lake driving conditions — gravel shoulders, unmaintained county roads, seasonal towing to the lake and Cedar Lake Beach, long runs on US-41 and IN-2 — create a distinct pattern of vehicle wear we see regularly. These are the issues that come through our door most often from the 46303 area:
+        </p>
+        <ul style={{ lineHeight: 2, color: "#444", paddingLeft: "20px", marginBottom: "32px" }}>
+          <li><strong>Suspension and steering wear</strong> — Tie rod ends, ball joints, and sway bar links fail 20–30% sooner on vehicles that run Cedar Lake&apos;s rural roads daily. Typical repair $350–$700 depending on component and vehicle.</li>
+          <li><strong>Brake line corrosion</strong> — Road salt combined with gravel-chip exposure pits the steel brake lines on trucks and SUVs from Lake Dalecarlia and the 133rd Ave corridor. Undercarriage inspections on vehicles 8+ years old catch this before a sudden brake-pedal failure.</li>
+          <li><strong>Alignment loss from potholes and gravel shoulders</strong> — Tire wear patterns tell the story — inside-edge feathering is usually a toe alignment issue from a curb hit or deep pothole. Alignment runs $110–$180.</li>
+          <li><strong>Trailer hitch wiring faults</strong> — Cedar Lake boats, campers, and utility trailers get connected and disconnected regularly. Corroded 4-pin and 7-pin connectors cause intermittent trailer lighting faults. We rebuild these with sealed connections.</li>
+          <li><strong>Cooling system stress from summer towing</strong> — Towing a boat to Cedar Lake or Lake Dalecarlia in 90° heat will expose any marginal water pump, thermostat, or radiator. We see overheating complaints concentrated in June–August from lake-area drivers. See our <Link href="/car-overheating-crown-point-in" style={{ color: "#c0392b" }}>car overheating page</Link> for what to do if it happens to you.</li>
+          <li><strong>A/C charge loss on older lake-area vehicles</strong> — Many Cedar Lake drivers keep pickups and SUVs 10+ years. Normal seal permeation plus road vibration drops A/C charge below operating threshold. Details on the <Link href="/ac-not-blowing-cold-crown-point-in" style={{ color: "#c0392b" }}>A/C not blowing cold page</Link>.</li>
+          <li><strong>No-start after sitting at the lake</strong> — Vehicles parked at Cedar Lake Beach or Lemon Lake County Park for a full day sometimes will not restart — often a marginal battery stressed by accessory draw. Diagnosis covered on our <Link href="/car-wont-start-crown-point-in" style={{ color: "#c0392b" }}>car won&apos;t start page</Link>.</li>
+          <li><strong>Transmission overheating on towing trips</strong> — Towing loads on an already-hot transmission is a known cause of torque converter clutch and valve body failure. See the <Link href="/transmission-slipping-crown-point-in" style={{ color: "#c0392b" }}>transmission slipping page</Link> for symptoms.</li>
+          <li><strong>Check engine light after long highway runs</strong> — US-41 and I-65 stints frequently unmask intermittent sensor, evap, or misfire faults. Our same-day diagnostic isolates the root cause rather than clearing the code.</li>
+        </ul>
+
         <h2 style={{ fontSize: "28px", marginBottom: "24px" }}>Auto Repair Services for Cedar Lake Drivers</h2>
         <div style={{ display: "grid", gridTemplateColumns: "repeat(auto-fit, minmax(250px, 1fr))", gap: "16px", marginBottom: "40px" }}>
           {[

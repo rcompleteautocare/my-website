@@ -29,5 +29,8 @@ export default function sitemap(): MetadataRoute.Sitemap {
     { url: `${baseUrl}/check-engine-light-flashing-crown-point`, lastModified: "2026-04-14", changeFrequency: "weekly", priority: 0.8 },
     { url: `${baseUrl}/extended-warranty-auto-repair-crown-point-in`, lastModified: "2026-04-14", changeFrequency: "weekly", priority: 0.8 },
     { url: `${baseUrl}/mechanic-near-me-crown-point`, lastModified: "2026-04-14", changeFrequency: "weekly", priority: 0.8 },
+    { url: `${baseUrl}/transmission-slipping-crown-point-in`, lastModified: "2026-04-22", changeFrequency: "weekly", priority: 0.8 },
+    { url: `${baseUrl}/brakes-grinding-crown-point-in`, lastModified: "2026-04-22", changeFrequency: "weekly", priority: 0.8 },
+    { url: `${baseUrl}/ac-not-blowing-cold-crown-point-in`, lastModified: "2026-04-22", changeFrequency: "weekly", priority: 0.8 },
   ];
 }

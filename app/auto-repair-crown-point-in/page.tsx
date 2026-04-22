@@ -65,6 +65,32 @@ export default function CrownPoint() {
 <p style={{ lineHeight: 1.8, color: "#444", marginBottom: "40px" }}>
   We&apos;re located on E Summit St, a few blocks from the historic Crown Point courthouse square and easily accessible from the IN-55 and US-231 intersection. Whether you&apos;re coming from the Winfield area, from south of downtown near the Lake County Fairgrounds, or from the newer subdivisions off 109th Avenue, we&apos;re within 5 minutes of most of Crown Point.
 </p>
+
+        <h2 style={{ fontSize: "28px", marginBottom: "16px" }}>Emergency &amp; Same-Day Problem Pages</h2>
+        <p style={{ lineHeight: 1.8, color: "#444", marginBottom: "20px" }}>
+          If you are dealing with one of these right now, go straight to the problem-specific page below for what to do first and what it usually costs to fix in Crown Point:
+        </p>
+        <ul style={{ lineHeight: 2, color: "#444", paddingLeft: "20px", marginBottom: "32px" }}>
+          <li><Link href="/check-engine-light-flashing-crown-point" style={{ color: "#c0392b" }}>Check engine light flashing</Link> — stop driving; misfire damaging catalytic converter</li>
+          <li><Link href="/car-overheating-crown-point-in" style={{ color: "#c0392b" }}>Car overheating</Link> — pull over immediately; do not open the radiator cap</li>
+          <li><Link href="/car-wont-start-crown-point-in" style={{ color: "#c0392b" }}>Car won&apos;t start</Link> — no-crank, crank-no-start, or intermittent; each is a different diagnosis</li>
+          <li><Link href="/transmission-slipping-crown-point-in" style={{ color: "#c0392b" }}>Transmission slipping</Link> — do not assume a rebuild; most slips are solenoid or fluid fixes</li>
+          <li><Link href="/brakes-grinding-crown-point-in" style={{ color: "#c0392b" }}>Brakes grinding</Link> — metal-on-metal; every stop damages the rotor further</li>
+          <li><Link href="/ac-not-blowing-cold-crown-point-in" style={{ color: "#c0392b" }}>A/C not blowing cold</Link> — find the leak, not just a recharge</li>
+          <li><Link href="/extended-warranty-auto-repair-crown-point-in" style={{ color: "#c0392b" }}>Extended warranty claim stuck or denied</Link> — we help navigate the adjuster process</li>
+        </ul>
+
+        <h2 style={{ fontSize: "28px", marginBottom: "16px" }}>What Makes R Complete Auto Care Different in Crown Point</h2>
+        <ul style={{ lineHeight: 2, color: "#444", paddingLeft: "20px", marginBottom: "32px" }}>
+          <li><strong>Diagnostic-first on every car.</strong> We do not recommend a part until we have confirmed it is the root cause. That is the only sequence that produces a repair that holds long term.</li>
+          <li><strong>Same-day diagnostics.</strong> Most appointments booked by 10am complete diagnosis the same day. We call you with findings and a quote before any work begins.</li>
+          <li><strong>Written measurements, not adjectives.</strong> Brakes measured with calipers and micrometers, battery tested under load, transmission line pressure documented. You see the numbers.</li>
+          <li><strong>Extended warranty specialist.</strong> We handle the full claim on your behalf — coverage verification, adjuster call, documentation, repair, claim submission — with CarShield, Endurance, CARS Protection, CARCHEX, AmTrust, and Zurich.</li>
+          <li><strong>Second-opinion welcome.</strong> Many customers come to us after another shop quoted a major repair. A second opinion — often with a completely different (and less expensive) root cause — is one of the most common services we provide.</li>
+          <li><strong>Local, family-owned, 25+ years.</strong> Crown Point based. Not a chain. We see the same customers year after year and our reputation depends on doing the job right.</li>
+          <li><strong>4.8 Google rating from 79+ Crown Point drivers.</strong> We read every review and reply to feedback. Consistency over time, not a one-week push.</li>
+        </ul>
+
         <h2 style={{ fontSize: "28px", marginBottom: "24px" }}>Our Auto Repair Services in Crown Point, IN</h2>
         <div style={{ display: "grid", gridTemplateColumns: "repeat(auto-fit, minmax(250px, 1fr))", gap: "16px", marginBottom: "40px" }}>
           {[

@@ -1,11 +1,11 @@
 export const metadata = {
   title: 'No-Start Diagnostics Crown Point, IN | R Complete Auto Care',
-  description: 'Car won\'t start in Crown Point, IN? We find the exact reason — no guessing. Same-day diagnostics. Extended warranty accepted. Call (219) 262-2711.',
+  description: "Car won't start in Crown Point, IN? We find the exact reason — no guessing. Same-day diagnostics. Extended warranty accepted. Call (219) 262-2711.",
   alternates: { canonical: 'https://www.rcompleteautocare.com/services/no-start-diagnostics' },
 
   openGraph: {
     title: "No-Start Diagnostics Crown Point, IN | R Complete Auto Care",
-    description: "Car won\\",
+    description: "Car won't start in Crown Point, IN? We find the exact reason — no guessing. Same-day diagnostics. Extended warranty accepted.",
     url: "https://www.rcompleteautocare.com/services/no-start-diagnostics",
     siteName: "R Complete Auto Care",
     locale: "en_US",
@@ -15,7 +15,7 @@ export const metadata = {
   twitter: {
     card: "summary_large_image",
     title: "No-Start Diagnostics Crown Point, IN | R Complete Auto Care",
-    description: "Car won\\",
+    description: "Car won't start in Crown Point, IN? We find the exact reason — no guessing. Same-day diagnostics. Extended warranty accepted.",
     images: ["/logo.png"],
   },
   robots: { index: true, follow: true },
@@ -31,7 +31,7 @@ export default function NoStartDiagnostics() {
       <section style={{ background: "#1a1a1a", color: "#fff", padding: "60px 24px", textAlign: "center" }}>
         <p style={{ color: "#e63946", fontWeight: "bold", fontSize: "13px", letterSpacing: "1px", marginBottom: "12px" }}>CROWN POINT, INDIANA</p>
         <h1 style={{ fontSize: "38px", fontWeight: "bold", marginBottom: "12px" }}>
-          Car Won&apos;t Start in Crown Point, IN? We Find the Cause.
+          No-Start Diagnostic Service — Crown Point, IN
         </h1>
         <p className="speakable" style={{ fontSize: "16px", color: "#e63946", fontWeight: "600", marginBottom: "16px", fontStyle: "italic" }}>TL;DR: No-start diagnostics are completed same day in most cases. We test battery, starter, fuel delivery, spark, and electronic signals to find the exact cause — not guess with parts. Fuel pump, starter, and sensor failures are often covered by extended warranties.
         </p>
@@ -51,7 +51,11 @@ export default function NoStartDiagnostics() {
 
       {/* Intro */}
       <section style={{ padding: "60px 24px", maxWidth: "800px", margin: "0 auto" }}>
-        <LastUpdated date="2026-04-18" />
+        <LastUpdated date="2026-04-22" />
+        <div style={{ background: "#fff4f1", border: "1px solid #f5c6b8", borderLeft: "4px solid #c0392b", borderRadius: "4px", padding: "16px 20px", marginBottom: "32px" }}>
+          <strong style={{ display: "block", marginBottom: "6px", color: "#c0392b" }}>Stranded right now?</strong>
+          <span style={{ color: "#444", lineHeight: 1.6 }}>If your car won&apos;t start at this moment, the <Link href="/car-wont-start-crown-point-in" style={{ color: "#c0392b", fontWeight: 600 }}>Car Won&apos;t Start in Crown Point emergency guide</Link> walks through what to check first and how to reach us. This page covers the diagnostic service itself — what we test, why, and what it costs.</span>
+        </div>
         <h2 style={{ fontSize: "28px", marginBottom: "16px" }}>No-Start Diagnosis — Done Right the First Time</h2>
         <p style={{ lineHeight: 1.8, color: "#444", marginBottom: "20px" }}>
           When your car won&apos;t start, the instinct is to start replacing parts — battery, starter, alternator. But no-start conditions have many possible causes, and replacing parts without a proper diagnosis is expensive and often doesn&apos;t solve the problem. We&apos;ve seen customers spend hundreds of dollars on parts at other shops, only to bring the car to us and find a failed crankshaft position sensor or a fuel pump issue that a proper diagnostic would have caught immediately.
