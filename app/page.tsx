@@ -248,6 +248,7 @@ export default function Home() {
         { title: "Car Won't Start", desc: "Dead battery, failed starter, fuel pump, or crank sensor — we find the exact cause.", href: "/car-wont-start-crown-point-in" },
         { title: "Check Engine Light Flashing", desc: "A flashing CEL means active misfire — serious damage risk. Call us immediately.", href: "/check-engine-light-flashing-crown-point" },
         { title: "Car Overheating", desc: "Pull over now. Overheating causes major engine damage fast. We diagnose the cause.", href: "/car-overheating-crown-point-in" },
+        { title: "Transmission Slipping", desc: "Before you authorize a $4,000 rebuild — get a real diagnosis. Most slipping isn't a rebuild.", href: "/transmission-slipping-crown-point-in" },
         { title: "Warranty Claim Trouble", desc: "Denied claim, dismissive shop, or a stuck adjuster? We rescue stuck extended warranty claims.", href: "/extended-warranty-auto-repair-crown-point-in" },
       ].map(item => (
         <a key={item.href} href={item.href} style={{ display: "block", background: "#fff", border: "1px solid #e0e0e0", borderLeft: "4px solid #e63946", borderRadius: "4px", padding: "20px", textDecoration: "none", color: "#1a1a1a" }}>

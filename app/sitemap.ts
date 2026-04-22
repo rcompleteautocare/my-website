@@ -27,6 +27,7 @@ export default function sitemap(): MetadataRoute.Sitemap {
     { url: `${baseUrl}/car-overheating-crown-point-in`, lastModified: "2026-04-14", changeFrequency: "weekly", priority: 0.8 },
     { url: `${baseUrl}/car-wont-start-crown-point-in`, lastModified: "2026-04-14", changeFrequency: "weekly", priority: 0.8 },
     { url: `${baseUrl}/check-engine-light-flashing-crown-point`, lastModified: "2026-04-14", changeFrequency: "weekly", priority: 0.8 },
+    { url: `${baseUrl}/transmission-slipping-crown-point-in`, lastModified: "2026-04-22", changeFrequency: "weekly", priority: 0.8 },
     { url: `${baseUrl}/extended-warranty-auto-repair-crown-point-in`, lastModified: "2026-04-14", changeFrequency: "weekly", priority: 0.8 },
     { url: `${baseUrl}/mechanic-near-me-crown-point`, lastModified: "2026-04-14", changeFrequency: "weekly", priority: 0.8 },
   ];

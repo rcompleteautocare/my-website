@@ -172,6 +172,7 @@ export default function TransmissionRepair() {
       <section style={{ padding: "60px 24px", maxWidth: "800px", margin: "0 auto" }}>
         <h2 style={{ fontSize: "24px", marginBottom: "16px" }}>Related Services</h2>
         <ul style={{ lineHeight: 2, paddingLeft: "20px" }}>
+          <li><Link href="/transmission-slipping-crown-point-in" style={{ color: "#e63946" }}>Transmission Slipping Crown Point, IN</Link></li>
           <li><Link href="/services/engine-repair" style={{ color: "#e63946" }}>Engine Repair Crown Point, IN</Link></li>
           <li><Link href="/services/check-engine-light" style={{ color: "#e63946" }}>Check Engine Light Diagnostics Crown Point, IN</Link></li>
           <li><Link href="/services/extended-warranty-repair" style={{ color: "#e63946" }}>Extended Warranty Repairs Crown Point, IN</Link></li>
