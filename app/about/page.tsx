@@ -93,7 +93,7 @@ export default function About() {
             <div>
               <div style={{ fontWeight: "bold", color: "#e63946", marginBottom: "6px" }}>Customer Rating</div>
               <div style={{ color: "#444", lineHeight: 1.7 }}>
-                <a href="https://www.google.com/maps/place/R+Complete+Auto+Care/@41.4270614,-87.3410824,17z" target="_blank" rel="noopener noreferrer" style={{ color: "#1a1a1a" }}>4.8 stars on Google</a> — built on honest work and real results
+                <a href="https://www.google.com/maps/place/R+Complete+Auto+Care/@41.4270614,-87.3410824,17z" target="_blank" rel="noopener noreferrer" style={{ color: "#1a1a1a" }}>4.9 stars on Google</a> — built on honest work and real results
               </div>
             </div>
             <div>
