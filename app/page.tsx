@@ -1,5 +1,6 @@
 import Link from "next/link";
 import Script from "next/script";
+import TrustBadges from "./components/TrustBadges";
 export const metadata = {
   title: "R Complete Auto Care | Auto Repair in Crown Point, IN",
   description: "Family-owned auto repair shop in Crown Point, IN. Diagnostic-first approach, honest estimates, and extended warranty work. Call (219) 262-2711.",
@@ -58,6 +59,9 @@ export default function Home() {
           Mon–Fri 8am–6pm · Sat 8am–2pm · 1305 E Summit St, Crown Point, IN 46307
         </p>
       </section>
+
+      {/* Certifications */}
+      <TrustBadges />
 
       {/* Trust bar */}
       {/* Google Reviews */}
