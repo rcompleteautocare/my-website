@@ -117,7 +117,7 @@ export default function Nav() {
         gap: "24px",
         flexWrap: "wrap"
       }}>
-        <span>⭐ 4.8 Google Rating</span>
+        <span>⭐ 4.9 Google Rating</span>
         <span>✓ Extended Warranty Accepted</span>
         <span>✓ Same-Day Diagnostics</span>
         <span>📞 <a href="tel:2192622711" style={{ color: "#fff", textDecoration: "none" }}>(219) 262-2711</a></span>

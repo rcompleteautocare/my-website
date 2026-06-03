@@ -52,10 +52,10 @@ const SCHEMA = {
   ],
   aggregateRating: {
     "@type": "AggregateRating",
-    ratingValue: "4.8",
+    ratingValue: "4.9",
     bestRating: "5",
     worstRating: "1",
-    ratingCount: "81",
+    ratingCount: "109",
   },
   sameAs: [
     "https://www.google.com/maps/place/R+Complete+Auto+Care/@41.4270614,-87.3410824,17z",
