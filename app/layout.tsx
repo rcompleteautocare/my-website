@@ -61,7 +61,7 @@ const SCHEMA = {
     "https://www.google.com/maps/place/R+Complete+Auto+Care/@41.4270614,-87.3410824,17z",
     "https://www.yelp.com/biz/r-complete-auto-care-crown-point",
     "https://www.facebook.com/RCompleteAutoCare/",
-    "https://www.bbb.org/us/in/crown-point/profile/auto-repair/r-complete-auto-care-0352-90173711",
+    "https://www.bbb.org/us/in/crown-point/profile/auto-repairs/r-complete-auto-care-0352-90173711",
     "https://www.chamberofcommerce.com/business-directory/indiana/crown-point/auto-repair-shop/2034231063-r-complete-auto-care",
     "https://www.tiktok.com/@r.complete.auto.c",
     "https://www.youtube.com/channel/UCYw967Mku6eZQBC-7jaVSYA",
