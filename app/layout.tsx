@@ -55,7 +55,7 @@ const SCHEMA = {
     ratingValue: "4.9",
     bestRating: "5",
     worstRating: "1",
-    ratingCount: "109",
+    ratingCount: "110",
   },
   sameAs: [
     "https://www.google.com/maps/place/R+Complete+Auto+Care/@41.4270614,-87.3410824,17z",
