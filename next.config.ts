@@ -1,6 +1,27 @@
 import type { NextConfig } from "next";
+import bundleAnalyzer from "@next/bundle-analyzer";
+
+const withBundleAnalyzer = bundleAnalyzer({
+  enabled: process.env.ANALYZE === "true",
+});
 
 const nextConfig: NextConfig = {
+  async headers() {
+    return [
+      {
+        // Long-lived immutable caching for static image/font assets in public/.
+        // (_next/static is already immutable on Vercel; this covers /logo.png,
+        // /badges/*, and the *.svg assets.)
+        source: "/:all*(svg|png|jpg|jpeg|gif|webp|ico|woff|woff2)",
+        headers: [
+          {
+            key: "Cache-Control",
+            value: "public, max-age=31536000, immutable",
+          },
+        ],
+      },
+    ];
+  },
   async redirects() {
     return [
       {
@@ -28,4 +49,4 @@ const nextConfig: NextConfig = {
   },
 };
 
-export default nextConfig;
+export default withBundleAnalyzer(nextConfig);
