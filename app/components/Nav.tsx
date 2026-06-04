@@ -27,7 +27,7 @@ export default function Nav() {
       {/* Top utility bar */}
       <div style={{ background: "#1a1a1a", color: "#fff", textAlign: "center", padding: "8px", fontSize: "13px" }}>
         Mon–Fri 8am–6pm &nbsp;|&nbsp; Sat 8am–2pm &nbsp;|&nbsp;
-        <a href="tel:2192622711" style={{ color: "#e63946", fontWeight: "bold", marginLeft: "8px" }}>(219) 262-2711</a>
+        <a href="tel:2192622711" style={{ color: "#f1626f", fontWeight: "bold", marginLeft: "8px" }}>(219) 262-2711</a>
       </div>
 
       {/* Main header */}

@@ -36,6 +36,8 @@ export default function TrustBadges() {
           <img
             src="/badges/repairpal.png"
             alt="RepairPal Certified Shop"
+            width={260}
+            height={233}
             style={{ height: BADGE_HEIGHT, width: "auto", display: "block" }}
           />
         </a>
@@ -64,6 +66,8 @@ export default function TrustBadges() {
         >
           <img
             src="https://seal-fortwayne.bbb.org/seals/blue-seal-96-50-bbb-90173711.png"
+            width={96}
+            height={50}
             style={{ border: 0, height: BADGE_HEIGHT, width: "auto", display: "block" }}
             alt="R Complete Auto Care BBB Business Review"
           />
