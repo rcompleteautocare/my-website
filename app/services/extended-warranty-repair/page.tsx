@@ -29,11 +29,11 @@ export default function ExtendedWarrantyRepair() {
 
       {/* Hero */}
       <section style={{ background: "#1a1a1a", color: "#fff", padding: "60px 24px", textAlign: "center" }}>
-        <p style={{ color: "#e63946", fontWeight: "bold", fontSize: "13px", letterSpacing: "1px", marginBottom: "12px" }}>CROWN POINT, INDIANA</p>
+        <p style={{ color: "#f1626f", fontWeight: "bold", fontSize: "13px", letterSpacing: "1px", marginBottom: "12px" }}>CROWN POINT, INDIANA</p>
         <h1 style={{ fontSize: "38px", fontWeight: "bold", marginBottom: "12px" }}>
           Extended Warranty Repairs — How We Do Warranty Work
         </h1>
-        <p className="speakable" style={{ fontSize: "16px", color: "#e63946", fontWeight: "600", marginBottom: "16px", fontStyle: "italic" }}>TL;DR: We work with CarShield, Endurance, CARS Protection, AmTrust and most providers. This page explains our process, which repairs are typically covered, and what to expect. You pay only your deductible (typically $100–$200).
+        <p className="speakable" style={{ fontSize: "16px", color: "#f1626f", fontWeight: "600", marginBottom: "16px", fontStyle: "italic" }}>TL;DR: We work with CarShield, Endurance, CARS Protection, AmTrust and most providers. This page explains our process, which repairs are typically covered, and what to expect. You pay only your deductible (typically $100–$200).
         </p>
         <p style={{ fontSize: "18px", color: "#ccc", maxWidth: "600px", margin: "0 auto 32px" }}>
           This is our operational warranty page. For urgent help with a denied or stuck claim, see our <Link href="/extended-warranty-auto-repair-crown-point-in" style={{ color: "#fff", textDecoration: "underline" }}>warranty claim help page →</Link>

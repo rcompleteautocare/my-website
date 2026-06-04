@@ -30,7 +30,7 @@ export default function Contact() {
 
       {/* Hero */}
       <section style={{ background: "#1a1a1a", color: "#fff", padding: "60px 24px", textAlign: "center" }}>
-        <p style={{ color: "#e63946", fontWeight: "bold", fontSize: "13px", letterSpacing: "1px", marginBottom: "12px" }}>Crown Point, Indiana</p>
+        <p style={{ color: "#f1626f", fontWeight: "bold", fontSize: "13px", letterSpacing: "1px", marginBottom: "12px" }}>Crown Point, Indiana</p>
         <h1 style={{ fontSize: "38px", fontWeight: "bold", marginBottom: "16px" }}>
           Contact R Complete Auto Care in Crown Point, IN
         </h1>
@@ -151,6 +151,21 @@ export default function Contact() {
             )}
           </div>
         </div>
+      </section>
+
+      {/* What to expect / directions */}
+      <section style={{ padding: "0 24px 60px", maxWidth: "900px", margin: "0 auto" }}>
+        <h2 style={{ fontSize: "24px", fontWeight: "bold", marginBottom: "16px" }}>What to Expect When You Reach Out</h2>
+        <p style={{ lineHeight: 1.8, color: "#444", marginBottom: "16px" }}>
+          When you call or send the form, you&apos;ll talk with someone who actually works on cars — not a call center. Tell us what your vehicle is doing, when it happens, and any warning lights you&apos;ve noticed. We&apos;ll let you know whether it&apos;s safe to keep driving, give you a realistic idea of timing, and get you scheduled — often the same day for diagnostics. We always call with our findings and a clear estimate before starting any repair, so there are no surprises.
+        </p>
+        <h2 style={{ fontSize: "24px", fontWeight: "bold", margin: "32px 0 16px" }}>Directions &amp; Parking</h2>
+        <p style={{ lineHeight: 1.8, color: "#444", marginBottom: "16px" }}>
+          Our shop is at 1305 E Summit St in Crown Point, IN 46307, with off-street parking right in front of the building. We&apos;re a short drive for neighbors in St. John, Schererville, Merrillville, and Cedar Lake, and easy to reach from anywhere in Lake County. If you&apos;re dropping off before or after hours, give us a call and we&apos;ll walk you through where to leave your keys.
+        </p>
+        <p style={{ lineHeight: 1.8, color: "#444" }}>
+          Hours are Monday–Friday 8:00 AM to 6:00 PM and Saturday 8:00 AM to 2:00 PM; we&apos;re closed Sunday. Appointments are recommended so we can have a bay ready for you, but walk-ins are always welcome.
+        </p>
       </section>
 
       {/* Map */}
