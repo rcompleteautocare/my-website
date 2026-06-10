@@ -5,12 +5,16 @@ import { SpeedInsights } from "@vercel/speed-insights/next";
 import "./globals.css";
 import Nav from "./components/Nav";
 import Footer from "./components/Footer";
+import PhoneConversionListener from "./components/PhoneConversionListener";
 
 // Google Ads global site tag (gtag.js). The tag ID is supplied via env var
 // (NEXT_PUBLIC_ADS_TAG_ID, e.g. AW-XXXXXXXXXX) and must be set in the Vercel
 // project for Production + Preview. Loaded with the `afterInteractive`
 // strategy so Google's crawler can detect it (not lazy-loaded).
 const ADS_TAG_ID = process.env.NEXT_PUBLIC_ADS_TAG_ID;
+// "Click to call" conversion label, paired with ADS_TAG_ID to form send_to.
+const ADS_PHONE_CONVERSION_LABEL =
+  process.env.NEXT_PUBLIC_ADS_PHONE_CONVERSION_LABEL;
 
 export const metadata: Metadata = {
   metadataBase: new URL("https://www.rcompleteautocare.com"),
@@ -136,6 +140,9 @@ export default function RootLayout({ children }: { children: React.ReactNode }) 
               `}
             </Script>
           </>
+        ) : null}
+        {ADS_TAG_ID && ADS_PHONE_CONVERSION_LABEL ? (
+          <PhoneConversionListener />
         ) : null}
         <script
           type="application/ld+json"
