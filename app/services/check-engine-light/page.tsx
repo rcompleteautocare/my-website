@@ -21,7 +21,7 @@ export const metadata = {
   robots: { index: true, follow: true },
 }
 
-import Link from "next/link";
+import RelatedServices from "@/app/components/RelatedServices";
 import LastUpdated from "@/app/components/LastUpdated";
 export default function CheckEngineLight() {
   return (
@@ -155,18 +155,7 @@ export default function CheckEngineLight() {
         </div>
       </section>
 
-      {/* Related Services */}
-      <section style={{ padding: "60px 24px", maxWidth: "800px", margin: "0 auto" }}>
-        <h2 style={{ fontSize: "24px", marginBottom: "16px" }}>Related Services</h2>
-        <ul style={{ lineHeight: 2, paddingLeft: "20px" }}>
-          <li><Link href="/services/engine-repair" style={{ color: "#e63946" }}>Engine Repair in Crown Point, IN</Link></li>
-          <li><Link href="/services/electrical-diagnostics" style={{ color: "#e63946" }}>Electrical Diagnostics Crown Point, IN</Link></li>
-          <li><Link href="/services/no-start-diagnostics" style={{ color: "#e63946" }}>No-Start Diagnostics Crown Point, IN</Link></li>
-          <li><Link href="/services/extended-warranty-repair" style={{ color: "#e63946" }}>Extended Warranty Repairs Crown Point, IN</Link></li>
-          <li><Link href="/check-engine-light-flashing-crown-point" style={{ color: "#e63946" }}>Check Engine Light Flashing — What It Means</Link></li>
-          <li><Link href="/auto-repair-crown-point-in" style={{ color: "#e63946" }}>Auto Repair Crown Point, IN</Link></li>
-        </ul>
-      </section>
+      <RelatedServices slug="check-engine-light" />
 
       {/* Final CTA */}
       <section style={{ background: "#e63946", color: "#fff", textAlign: "center", padding: "60px 24px" }}>

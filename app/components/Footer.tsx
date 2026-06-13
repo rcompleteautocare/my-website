@@ -64,10 +64,14 @@ export default function Footer() {
           <div style={{ display: "flex", flexDirection: "column", gap: "8px" }}>
             {[
               ["Check Engine Light", "/services/check-engine-light"],
+              ["Electrical Diagnostics", "/services/electrical-diagnostics"],
+              ["No-Start Diagnostics", "/services/no-start-diagnostics"],
               ["Engine Repair", "/services/engine-repair"],
               ["Transmission Repair", "/services/transmission-repair"],
               ["Brake Repair", "/services/brake-repair"],
+              ["Suspension & Steering", "/services/suspension-steering"],
               ["Oil Change", "/services/oil-change-maintenance"],
+              ["A/C & Heating Repair", "/services/ac-heating-repair"],
               ["Extended Warranty", "/services/extended-warranty-repair"],
             ].map(([name, href]) => (
               <Link key={href} href={href} style={{ color: "#aaa", textDecoration: "none" }}>{name}</Link>

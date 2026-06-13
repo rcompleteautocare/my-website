@@ -1,4 +1,4 @@
-import Link from "next/link";
+import RelatedServices from "@/app/components/RelatedServices";
 import LastUpdated from "@/app/components/LastUpdated";
 
 export const metadata = {
@@ -114,20 +114,9 @@ export default function ElectricalDiagnostics() {
           </div>
         ))}
 
-        <h2 style={{ fontSize: "24px", marginBottom: "16px" }}>Related Services</h2>
-        <div style={{ display: "grid", gridTemplateColumns: "repeat(auto-fit, minmax(220px, 1fr))", gap: "12px" }}>
-          {[
-            { name: "Check Engine Light", href: "/services/check-engine-light" },
-            { name: "No-Start Diagnostics", href: "/services/no-start-diagnostics" },
-            { name: "Extended Warranty Repairs", href: "/services/extended-warranty-repair" },
-            { name: "Auto Repair Crown Point", href: "/auto-repair-crown-point-in" },
-          ].map(s => (
-            <Link key={s.href} href={s.href} style={{ border: "1px solid #e0e0e0", borderLeft: "4px solid #e63946", borderRadius: "6px", padding: "12px 16px", textDecoration: "none", color: "#1a1a1a", fontSize: "14px", fontWeight: "500", display: "block" }}>
-              {s.name} →
-            </Link>
-          ))}
-        </div>
       </section>
+
+      <RelatedServices slug="electrical-diagnostics" />
 
       <section style={{ background: "#e63946", color: "#fff", textAlign: "center", padding: "60px 24px" }}>
         <h2 style={{ fontSize: "28px", marginBottom: "12px" }}>Electrical Problem in Crown Point? Call Us Today.</h2>
