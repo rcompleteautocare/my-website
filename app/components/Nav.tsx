@@ -43,15 +43,16 @@ export default function Nav() {
             onMouseEnter={() => setServicesOpen(true)}
             onMouseLeave={() => setServicesOpen(false)}>
             <span style={{ cursor: "pointer", color: "#1a1a1a", fontWeight: "500" }}>Services ▾</span>
-            {servicesOpen && (
-              <div style={{ position: "absolute", top: "100%", left: 0, background: "#fff", border: "1px solid #e0e0e0", borderTop: "3px solid #e63946", minWidth: "240px", boxShadow: "0 4px 12px rgba(0,0,0,0.1)", zIndex: 200 }}>
-                {services.map(s => (
-                  <Link key={s.href} href={s.href} style={{ display: "block", padding: "10px 20px", color: "#1a1a1a", textDecoration: "none", fontSize: "14px", borderBottom: "1px solid #f0f0f0" }}>
-                    {s.name}
-                  </Link>
-                ))}
-              </div>
-            )}
+            {/* Always render the dropdown in the DOM (toggle visibility via CSS, not
+                conditional mounting) so the service links are present in the server-
+                rendered HTML and crawlable by search engines. */}
+            <div style={{ display: servicesOpen ? "block" : "none", position: "absolute", top: "100%", left: 0, background: "#fff", border: "1px solid #e0e0e0", borderTop: "3px solid #e63946", minWidth: "240px", boxShadow: "0 4px 12px rgba(0,0,0,0.1)", zIndex: 200 }}>
+              {services.map(s => (
+                <Link key={s.href} href={s.href} style={{ display: "block", padding: "10px 20px", color: "#1a1a1a", textDecoration: "none", fontSize: "14px", borderBottom: "1px solid #f0f0f0" }}>
+                  {s.name}
+                </Link>
+              ))}
+            </div>
           </div>
           <Link href="/about" style={{ textDecoration: "none", color: "#1a1a1a", fontWeight: "500" }}>About</Link>
           <Link href="/contact" style={{ textDecoration: "none", color: "#1a1a1a", fontWeight: "500" }}>Contact</Link>

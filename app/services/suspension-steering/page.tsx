@@ -21,7 +21,7 @@ export const metadata = {
   robots: { index: true, follow: true },
 }
 
-import Link from "next/link";
+import RelatedServices from "@/app/components/RelatedServices";
 import LastUpdated from "@/app/components/LastUpdated";
 export default function SuspensionSteering() {
   return (
@@ -167,16 +167,7 @@ export default function SuspensionSteering() {
         </div>
       </section>
 
-      {/* Related */}
-      <section style={{ padding: "60px 24px", maxWidth: "800px", margin: "0 auto" }}>
-        <h2 style={{ fontSize: "24px", marginBottom: "16px" }}>Related Services</h2>
-        <ul style={{ lineHeight: 2, paddingLeft: "20px" }}>
-          <li><Link href="/services/brake-repair" style={{ color: "#e63946" }}>Brake Repair Crown Point, IN</Link></li>
-          <li><Link href="/services/engine-repair" style={{ color: "#e63946" }}>Engine Repair Crown Point, IN</Link></li>
-          <li><Link href="/services/extended-warranty-repair" style={{ color: "#e63946" }}>Extended Warranty Repairs Crown Point, IN</Link></li>
-          <li><Link href="/auto-repair-crown-point-in" style={{ color: "#e63946" }}>Auto Repair Crown Point, IN</Link></li>
-        </ul>
-      </section>
+      <RelatedServices slug="suspension-steering" />
 
       {/* Final CTA */}
       <section style={{ background: "#e63946", color: "#fff", textAlign: "center", padding: "60px 24px" }}>
