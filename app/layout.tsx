@@ -5,6 +5,7 @@ import { SpeedInsights } from "@vercel/speed-insights/next";
 import "./globals.css";
 import Nav from "./components/Nav";
 import Footer from "./components/Footer";
+import { RATING, REVIEW_COUNT } from "@/lib/rating";
 
 export const metadata: Metadata = {
   metadataBase: new URL("https://www.rcompleteautocare.com"),
@@ -53,10 +54,10 @@ const SCHEMA = {
   ],
   aggregateRating: {
     "@type": "AggregateRating",
-    ratingValue: "4.9",
+    ratingValue: String(RATING),
     bestRating: "5",
     worstRating: "1",
-    ratingCount: "110",
+    ratingCount: String(REVIEW_COUNT),
   },
   sameAs: [
     "https://www.google.com/maps/place/R+Complete+Auto+Care/@41.4270614,-87.3410824,17z",
