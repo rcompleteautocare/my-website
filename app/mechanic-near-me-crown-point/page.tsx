@@ -194,7 +194,8 @@ export default function MechanicNearMe() {
         <h2 style={{ fontSize: "24px", fontWeight: "bold", marginBottom: "16px" }}>Find Your Mechanic Near Crown Point</h2>
         <p style={{ color: "#555", marginBottom: "16px" }}>1305 E Summit St, Crown Point, IN 46307 — easily accessible from US-30, US-41, and IN-2.</p>
         <iframe
-          src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d2978.0!2d-87.3648!3d41.4175!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x8811b0e1e1e1e1e1%3A0x1!2s1305+E+Summit+St%2C+Crown+Point%2C+IN+46307!5e0!3m2!1sen!2sus!4v1"
+          title="R Complete Auto Care location map"
+          src="https://maps.google.com/maps?q=R+Complete+Auto+Care,1305+E+Summit+St,Crown+Point,IN+46307&output=embed"
           width="100%"
           height="350"
           style={{ border: 0, borderRadius: "8px" }}
@@ -202,6 +203,11 @@ export default function MechanicNearMe() {
           loading="lazy"
           referrerPolicy="no-referrer-when-downgrade"
         />
+        <p style={{ marginTop: "12px" }}>
+          <a href="https://www.google.com/maps?cid=13417684656168194405" target="_blank" rel="noopener noreferrer" style={{ color: "#e63946", fontWeight: "bold", textDecoration: "none" }}>
+            View on Google Maps / Get Directions →
+          </a>
+        </p>
       </section>
 
       {/* Related */}

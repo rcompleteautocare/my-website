@@ -1,5 +1,6 @@
 import Link from "next/link";
 import Script from "next/script";
+import BookButton from "@/components/BookButton";
 export const metadata = {
   title: "R Complete Auto Care | Auto Repair in Crown Point, IN",
   description: "Family-owned auto repair shop in Crown Point, IN. Diagnostic-first approach, honest estimates, and extended warranty work. Call (219) 262-2711.",
@@ -50,6 +51,9 @@ export default function Home() {
           <a href="tel:2192622711" style={{ background: "#e63946", color: "#fff", padding: "16px 36px", borderRadius: "6px", fontWeight: "bold", fontSize: "20px", textDecoration: "none" }}>
             📞 (219) 262-2711
           </a>
+          <BookButton style={{ background: "#fff", color: "#1a1a1a", padding: "16px 32px", borderRadius: "6px", fontWeight: "bold", fontSize: "18px", border: "none", cursor: "pointer" }}>
+            📅 Book Appointment
+          </BookButton>
           <Link href="/contact" style={{ background: "transparent", color: "#fff", border: "2px solid #fff", padding: "16px 32px", borderRadius: "6px", fontWeight: "bold", fontSize: "18px", textDecoration: "none" }}>
             Request Service
           </Link>

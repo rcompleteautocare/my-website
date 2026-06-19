@@ -2,6 +2,7 @@
 import { useState } from "react";
 import Image from "next/image";
 import Link from "next/link";
+import BookButton from "@/components/BookButton";
 
 const services = [
   { name: "Inspection Checklist", href: "/inspection-checklist" },
@@ -55,6 +56,7 @@ export default function Nav() {
           </div>
           <Link href="/about" style={{ textDecoration: "none", color: "#1a1a1a", fontWeight: "500" }}>About</Link>
           <Link href="/contact" style={{ textDecoration: "none", color: "#1a1a1a", fontWeight: "500" }}>Contact</Link>
+          <BookButton style={{ background: "#1a1a1a", color: "#fff", padding: "10px 20px", borderRadius: "6px", border: "none", fontWeight: "bold", fontSize: "14px", cursor: "pointer" }}>Book Appointment</BookButton>
           <a href="tel:2192622711" style={{ background: "#e63946", color: "#fff", padding: "10px 20px", borderRadius: "6px", textDecoration: "none", fontWeight: "bold", fontSize: "14px" }}>(219) 262-2711</a>
         </nav>
 
@@ -95,7 +97,10 @@ export default function Nav() {
             </div>
             <Link href="/about" onClick={() => setMenuOpen(false)} style={{ display: "block", padding: "14px 20px", color: "#1a1a1a", textDecoration: "none", fontWeight: "500", borderBottom: "1px solid #f0f0f0" }}>About</Link>
             <Link href="/contact" onClick={() => setMenuOpen(false)} style={{ display: "block", padding: "14px 20px", color: "#1a1a1a", textDecoration: "none", fontWeight: "500", borderBottom: "1px solid #f0f0f0" }}>Contact</Link>
-            <div style={{ padding: "16px 20px" }}>
+            <div style={{ padding: "16px 20px", display: "flex", flexDirection: "column", gap: "12px" }}>
+              <BookButton style={{ width: "100%", background: "#1a1a1a", color: "#fff", padding: "14px", borderRadius: "6px", border: "none", fontWeight: "bold", textAlign: "center", fontSize: "16px", cursor: "pointer" }}>
+                📅 Book Appointment
+              </BookButton>
               <a href="tel:2192622711" style={{ display: "block", background: "#e63946", color: "#fff", padding: "14px", borderRadius: "6px", textDecoration: "none", fontWeight: "bold", textAlign: "center", fontSize: "16px" }}>
                 📞 Call (219) 262-2711
               </a>
