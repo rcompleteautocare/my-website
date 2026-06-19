@@ -21,7 +21,7 @@ export const metadata = {
   robots: { index: true, follow: true },
 }
 
-import Link from "next/link";
+import RelatedServices from "@/app/components/RelatedServices";
 import LastUpdated from "@/app/components/LastUpdated";
 export default function NoStartDiagnostics() {
   return (
@@ -29,11 +29,11 @@ export default function NoStartDiagnostics() {
 
       {/* Hero */}
       <section style={{ background: "#1a1a1a", color: "#fff", padding: "60px 24px", textAlign: "center" }}>
-        <p style={{ color: "#e63946", fontWeight: "bold", fontSize: "13px", letterSpacing: "1px", marginBottom: "12px" }}>CROWN POINT, INDIANA</p>
+        <p style={{ color: "#f1626f", fontWeight: "bold", fontSize: "13px", letterSpacing: "1px", marginBottom: "12px" }}>CROWN POINT, INDIANA</p>
         <h1 style={{ fontSize: "38px", fontWeight: "bold", marginBottom: "12px" }}>
           Car Won&apos;t Start in Crown Point, IN? We Find the Cause.
         </h1>
-        <p className="speakable" style={{ fontSize: "16px", color: "#e63946", fontWeight: "600", marginBottom: "16px", fontStyle: "italic" }}>TL;DR: No-start diagnostics are completed same day in most cases. We test battery, starter, fuel delivery, spark, and electronic signals to find the exact cause — not guess with parts. Fuel pump, starter, and sensor failures are often covered by extended warranties.
+        <p className="speakable" style={{ fontSize: "16px", color: "#f1626f", fontWeight: "600", marginBottom: "16px", fontStyle: "italic" }}>TL;DR: No-start diagnostics are completed same day in most cases. We test battery, starter, fuel delivery, spark, and electronic signals to find the exact cause — not guess with parts. Fuel pump, starter, and sensor failures are often covered by extended warranties.
         </p>
         <p style={{ fontSize: "18px", color: "#ccc", maxWidth: "600px", margin: "0 auto 32px" }}>
           A no-start condition can have dozens of causes. We don&apos;t guess and replace parts — we diagnose the exact reason your car won&apos;t start before recommending any repair.
@@ -154,20 +154,7 @@ export default function NoStartDiagnostics() {
         </div>
       </section>
 
-      {/* Related */}
-      <section style={{ background: "#f5f5f5", padding: "60px 24px" }}>
-        <div style={{ maxWidth: "800px", margin: "0 auto" }}>
-          <h2 style={{ fontSize: "24px", marginBottom: "16px" }}>Related Services</h2>
-          <ul style={{ lineHeight: 2, paddingLeft: "20px" }}>
-            <li><Link href="/services/electrical-diagnostics" style={{ color: "#e63946" }}>Electrical Diagnostics Crown Point, IN</Link></li>
-            <li><Link href="/services/check-engine-light" style={{ color: "#e63946" }}>Check Engine Light Diagnostics Crown Point, IN</Link></li>
-            <li><Link href="/services/engine-repair" style={{ color: "#e63946" }}>Engine Repair Crown Point, IN</Link></li>
-            <li><Link href="/services/extended-warranty-repair" style={{ color: "#e63946" }}>Extended Warranty Repairs Crown Point, IN</Link></li>
-            <li><Link href="/car-wont-start-crown-point-in" style={{ color: "#e63946" }}>Car Won&apos;t Start in Crown Point — Emergency Guide</Link></li>
-            <li><Link href="/auto-repair-crown-point-in" style={{ color: "#e63946" }}>Auto Repair Crown Point, IN</Link></li>
-          </ul>
-        </div>
-      </section>
+      <RelatedServices slug="no-start-diagnostics" />
 
       {/* Final CTA */}
       <section style={{ background: "#e63946", color: "#fff", textAlign: "center", padding: "60px 24px" }}>

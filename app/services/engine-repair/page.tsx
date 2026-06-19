@@ -21,7 +21,7 @@ export const metadata = {
   robots: { index: true, follow: true },
 }
 
-import Link from "next/link";
+import RelatedServices from "@/app/components/RelatedServices";
 import LastUpdated from "@/app/components/LastUpdated";
 export default function EngineRepair() {
   return (
@@ -29,11 +29,11 @@ export default function EngineRepair() {
 
       {/* Hero */}
       <section style={{ background: "#1a1a1a", color: "#fff", padding: "60px 24px", textAlign: "center" }}>
-        <p style={{ color: "#e63946", fontWeight: "bold", fontSize: "13px", letterSpacing: "1px", marginBottom: "12px" }}>CROWN POINT, INDIANA</p>
+        <p style={{ color: "#f1626f", fontWeight: "bold", fontSize: "13px", letterSpacing: "1px", marginBottom: "12px" }}>CROWN POINT, INDIANA</p>
         <h1 style={{ fontSize: "38px", fontWeight: "bold", marginBottom: "12px" }}>
           Engine Repair in Crown Point, IN
         </h1>
-        <p className="speakable" style={{ fontSize: "16px", color: "#e63946", fontWeight: "600", marginBottom: "16px", fontStyle: "italic" }}>TL;DR: Engine repair costs vary widely — minor repairs (valve cover gasket, sensors) start in the hundreds; major repairs (head gaskets, timing chains) are more significant. We give you a clear estimate after diagnosis. Extended warranties often cover engine repairs. Same-day diagnostics available.
+        <p className="speakable" style={{ fontSize: "16px", color: "#f1626f", fontWeight: "600", marginBottom: "16px", fontStyle: "italic" }}>TL;DR: Engine repair costs vary widely — minor repairs (valve cover gasket, sensors) start in the hundreds; major repairs (head gaskets, timing chains) are more significant. We give you a clear estimate after diagnosis. Extended warranties often cover engine repairs. Same-day diagnostics available.
         </p>
         <p style={{ fontSize: "18px", color: "#ccc", maxWidth: "600px", margin: "0 auto 32px" }}>
           From minor engine repairs to major overhauls — we diagnose the real problem first so you only pay for what your vehicle actually needs.
@@ -190,20 +190,7 @@ export default function EngineRepair() {
         </div>
       </section>
 
-      {/* Related Services */}
-      <section style={{ background: "#f5f5f5", padding: "60px 24px" }}>
-        <div style={{ maxWidth: "800px", margin: "0 auto" }}>
-          <h2 style={{ fontSize: "24px", marginBottom: "16px" }}>Related Services</h2>
-          <ul style={{ lineHeight: 2, paddingLeft: "20px" }}>
-            <li><Link href="/services/check-engine-light" style={{ color: "#e63946" }}>Check Engine Light Diagnostics Crown Point, IN</Link></li>
-            <li><Link href="/services/transmission-repair" style={{ color: "#e63946" }}>Transmission Repair Crown Point, IN</Link></li>
-            <li><Link href="/services/electrical-diagnostics" style={{ color: "#e63946" }}>Electrical Diagnostics Crown Point, IN</Link></li>
-            <li><Link href="/services/extended-warranty-repair" style={{ color: "#e63946" }}>Extended Warranty Repairs Crown Point, IN</Link></li>
-            <li><Link href="/car-overheating-crown-point-in" style={{ color: "#e63946" }}>Car Overheating in Crown Point — What To Do</Link></li>
-            <li><Link href="/auto-repair-crown-point-in" style={{ color: "#e63946" }}>Auto Repair Crown Point, IN</Link></li>
-          </ul>
-        </div>
-      </section>
+      <RelatedServices slug="engine-repair" />
 
       {/* Final CTA */}
       <section style={{ background: "#e63946", color: "#fff", textAlign: "center", padding: "60px 24px" }}>

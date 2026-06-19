@@ -21,7 +21,7 @@ export const metadata = {
   robots: { index: true, follow: true },
 }
 
-import Link from "next/link";
+import RelatedServices from "@/app/components/RelatedServices";
 import LastUpdated from "@/app/components/LastUpdated";
 export default function SuspensionSteering() {
   return (
@@ -29,11 +29,11 @@ export default function SuspensionSteering() {
 
       {/* Hero */}
       <section style={{ background: "#1a1a1a", color: "#fff", padding: "60px 24px", textAlign: "center" }}>
-        <p style={{ color: "#e63946", fontWeight: "bold", fontSize: "13px", letterSpacing: "1px", marginBottom: "12px" }}>CROWN POINT, INDIANA</p>
+        <p style={{ color: "#f1626f", fontWeight: "bold", fontSize: "13px", letterSpacing: "1px", marginBottom: "12px" }}>CROWN POINT, INDIANA</p>
         <h1 style={{ fontSize: "38px", fontWeight: "bold", marginBottom: "12px" }}>
           Suspension &amp; Steering Repair in Crown Point, IN
         </h1>
-        <p className="speakable" style={{ fontSize: "16px", color: "#e63946", fontWeight: "600", marginBottom: "16px", fontStyle: "italic" }}>TL;DR: Strut replacement typically runs $200–$400 per strut (parts + labor). Alignments are $80–$120. Ball joints, tie rod ends, and wheel bearings vary by vehicle. We inspect before recommending — and Indiana pothole damage is often more extensive than it first appears.
+        <p className="speakable" style={{ fontSize: "16px", color: "#f1626f", fontWeight: "600", marginBottom: "16px", fontStyle: "italic" }}>TL;DR: Strut replacement typically runs $200–$400 per strut (parts + labor). Alignments are $80–$120. Ball joints, tie rod ends, and wheel bearings vary by vehicle. We inspect before recommending — and Indiana pothole damage is often more extensive than it first appears.
         </p>
         <p style={{ fontSize: "18px", color: "#ccc", maxWidth: "600px", margin: "0 auto 32px" }}>
           Indiana roads are hard on suspension. Potholes, frost heaves, and rough pavement wear out struts, shocks, and steering components faster than anywhere else. We keep your ride safe, stable, and in control.
@@ -167,16 +167,7 @@ export default function SuspensionSteering() {
         </div>
       </section>
 
-      {/* Related */}
-      <section style={{ padding: "60px 24px", maxWidth: "800px", margin: "0 auto" }}>
-        <h2 style={{ fontSize: "24px", marginBottom: "16px" }}>Related Services</h2>
-        <ul style={{ lineHeight: 2, paddingLeft: "20px" }}>
-          <li><Link href="/services/brake-repair" style={{ color: "#e63946" }}>Brake Repair Crown Point, IN</Link></li>
-          <li><Link href="/services/engine-repair" style={{ color: "#e63946" }}>Engine Repair Crown Point, IN</Link></li>
-          <li><Link href="/services/extended-warranty-repair" style={{ color: "#e63946" }}>Extended Warranty Repairs Crown Point, IN</Link></li>
-          <li><Link href="/auto-repair-crown-point-in" style={{ color: "#e63946" }}>Auto Repair Crown Point, IN</Link></li>
-        </ul>
-      </section>
+      <RelatedServices slug="suspension-steering" />
 
       {/* Final CTA */}
       <section style={{ background: "#e63946", color: "#fff", textAlign: "center", padding: "60px 24px" }}>

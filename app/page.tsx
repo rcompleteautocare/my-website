@@ -1,6 +1,8 @@
 import Link from "next/link";
 import Script from "next/script";
 import BookButton from "@/components/BookButton";
+import TrustBadges from "./components/TrustBadges";
+import ReviewsWidget from "./components/ReviewsWidget";
 export const metadata = {
   title: "R Complete Auto Care | Auto Repair in Crown Point, IN",
   description: "Family-owned auto repair shop in Crown Point, IN. Diagnostic-first approach, honest estimates, and extended warranty work. Call (219) 262-2711.",
@@ -32,13 +34,13 @@ export default function Home() {
 
       {/* Hero */}
       <section style={{ background: "#1a1a1a", color: "#fff", padding: "80px 24px", textAlign: "center" }}>
-        <p style={{ color: "#e63946", fontWeight: "bold", fontSize: "14px", letterSpacing: "0.1em", textTransform: "uppercase", marginBottom: "16px" }}>
+        <p style={{ color: "#f1626f", fontWeight: "bold", fontSize: "14px", letterSpacing: "0.1em", textTransform: "uppercase", marginBottom: "16px" }}>
           Crown Point, Indiana&apos;s Diagnostic-First Auto Repair Shop
         </p>
        <h1 style={{ fontSize: "44px", fontWeight: "bold", margin: "0 0 20px", lineHeight: 1.2, maxWidth: "800px", marginLeft: "auto", marginRight: "auto" }}>
           Crown Point&apos;s Diagnostic-First Auto Repair Shop — We Fix What Others Miss
         </h1>
-        <p className="speakable" style={{ fontSize: "16px", color: "#e63946", fontWeight: "600", marginBottom: "16px", fontStyle: "italic", maxWidth: "700px", marginLeft: "auto", marginRight: "auto" }}>
+        <p className="speakable" style={{ fontSize: "16px", color: "#f1626f", fontWeight: "600", marginBottom: "16px", fontStyle: "italic", maxWidth: "700px", marginLeft: "auto", marginRight: "auto" }}>
           TL;DR: R Complete Auto Care at 1305 E Summit St, Crown Point, IN is a diagnostic-first family shop — we run the full test protocol before recommending any repair, accept most extended warranties, and complete most diagnostics same day. Call (219) 262-2711.
         </p>
         <p style={{ fontSize: "18px", color: "#ccc", maxWidth: "620px", margin: "0 auto 16px", lineHeight: 1.7 }}>
@@ -63,13 +65,12 @@ export default function Home() {
         </p>
       </section>
 
+      {/* Certifications */}
+      <TrustBadges />
+
       {/* Trust bar */}
-      {/* Google Reviews */}
-<section style={{ padding: "60px 24px", background: "#f9f9f9" }}>
-  <div style={{ maxWidth: "1000px", margin: "0 auto", textAlign: "center" }}>
-    <div className="elfsight-app-10ba8f91-d08e-4d50-8d8e-3a7fb77e4247" data-elfsight-app-lazy></div>
-  </div>
-</section>
+      {/* Google Reviews (third-party widget, lazy-loaded on scroll) */}
+      <ReviewsWidget />
       <section style={{ background: "#e63946", color: "#fff", padding: "20px 24px" }}>
         <div style={{ maxWidth: "1000px", margin: "0 auto", display: "flex", justifyContent: "center", gap: "40px", flexWrap: "wrap", fontSize: "14px", fontWeight: "500" }}>
           <span>✓ Diagnostic-First Approach</span>
@@ -272,8 +273,6 @@ export default function Home() {
           📞 Call (219) 262-2711
         </a>
       </section>
-
-    <Script src="https://elfsightcdn.com/platform.js" strategy="lazyOnload" />
 
     {/* FAQPage JSON-LD */}
     <script type="application/ld+json" dangerouslySetInnerHTML={{ __html: JSON.stringify({

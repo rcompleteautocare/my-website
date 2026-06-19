@@ -21,7 +21,7 @@ export const metadata = {
   robots: { index: true, follow: true },
 }
 
-import Link from "next/link";
+import RelatedServices from "@/app/components/RelatedServices";
 import LastUpdated from "@/app/components/LastUpdated";
 export default function CheckEngineLight() {
   return (
@@ -32,7 +32,7 @@ export default function CheckEngineLight() {
         <h1 style={{ fontSize: "38px", fontWeight: "bold", marginBottom: "12px" }}>
           Check Engine Light Diagnostics in Crown Point, IN
         </h1>
-        <p className="speakable" style={{ fontSize: "16px", color: "#e63946", fontWeight: "600", marginBottom: "16px", fontStyle: "italic" }}>TL;DR: Check engine light diagnostics are completed same day in most cases. We charge a diagnostic fee (applied toward repair cost). A solid light = safe to drive briefly; a flashing light = pull over and call us immediately.
+        <p className="speakable" style={{ fontSize: "16px", color: "#f1626f", fontWeight: "600", marginBottom: "16px", fontStyle: "italic" }}>TL;DR: Check engine light diagnostics are completed same day in most cases. We charge a diagnostic fee (applied toward repair cost). A solid light = safe to drive briefly; a flashing light = pull over and call us immediately.
         </p>
         <p style={{ fontSize: "18px", color: "#ccc", maxWidth: "600px", margin: "0 auto 32px" }}>
           Don&apos;t ignore that warning light. Our diagnostic-first approach finds the real problem — fast. We trace fault codes to their root cause, not just clear them and hope for the best.
@@ -155,18 +155,7 @@ export default function CheckEngineLight() {
         </div>
       </section>
 
-      {/* Related Services */}
-      <section style={{ padding: "60px 24px", maxWidth: "800px", margin: "0 auto" }}>
-        <h2 style={{ fontSize: "24px", marginBottom: "16px" }}>Related Services</h2>
-        <ul style={{ lineHeight: 2, paddingLeft: "20px" }}>
-          <li><Link href="/services/engine-repair" style={{ color: "#e63946" }}>Engine Repair in Crown Point, IN</Link></li>
-          <li><Link href="/services/electrical-diagnostics" style={{ color: "#e63946" }}>Electrical Diagnostics Crown Point, IN</Link></li>
-          <li><Link href="/services/no-start-diagnostics" style={{ color: "#e63946" }}>No-Start Diagnostics Crown Point, IN</Link></li>
-          <li><Link href="/services/extended-warranty-repair" style={{ color: "#e63946" }}>Extended Warranty Repairs Crown Point, IN</Link></li>
-          <li><Link href="/check-engine-light-flashing-crown-point" style={{ color: "#e63946" }}>Check Engine Light Flashing — What It Means</Link></li>
-          <li><Link href="/auto-repair-crown-point-in" style={{ color: "#e63946" }}>Auto Repair Crown Point, IN</Link></li>
-        </ul>
-      </section>
+      <RelatedServices slug="check-engine-light" />
 
       {/* Final CTA */}
       <section style={{ background: "#e63946", color: "#fff", textAlign: "center", padding: "60px 24px" }}>

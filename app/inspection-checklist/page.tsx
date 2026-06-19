@@ -144,11 +144,11 @@ export default function InspectionChecklist() {
 
       {/* Hero */}
       <section style={{ background: "#1a1a1a", color: "#fff", padding: "60px 24px", textAlign: "center" }}>
-        <p style={{ color: "#e63946", fontWeight: "bold", fontSize: "13px", letterSpacing: "1px", marginBottom: "12px" }}>CROWN POINT, INDIANA</p>
+        <p style={{ color: "#f1626f", fontWeight: "bold", fontSize: "13px", letterSpacing: "1px", marginBottom: "12px" }}>CROWN POINT, INDIANA</p>
         <h1 style={{ fontSize: "38px", fontWeight: "bold", marginBottom: "12px" }}>
           What We Check on Every Inspection
         </h1>
-        <p className="speakable" style={{ fontSize: "16px", color: "#e63946", fontWeight: "600", marginBottom: "16px", fontStyle: "italic" }}>TL;DR: A full inspection covers 10 sections with real measurements, color-coded results, and a photo on every Red item. No guesswork, no upsell — you see what we see.
+        <p className="speakable" style={{ fontSize: "16px", color: "#f1626f", fontWeight: "600", marginBottom: "16px", fontStyle: "italic" }}>TL;DR: A full inspection covers 10 sections with real measurements, color-coded results, and a photo on every Red item. No guesswork, no upsell — you see what we see.
         </p>
         <p style={{ fontSize: "18px", color: "#ccc", maxWidth: "640px", margin: "0 auto 32px" }}>
           Below is the exact checklist our techs work through on a full vehicle inspection. Every item is documented so you can make informed decisions about your car.
