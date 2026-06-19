@@ -1,4 +1,5 @@
 import type { Metadata } from "next";
+import Script from "next/script";
 import { Analytics } from "@vercel/analytics/next";
 import { SpeedInsights } from "@vercel/speed-insights/next";
 import "./globals.css";
@@ -62,8 +63,12 @@ const SCHEMA = {
     "https://www.google.com/maps/place/R+Complete+Auto+Care/@41.4270614,-87.3410824,17z",
     "https://www.yelp.com/biz/r-complete-auto-care-crown-point",
     "https://www.facebook.com/RCompleteAutoCare/",
-    "https://www.bbb.org/us/in/crown-point/profile/auto-repair/r-complete-auto-care-0352-90173711",
+    "https://www.bbb.org/us/in/crown-point/profile/auto-repairs/r-complete-auto-care-0352-90173711",
     "https://www.chamberofcommerce.com/business-directory/indiana/crown-point/auto-repair-shop/2034231063-r-complete-auto-care",
+    "https://www.tiktok.com/@r.complete.auto.c",
+    "https://www.youtube.com/channel/UCYw967Mku6eZQBC-7jaVSYA",
+    "https://x.com/rcompleteac",
+    "https://www.instagram.com/rcompleteautocare",
     // Add when ready: "https://www.carfax.com/...", "https://repairpal.com/..."
   ],
   description: "Crown Point, Indiana diagnostic-first auto repair shop. Specializing in complex diagnostics, extended warranty repairs, and issues other shops misdiagnose.",
@@ -122,6 +127,8 @@ export default function RootLayout({ children }: { children: React.ReactNode }) 
         <Nav />
         <main>{children}</main>
         <Footer />
+        <link rel="stylesheet" href="https://assets.calendly.com/assets/external/widget.css" />
+        <Script src="https://assets.calendly.com/assets/external/widget.js" strategy="afterInteractive" />
         <Analytics />
         <SpeedInsights />
       </body>

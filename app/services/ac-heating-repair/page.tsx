@@ -1,4 +1,4 @@
-import Link from "next/link";
+import RelatedServices from "@/app/components/RelatedServices";
 import LastUpdated from "@/app/components/LastUpdated";
 
 export const metadata = {
@@ -29,13 +29,13 @@ export default function AcHeatingRepair() {
     <div style={{ color: "#1a1a1a" }}>
 
       <section style={{ background: "#1a1a1a", color: "#fff", padding: "60px 24px", textAlign: "center" }}>
-        <p style={{ color: "#e63946", fontWeight: "bold", fontSize: "13px", letterSpacing: "0.1em", textTransform: "uppercase", marginBottom: "12px" }}>
+        <p style={{ color: "#f1626f", fontWeight: "bold", fontSize: "13px", letterSpacing: "0.1em", textTransform: "uppercase", marginBottom: "12px" }}>
           Crown Point, Indiana
         </p>
         <h1 style={{ fontSize: "38px", fontWeight: "bold", marginBottom: "12px", lineHeight: 1.2 }}>
           A/C &amp; Heating Repair in Crown Point, IN
         </h1>
-        <p className="speakable" style={{ fontSize: "16px", color: "#e63946", fontWeight: "600", marginBottom: "16px", fontStyle: "italic" }}>TL;DR: A refrigerant recharge starts around $100–$150. Compressor replacement typically runs $700–$1,400. Heater core replacement usually runs $600–$1,500, higher when full dashboard removal is required. We diagnose before we recommend — same-day appointments available for Crown Point and surrounding areas.
+        <p className="speakable" style={{ fontSize: "16px", color: "#f1626f", fontWeight: "600", marginBottom: "16px", fontStyle: "italic" }}>TL;DR: A refrigerant recharge starts around $100–$150. Compressor replacement typically runs $700–$1,400. Heater core replacement usually runs $600–$1,500, higher when full dashboard removal is required. We diagnose before we recommend — same-day appointments available for Crown Point and surrounding areas.
         </p>
         <p style={{ fontSize: "18px", color: "#ccc", maxWidth: "600px", margin: "0 auto 32px" }}>
           No cold air in summer? No heat in an Indiana winter? We diagnose and repair all A/C and heating problems — fast and right.
@@ -114,20 +114,9 @@ export default function AcHeatingRepair() {
           </div>
         ))}
 
-        <h2 style={{ fontSize: "24px", marginBottom: "16px" }}>Related Services</h2>
-        <div style={{ display: "grid", gridTemplateColumns: "repeat(auto-fit, minmax(220px, 1fr))", gap: "12px" }}>
-          {[
-            { name: "Engine Repair", href: "/services/engine-repair" },
-            { name: "Electrical Diagnostics", href: "/services/electrical-diagnostics" },
-            { name: "Extended Warranty Repairs", href: "/services/extended-warranty-repair" },
-            { name: "Auto Repair Crown Point", href: "/auto-repair-crown-point-in" },
-        ].map(s => (
-            <Link key={s.href} href={s.href} style={{ border: "1px solid #e0e0e0", borderLeft: "4px solid #e63946", borderRadius: "6px", padding: "12px 16px", textDecoration: "none", color: "#1a1a1a", fontSize: "14px", fontWeight: "500", display: "block" }}>
-              {s.name} →
-            </Link>
-          ))}
-        </div>
       </section>
+
+      <RelatedServices slug="ac-heating-repair" />
 
       <section style={{ background: "#e63946", color: "#fff", textAlign: "center", padding: "60px 24px" }}>
         <h2 style={{ fontSize: "28px", marginBottom: "12px" }}>A/C or Heat Not Working in Crown Point? Call Us Today.</h2>

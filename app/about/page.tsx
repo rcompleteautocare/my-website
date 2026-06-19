@@ -32,7 +32,7 @@ export default function About() {
     <div style={{ color: "#1a1a1a" }}>
 
       <section style={{ background: "#1a1a1a", color: "#fff", padding: "60px 24px", textAlign: "center" }}>
-        <p style={{ color: "#e63946", fontWeight: "bold", fontSize: "13px", letterSpacing: "0.1em", textTransform: "uppercase", marginBottom: "12px" }}>
+        <p style={{ color: "#f1626f", fontWeight: "bold", fontSize: "13px", letterSpacing: "0.1em", textTransform: "uppercase", marginBottom: "12px" }}>
           Crown Point, Indiana
         </p>
         <h1 style={{ fontSize: "38px", fontWeight: "bold", marginBottom: "16px", lineHeight: 1.2 }}>
@@ -204,17 +204,7 @@ export default function About() {
             "recognizedBy": { "@type": "Organization", "name": "National Institute for Automotive Service Excellence (ASE)" }
           }
         ],
-        "worksFor": {
-          "@type": "AutoRepair",
-          "name": "R Complete Auto Care",
-          "url": "https://www.rcompleteautocare.com",
-          "sameAs": [
-            "https://www.google.com/maps/place/R+Complete+Auto+Care/@41.4270614,-87.3410824,17z",
-            "https://www.yelp.com/biz/r-complete-auto-care-crown-point",
-            "https://www.facebook.com/RCompleteAutoCare/",
-            "https://www.bbb.org/us/in/crown-point/profile/auto-repair/r-complete-auto-care-0352-90173711"
-          ]
-        },
+        "worksFor": { "@id": "https://www.rcompleteautocare.com/#business" },
         "knowsAbout": [
           "Auto Diagnostics",
           "Engine Repair",
@@ -241,11 +231,7 @@ export default function About() {
             "recognizedBy": { "@type": "Organization", "name": "National Institute for Automotive Service Excellence (ASE)" }
           }
         ],
-        "worksFor": {
-          "@type": "AutoRepair",
-          "name": "R Complete Auto Care",
-          "url": "https://www.rcompleteautocare.com"
-        },
+        "worksFor": { "@id": "https://www.rcompleteautocare.com/#business" },
         "knowsAbout": ["Auto Diagnostics", "Engine Repair", "Transmission Repair", "Electrical Diagnostics", "Extended Warranty Repair"],
         "description": "ASE-certified technician with 15 years of experience at R Complete Auto Care in Crown Point, Indiana."
       }).replace(/</g, "\u003c") }} />

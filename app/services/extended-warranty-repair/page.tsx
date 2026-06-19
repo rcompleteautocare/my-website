@@ -22,6 +22,7 @@ export const metadata = {
 }
 
 import Link from "next/link";
+import RelatedServices from "@/app/components/RelatedServices";
 import LastUpdated from "@/app/components/LastUpdated";
 export default function ExtendedWarrantyRepair() {
   return (
@@ -29,11 +30,11 @@ export default function ExtendedWarrantyRepair() {
 
       {/* Hero */}
       <section style={{ background: "#1a1a1a", color: "#fff", padding: "60px 24px", textAlign: "center" }}>
-        <p style={{ color: "#e63946", fontWeight: "bold", fontSize: "13px", letterSpacing: "1px", marginBottom: "12px" }}>CROWN POINT, INDIANA</p>
+        <p style={{ color: "#f1626f", fontWeight: "bold", fontSize: "13px", letterSpacing: "1px", marginBottom: "12px" }}>CROWN POINT, INDIANA</p>
         <h1 style={{ fontSize: "38px", fontWeight: "bold", marginBottom: "12px" }}>
           Extended Warranty Repairs — How We Do Warranty Work
         </h1>
-        <p className="speakable" style={{ fontSize: "16px", color: "#e63946", fontWeight: "600", marginBottom: "16px", fontStyle: "italic" }}>TL;DR: We work with CarShield, Endurance, CARS Protection, AmTrust and most providers. This page explains our process, which repairs are typically covered, and what to expect. You pay only your deductible (typically $100–$200).
+        <p className="speakable" style={{ fontSize: "16px", color: "#f1626f", fontWeight: "600", marginBottom: "16px", fontStyle: "italic" }}>TL;DR: We work with CarShield, Endurance, CARS Protection, AmTrust and most providers. This page explains our process, which repairs are typically covered, and what to expect. You pay only your deductible (typically $100–$200).
         </p>
         <p style={{ fontSize: "18px", color: "#ccc", maxWidth: "600px", margin: "0 auto 32px" }}>
           This is our operational warranty page. For urgent help with a denied or stuck claim, see our <Link href="/extended-warranty-auto-repair-crown-point-in" style={{ color: "#fff", textDecoration: "underline" }}>warranty claim help page →</Link>
@@ -205,19 +206,7 @@ export default function ExtendedWarrantyRepair() {
         </div>
       </section>
 
-      {/* Related */}
-      <section style={{ padding: "60px 24px", maxWidth: "800px", margin: "0 auto" }}>
-        <h2 style={{ fontSize: "24px", marginBottom: "16px" }}>Related Services</h2>
-        <ul style={{ lineHeight: 2, paddingLeft: "20px" }}>
-          <li><Link href="/services/engine-repair" style={{ color: "#e63946" }}>Engine Repair Crown Point, IN</Link></li>
-          <li><Link href="/services/transmission-repair" style={{ color: "#e63946" }}>Transmission Repair Crown Point, IN</Link></li>
-          <li><Link href="/services/electrical-diagnostics" style={{ color: "#e63946" }}>Electrical Diagnostics Crown Point, IN</Link></li>
-          <li><Link href="/services/no-start-diagnostics" style={{ color: "#e63946" }}>No-Start Diagnostics Crown Point, IN</Link></li>
-          <li><Link href="/services/ac-heating-repair" style={{ color: "#e63946" }}>AC &amp; Heating Repair Crown Point, IN</Link></li>
-          <li><Link href="/extended-warranty-auto-repair-crown-point-in" style={{ color: "#e63946" }}>Warranty Claim Help — Denied or Stuck Claims</Link></li>
-          <li><Link href="/auto-repair-crown-point-in" style={{ color: "#e63946" }}>Auto Repair Crown Point, IN</Link></li>
-        </ul>
-      </section>
+      <RelatedServices slug="extended-warranty-repair" />
 
       {/* Final CTA */}
       <section style={{ background: "#e63946", color: "#fff", textAlign: "center", padding: "60px 24px" }}>

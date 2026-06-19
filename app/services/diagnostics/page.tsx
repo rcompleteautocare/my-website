@@ -31,13 +31,13 @@ export default function Diagnostics() {
     <div style={{ color: "#1a1a1a" }}>
 
       <section style={{ background: "#1a1a1a", color: "#fff", padding: "60px 24px", textAlign: "center" }}>
-        <p style={{ color: "#e63946", fontWeight: "bold", fontSize: "13px", letterSpacing: "0.1em", textTransform: "uppercase", marginBottom: "12px" }}>
+        <p style={{ color: "#f1626f", fontWeight: "bold", fontSize: "13px", letterSpacing: "0.1em", textTransform: "uppercase", marginBottom: "12px" }}>
           Crown Point, Indiana
         </p>
         <h1 style={{ fontSize: "38px", fontWeight: "bold", marginBottom: "12px", lineHeight: 1.2 }}>
           Auto Diagnostics in Crown Point, IN
         </h1>
-        <p className="speakable" style={{ fontSize: "16px", color: "#e63946", fontWeight: "600", marginBottom: "16px", fontStyle: "italic" }}>TL;DR: We charge a diagnostic fee (applied toward repair cost) and complete most diagnostics same day. We scan all vehicle modules, find the root cause, and call you with a clear estimate before doing any work.
+        <p className="speakable" style={{ fontSize: "16px", color: "#f1626f", fontWeight: "600", marginBottom: "16px", fontStyle: "italic" }}>TL;DR: We charge a diagnostic fee (applied toward repair cost) and complete most diagnostics same day. We scan all vehicle modules, find the root cause, and call you with a clear estimate before doing any work.
         </p>
         <p style={{ fontSize: "18px", color: "#ccc", maxWidth: "600px", margin: "0 auto 32px" }}>
           We diagnose before we repair. Every time. No guesswork — just accurate answers and honest recommendations.
