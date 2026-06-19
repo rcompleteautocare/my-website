@@ -14,37 +14,27 @@ function json(body: unknown, status = 200) {
   });
 }
 
-// Emails the owner via Resend when configured. If the alert env vars are not
-// set, the drift is still logged (visible in Vercel cron logs) and returned in
-// the response — it just isn't emailed.
-async function notifyOwner(message: string) {
-  const apiKey = process.env.RESEND_API_KEY;
-  const to = process.env.ALERT_EMAIL_TO;
-  const from = process.env.ALERT_EMAIL_FROM;
+// POSTs the drift alert to a webhook (e.g. Zapier/Make) when configured. If
+// DRIFT_WEBHOOK_URL is not set, the drift is still logged (visible in Vercel
+// cron logs) and returned in the response — it just isn't pushed anywhere.
+async function notifyOwner(message: string, payload: Record<string, unknown>) {
+  const webhookUrl = process.env.DRIFT_WEBHOOK_URL;
 
-  if (!apiKey || !to || !from) {
-    console.warn("rating-drift: alert not configured; drift not emailed.", message);
+  if (!webhookUrl) {
+    console.warn("rating-drift: DRIFT_WEBHOOK_URL not set; drift not pushed.", message);
     return { sent: false, reason: "notify_not_configured" };
   }
 
-  const res = await fetch("https://api.resend.com/emails", {
+  const res = await fetch(webhookUrl, {
     method: "POST",
-    headers: {
-      Authorization: `Bearer ${apiKey}`,
-      "Content-Type": "application/json",
-    },
-    body: JSON.stringify({
-      from,
-      to: to.split(",").map((s) => s.trim()),
-      subject: "Google rating drift — update lib/rating.js",
-      text: message,
-    }),
+    headers: { "Content-Type": "application/json" },
+    body: JSON.stringify({ message, ...payload }),
   });
 
   if (!res.ok) {
     const text = await res.text();
-    console.error("rating-drift: email send failed", res.status, text);
-    return { sent: false, reason: `email_failed_${res.status}` };
+    console.error("rating-drift: webhook POST failed", res.status, text);
+    return { sent: false, reason: `webhook_failed_${res.status}` };
   }
 
   return { sent: true };
@@ -112,7 +102,7 @@ export async function GET(req: Request) {
   const message =
     `Live Google: ${liveRating ?? "?"} / ${liveCount ?? "?"} reviews; ` +
     `site shows ${RATING} / ${REVIEW_COUNT} — update lib/rating.js.`;
-  const notify = await notifyOwner(message);
+  const notify = await notifyOwner(message, { live: liveValues, site });
 
   // Intentionally NOT writing or caching the live values anywhere — the public
   // number stays the owner-confirmed constant in lib/rating.js until a human
