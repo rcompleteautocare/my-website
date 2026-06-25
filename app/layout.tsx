@@ -5,6 +5,7 @@ import { SpeedInsights } from "@vercel/speed-insights/next";
 import "./globals.css";
 import Nav from "./components/Nav";
 import Footer from "./components/Footer";
+import PhoneConversionListener from "@/components/PhoneConversionListener";
 import { RATING, REVIEW_COUNT } from "@/lib/rating";
 
 export const metadata: Metadata = {
@@ -129,6 +130,10 @@ export default function RootLayout({ children }: { children: React.ReactNode }) 
         <Footer />
         <link rel="stylesheet" href="https://assets.calendly.com/assets/external/widget.css" />
         <Script src="https://assets.calendly.com/assets/external/widget.js" strategy="afterInteractive" />
+        {process.env.NEXT_PUBLIC_ADS_TAG_ID &&
+          process.env.NEXT_PUBLIC_ADS_PHONE_CONVERSION_LABEL && (
+            <PhoneConversionListener />
+          )}
         <Analytics />
         <SpeedInsights />
       </body>
