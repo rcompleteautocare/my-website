@@ -146,8 +146,10 @@ Both routes fail safe and are gated by environment variables:
   Authorized via `Bearer ${CRON_SECRET}`. Fetches live Google rating from the
   Places API and compares against `lib/rating.js`; on drift (rating gap ≥ 0.05
   or count mismatch) POSTs an alert to `DRIFT_WEBHOOK_URL`. It **never** writes
-  the live value back — a human updates `lib/rating.js`. Skips gracefully if
-  `PLACES_API_KEY`/`PLACE_ID` aren't configured.
+  the live value back — a human updates `lib/rating.js`. `PLACES_API_KEY` is
+  **required** — the route returns a 500 if it's missing (so the weekly cron
+  fails loudly rather than silently). If only `PLACE_ID` is unconfigured, the
+  route skips gracefully.
 - **`POST /api/tekmetric/inbound-call`** (`runtime = "edge"`) — call-tracking
   webhook. **Disabled unless `TEKMETRIC_ENABLED === "true"`** (returns a skip).
   Requires `Bearer ${INTERNAL_KEY}`. Searches/creates a Tekmetric customer by
