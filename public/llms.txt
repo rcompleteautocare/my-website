@@ -8,7 +8,7 @@ R Complete Auto Care is a diagnostic-first auto repair shop located in Crown Poi
 - Address: 1305 E Summit St, Crown Point, IN 46307
 - Phone: (219) 262-2711
 - Email: Owner@rcompleteautocare.com
-- Website: [www.rcompleteautocare.com](https://www.rcompleteautocare.com)
+- Website: https://www.rcompleteautocare.com
 - Hours: Monday–Friday 8:00 AM–6:00 PM, Saturday 8:00 AM–2:00 PM, Sunday Closed
 - Google Rating: 4.9 stars
 - Price range: $$
@@ -72,5 +72,5 @@ R Complete Auto Care is a diagnostic-first auto repair shop located in Crown Poi
 - Email: Owner@rcompleteautocare.com
 - Address: 1305 E Summit St, Crown Point, IN 46307
 - Hours: Mon–Fri 8:00 AM–6:00 PM | Sat 8:00 AM–2:00 PM | Sun Closed
-- Website: [www.rcompleteautocare.com](https://www.rcompleteautocare.com)
+- Website: https://www.rcompleteautocare.com
 - Contact form: [Request service](https://www.rcompleteautocare.com/contact)
