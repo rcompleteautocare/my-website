@@ -8,6 +8,12 @@ import Footer from "./components/Footer";
 import PhoneConversionListener from "@/components/PhoneConversionListener";
 import { RATING, REVIEW_COUNT } from "@/lib/rating";
 
+// Google Ads global site tag (gtag.js). The tag ID is supplied via env var
+// (NEXT_PUBLIC_ADS_TAG_ID, e.g. AW-XXXXXXXXXX) and must be set in the Vercel
+// project for Production + Preview. Loaded with the `afterInteractive`
+// strategy so Google's crawler can detect it (not lazy-loaded).
+const ADS_TAG_ID = process.env.NEXT_PUBLIC_ADS_TAG_ID;
+
 export const metadata: Metadata = {
   metadataBase: new URL("https://www.rcompleteautocare.com"),
   title: "R Complete Auto Care | Auto Repair Crown Point, IN",
@@ -117,6 +123,22 @@ export default function RootLayout({ children }: { children: React.ReactNode }) 
   return (
     <html lang="en">
       <body style={{ margin: 0, fontFamily: "sans-serif" }}>
+        {ADS_TAG_ID ? (
+          <>
+            <Script
+              src={`https://www.googletagmanager.com/gtag/js?id=${ADS_TAG_ID}`}
+              strategy="afterInteractive"
+            />
+            <Script id="google-ads" strategy="afterInteractive">
+              {`
+                window.dataLayer = window.dataLayer || [];
+                function gtag(){dataLayer.push(arguments);}
+                gtag('js', new Date());
+                gtag('config', '${ADS_TAG_ID}');
+              `}
+            </Script>
+          </>
+        ) : null}
         <script
           type="application/ld+json"
           dangerouslySetInnerHTML={{ __html: JSON.stringify(SCHEMA).replace(/</g, "\\u003c") }}
