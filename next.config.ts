@@ -38,6 +38,22 @@ const nextConfig: NextConfig = {
         permanent: true,
       },
       {
+        // Kill the soft-404s from a broken external citation that embeds an
+        // absolute URL in the path, e.g. a link written as
+        //   rcompleteautocare.com/https://www.rcompleteautocare.com
+        // The browser/server collapses the "//" so the request arrives as a
+        // path that *begins with a protocol*:
+        //   /https:/www.rcompleteautocare.com
+        //   /http://example.com
+        //   /https%3A%2F%2Fwww.rcompleteautocare.com   (percent-encoded ":")
+        // Match http/https immediately followed by a literal ":" or its
+        // percent-encoded form "%3A". No legitimate route starts with a
+        // protocol, so this is safe. (permanent: true -> 308.)
+        source: "/:embeddedProtocol(https?(?::|%3[Aa]).*)",
+        destination: "/",
+        permanent: true,
+      },
+      {
         source: "/:path*",
         has: [{ type: "host", value: "rcompleteautocare.com" }],
         destination: "https://www.rcompleteautocare.com/:path*",
