@@ -131,11 +131,17 @@ These must stay identical everywhere (JSON-LD, pages, `llms.txt`, footer):
 - Hours: Mon–Fri 8am–6pm, Sat 8am–2pm, Sun closed
 - Serving: Crown Point · St. John · Schererville · Merrillville · Cedar Lake
 
-### Redirects
+### Redirects & junk paths
 Add permanent (308) redirects in `next.config.ts` `redirects()` when a URL
-changes or to consolidate variants — e.g. old flat URLs → `/services/<slug>`,
-apex → `www`, and the malformed-bracket 404 killer. Don't remove existing ones
-without checking the sitemap and inbound links.
+changes or to consolidate variants — e.g. old flat URLs → `/services/<slug>`
+and apex → `www`. Don't remove existing ones without checking the sitemap and
+inbound links.
+
+Junk/malformed paths (bracket-wrapped URLs, pasted full URLs — e.g.
+`/[https://…]`, `/https://…`) are handled in `proxy.ts`, which returns
+**410 Gone** so crawlers permanently deindex them (a cleaner signal than a 308
+to `/`, which reads as a soft 404). Widen the checks there if new junk-path
+variants show up in logs.
 
 ## API routes (server-side integrations)
 
