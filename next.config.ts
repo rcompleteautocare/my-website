@@ -24,19 +24,9 @@ const nextConfig: NextConfig = {
   },
   async redirects() {
     return [
-      {
-        // Kill the 404s from a malformed bracketed URL being resolved as a
-        // relative path. Catches every encoding of a path that begins with a
-        // literal or percent-encoded "[" — covering all reported variants:
-        //   /[https://www.rcompleteautocare.com]
-        //   /%5Bhttps://www.rcompleteautocare.com%5D
-        //   /%5Bhttps%3A%2F%2Fwww.rcompleteautocare.com%5D
-        // No legitimate route starts with "[" or "%5B", so this is safe.
-        // (permanent: true -> 308, Next's method-preserving permanent redirect.)
-        source: "/:malformed((?:\\[|%5[Bb]).*)",
-        destination: "/",
-        permanent: true,
-      },
+      // NOTE: Junk/malformed paths (bracket-wrapped URLs, pasted full URLs) are
+      // no longer redirected here. They're handled in middleware.ts, which
+      // returns 410 Gone — a cleaner deindex signal than a 308 to "/".
       {
         source: "/:path*",
         has: [{ type: "host", value: "rcompleteautocare.com" }],
