@@ -138,7 +138,7 @@ and apex → `www`. Don't remove existing ones without checking the sitemap and
 inbound links.
 
 Junk/malformed paths (bracket-wrapped URLs, pasted full URLs — e.g.
-`/[https://…]`, `/https://…`) are handled in `middleware.ts`, which returns
+`/[https://…]`, `/https://…`) are handled in `proxy.ts`, which returns
 **410 Gone** so crawlers permanently deindex them (a cleaner signal than a 308
 to `/`, which reads as a soft 404). Widen the checks there if new junk-path
 variants show up in logs.

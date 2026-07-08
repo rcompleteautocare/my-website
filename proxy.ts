@@ -1,6 +1,6 @@
 import { NextRequest, NextResponse } from 'next/server';
 
-export function middleware(req: NextRequest) {
+export function proxy(req: NextRequest) {
   const path = req.nextUrl.pathname;
 
   // Junk paths that no legitimate route ever produces: a bracket-wrapped URL,
@@ -27,5 +27,10 @@ export function middleware(req: NextRequest) {
 }
 
 export const config = {
-  matcher: ['/((?!_next|api|favicon.ico|robots.txt|sitemap.xml|llms.txt).*)'],
+  // Skip Next internals, API routes, the well-known metadata files, and any
+  // static asset in public/ (images/fonts) — junk paths never end in these
+  // extensions, so there's no reason to invoke the edge function for them.
+  matcher: [
+    '/((?!_next|api|favicon.ico|robots.txt|sitemap.xml|llms.txt|.*\\.(?:svg|png|jpg|jpeg|gif|webp|ico|woff|woff2)$).*)',
+  ],
 };
