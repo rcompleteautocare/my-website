@@ -338,6 +338,7 @@
 
 .storySection { padding: 92px 24px; }
 .storyCard { display: grid; grid-template-columns: 1fr 1fr; gap: 56px; max-width: 1120px; margin: 0 auto; padding: 28px; border-radius: 14px; color: #d2d2d2; background: #191919; }
+.storyCardTextOnly { grid-template-columns: minmax(0, 760px); justify-content: center; }
 .storyCard h2 { color: #fff; }
 .storyCopy { align-self: center; padding: 28px; }
 .storyCopy > p:not(.kicker) { margin: 24px 0 28px; font-size: 17px; line-height: 1.75; }

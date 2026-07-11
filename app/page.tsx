@@ -345,7 +345,7 @@ export default function Home() {
       </section>
 
       <section className={styles.storySection}>
-        <div className={styles.storyCard}>
+        <div className={`${styles.storyCard} ${styles.storyCardTextOnly}`}>
           <div className={styles.storyCopy}>
             <p className={styles.kicker}>Family experience, local accountability</p>
             <h2>Locally Owned.<br />Professionally Operated.</h2>
@@ -355,15 +355,6 @@ export default function Home() {
               transparent estimate, and perform no repair without customer approval.
             </p>
             <Link href="/about">Meet R Complete Auto Care <ArrowRight aria-hidden="true" size={17} /></Link>
-          </div>
-          <div className={styles.storyImageFrame}>
-            <Image
-              src="/images/shop/r-complete-auto-care-building-logo.webp"
-              alt="R Complete Auto Care logo on the shop building"
-              fill
-              sizes="(max-width: 800px) 100vw, 50vw"
-              className={styles.featureImage}
-            />
           </div>
         </div>
       </section>
