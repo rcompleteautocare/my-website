@@ -1,5 +1,6 @@
 import { MetadataRoute } from "next";
 import { HONDA_PAGES } from "@/lib/honda-pages";
+import { MAKE_PAGES } from "@/lib/make-pages";
 
 export default function sitemap(): MetadataRoute.Sitemap {
   const baseUrl = "https://www.rcompleteautocare.com";
@@ -36,6 +37,12 @@ export default function sitemap(): MetadataRoute.Sitemap {
     ...HONDA_PAGES.map((page) => ({
       url: `${baseUrl}/${page.slug}`,
       lastModified: "2026-07-10",
+      changeFrequency: "monthly" as const,
+      priority: 0.8,
+    })),
+    ...MAKE_PAGES.map((page) => ({
+      url: `${baseUrl}/${page.slug}`,
+      lastModified: "2026-07-11",
       changeFrequency: "monthly" as const,
       priority: 0.8,
     })),

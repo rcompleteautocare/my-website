@@ -1,4 +1,5 @@
 import Link from "next/link";
+import { MAKE_DIRECTORY } from "@/lib/make-pages";
 
 // Brand logos aren't part of lucide-react (it ships no social/brand marks),
 // so we use inline SVGs (viewBox 0 0 24 24, fill currentColor) for each profile.
@@ -73,7 +74,6 @@ export default function Footer() {
               ["Oil Change", "/services/oil-change-maintenance"],
               ["A/C & Heating Repair", "/services/ac-heating-repair"],
               ["Extended Warranty", "/services/extended-warranty-repair"],
-              ["Honda Repair", "/honda-repair-crown-point-in"],
             ].map(([name, href]) => (
               <Link key={href} href={href} style={{ color: "#aaa", textDecoration: "none" }}>{name}</Link>
             ))}
@@ -90,6 +90,14 @@ export default function Footer() {
               ["Cedar Lake, IN", "/auto-repair-cedar-lake-in"],
             ].map(([name, href]) => (
               <Link key={href} href={href} style={{ color: "#aaa", textDecoration: "none" }}>{name}</Link>
+            ))}
+          </div>
+        </div>
+        <div>
+          <div style={{ color: "#fff", fontWeight: "bold", marginBottom: "12px" }}>Makes We Service</div>
+          <div style={{ display: "flex", flexDirection: "column", gap: "8px" }}>
+            {MAKE_DIRECTORY.map(({ href, label }) => (
+              <Link key={href} href={href} style={{ color: "#aaa", textDecoration: "none" }}>{label} Repair</Link>
             ))}
           </div>
         </div>

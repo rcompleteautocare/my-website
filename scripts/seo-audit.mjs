@@ -16,6 +16,11 @@ const PATHS = [
   '/car-overheating-crown-point-in', '/car-wont-start-crown-point-in',
   '/check-engine-light-flashing-crown-point', '/extended-warranty-auto-repair-crown-point-in',
   '/mechanic-near-me-crown-point',
+  '/toyota-repair-crown-point-in', '/chevrolet-repair-crown-point-in', '/ford-repair-crown-point-in',
+  '/nissan-repair-crown-point-in', '/subaru-repair-crown-point-in', '/jeep-repair-crown-point-in',
+  '/chrysler-repair-crown-point-in', '/dodge-repair-crown-point-in', '/gmc-repair-crown-point-in',
+  '/hyundai-repair-crown-point-in', '/kia-repair-crown-point-in', '/bmw-repair-crown-point-in',
+  '/mercedes-benz-repair-crown-point-in',
 ];
 
 const UNIQUE_COPY_PATHS = PATHS.filter(p =>

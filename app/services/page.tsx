@@ -1,5 +1,6 @@
 import Link from "next/link";
 import LastUpdated from "@/app/components/LastUpdated";
+import { MAKE_DIRECTORY } from "@/lib/make-pages";
 
 export const metadata = {
   title: "Auto Repair Services in Crown Point, IN | R Complete Auto Care",
@@ -101,6 +102,20 @@ export default function ServicesIndex() {
             <Link key={s.href} href={s.href} style={{ border: "1px solid #e0e0e0", borderLeft: "4px solid #e63946", borderRadius: "6px", padding: "20px", textDecoration: "none", color: "#1a1a1a", display: "block" }}>
               <div style={{ fontWeight: "bold", fontSize: "17px", marginBottom: "6px" }}>{s.name} →</div>
               <div style={{ fontSize: "14px", color: "#555", lineHeight: 1.6 }}>{s.desc}</div>
+            </Link>
+          ))}
+        </div>
+      </section>
+
+      <section style={{ padding: "0 24px 60px", maxWidth: "960px", margin: "0 auto" }}>
+        <h2 style={{ fontSize: "28px", marginBottom: "8px" }}>Vehicle Makes We Service</h2>
+        <p style={{ fontSize: "15px", color: "#555", lineHeight: 1.6, marginBottom: "20px" }}>
+          Diagnostic-first repair for all makes and models in Crown Point, IN. We keep make-specific guidance for the brands we see most across Northwest Indiana:
+        </p>
+        <div style={{ display: "flex", flexWrap: "wrap", gap: "10px" }}>
+          {MAKE_DIRECTORY.map(m => (
+            <Link key={m.href} href={m.href} style={{ border: "1px solid #e0e0e0", borderRadius: "999px", padding: "8px 16px", textDecoration: "none", color: "#1a1a1a", fontSize: "14px", fontWeight: "600" }}>
+              {m.label} Repair →
             </Link>
           ))}
         </div>
