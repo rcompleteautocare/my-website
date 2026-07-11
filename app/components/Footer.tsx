@@ -73,6 +73,7 @@ export default function Footer() {
               ["Oil Change", "/services/oil-change-maintenance"],
               ["A/C & Heating Repair", "/services/ac-heating-repair"],
               ["Extended Warranty", "/services/extended-warranty-repair"],
+              ["Honda Repair", "/honda-repair-crown-point-in"],
             ].map(([name, href]) => (
               <Link key={href} href={href} style={{ color: "#aaa", textDecoration: "none" }}>{name}</Link>
             ))}

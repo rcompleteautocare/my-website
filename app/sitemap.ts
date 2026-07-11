@@ -1,4 +1,5 @@
 import { MetadataRoute } from "next";
+import { HONDA_PAGES } from "@/lib/honda-pages";
 
 export default function sitemap(): MetadataRoute.Sitemap {
   const baseUrl = "https://www.rcompleteautocare.com";
@@ -31,5 +32,12 @@ export default function sitemap(): MetadataRoute.Sitemap {
     { url: `${baseUrl}/transmission-slipping-crown-point-in`, lastModified: "2026-04-22", changeFrequency: "weekly", priority: 0.8 },
     { url: `${baseUrl}/extended-warranty-auto-repair-crown-point-in`, lastModified: "2026-04-14", changeFrequency: "weekly", priority: 0.8 },
     { url: `${baseUrl}/mechanic-near-me-crown-point`, lastModified: "2026-04-14", changeFrequency: "weekly", priority: 0.8 },
+    { url: `${baseUrl}/honda-repair-crown-point-in`, lastModified: "2026-07-10", changeFrequency: "monthly", priority: 0.9 },
+    ...HONDA_PAGES.map((page) => ({
+      url: `${baseUrl}/${page.slug}`,
+      lastModified: "2026-07-10",
+      changeFrequency: "monthly" as const,
+      priority: 0.8,
+    })),
   ];
 }

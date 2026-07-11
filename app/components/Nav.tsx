@@ -18,6 +18,7 @@ const services = [
   { name: "Oil Change & Maintenance", href: "/services/oil-change-maintenance" },
   { name: "A/C & Heating Repair", href: "/services/ac-heating-repair" },
   { name: "Extended Warranty Repairs", href: "/services/extended-warranty-repair" },
+  { name: "Honda Repair", href: "/honda-repair-crown-point-in" },
 ];
 
 export default function Nav() {
