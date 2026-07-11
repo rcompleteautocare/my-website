@@ -1,15 +1,15 @@
 import Link from "next/link";
 
 export const metadata = {
-  title: "Auto Repair in Crown Point, IN | R Complete Auto Care",
-  description: "Top-rated auto repair shop in Crown Point, IN. Diagnostic-first approach, honest estimates, extended warranty accepted. (219) 262-2711.",
+  title: "Crown Point & NW Indiana Auto Repair | R Complete Auto Care",
+  description: "Auto repair serving Crown Point, St. John, Schererville, Merrillville & Cedar Lake, IN — diagnostic-first, extended warranty accepted. (219) 262-2711.",
   alternates: {
     canonical: "https://www.rcompleteautocare.com/auto-repair-crown-point-in",
   },
 
   openGraph: {
-    title: "Auto Repair in Crown Point, IN | R Complete Auto Care",
-    description: "Top-rated auto repair shop in Crown Point, IN. Diagnostic-first approach, honest estimates, extended warranty accepted. (219) 262-2711.",
+    title: "Crown Point & NW Indiana Auto Repair | R Complete Auto Care",
+    description: "Auto repair serving Crown Point, St. John, Schererville, Merrillville & Cedar Lake, IN — diagnostic-first, extended warranty accepted. (219) 262-2711.",
     url: "https://www.rcompleteautocare.com/auto-repair-crown-point-in",
     siteName: "R Complete Auto Care",
     locale: "en_US",
@@ -18,8 +18,8 @@ export const metadata = {
   },
   twitter: {
     card: "summary_large_image",
-    title: "Auto Repair in Crown Point, IN | R Complete Auto Care",
-    description: "Top-rated auto repair shop in Crown Point, IN. Diagnostic-first approach, honest estimates, extended warranty accepted. (219) 262-2711.",
+    title: "Crown Point & NW Indiana Auto Repair | R Complete Auto Care",
+    description: "Auto repair serving Crown Point, St. John, Schererville, Merrillville & Cedar Lake, IN — diagnostic-first, extended warranty accepted. (219) 262-2711.",
     images: ["/logo.png"],
   },
   robots: { index: true, follow: true },
@@ -31,13 +31,13 @@ export default function CrownPoint() {
 
       <section style={{ background: "#1a1a1a", color: "#fff", padding: "60px 24px", textAlign: "center" }}>
         <p style={{ color: "#f1626f", fontWeight: "bold", fontSize: "13px", letterSpacing: "0.1em", textTransform: "uppercase", marginBottom: "12px" }}>
-          Crown Point, Indiana
+          Crown Point · Lake County · Northwest Indiana
         </p>
         <h1 style={{ fontSize: "38px", fontWeight: "bold", marginBottom: "16px", lineHeight: 1.2 }}>
-          Auto Repair in Crown Point, IN
+          Auto Repair Serving Crown Point &amp; Northwest Indiana
         </h1>
         <p style={{ fontSize: "18px", color: "#ccc", maxWidth: "600px", margin: "0 auto 32px" }}>
-          R Complete Auto Care is Crown Point&apos;s diagnostic-first auto repair shop. Honest estimates, expert repairs, extended warranty work welcome.
+          Based at our Crown Point shop, R Complete Auto Care is the diagnostic-first repair hub for drivers across Lake County — Crown Point, St. John, Schererville, Merrillville, and Cedar Lake. Honest estimates, expert repairs, extended warranty work welcome.
         </p>
         <a href="tel:2192622711" style={{ background: "#e63946", color: "#fff", padding: "14px 32px", borderRadius: "6px", fontWeight: "bold", fontSize: "18px", textDecoration: "none" }}>
           📞 Call (219) 262-2711
@@ -65,6 +65,24 @@ export default function CrownPoint() {
 <p style={{ lineHeight: 1.8, color: "#444", marginBottom: "40px" }}>
   We&apos;re located on E Summit St, a few blocks from the historic Crown Point courthouse square and easily accessible from the IN-55 and US-231 intersection. Whether you&apos;re coming from the Winfield area, from south of downtown near the Lake County Fairgrounds, or from the newer subdivisions off 109th Avenue, we&apos;re within 5 minutes of most of Crown Point.
 </p>
+        <h2 style={{ fontSize: "28px", marginBottom: "16px" }}>Serving Crown Point &amp; the Surrounding Communities</h2>
+        <p style={{ lineHeight: 1.8, color: "#444", marginBottom: "16px" }}>
+          Our Crown Point location keeps us within a short drive of most of Lake County. Drivers throughout Northwest Indiana rely on us for the same diagnostic-first approach — pick your community for local details:
+        </p>
+        <div style={{ display: "flex", flexWrap: "wrap", gap: "10px", marginBottom: "40px" }}>
+          {[
+            { name: "Crown Point, IN", href: "/auto-repair-crown-point-in" },
+            { name: "St. John, IN", href: "/auto-repair-st-john-in" },
+            { name: "Schererville, IN", href: "/auto-repair-schererville-in" },
+            { name: "Merrillville, IN", href: "/auto-repair-merrillville-in" },
+            { name: "Cedar Lake, IN", href: "/auto-repair-cedar-lake-in" },
+          ].map(c => (
+            <Link key={c.href} href={c.href} style={{ border: "1px solid #e0e0e0", borderRadius: "999px", padding: "8px 16px", textDecoration: "none", color: "#1a1a1a", fontSize: "14px", fontWeight: "600" }}>
+              {c.name} →
+            </Link>
+          ))}
+        </div>
+
         <h2 style={{ fontSize: "28px", marginBottom: "24px" }}>Our Auto Repair Services in Crown Point, IN</h2>
         <div style={{ display: "grid", gridTemplateColumns: "repeat(auto-fit, minmax(250px, 1fr))", gap: "16px", marginBottom: "40px" }}>
           {[
@@ -169,7 +187,7 @@ export default function CrownPoint() {
   }).replace(/</g, "\u003c")}}
 />
     <script type="application/ld+json" dangerouslySetInnerHTML={{ __html: "{\"@context\":\"https://schema.org\",\"@type\":\"BreadcrumbList\",\"itemListElement\":[{\"@type\":\"ListItem\",\"position\":1,\"name\":\"Home\",\"item\":\"https://www.rcompleteautocare.com\"},{\"@type\":\"ListItem\",\"position\":2,\"name\":\"Auto Repair Crown Point, IN\"}]}".replace(/</g, "\u003c") }} />
-    <script type="application/ld+json" dangerouslySetInnerHTML={{ __html: "{\"@context\":\"https://schema.org\",\"@type\":\"WebPage\",\"@id\":\"https://www.rcompleteautocare.com/auto-repair-crown-point-in#webpage\",\"url\":\"https://www.rcompleteautocare.com/auto-repair-crown-point-in\",\"name\":\"Auto Repair Crown Point, IN | R Complete Auto Care\",\"dateModified\":\"2026-04-18\",\"about\":{\"@id\":\"https://www.rcompleteautocare.com/#business\"}}".replace(/</g, "\u003c") }} />
+    <script type="application/ld+json" dangerouslySetInnerHTML={{ __html: "{\"@context\":\"https://schema.org\",\"@type\":\"WebPage\",\"@id\":\"https://www.rcompleteautocare.com/auto-repair-crown-point-in#webpage\",\"url\":\"https://www.rcompleteautocare.com/auto-repair-crown-point-in\",\"name\":\"Crown Point & NW Indiana Auto Repair | R Complete Auto Care\",\"dateModified\":\"2026-07-11\",\"about\":{\"@id\":\"https://www.rcompleteautocare.com/#business\"}}".replace(/</g, "\u003c") }} />
   </div>
   );
 }

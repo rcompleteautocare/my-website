@@ -201,7 +201,7 @@ const models: HondaPageData[] = [
 const services: HondaPageData[] = [
   {
     slug: "honda-timing-belt-service-crown-point-in", shortName: "Honda Timing Belt Service", kind: "service",
-    title: "Honda Timing Belt Service Crown Point, IN | R Complete Auto Care",
+    title: "Honda Timing Belt Service Crown Point | R Complete Auto Care",
     description: "Honda timing belt inspection and service in Crown Point with vehicle-specific guidance for belts, tensioners, idlers, water pumps, and seals.",
     eyebrow: "Vehicle-specific Honda maintenance", heading: "Honda Timing Belt Service",
     intro: "Not every Honda engine uses a timing belt, and there is no single replacement interval for every Honda. The exact model year, engine, mileage, service history, and manufacturer information must be identified first.",
@@ -219,7 +219,7 @@ const services: HondaPageData[] = [
   },
   {
     slug: "honda-transmission-repair-crown-point-in", shortName: "Honda Transmission Repair", kind: "service",
-    title: "Honda Transmission Repair Crown Point, IN | R Complete Auto Care",
+    title: "Honda Transmission Repair Crown Point | R Complete Auto Care",
     description: "Honda automatic transmission and CVT diagnostics in Crown Point for slipping, shuddering, delayed engagement, overheating, noise, and warning lights.",
     eyebrow: "Automatic and CVT diagnosis", heading: "Honda Transmission Repair and Diagnostics",
     intro: "Honda vehicles use different conventional automatic transmissions and CVTs. A shudder or delayed response can have fluid, electrical, control, driveline, or internal mechanical causes, so testing comes before a repair recommendation.",
@@ -255,7 +255,7 @@ const services: HondaPageData[] = [
   },
   {
     slug: "honda-check-engine-light-diagnostics-crown-point-in", shortName: "Honda Check-Engine-Light Diagnostics", kind: "service",
-    title: "Honda Check Engine Light Diagnostics Crown Point, IN",
+    title: "Honda Check Engine Light Crown Point | R Complete Auto Care",
     description: "Honda check-engine-light diagnosis in Crown Point using codes, freeze-frame and live data, circuit testing, smoke testing, compression testing, and verification.",
     eyebrow: "Codes are clues, not conclusions", heading: "Honda Check-Engine-Light Diagnostics",
     intro: "A diagnostic trouble code identifies a system, circuit, or operating condition. It does not automatically identify a failed part. We use the code as a path into testing and verify the cause before recommending replacement.",
