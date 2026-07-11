@@ -20,6 +20,8 @@ R Complete Auto Care is a diagnostic-first auto repair shop located in Crown Poi
 - [Homepage](https://www.rcompleteautocare.com): Overview of R Complete Auto Care — Crown Point's diagnostic-first auto repair shop. Covers services, how the shop works, why customers choose them, and contact info.
 - [About](https://www.rcompleteautocare.com/about): Company history, mission, values, and credentials. 25+ years of family experience. Diagnostic-first philosophy. All makes and models. Extended warranty accepted.
 - [Contact](https://www.rcompleteautocare.com/contact): Contact form, phone number, address, and hours for R Complete Auto Care in Crown Point, IN.
+- [Book an Appointment](https://www.rcompleteautocare.com/book): Schedule auto repair and diagnostics online in Crown Point, IN — diagnostic-first, no-upsell scheduling.
+- [Inspection Checklist](https://www.rcompleteautocare.com/inspection-checklist): The full 10-section digital vehicle inspection R Complete Auto Care performs, with real measurements and photos.
 - [Check Engine Light Diagnostics](https://www.rcompleteautocare.com/services/check-engine-light): Same-day check engine light diagnosis in Crown Point, IN. Full module scan, root cause investigation — not just code clearing. Cost: diagnostic fee applied to repair. Time: same day.
 - [Electrical Diagnostics](https://www.rcompleteautocare.com/services/electrical-diagnostics): Electrical system diagnosis in Crown Point, IN — parasitic draw, no-start, wiring faults, sensor failures, module issues.
 - [No-Start Diagnostics](https://www.rcompleteautocare.com/services/no-start-diagnostics): Car won't start diagnosis in Crown Point, IN. Battery, starter, fuel pump, crank sensor — systematic diagnosis to find the exact cause.
@@ -59,6 +61,23 @@ R Complete Auto Care is a diagnostic-first auto repair shop located in Crown Poi
 - [Kia Repair Crown Point, IN](https://www.rcompleteautocare.com/kia-repair-crown-point-in): Kia diagnostics — Theta II engine concerns, GDI carbon, oil consumption, catalytic faults, and dual-clutch.
 - [BMW Repair Crown Point, IN](https://www.rcompleteautocare.com/bmw-repair-crown-point-in): BMW diagnostics — oil leaks, N20/N26 timing chains, N54/N55 turbo and HPFP, cooling system, and VANOS.
 - [Mercedes-Benz Repair Crown Point, IN](https://www.rcompleteautocare.com/mercedes-benz-repair-crown-point-in): Mercedes-Benz diagnostics — oil leaks, engine mounts, 722 transmission conductor plate, Airmatic suspension, and cooling.
+
+## Honda Model & Service Pages
+
+- [Honda Civic Repair](https://www.rcompleteautocare.com/honda-civic-repair-crown-point-in): Honda Civic diagnostics — CVT symptoms, A/C, engine-mount vibration, charging, brakes, and suspension.
+- [Honda Accord Repair](https://www.rcompleteautocare.com/honda-accord-repair-crown-point-in): Honda Accord diagnostics — turbo drivability, oil leaks, VTC timing noise, transmission, and A/C.
+- [Honda CR-V Repair](https://www.rcompleteautocare.com/honda-cr-v-repair-crown-point-in): Honda CR-V diagnostics — turbo/oil-dilution, CVT, AWD, catalytic efficiency, A/C, and suspension.
+- [Honda Pilot Repair](https://www.rcompleteautocare.com/honda-pilot-repair-crown-point-in): Honda Pilot diagnostics — timing-belt service, misfires/VCM, transmission, oil leaks, and AWD.
+- [Honda Odyssey Repair](https://www.rcompleteautocare.com/honda-odyssey-repair-crown-point-in): Honda Odyssey diagnostics — power sliding doors, timing belts, misfires, transmission, and dual-zone A/C.
+- [Honda Ridgeline Repair](https://www.rcompleteautocare.com/honda-ridgeline-repair-crown-point-in): Honda Ridgeline diagnostics — AWD service, timing belts, transmission, cooling, and towing maintenance.
+- [Honda HR-V Repair](https://www.rcompleteautocare.com/honda-hr-v-repair-crown-point-in): Honda HR-V diagnostics — CVT, AWD, brakes, suspension, charging, and A/C.
+- [Honda Passport Repair](https://www.rcompleteautocare.com/honda-passport-repair-crown-point-in): Honda Passport diagnostics — timing-belt service, AWD, transmission, steering, suspension, and A/C.
+- [Honda Timing Belt Service](https://www.rcompleteautocare.com/honda-timing-belt-service-crown-point-in): Vehicle-specific Honda timing belt inspection and service — belts, tensioners, idlers, water pumps, and seals.
+- [Honda Transmission Repair](https://www.rcompleteautocare.com/honda-transmission-repair-crown-point-in): Honda automatic and CVT diagnosis — slipping, shudder, delayed engagement, overheating, and warning lights.
+- [Honda Engine Repair](https://www.rcompleteautocare.com/honda-engine-repair-crown-point-in): Honda engine diagnosis — overheating, oil use, leaks, misfires, timing, compression, and turbo systems.
+- [Honda Check Engine Light Diagnostics](https://www.rcompleteautocare.com/honda-check-engine-light-diagnostics-crown-point-in): Honda check-engine-light diagnosis — codes, freeze-frame and live data, circuit, smoke, and compression testing.
+- [Honda A/C Repair](https://www.rcompleteautocare.com/honda-ac-repair-crown-point-in): Honda A/C diagnosis — weak or warm cooling, leaks, compressors, condensers, and blend doors.
+- [Honda Brake Repair](https://www.rcompleteautocare.com/honda-brake-repair-crown-point-in): Honda brake inspection and repair — pads, rotors, calipers, hoses, fluid, ABS, vibration, and noise.
 
 ## Topics
 

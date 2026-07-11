@@ -1,4 +1,5 @@
 import FaqSchema from '../components/FaqSchema'
+import ServiceSchema from '../components/ServiceSchema'
 import Link from 'next/link'
 import FaqAccordion from '../components/FaqAccordion'
 
@@ -212,6 +213,7 @@ export default function ExtendedWarrantyRepair() {
     <script type="application/ld+json" dangerouslySetInnerHTML={{ __html: "{\"@context\":\"https://schema.org\",\"@type\":\"BreadcrumbList\",\"itemListElement\":[{\"@type\":\"ListItem\",\"position\":1,\"name\":\"Home\",\"item\":\"https://www.rcompleteautocare.com\"},{\"@type\":\"ListItem\",\"position\":2,\"name\":\"Warranty Claim Help Crown Point, IN\"}]}".replace(/</g, "\u003c") }} />
     <script type="application/ld+json" dangerouslySetInnerHTML={{ __html: "{\"@context\":\"https://schema.org\",\"@type\":\"HowTo\",\"name\":\"How We Handle Your Extended Warranty Claim\",\"description\":\"Our end-to-end warranty process in Crown Point, IN — you pay only your deductible.\",\"totalTime\":\"P1D\",\"step\":[{\"@type\":\"HowToStep\",\"position\":1,\"name\":\"Call us with your warranty provider name\",\"text\":\"Before you bring the car in, we verify what's covered and what documentation the adjuster will require.\"},{\"@type\":\"HowToStep\",\"position\":2,\"name\":\"Documented diagnostic\",\"text\":\"We perform a diagnostic that meets warranty adjuster requirements — measurements, codes, live data, photos.\"},{\"@type\":\"HowToStep\",\"position\":3,\"name\":\"Pre-authorisation call\",\"text\":\"We submit findings to your warranty provider and get written pre-authorisation before any repair begins.\"},{\"@type\":\"HowToStep\",\"position\":4,\"name\":\"Repair with approved parts\",\"text\":\"Some plans require specific part tiers. We use what your plan requires to keep the claim valid.\"},{\"@type\":\"HowToStep\",\"position\":5,\"name\":\"Submit final documentation\",\"text\":\"Invoice, photos, and sign-offs submitted to the adjuster. You pay only your deductible.\"}]}".replace(/</g, "\u003c") }} />
     <script type="application/ld+json" dangerouslySetInnerHTML={{ __html: "{\"@context\":\"https://schema.org\",\"@type\":\"WebPage\",\"@id\":\"https://www.rcompleteautocare.com/extended-warranty-auto-repair-crown-point-in#webpage\",\"url\":\"https://www.rcompleteautocare.com/extended-warranty-auto-repair-crown-point-in\",\"name\":\"Warranty Claim Help Crown Point, IN\",\"dateModified\":\"2026-04-18\",\"about\":{\"@id\":\"https://www.rcompleteautocare.com/#business\"}}".replace(/</g, "\u003c") }} />
+    <ServiceSchema name="Extended Warranty Auto Repair in Crown Point, IN" serviceType="Extended warranty auto repair" path="/extended-warranty-auto-repair-crown-point-in" />
   </>
   )
 }

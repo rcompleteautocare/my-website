@@ -1,4 +1,5 @@
 import Link from 'next/link'
+import ServiceSchema from '../components/ServiceSchema'
 import FaqAccordion from '../components/FaqAccordion'
 import FaqSchema from '../components/FaqSchema'
 
@@ -66,7 +67,7 @@ export default function CarWontStart() {
       <div className="page-content">
         <p className="location-badge">Crown Point, Indiana</p>
         <h1>Car Won&apos;t Start in Crown Point, IN? We Find the Exact Cause.</h1>
-        <p className="hero-description">
+        <p className="hero-description speakable">
           No crank, crank-no-start, intermittent no-start — each symptom points to a completely
           different system. At R Complete Auto Care in Crown Point, Indiana we run the full
           diagnostic protocol before replacing a single part. 25+ years of family experience.
@@ -208,6 +209,7 @@ export default function CarWontStart() {
     <script type="application/ld+json" dangerouslySetInnerHTML={{ __html: "{\"@context\":\"https://schema.org\",\"@type\":\"BreadcrumbList\",\"itemListElement\":[{\"@type\":\"ListItem\",\"position\":1,\"name\":\"Home\",\"item\":\"https://www.rcompleteautocare.com\"},{\"@type\":\"ListItem\",\"position\":2,\"name\":\"Car Won't Start in Crown Point, IN\"}]}".replace(/</g, "\u003c") }} />
     <script type="application/ld+json" dangerouslySetInnerHTML={{ __html: "{\"@context\":\"https://schema.org\",\"@type\":\"HowTo\",\"name\":\"How We Diagnose a No-Start Condition\",\"description\":\"Systematic diagnostic process for a car that won't start in Crown Point, IN.\",\"totalTime\":\"PT2H\",\"step\":[{\"@type\":\"HowToStep\",\"position\":1,\"name\":\"Classify the no-start type\",\"text\":\"No crank vs. crank-no-start vs. intermittent — each requires a different test sequence.\"},{\"@type\":\"HowToStep\",\"position\":2,\"name\":\"Battery load test under cranking conditions\",\"text\":\"A true load test that replicates what the battery experiences when the starter engages.\"},{\"@type\":\"HowToStep\",\"position\":3,\"name\":\"Cranking circuit voltage drop test\",\"text\":\"Measure resistance across every connection — cables, grounds, terminals.\"},{\"@type\":\"HowToStep\",\"position\":4,\"name\":\"Starter current draw test\",\"text\":\"An inductive amp clamp confirms exactly what the starter is drawing.\"},{\"@type\":\"HowToStep\",\"position\":5,\"name\":\"Fuel and spark verification\",\"text\":\"For crank-no-start: fuel pressure at the rail, injector pulse, spark at the plug under cranking.\"},{\"@type\":\"HowToStep\",\"position\":6,\"name\":\"Compression check\",\"text\":\"Relative compression test or cylinder leak-down if mechanical fault is suspected.\"},{\"@type\":\"HowToStep\",\"position\":7,\"name\":\"Full module scan\",\"text\":\"Scan engine, BCM, PCM, and immobilizer modules for stored and active faults.\"},{\"@type\":\"HowToStep\",\"position\":8,\"name\":\"Root cause confirmed — approval — repair\",\"text\":\"We call you with the exact cause and cost. No work starts until you approve.\"}]}".replace(/</g, "\u003c") }} />
     <script type="application/ld+json" dangerouslySetInnerHTML={{ __html: "{\"@context\":\"https://schema.org\",\"@type\":\"WebPage\",\"@id\":\"https://www.rcompleteautocare.com/car-wont-start-crown-point-in#webpage\",\"url\":\"https://www.rcompleteautocare.com/car-wont-start-crown-point-in\",\"name\":\"Car Won't Start in Crown Point, IN\",\"dateModified\":\"2026-04-18\",\"about\":{\"@id\":\"https://www.rcompleteautocare.com/#business\"}}".replace(/</g, "\u003c") }} />
+    <ServiceSchema name="No-Start Diagnosis in Crown Point, IN" serviceType="Car won't start diagnosis" path="/car-wont-start-crown-point-in" />
   </>
   )
 }

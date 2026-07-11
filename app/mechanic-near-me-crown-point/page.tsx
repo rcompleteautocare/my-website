@@ -1,4 +1,5 @@
 import { RATING } from "@/lib/rating";
+import ServiceSchema from "@/app/components/ServiceSchema";
 
 export const metadata = {
   title: 'Mechanic Near Me Crown Point, IN | R Complete Auto Care',
@@ -35,7 +36,7 @@ export default function MechanicNearMe() {
         <h1 style={{ fontSize: "38px", fontWeight: "bold", marginBottom: "16px" }}>
           Mechanic Near Me — Crown Point, IN
         </h1>
-        <p style={{ fontSize: "18px", color: "#ccc", maxWidth: "640px", margin: "0 auto 16px" }}>
+        <p className="speakable" style={{ fontSize: "18px", color: "#ccc", maxWidth: "640px", margin: "0 auto 16px" }}>
           R Complete Auto Care is the closest diagnostic-first mechanic to Crown Point, St. John, Schererville, Merrillville, and Cedar Lake. {RATING} stars on Google. Same-day diagnostics available.
         </p>
         <p style={{ fontSize: "15px", color: "#aaa", maxWidth: "560px", margin: "0 auto 32px" }}>
@@ -290,6 +291,7 @@ export default function MechanicNearMe() {
 />
     <script type="application/ld+json" dangerouslySetInnerHTML={{ __html: "{\"@context\":\"https://schema.org\",\"@type\":\"BreadcrumbList\",\"itemListElement\":[{\"@type\":\"ListItem\",\"position\":1,\"name\":\"Home\",\"item\":\"https://www.rcompleteautocare.com\"},{\"@type\":\"ListItem\",\"position\":2,\"name\":\"Mechanic Near Me Crown Point\"}]}".replace(/</g, "\u003c") }} />
     <script type="application/ld+json" dangerouslySetInnerHTML={{ __html: "{\"@context\":\"https://schema.org\",\"@type\":\"WebPage\",\"@id\":\"https://www.rcompleteautocare.com/mechanic-near-me-crown-point#webpage\",\"url\":\"https://www.rcompleteautocare.com/mechanic-near-me-crown-point\",\"name\":\"Mechanic Near Me Crown Point, IN\",\"dateModified\":\"2026-04-18\",\"about\":{\"@id\":\"https://www.rcompleteautocare.com/#business\"}}".replace(/</g, "\u003c") }} />
+    <ServiceSchema name="Auto Repair and Diagnostics in Crown Point, IN" serviceType="Auto repair" path="/mechanic-near-me-crown-point" />
   </div>
   );
 }

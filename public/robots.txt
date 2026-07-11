@@ -3,4 +3,33 @@ User-agent: *
 Allow: /
 Disallow: /api/
 
+# AI crawlers and answer engines — explicitly allowed (site content is
+# intentionally available to AI search/answer engines). Do not remove.
+User-agent: GPTBot
+Allow: /
+
+User-agent: ChatGPT-User
+Allow: /
+
+User-agent: OAI-SearchBot
+Allow: /
+
+User-agent: ClaudeBot
+Allow: /
+
+User-agent: anthropic-ai
+Allow: /
+
+User-agent: Claude-Web
+Allow: /
+
+User-agent: PerplexityBot
+Allow: /
+
+User-agent: Google-Extended
+Allow: /
+
+User-agent: CCBot
+Allow: /
+
 Sitemap: https://www.rcompleteautocare.com/sitemap.xml

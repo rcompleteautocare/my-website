@@ -1,4 +1,5 @@
 import Link from 'next/link'
+import ServiceSchema from '../components/ServiceSchema'
 import FaqAccordion from '../components/FaqAccordion'
 import FaqSchema from '../components/FaqSchema'
 export const metadata = {
@@ -65,7 +66,7 @@ export default function CarOverheating() {
 <div className="page-content">
       <p className="location-badge">Crown Point, Indiana</p>
       <h1>Car Overheating in Crown Point, IN — What to Do Right Now</h1>
-      <p className="hero-description">
+      <p className="hero-description speakable">
         Engine overheating turns a $400 cooling system repair into a $4,000 engine replacement
         faster than almost any other problem. If your temperature gauge is moving toward the red —
         pull over immediately, turn the engine off, and call R Complete Auto Care. We offer
@@ -233,6 +234,7 @@ export default function CarOverheating() {
     <script type="application/ld+json" dangerouslySetInnerHTML={{ __html: "{\"@context\":\"https://schema.org\",\"@type\":\"BreadcrumbList\",\"itemListElement\":[{\"@type\":\"ListItem\",\"position\":1,\"name\":\"Home\",\"item\":\"https://www.rcompleteautocare.com\"},{\"@type\":\"ListItem\",\"position\":2,\"name\":\"Car Overheating in Crown Point, IN\"}]}".replace(/</g, "\u003c") }} />
     <script type="application/ld+json" dangerouslySetInnerHTML={{ __html: "{\"@context\":\"https://schema.org\",\"@type\":\"HowTo\",\"name\":\"What to Do If Your Car Is Overheating\",\"description\":\"Immediate actions and diagnostic process for overheating in Crown Point, IN.\",\"totalTime\":\"PT1H\",\"step\":[{\"@type\":\"HowToStep\",\"position\":1,\"name\":\"Pull over safely and shut off the engine\",\"text\":\"Continued driving with the temp gauge in the red can warp the head and crack the block in minutes.\"},{\"@type\":\"HowToStep\",\"position\":2,\"name\":\"Do not open a hot radiator cap\",\"text\":\"Coolant under pressure at 230°F+ will scald. Wait at least 30 minutes before opening.\"},{\"@type\":\"HowToStep\",\"position\":3,\"name\":\"Call (219) 262-2711 for recovery advice\",\"text\":\"We can tell you whether a short drive to the shop is safe or if you need a tow.\"},{\"@type\":\"HowToStep\",\"position\":4,\"name\":\"Cooling system pressure test\",\"text\":\"We pressurize the system and look for external and internal leaks.\"},{\"@type\":\"HowToStep\",\"position\":5,\"name\":\"Thermostat, fan clutch, and water pump testing\",\"text\":\"We confirm mechanical components are doing their job before replacing them.\"},{\"@type\":\"HowToStep\",\"position\":6,\"name\":\"Head gasket and combustion leak test\",\"text\":\"A chemical block tester confirms or rules out combustion gases in the cooling system.\"},{\"@type\":\"HowToStep\",\"position\":7,\"name\":\"Root cause confirmed — approval — repair\",\"text\":\"We explain the fault, quote the repair, and fix it only after you approve.\"}]}".replace(/</g, "\u003c") }} />
     <script type="application/ld+json" dangerouslySetInnerHTML={{ __html: "{\"@context\":\"https://schema.org\",\"@type\":\"WebPage\",\"@id\":\"https://www.rcompleteautocare.com/car-overheating-crown-point-in#webpage\",\"url\":\"https://www.rcompleteautocare.com/car-overheating-crown-point-in\",\"name\":\"Car Overheating in Crown Point, IN\",\"dateModified\":\"2026-04-18\",\"about\":{\"@id\":\"https://www.rcompleteautocare.com/#business\"}}".replace(/</g, "\u003c") }} />
+    <ServiceSchema name="Car Overheating Diagnosis in Crown Point, IN" serviceType="Vehicle overheating diagnosis and repair" path="/car-overheating-crown-point-in" />
   </>
   )
 }

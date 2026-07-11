@@ -1,4 +1,5 @@
 import Link from "next/link";
+import ServiceSchema from "@/app/components/ServiceSchema";
 
 export const metadata = {
   title: "Crown Point & NW Indiana Auto Repair | R Complete Auto Care",
@@ -36,7 +37,7 @@ export default function CrownPoint() {
         <h1 style={{ fontSize: "38px", fontWeight: "bold", marginBottom: "16px", lineHeight: 1.2 }}>
           Auto Repair Serving Crown Point &amp; Northwest Indiana
         </h1>
-        <p style={{ fontSize: "18px", color: "#ccc", maxWidth: "600px", margin: "0 auto 32px" }}>
+        <p className="speakable" style={{ fontSize: "18px", color: "#ccc", maxWidth: "600px", margin: "0 auto 32px" }}>
           Based at our Crown Point shop, R Complete Auto Care is the diagnostic-first repair hub for drivers across Lake County — Crown Point, St. John, Schererville, Merrillville, and Cedar Lake. Honest estimates, expert repairs, extended warranty work welcome.
         </p>
         <a href="tel:2192622711" style={{ background: "#e63946", color: "#fff", padding: "14px 32px", borderRadius: "6px", fontWeight: "bold", fontSize: "18px", textDecoration: "none" }}>
@@ -188,6 +189,7 @@ export default function CrownPoint() {
 />
     <script type="application/ld+json" dangerouslySetInnerHTML={{ __html: "{\"@context\":\"https://schema.org\",\"@type\":\"BreadcrumbList\",\"itemListElement\":[{\"@type\":\"ListItem\",\"position\":1,\"name\":\"Home\",\"item\":\"https://www.rcompleteautocare.com\"},{\"@type\":\"ListItem\",\"position\":2,\"name\":\"Auto Repair Crown Point, IN\"}]}".replace(/</g, "\u003c") }} />
     <script type="application/ld+json" dangerouslySetInnerHTML={{ __html: "{\"@context\":\"https://schema.org\",\"@type\":\"WebPage\",\"@id\":\"https://www.rcompleteautocare.com/auto-repair-crown-point-in#webpage\",\"url\":\"https://www.rcompleteautocare.com/auto-repair-crown-point-in\",\"name\":\"Crown Point & NW Indiana Auto Repair | R Complete Auto Care\",\"dateModified\":\"2026-07-11\",\"about\":{\"@id\":\"https://www.rcompleteautocare.com/#business\"}}".replace(/</g, "\u003c") }} />
+    <ServiceSchema name="Auto Repair in Crown Point, IN" serviceType="Auto repair" path="/auto-repair-crown-point-in" />
   </div>
   );
 }

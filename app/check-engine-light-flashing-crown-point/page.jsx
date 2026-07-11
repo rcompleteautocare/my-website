@@ -1,4 +1,5 @@
 import FaqSchema from '../components/FaqSchema'
+import ServiceSchema from '../components/ServiceSchema'
 import Link from 'next/link'
 import FaqAccordion from '../components/FaqAccordion'
 
@@ -66,7 +67,7 @@ export default function CheckEngineLightFlashing() {
       <div className="page-content">
         <p className="location-badge">Crown Point, Indiana</p>
         <h1>Check Engine Light Flashing in Crown Point, IN? Stop Driving Now.</h1>
-        <p className="hero-description">
+        <p className="hero-description speakable">
           A flashing check engine light is not the same as a steady one. It means your engine is
           actively misfiring right now — and every mile you drive is pumping raw fuel into your
           catalytic converter. A $180 ignition coil problem can become a $1,400 catalytic converter
@@ -218,6 +219,7 @@ export default function CheckEngineLightFlashing() {
     <script type="application/ld+json" dangerouslySetInnerHTML={{ __html: "{\"@context\":\"https://schema.org\",\"@type\":\"BreadcrumbList\",\"itemListElement\":[{\"@type\":\"ListItem\",\"position\":1,\"name\":\"Home\",\"item\":\"https://www.rcompleteautocare.com\"},{\"@type\":\"ListItem\",\"position\":2,\"name\":\"Flashing Check Engine Light in Crown Point, IN\"}]}".replace(/</g, "\u003c") }} />
     <script type="application/ld+json" dangerouslySetInnerHTML={{ __html: "{\"@context\":\"https://schema.org\",\"@type\":\"HowTo\",\"name\":\"Flashing Check Engine Light: Immediate Steps\",\"description\":\"A flashing CEL means active misfire — drive minimally and diagnose immediately.\",\"totalTime\":\"PT1H30M\",\"step\":[{\"@type\":\"HowToStep\",\"position\":1,\"name\":\"Slow down and limit driving\",\"text\":\"A flashing CEL means raw fuel is entering the catalytic converter. Every mile accelerates cat damage.\"},{\"@type\":\"HowToStep\",\"position\":2,\"name\":\"Get the vehicle to a shop or have it towed\",\"text\":\"If you have far to go, a flatbed tow is cheaper than catalytic converter replacement.\"},{\"@type\":\"HowToStep\",\"position\":3,\"name\":\"Full OBD-II scan with freeze-frame data\",\"text\":\"We pull all codes, not just the primary, plus the conditions when the misfire occurred.\"},{\"@type\":\"HowToStep\",\"position\":4,\"name\":\"Identify the misfiring cylinder\",\"text\":\"Live-data analysis pinpoints which cylinder is misfiring and at what load/RPM.\"},{\"@type\":\"HowToStep\",\"position\":5,\"name\":\"Isolate: fuel, spark, or compression\",\"text\":\"Coil swap test, injector pulse, compression test — we confirm root cause, not guess.\"},{\"@type\":\"HowToStep\",\"position\":6,\"name\":\"Repair and verify\",\"text\":\"After the fix, we clear codes, re-run a road test, and confirm the misfire is resolved.\"}]}".replace(/</g, "\u003c") }} />
     <script type="application/ld+json" dangerouslySetInnerHTML={{ __html: "{\"@context\":\"https://schema.org\",\"@type\":\"WebPage\",\"@id\":\"https://www.rcompleteautocare.com/check-engine-light-flashing-crown-point#webpage\",\"url\":\"https://www.rcompleteautocare.com/check-engine-light-flashing-crown-point\",\"name\":\"Flashing Check Engine Light in Crown Point, IN\",\"dateModified\":\"2026-04-18\",\"about\":{\"@id\":\"https://www.rcompleteautocare.com/#business\"}}".replace(/</g, "\u003c") }} />
+    <ServiceSchema name="Flashing Check Engine Light Diagnosis in Crown Point, IN" serviceType="Check engine light diagnostics" path="/check-engine-light-flashing-crown-point" />
   </>
   )
 }

@@ -1,4 +1,5 @@
 import Link from "next/link";
+import ServiceSchema from "@/app/components/ServiceSchema";
 
 export const metadata = {
   title: "Auto Repair in St. John, IN | R Complete Auto Care",
@@ -36,7 +37,7 @@ export default function StJohn() {
         <h1 style={{ fontSize: "38px", fontWeight: "bold", marginBottom: "16px", lineHeight: 1.2 }}>
           Auto Repair Near St. John, IN
         </h1>
-        <p style={{ fontSize: "18px", color: "#ccc", maxWidth: "600px", margin: "0 auto 32px" }}>
+        <p className="speakable" style={{ fontSize: "18px", color: "#ccc", maxWidth: "600px", margin: "0 auto 32px" }}>
           St. John drivers trust R Complete Auto Care in Crown Point for honest diagnostics, expert repairs, and extended warranty work. Just minutes away.
         </p>
         <a href="tel:2192622711" style={{ background: "#e63946", color: "#fff", padding: "14px 32px", borderRadius: "6px", fontWeight: "bold", fontSize: "18px", textDecoration: "none" }}>
@@ -173,6 +174,7 @@ export default function StJohn() {
 />
     <script type="application/ld+json" dangerouslySetInnerHTML={{ __html: "{\"@context\":\"https://schema.org\",\"@type\":\"BreadcrumbList\",\"itemListElement\":[{\"@type\":\"ListItem\",\"position\":1,\"name\":\"Home\",\"item\":\"https://www.rcompleteautocare.com\"},{\"@type\":\"ListItem\",\"position\":2,\"name\":\"Auto Repair St. John, IN\"}]}".replace(/</g, "\u003c") }} />
     <script type="application/ld+json" dangerouslySetInnerHTML={{ __html: "{\"@context\":\"https://schema.org\",\"@type\":\"WebPage\",\"@id\":\"https://www.rcompleteautocare.com/auto-repair-st-john-in#webpage\",\"url\":\"https://www.rcompleteautocare.com/auto-repair-st-john-in\",\"name\":\"Auto Repair St. John, IN | R Complete Auto Care\",\"dateModified\":\"2026-04-18\",\"about\":{\"@id\":\"https://www.rcompleteautocare.com/#business\"}}".replace(/</g, "\u003c") }} />
+    <ServiceSchema name="Auto Repair Near St. John, IN" serviceType="Auto repair" path="/auto-repair-st-john-in" />
   </div>
   );
 }

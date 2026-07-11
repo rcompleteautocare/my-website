@@ -1,4 +1,5 @@
 import Link from "next/link";
+import ServiceSchema from "@/app/components/ServiceSchema";
 
 export const metadata = {
   title: "Auto Repair in Cedar Lake, IN | R Complete Auto Care",
@@ -36,7 +37,7 @@ export default function CedarLake() {
         <h1 style={{ fontSize: "38px", fontWeight: "bold", marginBottom: "16px", lineHeight: 1.2 }}>
           Auto Repair Near Cedar Lake, IN
         </h1>
-        <p style={{ fontSize: "18px", color: "#ccc", maxWidth: "600px", margin: "0 auto 32px" }}>
+        <p className="speakable" style={{ fontSize: "18px", color: "#ccc", maxWidth: "600px", margin: "0 auto 32px" }}>
           Diagnostic-first repair shop 10 minutes east of Lake Dalecarlia. Honest quotes on suspension, towing and trailer systems, and the kind of rural-road wear Cedar Lake drivers actually see.
         </p>
         <a href="tel:2192622711" style={{ background: "#e63946", color: "#fff", padding: "14px 32px", borderRadius: "6px", fontWeight: "bold", fontSize: "18px", textDecoration: "none" }}>
@@ -173,6 +174,7 @@ export default function CedarLake() {
 />
     <script type="application/ld+json" dangerouslySetInnerHTML={{ __html: "{\"@context\":\"https://schema.org\",\"@type\":\"BreadcrumbList\",\"itemListElement\":[{\"@type\":\"ListItem\",\"position\":1,\"name\":\"Home\",\"item\":\"https://www.rcompleteautocare.com\"},{\"@type\":\"ListItem\",\"position\":2,\"name\":\"Auto Repair Cedar Lake, IN\"}]}".replace(/</g, "\u003c") }} />
     <script type="application/ld+json" dangerouslySetInnerHTML={{ __html: "{\"@context\":\"https://schema.org\",\"@type\":\"WebPage\",\"@id\":\"https://www.rcompleteautocare.com/auto-repair-cedar-lake-in#webpage\",\"url\":\"https://www.rcompleteautocare.com/auto-repair-cedar-lake-in\",\"name\":\"Auto Repair Cedar Lake, IN | R Complete Auto Care\",\"dateModified\":\"2026-04-18\",\"about\":{\"@id\":\"https://www.rcompleteautocare.com/#business\"}}".replace(/</g, "\u003c") }} />
+    <ServiceSchema name="Auto Repair Near Cedar Lake, IN" serviceType="Auto repair" path="/auto-repair-cedar-lake-in" />
   </div>
   );
 }
