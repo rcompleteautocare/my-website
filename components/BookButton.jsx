@@ -1,5 +1,6 @@
 'use client'
-import { CALENDLY_URL } from '@/lib/booking'
+import { useRouter } from 'next/navigation'
+import { trackEvent } from '@/lib/analytics'
 
 /**
  * @param {{
@@ -9,10 +10,14 @@ import { CALENDLY_URL } from '@/lib/booking'
  * }} props
  */
 export default function BookButton({ className, style, children }) {
-  const open = () => window.Calendly?.initPopupWidget({ url: CALENDLY_URL })
+  const router = useRouter()
+  const open = () => {
+    trackEvent('book_appointment_click', { placement: 'site_cta' })
+    router.push('/book')
+  }
   return (
     <button type="button" className={className} style={style} onClick={open}>
-      {children || 'Book Appointment'}
+      {children || 'Book Your Appointment'}
     </button>
   )
 }

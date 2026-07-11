@@ -11,6 +11,14 @@ body {
   font-family: Arial, Helvetica, sans-serif;
 }
 
+/* Command Center is an isolated product surface inside the public website. */
+.cc, .cc * { box-sizing: border-box; }
+.cc h1, .cc h2, .cc h3, .cc p, .cc ul, .cc ol { margin: 0; color: inherit; }
+.cc h1, .cc h2, .cc h3 { line-height: inherit; }
+.cc button, .cc input { font: inherit; }
+.cc ::selection { background: rgba(249, 115, 22, .35); color: white; }
+.cc { color-scheme: dark; font-family: Arial, Helvetica, sans-serif; }
+
 /* New symptom pages */
 .location-badge { display:inline-block; background:#c0392b; color:#fff; font-size:13px; font-weight:600; letter-spacing:.08em; text-transform:uppercase; padding:4px 12px; border-radius:4px; margin-bottom:16px; }
 .hero-description { font-size:18px; line-height:1.7; color:#444; margin-bottom:24px; }

@@ -93,6 +93,13 @@ export default function Footer() {
           </div>
         </div>
         <div>
+          <div style={{ color: "#fff", fontWeight: "bold", marginBottom: "12px" }}>Resources</div>
+          <div style={{ display: "flex", flexDirection: "column", gap: "8px", marginBottom: "24px" }}>
+            <Link href="/inspection-checklist" style={{ color: "#aaa", textDecoration: "none" }}>Digital Vehicle Inspections</Link>
+            <Link href="/warranty-resources" style={{ color: "#aaa", textDecoration: "none" }}>Warranty Resource Center</Link>
+            <Link href="/repair-guides" style={{ color: "#aaa", textDecoration: "none" }}>Vehicle Repair Guides</Link>
+            <Link href="/book" style={{ color: "#aaa", textDecoration: "none" }}>Book an Appointment</Link>
+          </div>
           <div style={{ color: "#fff", fontWeight: "bold", marginBottom: "12px" }}>Hours</div>
           <div style={{ lineHeight: 1.8 }}>
             Mon–Fri: 8:00 AM – 6:00 PM<br />
