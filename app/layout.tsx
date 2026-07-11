@@ -9,6 +9,8 @@ import PhoneConversionListener from "@/components/PhoneConversionListener";
 import { RATING, REVIEW_COUNT } from "@/lib/rating";
 import SiteAnalytics from "@/components/SiteAnalytics";
 
+const ADS_TAG_ID = process.env.NEXT_PUBLIC_ADS_TAG_ID;
+
 export const metadata: Metadata = {
   metadataBase: new URL("https://www.rcompleteautocare.com"),
   title: "R Complete Auto Care | Auto Repair Crown Point, IN",
@@ -121,6 +123,22 @@ export default function RootLayout({ children }: { children: React.ReactNode }) 
   return (
     <html lang="en">
       <body style={{ margin: 0, fontFamily: "sans-serif" }}>
+        {ADS_TAG_ID ? (
+          <>
+            <Script
+              src={`https://www.googletagmanager.com/gtag/js?id=${ADS_TAG_ID}`}
+              strategy="afterInteractive"
+            />
+            <Script id="google-tag" strategy="afterInteractive">
+              {`
+                window.dataLayer = window.dataLayer || [];
+                function gtag(){dataLayer.push(arguments);}
+                gtag('js', new Date());
+                gtag('config', '${ADS_TAG_ID}');
+              `}
+            </Script>
+          </>
+        ) : null}
         <script
           type="application/ld+json"
           dangerouslySetInnerHTML={{ __html: JSON.stringify(SCHEMA).replace(/</g, "\\u003c") }}
