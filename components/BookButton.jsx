@@ -1,5 +1,4 @@
-'use client'
-import { CALENDLY_URL } from '@/lib/booking'
+import Link from 'next/link'
 
 /**
  * @param {{
@@ -9,10 +8,9 @@ import { CALENDLY_URL } from '@/lib/booking'
  * }} props
  */
 export default function BookButton({ className, style, children }) {
-  const open = () => window.Calendly?.initPopupWidget({ url: CALENDLY_URL })
   return (
-    <button type="button" className={className} style={style} onClick={open}>
+    <Link href="/book" className={className} style={style}>
       {children || 'Book Appointment'}
-    </button>
+    </Link>
   )
 }
