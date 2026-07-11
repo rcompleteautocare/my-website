@@ -1,4 +1,5 @@
 "use client";
+import Image from "next/image";
 import { useState } from "react";
 
 export default function Contact() {
@@ -171,6 +172,15 @@ export default function Contact() {
       {/* Map */}
       <section style={{ padding: "0 24px 60px", maxWidth: "900px", margin: "0 auto" }}>
         <h2 style={{ fontSize: "24px", fontWeight: "bold", marginBottom: "16px" }}>Find Us</h2>
+        <div style={{ position: "relative", width: "100%", aspectRatio: "4 / 3", overflow: "hidden", borderRadius: "14px", boxShadow: "0 18px 48px rgba(25, 25, 25, 0.13)", marginBottom: "24px", background: "#ededeb" }}>
+          <Image
+            src="/images/shop/location.webp"
+            alt="R Complete Auto Care location in Crown Point, Indiana"
+            fill
+            sizes="(max-width: 948px) calc(100vw - 48px), 900px"
+            style={{ objectFit: "cover" }}
+          />
+        </div>
         <iframe
           title="R Complete Auto Care location map"
           src="https://maps.google.com/maps?q=R+Complete+Auto+Care,1305+E+Summit+St,Crown+Point,IN+46307&output=embed"

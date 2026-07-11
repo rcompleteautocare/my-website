@@ -7,6 +7,7 @@ import Nav from "./components/Nav";
 import Footer from "./components/Footer";
 import PhoneConversionListener from "@/components/PhoneConversionListener";
 import { RATING, REVIEW_COUNT } from "@/lib/rating";
+import SiteAnalytics from "@/components/SiteAnalytics";
 
 export const metadata: Metadata = {
   metadataBase: new URL("https://www.rcompleteautocare.com"),
@@ -22,7 +23,11 @@ const SCHEMA = {
   url: "https://www.rcompleteautocare.com",
   telephone: "(219) 262-2711",
   email: "Owner@rcompleteautocare.com",
-  image: "https://www.rcompleteautocare.com/logo.png",
+  image: [
+    "https://www.rcompleteautocare.com/images/shop/exterior.webp",
+    "https://www.rcompleteautocare.com/images/shop/service-bays.webp",
+    "https://www.rcompleteautocare.com/logo.png",
+  ],
   priceRange: "$$",
   address: {
     "@type": "PostalAddress",
@@ -45,12 +50,6 @@ const SCHEMA = {
       dayOfWeek: "Saturday",
       opens: "08:00",
       closes: "14:00",
-    },
-    {
-      "@type": "OpeningHoursSpecification",
-      dayOfWeek: "Sunday",
-      opens: "00:00",
-      closes: "00:00",
     },
   ],
   aggregateRating: {
@@ -79,6 +78,11 @@ const SCHEMA = {
     { "@type": "City", name: "Schererville", containedIn: { "@type": "State", name: "Indiana" } },
     { "@type": "City", name: "Merrillville", containedIn: { "@type": "State", name: "Indiana" } },
     { "@type": "City", name: "Cedar Lake", containedIn: { "@type": "State", name: "Indiana" } },
+    { "@type": "City", name: "Dyer", containedIn: { "@type": "State", name: "Indiana" } },
+    { "@type": "City", name: "Lowell", containedIn: { "@type": "State", name: "Indiana" } },
+    { "@type": "City", name: "Munster", containedIn: { "@type": "State", name: "Indiana" } },
+    { "@type": "City", name: "Hobart", containedIn: { "@type": "State", name: "Indiana" } },
+    { "@type": "City", name: "Valparaiso", containedIn: { "@type": "State", name: "Indiana" } },
   ],
   hasOfferCatalog: {
     "@type": "OfferCatalog",
@@ -136,6 +140,7 @@ export default function RootLayout({ children }: { children: React.ReactNode }) 
           )}
         <Analytics />
         <SpeedInsights />
+        <SiteAnalytics />
       </body>
     </html>
   );

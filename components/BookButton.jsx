@@ -1,4 +1,6 @@
+'use client'
 import Link from 'next/link'
+import { trackEvent } from '@/lib/analytics'
 
 /**
  * @param {{
@@ -8,9 +10,12 @@ import Link from 'next/link'
  * }} props
  */
 export default function BookButton({ className, style, children }) {
+  const trackBookingClick = () => {
+    trackEvent('book_appointment_click', { placement: 'site_cta' })
+  }
   return (
-    <Link href="/book" className={className} style={style}>
-      {children || 'Book Appointment'}
+    <Link href="/book" className={className} style={style} onClick={trackBookingClick}>
+      {children || 'Book Your Appointment'}
     </Link>
   )
 }
