@@ -174,8 +174,8 @@ export default function Contact() {
         <h2 style={{ fontSize: "24px", fontWeight: "bold", marginBottom: "16px" }}>Find Us</h2>
         <div style={{ position: "relative", width: "100%", aspectRatio: "4 / 3", overflow: "hidden", borderRadius: "14px", boxShadow: "0 18px 48px rgba(25, 25, 25, 0.13)", marginBottom: "24px", background: "#ededeb" }}>
           <Image
-            src="/images/shop/location.webp"
-            alt="R Complete Auto Care location in Crown Point, Indiana"
+            src="/images/shop/r-complete-auto-care-roadside-sign-crown-point-indiana.webp"
+            alt="R Complete Auto Care roadside sign in Crown Point, Indiana"
             fill
             sizes="(max-width: 948px) calc(100vw - 48px), 900px"
             style={{ objectFit: "cover" }}

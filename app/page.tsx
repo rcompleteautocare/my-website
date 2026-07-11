@@ -143,8 +143,8 @@ export default function Home() {
       <section className={`${styles.photoFeature} ${styles.photoFeatureFirst}`} aria-labelledby="visit-shop-heading">
         <div className={styles.photoFrame}>
           <Image
-            src="/images/shop/exterior.webp"
-            alt="R Complete Auto Care auto repair shop exterior in Crown Point, Indiana"
+            src="/images/shop/r-complete-auto-care-building-exterior.webp"
+            alt="Exterior of R Complete Auto Care auto repair shop in Crown Point, Indiana"
             fill
             sizes="(max-width: 800px) 100vw, 55vw"
             className={styles.featureImage}
@@ -184,8 +184,8 @@ export default function Home() {
       <section className={styles.photoFeature} aria-labelledby="diagnostics-heading">
         <div className={styles.photoFrame}>
           <Image
-            src="/images/shop/service-bays.webp"
-            alt="Professional service bays at R Complete Auto Care"
+            src="/images/shop/r-complete-auto-care-service-bays.webp"
+            alt="Service bays with vehicle lifts at R Complete Auto Care in Crown Point, IN"
             fill
             sizes="(max-width: 800px) 100vw, 55vw"
             className={styles.featureImage}
@@ -287,8 +287,8 @@ export default function Home() {
       <section className={`${styles.photoFeature} ${styles.photoFeatureReverse}`} aria-labelledby="customer-experience-heading">
         <div className={styles.photoFrame}>
           <Image
-            src="/images/shop/reception.webp"
-            alt="Reception area at R Complete Auto Care"
+            src="/images/shop/r-complete-auto-care-office-overview.webp"
+            alt="Reception and front-office area at R Complete Auto Care"
             fill
             sizes="(max-width: 800px) 100vw, 55vw"
             className={styles.featureImage}
@@ -304,8 +304,8 @@ export default function Home() {
       <section className={`${styles.photoFeature} ${styles.photoFeatureCompact}`} aria-labelledby="waiting-area-heading">
         <div className={styles.photoFrame}>
           <Image
-            src="/images/shop/waiting-room.webp"
-            alt="Customer waiting area at R Complete Auto Care"
+            src="/images/shop/r-complete-auto-care-waiting-room.webp"
+            alt="Customer waiting room at R Complete Auto Care"
             fill
             sizes="(max-width: 800px) 100vw, 48vw"
             className={styles.featureImage}
@@ -358,8 +358,8 @@ export default function Home() {
           </div>
           <div className={styles.storyImageFrame}>
             <Image
-              src="/images/shop/building-logo.webp"
-              alt="R Complete Auto Care building logo"
+              src="/images/shop/r-complete-auto-care-building-logo.webp"
+              alt="R Complete Auto Care logo on the shop building"
               fill
               sizes="(max-width: 800px) 100vw, 50vw"
               className={styles.featureImage}

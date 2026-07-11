@@ -57,8 +57,8 @@ export default function HondaRepairHub() {
         </section>
 
         <div className={styles.photoBand}>
-          <figure><Image src="/images/shop/service-bays.webp" alt="Service bays at R Complete Auto Care" fill sizes="(max-width:760px) 100vw, 50vw" /></figure>
-          <figure><Image src="/images/shop/reception.webp" alt="Reception area at R Complete Auto Care" fill sizes="(max-width:760px) 100vw, 50vw" /></figure>
+          <figure><Image src="/images/shop/r-complete-auto-care-service-bays.webp" alt="Service bays at R Complete Auto Care" fill sizes="(max-width:760px) 100vw, 50vw" /></figure>
+          <figure><Image src="/images/shop/r-complete-auto-care-office-overview.webp" alt="Reception area at R Complete Auto Care" fill sizes="(max-width:760px) 100vw, 50vw" /></figure>
         </div>
 
         <section className={styles.textSection}>

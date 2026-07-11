@@ -21,6 +21,7 @@ export const metadata = {
   robots: { index: true, follow: true },
 }
 
+import Image from "next/image";
 import RelatedServices from "@/app/components/RelatedServices";
 import LastUpdated from "@/app/components/LastUpdated";
 export default function SuspensionSteering() {
@@ -112,6 +113,20 @@ export default function SuspensionSteering() {
             </div>
           ))}
         </div>
+        <figure style={{ margin: "36px 0 0", textAlign: "center" }}>
+          <Image
+            src="/images/shop/hunter-wheel-alignment-machine.webp"
+            alt="Hunter wheel alignment machine used for four-wheel alignments at R Complete Auto Care"
+            width={382}
+            height={510}
+            loading="lazy"
+            sizes="(max-width: 420px) 90vw, 340px"
+            style={{ width: "100%", maxWidth: "340px", height: "auto", borderRadius: "10px", boxShadow: "0 12px 32px rgba(25, 25, 25, 0.13)" }}
+          />
+          <figcaption style={{ marginTop: "12px", fontSize: "14px", color: "#666" }}>
+            Our Hunter alignment system lets us dial in precise four-wheel alignments after suspension and steering work.
+          </figcaption>
+        </figure>
       </section>
 
       {/* Process */}
@@ -240,7 +255,7 @@ export default function SuspensionSteering() {
     { "@type": "ListItem", "position": 3, "name": "Suspension & Steering Repair" }
   ]
 }).replace(/</g, "\u003c") }} />
-    <script type="application/ld+json" dangerouslySetInnerHTML={{ __html: "{\"@context\":\"https://schema.org\",\"@type\":\"Service\",\"@id\":\"https://www.rcompleteautocare.com/services/suspension-steering#service\",\"name\":\"Suspension & Steering Repair\",\"serviceType\":\"Suspension and Steering Repair\",\"url\":\"https://www.rcompleteautocare.com/services/suspension-steering\",\"provider\":{\"@id\":\"https://www.rcompleteautocare.com/#business\"},\"areaServed\":[{\"@type\":\"City\",\"name\":\"Crown Point\",\"containedIn\":{\"@type\":\"State\",\"name\":\"Indiana\"}},{\"@type\":\"City\",\"name\":\"St. John\",\"containedIn\":{\"@type\":\"State\",\"name\":\"Indiana\"}},{\"@type\":\"City\",\"name\":\"Schererville\",\"containedIn\":{\"@type\":\"State\",\"name\":\"Indiana\"}},{\"@type\":\"City\",\"name\":\"Merrillville\",\"containedIn\":{\"@type\":\"State\",\"name\":\"Indiana\"}},{\"@type\":\"City\",\"name\":\"Cedar Lake\",\"containedIn\":{\"@type\":\"State\",\"name\":\"Indiana\"}}],\"dateModified\":\"2026-04-18\"}".replace(/</g, "\u003c") }} />
+    <script type="application/ld+json" dangerouslySetInnerHTML={{ __html: "{\"@context\":\"https://schema.org\",\"@type\":\"Service\",\"@id\":\"https://www.rcompleteautocare.com/services/suspension-steering#service\",\"name\":\"Suspension & Steering Repair\",\"image\":\"https://www.rcompleteautocare.com/images/shop/hunter-wheel-alignment-machine.webp\",\"serviceType\":\"Suspension and Steering Repair\",\"url\":\"https://www.rcompleteautocare.com/services/suspension-steering\",\"provider\":{\"@id\":\"https://www.rcompleteautocare.com/#business\"},\"areaServed\":[{\"@type\":\"City\",\"name\":\"Crown Point\",\"containedIn\":{\"@type\":\"State\",\"name\":\"Indiana\"}},{\"@type\":\"City\",\"name\":\"St. John\",\"containedIn\":{\"@type\":\"State\",\"name\":\"Indiana\"}},{\"@type\":\"City\",\"name\":\"Schererville\",\"containedIn\":{\"@type\":\"State\",\"name\":\"Indiana\"}},{\"@type\":\"City\",\"name\":\"Merrillville\",\"containedIn\":{\"@type\":\"State\",\"name\":\"Indiana\"}},{\"@type\":\"City\",\"name\":\"Cedar Lake\",\"containedIn\":{\"@type\":\"State\",\"name\":\"Indiana\"}}],\"dateModified\":\"2026-04-18\"}".replace(/</g, "\u003c") }} />
     <script type="application/ld+json" dangerouslySetInnerHTML={{ __html: "{\"@context\":\"https://schema.org\",\"@type\":\"WebPage\",\"@id\":\"https://www.rcompleteautocare.com/services/suspension-steering#webpage\",\"url\":\"https://www.rcompleteautocare.com/services/suspension-steering\",\"name\":\"Suspension & Steering Repair in Crown Point, IN\",\"dateModified\":\"2026-04-18\",\"about\":{\"@id\":\"https://www.rcompleteautocare.com/#business\"}}".replace(/</g, "\u003c") }} />
   </div>
   );

@@ -26,8 +26,8 @@ const SCHEMA = {
   telephone: "(219) 262-2711",
   email: "Owner@rcompleteautocare.com",
   image: [
-    "https://www.rcompleteautocare.com/images/shop/exterior.webp",
-    "https://www.rcompleteautocare.com/images/shop/service-bays.webp",
+    "https://www.rcompleteautocare.com/images/shop/r-complete-auto-care-building-exterior.webp",
+    "https://www.rcompleteautocare.com/images/shop/r-complete-auto-care-service-bays.webp",
     "https://www.rcompleteautocare.com/logo.png",
   ],
   priceRange: "$$",
