@@ -1,5 +1,5 @@
 'use client'
-import { useRouter } from 'next/navigation'
+import Link from 'next/link'
 import { trackEvent } from '@/lib/analytics'
 
 /**
@@ -10,14 +10,12 @@ import { trackEvent } from '@/lib/analytics'
  * }} props
  */
 export default function BookButton({ className, style, children }) {
-  const router = useRouter()
-  const open = () => {
+  const trackBookingClick = () => {
     trackEvent('book_appointment_click', { placement: 'site_cta' })
-    router.push('/book')
   }
   return (
-    <button type="button" className={className} style={style} onClick={open}>
+    <Link href="/book" className={className} style={style} onClick={trackBookingClick}>
       {children || 'Book Your Appointment'}
-    </button>
+    </Link>
   )
 }
