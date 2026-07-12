@@ -1,0 +1,3 @@
+import type { IntegrationAdapter } from "./contracts"; import { TekmetricAdapter } from "./tekmetric/adapter"; import { RingCentralAdapter } from "./ringcentral/adapter"; import { GmailAdapter } from "./gmail/adapter"; import { GoogleCalendarAdapter } from "./google-calendar/adapter"; import { QuickBooksAdapter } from "./quickbooks/adapter";
+export function createAdapters():IntegrationAdapter[]{return[new TekmetricAdapter(),new RingCentralAdapter(),new GmailAdapter(),new GoogleCalendarAdapter(),new QuickBooksAdapter()];}
+export * from "./contracts"; export { customerContextByPhone } from "./repository";

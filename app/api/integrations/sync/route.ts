@@ -1,0 +1,4 @@
+import { timingSafeEqual } from "node:crypto"; import { createAdapters } from "@/services/integrations"; import { syncAll } from "@/services/integrations/sync";
+export const runtime="nodejs"; export const maxDuration=300;
+function authorized(request:Request){const secret=process.env.INTEGRATION_SYNC_SECRET;if(!secret)return false;const supplied=request.headers.get("authorization")?.replace(/^Bearer\s+/i,"")??"";const a=Buffer.from(secret),b=Buffer.from(supplied);return a.length===b.length&&timingSafeEqual(a,b);}
+export async function POST(request:Request){if(!authorized(request))return Response.json({error:"Unauthorized"},{status:401});const results=await syncAll(createAdapters());const succeeded=results.filter(x=>x.ok).length;return Response.json({ok:succeeded>0,status:succeeded===results.length?"healthy":succeeded?"partial":"unavailable",results},{status:succeeded?200:503});}

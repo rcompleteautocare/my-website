@@ -1,5 +1,6 @@
 import Link from "next/link";
 import LastUpdated from "@/app/components/LastUpdated";
+import ServiceFaqHub from "@/app/components/ServiceFaqHub";
 
 export const metadata = {
   title: "Auto Diagnostics Crown Point IN | R Complete Auto Care",
@@ -136,7 +137,8 @@ export default function Diagnostics() {
         </a>
       </section>
 
-    <script
+      <ServiceFaqHub slug="diagnostics" />
+      <script
   type="application/ld+json"
   dangerouslySetInnerHTML={{ __html: JSON.stringify({
     "@context": "https://schema.org",

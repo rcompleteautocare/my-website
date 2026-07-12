@@ -22,6 +22,7 @@ export const metadata = {
 }
 
 import RelatedServices from "@/app/components/RelatedServices";
+import ServiceFaqHub from "@/app/components/ServiceFaqHub";
 import LastUpdated from "@/app/components/LastUpdated";
 export default function NoStartDiagnostics() {
   return (
@@ -155,6 +156,7 @@ export default function NoStartDiagnostics() {
       </section>
 
       <RelatedServices slug="no-start-diagnostics" />
+      <ServiceFaqHub slug="no-start-diagnostics" />
 
       {/* Final CTA */}
       <section style={{ background: "#e63946", color: "#fff", textAlign: "center", padding: "60px 24px" }}>

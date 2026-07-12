@@ -1,6 +1,7 @@
-import { NextRequest, NextResponse } from 'next/server';
+import { NextResponse } from 'next/server';
+import { auth } from '@/auth';
 
-export function proxy(req: NextRequest) {
+export const proxy = auth((req) => {
   const path = req.nextUrl.pathname;
 
   // Junk paths that no legitimate route ever produces: a bracket-wrapped URL,
@@ -23,8 +24,14 @@ export function proxy(req: NextRequest) {
     return new NextResponse(null, { status: 410 });
   }
 
+  if (path.startsWith('/command-center') && !req.auth) {
+    const loginUrl = new URL('/login', req.url);
+    loginUrl.searchParams.set('callbackUrl', req.nextUrl.pathname);
+    return NextResponse.redirect(loginUrl);
+  }
+
   return NextResponse.next();
-}
+});
 
 export const config = {
   // Skip Next internals, API routes, the well-known metadata files, and any
