@@ -1,0 +1,2 @@
+import { auth } from "@/auth"; import { getPrisma } from "@/lib/prisma";
+export async function GET(){if(!await auth())return Response.json({error:"Unauthorized"},{status:401});const connections=await getPrisma().integrationConnection.findMany({select:{provider:true,enabled:true,healthy:true,lastSuccessAt:true,lastFailureAt:true,lastError:true,updatedAt:true},orderBy:{provider:"asc"}});return Response.json({connections});}

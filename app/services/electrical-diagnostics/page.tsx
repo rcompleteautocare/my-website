@@ -1,5 +1,6 @@
 import RelatedServices from "@/app/components/RelatedServices";
 import LastUpdated from "@/app/components/LastUpdated";
+import ServiceFaqHub from "@/app/components/ServiceFaqHub";
 
 export const metadata = {
   title: 'Electrical Diagnostics Crown Point | R Complete Auto Care',
@@ -117,6 +118,7 @@ export default function ElectricalDiagnostics() {
       </section>
 
       <RelatedServices slug="electrical-diagnostics" />
+      <ServiceFaqHub slug="electrical-diagnostics" />
 
       <section style={{ background: "#e63946", color: "#fff", textAlign: "center", padding: "60px 24px" }}>
         <h2 style={{ fontSize: "28px", marginBottom: "12px" }}>Electrical Problem in Crown Point? Call Us Today.</h2>

@@ -1,0 +1,2 @@
+import { auth } from "@/auth"; import { customerContextByPhone } from "@/services/integrations";
+export async function GET(request:Request){if(!await auth())return Response.json({error:"Unauthorized"},{status:401});const phone=new URL(request.url).searchParams.get("phone");if(!phone)return Response.json({error:"phone is required"},{status:400});const context=await customerContextByPhone(phone);return context?Response.json(context):Response.json({match:null},{status:404});}

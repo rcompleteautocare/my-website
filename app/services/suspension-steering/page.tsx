@@ -22,6 +22,7 @@ export const metadata = {
 }
 
 import RelatedServices from "@/app/components/RelatedServices";
+import ServiceFaqHub from "@/app/components/ServiceFaqHub";
 import LastUpdated from "@/app/components/LastUpdated";
 export default function SuspensionSteering() {
   return (
@@ -168,6 +169,7 @@ export default function SuspensionSteering() {
       </section>
 
       <RelatedServices slug="suspension-steering" />
+      <ServiceFaqHub slug="suspension-steering" />
 
       {/* Final CTA */}
       <section style={{ background: "#e63946", color: "#fff", textAlign: "center", padding: "60px 24px" }}>

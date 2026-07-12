@@ -1,0 +1,23 @@
+import type { Metadata } from "next";
+import Link from "next/link";
+import { notFound } from "next/navigation";
+import { warrantyProviders, type WarrantySlug } from "@/lib/warranty-providers";
+
+export function generateStaticParams() { return Object.keys(warrantyProviders).map(provider => ({ provider })); }
+export async function generateMetadata({ params }: { params: Promise<{ provider: string }> }): Promise<Metadata> {
+  const { provider } = await params; const p = warrantyProviders[provider as WarrantySlug]; if (!p) return {};
+  return { title: `${p.name} Warranty Repair Guide | Crown Point, IN`, description: `Independent educational guide to ${p.name} vehicle service contract diagnosis, claim authorization, estimates, and customer responsibilities in Crown Point.`, alternates: { canonical: `/warranty-resources/${provider}` } };
+}
+
+export default async function ProviderGuide({ params }: { params: Promise<{ provider: string }> }) {
+  const { provider } = await params; const p = warrantyProviders[provider as WarrantySlug]; if (!p) notFound();
+  const url = `https://www.rcompleteautocare.com/warranty-resources/${provider}`;
+  const faq = [
+    { q: `Does ${p.name} automatically cover my repair?`, a: `No. Coverage depends on your individual contract, exclusions, limits, maintenance history, cause of failure, and ${p.name}’s authorization.` },
+    { q: `Can R Complete Auto Care diagnose a possible ${p.name} claim?`, a: "Yes. We can diagnose the concern, document the failed component and cause, prepare an estimate, and communicate requested findings. Diagnosis does not guarantee coverage." },
+    { q: "Can repairs begin before authorization?", a: "Customers should not assume a repair is covered before the contract administrator authorizes it. We also require customer approval before beginning work." },
+    { q: "What might I have to pay?", a: "Depending on the contract and authorization, customer costs may include diagnosis, a deductible, maintenance items, fluids, taxes, excluded parts, betterment, or differences between the estimate and authorized amount." },
+  ];
+  const graph = { "@context": "https://schema.org", "@graph": [{ "@type": "BreadcrumbList", itemListElement: [{ "@type": "ListItem", position: 1, name: "Home", item: "https://www.rcompleteautocare.com" }, { "@type": "ListItem", position: 2, name: "Warranty Resources", item: "https://www.rcompleteautocare.com/warranty-resources" }, { "@type": "ListItem", position: 3, name: p.name, item: url }] }, { "@type": "Article", headline: `${p.name} Warranty Repair Guide`, mainEntityOfPage: url, author: { "@type": "Organization", "@id": "https://www.rcompleteautocare.com/#business" }, about: { "@type": "Thing", name: "Vehicle service contract claims" } }, { "@type": "FAQPage", mainEntity: faq.map(x => ({ "@type": "Question", name: x.q, acceptedAnswer: { "@type": "Answer", text: x.a } })) }] };
+  return <article style={{ maxWidth: 860, padding: "72px 24px", margin: "0 auto", color: "#222" }}><p style={{ color: "#c92f3b", fontWeight: 800 }}>EXTENDED WARRANTY RESOURCE CENTER</p><h1 style={{ fontSize: "clamp(38px, 6vw, 56px)", lineHeight: 1.08 }}>{p.name} Warranty Repair Guide</h1><p style={{ fontSize: 19, lineHeight: 1.75 }}>This independent guide explains the typical repair-claim workflow for customers with a {p.name} vehicle service contract. Contract terms vary, so verify every requirement in your own agreement or with the administrator.</p><h2>How a {p.name} repair claim typically works</h2><p style={{ lineHeight: 1.8 }}>First, the shop verifies the symptom and diagnoses the cause of failure. We prepare an estimate and provide the documentation the administrator requests. The administrator reviews the contract and findings, may request records or an inspection, and decides whether to authorize all, part, or none of the repair. We then explain the authorization and any remaining customer responsibility. Work begins only after you approve it.</p><h2>What to bring</h2><p style={{ lineHeight: 1.8 }}>Bring your contract or contract number, administrator contact information, maintenance records, current mileage, and any prior claim details. Do not rely only on a sales brochure; the signed contract controls.</p><h2>Frequently asked questions</h2>{faq.map(x => <section key={x.q}><h3>{x.q}</h3><p style={{ lineHeight: 1.75 }}>{x.a}</p></section>)}<p style={{ marginTop: 38 }}><Link href="/services/extended-warranty-repair">Explore our warranty repair process</Link> · <Link href="/contact">Contact the shop</Link> · <a href={p.site} rel="nofollow external">Visit {p.name}’s official site</a></p><script type="application/ld+json" dangerouslySetInnerHTML={{ __html: JSON.stringify(graph).replace(/</g, "\\u003c") }} /></article>;
+}

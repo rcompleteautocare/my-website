@@ -1,0 +1,388 @@
+generator client {
+  provider = "prisma-client-js"
+}
+
+datasource db {
+  provider = "postgresql"
+  url      = env("DATABASE_URL")
+}
+
+enum Role {
+  OWNER
+  ADVISOR
+  TECHNICIAN
+  SALES
+  OFFICE
+}
+enum RepairOrderStatus {
+  DRAFT
+  WAITING_APPROVAL
+  WAITING_PARTS
+  IN_REPAIR
+  READY_FOR_PICKUP
+  COMPLETED
+  CANCELLED
+}
+enum AppointmentStatus {
+  SCHEDULED
+  CONFIRMED
+  CHECKED_IN
+  COMPLETED
+  CANCELLED
+  NO_SHOW
+}
+enum CallStatus {
+  ANSWERED
+  MISSED
+  VOICEMAIL
+}
+enum NotificationType {
+  INFO
+  SUCCESS
+  WARNING
+  ERROR
+}
+enum IntegrationProvider {
+  TEKMETRIC
+  RINGCENTRAL
+  GMAIL
+  GOOGLE_CALENDAR
+  QUICKBOOKS
+}
+enum SyncStatus {
+  RUNNING
+  SUCCEEDED
+  FAILED
+  PARTIAL
+}
+enum RecordSource {
+  TEKMETRIC
+  RINGCENTRAL
+  GMAIL
+  GOOGLE_CALENDAR
+  QUICKBOOKS
+  LOCAL
+}
+
+model User {
+  id String @id @default(cuid())
+  name String
+  email String @unique
+  passwordHash String?
+  role Role @default(OFFICE)
+  image String?
+  active Boolean @default(true)
+  createdAt DateTime @default(now())
+  updatedAt DateTime @updatedAt
+  assignedOrders RepairOrder[] @relation("AdvisorOrders")
+  notifications Notification[]
+  messagesSent Message[] @relation("MessageSender")
+}
+
+model Customer {
+  id String @id @default(cuid())
+  firstName String
+  lastName String
+  email String? @unique
+  phone String
+  address String?
+  city String?
+  state String? @default("IN")
+  zip String?
+  notes String?
+  normalizedPhone String?
+  lifetimeSpend Decimal @default(0) @db.Decimal(14,2)
+  createdAt DateTime @default(now())
+  updatedAt DateTime @updatedAt
+  vehicles Vehicle[]
+  repairOrders RepairOrder[]
+  appointments Appointment[]
+  sales Sale[]
+  calls Call[]
+  messages Message[]
+  estimates Estimate[]
+  emails Email[]
+  customerNotes CustomerNote[]
+  usedCarPurchases UsedCarPurchase[]
+  externalLinks ExternalRecordLink[]
+  @@index([lastName, firstName])
+  @@index([phone])
+  @@index([normalizedPhone])
+}
+
+model Vehicle {
+  id String @id @default(cuid())
+  customerId String
+  customer Customer @relation(fields: [customerId], references: [id], onDelete: Cascade)
+  vin String @unique
+  year Int
+  make String
+  model String
+  trim String?
+  color String?
+  mileage Int?
+  licensePlate String?
+  createdAt DateTime @default(now())
+  updatedAt DateTime @updatedAt
+  repairOrders RepairOrder[]
+  appointments Appointment[]
+  usedCarPurchases UsedCarPurchase[]
+  @@index([customerId])
+  @@index([make, model])
+}
+
+model RepairOrder {
+  id String @id @default(cuid())
+  number String @unique
+  customerId String
+  customer Customer @relation(fields: [customerId], references: [id])
+  vehicleId String
+  vehicle Vehicle @relation(fields: [vehicleId], references: [id])
+  advisorId String?
+  advisor User? @relation("AdvisorOrders", fields: [advisorId], references: [id])
+  status RepairOrderStatus @default(DRAFT)
+  concern String
+  laborTotal Decimal @default(0) @db.Decimal(12,2)
+  partsTotal Decimal @default(0) @db.Decimal(12,2)
+  taxTotal Decimal @default(0) @db.Decimal(12,2)
+  total Decimal @default(0) @db.Decimal(12,2)
+  grossProfit Decimal @default(0) @db.Decimal(12,2)
+  promisedAt DateTime?
+  completedAt DateTime?
+  createdAt DateTime @default(now())
+  updatedAt DateTime @updatedAt
+  sales Sale[]
+  estimates Estimate[]
+  externalLinks ExternalRecordLink[]
+  @@index([status])
+  @@index([customerId])
+  @@index([vehicleId])
+}
+
+model Appointment {
+  id String @id @default(cuid())
+  customerId String
+  customer Customer @relation(fields: [customerId], references: [id])
+  vehicleId String?
+  vehicle Vehicle? @relation(fields: [vehicleId], references: [id])
+  status AppointmentStatus @default(SCHEDULED)
+  service String
+  startsAt DateTime
+  durationMinutes Int @default(60)
+  notes String?
+  createdAt DateTime @default(now())
+  updatedAt DateTime @updatedAt
+  source RecordSource @default(TEKMETRIC)
+  externalId String?
+  @@index([startsAt])
+  @@unique([source, externalId])
+}
+
+model UsedCar {
+  id String @id @default(cuid())
+  stockNumber String @unique
+  vin String @unique
+  year Int
+  make String
+  model String
+  trim String?
+  mileage Int
+  color String?
+  purchasePrice Decimal @db.Decimal(12,2)
+  reconCost Decimal @default(0) @db.Decimal(12,2)
+  askingPrice Decimal @db.Decimal(12,2)
+  soldPrice Decimal? @db.Decimal(12,2)
+  acquiredAt DateTime
+  soldAt DateTime?
+  createdAt DateTime @default(now())
+  updatedAt DateTime @updatedAt
+  @@index([soldAt])
+}
+
+model Sale {
+  id String @id @default(cuid())
+  customerId String?
+  customer Customer? @relation(fields: [customerId], references: [id])
+  repairOrderId String?
+  repairOrder RepairOrder? @relation(fields: [repairOrderId], references: [id])
+  amount Decimal @db.Decimal(12,2)
+  grossProfit Decimal @db.Decimal(12,2)
+  laborAmount Decimal @default(0) @db.Decimal(12,2)
+  partsAmount Decimal @default(0) @db.Decimal(12,2)
+  soldAt DateTime @default(now())
+  @@index([soldAt])
+}
+
+model Call {
+  id String @id @default(cuid())
+  customerId String?
+  customer Customer? @relation(fields: [customerId], references: [id])
+  phone String
+  direction String @default("INBOUND")
+  status CallStatus
+  durationSeconds Int @default(0)
+  notes String?
+  occurredAt DateTime @default(now())
+  source RecordSource @default(RINGCENTRAL)
+  externalId String?
+  voicemailId String?
+  recordingId String?
+  @@index([occurredAt])
+  @@index([status])
+  @@unique([source, externalId])
+}
+
+model Message {
+  id String @id @default(cuid())
+  customerId String?
+  customer Customer? @relation(fields: [customerId], references: [id])
+  senderId String?
+  sender User? @relation("MessageSender", fields: [senderId], references: [id])
+  channel String
+  direction String
+  body String
+  sentAt DateTime @default(now())
+  readAt DateTime?
+  @@index([sentAt])
+}
+
+model Notification {
+  id String @id @default(cuid())
+  userId String
+  user User @relation(fields: [userId], references: [id], onDelete: Cascade)
+  type NotificationType @default(INFO)
+  title String
+  message String
+  href String?
+  readAt DateTime?
+  createdAt DateTime @default(now())
+  @@index([userId, readAt])
+}
+
+model Setting {
+  id String @id @default(cuid())
+  key String @unique
+  value Json
+  createdAt DateTime @default(now())
+  updatedAt DateTime @updatedAt
+}
+
+model Estimate {
+  id String @id @default(cuid())
+  customerId String
+  customer Customer @relation(fields: [customerId], references: [id])
+  repairOrderId String?
+  repairOrder RepairOrder? @relation(fields: [repairOrderId], references: [id])
+  number String
+  status String
+  total Decimal @default(0) @db.Decimal(12,2)
+  approvedTotal Decimal @default(0) @db.Decimal(12,2)
+  source RecordSource @default(TEKMETRIC)
+  externalId String
+  createdAt DateTime @default(now())
+  updatedAt DateTime @updatedAt
+  @@unique([source, externalId])
+  @@index([customerId])
+}
+
+model Email {
+  id String @id @default(cuid())
+  customerId String?
+  customer Customer? @relation(fields: [customerId], references: [id])
+  externalId String
+  threadId String?
+  fromAddress String
+  toAddresses String[]
+  subject String?
+  snippet String?
+  sentAt DateTime
+  source RecordSource @default(GMAIL)
+  metadata Json?
+  createdAt DateTime @default(now())
+  @@unique([source, externalId])
+  @@index([customerId, sentAt])
+}
+
+model CustomerNote {
+  id String @id @default(cuid())
+  customerId String
+  customer Customer @relation(fields: [customerId], references: [id], onDelete: Cascade)
+  body String
+  source RecordSource @default(LOCAL)
+  externalId String?
+  createdAt DateTime @default(now())
+  updatedAt DateTime @updatedAt
+  @@unique([source, externalId])
+  @@index([customerId, createdAt])
+}
+
+model UsedCarPurchase {
+  id String @id @default(cuid())
+  customerId String
+  customer Customer @relation(fields: [customerId], references: [id])
+  vehicleId String?
+  vehicle Vehicle? @relation(fields: [vehicleId], references: [id])
+  amount Decimal @db.Decimal(12,2)
+  purchasedAt DateTime
+  stockNumber String?
+  source RecordSource @default(LOCAL)
+  externalId String?
+  @@unique([source, externalId])
+  @@index([customerId])
+}
+
+model ExternalRecordLink {
+  id String @id @default(cuid())
+  customerId String?
+  customer Customer? @relation(fields: [customerId], references: [id], onDelete: Cascade)
+  repairOrderId String?
+  repairOrder RepairOrder? @relation(fields: [repairOrderId], references: [id], onDelete: Cascade)
+  provider IntegrationProvider
+  entityType String
+  externalId String
+  externalUpdatedAt DateTime?
+  payloadHash String?
+  syncedAt DateTime @default(now())
+  @@unique([provider, entityType, externalId])
+  @@index([customerId])
+}
+
+model IntegrationConnection {
+  id String @id @default(cuid())
+  provider IntegrationProvider @unique
+  enabled Boolean @default(false)
+  healthy Boolean @default(false)
+  lastSuccessAt DateTime?
+  lastFailureAt DateTime?
+  lastError String?
+  metadata Json?
+  createdAt DateTime @default(now())
+  updatedAt DateTime @updatedAt
+  syncRuns SyncRun[]
+  cursors SyncCursor[]
+}
+
+model SyncCursor {
+  id String @id @default(cuid())
+  connectionId String
+  connection IntegrationConnection @relation(fields: [connectionId], references: [id], onDelete: Cascade)
+  resource String
+  cursor String?
+  highWaterMark DateTime?
+  updatedAt DateTime @updatedAt
+  @@unique([connectionId, resource])
+}
+
+model SyncRun {
+  id String @id @default(cuid())
+  connectionId String
+  connection IntegrationConnection @relation(fields: [connectionId], references: [id], onDelete: Cascade)
+  status SyncStatus @default(RUNNING)
+  startedAt DateTime @default(now())
+  finishedAt DateTime?
+  recordsRead Int @default(0)
+  recordsWritten Int @default(0)
+  errorMessage String?
+  checkpoint Json?
+  @@index([connectionId, startedAt])
+}

@@ -1,9 +1,11 @@
 import { MetadataRoute } from "next";
+import { repairGuides } from "@/lib/repair-guides";
+import { warrantyProviders } from "@/lib/warranty-providers";
 
 export default function sitemap(): MetadataRoute.Sitemap {
   const baseUrl = "https://www.rcompleteautocare.com";
 
-  return [
+  const core: MetadataRoute.Sitemap = [
     { url: baseUrl, lastModified: "2026-04-15", changeFrequency: "weekly", priority: 1 },
     { url: `${baseUrl}/about`, lastModified: "2026-04-15", changeFrequency: "monthly", priority: 0.8 },
     { url: `${baseUrl}/contact`, lastModified: "2026-04-10", changeFrequency: "monthly", priority: 0.8 },
@@ -32,4 +34,11 @@ export default function sitemap(): MetadataRoute.Sitemap {
     { url: `${baseUrl}/extended-warranty-auto-repair-crown-point-in`, lastModified: "2026-04-14", changeFrequency: "weekly", priority: 0.8 },
     { url: `${baseUrl}/mechanic-near-me-crown-point`, lastModified: "2026-04-14", changeFrequency: "weekly", priority: 0.8 },
   ];
+  const resources: MetadataRoute.Sitemap = [
+    { url: `${baseUrl}/repair-guides`, lastModified: "2026-07-10", changeFrequency: "monthly", priority: 0.8 },
+    ...Object.keys(repairGuides).map(slug => ({ url: `${baseUrl}/repair-guides/${slug}`, lastModified: "2026-07-10", changeFrequency: "monthly" as const, priority: 0.75 })),
+    { url: `${baseUrl}/warranty-resources`, lastModified: "2026-07-10", changeFrequency: "monthly", priority: 0.8 },
+    ...Object.keys(warrantyProviders).map(slug => ({ url: `${baseUrl}/warranty-resources/${slug}`, lastModified: "2026-07-10", changeFrequency: "monthly" as const, priority: 0.7 })),
+  ];
+  return [...core, ...resources];
 }

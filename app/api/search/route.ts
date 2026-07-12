@@ -1,0 +1,2 @@
+import { auth } from "@/auth";
+export async function GET(request:Request){const session=await auth();if(!session)return Response.json({error:"Unauthorized"},{status:401});const q=new URL(request.url).searchParams.get("q")?.trim();if(!q)return Response.json({results:[]});return Response.json({results:[{type:"Customer",title:"Jordan Bennett",subtitle:"(219) 555-1042"},{type:"Vehicle",title:"2021 Ford F-150",subtitle:"Jordan Bennett"},{type:"Repair Order",title:"RO-2449",subtitle:"In repair"}].filter(x=>(x.title+x.subtitle).toLowerCase().includes(q.toLowerCase()))});}

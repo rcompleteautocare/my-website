@@ -22,6 +22,7 @@ export const metadata = {
 }
 
 import RelatedServices from "@/app/components/RelatedServices";
+import ServiceFaqHub from "@/app/components/ServiceFaqHub";
 import LastUpdated from "@/app/components/LastUpdated";
 export default function OilChangeMaintenance() {
   return (
@@ -179,6 +180,7 @@ export default function OilChangeMaintenance() {
       </section>
 
       <RelatedServices slug="oil-change-maintenance" />
+      <ServiceFaqHub slug="oil-change-maintenance" />
 
       {/* Final CTA */}
       <section style={{ background: "#e63946", color: "#fff", textAlign: "center", padding: "60px 24px" }}>

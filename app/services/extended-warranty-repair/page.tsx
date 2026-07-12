@@ -23,6 +23,7 @@ export const metadata = {
 
 import Link from "next/link";
 import RelatedServices from "@/app/components/RelatedServices";
+import ServiceFaqHub from "@/app/components/ServiceFaqHub";
 import LastUpdated from "@/app/components/LastUpdated";
 export default function ExtendedWarrantyRepair() {
   return (
@@ -207,6 +208,7 @@ export default function ExtendedWarrantyRepair() {
       </section>
 
       <RelatedServices slug="extended-warranty-repair" />
+      <ServiceFaqHub slug="extended-warranty-repair" />
 
       {/* Final CTA */}
       <section style={{ background: "#e63946", color: "#fff", textAlign: "center", padding: "60px 24px" }}>

@@ -1,5 +1,6 @@
 import RelatedServices from "@/app/components/RelatedServices";
 import LastUpdated from "@/app/components/LastUpdated";
+import ServiceFaqHub from "@/app/components/ServiceFaqHub";
 
 export const metadata = {
   title: 'AC & Heat Repair Crown Point, IN | R Complete Auto Care',
@@ -117,6 +118,7 @@ export default function AcHeatingRepair() {
       </section>
 
       <RelatedServices slug="ac-heating-repair" />
+      <ServiceFaqHub slug="ac-heating-repair" />
 
       <section style={{ background: "#e63946", color: "#fff", textAlign: "center", padding: "60px 24px" }}>
         <h2 style={{ fontSize: "28px", marginBottom: "12px" }}>A/C or Heat Not Working in Crown Point? Call Us Today.</h2>
