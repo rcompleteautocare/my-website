@@ -150,8 +150,6 @@ export default function RootLayout({ children }: { children: React.ReactNode }) 
         <Nav />
         <main>{children}</main>
         <Footer />
-        <link rel="stylesheet" href="https://assets.calendly.com/assets/external/widget.css" />
-        <Script src="https://assets.calendly.com/assets/external/widget.js" strategy="afterInteractive" />
         {process.env.NEXT_PUBLIC_ADS_TAG_ID &&
           process.env.NEXT_PUBLIC_ADS_PHONE_CONVERSION_LABEL && (
             <PhoneConversionListener />
