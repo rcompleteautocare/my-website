@@ -1,6 +1,5 @@
 import type { Metadata } from "next";
 import Script from "next/script";
-import { Analytics } from "@vercel/analytics/next";
 import { SpeedInsights } from "@vercel/speed-insights/next";
 import "./globals.css";
 import Nav from "./components/Nav";
@@ -8,6 +7,7 @@ import Footer from "./components/Footer";
 import PhoneConversionListener from "@/components/PhoneConversionListener";
 import { RATING, REVIEW_COUNT } from "@/lib/rating";
 import SiteAnalytics from "@/components/SiteAnalytics";
+import VercelAnalytics from "./components/VercelAnalytics";
 
 const ADS_TAG_ID = process.env.NEXT_PUBLIC_ADS_TAG_ID;
 
@@ -154,7 +154,7 @@ export default function RootLayout({ children }: { children: React.ReactNode }) 
           process.env.NEXT_PUBLIC_ADS_PHONE_CONVERSION_LABEL && (
             <PhoneConversionListener />
           )}
-        <Analytics />
+        <VercelAnalytics />
         <SpeedInsights />
         <SiteAnalytics />
       </body>
