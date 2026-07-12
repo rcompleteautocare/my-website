@@ -1,3 +1,5 @@
+import Image from "next/image";
+
 // Trust / certification badges strip.
 //
 // Asset notes:
@@ -33,11 +35,13 @@ export default function TrustBadges() {
           rel="noopener noreferrer"
           style={{ display: "inline-flex", alignItems: "center" }}
         >
-          <img
+          <Image
             src="/badges/repairpal.png"
             alt="RepairPal Certified Shop"
-            width={260}
-            height={233}
+            width={109}
+            height={56}
+            sizes="109px"
+            loading="lazy"
             style={{ height: BADGE_HEIGHT, width: "auto", display: "block" }}
           />
         </a>
@@ -64,6 +68,8 @@ export default function TrustBadges() {
           rel="nofollow"
           style={{ display: "inline-flex", alignItems: "center" }}
         >
+          {/* host is an external dynamic seal; keep <img> per BBB terms and disable the rule here */}
+          {/* eslint-disable-next-line @next/next/no-img-element */}
           <img
             src="https://seal-fortwayne.bbb.org/seals/blue-seal-96-50-bbb-90173711.png"
             width={96}
