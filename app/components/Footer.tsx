@@ -34,7 +34,7 @@ const SOCIALS: { label: string; href: string; path: string }[] = [
 
 export default function Footer() {
   return (
-    <footer style={{ background: "#111", color: "#aaa", fontSize: "13px" }}>
+    <footer style={{ background: "#111", color: "#b8b8b8", fontSize: "14px" }}>
       <div style={{ maxWidth: "1000px", margin: "0 auto", padding: "48px 24px 24px", display: "grid", gridTemplateColumns: "repeat(auto-fit, minmax(200px, 1fr))", gap: "40px" }}>
         <div>
           <div style={{ color: "#fff", fontWeight: "bold", fontSize: "16px", marginBottom: "12px" }}>R Complete Auto Care</div>

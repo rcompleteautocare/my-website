@@ -9,6 +9,9 @@ body {
   background: var(--background);
   color: var(--foreground);
   font-family: Arial, Helvetica, sans-serif;
+  font-size: 16px;
+  -webkit-text-size-adjust: 100%;
+  text-size-adjust: 100%;
 }
 
 /* Command Center is an isolated product surface inside the public website. */
@@ -257,4 +260,22 @@ ul li strong, ol li strong {
   h1 { font-size: 28px !important; line-height: 1.3 !important; }
   h2 { font-size: 22px !important; }
   section { padding-left: 16px !important; padding-right: 16px !important; }
+
+  /* ── Mobile readability minimums ──
+     Bump the smallest utility text to legible sizes and darken the lightest
+     grays for stronger contrast. These classes render on light backgrounds,
+     so darkening their color is safe. We intentionally do NOT force a color
+     on generic p/li so light-on-dark hero text is never overridden. */
+  .location-badge { font-size: 14px !important; }
+  .hero-description { font-size: 17px !important; line-height: 1.75 !important; color: #333 !important; }
+  .address-line, .serving-line { font-size: 15px !important; color: #4a4a4a !important; }
+  .feature-item strong { font-size: 16px !important; }
+  .feature-item p { font-size: 15px !important; color: #4a4a4a !important; }
+  .faq-question { font-size: 16px !important; }
+  .faq-answer { font-size: 16px !important; line-height: 1.8 !important; color: #444 !important; }
+  .related-links li a { font-size: 16px !important; }
+
+  /* Footer base text runs at 13px; lift it and brighten links for contrast. */
+  footer { font-size: 15px !important; }
+  footer a { color: #cfcfcf !important; }
 }

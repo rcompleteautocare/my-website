@@ -34,7 +34,7 @@ export default function CalendlyEmbed() {
 
   // Preload the Calendly CSS + JS on mount, then render the inline widget.
   useEffect(() => {
-    const url = `${CALENDLY_URL}?hide_gdpr_banner=1&background_color=ffffff&text_color=171717&primary_color=c1121f`
+    const url = `${CALENDLY_URL}?hide_gdpr_banner=1&background_color=ffffff&text_color=111111&primary_color=c1121f`
     const parent = mountRef.current
 
     if (!document.querySelector('link[data-calendly]')) {
@@ -73,7 +73,27 @@ export default function CalendlyEmbed() {
 
   return (
     <div>
-      <div id="calendly-mount" ref={mountRef} style={{ minWidth: 280, height: 760 }} />
+      <div id="calendly-mount" ref={mountRef} className="calendly-mount" />
+      <p className="calendly-fallback">
+        Having trouble with the calendar? Book by phone:{' '}
+        <a href="tel:2192622711">(219) 262-2711</a>
+      </p>
+      <style>{`
+        .calendly-mount { width: 100%; min-width: 280px; height: 760px; }
+        .calendly-fallback {
+          margin: 16px 0 0;
+          text-align: center;
+          font-size: 16px;
+          line-height: 1.6;
+          color: #333;
+        }
+        .calendly-fallback a { color: #c1121f; font-weight: 700; text-decoration: none; }
+        .calendly-fallback a:hover { text-decoration: underline; }
+        @media (max-width: 768px) {
+          .calendly-mount { height: 900px; }
+          .calendly-fallback { font-size: 17px; }
+        }
+      `}</style>
     </div>
   )
 }
