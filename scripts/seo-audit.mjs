@@ -121,7 +121,7 @@ function scorePage(a) {
 
   console.log('\n════════════════ UNIQUENESS ════════════════');
   if (!dupTitles.length) console.log('✅ All titles unique'); else dupTitles.forEach(([t, ps]) => console.log(`❌ Duplicate title "${t}" on: ${ps.join(', ')}`));
-  if (!dupDescs.length) console.log('✅ All descriptions unique'); else dupDescs.forEach(([d, ps]) => console.log(`❌ Duplicate description on: ${ps.join(', ')}`));
+    if (!dupDescs.length) console.log('✅ All descriptions unique'); else dupDescs.forEach(([desc, ps]) => console.log(`❌ Duplicate description "${desc}" on: ${ps.join(', ')}`));
 
   console.log('\n════════════════ BODY-COPY SIMILARITY (location + problem pages) ════════════════');
   if (!pairs.length) console.log('✅ No page pair over 40% similarity');
