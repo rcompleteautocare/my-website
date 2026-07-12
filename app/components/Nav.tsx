@@ -34,10 +34,16 @@ export default function Nav() {
       </div>
 
       {/* Main header */}
-      <header style={{ background: "#fff", borderBottom: "2px solid #e63946", padding: "12px 20px", display: "flex", justifyContent: "space-between", alignItems: "center", position: "relative", zIndex: 100 }}>
-        <Link href="/" style={{ textDecoration: "none" }}>
-          <Image src="/logo.png" alt="R Complete Auto Care" width={150} height={65} style={{ objectFit: "contain", filter: "brightness(0)" }} />
-        </Link>
+      <header style={{ background: "rgba(255,255,255,.97)", borderBottom: "2px solid #e63946", padding: "10px 20px", display: "flex", justifyContent: "space-between", alignItems: "center", position: "sticky", top: 0, zIndex: 100, boxShadow: "0 5px 20px rgba(0,0,0,.07)", backdropFilter: "blur(12px)" }}>
+        <div style={{ display: "flex", alignItems: "center", gap: "18px" }}>
+          <Link href="/" style={{ textDecoration: "none" }}>
+            <Image src="/logo.png" alt="R Complete Auto Care" width={150} height={65} style={{ objectFit: "contain", filter: "brightness(0)" }} />
+          </Link>
+          <div className="header-hours" style={{ paddingLeft: "18px", borderLeft: "1px solid #ddd", color: "#555", fontSize: "12px", lineHeight: 1.5 }}>
+            <strong style={{ display: "block", color: "#1a1a1a" }}>Open Mon–Fri 8–6</strong>
+            Saturday 8–2 · Sunday closed
+          </div>
+        </div>
 
         {/* Desktop nav */}
         <nav style={{ display: "flex", gap: "24px", alignItems: "center", fontSize: "15px" }} className="desktop-nav">
@@ -72,8 +78,8 @@ export default function Nav() {
           </div>
           <Link href="/about" style={{ textDecoration: "none", color: "#1a1a1a", fontWeight: "500" }}>About</Link>
           <Link href="/contact" style={{ textDecoration: "none", color: "#1a1a1a", fontWeight: "500" }}>Contact</Link>
-          <BookButton style={{ background: "#1a1a1a", color: "#fff", padding: "10px 20px", borderRadius: "6px", border: "none", fontWeight: "bold", fontSize: "14px", cursor: "pointer" }}>Book Your Appointment</BookButton>
-          <a href="tel:2192622711" style={{ background: "#e63946", color: "#fff", padding: "10px 20px", borderRadius: "6px", textDecoration: "none", fontWeight: "bold", fontSize: "14px" }}>(219) 262-2711</a>
+          <a href="tel:2192622711" style={{ color: "#1a1a1a", textDecoration: "none", fontWeight: "bold", fontSize: "14px" }}>(219) 262-2711</a>
+          <BookButton style={{ background: "#e63946", color: "#fff", padding: "12px 20px", borderRadius: "6px", border: "none", fontWeight: "bold", fontSize: "14px", cursor: "pointer" }}>Schedule Service Online</BookButton>
         </nav>
 
         {/* Mobile hamburger */}
@@ -152,6 +158,7 @@ export default function Nav() {
         @media (max-width: 768px) {
           .desktop-nav { display: none !important; }
           .mobile-menu-btn { display: block !important; }
+          .header-hours { display: none !important; }
         }
         @media (min-width: 769px) {
           .mobile-menu { display: none !important; }

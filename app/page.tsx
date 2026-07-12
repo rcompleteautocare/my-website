@@ -119,19 +119,24 @@ export default function Home() {
     <div className={styles.page}>
       <section className={styles.hero}>
         <div className={styles.heroInner}>
-          <p className={styles.eyebrow}>Auto repair in Crown Point, Indiana</p>
+          <p className={styles.eyebrow}>Your local Crown Point shop</p>
           <h1>We find the real problem before replacing parts.</h1>
           <p className={styles.heroCopy}>
             Diagnostic-first auto repair with straight answers, a clear estimate, and no work
             performed until you approve it.
           </p>
           <div className={styles.heroActions}>
-            <a className={styles.primaryButton} href="tel:2192622711">
-              <Phone aria-hidden="true" size={20} /> Call (219) 262-2711
-            </a>
-            <BookButton className={styles.secondaryButton}>
+            <BookButton className={styles.primaryButton}>
               <CalendarDays aria-hidden="true" size={20} /> Schedule Service Online
             </BookButton>
+            <a className={styles.secondaryButton} href="tel:2192622711">
+              <Phone aria-hidden="true" size={20} /> (219) 262-2711
+            </a>
+          </div>
+          <div className={styles.heroProof} aria-label="Why drivers choose R Complete Auto Care">
+            <span><Star aria-hidden="true" size={17} fill="currentColor" /><strong>4.9 Google Rating</strong><small>110+ five-star reviews</small></span>
+            <span><ShieldCheck aria-hidden="true" size={18} /><strong>Extended Warranty</strong><small>Claims accepted</small></span>
+            <span><Timer aria-hidden="true" size={18} /><strong>Same-Day Diagnostics</strong><small>Appointments available</small></span>
           </div>
           <div className={styles.heroDetails}>
             <span>Mon–Fri 8am–6pm · Sat 8am–2pm</span>
