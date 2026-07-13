@@ -1,4 +1,12 @@
-# R Complete Auto Care
+import { RATING } from "@/lib/rating";
+
+// AI-crawler index (/llms.txt). Served as a prerendered static file at build
+// time (`force-static`), so it's byte-for-byte cacheable like a public asset —
+// but the Google rating is interpolated from lib/rating.js, keeping that the
+// single source of truth instead of a hand-maintained literal.
+export const dynamic = "force-static";
+
+const body = `# R Complete Auto Care
 
 > Diagnostic-first auto repair shop in Crown Point, Indiana (Lake County) — complex vehicle diagnostics, extended warranty repairs, and fixing problems other shops misdiagnose. Serving Crown Point, St. John, Schererville, Merrillville, and Cedar Lake.
 
@@ -10,7 +18,7 @@ R Complete Auto Care is a diagnostic-first auto repair shop located in Crown Poi
 - Email: Owner@rcompleteautocare.com
 - Website: https://www.rcompleteautocare.com
 - Hours: Monday–Friday 8:00 AM–6:00 PM, Saturday 8:00 AM–2:00 PM, Sunday Closed
-- Google Rating: 4.9 stars
+- Google Rating: ${RATING} stars
 - Price range: $$
 - Years in business: 25+
 - Certifications: Licensed auto repair facility; extended warranty approved shop
@@ -110,3 +118,10 @@ R Complete Auto Care is a diagnostic-first auto repair shop located in Crown Poi
 - Hours: Mon–Fri 8:00 AM–6:00 PM | Sat 8:00 AM–2:00 PM | Sun Closed
 - Website: https://www.rcompleteautocare.com
 - Contact form: [Request service](https://www.rcompleteautocare.com/contact)
+`;
+
+export function GET() {
+  return new Response(body, {
+    headers: { "Content-Type": "text/plain; charset=utf-8" },
+  });
+}
