@@ -135,7 +135,7 @@ export default function Home() {
             </a>
           </div>
           <div className={styles.heroProof} aria-label="Why drivers choose R Complete Auto Care">
-            <span><Star aria-hidden="true" size={17} fill="currentColor" /><strong>4.9 Google Rating</strong><small>110+ five-star reviews</small></span>
+            <span><Star aria-hidden="true" size={17} fill="currentColor" /><strong>{RATING} Google Rating</strong><small>{REVIEW_COUNT}+ five-star reviews</small></span>
             <span><ShieldCheck aria-hidden="true" size={18} /><strong>Extended Warranty</strong><small>Claims accepted</small></span>
             <span><Timer aria-hidden="true" size={18} /><strong>Same-Day Diagnostics</strong><small>Appointments available</small></span>
           </div>
@@ -245,7 +245,7 @@ export default function Home() {
       </section>
 
       <section className={styles.metricsSection} aria-label="Shop qualifications and service metrics">
-        <article><Star aria-hidden="true" /><strong>110+</strong><span>Five-Star Reviews</span></article>
+        <article><Star aria-hidden="true" /><strong>{REVIEW_COUNT}+</strong><span>Five-Star Reviews</span></article>
         <article><UserRoundCheck aria-hidden="true" /><strong>ASE-Certified</strong><span>Technicians</span></article>
         <article><ScanSearch aria-hidden="true" /><strong>Same-Day</strong><span>Diagnostics Available</span></article>
         <article><ClipboardCheck aria-hidden="true" /><strong>Processed Daily</strong><span>Extended Warranty Claims</span></article>
