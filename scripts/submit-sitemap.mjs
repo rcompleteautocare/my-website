@@ -1,11 +1,8 @@
 import { createServer } from 'node:http';
 import { existsSync, readFileSync, writeFileSync } from 'node:fs';
-import { dirname } from 'node:path';
-import { fileURLToPath } from 'node:url';
 import { execFile } from 'node:child_process';
 import { google } from 'googleapis';
 
-const __dirname = dirname(fileURLToPath(import.meta.url));
 const DEFAULT_TOKEN_PATH = './.searchconsole-token.json';
 const SCOPES = ['https://www.googleapis.com/auth/webmasters'];
 
@@ -129,26 +126,6 @@ function resolveSiteUrl(rawSiteUrl) {
   }
 
   return normalizeUrl(trimmed, trimmed);
-}
-
-function printUsage() {
-  console.log('Usage: node scripts/submit-sitemap.mjs --siteUrl <siteUrl> --sitemapPath <sitemapPath> --clientSecretPath <path> [--tokenPath <path>]');
-  console.log('Environment variables may also be used: SITE_URL, SITEMAP_PATH, CLIENT_SECRET_PATH, OAUTH2_TOKEN_PATH, GOOGLE_CLIENT_SECRET_JSON.');
-  console.log('Example:');
-  console.log('  node scripts/submit-sitemap.mjs --sitemapUrl="sc-domain:rcompleteautocare.com" --sitemapPath="/sitemap.xml" --clientSecretPath="/path/to/desktop-client.json"');
-}
-
-async function promptForCode(authUrl) {
-  console.log('Authorize this app by visiting the URL below:');
-  console.log(authUrl);
-  const rl = createInterface({ input: process.stdin, output: process.stdout });
-
-  return new Promise((resolve) => {
-    rl.question('Enter the authorization code here: ', (code) => {
-      rl.close();
-      resolve(code.trim());
-    });
-  });
 }
 
 async function openBrowser(url) {
