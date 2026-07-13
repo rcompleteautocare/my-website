@@ -34,6 +34,10 @@ yarn-error.log*
 .env*
 !.env.example
 
+# OAuth2 token cache
+.searchconsole-token.json
+lib/client_secret_*.apps.googleusercontent.com.json
+
 # vercel
 .vercel
 

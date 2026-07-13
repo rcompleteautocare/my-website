@@ -21,7 +21,7 @@ export default function CalendlyEmbed() {
     window.addEventListener('message', receive)
     return () => window.removeEventListener('message', receive)
   }, [router])
-  const url = `${CALENDLY_URL}?hide_gdpr_banner=1&background_color=ffffff&text_color=171717&primary_color=c1121f`
+  const url = `${CALENDLY_URL}?hide_gdpr_banner=1`
   function loadCalendly() {
     if (loaded) return
     const container = document.createElement('div')

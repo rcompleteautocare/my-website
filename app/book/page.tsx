@@ -6,6 +6,25 @@ export const metadata: Metadata = {
   title: 'Auto Repair Appointment Crown Point Indiana | Book Service Online',
   description: 'Book auto repair service online with R Complete Auto Care in Crown Point, Indiana.',
   alternates: { canonical: 'https://www.rcompleteautocare.com/book' },
+  openGraph: {
+    title: 'Auto Repair Appointment Crown Point Indiana | Book Service Online',
+    description: 'Book auto repair service online with R Complete Auto Care in Crown Point, Indiana.',
+    url: 'https://www.rcompleteautocare.com/book',
+    images: [
+      {
+        url: 'https://www.rcompleteautocare.com/og.png',
+        width: 1200,
+        height: 630,
+        alt: 'R Complete Auto Care',
+      },
+    ],
+  },
+  twitter: {
+    card: 'summary_large_image',
+    title: 'Auto Repair Appointment Crown Point Indiana | Book Service Online',
+    description: 'Book auto repair service online with R Complete Auto Care in Crown Point, Indiana.',
+    images: ['https://www.rcompleteautocare.com/og.png'],
+  },
 }
 
 const appointmentTypes = ['Oil Change', 'Diagnostics', 'Brakes', 'Suspension', 'Engine Repair', 'Transmission Repair', 'Electrical Diagnosis', 'A/C Repair', 'Check Engine Light', 'Pre-Purchase Inspection', 'Used Car Inspection']

@@ -1,5 +1,4 @@
 import type { Metadata } from "next";
-import Script from "next/script";
 import { Analytics } from "@vercel/analytics/next";
 import { SpeedInsights } from "@vercel/speed-insights/next";
 import "./globals.css";
@@ -120,23 +119,37 @@ const SPEAKABLE_SCHEMA = {
 };
 
 export default function RootLayout({ children }: { children: React.ReactNode }) {
+  const GA_MEASUREMENT_ID = process.env.NEXT_PUBLIC_GA_MEASUREMENT_ID;
+
   return (
     <html lang="en">
       <body style={{ margin: 0, fontFamily: "sans-serif" }}>
         {ADS_TAG_ID ? (
           <>
-            <Script
-              src={`https://www.googletagmanager.com/gtag/js?id=${ADS_TAG_ID}`}
-              strategy="afterInteractive"
+            {/*
+              Initialize the dataLayer and gtag function BEFORE loading gtag.js
+              so we can set Consent Mode defaults and queue any config calls
+              without introducing a second gtag.js script.
+            */}
+            <script
+              dangerouslySetInnerHTML={{
+                __html: `
+                  window.dataLayer = window.dataLayer || [];
+                  function gtag(){dataLayer.push(arguments);} 
+                  // Consent Mode v2: default denied until user grants consent.
+                  // This can be updated later with: gtag('consent','update', { ad_storage:'granted', analytics_storage:'granted' })
+                  gtag('consent', 'default', { ad_storage: 'denied', analytics_storage: 'denied' });
+                  gtag('js', new Date());
+                  // Google Ads (AW-*) config - always present when ADS_TAG_ID exists
+                  gtag('config', '${ADS_TAG_ID}');
+                  // GA4 (G-*) config - only added when NEXT_PUBLIC_GA_MEASUREMENT_ID is set
+                  ${GA_MEASUREMENT_ID ? `gtag('config', '${GA_MEASUREMENT_ID}');` : "// TODO: set NEXT_PUBLIC_GA_MEASUREMENT_ID to enable GA4 (see app/layout.tsx)"}
+                  // Expose a small helper for cookie-consent UIs to update Consent Mode later
+                  window.updateGtagConsent = function(consent) { try { gtag('consent', 'update', consent); } catch(e){} };
+                `,
+              }}
             />
-            <Script id="google-tag" strategy="afterInteractive">
-              {`
-                window.dataLayer = window.dataLayer || [];
-                function gtag(){dataLayer.push(arguments);}
-                gtag('js', new Date());
-                gtag('config', '${ADS_TAG_ID}');
-              `}
-            </Script>
+            <script async src={`https://www.googletagmanager.com/gtag/js?id=${ADS_TAG_ID}`} />
           </>
         ) : null}
         <script

@@ -42,9 +42,12 @@ function analyze(html) {
   const robots = ($('meta[name="robots"]').attr('content') || '').trim();
   const canonical = ($('link[rel="canonical"]').attr('href') || '').trim();
   const h1Count = $('h1').length;
+  const gtagScript = $('script[src*="googletagmanager.com/gtag/js?id="]').length > 0
+    || $('link[rel="preload"][href*="googletagmanager.com/gtag/js?id="]').length > 0;
+  const gtagConfig = $('script').filter((_, el) => { const text = $(el).html() || ''; return /gtag\(['\"]config['\"]/.test(text); }).length > 0;
   $('script, style, noscript, nav, header, footer, svg').remove();
   const bodyText = $('body').text().replace(/\s+/g, ' ').trim().toLowerCase();
-  return { title, description, robots, canonical, h1Count, bodyText };
+  return { title, description, robots, canonical, h1Count, bodyText, gtagScript, gtagConfig };
 }
 
 function shingles(text, n = 5) {
@@ -73,6 +76,8 @@ function scorePage(a) {
   else if (!a.canonical.startsWith(CANONICAL_HOST)) { issues.push(`Canonical not on www: ${a.canonical}`); score -= 15; }
   if (a.h1Count === 0) { issues.push('No <h1>'); score -= 10; }
   else if (a.h1Count > 1) { issues.push(`${a.h1Count} <h1> tags (should be 1)`); score -= 5; }
+  if (!a.gtagScript) { issues.push('Missing gtag.js script'); score -= 10; }
+  if (!a.gtagConfig) { issues.push('Missing gtag config on page'); score -= 10; }
   return { score: Math.max(0, score), issues };
 }
 
