@@ -1,6 +1,7 @@
 "use client";
 import Image from "next/image";
 import { useState } from "react";
+import NeighborhoodMap from "../components/NeighborhoodMap";
 
 export default function Contact() {
   const [submitted, setSubmitted] = useState(false);
@@ -181,22 +182,9 @@ export default function Contact() {
             style={{ objectFit: "cover" }}
           />
         </div>
-        <iframe
-          title="R Complete Auto Care location map"
-          src="https://maps.google.com/maps?q=R+Complete+Auto+Care,1305+E+Summit+St,Crown+Point,IN+46307&output=embed"
-          width="100%"
-          height="350"
-          style={{ border: 0, borderRadius: "8px" }}
-          allowFullScreen
-          loading="lazy"
-          referrerPolicy="no-referrer-when-downgrade"
-        />
-        <p style={{ marginTop: "12px" }}>
-          <a href="https://www.google.com/maps?cid=13417684656168194405" target="_blank" rel="noopener noreferrer" style={{ color: "#e63946", fontWeight: "bold", textDecoration: "none" }}>
-            View on Google Maps / Get Directions →
-          </a>
-        </p>
       </section>
+
+      <NeighborhoodMap />
 
     </div>
   );

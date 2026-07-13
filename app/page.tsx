@@ -22,6 +22,7 @@ import { RATING, REVIEW_COUNT } from "@/lib/rating";
 import FaqAccordion from "./components/FaqAccordion";
 import FinancingPlaceholder from "./components/FinancingPlaceholder";
 import ReviewsWidget from "./components/ReviewsWidget";
+import StaticShopMap from "./components/StaticShopMap";
 import StickyMobileCta from "./components/StickyMobileCta";
 import TrustBadges from "./components/TrustBadges";
 import styles from "./home.module.css";
@@ -377,6 +378,7 @@ export default function Home() {
             <div key={city}><MapPin aria-hidden="true" size={18} />{city}</div>
           ))}
         </div>
+        <StaticShopMap className={styles.serviceAreaMap} />
       </section>
 
       <FinancingPlaceholder />
