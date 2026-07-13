@@ -38,6 +38,9 @@ yarn-error.log*
 .searchconsole-token.json
 lib/client_secret_*.apps.googleusercontent.com.json
 
+# Lighthouse / audit reports
+lh-report.json
+
 # vercel
 .vercel
 

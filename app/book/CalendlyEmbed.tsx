@@ -34,7 +34,11 @@ export default function CalendlyEmbed() {
 
   // Preload the Calendly CSS + JS on mount, then render the inline widget.
   useEffect(() => {
-    const url = `${CALENDLY_URL}?hide_gdpr_banner=1&background_color=ffffff&text_color=171717&primary_color=c1121f`
+    // Paid-plan color overrides. primary_color drives the available-day bubbles;
+    // keep it bright enough that the white date numbers stay legible (a very dark
+    // red made the numbers unreadable — red on red). background/text stay
+    // high-contrast white + near-black.
+    const url = `${CALENDLY_URL}?hide_gdpr_banner=1&background_color=ffffff&text_color=171717&primary_color=e63946`
     const parent = mountRef.current
 
     if (!document.querySelector('link[data-calendly]')) {

@@ -135,14 +135,16 @@ export default function RootLayout({ children }: { children: React.ReactNode }) 
               dangerouslySetInnerHTML={{
                 __html: `
                   window.dataLayer = window.dataLayer || [];
-                  function gtag(){dataLayer.push(arguments);} 
-                  // Consent Mode v2: default denied until user grants consent.
-                  // This can be updated later with: gtag('consent','update', { ad_storage:'granted', analytics_storage:'granted' })
-                  gtag('consent', 'default', { ad_storage: 'denied', analytics_storage: 'denied' });
+                  function gtag(){dataLayer.push(arguments);}
+                  // Consent Mode v2: granted by default. This is a US (Indiana) local
+                  // business with no GDPR/CCPA obligation, so we don't gate tracking behind
+                  // a consent banner. If a banner is added later, set the default to 'denied'
+                  // here and call window.updateGtagConsent(...) once the user grants consent.
+                  gtag('consent', 'default', { ad_storage: 'granted', analytics_storage: 'granted' });
                   gtag('js', new Date());
                   // Google Ads (AW-*) config - always present when ADS_TAG_ID exists
                   gtag('config', '${ADS_TAG_ID}');
-                  // GA4 (G-*) config - only added when NEXT_PUBLIC_GA_MEASUREMENT_ID is set
+                  // Google tag (GT-*/G-*) config - only added when NEXT_PUBLIC_GA_MEASUREMENT_ID is set
                   ${GA_MEASUREMENT_ID ? `gtag('config', '${GA_MEASUREMENT_ID}');` : "// TODO: set NEXT_PUBLIC_GA_MEASUREMENT_ID to enable GA4 (see app/layout.tsx)"}
                   // Expose a small helper for cookie-consent UIs to update Consent Mode later
                   window.updateGtagConsent = function(consent) { try { gtag('consent', 'update', consent); } catch(e){} };
