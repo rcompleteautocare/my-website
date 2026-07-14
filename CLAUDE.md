@@ -75,7 +75,7 @@ the `@/*` path alias. Match whichever the file you're editing already uses.
 Business-critical constants live in `lib/` and are imported everywhere. Change
 the value **here**, not inline in pages:
 
-- `lib/rating.js` — `RATING` (4.9) and `REVIEW_COUNT` (114), the publicly
+- `lib/rating.js` — `RATING` (4.9) and `REVIEW_COUNT` (121), the publicly
   displayed Google rating. Used by the root JSON-LD (`aggregateRating`), the Nav
   trust bar, and the drift check. Update when Google changes; the weekly drift
   check will alert if these go stale.
