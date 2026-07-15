@@ -161,7 +161,7 @@ export default function BrakeRepair() {
         <div style={{ maxWidth: "800px", margin: "0 auto" }}>
           <h2 style={{ fontSize: "28px", marginBottom: "24px" }}>Frequently Asked Questions — Brake Repair</h2>
           {[
-            { q: "How is a brake repair estimate prepared?", a: "We measure pad and rotor condition, inspect calipers and hardware, and account for the vehicle-specific parts required. You receive the findings and a clear estimate before authorizing any repair." },
+            { q: "How much does brake repair cost in Crown Point, IN?", a: "It depends on your vehicle and which components are worn — pads, rotors, calipers, and hardware all factor in. We take exact measurements first, show you what actually needs attention, and give you a clear, upfront estimate before authorizing any work. No surprises." },
             { q: "How long does brake repair take?", a: "Most brake pad replacements take 1–2 hours. A full brake job (pads and rotors on all four wheels) typically takes 2–3 hours. We work efficiently and most repairs are completed same day." },
             { q: "Do I need an appointment for brake repair in Crown Point?", a: "We recommend calling ahead at (219) 262-2711. Same-day appointments are often available. We're open Mon–Fri 8am–6pm and Sat 8am–2pm." },
             { q: "How do I know when my brakes need to be replaced?", a: "Common signs include squealing, grinding, a soft pedal, pulling to one side, or a brake warning light. The most accurate way is a proper inspection with pad thickness and rotor measurements — which we provide at every brake service." },
@@ -195,7 +195,7 @@ export default function BrakeRepair() {
       "@context": "https://schema.org",
       "@type": "FAQPage",
       "mainEntity": [
-        { "@type": "Question", "name": "How is a brake repair estimate prepared?", "acceptedAnswer": { "@type": "Answer", "text": "We measure pad and rotor condition, inspect calipers and hardware, and account for the vehicle-specific parts required. You receive the findings and a clear estimate before authorizing any repair." } },
+        { "@type": "Question", "name": "How much does brake repair cost in Crown Point, IN?", "acceptedAnswer": { "@type": "Answer", "text": "It depends on your vehicle and which components are worn — pads, rotors, calipers, and hardware all factor in. We take exact measurements first, show you what actually needs attention, and give you a clear, upfront estimate before authorizing any work. No surprises." } },
         { "@type": "Question", "name": "How long does brake repair take?", "acceptedAnswer": { "@type": "Answer", "text": "Most brake pad replacements take 1–2 hours. A full brake job (pads and rotors on all four wheels) typically takes 2–3 hours. We work efficiently and most repairs are completed same day." } },
         { "@type": "Question", "name": "Do I need an appointment for brake repair in Crown Point?", "acceptedAnswer": { "@type": "Answer", "text": "We recommend calling ahead at (219) 262-2711. Same-day appointments are often available. We're open Mon–Fri 8am–6pm and Sat 8am–2pm." } },
         { "@type": "Question", "name": "How do I know when my brakes need to be replaced?", "acceptedAnswer": { "@type": "Answer", "text": "Common signs include squealing, grinding, a soft pedal, pulling to one side, or a brake warning light. The most accurate way is a proper inspection with pad thickness and rotor measurements — which we provide at every brake service." } },

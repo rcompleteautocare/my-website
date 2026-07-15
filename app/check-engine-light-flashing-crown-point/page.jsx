@@ -47,8 +47,8 @@ const FAQS = [
     a: "Yes — the shaking is the physical sensation of the misfire. A misfiring cylinder means combustion events are missing on that cylinder. The engine runs rough, vibrates, and loses power. The shake and the flash are the same event.",
   },
   {
-    q: 'What is included in a misfire diagnostic?',
-    a: "We perform a complete system analysis rather than only reading the code. We trace the misfire to its root cause using live data, compression testing, and injector balance testing, then explain the findings before authorized work.",
+    q: 'How much does a misfire diagnostic cost in Crown Point?',
+    a: "It depends on how much testing is needed to isolate the misfire — we use live data, compression testing, and injector balance testing to find the root cause, not just read the code. We tell you what the diagnosis involves up front. Call (219) 262-2711.",
   },
   {
     q: 'Do extended warranties cover misfires and flashing check engine lights?',

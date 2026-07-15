@@ -177,7 +177,7 @@ export default function EngineRepair() {
           <h2 style={{ fontSize: "28px", marginBottom: "24px" }}>Frequently Asked Questions — Engine Repair</h2>
           {[
             { q: "How do I know if my engine needs repair?", a: "Common signs include a check engine light, knocking or ticking noises, loss of power, overheating, excessive oil consumption, smoke from the exhaust, or oil leaks. If you notice any of these, bring it in for a diagnostic before the problem gets worse." },
-            { q: "How is an engine repair estimate prepared?", a: "The estimate reflects the verified failure, engine configuration, access, required parts, and any connected damage. We explain the findings and provide the estimate before any work begins." },
+            { q: "How much does engine repair cost in Crown Point?", a: "It depends on the verified failure, your engine configuration, parts access, and any connected damage. We diagnose first, then give you a clear, upfront estimate before any work begins — and extended warranties often cover engine repairs. No surprises." },
             { q: "Is it worth repairing my engine or should I get a new car?", a: "We give you honest advice based on the vehicle's condition, the verified failure, and available warranty coverage. We explain the repair scope and estimate so you can make the right decision for your situation." },
             { q: "My engine is overheating — what should I do?", a: "Pull over safely and turn off the engine immediately. Do not continue driving an overheating engine — it can cause catastrophic damage very quickly. Call us and we'll help you figure out next steps and get the vehicle in for diagnosis." },
             { q: "Do you accept extended warranties for engine repair?", a: "Yes — we work with most major extended warranty providers including CarShield, Endurance, CARS Protection, and AmTrust. Call us with your warranty info and we'll verify coverage before any work begins." },
@@ -217,8 +217,8 @@ export default function EngineRepair() {
       },
       {
         "@type": "Question",
-        "name": "How is an engine repair estimate prepared?",
-        "acceptedAnswer": { "@type": "Answer", "text": "The estimate reflects the verified failure, engine configuration, access, required parts, and any connected damage. We explain the findings and provide the estimate before any work begins." }
+        "name": "How much does engine repair cost in Crown Point?",
+        "acceptedAnswer": { "@type": "Answer", "text": "It depends on the verified failure, your engine configuration, parts access, and any connected damage. We diagnose first, then give you a clear, upfront estimate before any work begins — and extended warranties often cover engine repairs. No surprises." }
       },
       {
         "@type": "Question",

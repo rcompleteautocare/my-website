@@ -139,7 +139,7 @@ export default function CheckEngineLight() {
         <div style={{ maxWidth: "800px", margin: "0 auto" }}>
           <h2 style={{ fontSize: "28px", marginBottom: "24px" }}>Frequently Asked Questions — Check Engine Light</h2>
           {[
-            { q: "What is included in a check engine light diagnostic?", a: "We capture codes and operating data, test the affected system, and identify the root cause before explaining the findings and providing an estimate for authorized work." },
+            { q: "How much does a check engine light diagnostic cost in Crown Point?", a: "It depends on how involved the diagnosis is — some faults are confirmed quickly, others need deeper testing across multiple systems. We tell you what the diagnosis involves before any work begins and call you with our findings before recommending a repair. Call (219) 262-2711 to get started." },
             { q: "How long does a check engine light diagnostic take?", a: "Most diagnostics are completed the same day, often within a few hours. We'll call you with our findings before doing any work." },
             { q: "Do I need an appointment for check engine light diagnostics in Crown Point?", a: "We recommend calling ahead at (219) 262-2711. Same-day appointments are often available Mon–Fri 8am–6pm and Sat 8am–2pm." },
             { q: "Is it safe to drive with my check engine light on?", a: "It depends. If the light is flashing, pull over immediately — it indicates a serious misfire that can damage your catalytic converter. If it's solid, it's generally safe to drive short distances but you should get it checked within a day or two." },
@@ -177,8 +177,8 @@ export default function CheckEngineLight() {
     "mainEntity": [
       {
         "@type": "Question",
-        "name": "What is included in a check engine light diagnostic?",
-        "acceptedAnswer": { "@type": "Answer", "text": "We capture codes and operating data, test the affected system, and identify the root cause before explaining the findings and providing an estimate for authorized work." }
+        "name": "How much does a check engine light diagnostic cost in Crown Point?",
+        "acceptedAnswer": { "@type": "Answer", "text": "It depends on how involved the diagnosis is — some faults are confirmed quickly, others need deeper testing across multiple systems. We tell you what the diagnosis involves before any work begins and call you with our findings before recommending a repair. Call (219) 262-2711 to get started." }
       },
       {
         "@type": "Question",

@@ -162,7 +162,7 @@ export default function OilChangeMaintenance() {
         <div style={{ maxWidth: "800px", margin: "0 auto" }}>
           <h2 style={{ fontSize: "28px", marginBottom: "24px" }}>Frequently Asked Questions — Oil Change & Maintenance</h2>
           {[
-            { q: "How is an oil-change estimate prepared?", a: "The estimate reflects your vehicle's required oil specification, capacity, and filter. We verify the owner's-manual requirements and provide the estimate before service." },
+            { q: "How much does an oil change cost in Crown Point, IN?", a: "It depends on your vehicle's required oil type and capacity and the correct filter — we match the service to the owner's-manual specification rather than a one-size approach. We confirm what's needed with you up front, and every oil change includes a multi-point inspection." },
             { q: "How long does an oil change take in Crown Point?", a: "Most oil changes at our Crown Point shop are completed in 30–60 minutes. If you add a tire rotation or other services, allow a bit more time." },
             { q: "Do I need an appointment for an oil change?", a: "We recommend calling ahead at (219) 262-2711 for same-day service. Walk-ins are welcome based on availability. We're open Mon–Fri 8am–6pm and Sat 8am–2pm." },
             { q: "How often should I change my oil?", a: "It depends on your vehicle and oil type. Conventional oil typically needs changing every 3,000–5,000 miles. Full synthetic oil can last 7,500–10,000 miles or more. The best reference is your owner's manual — and we'll check it for you when you come in." },
@@ -200,8 +200,8 @@ export default function OilChangeMaintenance() {
     "mainEntity": [
       {
         "@type": "Question",
-        "name": "How is an oil-change estimate prepared?",
-        "acceptedAnswer": { "@type": "Answer", "text": "The estimate reflects your vehicle's required oil specification, capacity, and filter. We verify the owner's-manual requirements and provide the estimate before service." }
+        "name": "How much does an oil change cost in Crown Point, IN?",
+        "acceptedAnswer": { "@type": "Answer", "text": "It depends on your vehicle's required oil type and capacity and the correct filter — we match the service to the owner's-manual specification rather than a one-size approach. We confirm what's needed with you up front, and every oil change includes a multi-point inspection." }
       },
       {
         "@type": "Question",
