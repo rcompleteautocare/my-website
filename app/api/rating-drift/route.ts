@@ -41,14 +41,15 @@ async function notifyOwner(message: string, payload: Record<string, unknown>) {
 }
 
 export async function GET(req: Request) {
-  // When CRON_SECRET is set, require the Bearer token Vercel Cron attaches.
-  // This keeps the endpoint (and our Places API quota) from public abuse.
   const cronSecret = process.env.CRON_SECRET;
-  if (cronSecret) {
-    const auth = req.headers.get("authorization") ?? "";
-    if (auth !== `Bearer ${cronSecret}`) {
-      return json({ error: "Unauthorized" }, 401);
-    }
+  if (!cronSecret) {
+    console.error("rating-drift: missing CRON_SECRET env var");
+    return json({ error: "Server misconfigured: CRON_SECRET missing" }, 500);
+  }
+
+  const auth = req.headers.get("authorization") ?? "";
+  if (auth !== `Bearer ${cronSecret}`) {
+    return json({ error: "Unauthorized" }, 401);
   }
 
   const apiKey = process.env.PLACES_API_KEY;
