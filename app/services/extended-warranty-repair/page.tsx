@@ -1,11 +1,11 @@
 export const metadata = {
   title: 'Extended Warranty Repairs | R Complete Auto Care',
-  description: 'Extended warranty auto repair in Crown Point, IN. We verify coverage, handle pre-authorisation and paperwork — you pay only your deductible. (219) 262-2711.',
+  description: 'Extended warranty auto repair in Crown Point, IN. We verify coverage and handle pre-authorisation, documentation, and claim paperwork. (219) 262-2711.',
   alternates: { canonical: 'https://www.rcompleteautocare.com/services/extended-warranty-repair' },
 
   openGraph: {
     title: "Extended Warranty Repairs | R Complete Auto Care",
-    description: "Extended warranty auto repair in Crown Point, IN. We verify coverage, handle pre-authorisation and paperwork — you pay only your deductible. (219) 262-2711.",
+    description: "Extended warranty auto repair in Crown Point, IN. We verify coverage and handle pre-authorisation, documentation, and claim paperwork. (219) 262-2711.",
     url: "https://www.rcompleteautocare.com/services/extended-warranty-repair",
     siteName: "R Complete Auto Care",
     locale: "en_US",
@@ -15,7 +15,7 @@ export const metadata = {
   twitter: {
     card: "summary_large_image",
     title: "Extended Warranty Repairs | R Complete Auto Care",
-    description: "Extended warranty auto repair in Crown Point, IN. We verify coverage, handle pre-authorisation and paperwork — you pay only your deductible. (219) 262-2711.",
+    description: "Extended warranty auto repair in Crown Point, IN. We verify coverage and handle pre-authorisation, documentation, and claim paperwork. (219) 262-2711.",
     images: ["/logo.png"],
   },
   robots: { index: true, follow: true },
@@ -35,7 +35,7 @@ export default function ExtendedWarrantyRepair() {
         <h1 style={{ fontSize: "38px", fontWeight: "bold", marginBottom: "12px" }}>
           Extended Warranty Repairs — How We Do Warranty Work
         </h1>
-        <p className="speakable" style={{ fontSize: "16px", color: "#f1626f", fontWeight: "600", marginBottom: "16px", fontStyle: "italic" }}>TL;DR: We work with CarShield, Endurance, CARS Protection, AmTrust and most providers. This page explains our process, which repairs are typically covered, and what to expect. You pay only your deductible (typically $100–$200).
+        <p className="speakable" style={{ fontSize: "16px", color: "#f1626f", fontWeight: "600", marginBottom: "16px", fontStyle: "italic" }}>TL;DR: We work with CarShield, Endurance, CARS Protection, AmTrust, and most providers. We verify coverage, document the failure, obtain pre-authorisation, and explain the plan&apos;s customer responsibility before authorized work.
         </p>
         <p style={{ fontSize: "18px", color: "#ccc", maxWidth: "600px", margin: "0 auto 32px" }}>
           This is our operational warranty page. For urgent help with a denied or stuck claim, see our <Link href="/extended-warranty-auto-repair-crown-point-in" style={{ color: "#fff", textDecoration: "underline" }}>warranty claim help page →</Link>
@@ -62,7 +62,7 @@ export default function ExtendedWarrantyRepair() {
           At R Complete Auto Care, extended warranty repairs are a significant part of our business — and we built our entire diagnostic process around producing the documentation that gets claims approved. We know what format adjusters need, how to present failure mode analysis, and how to advocate for your claim when coverage is questioned.
         </p>
         <p style={{ lineHeight: 1.8, color: "#444", marginBottom: "40px" }}>
-          Call us before you bring the vehicle in. We verify your coverage directly with your provider, confirm the repair is eligible, and schedule you in — often the same day. You pay your deductible. We handle everything else.
+          Call us before you bring the vehicle in. We verify coverage directly with your provider, confirm the authorization process, and schedule you in — often the same day. We handle the documentation and explain the contract-defined customer responsibility.
         </p>
 
         {/* Providers */}
@@ -115,7 +115,7 @@ export default function ExtendedWarrantyRepair() {
           { step: "2", title: "Diagnostic Documented to Warranty Standards", desc: "We perform a thorough diagnostic with fault codes, test results, and precise failure mode descriptions formatted specifically for warranty adjuster review. This documentation is what separates approved claims from denied ones." },
           { step: "3", title: "We Make the Pre-Authorisation Call", desc: "We contact your warranty company, present the diagnostic findings in the format their adjusters require, and obtain repair authorisation before any parts are ordered or work begins." },
           { step: "4", title: "Repair With Approved Parts", desc: "Once pre-authorised, we complete the repair using parts that meet your warranty company's requirements and document all labor operations to specification." },
-          { step: "5", title: "You Pay Only Your Deductible", desc: "The warranty company pays us directly for the covered amount. You pick up your vehicle and pay your deductible only — often $100–$200 on a repair that would have cost $800–$2,500 out of pocket." },
+          { step: "5", title: "Coverage and Responsibility Confirmed", desc: "We submit the final documentation to the warranty company and explain the covered work and any customer responsibility defined by your contract before pickup." },
         ].map(item => (
           <div key={item.step} style={{ display: "flex", gap: "16px", marginBottom: "28px", alignItems: "flex-start" }}>
             <div style={{ background: "#e63946", color: "#fff", borderRadius: "50%", width: "36px", height: "36px", display: "flex", alignItems: "center", justifyContent: "center", fontWeight: "bold", flexShrink: 0 }}>{item.step}</div>
@@ -171,7 +171,7 @@ export default function ExtendedWarrantyRepair() {
         <h2 style={{ fontSize: "28px", marginBottom: "24px" }}>Why Crown Point Drivers Choose Us for Warranty Work</h2>
         <div style={{ display: "grid", gridTemplateColumns: "repeat(auto-fit, minmax(220px, 1fr))", gap: "16px", marginBottom: "40px" }}>
           {[
-            { title: "We Handle the Entire Process", desc: "Coverage verification, pre-authorisation call, documented repair, claim submission — you pay only your deductible." },
+            { title: "We Handle the Entire Process", desc: "Coverage verification, pre-authorisation, documented repair, and claim submission are coordinated from start to finish." },
             { title: "Diagnostic-First Documentation", desc: "Our diagnostic records are formatted to meet warranty adjuster requirements. This is what prevents claim denials." },
             { title: "We Advocate for Your Claim", desc: "If an adjuster pushes back, we push back with test data and documentation. We don't accept unjustified denials." },
             { title: "All Makes and Models", desc: "Foreign and domestic — Honda, Toyota, BMW, Ford, Chevy, Dodge, Subaru, and everything else." },
@@ -194,7 +194,7 @@ export default function ExtendedWarrantyRepair() {
             { q: "Do I need to call my warranty company first, or do you handle that?", a: "Just call us first at (219) 262-2711 with your warranty contract information. We verify your coverage directly with the provider and handle the pre-authorisation call before any work begins. You don't need to navigate the warranty process yourself." },
             { q: "What extended warranty companies do you work with?", a: "We work with most third-party providers including CARS Protection Plus, Endurance, CarShield, CARCHEX, AmTrust/National Auto Care, Zurich, and Protect My Car. Call us with your provider name to confirm." },
             { q: "What if my warranty company denies the claim?", a: "We advise you on the denial reason and whether it's worth appealing. Some denials are based on insufficient documentation from a previous shop — our detailed diagnostic records are often sufficient to support a successful reconsideration." },
-            { q: "Is the diagnostic fee covered by my extended warranty?", a: "Many plans cover the diagnostic fee when the diagnosed failure is a covered component. We check your specific plan terms when we verify coverage. Even when it's not covered, our diagnostic fee is applied toward the repair cost." },
+            { q: "Does my extended warranty cover diagnosis?", a: "Diagnostic coverage varies by contract and by the component that failed. We check your plan terms, document the findings, and explain what the administrator authorizes before work begins." },
             { q: "My warranty company wants to send an inspector. Is that okay?", a: "Yes — inspector visits are standard for larger claims and we're fully prepared. Our diagnostic documentation supports the inspection process. We have successfully passed every warranty inspector visit." },
             { q: "Why do so many shops refuse extended warranty work?", a: "Extended warranty repairs require detailed documentation, pre-authorisation calls, specific labor operation codes, and post-repair paperwork that most shops aren't set up to handle. We built our process around this — warranty work is a significant part of our business." },
             { q: "Do you accept extended warranties for all types of repairs?", a: "We handle warranty claims for engine, transmission, electrical, suspension, A/C, fuel system, cooling system, and most other covered components. Call us with your provider name and we'll tell you exactly what's covered." },
@@ -213,7 +213,7 @@ export default function ExtendedWarrantyRepair() {
       {/* Final CTA */}
       <section style={{ background: "#e63946", color: "#fff", textAlign: "center", padding: "60px 24px" }}>
         <h2 style={{ fontSize: "28px", marginBottom: "12px" }}>Extended Warranty Repair in Crown Point? Call Us First.</h2>
-        <p style={{ marginBottom: "8px", opacity: 0.9 }}>We verify coverage before you bring it in. You pay only your deductible.</p>
+        <p style={{ marginBottom: "8px", opacity: 0.9 }}>We verify coverage and explain the authorized repair process before you bring it in.</p>
         <p style={{ marginBottom: "24px", opacity: 0.75, fontSize: "14px" }}>1305 E Summit St, Crown Point, IN 46307 · Mon–Fri 8am–6pm · Sat 8am–2pm</p>
         <a href="tel:2192622711" style={{ background: "#fff", color: "#e63946", padding: "14px 36px", borderRadius: "6px", fontWeight: "bold", textDecoration: "none", fontSize: "18px" }}>
           📞 Call (219) 262-2711
@@ -243,8 +243,8 @@ export default function ExtendedWarrantyRepair() {
       },
       {
         "@type": "Question",
-        "name": "Is the diagnostic fee covered by my extended warranty?",
-        "acceptedAnswer": { "@type": "Answer", "text": "Many plans cover the diagnostic fee when the diagnosed failure is a covered component. We check your specific plan terms when we verify coverage. Even when it's not covered, our diagnostic fee is applied toward the repair cost." }
+        "name": "Does my extended warranty cover diagnosis?",
+        "acceptedAnswer": { "@type": "Answer", "text": "Diagnostic coverage varies by contract and by the component that failed. We check your plan terms, document the findings, and explain what the administrator authorizes before work begins." }
       },
       {
         "@type": "Question",
@@ -274,7 +274,7 @@ export default function ExtendedWarrantyRepair() {
     { "@type": "HowToStep", "position": 2, "name": "Diagnostic Documented to Warranty Standards", "text": "We perform a thorough diagnostic with fault codes, test results, and precise failure mode descriptions formatted for warranty adjuster review." },
     { "@type": "HowToStep", "position": 3, "name": "Pre-Authorization Call", "text": "We contact your warranty company, present our findings, and obtain repair authorization before any parts are ordered." },
     { "@type": "HowToStep", "position": 4, "name": "Repair With Approved Parts", "text": "We complete the repair using parts that meet your warranty company's requirements and document all labor operations." },
-    { "@type": "HowToStep", "position": 5, "name": "You Pay Only Your Deductible", "text": "The warranty company pays us directly for the covered amount. You pick up your vehicle and pay your deductible only — typically $100–$200." }
+    { "@type": "HowToStep", "position": 5, "name": "Coverage and Responsibility Confirmed", "text": "We submit the final documentation and explain the covered work and any customer responsibility defined by the contract before pickup." }
   ]
 }).replace(/</g, "\u003c") }} />
 <script type="application/ld+json" dangerouslySetInnerHTML={{ __html: JSON.stringify({

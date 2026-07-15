@@ -13,6 +13,7 @@ export default function sitemap(): MetadataRoute.Sitemap {
     { url: `${baseUrl}/contact`, lastModified: "2026-04-10", changeFrequency: "monthly", priority: 0.8 },
     { url: `${baseUrl}/book`, lastModified: "2026-06-19", changeFrequency: "monthly", priority: 0.9 },
     { url: `${baseUrl}/inspection-checklist`, lastModified: "2026-04-16", changeFrequency: "monthly", priority: 0.8 },
+    { url: `${baseUrl}/services`, lastModified: "2026-07-15", changeFrequency: "monthly", priority: 0.9 },
     { url: `${baseUrl}/services/diagnostics`, lastModified: "2026-04-18", changeFrequency: "monthly", priority: 0.9 },
     { url: `${baseUrl}/services/check-engine-light`, lastModified: "2026-04-15", changeFrequency: "monthly", priority: 0.9 },
     { url: `${baseUrl}/services/electrical-diagnostics`, lastModified: "2026-04-15", changeFrequency: "monthly", priority: 0.9 },

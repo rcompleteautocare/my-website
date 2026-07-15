@@ -33,7 +33,7 @@ export default function CheckEngineLight() {
         <h1 style={{ fontSize: "38px", fontWeight: "bold", marginBottom: "12px" }}>
           Check Engine Light Diagnostics in Crown Point, IN
         </h1>
-        <p className="speakable" style={{ fontSize: "16px", color: "#f1626f", fontWeight: "600", marginBottom: "16px", fontStyle: "italic" }}>TL;DR: Check engine light diagnostics are completed same day in most cases. We charge a diagnostic fee (applied toward repair cost). A solid light = safe to drive briefly; a flashing light = pull over and call us immediately.
+        <p className="speakable" style={{ fontSize: "16px", color: "#f1626f", fontWeight: "600", marginBottom: "16px", fontStyle: "italic" }}>TL;DR: Check engine light diagnostics are completed the same day in most cases. We test the system behind the code and explain the findings before authorized work. A solid light may allow a brief careful drive; a flashing light means pull over and call us immediately.
         </p>
         <p style={{ fontSize: "18px", color: "#ccc", maxWidth: "600px", margin: "0 auto 32px" }}>
           Don&apos;t ignore that warning light. Our diagnostic-first approach finds the real problem — fast. We trace fault codes to their root cause, not just clear them and hope for the best.
@@ -139,7 +139,7 @@ export default function CheckEngineLight() {
         <div style={{ maxWidth: "800px", margin: "0 auto" }}>
           <h2 style={{ fontSize: "28px", marginBottom: "24px" }}>Frequently Asked Questions — Check Engine Light</h2>
           {[
-            { q: "How much does a check engine light diagnostic cost in Crown Point?", a: "We charge a diagnostic fee to properly identify the issue. This fee is applied toward your repair cost if you choose to have us fix it. Call (219) 262-2711 for current pricing." },
+            { q: "What is included in a check engine light diagnostic?", a: "We capture codes and operating data, test the affected system, and identify the root cause before explaining the findings and providing an estimate for authorized work." },
             { q: "How long does a check engine light diagnostic take?", a: "Most diagnostics are completed the same day, often within a few hours. We'll call you with our findings before doing any work." },
             { q: "Do I need an appointment for check engine light diagnostics in Crown Point?", a: "We recommend calling ahead at (219) 262-2711. Same-day appointments are often available Mon–Fri 8am–6pm and Sat 8am–2pm." },
             { q: "Is it safe to drive with my check engine light on?", a: "It depends. If the light is flashing, pull over immediately — it indicates a serious misfire that can damage your catalytic converter. If it's solid, it's generally safe to drive short distances but you should get it checked within a day or two." },
@@ -177,8 +177,8 @@ export default function CheckEngineLight() {
     "mainEntity": [
       {
         "@type": "Question",
-        "name": "How much does a check engine light diagnostic cost in Crown Point?",
-        "acceptedAnswer": { "@type": "Answer", "text": "We charge a diagnostic fee to properly identify the issue. This fee is applied toward your repair cost if you choose to have us fix it. Call (219) 262-2711 for current pricing." }
+        "name": "What is included in a check engine light diagnostic?",
+        "acceptedAnswer": { "@type": "Answer", "text": "We capture codes and operating data, test the affected system, and identify the root cause before explaining the findings and providing an estimate for authorized work." }
       },
       {
         "@type": "Question",
@@ -227,7 +227,7 @@ export default function CheckEngineLight() {
   "step": [
     { "@type": "HowToStep", "position": 1, "name": "Full Fault Code Scan", "text": "We scan all modules — not just the engine — to get a complete picture of every fault code present, including pending codes." },
     { "@type": "HowToStep", "position": 2, "name": "Root Cause Investigation", "text": "We perform hands-on inspection and testing to find the actual failed component — not just replace parts and hope." },
-    { "@type": "HowToStep", "position": 3, "name": "Clear Explanation & Estimate", "text": "We call you with exactly what we found, what it means, and a straight price. You approve everything before we touch a tool." },
+    { "@type": "HowToStep", "position": 3, "name": "Clear Explanation & Estimate", "text": "We call you with exactly what we found, what it means, and a clear estimate. You approve everything before we touch a tool." },
     { "@type": "HowToStep", "position": 4, "name": "Precise Repair & Verification", "text": "We fix what's broken, clear the code, verify the fix, and road test the vehicle before returning it to you." }
   ]
 }).replace(/</g, "\u003c") }} />

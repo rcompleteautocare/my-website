@@ -285,7 +285,7 @@ export default function Home() {
         <ol className={styles.processList}>
           <li><span>1</span><div><h3>Tell us what the vehicle is doing</h3><p>Call or book a time that works for you.</p></div></li>
           <li><span>2</span><div><h3>We test and diagnose</h3><p>We identify the cause instead of guessing from symptoms.</p></div></li>
-          <li><span>3</span><div><h3>You get a clear plan</h3><p>We explain the findings, priorities, price, and timing.</p></div></li>
+          <li><span>3</span><div><h3>You get a clear plan</h3><p>We explain the findings, priorities, estimate, and timing.</p></div></li>
           <li><span>4</span><div><h3>We repair what you approve</h3><p>No surprises and no unauthorized work.</p></div></li>
         </ol>
       </section>

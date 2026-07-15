@@ -34,7 +34,7 @@ export default function OilChangeMaintenance() {
         <h1 style={{ fontSize: "38px", fontWeight: "bold", marginBottom: "12px" }}>
           Oil Change & Maintenance in Crown Point, IN
         </h1>
-        <p className="speakable" style={{ fontSize: "16px", color: "#f1626f", fontWeight: "600", marginBottom: "16px", fontStyle: "italic" }}>TL;DR: Conventional oil changes start around $40–$60; full synthetic starts around $70–$90. Service takes 30–60 minutes and includes a multi-point inspection. No appointment required — call ahead for same-day service.
+        <p className="speakable" style={{ fontSize: "16px", color: "#f1626f", fontWeight: "600", marginBottom: "16px", fontStyle: "italic" }}>TL;DR: Oil service is matched to the vehicle&apos;s required oil specification and capacity and includes a multi-point inspection. Call ahead for same-day availability and an upfront estimate.
         </p>
         <p style={{ fontSize: "18px", color: "#ccc", maxWidth: "600px", margin: "0 auto 32px" }}>
           Conventional and synthetic oil changes with a thorough multi-point inspection — so you know what&apos;s coming before it becomes an emergency.
@@ -141,7 +141,7 @@ export default function OilChangeMaintenance() {
             },
             {
               title: "Synthetic Blend",
-              desc: "A mix of conventional and synthetic base oils. Offers better protection than conventional at a lower cost than full synthetic.",
+              desc: "A mix of conventional and synthetic base oils. The correct choice depends on the vehicle specification and operating conditions.",
               best: "Best for: Trucks, SUVs, and vehicles with moderate towing or load demands"
             },
           ].map(item => (
@@ -162,7 +162,7 @@ export default function OilChangeMaintenance() {
         <div style={{ maxWidth: "800px", margin: "0 auto" }}>
           <h2 style={{ fontSize: "28px", marginBottom: "24px" }}>Frequently Asked Questions — Oil Change & Maintenance</h2>
           {[
-            { q: "How much does an oil change cost in Crown Point, IN?", a: "Conventional oil changes start around $40–$60. Full synthetic oil changes start around $70–$90 depending on your vehicle's oil capacity and type. We always check your owner's manual specs and use the correct oil for your vehicle." },
+            { q: "How is an oil-change estimate prepared?", a: "The estimate reflects your vehicle's required oil specification, capacity, and filter. We verify the owner's-manual requirements and provide the estimate before service." },
             { q: "How long does an oil change take in Crown Point?", a: "Most oil changes at our Crown Point shop are completed in 30–60 minutes. If you add a tire rotation or other services, allow a bit more time." },
             { q: "Do I need an appointment for an oil change?", a: "We recommend calling ahead at (219) 262-2711 for same-day service. Walk-ins are welcome based on availability. We're open Mon–Fri 8am–6pm and Sat 8am–2pm." },
             { q: "How often should I change my oil?", a: "It depends on your vehicle and oil type. Conventional oil typically needs changing every 3,000–5,000 miles. Full synthetic oil can last 7,500–10,000 miles or more. The best reference is your owner's manual — and we'll check it for you when you come in." },
@@ -200,8 +200,8 @@ export default function OilChangeMaintenance() {
     "mainEntity": [
       {
         "@type": "Question",
-        "name": "How much does an oil change cost in Crown Point, IN?",
-        "acceptedAnswer": { "@type": "Answer", "text": "Conventional oil changes start around $40–$60. Full synthetic oil changes start around $70–$90 depending on your vehicle's oil capacity and type. We always check your owner's manual specs and use the correct oil for your vehicle." }
+        "name": "How is an oil-change estimate prepared?",
+        "acceptedAnswer": { "@type": "Answer", "text": "The estimate reflects your vehicle's required oil specification, capacity, and filter. We verify the owner's-manual requirements and provide the estimate before service." }
       },
       {
         "@type": "Question",

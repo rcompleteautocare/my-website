@@ -26,7 +26,7 @@ const SCHEMA = {
     "https://www.rcompleteautocare.com/images/shop/r-complete-auto-care-service-bays.webp",
     "https://www.rcompleteautocare.com/logo.png",
   ],
-  priceRange: "$$",
+  priceRange: "Upfront digital estimates after diagnosis",
   address: {
     "@type": "PostalAddress",
     streetAddress: "1305 E Summit St",

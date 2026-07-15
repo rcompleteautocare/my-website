@@ -114,7 +114,7 @@ export default function Merrillville() {
           { q: "My car takes a beating on US-30 near Southlake Mall — what wears out first?", a: "Commuter traffic around Southlake Mall and the US-30 corridor is hard on brakes, suspension bushings, and cooling systems. We see front brake pads, control-arm bushings, and radiator fan failures earliest on cars that live on that stretch." },
           { q: "Do you handle I-65 commuter wear — the Chicago / south-shore run?", a: "Yes — long-haul I-65 vehicles show up with tire wear, wheel-bearing noise, and transmission complaints. We run the full diagnostic instead of guessing from the receipt of the last shop." },
           { q: "How fast can I get from Merrillville to your shop?", a: "10–12 minutes via Broadway south, or 12–15 via I-65 to US-231 west. Light traffic both directions outside rush hour." },
-          { q: "Do you accept extended warranties for Merrillville drivers?", a: "Yes — we verify coverage before you bring the vehicle in and submit the entire claim to your warranty provider. You pay only your deductible." },
+          { q: "Do you accept extended warranties for Merrillville drivers?", a: "Yes — we verify coverage before you bring the vehicle in, submit the claim documentation, and explain the authorization before work begins." },
           { q: "Do you work on the foreign brands common in Merrillville (Honda, Toyota, BMW, Hyundai)?", a: "Yes — all makes and models. We have the scan tools and experience for Japanese, European, and domestic vehicles alike." },
         ].map(item => (
           <div key={item.q} style={{ marginBottom: "20px", borderBottom: "1px solid #e0e0e0", paddingBottom: "20px" }}>

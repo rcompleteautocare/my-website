@@ -36,7 +36,7 @@ export default function ElectricalDiagnostics() {
         <h1 style={{ fontSize: "38px", fontWeight: "bold", marginBottom: "12px", lineHeight: 1.2 }}>
           Electrical Diagnostics in Crown Point, IN
         </h1>
-        <p className="speakable" style={{ fontSize: "16px", color: "#f1626f", fontWeight: "600", marginBottom: "16px", fontStyle: "italic" }}>TL;DR: Electrical diagnostics in Crown Point are completed same day in most cases. We charge a diagnostic fee (applied toward repair). Covers battery, alternator, parasitic draw, wiring faults, sensors, and module issues.
+        <p className="speakable" style={{ fontSize: "16px", color: "#f1626f", fontWeight: "600", marginBottom: "16px", fontStyle: "italic" }}>TL;DR: Electrical diagnostics in Crown Point are completed the same day in most cases. Testing covers the battery, alternator, parasitic draw, wiring faults, sensors, and module issues, with findings and an estimate provided before authorized work.
         </p>
         <p style={{ fontSize: "18px", color: "#ccc", maxWidth: "600px", margin: "0 auto 32px" }}>
           Electrical problems are complex. We have the tools, equipment, and expertise to find the exact cause — and fix it right.
@@ -104,7 +104,7 @@ export default function ElectricalDiagnostics() {
           { q: "Where can I get auto electrical diagnostics in Crown Point, IN?", a: "R Complete Auto Care at 1305 E Summit St, Crown Point, IN 46307. Call (219) 262-2711. Open Mon–Fri 8am–6pm, Sat 8am–2pm." },
           { q: "How do I know if I have an electrical problem?", a: "Common signs include dim or flickering lights, a car that won't start, warning lights on the dashboard, blown fuses, power windows or locks not working, or a battery that keeps dying." },
           { q: "Can electrical problems cause my check engine light to come on?", a: "Yes — faulty sensors, bad wiring, and module issues can all trigger warning lights. We perform a full diagnostic scan to identify the exact cause at our Crown Point shop." },
-          { q: "How much does an electrical diagnostic cost in Crown Point?", a: "We charge a diagnostic fee to properly identify the electrical issue. This fee is applied toward your repair cost if you choose to have us fix it." },
+          { q: "What is included in an electrical diagnostic?", a: "We test the affected circuits and components to identify the electrical fault, then explain the findings and provide an estimate before any repair is authorized." },
           { q: "Do you work on all makes and models for electrical issues?", a: "Yes — all foreign and domestic vehicles including Honda, Toyota, BMW, Mercedes, Ford, Chevrolet, Dodge, and more." },
           { q: "Do you serve St. John, Schererville, and Merrillville for electrical diagnostics?", a: "Yes! We're located in Crown Point and serve all of Lake County including St. John, Schererville, Merrillville, and Cedar Lake, Indiana." },
           { q: "Do you accept extended warranties for electrical repairs?", a: "Yes! We work with most extended warranty providers. Call us to verify your coverage before scheduling." },
@@ -153,7 +153,7 @@ export default function ElectricalDiagnostics() {
       {
         "@type": "Question",
         "name": "How much does an electrical diagnostic cost in Crown Point?",
-        "acceptedAnswer": { "@type": "Answer", "text": "We charge a diagnostic fee to properly identify the electrical issue. This fee is applied toward your repair cost if you choose to have us fix it." }
+        "acceptedAnswer": { "@type": "Answer", "text": "We test the affected circuits and components to identify the electrical fault, then explain the findings and provide an estimate before any repair is authorized." }
       },
       {
         "@type": "Question",

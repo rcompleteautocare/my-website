@@ -1,7 +1,7 @@
 // Single source of truth for vehicle make ("<make>-repair-crown-point-in") pages.
 // Content is written per make — genuine, brand-specific failure patterns we
 // commonly diagnose, framed as "what we test for," never guaranteed defects.
-// No pricing and no labor rate appear anywhere here (see project conventions).
+// Customer-facing monetary specifics are prohibited here (see project conventions).
 
 export const MAKE_BASE_URL = "https://www.rcompleteautocare.com";
 

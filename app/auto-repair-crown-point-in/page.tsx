@@ -58,7 +58,7 @@ export default function CrownPoint() {
           Located at 1305 E Summit St in Crown Point, Indiana, R Complete Auto Care serves drivers throughout Lake County and Northwest Indiana. We&apos;re a diagnostic-first shop — meaning we find the real problem before recommending any repair. No guesswork, no unnecessary work, just honest answers and expert repairs.
         </p>
         <p style={{ lineHeight: 1.8, color: "#444", marginBottom: "20px" }}>
-          Built on over 25 years of family experience in the auto repair industry, we opened our Crown Point shop to give local drivers a place they could actually trust. A place that explains what&apos;s wrong, gives you a fair price, and fixes it right the first time.
+          Built on over 25 years of family experience in the auto repair industry, we opened our Crown Point shop to give local drivers a place they could actually trust. A place that explains what&apos;s wrong, provides a clear estimate, and fixes it right the first time.
         </p>
         <p style={{ lineHeight: 1.8, color: "#444", marginBottom: "20px" }}>
           We work on all foreign and domestic vehicles and proudly accept most extended warranty plans. Whether you need a check engine light diagnosed, brakes replaced, or a major engine repair — we have the expertise to get it done right in Crown Point.

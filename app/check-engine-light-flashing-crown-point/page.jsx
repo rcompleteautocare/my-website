@@ -32,7 +32,7 @@ export const metadata = {
 const FAQS = [
   {
     q: 'How far can I drive with a flashing check engine light?',
-    a: "As little as possible. Pull over safely and turn the engine off. Every mile you drive with a flashing check engine light risks destroying your catalytic converter — an $800–$1,800 repair on top of whatever caused the misfire. Call us at (219) 262-2711 and we'll advise on whether the vehicle can be driven in or needs to be towed.",
+    a: "As little as possible. Pull over safely and turn the engine off. Every mile you drive with a flashing check engine light risks destroying the catalytic converter and compounding the original misfire damage. Call us at (219) 262-2711 and we'll advise on whether the vehicle can be driven in or needs to be towed.",
   },
   {
     q: 'The light went from flashing to steady. Am I okay now?',
@@ -47,8 +47,8 @@ const FAQS = [
     a: "Yes — the shaking is the physical sensation of the misfire. A misfiring cylinder means combustion events are missing on that cylinder. The engine runs rough, vibrates, and loses power. The shake and the flash are the same event.",
   },
   {
-    q: 'How much does a misfire diagnostic cost in Crown Point?',
-    a: "Our diagnostic fee covers a complete system analysis — not just reading the code. We trace the misfire to its root cause using live data, compression testing, and injector balance testing. Call (219) 262-2711 for exact pricing.",
+    q: 'What is included in a misfire diagnostic?',
+    a: "We perform a complete system analysis rather than only reading the code. We trace the misfire to its root cause using live data, compression testing, and injector balance testing, then explain the findings before authorized work.",
   },
   {
     q: 'Do extended warranties cover misfires and flashing check engine lights?',
@@ -56,7 +56,7 @@ const FAQS = [
   },
   {
     q: 'Can a flashing check engine light damage my catalytic converter permanently?',
-    a: "Yes. The flashing light triggers when raw unburnt fuel enters the exhaust. The catalytic converter attempts to combust it and reaches temperatures far above its design limit — the ceramic substrate melts. Once melted it cannot be repaired, only replaced at $800–$1,800. Every mile driven with a flashing light increases the damage.",
+    a: "Yes. The flashing light triggers when raw unburnt fuel enters the exhaust. The catalytic converter attempts to combust it and reaches temperatures far above its design limit, which can melt the ceramic substrate. Once melted it cannot be repaired, only replaced. Every mile driven with a flashing light increases the damage.",
   },
 ]
 
@@ -70,8 +70,8 @@ export default function CheckEngineLightFlashing() {
         <p className="hero-description speakable">
           A flashing check engine light is not the same as a steady one. It means your engine is
           actively misfiring right now — and every mile you drive is pumping raw fuel into your
-          catalytic converter. A $180 ignition coil problem can become a $1,400 catalytic converter
-          replacement in minutes. Pull over safely and call R Complete Auto Care immediately.
+          catalytic converter. A repairable ignition fault can become major exhaust-system damage
+          in minutes. Pull over safely and call R Complete Auto Care immediately.
           Same-day diagnostics available. Extended warranty accepted.
         </p>
         <a href="tel:2192622711" className="cta-button">📞 Call (219) 262-2711 — This Is Urgent</a>
@@ -102,7 +102,7 @@ export default function CheckEngineLightFlashing() {
           The flashing light triggers when the ECM detects a misfire rate severe enough that unburnt
           fuel is entering the exhaust. Your catalytic converter reaches 1,400°F or higher trying to
           combust that raw fuel. The ceramic substrate inside melts. Once it melts it cannot be
-          repaired — only replaced at $800–$1,800 depending on the vehicle.
+          repaired — only replaced after the root cause has also been corrected.
         </p>
 
         <h2>Why We Look Beyond the Fault Code</h2>
@@ -143,7 +143,7 @@ export default function CheckEngineLightFlashing() {
           <li><strong>Misfire begins.</strong> Raw fuel enters the exhaust on every misfire event. The catalytic converter starts overheating trying to burn it.</li>
           <li><strong>Catalytic converter overheats.</strong> Internal temperatures spike to 1,400°F+ — far above the design operating range of the ceramic substrate.</li>
           <li><strong>Substrate melts or cracks.</strong> Melted fragments can block exhaust flow, causing back-pressure that leads to additional engine damage.</li>
-          <li><strong>Complete catalytic converter failure.</strong> $800–$1,800 in parts and labor — in addition to whatever the original misfire repair would have cost.</li>
+          <li><strong>Complete catalytic converter failure.</strong> The converter may require replacement in addition to correcting the original cause of the misfire.</li>
         </ol>
 
         <h2>Misfire and Flashing Check Engine Light Repairs We Perform</h2>
@@ -173,7 +173,7 @@ export default function CheckEngineLightFlashing() {
           </div>
           <div className="feature-item">
             <strong>Honest Estimates, No Pressure</strong>
-            <p>We call you with exactly what we found and the cost before any work begins. You approve — we start.</p>
+            <p>We call you with exactly what we found and a clear estimate before any work begins. You approve — we start.</p>
           </div>
           <div className="feature-item">
             <strong>Extended Warranty Accepted</strong>
@@ -191,7 +191,7 @@ export default function CheckEngineLightFlashing() {
         </p>
         <p>
           We handle the entire warranty process: coverage verification, documented diagnostic,
-          pre-authorisation call, repair, and claim submission. You pay only your deductible.
+          pre-authorisation call, repair, and claim submission, then explain the authorization before work.
           Call us at (219) 262-2711 with your warranty provider name before bringing the vehicle in.
         </p>
         <a href="tel:2192622711" className="cta-button">📞 Call (219) 262-2711 — Extended Warranty Accepted</a>
@@ -217,7 +217,7 @@ export default function CheckEngineLightFlashing() {
       </div>
     
     <script type="application/ld+json" dangerouslySetInnerHTML={{ __html: "{\"@context\":\"https://schema.org\",\"@type\":\"BreadcrumbList\",\"itemListElement\":[{\"@type\":\"ListItem\",\"position\":1,\"name\":\"Home\",\"item\":\"https://www.rcompleteautocare.com\"},{\"@type\":\"ListItem\",\"position\":2,\"name\":\"Flashing Check Engine Light in Crown Point, IN\"}]}".replace(/</g, "\u003c") }} />
-    <script type="application/ld+json" dangerouslySetInnerHTML={{ __html: "{\"@context\":\"https://schema.org\",\"@type\":\"HowTo\",\"name\":\"Flashing Check Engine Light: Immediate Steps\",\"description\":\"A flashing CEL means active misfire — drive minimally and diagnose immediately.\",\"totalTime\":\"PT1H30M\",\"step\":[{\"@type\":\"HowToStep\",\"position\":1,\"name\":\"Slow down and limit driving\",\"text\":\"A flashing CEL means raw fuel is entering the catalytic converter. Every mile accelerates cat damage.\"},{\"@type\":\"HowToStep\",\"position\":2,\"name\":\"Get the vehicle to a shop or have it towed\",\"text\":\"If you have far to go, a flatbed tow is cheaper than catalytic converter replacement.\"},{\"@type\":\"HowToStep\",\"position\":3,\"name\":\"Full OBD-II scan with freeze-frame data\",\"text\":\"We pull all codes, not just the primary, plus the conditions when the misfire occurred.\"},{\"@type\":\"HowToStep\",\"position\":4,\"name\":\"Identify the misfiring cylinder\",\"text\":\"Live-data analysis pinpoints which cylinder is misfiring and at what load/RPM.\"},{\"@type\":\"HowToStep\",\"position\":5,\"name\":\"Isolate: fuel, spark, or compression\",\"text\":\"Coil swap test, injector pulse, compression test — we confirm root cause, not guess.\"},{\"@type\":\"HowToStep\",\"position\":6,\"name\":\"Repair and verify\",\"text\":\"After the fix, we clear codes, re-run a road test, and confirm the misfire is resolved.\"}]}".replace(/</g, "\u003c") }} />
+    <script type="application/ld+json" dangerouslySetInnerHTML={{ __html: "{\"@context\":\"https://schema.org\",\"@type\":\"HowTo\",\"name\":\"Flashing Check Engine Light: Immediate Steps\",\"description\":\"A flashing CEL means active misfire — drive minimally and diagnose immediately.\",\"totalTime\":\"PT1H30M\",\"step\":[{\"@type\":\"HowToStep\",\"position\":1,\"name\":\"Slow down and limit driving\",\"text\":\"A flashing CEL means raw fuel is entering the catalytic converter. Every mile accelerates cat damage.\"},{\"@type\":\"HowToStep\",\"position\":2,\"name\":\"Get the vehicle to a shop or have it towed\",\"text\":\"If you have far to go, arrange a flatbed tow to avoid compounding catalytic-converter damage.\"},{\"@type\":\"HowToStep\",\"position\":3,\"name\":\"Full OBD-II scan with freeze-frame data\",\"text\":\"We pull all codes, not just the primary, plus the conditions when the misfire occurred.\"},{\"@type\":\"HowToStep\",\"position\":4,\"name\":\"Identify the misfiring cylinder\",\"text\":\"Live-data analysis pinpoints which cylinder is misfiring and at what load/RPM.\"},{\"@type\":\"HowToStep\",\"position\":5,\"name\":\"Isolate: fuel, spark, or compression\",\"text\":\"Coil swap test, injector pulse, compression test — we confirm root cause, not guess.\"},{\"@type\":\"HowToStep\",\"position\":6,\"name\":\"Repair and verify\",\"text\":\"After the fix, we clear codes, re-run a road test, and confirm the misfire is resolved.\"}]}".replace(/</g, "\u003c") }} />
     <script type="application/ld+json" dangerouslySetInnerHTML={{ __html: "{\"@context\":\"https://schema.org\",\"@type\":\"WebPage\",\"@id\":\"https://www.rcompleteautocare.com/check-engine-light-flashing-crown-point#webpage\",\"url\":\"https://www.rcompleteautocare.com/check-engine-light-flashing-crown-point\",\"name\":\"Flashing Check Engine Light in Crown Point, IN\",\"dateModified\":\"2026-04-18\",\"about\":{\"@id\":\"https://www.rcompleteautocare.com/#business\"}}".replace(/</g, "\u003c") }} />
     <ServiceSchema name="Flashing Check Engine Light Diagnosis in Crown Point, IN" serviceType="Check engine light diagnostics" path="/check-engine-light-flashing-crown-point" />
   </>

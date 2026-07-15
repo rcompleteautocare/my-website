@@ -38,7 +38,7 @@ export default function Diagnostics() {
         <h1 style={{ fontSize: "38px", fontWeight: "bold", marginBottom: "12px", lineHeight: 1.2 }}>
           Auto Diagnostics in Crown Point, IN
         </h1>
-        <p className="speakable" style={{ fontSize: "16px", color: "#f1626f", fontWeight: "600", marginBottom: "16px", fontStyle: "italic" }}>TL;DR: We charge a diagnostic fee (applied toward repair cost) and complete most diagnostics same day. We scan all vehicle modules, find the root cause, and call you with a clear estimate before doing any work.
+        <p className="speakable" style={{ fontSize: "16px", color: "#f1626f", fontWeight: "600", marginBottom: "16px", fontStyle: "italic" }}>TL;DR: We complete most diagnostics the same day. We scan the relevant vehicle modules, test the affected system, identify the root cause, and call you with the findings and a clear estimate before authorized work.
         </p>
         <p style={{ fontSize: "18px", color: "#ccc", maxWidth: "600px", margin: "0 auto 32px" }}>
           We diagnose before we repair. Every time. No guesswork — just accurate answers and honest recommendations.
@@ -102,7 +102,7 @@ export default function Diagnostics() {
           { q: "Where can I get auto diagnostics in Crown Point, IN?", a: "R Complete Auto Care at 1305 E Summit St, Crown Point, IN 46307. Call (219) 262-2711. Open Mon–Fri 8am–6pm, Sat 8am–2pm. Most diagnostics completed same day." },
           { q: "Why is a diagnostic important before repairs?", a: "Without a proper diagnosis, repairs are guesswork. We identify the exact problem so you only pay for what your vehicle actually needs — saving you time and money at our Crown Point shop." },
           { q: "How long does an auto diagnostic take in Crown Point?", a: "Most diagnostics at our Crown Point location are completed the same day. We call you with our findings before doing any repair work." },
-          { q: "How much does a diagnostic cost in Crown Point?", a: "We charge a diagnostic fee to properly identify the issue. This fee is applied toward your repair cost if you choose to have us fix it at our Crown Point location." },
+          { q: "What is included in a vehicle diagnostic?", a: "We scan the relevant modules and test the affected system to identify the root cause, then explain the findings and provide an estimate before any repair is authorized." },
           { q: "Do you work on all makes and models?", a: "Yes — all foreign and domestic vehicles including Honda, Toyota, BMW, Mercedes, Ford, Chevrolet, Dodge, Subaru, and more." },
           { q: "Do you serve St. John, Schererville, and Merrillville for diagnostics?", a: "Yes! We're located in Crown Point and serve all of Lake County including St. John, Schererville, Merrillville, and Cedar Lake, Indiana." },
           { q: "Do you accept extended warranties for diagnostic repairs?", a: "Yes! We work with most extended warranty providers and handle the entire claims process for you." },
@@ -162,7 +162,7 @@ export default function Diagnostics() {
       {
         "@type": "Question",
         "name": "How much does a diagnostic cost in Crown Point?",
-        "acceptedAnswer": { "@type": "Answer", "text": "We charge a diagnostic fee to properly identify the issue. This fee is applied toward your repair cost if you choose to have us fix it at our Crown Point location." }
+        "acceptedAnswer": { "@type": "Answer", "text": "We scan the relevant modules and test the affected system to identify the root cause, then explain the findings and provide an estimate before any repair is authorized." }
       },
       {
         "@type": "Question",

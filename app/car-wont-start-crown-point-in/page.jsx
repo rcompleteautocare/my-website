@@ -97,20 +97,20 @@ export default function CarWontStart() {
         <h2>Why Our Diagnostic Approach Gets It Right the First Time</h2>
         <p>
           The most common no-start misdiagnosis in Crown Point: a driver goes to the parts store,
-          gets a free battery test, buys a $180 battery — and the car still won&apos;t start. A
+          gets a quick battery test, replaces the battery — and the car still won&apos;t start. A
           countertop battery test measures resting voltage. It does not replicate what the battery
           experiences under actual cranking load. A battery reading 12.6 volts at rest can drop to
           5 volts when the starter engages.
         </p>
         <p>
-          We have diagnosed cars where the actual fix was a $30 corroded ground cable. The battery
+          We have diagnosed cars where the actual fault was a corroded ground cable. The battery
           was fine. The starter was fine. A voltage drop test across the ground circuit caught the
           fault in 15 minutes. Without that test, the customer would have replaced the battery,
-          then the starter, then brought the car to us anyway — after spending $400 unnecessarily.
+          then the starter, then brought the car to us anyway after authorizing unnecessary work.
         </p>
         <p>
           At R Complete Auto Care we run the full systematic diagnostic before recommending any part.
-          We find the root cause. We call you with the answer and the cost. You approve the repair.
+          We find the root cause. We call you with the findings and an estimate. You approve the repair.
           We fix it. That is the only sequence we follow.
         </p>
         <a href="tel:2192622711" className="cta-button">📞 Call (219) 262-2711 — We Diagnose Before We Replace</a>
@@ -125,7 +125,7 @@ export default function CarWontStart() {
           <li><strong>Spark and ignition verification</strong> (crank-no-start). Spark at the plug under cranking, ignition module output, crankshaft sensor signal.</li>
           <li><strong>Compression check</strong> (if indicated). Relative compression test or cylinder leak-down to confirm mechanical integrity.</li>
           <li><strong>Full module scan.</strong> Engine, BCM, PCM, and immobilizer/security modules scanned for stored and active faults, including freeze frame data.</li>
-          <li><strong>Root cause confirmed — you approve — we fix.</strong> We call you with exactly what we found, the repair required, and the cost. No work starts until you approve.</li>
+          <li><strong>Root cause confirmed — you approve — we fix.</strong> We call you with exactly what we found, the repair required, and a clear estimate. No work starts until you approve.</li>
         </ol>
 
         <h2>No-Start Repair Services We Perform in Crown Point</h2>
@@ -178,7 +178,7 @@ export default function CarWontStart() {
           We handle the entire warranty process: we verify your coverage before you bring the vehicle
           in, perform a documented diagnostic that meets warranty adjuster requirements, make the
           pre-authorisation call, complete the repair, and submit all documentation. You pay only
-          your deductible.
+          the authorization and any contract-defined customer responsibility.
         </p>
         <p>
           Call us at (219) 262-2711 with your warranty provider name before bringing the vehicle in.

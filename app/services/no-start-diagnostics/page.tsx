@@ -124,7 +124,7 @@ export default function NoStartDiagnostics() {
               { title: "Extended Warranty Accepted", desc: "Many no-start causes are covered. We verify coverage and handle the paperwork." },
               { title: "All Makes & Models", desc: "Foreign and domestic. Honda, Toyota, Ford, GM, BMW, Mercedes, Subaru and more." },
               { title: "Electrical Specialists", desc: "Many no-start conditions are electrical. Our systematic approach finds faults others miss." },
-              { title: "Honest Estimates", desc: "Clear price before any work. You approve everything. No surprises." },
+              { title: "Honest Estimates", desc: "A clear estimate before any work. You approve everything. No surprises." },
             ].map(item => (
               <div key={item.title} style={{ border: "1px solid #e0e0e0", borderLeft: "4px solid #e63946", borderRadius: "4px", padding: "16px" }}>
                 <div style={{ fontWeight: "bold", marginBottom: "8px" }}>{item.title}</div>

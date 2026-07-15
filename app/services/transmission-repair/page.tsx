@@ -58,7 +58,7 @@ export default function TransmissionRepair() {
           Transmission repair is one of the most misdiagnosed — and most expensive — areas of auto repair. Many shops jump straight to a rebuild or replacement at the first sign of slipping or shifting problems. At R Complete Auto Care in Crown Point, we do it differently. We diagnose first. Every time.
         </p>
         <p style={{ lineHeight: 1.8, color: "#444", marginBottom: "20px" }}>
-          We have saved customers thousands of dollars by finding a simple solenoid failure, a low fluid condition, or a sensor issue that another shop wanted to rebuild the entire transmission for. A thorough diagnostic costs a fraction of an unnecessary rebuild — and it tells you exactly what you&apos;re dealing with before you commit to anything.
+          We have found solenoid failures, low-fluid conditions, and sensor issues on vehicles that had already received rebuild recommendations. A thorough diagnostic tells you exactly what you&apos;re dealing with and whether a targeted repair or internal work is justified before you commit to anything.
         </p>
         <p style={{ lineHeight: 1.8, color: "#444", marginBottom: "40px" }}>
           We service automatic, manual, and CVT transmissions on all makes and models. We also accept most extended warranty plans and handle the entire claims process — transmission repairs are among the most commonly covered repairs on extended warranty policies.

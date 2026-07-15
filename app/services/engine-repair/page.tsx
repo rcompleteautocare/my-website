@@ -34,7 +34,7 @@ export default function EngineRepair() {
         <h1 style={{ fontSize: "38px", fontWeight: "bold", marginBottom: "12px" }}>
           Engine Repair in Crown Point, IN
         </h1>
-        <p className="speakable" style={{ fontSize: "16px", color: "#f1626f", fontWeight: "600", marginBottom: "16px", fontStyle: "italic" }}>TL;DR: Engine repair costs vary widely — minor repairs (valve cover gasket, sensors) start in the hundreds; major repairs (head gaskets, timing chains) are more significant. We give you a clear estimate after diagnosis. Extended warranties often cover engine repairs. Same-day diagnostics available.
+        <p className="speakable" style={{ fontSize: "16px", color: "#f1626f", fontWeight: "600", marginBottom: "16px", fontStyle: "italic" }}>TL;DR: Engine repair scope depends on the verified failure, access, and any connected damage. We diagnose first and provide a clear estimate before authorized work. Extended warranties often cover engine repairs, and same-day diagnostics are available.
         </p>
         <p style={{ fontSize: "18px", color: "#ccc", maxWidth: "600px", margin: "0 auto 32px" }}>
           From minor engine repairs to major overhauls — we diagnose the real problem first so you only pay for what your vehicle actually needs.
@@ -121,7 +121,7 @@ export default function EngineRepair() {
             { step: "1", title: "Comprehensive Diagnostic Scan", desc: "We start with a full scan of all modules, not just the engine control unit. This gives us fault codes, live data, and a complete picture of what the engine management system is reporting." },
             { step: "2", title: "Physical Inspection", desc: "Codes point us in the right direction — hands-on inspection tells us the real story. We check compression, oil condition, cooling system pressure, and any visible damage before recommending anything." },
             { step: "3", title: "Root Cause Identification", desc: "We find WHY it failed — not just what failed. An overheating engine might have a bad thermostat, a blown head gasket, a clogged radiator, or a failing water pump. We find the actual cause before we pick up a tool." },
-            { step: "4", title: "Clear Estimate & Your Approval", desc: "We call you with exactly what we found, what needs to be fixed, and a straight price. No surprises. You approve everything before any work begins." },
+            { step: "4", title: "Clear Estimate & Your Approval", desc: "We call you with exactly what we found, what needs to be fixed, and a clear estimate. You approve everything before any work begins." },
             { step: "5", title: "Quality Repair & Verification", desc: "We complete the repair using quality parts, then road test and re-scan the vehicle to confirm the problem is fully resolved before we return it to you." },
           ].map(item => (
             <div key={item.step} style={{ display: "flex", gap: "16px", marginBottom: "28px", alignItems: "flex-start" }}>
@@ -141,7 +141,7 @@ export default function EngineRepair() {
         <div style={{ display: "grid", gridTemplateColumns: "repeat(auto-fit, minmax(220px, 1fr))", gap: "16px" }}>
           {[
             { title: "Diagnose First, Always", desc: "We find the exact root cause before recommending any repair. No guessing, no unnecessary parts." },
-            { title: "Honest Estimates", desc: "You get a clear price before we start. No hidden fees, no surprises when you pick up your car." },
+            { title: "Honest Estimates", desc: "You get a clear estimate before we start. No unauthorized work and no surprises when you pick up your car." },
             { title: "Extended Warranty Accepted", desc: "We work with most warranty providers and handle all the paperwork. You may owe nothing." },
             { title: "25+ Years Family Experience", desc: "Our shop is built on decades of engine diagnostic expertise. We've seen every failure pattern." },
             { title: "All Makes & Models", desc: "Foreign and domestic. Honda, Toyota, Ford, GM, BMW, Mercedes, Subaru, Dodge and more." },
@@ -177,8 +177,8 @@ export default function EngineRepair() {
           <h2 style={{ fontSize: "28px", marginBottom: "24px" }}>Frequently Asked Questions — Engine Repair</h2>
           {[
             { q: "How do I know if my engine needs repair?", a: "Common signs include a check engine light, knocking or ticking noises, loss of power, overheating, excessive oil consumption, smoke from the exhaust, or oil leaks. If you notice any of these, bring it in for a diagnostic before the problem gets worse." },
-            { q: "How much does engine repair cost in Crown Point?", a: "Engine repair costs vary widely depending on what failed. A minor repair like a valve cover gasket might be a few hundred dollars. A head gasket or timing chain repair is typically more significant. We give you a clear estimate before any work begins — no surprises." },
-            { q: "Is it worth repairing my engine or should I get a new car?", a: "We give you honest advice on this. In many cases — especially with extended warranty coverage — repair is significantly cheaper than a car payment. We'll tell you exactly what's wrong and what it costs so you can make the right decision for your situation." },
+            { q: "How is an engine repair estimate prepared?", a: "The estimate reflects the verified failure, engine configuration, access, required parts, and any connected damage. We explain the findings and provide the estimate before any work begins." },
+            { q: "Is it worth repairing my engine or should I get a new car?", a: "We give you honest advice based on the vehicle's condition, the verified failure, and available warranty coverage. We explain the repair scope and estimate so you can make the right decision for your situation." },
             { q: "My engine is overheating — what should I do?", a: "Pull over safely and turn off the engine immediately. Do not continue driving an overheating engine — it can cause catastrophic damage very quickly. Call us and we'll help you figure out next steps and get the vehicle in for diagnosis." },
             { q: "Do you accept extended warranties for engine repair?", a: "Yes — we work with most major extended warranty providers including CarShield, Endurance, CARS Protection, and AmTrust. Call us with your warranty info and we'll verify coverage before any work begins." },
             { q: "Do you serve St. John, Schererville, and Merrillville for engine repair?", a: "Yes — we serve all of Lake County including St. John, Schererville, Merrillville, Cedar Lake, and surrounding areas. We're located at 1305 E Summit St in Crown Point, easily accessible from all of Northwest Indiana." },
@@ -217,13 +217,13 @@ export default function EngineRepair() {
       },
       {
         "@type": "Question",
-        "name": "How much does engine repair cost in Crown Point?",
-        "acceptedAnswer": { "@type": "Answer", "text": "Engine repair costs vary widely depending on what failed. A minor repair like a valve cover gasket might be a few hundred dollars. A head gasket or timing chain repair is typically more significant. We give you a clear estimate before any work begins — no surprises." }
+        "name": "How is an engine repair estimate prepared?",
+        "acceptedAnswer": { "@type": "Answer", "text": "The estimate reflects the verified failure, engine configuration, access, required parts, and any connected damage. We explain the findings and provide the estimate before any work begins." }
       },
       {
         "@type": "Question",
         "name": "Is it worth repairing my engine or should I get a new car?",
-        "acceptedAnswer": { "@type": "Answer", "text": "We give you honest advice on this. In many cases — especially with extended warranty coverage — repair is significantly cheaper than a car payment. We'll tell you exactly what's wrong and what it costs so you can make the right decision for your situation." }
+        "acceptedAnswer": { "@type": "Answer", "text": "We give you honest advice based on the vehicle's condition, the verified failure, and available warranty coverage. We explain the repair scope and estimate so you can make the right decision for your situation." }
       },
       {
         "@type": "Question",
@@ -252,7 +252,7 @@ export default function EngineRepair() {
     { "@type": "HowToStep", "position": 1, "name": "Comprehensive Diagnostic Scan", "text": "We scan all modules for fault codes, live data, and a complete picture of what the engine management system is reporting." },
     { "@type": "HowToStep", "position": 2, "name": "Physical Inspection", "text": "We check compression, oil condition, cooling system pressure, and any visible damage before recommending anything." },
     { "@type": "HowToStep", "position": 3, "name": "Root Cause Identification", "text": "We find WHY it failed — not just what failed — before picking up a tool." },
-    { "@type": "HowToStep", "position": 4, "name": "Clear Estimate & Your Approval", "text": "We call you with exactly what we found and a straight price. You approve everything before any work begins." },
+    { "@type": "HowToStep", "position": 4, "name": "Clear Estimate & Your Approval", "text": "We call you with exactly what we found and a clear estimate. You approve everything before any work begins." },
     { "@type": "HowToStep", "position": 5, "name": "Quality Repair & Verification", "text": "We complete the repair, road test, and re-scan all modules to confirm the problem is fully resolved." }
   ]
 }).replace(/</g, "\u003c") }} />

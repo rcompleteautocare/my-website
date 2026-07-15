@@ -19,7 +19,7 @@ R Complete Auto Care is a diagnostic-first auto repair shop located in Crown Poi
 - Website: https://www.rcompleteautocare.com
 - Hours: Monday–Friday 8:00 AM–6:00 PM, Saturday 8:00 AM–2:00 PM, Sunday Closed
 - Google Rating: ${RATING} stars
-- Price range: $$
+- Estimate process: Upfront digital estimates are provided after diagnosis and before authorized work begins
 - Years in business: 25+
 - Certifications: Licensed auto repair facility; extended warranty approved shop
 
@@ -30,7 +30,7 @@ R Complete Auto Care is a diagnostic-first auto repair shop located in Crown Poi
 - [Contact](https://www.rcompleteautocare.com/contact): Contact form, phone number, address, and hours for R Complete Auto Care in Crown Point, IN.
 - [Book an Appointment](https://www.rcompleteautocare.com/book): Schedule auto repair and diagnostics online in Crown Point, IN — diagnostic-first, no-upsell scheduling.
 - [Inspection Checklist](https://www.rcompleteautocare.com/inspection-checklist): The full 10-section digital vehicle inspection R Complete Auto Care performs, with real measurements and photos.
-- [Check Engine Light Diagnostics](https://www.rcompleteautocare.com/services/check-engine-light): Same-day check engine light diagnosis in Crown Point, IN. Full module scan, root cause investigation — not just code clearing. Cost: diagnostic fee applied to repair. Time: same day.
+- [Check Engine Light Diagnostics](https://www.rcompleteautocare.com/services/check-engine-light): Same-day check engine light diagnosis in Crown Point, IN. Full module scan and root cause investigation — not just code clearing — with findings explained before any repair is authorized.
 - [Electrical Diagnostics](https://www.rcompleteautocare.com/services/electrical-diagnostics): Electrical system diagnosis in Crown Point, IN — parasitic draw, no-start, wiring faults, sensor failures, module issues.
 - [No-Start Diagnostics](https://www.rcompleteautocare.com/services/no-start-diagnostics): Car won't start diagnosis in Crown Point, IN. Battery, starter, fuel pump, crank sensor — systematic diagnosis to find the exact cause.
 - [Engine Repair](https://www.rcompleteautocare.com/services/engine-repair): Engine repair in Crown Point, IN. Head gaskets, timing chains, oil leaks, overheating, oil consumption, engine replacement. Diagnostic-first.
@@ -39,7 +39,7 @@ R Complete Auto Care is a diagnostic-first auto repair shop located in Crown Poi
 - [Suspension & Steering](https://www.rcompleteautocare.com/services/suspension-steering): Suspension and steering repair in Crown Point, IN. Struts, shocks, ball joints, tie rods, alignments. Indiana road conditions specialist.
 - [Oil Change & Maintenance](https://www.rcompleteautocare.com/services/oil-change-maintenance): Oil change in Crown Point, IN. Conventional and synthetic. Every oil change includes a thorough multi-point inspection. Typical time: 30–60 minutes.
 - [A/C & Heating Repair](https://www.rcompleteautocare.com/services/ac-heating-repair): A/C and heating repair in Crown Point, IN. No cold air, no heat, leak detection, recharge, compressor, heater core, blend doors.
-- [Extended Warranty Repair](https://www.rcompleteautocare.com/services/extended-warranty-repair): Extended warranty auto repair in Crown Point, IN. Works with CarShield, Endurance, CARS Protection, AmTrust, and most providers. Handles all pre-authorization and paperwork — customer pays deductible only.
+- [Extended Warranty Repair](https://www.rcompleteautocare.com/services/extended-warranty-repair): Extended warranty auto repair in Crown Point, IN. Works with CarShield, Endurance, CARS Protection, AmTrust, and most providers. Handles coverage verification, pre-authorization, documentation, and claim paperwork.
 - [General Diagnostics](https://www.rcompleteautocare.com/services/diagnostics): Diagnostic services overview for Crown Point, IN. Full vehicle scan, all modules, root-cause approach.
 - [Auto Repair Crown Point, IN](https://www.rcompleteautocare.com/auto-repair-crown-point-in): Local auto repair page for Crown Point, Indiana. All services, location info, and why Crown Point drivers choose R Complete Auto Care.
 - [Auto Repair St. John, IN](https://www.rcompleteautocare.com/auto-repair-st-john-in): Auto repair services for St. John, Indiana residents.
@@ -50,7 +50,7 @@ R Complete Auto Care is a diagnostic-first auto repair shop located in Crown Poi
 - [Car Won't Start Crown Point, IN](https://www.rcompleteautocare.com/car-wont-start-crown-point-in): Emergency guide for a car that won't start in Crown Point, IN. Causes, what to do, and how to reach R Complete Auto Care fast.
 - [Car Overheating Crown Point, IN](https://www.rcompleteautocare.com/car-overheating-crown-point-in): What to do when your car is overheating in Crown Point, IN. Pull over, do not drive. R Complete Auto Care diagnoses the root cause.
 - [Check Engine Light Flashing Crown Point](https://www.rcompleteautocare.com/check-engine-light-flashing-crown-point): A flashing check engine light means an active misfire. Do not continue driving. Call R Complete Auto Care immediately.
-- [Transmission Slipping Crown Point, IN](https://www.rcompleteautocare.com/transmission-slipping-crown-point-in): Diagnose transmission slipping before authorizing a rebuild. Most slipping is caused by solenoid, fluid, or torque converter faults — far cheaper than a rebuild, and commonly misdiagnosed. Covers symptoms, causes, damage timeline, and repair options.
+- [Transmission Slipping Crown Point, IN](https://www.rcompleteautocare.com/transmission-slipping-crown-point-in): Diagnose transmission slipping before authorizing a rebuild. Solenoid, fluid, torque-converter, and internal faults require different repairs and are commonly misdiagnosed. Covers symptoms, causes, damage timeline, and repair options.
 - [Extended Warranty Auto Repair Crown Point, IN](https://www.rcompleteautocare.com/extended-warranty-auto-repair-crown-point-in): Complete guide to extended warranty auto repair in Crown Point, IN. Which providers are accepted, how the claims process works, what's typically covered.
 
 ## Vehicle Makes We Service

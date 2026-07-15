@@ -47,7 +47,7 @@ const FAQS = [
   },
   {
     q: 'Do extended warranties cover overheating repairs?',
-    a: "Many cooling system components are covered — water pumps, thermostats, radiators, and in some cases the diagnostic fee. Call us with your warranty provider name and we'll verify coverage before you bring the vehicle in.",
+    a: "Many cooling system components are covered, including water pumps, thermostats, and radiators. Call us with your warranty provider name and we'll verify the contract terms before you bring the vehicle in.",
   },
   {
     q: 'How long does an overheating diagnosis take?',
@@ -55,7 +55,7 @@ const FAQS = [
   },
   {
     q: 'My car overheated and now it won\'t start. What happened?',
-    a: "Severe overheating can cause a head gasket to fail, a cylinder head to warp, or in extreme cases engine seizure. We run the full post-overheating inspection to determine the extent of damage and give you an honest assessment — repair vs. replacement — before you spend anything.",
+    a: "Severe overheating can cause a head gasket to fail, a cylinder head to warp, or in extreme cases engine seizure. We run the full post-overheating inspection to determine the extent of damage and give you an honest assessment — repair vs. replacement — before you authorize work.",
   },
 ]
 
@@ -67,7 +67,7 @@ export default function CarOverheating() {
       <p className="location-badge">Crown Point, Indiana</p>
       <h1>Car Overheating in Crown Point, IN — What to Do Right Now</h1>
       <p className="hero-description speakable">
-        Engine overheating turns a $400 cooling system repair into a $4,000 engine replacement
+        Engine overheating can turn a repairable cooling-system fault into major engine damage
         faster than almost any other problem. If your temperature gauge is moving toward the red —
         pull over immediately, turn the engine off, and call R Complete Auto Care. We offer
         same-day overheating diagnostics in Crown Point, Indiana. Extended warranty accepted.
@@ -184,7 +184,7 @@ export default function CarOverheating() {
         </div>
         <div className="feature-item">
           <strong>Honest Repair vs. Replace Guidance</strong>
-          <p>If the engine has sustained damage we give you a straight answer on repair cost versus vehicle value. No pressure either way.</p>
+          <p>If the engine has sustained damage, we explain the repair and replacement options using the diagnostic findings. No pressure either way.</p>
         </div>
         <div className="feature-item">
           <strong>Extended Warranty Accepted</strong>
@@ -205,7 +205,7 @@ export default function CarOverheating() {
         Protection Plus, Endurance, CarShield, CARCHEX, AmTrust/National Auto Care, and Zurich.
         We handle the complete warranty process: coverage verification, documented diagnostic and
         post-overheating assessment, pre-authorisation call, repair, and claim submission. You
-        pay only your deductible.
+        understand the coverage authorization before work begins.
       </p>
       <p>Call us at (219) 262-2711 with your warranty provider name before bringing the vehicle in. We will verify coverage and get you scheduled.</p>
       <a href="tel:2192622711" className="cta-button">📞 Call (219) 262-2711 — Extended Warranty Accepted</a>

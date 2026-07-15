@@ -36,7 +36,7 @@ export default function AcHeatingRepair() {
         <h1 style={{ fontSize: "38px", fontWeight: "bold", marginBottom: "12px", lineHeight: 1.2 }}>
           A/C &amp; Heating Repair in Crown Point, IN
         </h1>
-        <p className="speakable" style={{ fontSize: "16px", color: "#f1626f", fontWeight: "600", marginBottom: "16px", fontStyle: "italic" }}>TL;DR: A refrigerant recharge starts around $100–$150. Compressor replacement typically runs $700–$1,400. Heater core replacement usually runs $600–$1,500, higher when full dashboard removal is required. We diagnose before we recommend — same-day appointments available for Crown Point and surrounding areas.
+        <p className="speakable" style={{ fontSize: "16px", color: "#f1626f", fontWeight: "600", marginBottom: "16px", fontStyle: "italic" }}>TL;DR: Climate-control repair starts with refrigerant, airflow, electrical-control, and component testing. We explain the verified cause and provide an upfront estimate before authorized work — same-day appointments are available for Crown Point and surrounding areas.
         </p>
         <p style={{ fontSize: "18px", color: "#ccc", maxWidth: "600px", margin: "0 auto 32px" }}>
           No cold air in summer? No heat in an Indiana winter? We diagnose and repair all A/C and heating problems — fast and right.
@@ -154,7 +154,7 @@ export default function AcHeatingRepair() {
       "step": [
         { "@type": "HowToStep", "position": 1, "name": "System Diagnosis", "text": "We perform a full A/C or heating system diagnostic — checking refrigerant pressure, component operation, and temperature output." },
         { "@type": "HowToStep", "position": 2, "name": "Leak Detection if Needed", "text": "If refrigerant is low, we perform a leak detection test to find the source before recharging — otherwise the problem returns." },
-        { "@type": "HowToStep", "position": 3, "name": "Clear Estimate", "text": "We explain exactly what failed and give you a clear price before starting any repair." },
+        { "@type": "HowToStep", "position": 3, "name": "Clear Estimate", "text": "We explain exactly what failed and provide a clear estimate before starting any repair." },
         { "@type": "HowToStep", "position": 4, "name": "Repair & Verification", "text": "We complete the repair and verify correct system operation — checking vent temperatures to confirm the fix." }
       ]
     }).replace(/</g, "\u003c") }} />

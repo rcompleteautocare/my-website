@@ -47,8 +47,8 @@ const FAQS = [
     a: "We'll advise you on the denial reason and whether it's worth appealing. Some denials are based on insufficient documentation from a previous shop — our detailed diagnostic records are often sufficient to support a successful reconsideration. We'll walk you through your options clearly.",
   },
   {
-    q: 'Is the diagnostic fee covered by my extended warranty?',
-    a: "Many extended warranty plans cover the diagnostic fee when the diagnosed failure is a covered component. We check your specific plan terms when we verify coverage. Even when it's not covered, our diagnostic fee is applied toward the repair cost.",
+    q: 'Does my extended warranty cover diagnosis?',
+    a: "Diagnostic coverage varies by contract and by the component that failed. We check your plan terms, document the findings, and explain what the administrator authorizes before work begins.",
   },
   {
     q: 'Can I bring my car in without calling first?',
@@ -72,7 +72,7 @@ export default function ExtendedWarrantyRepair() {
           asking for better documentation? Bring the contract and the car to R Complete Auto Care.
           We produce the documented diagnostic adjusters actually accept, we make the
           pre-authorisation call on your behalf, and we advocate for approval. You pay only your
-          deductible. Call (219) 262-2711 before you do anything else.
+          contract-defined customer responsibility. Call (219) 262-2711 before you do anything else.
         </p>
         <a href="tel:2192622711" className="cta-button">📞 Call (219) 262-2711 — We&apos;ll Fight for Your Claim</a>
         <p className="address-line">1305 E Summit St, Crown Point, IN 46307 · Mon–Fri 8am–6pm · Sat 8am–2pm</p>
@@ -153,7 +153,7 @@ export default function ExtendedWarrantyRepair() {
           <li><strong>Diagnostic documented to warranty standards.</strong> We perform a thorough diagnostic with fault codes, test results, and precise failure mode descriptions formatted specifically for warranty adjuster review. This documentation is what separates approved claims from denied ones.</li>
           <li><strong>We make the pre-authorisation call.</strong> We contact your warranty company, present the diagnostic findings in the format their adjusters require, and obtain repair authorisation before any parts are ordered or work begins.</li>
           <li><strong>Repair using approved parts and procedures.</strong> Once pre-authorised, we complete the repair using parts that meet your warranty company&apos;s requirements and document all labor operations to specification.</li>
-          <li><strong>You pay only your deductible.</strong> The warranty company pays us directly for the covered amount. You pick up your vehicle and pay your deductible only — often $100–$200 on a repair that would have cost $800–$2,500 out of pocket.</li>
+          <li><strong>Coverage is explained before work.</strong> We confirm what the administrator authorizes and explain any customer responsibility defined by your contract before the repair begins.</li>
         </ol>
 
         <h2>Why Documentation Is the Difference Between Approval and Denial</h2>
@@ -174,7 +174,7 @@ export default function ExtendedWarrantyRepair() {
         <div className="feature-grid">
           <div className="feature-item">
             <strong>We Handle the Entire Process</strong>
-            <p>Coverage verification, pre-authorisation call, documented repair, claim submission — we manage every step. You pay only your deductible.</p>
+            <p>Coverage verification, pre-authorisation, documented repair, and claim submission — we manage every step and explain the authorization clearly.</p>
           </div>
           <div className="feature-item">
             <strong>Diagnostic-First Documentation</strong>
@@ -205,13 +205,13 @@ export default function ExtendedWarrantyRepair() {
         </ul>
 
         <h2>Extended Warranty Repair in Crown Point? Call Us First.</h2>
-        <p>We verify your coverage before you bring the vehicle in. We handle everything from pre-authorisation to final documentation. You pay only your deductible.</p>
+        <p>We verify your coverage before you bring the vehicle in and handle everything from pre-authorisation through final documentation.</p>
         <p>1305 E Summit St, Crown Point, IN 46307</p>
         <a href="tel:2192622711" className="cta-button">📞 Call (219) 262-2711</a>
       </div>
     
     <script type="application/ld+json" dangerouslySetInnerHTML={{ __html: "{\"@context\":\"https://schema.org\",\"@type\":\"BreadcrumbList\",\"itemListElement\":[{\"@type\":\"ListItem\",\"position\":1,\"name\":\"Home\",\"item\":\"https://www.rcompleteautocare.com\"},{\"@type\":\"ListItem\",\"position\":2,\"name\":\"Warranty Claim Help Crown Point, IN\"}]}".replace(/</g, "\u003c") }} />
-    <script type="application/ld+json" dangerouslySetInnerHTML={{ __html: "{\"@context\":\"https://schema.org\",\"@type\":\"HowTo\",\"name\":\"How We Handle Your Extended Warranty Claim\",\"description\":\"Our end-to-end warranty process in Crown Point, IN — you pay only your deductible.\",\"totalTime\":\"P1D\",\"step\":[{\"@type\":\"HowToStep\",\"position\":1,\"name\":\"Call us with your warranty provider name\",\"text\":\"Before you bring the car in, we verify what's covered and what documentation the adjuster will require.\"},{\"@type\":\"HowToStep\",\"position\":2,\"name\":\"Documented diagnostic\",\"text\":\"We perform a diagnostic that meets warranty adjuster requirements — measurements, codes, live data, photos.\"},{\"@type\":\"HowToStep\",\"position\":3,\"name\":\"Pre-authorisation call\",\"text\":\"We submit findings to your warranty provider and get written pre-authorisation before any repair begins.\"},{\"@type\":\"HowToStep\",\"position\":4,\"name\":\"Repair with approved parts\",\"text\":\"Some plans require specific part tiers. We use what your plan requires to keep the claim valid.\"},{\"@type\":\"HowToStep\",\"position\":5,\"name\":\"Submit final documentation\",\"text\":\"Invoice, photos, and sign-offs submitted to the adjuster. You pay only your deductible.\"}]}".replace(/</g, "\u003c") }} />
+    <script type="application/ld+json" dangerouslySetInnerHTML={{ __html: "{\"@context\":\"https://schema.org\",\"@type\":\"HowTo\",\"name\":\"How We Handle Your Extended Warranty Claim\",\"description\":\"Our end-to-end warranty process in Crown Point, IN — from coverage verification through final documentation.\",\"totalTime\":\"P1D\",\"step\":[{\"@type\":\"HowToStep\",\"position\":1,\"name\":\"Call us with your warranty provider name\",\"text\":\"Before you bring the car in, we verify what's covered and what documentation the adjuster will require.\"},{\"@type\":\"HowToStep\",\"position\":2,\"name\":\"Documented diagnostic\",\"text\":\"We perform a diagnostic that meets warranty adjuster requirements — measurements, codes, live data, photos.\"},{\"@type\":\"HowToStep\",\"position\":3,\"name\":\"Pre-authorisation call\",\"text\":\"We submit findings to your warranty provider and get written pre-authorisation before any repair begins.\"},{\"@type\":\"HowToStep\",\"position\":4,\"name\":\"Repair with approved parts\",\"text\":\"Some plans require specific part tiers. We use what your plan requires to keep the claim valid.\"},{\"@type\":\"HowToStep\",\"position\":5,\"name\":\"Submit final documentation\",\"text\":\"Invoice, photos, and sign-offs are submitted to the adjuster, and the authorization is explained before pickup.\"}]}".replace(/</g, "\u003c") }} />
     <script type="application/ld+json" dangerouslySetInnerHTML={{ __html: "{\"@context\":\"https://schema.org\",\"@type\":\"WebPage\",\"@id\":\"https://www.rcompleteautocare.com/extended-warranty-auto-repair-crown-point-in#webpage\",\"url\":\"https://www.rcompleteautocare.com/extended-warranty-auto-repair-crown-point-in\",\"name\":\"Warranty Claim Help Crown Point, IN\",\"dateModified\":\"2026-04-18\",\"about\":{\"@id\":\"https://www.rcompleteautocare.com/#business\"}}".replace(/</g, "\u003c") }} />
     <ServiceSchema name="Extended Warranty Auto Repair in Crown Point, IN" serviceType="Extended warranty auto repair" path="/extended-warranty-auto-repair-crown-point-in" />
   </>

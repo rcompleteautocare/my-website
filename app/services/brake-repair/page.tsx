@@ -1,11 +1,11 @@
 export const metadata = {
   title: 'Brake Repair in Crown Point, IN | R Complete Auto Care',
-  description: 'Brake repair in Crown Point, IN. Measurements-based inspections, honest pricing, quality parts. Extended warranty accepted. (219) 262-2711.',
+  description: 'Brake repair in Crown Point, IN. Measurements-based inspections, clear estimates, quality parts. Extended warranty accepted. (219) 262-2711.',
   alternates: { canonical: 'https://www.rcompleteautocare.com/services/brake-repair' },
 
   openGraph: {
     title: "Brake Repair in Crown Point, IN | R Complete Auto Care",
-    description: "Brake repair in Crown Point, IN. Measurements-based inspections, honest pricing, quality parts. Extended warranty accepted. (219) 262-2711.",
+    description: "Brake repair in Crown Point, IN. Measurements-based inspections, clear estimates, quality parts. Extended warranty accepted. (219) 262-2711.",
     url: "https://www.rcompleteautocare.com/services/brake-repair",
     siteName: "R Complete Auto Care",
     locale: "en_US",
@@ -15,7 +15,7 @@ export const metadata = {
   twitter: {
     card: "summary_large_image",
     title: "Brake Repair in Crown Point, IN | R Complete Auto Care",
-    description: "Brake repair in Crown Point, IN. Measurements-based inspections, honest pricing, quality parts. Extended warranty accepted. (219) 262-2711.",
+    description: "Brake repair in Crown Point, IN. Measurements-based inspections, clear estimates, quality parts. Extended warranty accepted. (219) 262-2711.",
     images: ["/logo.png"],
   },
   robots: { index: true, follow: true },
@@ -34,7 +34,7 @@ export default function BrakeRepair() {
         <h1 style={{ fontSize: "38px", fontWeight: "bold", marginBottom: "12px" }}>
           Brake Repair in Crown Point, IN
         </h1>
-        <p className="speakable" style={{ fontSize: "16px", color: "#f1626f", fontWeight: "600", marginBottom: "16px", fontStyle: "italic" }}>TL;DR: Brake pad replacement typically takes 1–2 hours. Full brake jobs (pads + rotors) usually run $150–$400 per axle depending on vehicle and parts. We give you exact measurements and a clear estimate before touching anything.
+        <p className="speakable" style={{ fontSize: "16px", color: "#f1626f", fontWeight: "600", marginBottom: "16px", fontStyle: "italic" }}>TL;DR: Brake repair starts with pad, rotor, caliper, fluid, and hardware measurements. We show you what is worn, explain what is urgent, and provide a clear estimate before authorized work.
         </p>
         <p style={{ fontSize: "18px", color: "#ccc", maxWidth: "600px", margin: "0 auto 32px" }}>
           Your brakes are the most important safety system on your vehicle. We perform thorough inspections with actual measurements — not a quick visual and an upsell.
@@ -161,7 +161,7 @@ export default function BrakeRepair() {
         <div style={{ maxWidth: "800px", margin: "0 auto" }}>
           <h2 style={{ fontSize: "28px", marginBottom: "24px" }}>Frequently Asked Questions — Brake Repair</h2>
           {[
-            { q: "How much does brake repair cost in Crown Point, IN?", a: "Brake pad replacement typically runs $150–$300 per axle for parts and labor. If rotors also need replacement, expect $250–$400 per axle depending on your vehicle. We give you the exact price after our inspection — no surprises." },
+            { q: "How is a brake repair estimate prepared?", a: "We measure pad and rotor condition, inspect calipers and hardware, and account for the vehicle-specific parts required. You receive the findings and a clear estimate before authorizing any repair." },
             { q: "How long does brake repair take?", a: "Most brake pad replacements take 1–2 hours. A full brake job (pads and rotors on all four wheels) typically takes 2–3 hours. We work efficiently and most repairs are completed same day." },
             { q: "Do I need an appointment for brake repair in Crown Point?", a: "We recommend calling ahead at (219) 262-2711. Same-day appointments are often available. We're open Mon–Fri 8am–6pm and Sat 8am–2pm." },
             { q: "How do I know when my brakes need to be replaced?", a: "Common signs include squealing, grinding, a soft pedal, pulling to one side, or a brake warning light. The most accurate way is a proper inspection with pad thickness and rotor measurements — which we provide at every brake service." },
@@ -195,7 +195,7 @@ export default function BrakeRepair() {
       "@context": "https://schema.org",
       "@type": "FAQPage",
       "mainEntity": [
-        { "@type": "Question", "name": "How much does brake repair cost in Crown Point, IN?", "acceptedAnswer": { "@type": "Answer", "text": "Brake pad replacement typically runs $150–$300 per axle for parts and labor. If rotors also need replacement, expect $250–$400 per axle depending on your vehicle. We give you the exact price after our inspection — no surprises." } },
+        { "@type": "Question", "name": "How is a brake repair estimate prepared?", "acceptedAnswer": { "@type": "Answer", "text": "We measure pad and rotor condition, inspect calipers and hardware, and account for the vehicle-specific parts required. You receive the findings and a clear estimate before authorizing any repair." } },
         { "@type": "Question", "name": "How long does brake repair take?", "acceptedAnswer": { "@type": "Answer", "text": "Most brake pad replacements take 1–2 hours. A full brake job (pads and rotors on all four wheels) typically takes 2–3 hours. We work efficiently and most repairs are completed same day." } },
         { "@type": "Question", "name": "Do I need an appointment for brake repair in Crown Point?", "acceptedAnswer": { "@type": "Answer", "text": "We recommend calling ahead at (219) 262-2711. Same-day appointments are often available. We're open Mon–Fri 8am–6pm and Sat 8am–2pm." } },
         { "@type": "Question", "name": "How do I know when my brakes need to be replaced?", "acceptedAnswer": { "@type": "Answer", "text": "Common signs include squealing, grinding, a soft pedal, pulling to one side, or a brake warning light. The most accurate way is a proper inspection with pad thickness and rotor measurements — which we provide at every brake service." } },

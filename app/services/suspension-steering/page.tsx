@@ -35,7 +35,7 @@ export default function SuspensionSteering() {
         <h1 style={{ fontSize: "38px", fontWeight: "bold", marginBottom: "12px" }}>
           Suspension &amp; Steering Repair in Crown Point, IN
         </h1>
-        <p className="speakable" style={{ fontSize: "16px", color: "#f1626f", fontWeight: "600", marginBottom: "16px", fontStyle: "italic" }}>TL;DR: Strut replacement typically runs $200–$400 per strut (parts + labor). Alignments are $80–$120. Ball joints, tie rod ends, and wheel bearings vary by vehicle. We inspect before recommending — and Indiana pothole damage is often more extensive than it first appears.
+        <p className="speakable" style={{ fontSize: "16px", color: "#f1626f", fontWeight: "600", marginBottom: "16px", fontStyle: "italic" }}>TL;DR: Struts, ball joints, tie rod ends, wheel bearings, and alignment concerns require a measured inspection. We document the worn components and provide an upfront estimate before authorized work — especially when Indiana pothole damage affects more than one part.
         </p>
         <p style={{ fontSize: "18px", color: "#ccc", maxWidth: "600px", margin: "0 auto 32px" }}>
           Indiana roads are hard on suspension. Potholes, frost heaves, and rough pavement wear out struts, shocks, and steering components faster than anywhere else. We keep your ride safe, stable, and in control.
