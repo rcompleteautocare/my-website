@@ -1,12 +1,9 @@
 import type { Metadata } from "next";
-import { Analytics } from "@vercel/analytics/next";
-import { SpeedInsights } from "@vercel/speed-insights/next";
 import "./globals.css";
 import Nav from "./components/Nav";
 import Footer from "./components/Footer";
-import PhoneConversionListener from "@/components/PhoneConversionListener";
 import { RATING, REVIEW_COUNT } from "@/lib/rating";
-import SiteAnalytics from "@/components/SiteAnalytics";
+import SiteTracking from "@/components/SiteTracking";
 
 const ADS_TAG_ID = process.env.NEXT_PUBLIC_ADS_TAG_ID;
 
@@ -124,36 +121,6 @@ export default function RootLayout({ children }: { children: React.ReactNode }) 
   return (
     <html lang="en">
       <body style={{ margin: 0, fontFamily: "sans-serif" }}>
-        {ADS_TAG_ID ? (
-          <>
-            {/*
-              Initialize the dataLayer and gtag function BEFORE loading gtag.js
-              so we can set Consent Mode defaults and queue any config calls
-              without introducing a second gtag.js script.
-            */}
-            <script
-              dangerouslySetInnerHTML={{
-                __html: `
-                  window.dataLayer = window.dataLayer || [];
-                  function gtag(){dataLayer.push(arguments);}
-                  // Consent Mode v2: granted by default. This is a US (Indiana) local
-                  // business with no GDPR/CCPA obligation, so we don't gate tracking behind
-                  // a consent banner. If a banner is added later, set the default to 'denied'
-                  // here and call window.updateGtagConsent(...) once the user grants consent.
-                  gtag('consent', 'default', { ad_storage: 'granted', analytics_storage: 'granted' });
-                  gtag('js', new Date());
-                  // Google Ads (AW-*) config - always present when ADS_TAG_ID exists
-                  gtag('config', '${ADS_TAG_ID}');
-                  // Google tag (GT-*/G-*) config - only added when NEXT_PUBLIC_GA_MEASUREMENT_ID is set
-                  ${GA_MEASUREMENT_ID ? `gtag('config', '${GA_MEASUREMENT_ID}');` : "// TODO: set NEXT_PUBLIC_GA_MEASUREMENT_ID to enable GA4 (see app/layout.tsx)"}
-                  // Expose a small helper for cookie-consent UIs to update Consent Mode later
-                  window.updateGtagConsent = function(consent) { try { gtag('consent', 'update', consent); } catch(e){} };
-                `,
-              }}
-            />
-            <script async src={`https://www.googletagmanager.com/gtag/js?id=${ADS_TAG_ID}`} />
-          </>
-        ) : null}
         <script
           type="application/ld+json"
           dangerouslySetInnerHTML={{ __html: JSON.stringify(SCHEMA).replace(/</g, "\\u003c") }}
@@ -165,13 +132,7 @@ export default function RootLayout({ children }: { children: React.ReactNode }) 
         <Nav />
         <main>{children}</main>
         <Footer />
-        {process.env.NEXT_PUBLIC_ADS_TAG_ID &&
-          process.env.NEXT_PUBLIC_ADS_PHONE_CONVERSION_LABEL && (
-            <PhoneConversionListener />
-          )}
-        <Analytics />
-        <SpeedInsights />
-        <SiteAnalytics />
+        <SiteTracking adsTagId={ADS_TAG_ID} gaMeasurementId={GA_MEASUREMENT_ID} />
       </body>
     </html>
   );

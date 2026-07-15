@@ -9,6 +9,14 @@ const nextConfig: NextConfig = {
   async headers() {
     return [
       {
+        source: "/login",
+        headers: [{ key: "X-Robots-Tag", value: "noindex, nofollow, noarchive" }],
+      },
+      {
+        source: "/command-center/:path*",
+        headers: [{ key: "X-Robots-Tag", value: "noindex, nofollow, noarchive" }],
+      },
+      {
         // Long-lived immutable caching for static image/font assets in public/.
         // (_next/static is already immutable on Vercel; this covers /logo.png,
         // /badges/*, and the *.svg assets.)
