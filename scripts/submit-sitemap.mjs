@@ -51,35 +51,22 @@ function resolveConfig() {
   const args = parseArgs();
   const siteUrl = args.siteUrl || process.env.SITE_URL || readEnvLocal('SITE_URL');
   const sitemapPath = args.sitemapPath || process.env.SITEMAP_PATH || readEnvLocal('SITEMAP_PATH');
-  const clientSecretPath = args.clientSecretPath || process.env.CLIENT_SECRET_PATH || readEnvLocal('CLIENT_SECRET_PATH');
-  const clientSecretJson = args.clientSecretJson || process.env.GOOGLE_CLIENT_SECRET_JSON || readEnvLocal('GOOGLE_CLIENT_SECRET_JSON');
+  const clientSecretJson = process.env.GOOGLE_CLIENT_SECRET_JSON || readEnvLocal('GOOGLE_CLIENT_SECRET_JSON');
   const tokenPath = args.tokenPath || process.env.OAUTH2_TOKEN_PATH || readEnvLocal('OAUTH2_TOKEN_PATH') || DEFAULT_TOKEN_PATH;
 
-  return { siteUrl, sitemapPath, clientSecretPath, clientSecretJson, tokenPath };
+  return { siteUrl, sitemapPath, clientSecretJson, tokenPath };
 }
 
-function loadJson(path) {
+function loadClientSecret({ clientSecretJson }) {
+  if (!clientSecretJson) {
+    throw new Error('GOOGLE_CLIENT_SECRET_JSON is required; sitemap submission is disabled until it is set.');
+  }
+
   try {
-    return JSON.parse(readFileSync(path, 'utf8'));
+    return JSON.parse(clientSecretJson);
   } catch (error) {
-    throw new Error(`Unable to read or parse JSON from ${path}: ${error.message}`);
+    throw new Error(`GOOGLE_CLIENT_SECRET_JSON is not valid JSON: ${error.message}`);
   }
-}
-
-function loadClientSecret({ clientSecretPath, clientSecretJson }) {
-  if (clientSecretJson) {
-    try {
-      return JSON.parse(clientSecretJson);
-    } catch (error) {
-      throw new Error(`GOOGLE_CLIENT_SECRET_JSON is not valid JSON: ${error.message}`);
-    }
-  }
-
-  if (clientSecretPath) {
-    return loadJson(clientSecretPath);
-  }
-
-  throw new Error('No OAuth client secret provided. Set --clientSecretPath, CLIENT_SECRET_PATH, or GOOGLE_CLIENT_SECRET_JSON.');
 }
 
 function getClientSecretPayload(secretJson) {

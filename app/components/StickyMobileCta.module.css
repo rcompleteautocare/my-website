@@ -3,10 +3,6 @@
 }
 
 @media (max-width: 768px) {
-  :global(body) {
-    padding-bottom: calc(78px + env(safe-area-inset-bottom));
-  }
-
   .bar {
     position: fixed;
     z-index: 500;
