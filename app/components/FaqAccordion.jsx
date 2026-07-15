@@ -20,7 +20,7 @@ export default function FaqAccordion({ faqs }) {
           >
             {item.q}
           </button>
-          {open === i && <p className="faq-answer">{item.a}</p>}
+          <p className="faq-answer" hidden={open !== i}>{item.a}</p>
         </div>
       ))}
     </div>
