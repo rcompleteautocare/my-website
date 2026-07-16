@@ -124,6 +124,17 @@ Every page must be discoverable and correctly tagged. When adding a page:
 6. All JSON-LD is injected via `<script type="application/ld+json">` with
    `JSON.stringify(...).replace(/</g, "\\u003c")` to escape `<`. Reuse this pattern.
 
+### Asset filenames (`public/`)
+Keep every tracked path — filenames in `public/` especially — **under 100
+characters**, in short kebab-case, with a real extension. Windows caps a full
+path at 260 chars and the clone directory eats into that budget, so an
+over-long name makes `git clone` fail outright on Windows (checkout aborts;
+the repo lands half-populated). Put descriptive text in the `alt` attribute,
+never in the filename. `npm run lint` enforces this via
+`scripts/check-path-lengths.mjs`. When renaming an existing asset, update every
+reference (pages, JSON-LD `image` fields, OG/twitter metadata, `llms.txt`) and
+add a 308 redirect per the section below if the old path is live.
+
 ### NAP consistency (Name / Address / Phone)
 These must stay identical everywhere (JSON-LD, pages, `llms.txt`, footer):
 - **R Complete Auto Care**, 1305 E Summit St, Crown Point, IN 46307
