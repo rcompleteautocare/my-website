@@ -108,6 +108,7 @@ export default function Footer() {
             <Link href="/inspection-checklist" style={{ color: "#aaa", textDecoration: "none" }}>Digital Vehicle Inspections</Link>
             <Link href="/warranty-resources" style={{ color: "#aaa", textDecoration: "none" }}>Warranty Resource Center</Link>
             <Link href="/repair-guides" style={{ color: "#aaa", textDecoration: "none" }}>Vehicle Repair Guides</Link>
+            <Link href="/financing" style={{ color: "#aaa", textDecoration: "none" }}>Financing Options</Link>
             <BookButton style={{ color: "#aaa", textDecoration: "none" }}>Book an Appointment</BookButton>
           </div>
           <div style={{ color: "#fff", fontWeight: "bold", marginBottom: "12px" }}>Hours</div>

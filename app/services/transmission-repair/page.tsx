@@ -24,6 +24,7 @@ export const metadata = {
 import RelatedServices from "@/app/components/RelatedServices";
 import ServiceFaqHub from "@/app/components/ServiceFaqHub";
 import LastUpdated from "@/app/components/LastUpdated";
+import FinancingCallout from "@/app/components/FinancingCallout";
 export default function TransmissionRepair() {
   return (
     <div style={{ color: "#1a1a1a" }}>
@@ -49,6 +50,8 @@ export default function TransmissionRepair() {
       <section style={{ background: "#e63946", color: "#fff", padding: "14px 24px", textAlign: "center", fontSize: "14px" }}>
         📍 Serving Crown Point · St. John · Schererville · Merrillville · Cedar Lake, IN
       </section>
+
+      <FinancingCallout />
 
       {/* Intro */}
       <section style={{ padding: "60px 24px", maxWidth: "800px", margin: "0 auto" }}>

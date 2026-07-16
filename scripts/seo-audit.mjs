@@ -6,7 +6,7 @@ const BASE_URL = (process.env.BASE_URL || 'https://www.rcompleteautocare.com').r
 const CANONICAL_HOST = 'https://www.rcompleteautocare.com';
 
 const PATHS = [
-  '/', '/about', '/contact',
+  '/', '/about', '/contact', '/financing',
   '/services/diagnostics', '/services/check-engine-light', '/services/electrical-diagnostics',
   '/services/no-start-diagnostics', '/services/engine-repair', '/services/transmission-repair',
   '/services/brake-repair', '/services/suspension-steering', '/services/oil-change-maintenance',

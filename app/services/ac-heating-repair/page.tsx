@@ -1,6 +1,7 @@
 import RelatedServices from "@/app/components/RelatedServices";
 import LastUpdated from "@/app/components/LastUpdated";
 import ServiceFaqHub from "@/app/components/ServiceFaqHub";
+import FinancingCallout from "@/app/components/FinancingCallout";
 
 export const metadata = {
   title: 'AC & Heat Repair Crown Point, IN | R Complete Auto Care',
@@ -52,6 +53,8 @@ export default function AcHeatingRepair() {
       <section style={{ background: "#e63946", color: "#fff", padding: "14px 24px", textAlign: "center", fontSize: "14px", fontWeight: "500" }}>
         📍 Serving Crown Point · St. John · Schererville · Merrillville · Cedar Lake, Indiana
       </section>
+
+      <FinancingCallout />
 
       <section style={{ padding: "60px 24px", maxWidth: "800px", margin: "0 auto" }}>
         <LastUpdated date="2026-04-18" />
