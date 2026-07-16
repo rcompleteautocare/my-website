@@ -76,7 +76,7 @@ export default function CheckEngineLightFlashing() {
         </p>
         <a href="tel:2192622711" className="cta-button">📞 Call (219) 262-2711 — This Is Urgent</a>
         <p className="address-line">1305 E Summit St, Crown Point, IN 46307 · Mon–Fri 8am–6pm · Sat 8am–2pm</p>
-        <p className="serving-line">Serving Crown Point · St. John · Schererville · Merrillville · Cedar Lake</p>
+        <p className="serving-line">Serving Crown Point · St. John · Schererville · Merrillville · Cedar Lake · Lowell · Hobart</p>
 
         <h2>Flashing Check Engine Light Symptoms — What You May Be Experiencing</h2>
         <p>A flashing check engine light is always caused by an active engine misfire. These are the symptoms Crown Point drivers describe when they call us:</p>

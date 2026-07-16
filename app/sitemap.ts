@@ -32,6 +32,8 @@ export default function sitemap(): MetadataRoute.Sitemap {
     { url: `${baseUrl}/auto-repair-schererville-in`, lastModified: "2026-04-14", changeFrequency: "monthly", priority: 0.8 },
     { url: `${baseUrl}/auto-repair-merrillville-in`, lastModified: "2026-04-14", changeFrequency: "monthly", priority: 0.8 },
     { url: `${baseUrl}/auto-repair-cedar-lake-in`, lastModified: "2026-04-14", changeFrequency: "monthly", priority: 0.8 },
+    { url: `${baseUrl}/auto-repair-lowell-in`, lastModified: "2026-07-16", changeFrequency: "monthly", priority: 0.8 },
+    { url: `${baseUrl}/auto-repair-hobart-in`, lastModified: "2026-07-16", changeFrequency: "monthly", priority: 0.8 },
     { url: `${baseUrl}/car-overheating-crown-point-in`, lastModified: "2026-04-14", changeFrequency: "weekly", priority: 0.8 },
     { url: `${baseUrl}/car-wont-start-crown-point-in`, lastModified: "2026-04-14", changeFrequency: "weekly", priority: 0.8 },
     { url: `${baseUrl}/check-engine-light-flashing-crown-point`, lastModified: "2026-04-14", changeFrequency: "weekly", priority: 0.8 },

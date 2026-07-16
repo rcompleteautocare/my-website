@@ -89,6 +89,8 @@ export default function Footer() {
               ["Schererville, IN", "/auto-repair-schererville-in"],
               ["Merrillville, IN", "/auto-repair-merrillville-in"],
               ["Cedar Lake, IN", "/auto-repair-cedar-lake-in"],
+              ["Lowell, IN", "/auto-repair-lowell-in"],
+              ["Hobart, IN", "/auto-repair-hobart-in"],
             ].map(([name, href]) => (
               <Link key={href} href={href} style={{ color: "#aaa", textDecoration: "none" }}>{name}</Link>
             ))}

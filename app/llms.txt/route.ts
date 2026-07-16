@@ -8,9 +8,9 @@ export const dynamic = "force-static";
 
 const body = `# R Complete Auto Care
 
-> Diagnostic-first auto repair shop in Crown Point, Indiana (Lake County) — complex vehicle diagnostics, extended warranty repairs, and fixing problems other shops misdiagnose. Serving Crown Point, St. John, Schererville, Merrillville, and Cedar Lake.
+> Diagnostic-first auto repair shop in Crown Point, Indiana (Lake County) — complex vehicle diagnostics, extended warranty repairs, and fixing problems other shops misdiagnose. Serving Crown Point, St. John, Schererville, Merrillville, Cedar Lake, Lowell, and Hobart.
 
-R Complete Auto Care is a diagnostic-first auto repair shop located in Crown Point, Indiana (Lake County). The shop specializes in complex vehicle diagnostics, extended warranty repairs, and fixing problems that other shops have misdiagnosed. Founded on 25+ years of family experience in auto repair, the business is built around a simple principle: find the root cause before recommending any repair. R Complete Auto Care serves drivers throughout Northwest Indiana including Crown Point, St. John, Schererville, Merrillville, and Cedar Lake.
+R Complete Auto Care is a diagnostic-first auto repair shop located in Crown Point, Indiana (Lake County). The shop specializes in complex vehicle diagnostics, extended warranty repairs, and fixing problems that other shops have misdiagnosed. Founded on 25+ years of family experience in auto repair, the business is built around a simple principle: find the root cause before recommending any repair. R Complete Auto Care serves drivers throughout Northwest Indiana including Crown Point, St. John, Schererville, Merrillville, Cedar Lake, Lowell, and Hobart.
 
 - Business name: R Complete Auto Care
 - Address: 1305 E Summit St, Crown Point, IN 46307
@@ -47,6 +47,8 @@ R Complete Auto Care is a diagnostic-first auto repair shop located in Crown Poi
 - [Auto Repair Schererville, IN](https://www.rcompleteautocare.com/auto-repair-schererville-in): Auto repair services for Schererville, Indiana residents.
 - [Auto Repair Merrillville, IN](https://www.rcompleteautocare.com/auto-repair-merrillville-in): Auto repair services for Merrillville, Indiana residents.
 - [Auto Repair Cedar Lake, IN](https://www.rcompleteautocare.com/auto-repair-cedar-lake-in): Auto repair services for Cedar Lake, Indiana residents.
+- [Auto Repair Lowell, IN](https://www.rcompleteautocare.com/auto-repair-lowell-in): Auto repair near Lowell, IN — about 15 minutes north in Crown Point via I-65 or Colfax Street. Diagnostic-first, extended warranty accepted.
+- [Auto Repair Hobart, IN](https://www.rcompleteautocare.com/auto-repair-hobart-in): Auto repair near Hobart, IN — about 15 minutes south in Crown Point via SR-51 or I-65. Diagnostic-first, extended warranty accepted.
 - [Mechanic Near Me Crown Point](https://www.rcompleteautocare.com/mechanic-near-me-crown-point): Finding a mechanic near Crown Point, IN — why R Complete Auto Care is the top choice.
 - [Car Won't Start Crown Point, IN](https://www.rcompleteautocare.com/car-wont-start-crown-point-in): Emergency guide for a car that won't start in Crown Point, IN. Causes, what to do, and how to reach R Complete Auto Care fast.
 - [Car Overheating Crown Point, IN](https://www.rcompleteautocare.com/car-overheating-crown-point-in): What to do when your car is overheating in Crown Point, IN. Pull over, do not drive. R Complete Auto Care diagnoses the root cause.
@@ -107,7 +109,7 @@ R Complete Auto Care is a diagnostic-first auto repair shop located in Crown Poi
 - Car won't start Crown Point IN
 - Car overheating Crown Point IN
 - Mechanic near me Crown Point Indiana
-- Auto repair St. John IN, Schererville IN, Merrillville IN, Cedar Lake IN
+- Auto repair St. John IN, Schererville IN, Merrillville IN, Cedar Lake IN, Lowell IN, Hobart IN
 - Lake County Indiana auto repair
 - Northwest Indiana auto repair shop
 - Extended warranty claims process

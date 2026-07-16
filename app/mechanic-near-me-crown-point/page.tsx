@@ -50,7 +50,7 @@ export default function MechanicNearMe() {
 
       {/* Serving bar */}
       <section style={{ background: "#e63946", color: "#fff", padding: "14px 24px", textAlign: "center", fontSize: "14px" }}>
-        📍 Crown Point · St. John · Schererville · Merrillville · Cedar Lake · All of Lake County IN
+        📍 Crown Point · St. John · Schererville · Merrillville · Cedar Lake · Lowell · Hobart · All of Lake County IN
       </section>
 
       {/* Trust signals */}

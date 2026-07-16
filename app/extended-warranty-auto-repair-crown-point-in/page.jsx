@@ -76,7 +76,7 @@ export default function ExtendedWarrantyRepair() {
         </p>
         <a href="tel:2192622711" className="cta-button">📞 Call (219) 262-2711 — We&apos;ll Fight for Your Claim</a>
         <p className="address-line">1305 E Summit St, Crown Point, IN 46307 · Mon–Fri 8am–6pm · Sat 8am–2pm</p>
-        <p className="serving-line">Serving Crown Point · St. John · Schererville · Merrillville · Cedar Lake</p>
+        <p className="serving-line">Serving Crown Point · St. John · Schererville · Merrillville · Cedar Lake · Lowell · Hobart</p>
 
         <p style={{ background: "#fff7ed", border: "1px solid #fdba74", borderRadius: "6px", padding: "16px 20px", marginTop: "24px" }}>
           <strong>This page is for urgent help.</strong> If you just want to understand our general
