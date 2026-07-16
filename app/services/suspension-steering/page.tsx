@@ -159,7 +159,7 @@ export default function SuspensionSteering() {
           Northwest Indiana winters are brutal on suspension components. The freeze-thaw cycle creates potholes that can destroy struts and bend control arms in a single hit. Salt and moisture accelerate corrosion on bushings, ball joints, and tie rod ends. And the sheer number of rough roads in Lake County means your suspension is working harder than it would in most parts of the country.
         </p>
         <p style={{ lineHeight: 1.8, color: "#444" }}>
-          We recommend having your suspension inspected at least once a year — and immediately after any significant pothole impact. Catching a bent control arm or cracked strut mount early is far less expensive than the alignment damage, tire wear, and handling problems that develop when you drive on worn suspension components for months.
+          We recommend having your suspension inspected at least once a year — and immediately after any significant pothole impact. Catching a bent control arm or cracked strut mount early prevents the alignment damage, tire wear, and handling problems that develop when you drive on worn suspension components for months.
         </p>
       </section>
 

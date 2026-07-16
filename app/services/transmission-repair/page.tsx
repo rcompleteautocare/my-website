@@ -34,10 +34,10 @@ export default function TransmissionRepair() {
         <h1 style={{ fontSize: "38px", fontWeight: "bold", marginBottom: "12px" }}>
           Transmission Repair in Crown Point, IN
         </h1>
-        <p className="speakable" style={{ fontSize: "16px", color: "#f1626f", fontWeight: "600", marginBottom: "16px", fontStyle: "italic" }}>TL;DR: Transmission repair cost depends entirely on the actual problem — a solenoid or sensor fix is a fraction of a full rebuild. We diagnose first so you don&apos;t pay for a rebuild you don&apos;t need. Transmission repairs are among the most commonly covered items on extended warranty plans.
+        <p className="speakable" style={{ fontSize: "16px", color: "#f1626f", fontWeight: "600", marginBottom: "16px", fontStyle: "italic" }}>TL;DR: Transmission repair scope depends entirely on the actual problem — a solenoid or sensor fix is a far smaller repair than the full rebuild it becomes later. We diagnose first so you don&apos;t authorize a rebuild you don&apos;t need. Transmission repairs are among the most commonly covered items on extended warranty plans.
         </p>
         <p style={{ fontSize: "18px", color: "#ccc", maxWidth: "600px", margin: "0 auto 32px" }}>
-          Transmission problems are expensive — but the wrong diagnosis makes them even more expensive. We find the real cause before recommending a rebuild or replacement.
+          Transmission problems are serious — but the wrong diagnosis makes them even worse. We find the real cause before recommending a rebuild or replacement.
         </p>
         <a href="tel:2192622711" style={{ background: "#e63946", color: "#fff", padding: "14px 32px", borderRadius: "6px", fontWeight: "bold", textDecoration: "none", fontSize: "18px" }}>
           📞 Call (219) 262-2711
@@ -55,7 +55,7 @@ export default function TransmissionRepair() {
         <LastUpdated date="2026-04-18" />
         <h2 style={{ fontSize: "28px", marginBottom: "16px" }}>Diagnose Before You Spend</h2>
         <p style={{ lineHeight: 1.8, color: "#444", marginBottom: "20px" }}>
-          Transmission repair is one of the most misdiagnosed — and most expensive — areas of auto repair. Many shops jump straight to a rebuild or replacement at the first sign of slipping or shifting problems. At R Complete Auto Care in Crown Point, we do it differently. We diagnose first. Every time.
+          Transmission repair is one of the most misdiagnosed — and most consequential — areas of auto repair. Many shops jump straight to a rebuild or replacement at the first sign of slipping or shifting problems. At R Complete Auto Care in Crown Point, we do it differently. We diagnose first. Every time.
         </p>
         <p style={{ lineHeight: 1.8, color: "#444", marginBottom: "20px" }}>
           We have found solenoid failures, low-fluid conditions, and sensor issues on vehicles that had already received rebuild recommendations. A thorough diagnostic tells you exactly what you&apos;re dealing with and whether a targeted repair or internal work is justified before you commit to anything.
@@ -155,7 +155,7 @@ export default function TransmissionRepair() {
           <h2 style={{ fontSize: "28px", marginBottom: "24px" }}>Frequently Asked Questions — Transmission Repair</h2>
           {[
             { q: "How do I know if my transmission is slipping?", a: "Transmission slipping feels like your engine revs up but the car doesn't accelerate the way it should — like the power isn't connecting. You may also notice the car shifting at the wrong times or feeling like it's hunting for a gear." },
-            { q: "How much does transmission repair cost in Crown Point?", a: "It depends entirely on what's actually wrong. A fluid service or solenoid replacement is a fraction of the cost of a full rebuild. That's why we always diagnose first — so you're not paying for a rebuild when a sensor fix would solve it." },
+            { q: "How much does transmission repair cost in Crown Point?", a: "It depends entirely on what's actually wrong. A fluid service or solenoid replacement is a far smaller repair than the full rebuild it becomes later. That's why we always diagnose first — so you're not authorizing a rebuild when a targeted repair would solve it." },
             { q: "Can I drive with a slipping transmission?", a: "Short distances only, and with caution. Continuing to drive on a slipping transmission can cause additional damage and turn a smaller repair into a much larger one. Get it diagnosed as soon as possible." },
             { q: "What is torque converter shudder?", a: "Torque converter shudder feels like driving over rumble strips at 40–50mph during light acceleration. It's caused by the torque converter clutch not locking up smoothly and is often mistaken for an engine misfire. It can sometimes be resolved with a fluid service — but it requires a proper diagnosis to confirm." },
             { q: "Do you work on CVT transmissions?", a: "Yes — CVT (continuously variable transmission) transmissions require specific expertise and fluid. We have the equipment and experience to properly diagnose and service CVT transmissions found in Nissan, Subaru, Honda, Toyota, and other vehicles." },
@@ -196,7 +196,7 @@ export default function TransmissionRepair() {
       {
         "@type": "Question",
         "name": "How much does transmission repair cost in Crown Point?",
-        "acceptedAnswer": { "@type": "Answer", "text": "It depends entirely on what's actually wrong. A fluid service or solenoid replacement is a fraction of the cost of a full rebuild. That's why we always diagnose first — so you're not paying for a rebuild when a sensor fix would solve it." }
+        "acceptedAnswer": { "@type": "Answer", "text": "It depends entirely on what's actually wrong. A fluid service or solenoid replacement is a far smaller repair than the full rebuild it becomes later. That's why we always diagnose first — so you're not authorizing a rebuild when a targeted repair would solve it." }
       },
       {
         "@type": "Question",

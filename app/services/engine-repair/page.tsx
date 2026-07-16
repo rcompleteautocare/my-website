@@ -160,7 +160,7 @@ export default function EngineRepair() {
         <div style={{ maxWidth: "800px", margin: "0 auto" }}>
           <h2 style={{ fontSize: "28px", marginBottom: "16px" }}>Extended Warranty Coverage for Engine Repairs</h2>
           <p style={{ lineHeight: 1.8, color: "#444", marginBottom: "16px" }}>
-            Engine repairs are often the most expensive repairs a vehicle owner faces — and one of the most commonly covered by extended warranties. If your vehicle has an extended warranty through CarShield, Endurance, CARS Protection, AmTrust, or another provider, call us before you bring the car in.
+            Engine repairs are often the most significant repairs a vehicle owner faces — and one of the most commonly covered by extended warranties. If your vehicle has an extended warranty through CarShield, Endurance, CARS Protection, AmTrust, or another provider, call us before you bring the car in.
           </p>
           <p style={{ lineHeight: 1.8, color: "#444", marginBottom: "24px" }}>
             We&apos;ll verify your coverage, handle the claim directly with your warranty company, and keep you informed throughout the process. Many of our customers with engine problems pay little to nothing out of pocket. Don&apos;t assume you&apos;re not covered — call us first.

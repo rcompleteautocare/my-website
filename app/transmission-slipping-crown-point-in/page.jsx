@@ -114,8 +114,7 @@ export default function TransmissionSlipping() {
           Transmission slipping is the single most over-diagnosed problem we see. The pattern
           is consistent: a driver notices slipping, takes the car to a shop, and walks out with a
           rebuild recommendation. Sometimes the rebuild is genuinely necessary. Often it is
-          not. The pressure to sell a rebuild is strong, and a solenoid or fluid job pays the shop
-          a fraction of what a rebuild does.
+          not. The pressure to sell a rebuild is strong, and a solenoid or fluid job is a far smaller job for the shop than a rebuild.
         </p>
         <p>
           We have seen cars quoted for full rebuilds where the actual fix was a shift solenoid.
@@ -142,7 +141,7 @@ export default function TransmissionSlipping() {
           <li><strong>Valve body faults</strong> — The internal hydraulic control system may stick or leak. Testing determines whether a targeted valve-body repair is appropriate instead of a rebuild.</li>
           <li><strong>Worn clutch packs or bands</strong> — This is the genuine rebuild scenario. It happens — but far less often than rebuild quotes would imply. Worn clutches shed material into the fluid; fluid inspection is one of the first things we check.</li>
           <li><strong>Failed transmission control module or wiring fault</strong> — The TCM commands shifts; a failed module or corroded connector causes erratic shifting that mimics internal failure.</li>
-          <li><strong>Speed sensor failure</strong> — Input and output speed sensors feed the TCM the data it uses to command shifts. Bad data in, bad shifts out. Sensor replacement is inexpensive.</li>
+          <li><strong>Speed sensor failure</strong> — Input and output speed sensors feed the TCM the data it uses to command shifts. Bad data in, bad shifts out. Sensor replacement is a straightforward, targeted repair.</li>
           <li><strong>Slipping only when cold</strong> — Often a thermal-related solenoid fault or a fluid viscosity issue. Not a rebuild scenario in most cases.</li>
         </ul>
 
@@ -156,7 +155,7 @@ export default function TransmissionSlipping() {
           <li><strong>Hard parts damage.</strong> Continued slipping under degraded fluid damages gears, bands, and clutch packs. Now you are actually accumulating the internal damage that originally justified a rebuild — except now it&apos;s real.</li>
           <li><strong>Rebuild territory.</strong> A fault that began in a solenoid or fluid-control system can progress into internal damage when heat and slipping are allowed to continue.</li>
         </ol>
-        <p>The earlier you catch slipping, the cheaper the fix. Call us before the cascade starts.</p>
+        <p>The earlier you catch slipping, the smaller and simpler the fix. Call us before the cascade starts.</p>
 
         {/* ── SERVICES LIST ── */}
         <h2>Transmission Repairs We Perform in Crown Point</h2>

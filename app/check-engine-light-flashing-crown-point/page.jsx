@@ -211,7 +211,7 @@ export default function CheckEngineLightFlashing() {
         </ul>
 
         <h2>Check Engine Light Flashing in Crown Point? Call Now — Don&apos;t Keep Driving.</h2>
-        <p>Every mile makes the repair more expensive. Same-day diagnostics available. Extended warranty accepted.</p>
+        <p>Every mile makes the repair more involved. Same-day diagnostics available. Extended warranty accepted.</p>
         <p>1305 E Summit St, Crown Point, IN 46307</p>
         <a href="tel:2192622711" className="cta-button">📞 Call (219) 262-2711</a>
       </div>

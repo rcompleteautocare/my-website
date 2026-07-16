@@ -55,7 +55,7 @@ export default function NoStartDiagnostics() {
         <LastUpdated date="2026-04-18" />
         <h2 style={{ fontSize: "28px", marginBottom: "16px" }}>No-Start Diagnosis — Done Right the First Time</h2>
         <p style={{ lineHeight: 1.8, color: "#444", marginBottom: "20px" }}>
-          When your car won&apos;t start, the instinct is to start replacing parts — battery, starter, alternator. But no-start conditions have many possible causes, and replacing parts without a proper diagnosis is expensive and often doesn&apos;t solve the problem. We&apos;ve seen customers spend hundreds of dollars on parts at other shops, only to bring the car to us and find a failed crankshaft position sensor or a fuel pump issue that a proper diagnostic would have caught immediately.
+          When your car won&apos;t start, the instinct is to start replacing parts — battery, starter, alternator. But no-start conditions have many possible causes, and replacing parts without a proper diagnosis wastes time and often doesn&apos;t solve the problem. We&apos;ve seen customers replace part after part at other shops, only to bring the car to us and find a failed crankshaft position sensor or a fuel pump issue that a proper diagnostic would have caught immediately.
         </p>
         <p style={{ lineHeight: 1.8, color: "#444", marginBottom: "20px" }}>
           At R Complete Auto Care in Crown Point, we use a systematic diagnostic process to identify the exact cause of a no-start condition — whether it&apos;s electrical, mechanical, fuel system, or ignition related. We tell you what&apos;s wrong and what it costs before we do any work.
