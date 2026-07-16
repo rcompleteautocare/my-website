@@ -26,6 +26,15 @@ export const metadata = {
   robots: { index: true, follow: true },
 };
 
+const FAQS = [
+  { q: "Is there a trusted auto repair shop near St. John, IN?", a: "R Complete Auto Care at 1305 E Summit St, Crown Point — about 10 minutes from St. John via US-41 or 109th Ave. We're a diagnostic-first shop and accept most extended warranties. Call (219) 262-2711." },
+  { q: "Do you service the Lake Hills and Heron Lake neighborhoods?", a: "Yes — Lake Hills and Heron Lake drivers are frequent customers. The drive is typically 10–12 minutes via 109th Ave or Parrish Ave." },
+  { q: "I commute US-41 and Route 231 daily — what should I watch for on my vehicle?", a: "Heavy stop-and-go on US-41 accelerates brake wear and torque-converter strain. Long highway stretches on 231 show their wear in tires and front-end alignment. We check all of those on a diagnostic so you know what's next on your maintenance timeline." },
+  { q: "Can I drop off in St. John and get a ride back?", a: "We schedule drop-offs to make it easy for St. John commuters. Call ahead at (219) 262-2711 and we'll coordinate the time window and keep you updated by phone while your vehicle is in." },
+  { q: "Do you accept extended warranties for St. John drivers?", a: "Yes — we work with CarShield, Endurance, CARS Protection, Zurich, AmTrust and most providers. We verify coverage before you bring the vehicle in so you know exactly what's covered." },
+  { q: "Do you handle dealer-sold warranty work for vehicles bought in Schererville or Merrillville?", a: "Yes — as long as the plan allows an independent shop (most do), we can submit and service the claim. Bring us the contract and we'll read the fine print with you." },
+];
+
 export default function StJohn() {
   return (
     <div style={{ color: "#1a1a1a" }}>
@@ -109,14 +118,7 @@ export default function StJohn() {
         </div>
 
         <h2 style={{ fontSize: "28px", marginBottom: "24px" }}>Frequently Asked Questions — Auto Repair Near St. John, IN</h2>
-        {[
-          { q: "Is there a trusted auto repair shop near St. John, IN?", a: "R Complete Auto Care at 1305 E Summit St, Crown Point — about 10 minutes from St. John via US-41 or 109th Ave. We're a diagnostic-first shop and accept most extended warranties. Call (219) 262-2711." },
-          { q: "Do you service the Lake Hills and Heron Lake neighborhoods?", a: "Yes — Lake Hills and Heron Lake drivers are frequent customers. The drive is typically 10–12 minutes via 109th Ave or Parrish Ave." },
-          { q: "I commute US-41 and Route 231 daily — what should I watch for on my vehicle?", a: "Heavy stop-and-go on US-41 accelerates brake wear and torque-converter strain. Long highway stretches on 231 show their wear in tires and front-end alignment. We check all of those on a diagnostic so you know what's next on your maintenance timeline." },
-          { q: "Can I drop off in St. John and get a ride back?", a: "We schedule drop-offs to make it easy for St. John commuters. Call ahead at (219) 262-2711 and we'll coordinate the time window and keep you updated by phone while your vehicle is in." },
-          { q: "Do you accept extended warranties for St. John drivers?", a: "Yes — we work with CarShield, Endurance, CARS Protection, Zurich, AmTrust and most providers. We verify coverage before you bring the vehicle in so you know exactly what's covered." },
-          { q: "Do you handle dealer-sold warranty work for vehicles bought in Schererville or Merrillville?", a: "Yes — as long as the plan allows an independent shop (most do), we can submit and service the claim. Bring us the contract and we'll read the fine print with you." },
-        ].map(item => (
+        {FAQS.map(item => (
           <div key={item.q} style={{ marginBottom: "20px", borderBottom: "1px solid #e0e0e0", paddingBottom: "20px" }}>
             <div style={{ fontWeight: "bold", fontSize: "16px", marginBottom: "8px" }}>{item.q}</div>
             <div style={{ color: "#555", lineHeight: 1.7 }}>{item.a}</div>
@@ -138,38 +140,11 @@ export default function StJohn() {
   dangerouslySetInnerHTML={{ __html: JSON.stringify({
     "@context": "https://schema.org",
     "@type": "FAQPage",
-    "mainEntity": [
-      {
-        "@type": "Question",
-        "name": "Where is the best auto repair shop near St. John, IN?",
-        "acceptedAnswer": { "@type": "Answer", "text": "R Complete Auto Care at 1305 E Summit St, Crown Point, IN 46307 — just about 10 minutes from St. John. Call (219) 262-2711." }
-      },
-      {
-        "@type": "Question",
-        "name": "How far is R Complete Auto Care from St. John?",
-        "acceptedAnswer": { "@type": "Answer", "text": "We're located about 10 minutes from St. John, Indiana at 1305 E Summit St in Crown Point, IN 46307." }
-      },
-      {
-        "@type": "Question",
-        "name": "Do you accept extended warranties for St. John drivers?",
-        "acceptedAnswer": { "@type": "Answer", "text": "Yes! We work with most extended warranty providers and handle the entire claims process. St. John drivers are welcome — just give us a call at (219) 262-2711." }
-      },
-      {
-        "@type": "Question",
-        "name": "Do you work on foreign and domestic vehicles?",
-        "acceptedAnswer": { "@type": "Answer", "text": "Absolutely — all makes and models including Honda, Toyota, BMW, Mercedes, Ford, Chevrolet, Dodge, Subaru, and more." }
-      },
-      {
-        "@type": "Question",
-        "name": "What are your hours?",
-        "acceptedAnswer": { "@type": "Answer", "text": "Monday through Friday 8:00 AM to 6:00 PM and Saturday 8:00 AM to 2:00 PM. Closed Sunday." }
-      },
-      {
-        "@type": "Question",
-        "name": "Do you offer same-day service for St. John drivers?",
-        "acceptedAnswer": { "@type": "Answer", "text": "Yes — most diagnostic appointments and many repairs are completed the same day. Call us at (219) 262-2711 to schedule." }
-      }
-    ]
+    "mainEntity": FAQS.map(({ q, a }) => ({
+      "@type": "Question",
+      "name": q,
+      "acceptedAnswer": { "@type": "Answer", "text": a },
+    }))
   }).replace(/</g, "\u003c")}}
 />
     <script type="application/ld+json" dangerouslySetInnerHTML={{ __html: "{\"@context\":\"https://schema.org\",\"@type\":\"BreadcrumbList\",\"itemListElement\":[{\"@type\":\"ListItem\",\"position\":1,\"name\":\"Home\",\"item\":\"https://www.rcompleteautocare.com\"},{\"@type\":\"ListItem\",\"position\":2,\"name\":\"Auto Repair St. John, IN\"}]}".replace(/</g, "\u003c") }} />

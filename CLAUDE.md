@@ -54,7 +54,8 @@ app/                         # Next.js App Router — every folder is a route
   about/  contact/  book/  inspection-checklist/   # Standalone pages
   services/<slug>/page.tsx   # Service pages (diagnostics, brake-repair, engine-repair, ...)
   services/page.tsx          # Services index
-  auto-repair-<city>-in/     # City landing pages (crown-point, st-john, schererville, merrillville, cedar-lake)
+  auto-repair-<city>-in/     # City landing pages (crown-point, st-john, schererville, merrillville, cedar-lake, lowell, hobart)
+  <make>-<model>-repair-crown-point-in/  # Vehicle model pages (chevrolet-silverado, ford-f-150) — full make name
   <symptom>-crown-point-in/  # Symptom/emergency guides (car-wont-start, car-overheating, transmission-slipping, ...)
   api/
     rating-drift/route.ts            # GET — weekly Google rating drift check (Vercel cron)
@@ -69,6 +70,11 @@ scripts/                     # Node ESM utilities (resolve-place-id.mjs, seo-aud
 Note the two component directories: `app/components/` (most components) and
 top-level `components/` (imported as `@/components/...`). Both are reachable via
 the `@/*` path alias. Match whichever the file you're editing already uses.
+
+Vehicle model pages use the slug `/<full-make>-<model>-repair-crown-point-in`
+(e.g. `/chevrolet-silverado-repair-crown-point-in`), matching the make-hub slug
+(`/chevrolet-repair-crown-point-in`). Use the **full make name** — not a
+shortened form like `chevy`.
 
 ## `lib/` — single sources of truth
 
@@ -129,7 +135,7 @@ These must stay identical everywhere (JSON-LD, pages, `llms.txt`, footer):
 - **R Complete Auto Care**, 1305 E Summit St, Crown Point, IN 46307
 - Phone **(219) 262-2711** (link as `tel:2192622711`)
 - Hours: Mon–Fri 8am–6pm, Sat 8am–2pm, Sun closed
-- Serving: Crown Point · St. John · Schererville · Merrillville · Cedar Lake
+- Serving: Crown Point · St. John · Schererville · Merrillville · Cedar Lake · Lowell · Hobart
 
 ### Redirects & junk paths
 Add permanent (308) redirects in `next.config.ts` `redirects()` when a URL
