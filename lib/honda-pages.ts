@@ -129,7 +129,7 @@ const models: HondaPageData[] = [
     title: "Honda Odyssey Repair Crown Point, IN | R Complete Auto Care",
     description: "Honda Odyssey diagnostics in Crown Point for sliding doors, timing belts, misfires, transmissions, mounts, A/C, brakes, and suspension.",
     eyebrow: "Honda Odyssey service in Crown Point", heading: "Honda Odyssey Repair and Diagnostics",
-    intro: "An Odyssey combines powertrain systems with sliding-door electronics, multi-zone climate control, and family-focused comfort features. A structured diagnosis helps avoid replacing expensive assemblies based on symptoms alone.",
+    intro: "An Odyssey combines powertrain systems with sliding-door electronics, multi-zone climate control, and family-focused comfort features. A structured diagnosis helps avoid replacing major assemblies based on symptoms alone.",
     problems: ["Power sliding-door electrical, latch, cable, or sensor concerns", "Timing-belt maintenance on applicable engines", "Misfires and engine-mount vibration", "Transmission shift or shudder symptoms", "Front and rear A/C, brakes, and suspension concerns"],
     warningSigns: ["Door reverses, will not latch, or operates unexpectedly", "Flashing check-engine light or pronounced vibration", "Transmission slipping, delayed engagement, or warning message", "Overheating or poor cooling from one climate zone", "Brake grinding, pulling, or suspension instability"],
     diagnostic: "We isolate door mechanical and electrical inputs, review powertrain scan data, inspect mounts and timing-service history, road test transmission symptoms, and test the appropriate A/C zone or chassis component.",

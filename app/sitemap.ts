@@ -1,6 +1,7 @@
 import { MetadataRoute } from "next";
 import { HONDA_PAGES } from "@/lib/honda-pages";
 import { MAKE_PAGES } from "@/lib/make-pages";
+import { MODEL_PAGES } from "@/lib/model-pages";
 import { repairGuides } from "@/lib/repair-guides";
 import { warrantyProviders } from "@/lib/warranty-providers";
 
@@ -46,6 +47,12 @@ export default function sitemap(): MetadataRoute.Sitemap {
     ...MAKE_PAGES.map((page) => ({
       url: `${baseUrl}/${page.slug}`,
       lastModified: "2026-07-11",
+      changeFrequency: "monthly" as const,
+      priority: 0.8,
+    })),
+    ...MODEL_PAGES.map((page) => ({
+      url: `${baseUrl}/${page.slug}`,
+      lastModified: "2026-07-15",
       changeFrequency: "monthly" as const,
       priority: 0.8,
     })),

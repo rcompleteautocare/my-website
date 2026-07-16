@@ -46,7 +46,7 @@ const makes: MakePageData[] = [
       { name: "Oil consumption on some 2AZ-FE four-cylinders", detail: "Certain 2007-2011 Camry, RAV4, and Scion engines can burn oil as piston rings and oil-control components wear. We measure consumption over distance, inspect for leaks versus combustion, and confirm the cause before recommending a repair rather than assuming the worst." },
       { name: "Water pump and cooling-system leaks", detail: "Water pumps, radiators, and plastic cooling components age on high-mileage Toyota engines. Because overheating can damage a head gasket, we pressure-test the cooling system and pinpoint the leak instead of topping off coolant and waiting." },
       { name: "VVT-i variable valve timing concerns", detail: "A rough idle, oil-pressure code, or timing rattle can trace to VVT-i actuators, oil-control valves, or a stretched timing chain on some engines. We compare scan data and oil condition before condemning a component." },
-      { name: "Hybrid system and HV battery aging", detail: "On Prius and other Toyota hybrids, an aging high-voltage battery, inverter coolant pump, or hybrid warning can mimic engine trouble. We read the hybrid modules and test the traction battery before recommending expensive assemblies." },
+      { name: "Hybrid system and HV battery aging", detail: "On Prius and other Toyota hybrids, an aging high-voltage battery, inverter coolant pump, or hybrid warning can mimic engine trouble. We read the hybrid modules and test the traction battery before recommending major assemblies." },
       { name: "D-4S direct-injection carbon buildup", detail: "Direct-injected Toyota and Lexus engines can accumulate intake-valve carbon that causes misfires or rough running. We verify the condition through data and inspection rather than assuming every misfire needs the same fix." },
     ],
     warningSigns: [
@@ -321,7 +321,7 @@ const makes: MakePageData[] = [
       { name: "3.6L Pentastar cylinder-head and misfire concerns", detail: "Some early 3.6L Pentastar engines developed left-bank cylinder-head issues causing misfires and ticking, while later concerns include rocker arms and lifters. We confirm the failed cylinder and mechanism with scan and mechanical data before recommending head or valvetrain work." },
       { name: "Death wobble on solid-front-axle Wranglers", detail: "A violent steering shake after hitting a bump can trace to worn track bars, ball joints, steering dampers, or tie rods. We inspect and measure the steering and suspension components to find the real cause rather than replacing one part and hoping." },
       { name: "Oil filter housing and cooler leaks", detail: "The plastic oil-filter housing on 3.6L engines can crack and leak oil or coolant. We confirm the leak source before recommending the housing or cooler repair." },
-      { name: "TIPM and electrical faults", detail: "The Totally Integrated Power Module and related wiring can cause no-start, stalling, or accessory faults on some Grand Cherokee and other models. We test the circuit and module behavior before condemning expensive electronics." },
+      { name: "TIPM and electrical faults", detail: "The Totally Integrated Power Module and related wiring can cause no-start, stalling, or accessory faults on some Grand Cherokee and other models. We test the circuit and module behavior before condemning major electronic components." },
       { name: "Transmission and water-pump concerns", detail: "The 8-speed automatic, water pumps, and cooling components also need attention as these vehicles age. We road test and pressure-test to separate a control fault from a mechanical one." },
     ],
     warningSigns: [
@@ -376,7 +376,7 @@ const makes: MakePageData[] = [
       { name: "3.6L Pentastar misfire and valvetrain concerns", detail: "The 3.6L in the 300 and Pacifica can develop misfires from cylinder-head issues on early engines or rocker-arm and lifter wear later. We confirm the cylinder and mechanism with scan and mechanical data before recommending repair." },
       { name: "Pacifica electrical and hybrid concerns", detail: "The Pacifica, including the plug-in hybrid, can present electrical, charging, or warning-light faults. We scan the relevant modules and test the circuit before condemning a component or high-voltage assembly." },
       { name: "Tigershark 2.4L oil consumption", detail: "Some four-cylinder Chrysler applications can consume oil and set low-oil or check-engine warnings. We measure consumption and inspect the engine and PCV system before assuming internal repair." },
-      { name: "TIPM and power-distribution faults", detail: "The Totally Integrated Power Module and wiring can cause no-start, stalling, or accessory faults. We test the module behavior and circuits before recommending expensive electronics." },
+      { name: "TIPM and power-distribution faults", detail: "The Totally Integrated Power Module and wiring can cause no-start, stalling, or accessory faults. We test the module behavior and circuits before recommending major electronic components." },
       { name: "62TE transmission and A/C concerns", detail: "The front-drive automatic and the climate system also need attention as these vehicles age. We road test, inspect fluid, and measure A/C performance before recommending work." },
     ],
     warningSigns: [

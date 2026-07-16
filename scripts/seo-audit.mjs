@@ -21,6 +21,7 @@ const PATHS = [
   '/chrysler-repair-crown-point-in', '/dodge-repair-crown-point-in', '/gmc-repair-crown-point-in',
   '/hyundai-repair-crown-point-in', '/kia-repair-crown-point-in', '/bmw-repair-crown-point-in',
   '/mercedes-benz-repair-crown-point-in',
+  '/chevrolet-silverado-repair-crown-point-in', '/ford-f-150-repair-crown-point-in',
 ];
 
 const UNIQUE_COPY_PATHS = PATHS.filter(p =>

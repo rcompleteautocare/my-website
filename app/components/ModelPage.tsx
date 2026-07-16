@@ -2,14 +2,13 @@ import type { Metadata } from "next";
 import Link from "next/link";
 import { CheckCircle2, CircleAlert, Clock3, Gauge, ShieldCheck, Wrench } from "lucide-react";
 import MakeCta from "./MakeCta";
-import { getMakePage, MAKE_BASE_URL, MAKE_DIRECTORY, type MakePageData } from "@/lib/make-pages";
-import { MODEL_PAGES } from "@/lib/model-pages";
+import { getModelPage, MODEL_BASE_URL, type ModelPageData } from "@/lib/model-pages";
 import styles from "../honda.module.css";
 
 const AREA_SERVED = ["Crown Point", "St. John", "Schererville", "Merrillville", "Cedar Lake"];
 
-export function makeMetadata(page: MakePageData): Metadata {
-  const url = `${MAKE_BASE_URL}/${page.slug}`;
+export function modelMetadata(page: ModelPageData): Metadata {
+  const url = `${MODEL_BASE_URL}/${page.slug}`;
   return {
     title: page.title,
     description: page.description,
@@ -20,24 +19,26 @@ export function makeMetadata(page: MakePageData): Metadata {
   };
 }
 
-const schema = (page: MakePageData) => {
-  const url = `${MAKE_BASE_URL}/${page.slug}`;
+const schema = (page: ModelPageData) => {
+  const url = `${MODEL_BASE_URL}/${page.slug}`;
   return [
     {
       "@context": "https://schema.org",
       "@type": "BreadcrumbList",
       itemListElement: [
-        { "@type": "ListItem", position: 1, name: "Home", item: MAKE_BASE_URL },
-        { "@type": "ListItem", position: 2, name: `${page.make} Repair`, item: url },
+        { "@type": "ListItem", position: 1, name: "Home", item: MODEL_BASE_URL },
+        { "@type": "ListItem", position: 2, name: "Services", item: `${MODEL_BASE_URL}/services` },
+        { "@type": "ListItem", position: 3, name: `${page.make} Repair`, item: `${MODEL_BASE_URL}/${page.makeSlug}` },
+        { "@type": "ListItem", position: 4, name: page.shortName, item: url },
       ],
     },
     {
       "@context": "https://schema.org",
       "@type": "Service",
       name: page.heading,
-      serviceType: `${page.make} repair`,
+      serviceType: `${page.shortName} repair`,
       url,
-      provider: { "@id": `${MAKE_BASE_URL}/#business` },
+      provider: { "@id": `${MODEL_BASE_URL}/#business` },
       areaServed: AREA_SERVED.map((name) => ({ "@type": "City", name, containedIn: { "@type": "State", name: "Indiana" } })),
     },
     {
@@ -48,11 +49,9 @@ const schema = (page: MakePageData) => {
   ];
 };
 
-export default function MakePage({ slug }: { slug: string }) {
-  const page = getMakePage(slug);
+export default function ModelPage({ slug }: { slug: string }) {
+  const page = getModelPage(slug);
   const schemas = schema(page);
-  const otherMakes = MAKE_DIRECTORY.filter((entry) => entry.href !== `/${page.slug}`);
-  const models = MODEL_PAGES.filter((entry) => entry.makeSlug === page.slug);
 
   return (
     <article className={styles.page}>
@@ -62,7 +61,8 @@ export default function MakePage({ slug }: { slug: string }) {
             <ol>
               <li><Link href="/">Home</Link></li>
               <li><Link href="/services">Services</Link></li>
-              <li aria-current="page">{page.make} Repair</li>
+              <li><Link href={`/${page.makeSlug}`}>{page.make} Repair</Link></li>
+              <li aria-current="page">{page.shortName}</li>
             </ol>
           </nav>
           <p className={styles.eyebrow}>{page.eyebrow}</p>
@@ -75,13 +75,13 @@ export default function MakePage({ slug }: { slug: string }) {
       <div className={styles.content}>
         <section className={styles.textSection}>
           <p className={styles.kicker}>Start with the exact vehicle</p>
-          <h2>Diagnostic-first {page.make} service in Crown Point</h2>
+          <h2>Diagnostic-first {page.shortName} service in Crown Point</h2>
           <p>{page.intro}</p>
         </section>
 
         <section className={styles.textSection}>
           <p className={styles.kicker}>What we commonly diagnose</p>
-          <h2>Common {page.make} problems we test for</h2>
+          <h2>Common {page.shortName} problems we test for</h2>
           {page.problems.map((problem) => (
             <div key={problem.name} style={{ marginBottom: "26px" }}>
               <h3 style={{ margin: "0 0 8px", fontSize: "20px" }}>{problem.name}</h3>
@@ -98,7 +98,7 @@ export default function MakePage({ slug }: { slug: string }) {
           </section>
           <section className={styles.listCard}>
             <Gauge aria-hidden="true" />
-            <h2>How we diagnose your {page.make}</h2>
+            <h2>How we diagnose your {page.model}</h2>
             <p style={{ color: "#555", lineHeight: 1.7 }}>{page.diagnostic}</p>
           </section>
         </div>
@@ -107,7 +107,7 @@ export default function MakePage({ slug }: { slug: string }) {
           <Wrench aria-hidden="true" />
           <div>
             <p className={styles.kicker}>Complete vehicle service</p>
-            <h2>{page.make} services and repairs</h2>
+            <h2>{page.shortName} services and repairs</h2>
             <ul className={styles.checkGrid}>{page.services.map((service) => <li key={service}><CheckCircle2 aria-hidden="true" size={18} />{service}</li>)}</ul>
           </div>
         </section>
@@ -116,7 +116,7 @@ export default function MakePage({ slug }: { slug: string }) {
 
         <section className={styles.textSection}>
           <p className={styles.kicker}>Maintenance guidance</p>
-          <h2>Use the schedule for your exact {page.make}</h2>
+          <h2>Use the schedule for your exact {page.shortName}</h2>
           <p>{page.maintenance}</p>
           <p>Bring any available maintenance records. They help us distinguish what is due from what has already been completed and avoid unnecessary repetition.</p>
         </section>
@@ -129,7 +129,7 @@ export default function MakePage({ slug }: { slug: string }) {
 
         <section className={styles.textSection}>
           <p className={styles.kicker}>Claims assistance</p>
-          <h2>{page.make} extended warranty support</h2>
+          <h2>{page.shortName} extended warranty support</h2>
           <p>{page.warranty}</p>
           <Link className={styles.textLink} href="/services/extended-warranty-repair">Learn about extended warranty repair support</Link>
         </section>
@@ -137,7 +137,7 @@ export default function MakePage({ slug }: { slug: string }) {
         <section className={styles.whySection}>
           <div><p className={styles.kicker}>Local, diagnostic-first care</p><h2>Why choose R Complete Auto Care?</h2></div>
           <div className={styles.whyGrid}>
-            <p><strong>Clear testing.</strong> We investigate the cause before asking you to approve a {page.make} repair.</p>
+            <p><strong>Clear testing.</strong> We investigate the cause before asking you to approve a {page.shortName} repair.</p>
             <p><strong>Complete service.</strong> Engine, transmission, electrical, brake, suspension, A/C, and maintenance needs can be handled in one place.</p>
             <p><strong>Local communication.</strong> You receive findings, priorities, and an estimate before authorized work begins.</p>
           </div>
@@ -146,26 +146,16 @@ export default function MakePage({ slug }: { slug: string }) {
         <section className={styles.relatedSection} aria-labelledby="related-heading">
           <h2 id="related-heading">Related repair information</h2>
           <div>
+            <Link href={`/${page.makeSlug}`}>{page.make} repair</Link>
             {page.relatedServices.map((item) => <Link key={item.href} href={item.href}>{item.label}</Link>)}
+            {page.relatedModels.map((item) => <Link key={item.href} href={item.href}>{item.label}</Link>)}
             <Link href="/auto-repair-crown-point-in">Auto repair in Crown Point</Link>
-            {page.relatedSymptoms.map((item) => <Link key={item.href} href={item.href}>{item.label}</Link>)}
           </div>
-          {models.length > 0 && (
-            <>
-              <p className={styles.kicker} style={{ marginTop: "8px" }}>Popular {page.make} models we service</p>
-              <div>
-                {models.map((model) => <Link key={model.slug} href={`/${model.slug}`}>{model.shortName} repair</Link>)}
-              </div>
-            </>
-          )}
-          <p className={styles.kicker} style={{ marginTop: "8px" }}>Other makes we service</p>
-          <div>
-            {otherMakes.map((item) => <Link key={item.href} href={item.href}>{item.label}</Link>)}
-          </div>
+          <Link className={styles.hubLink} href={`/${page.makeSlug}`}>View the complete {page.make} repair page</Link>
         </section>
 
         <section className={styles.faqSection}>
-          <p className={styles.kicker}>{page.make} service questions</p>
+          <p className={styles.kicker}>{page.shortName} service questions</p>
           <h2>Frequently asked questions</h2>
           <div className={styles.faqList}>{page.faqs.map(({ question, answer }) => <details key={question}><summary>{question}</summary><p>{answer}</p></details>)}</div>
         </section>
