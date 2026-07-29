@@ -1,5 +1,6 @@
 import { NextResponse } from 'next/server';
 import { auth } from '@/auth';
+import { isMalformedUrlPath } from '@/lib/junk-paths';
 
 export const proxy = auth((req) => {
   const path = req.nextUrl.pathname;
@@ -12,15 +13,9 @@ export const proxy = auth((req) => {
   //   /https://www.rcompleteautocare.com
   // Return 410 Gone so crawlers permanently deindex them, rather than
   // 308-redirecting to "/" (which reads as a soft 404 and can bloat the index
-  // with junk-URL → homepage duplicates). No real route starts with "[" or a
-  // protocol, so this is safe.
-  if (
-    path.startsWith('/[') ||      // literal bracket-wrapped path
-    /^\/%5[Bb]/.test(path) ||     // percent-encoded "[" prefix
-    /^\/https?:\//i.test(path) || // pasted full URL (unencoded)
-    path.includes('[http') ||
-    path.includes('%5Bhttp')
-  ) {
+  // with junk-URL → homepage duplicates). The same classifier keeps these out
+  // of analytics (see components/SiteTracking.tsx).
+  if (isMalformedUrlPath(path)) {
     return new NextResponse(null, { status: 410 });
   }
 
