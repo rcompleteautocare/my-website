@@ -9,6 +9,7 @@
     "lint": "eslint && npm run check:paths",
     "check:paths": "node scripts/check-path-lengths.mjs",
     "check:sitemap": "python scripts/check-sitemap-coverage.py",
+    "test": "node --test scripts/*.test.mjs",
     "postinstall": "prisma generate",
     "resolve-place-id": "node scripts/resolve-place-id.mjs",
     "db:generate": "prisma generate",

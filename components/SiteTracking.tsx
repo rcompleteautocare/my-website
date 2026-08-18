@@ -7,13 +7,19 @@ import { usePathname } from "next/navigation";
 import GtagLoader from "@/components/GtagLoader";
 import PhoneConversionListener from "@/components/PhoneConversionListener";
 import SiteAnalytics from "@/components/SiteAnalytics";
+import { isUntrackablePath } from "@/lib/junk-paths";
 
 const isPrivateRoute = (pathname: string) =>
   pathname === "/login" || pathname === "/command-center" || pathname.startsWith("/command-center/");
 
-function filterPrivateRouteEvents(event: BeforeSendEvent) {
+// Drop events for private/admin routes and for junk paths that no real route
+// produces — bracket-wrapped/pasted URLs (e.g. "/[https://www.rcompleteautocare.com]")
+// and template-injection scanner probes (e.g. "/{ignore}"). These would
+// otherwise show up in Vercel Analytics as bogus "visited" routes.
+function filterAnalyticsEvents(event: BeforeSendEvent) {
   try {
-    return isPrivateRoute(new URL(event.url, window.location.origin).pathname) ? null : event;
+    const { pathname } = new URL(event.url, window.location.origin);
+    return isPrivateRoute(pathname) || isUntrackablePath(pathname) ? null : event;
   } catch {
     return event;
   }
@@ -31,7 +37,7 @@ export default function SiteTracking({
 
   return (
     <>
-      <Analytics beforeSend={filterPrivateRouteEvents} />
+      <Analytics beforeSend={filterAnalyticsEvents} />
       {excludeTracking ? null : (
         <>
           {adsTagId ? (
