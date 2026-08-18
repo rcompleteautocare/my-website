@@ -6,6 +6,54 @@ import { RATING, REVIEW_COUNT } from "@/lib/rating";
 import SiteTracking from "@/components/SiteTracking";
 
 const ADS_TAG_ID = process.env.NEXT_PUBLIC_ADS_TAG_ID;
+const ADS_PHONE_LABEL = process.env.NEXT_PUBLIC_ADS_PHONE_CONVERSION_LABEL;
+
+// Phone-conversion capture, bound during HTML parse.
+//
+// The `tel:` conversion used to be bound only by PhoneConversionListener, in a
+// useEffect — i.e. not before React hydrates. On the emergency pages the whole
+// user story is "land, immediately tap the number", and a tap in that window
+// was never captured at all. This script is server-rendered, so the delegated
+// listener exists as soon as the parser reaches it — well before hydration,
+// and before the tel: links further down the document even exist.
+//
+// It queues into dataLayer through the same gtag shim shape the main init uses,
+// so a conversion fired here is transmitted once gtag.js arrives.
+//
+// `window.__rcPhoneConv.bound` is a mutual-exclusion flag shared with
+// PhoneConversionListener: whichever binds first wins and the other stands
+// down. A duplicated conversion corrupts Ads bidding worse than a missed one,
+// so the guard is check-and-set and order-independent.
+const phoneConversionBootstrap = (tagId: string, label: string) => `
+(function () {
+  var SEND_TO = ${JSON.stringify(`${tagId}/${label}`)};
+  function isPrivate(p) {
+    return p === '/login' || p === '/command-center' || p.indexOf('/command-center/') === 0;
+  }
+  window.dataLayer = window.dataLayer || [];
+  if (typeof window.gtag !== 'function') {
+    window.gtag = function () {
+      if (isPrivate(window.location.pathname)) return;
+      window.dataLayer.push(arguments);
+    };
+  }
+  var state = window.__rcPhoneConv = window.__rcPhoneConv || { bound: false, lastHref: null, lastAt: 0 };
+  if (state.bound) return;
+  state.bound = true;
+  document.addEventListener('click', function (event) {
+    var target = event.target;
+    if (!target || !target.closest) return;
+    var link = target.closest('a[href^="tel:"]');
+    if (!link) return;
+    var href = link.getAttribute('href') || '';
+    var now = Date.now();
+    if (href === state.lastHref && now - state.lastAt < 1000) return;
+    state.lastHref = href;
+    state.lastAt = now;
+    window.gtag('event', 'conversion', { send_to: SEND_TO });
+  });
+})();
+`;
 
 export const metadata: Metadata = {
   metadataBase: new URL("https://www.rcompleteautocare.com"),
@@ -121,6 +169,13 @@ export default function RootLayout({ children }: { children: React.ReactNode }) 
   return (
     <html lang="en">
       <body style={{ margin: 0, fontFamily: "sans-serif" }}>
+        {ADS_TAG_ID && ADS_PHONE_LABEL ? (
+          <script
+            dangerouslySetInnerHTML={{
+              __html: phoneConversionBootstrap(ADS_TAG_ID, ADS_PHONE_LABEL),
+            }}
+          />
+        ) : null}
         <script
           type="application/ld+json"
           dangerouslySetInnerHTML={{ __html: JSON.stringify(SCHEMA).replace(/</g, "\\u003c") }}

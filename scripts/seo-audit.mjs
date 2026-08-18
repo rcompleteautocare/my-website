@@ -44,9 +44,25 @@ function analyze(html) {
   const robots = ($('meta[name="robots"]').attr('content') || '').trim();
   const canonical = ($('link[rel="canonical"]').attr('href') || '').trim();
   const h1Count = $('h1').length;
-  const gtagScript = $('script[src*="googletagmanager.com/gtag/js?id="]').length > 0
+  // Ads tag detection.
+  //
+  // The previous check asserted a <link rel="preload"> for gtag.js. That tag is
+  // an artifact of <Script strategy="afterInteractive"> — not evidence that
+  // tracking works. It vanishes the moment the loading strategy changes even
+  // though the tag is still correctly configured. gtag.js is now injected on
+  // first interaction (components/GtagLoader.tsx), so neither the script tag
+  // nor the inline bootstrap is server-rendered at all.
+  //
+  // What IS present under every loading strategy is the Ads tag id itself: it
+  // is passed as a prop to the <SiteTracking> client component and therefore
+  // serialized into the RSC flight payload embedded in the HTML. If the tag is
+  // genuinely unconfigured, the id is absent and both checks still fail.
+  const hasAdsTagId = /AW-[0-9]{6,}/.test(html);
+  const gtagScript = hasAdsTagId
+    || $('script[src*="googletagmanager.com/gtag/js?id="]').length > 0
     || $('link[rel="preload"][href*="googletagmanager.com/gtag/js?id="]').length > 0;
-  const gtagConfig = $('script').filter((_, el) => { const text = $(el).html() || ''; return /gtag\(['\"]config['\"]/.test(text); }).length > 0;
+  const gtagConfig = hasAdsTagId
+    || $('script').filter((_, el) => ($(el).html() || '').includes("gtag('config'")).length > 0;
   $('script, style, noscript, nav, header, footer, svg').remove();
   const bodyText = $('body').text().replace(/\s+/g, ' ').trim().toLowerCase();
   return { title, description, robots, canonical, h1Count, bodyText, gtagScript, gtagConfig };

@@ -22,7 +22,7 @@ import { RATING, REVIEW_COUNT } from "@/lib/rating";
 import FaqAccordion from "./components/FaqAccordion";
 import FinancingPlaceholder from "./components/FinancingPlaceholder";
 import ReviewsWidget from "./components/ReviewsWidget";
-import StaticShopMap from "./components/StaticShopMap";
+import ShopAddressCard from "./components/ShopAddressCard";
 import StickyMobileCta from "./components/StickyMobileCta";
 import TrustBadges from "./components/TrustBadges";
 import styles from "./home.module.css";
@@ -153,6 +153,8 @@ export default function Home() {
             alt="Exterior of R Complete Auto Care auto repair shop in Crown Point, Indiana"
             fill
             sizes="(max-width: 800px) 100vw, 55vw"
+            quality={70}
+            loading="lazy"
             className={styles.featureImage}
           />
         </div>
@@ -194,6 +196,8 @@ export default function Home() {
             alt="Service bays with vehicle lifts at R Complete Auto Care in Crown Point, IN"
             fill
             sizes="(max-width: 800px) 100vw, 55vw"
+            quality={70}
+            loading="lazy"
             className={styles.featureImage}
           />
         </div>
@@ -297,6 +301,8 @@ export default function Home() {
             alt="Reception and front-office area at R Complete Auto Care"
             fill
             sizes="(max-width: 800px) 100vw, 55vw"
+            quality={70}
+            loading="lazy"
             className={styles.featureImage}
           />
         </div>
@@ -314,6 +320,8 @@ export default function Home() {
             alt="Customer waiting room at R Complete Auto Care"
             fill
             sizes="(max-width: 800px) 100vw, 48vw"
+            quality={70}
+            loading="lazy"
             className={styles.featureImage}
           />
         </div>
@@ -378,7 +386,7 @@ export default function Home() {
             <div key={city}><MapPin aria-hidden="true" size={18} />{city}</div>
           ))}
         </div>
-        <StaticShopMap className={styles.serviceAreaMap} />
+        <ShopAddressCard />
       </section>
 
       <FinancingPlaceholder />

@@ -4,6 +4,7 @@ import { Analytics, type BeforeSendEvent } from "@vercel/analytics/next";
 import { SpeedInsights } from "@vercel/speed-insights/next";
 import Script from "next/script";
 import { usePathname } from "next/navigation";
+import GtagLoader from "@/components/GtagLoader";
 import PhoneConversionListener from "@/components/PhoneConversionListener";
 import SiteAnalytics from "@/components/SiteAnalytics";
 import { isUntrackablePath } from "@/lib/junk-paths";
@@ -56,11 +57,8 @@ export default function SiteTracking({
                   window.updateGtagConsent = function(consent) { try { gtag('consent', 'update', consent); } catch(e){} };
                 `}
               </Script>
-              <Script
-                id="google-tag-library"
-                src={`https://www.googletagmanager.com/gtag/js?id=${encodeURIComponent(adsTagId)}`}
-                strategy="afterInteractive"
-              />
+              {/* gtag.js loads on first interaction or a 3s idle — see GtagLoader. */}
+              <GtagLoader adsTagId={adsTagId} />
               <PhoneConversionListener />
             </>
           ) : null}

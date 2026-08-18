@@ -74,6 +74,8 @@ export default function TrustBadges() {
             src="https://seal-fortwayne.bbb.org/seals/blue-seal-96-50-bbb-90173711.png"
             width={96}
             height={50}
+            loading="lazy"
+            decoding="async"
             style={{ border: 0, height: BADGE_HEIGHT, width: "auto", display: "block" }}
             alt="R Complete Auto Care BBB Business Review"
           />
