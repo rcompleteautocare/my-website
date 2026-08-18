@@ -122,6 +122,7 @@ export default function SuspensionSteering() {
             height={510}
             loading="lazy"
             sizes="(max-width: 420px) 90vw, 340px"
+            quality={70}
             style={{ width: "100%", maxWidth: "340px", height: "auto", borderRadius: "10px", boxShadow: "0 12px 32px rgba(25, 25, 25, 0.13)" }}
           />
           <figcaption style={{ marginTop: "12px", fontSize: "14px", color: "#666" }}>

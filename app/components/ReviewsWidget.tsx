@@ -47,9 +47,14 @@ export default function ReviewsWidget() {
   return (
     <section ref={ref} style={{ padding: "60px 24px", background: "#f9f9f9" }}>
       <div style={{ maxWidth: "1000px", margin: "0 auto", textAlign: "center" }}>
+        {/* Reserve the widget height up front. The Elfsight app mounts into an
+            empty div, so without a minHeight the section collapses to its padding
+            and everything below it jumps once the reviews render — a guaranteed
+            CLS hit. 420px matches the rendered widget on both mobile and desktop. */}
         <div
           className="elfsight-app-10ba8f91-d08e-4d50-8d8e-3a7fb77e4247"
           data-elfsight-app-lazy
+          style={{ minHeight: 420 }}
         ></div>
       </div>
     </section>

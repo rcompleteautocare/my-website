@@ -31,6 +31,10 @@ const appointmentTypes = ['Oil Change', 'Diagnostics', 'Brakes', 'Suspension', '
 
 export default function BookPage() {
   return <main className={styles.page}>
+    {/* Calendly is loaded on this route only (CalendlyEmbed injects widget.css +
+        widget.js on mount), so the preconnect belongs here rather than the root
+        layout — every other route would pay for a handshake it never uses. */}
+    <link rel="preconnect" href="https://assets.calendly.com" />
     <section className={styles.intro}>
       <span className={styles.eyebrow}>Schedule service online</span>
       <h1>Book Your Appointment</h1>

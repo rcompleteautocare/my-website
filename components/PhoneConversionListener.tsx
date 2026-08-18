@@ -14,6 +14,15 @@ export default function PhoneConversionListener() {
     // Silent no-op if either env var is missing — never throws, never logs.
     if (!tagId || !label) return;
 
+    // The server-rendered bootstrap in app/layout.tsx binds this same delegated
+    // listener during HTML parse, which is earlier than any effect can run. If
+    // it already bound, stand down rather than attaching a second handler — a
+    // duplicated conversion corrupts Ads bidding worse than a missed one. The
+    // flag is check-and-set on both sides, so whichever runs first wins and the
+    // ordering between them does not matter.
+    if (window.__rcPhoneConv?.bound) return;
+    window.__rcPhoneConv = { bound: true, lastHref: null, lastAt: 0 };
+
     const sendTo = `${tagId}/${label}`;
     let lastHref: string | null = null;
     let lastFiredAt = 0;

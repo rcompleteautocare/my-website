@@ -28,6 +28,19 @@ export default function Nav() {
 
   return (
     <>
+      {/* Kept first in the fragment: these media queries must be parsed before
+          the header markup below, otherwise mobile first paint renders the full
+          desktop nav and then collapses it to the hamburger. */}
+      <style>{`
+        @media (max-width: 768px) {
+          .desktop-nav { display: none !important; }
+          .mobile-menu-btn { display: block !important; }
+          .header-hours { display: none !important; }
+        }
+        @media (min-width: 769px) {
+          .mobile-menu { display: none !important; }
+        }
+      `}</style>
       {/* Top utility bar */}
       <div style={{ background: "#1a1a1a", color: "#fff", textAlign: "center", padding: "8px", fontSize: "13px" }}>
         Mon–Fri 8am–6pm &nbsp;|&nbsp; Sat 8am–2pm &nbsp;|&nbsp;
@@ -38,7 +51,7 @@ export default function Nav() {
       <header style={{ background: "rgba(255,255,255,.97)", borderBottom: "2px solid #e63946", padding: "10px 20px", display: "flex", justifyContent: "space-between", alignItems: "center", position: "sticky", top: 0, zIndex: 100, boxShadow: "0 5px 20px rgba(0,0,0,.07)", backdropFilter: "blur(12px)" }}>
         <div style={{ display: "flex", alignItems: "center", gap: "18px" }}>
           <Link href="/" style={{ textDecoration: "none" }}>
-            <Image src="/logo.png" alt="R Complete Auto Care" width={150} height={65} style={{ objectFit: "contain", filter: "brightness(0)" }} />
+            <Image src="/logo.png" alt="R Complete Auto Care" width={150} height={65} sizes="150px" quality={75} style={{ objectFit: "contain", filter: "brightness(0)" }} />
           </Link>
           <div className="header-hours" style={{ paddingLeft: "18px", borderLeft: "1px solid #ddd", color: "#555", fontSize: "12px", lineHeight: 1.5 }}>
             <strong style={{ display: "block", color: "#1a1a1a" }}>Open Mon–Fri 8–6</strong>
@@ -154,17 +167,6 @@ export default function Nav() {
         <span>✓ Same-Day Diagnostics</span>
         <span>📞 <a href="tel:2192622711" style={{ color: "#fff", textDecoration: "none" }}>(219) 262-2711</a></span>
       </div>
-
-      <style>{`
-        @media (max-width: 768px) {
-          .desktop-nav { display: none !important; }
-          .mobile-menu-btn { display: block !important; }
-          .header-hours { display: none !important; }
-        }
-        @media (min-width: 769px) {
-          .mobile-menu { display: none !important; }
-        }
-      `}</style>
     </>
   );
 }

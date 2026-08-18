@@ -179,6 +179,8 @@ export default function Contact() {
             alt="R Complete Auto Care roadside sign in Crown Point, Indiana"
             fill
             sizes="(max-width: 948px) calc(100vw - 48px), 900px"
+            quality={70}
+            loading="lazy"
             style={{ objectFit: "cover" }}
           />
         </div>
