@@ -1,4 +1,5 @@
 import Link from "next/link";
+import BookButton from "@/components/BookButton";
 import ServiceSchema from "@/app/components/ServiceSchema";
 
 export const metadata = {
@@ -52,6 +53,9 @@ export default function StJohn() {
         <a href="tel:2192622711" style={{ background: "#e63946", color: "#fff", padding: "14px 32px", borderRadius: "6px", fontWeight: "bold", fontSize: "18px", textDecoration: "none" }}>
           📞 Call (219) 262-2711
         </a>
+        <BookButton style={{ display: "inline-block", marginLeft: "12px", marginTop: "12px", background: "transparent", color: "#fff", border: "2px solid #fff", padding: "12px 30px", borderRadius: "6px", fontWeight: "bold", fontSize: "18px", textDecoration: "none" }}>
+          Book Online
+        </BookButton>
         <p style={{ color: "#666", fontSize: "13px", marginTop: "16px" }}>
           1305 E Summit St, Crown Point, IN 46307 · About 10 minutes from St. John · Mon–Fri 8am–6pm · Sat 8am–2pm
         </p>
@@ -133,6 +137,9 @@ export default function StJohn() {
         <a href="tel:2192622711" style={{ background: "#fff", color: "#e63946", padding: "14px 36px", borderRadius: "6px", fontWeight: "bold", fontSize: "18px", textDecoration: "none" }}>
           📞 Call (219) 262-2711
         </a>
+        <BookButton style={{ display: "inline-block", marginLeft: "12px", marginTop: "12px", background: "transparent", color: "#fff", border: "2px solid #fff", padding: "12px 34px", borderRadius: "6px", fontWeight: "bold", fontSize: "18px", textDecoration: "none" }}>
+          Book Online
+        </BookButton>
       </section>
 
     <script

@@ -21,7 +21,7 @@ routes.
 - **Tailwind CSS v4** via `@tailwindcss/postcss` — but note most components use
   **inline `style={{}}` objects**, not utility classes (see below)
 - **@vercel/analytics** + **@vercel/speed-insights** (wired in `app/layout.tsx`)
-- **Calendly** (external script) for appointment booking
+- **Tekmetric Online Booking** (modal script, loaded on `/book` only) for appointment booking
 - Deployed on **Vercel** (`vercel.json` defines the cron; `next.config.ts`
   defines redirects/headers)
 
@@ -47,7 +47,7 @@ There is **no test suite**. Validate changes with `npm run build` and
 
 ```
 app/                         # Next.js App Router — every folder is a route
-  layout.tsx                 # Root layout: <Nav>, <Footer>, global JSON-LD (LocalBusiness), analytics, Calendly
+  layout.tsx                 # Root layout: <Nav>, <Footer>, global JSON-LD (LocalBusiness), analytics
   page.tsx                   # Homepage
   globals.css                # Global styles
   sitemap.ts                 # Hand-maintained sitemap (MetadataRoute.Sitemap) — ADD NEW ROUTES HERE
@@ -87,8 +87,8 @@ the value **here**, not inline in pages:
   check will alert if these go stale.
 - `lib/place.js` — `PLACE_CID` (public maps link) and `PLACE_ID` (Places API
   resource ID, used only by the drift check).
-- `lib/booking.js` — `CALENDLY_URL`, the Calendly scheduling link used by
-  `BookButton` and `/book`.
+- `lib/booking.js` — `TEKMETRIC_BOOKING_SHOP_ID`, the Tekmetric Online Booking
+  shop ID used by the scheduler on `/book` (`BookButton` links to `/book`).
 
 ## Key conventions
 

@@ -98,6 +98,20 @@ const SCHEMA = {
       closes: "14:00",
     },
   ],
+  potentialAction: {
+    "@type": "ReserveAction",
+    name: "Book an appointment",
+    target: {
+      "@type": "EntryPoint",
+      urlTemplate: "https://www.rcompleteautocare.com/book",
+      inLanguage: "en-US",
+      actionPlatform: [
+        "https://schema.org/DesktopWebPlatform",
+        "https://schema.org/MobileWebPlatform",
+      ],
+    },
+    result: { "@type": "Reservation", name: "Auto repair appointment" },
+  },
   aggregateRating: {
     "@type": "AggregateRating",
     ratingValue: String(RATING),

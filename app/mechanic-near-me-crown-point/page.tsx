@@ -25,6 +25,7 @@ export const metadata = {
 }
 
 import Link from "next/link";
+import BookButton from "@/components/BookButton";
 
 export default function MechanicNearMe() {
   return (
@@ -45,6 +46,9 @@ export default function MechanicNearMe() {
         <a href="tel:2192622711" style={{ background: "#e63946", color: "#fff", padding: "14px 32px", borderRadius: "6px", fontWeight: "bold", textDecoration: "none", fontSize: "18px" }}>
           📞 Call (219) 262-2711 — Same-Day Available
         </a>
+        <BookButton style={{ display: "inline-block", marginLeft: "12px", marginTop: "12px", background: "transparent", color: "#fff", border: "2px solid #fff", padding: "12px 30px", borderRadius: "6px", fontWeight: "bold", fontSize: "18px", textDecoration: "none" }}>
+          Book Online
+        </BookButton>
         <p style={{ color: "#666", fontSize: "13px", marginTop: "16px" }}>Mon–Fri 8am–6pm · Sat 8am–2pm · Extended Warranty Accepted</p>
       </section>
 
@@ -238,6 +242,9 @@ export default function MechanicNearMe() {
         <a href="tel:2192622711" style={{ background: "#fff", color: "#e63946", padding: "14px 36px", borderRadius: "6px", fontWeight: "bold", textDecoration: "none", fontSize: "18px" }}>
           📞 Call (219) 262-2711
         </a>
+        <BookButton style={{ display: "inline-block", marginLeft: "12px", marginTop: "12px", background: "transparent", color: "#fff", border: "2px solid #fff", padding: "12px 34px", borderRadius: "6px", fontWeight: "bold", fontSize: "18px", textDecoration: "none" }}>
+          Book Online
+        </BookButton>
       </section>
 
     <script
