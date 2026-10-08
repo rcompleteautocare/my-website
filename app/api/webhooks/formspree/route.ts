@@ -24,7 +24,6 @@ export async function POST(request: Request) {
     customer: submission.customer_name,
     vehicle: [submission.vehicle_year, submission.vehicle_make, submission.vehicle_model].filter(Boolean).join(' '),
     appointmentTime: submission.appointment_time,
-    calendlyInvitee: submission.calendly_invitee,
   })
   return NextResponse.json({ received: true, smsSent: false })
 }

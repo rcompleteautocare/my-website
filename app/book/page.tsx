@@ -1,5 +1,5 @@
 import type { Metadata } from 'next'
-import CalendlyEmbed from './CalendlyEmbed'
+import TekmetricBooking from './TekmetricBooking'
 import styles from '../scheduling.module.css'
 
 export const metadata: Metadata = {
@@ -31,17 +31,17 @@ const appointmentTypes = ['Oil Change', 'Diagnostics', 'Brakes', 'Suspension', '
 
 export default function BookPage() {
   return <main className={styles.page}>
-    {/* Calendly is loaded on this route only (CalendlyEmbed injects widget.css +
-        widget.js on mount), so the preconnect belongs here rather than the root
-        layout — every other route would pay for a handshake it never uses. */}
-    <link rel="preconnect" href="https://assets.calendly.com" />
+    {/* The Tekmetric scheduler is loaded on this route only (TekmetricBooking
+        injects modal.css + modal.js on mount), so the preconnect belongs here
+        rather than the root layout. */}
+    <link rel="preconnect" href="https://booking.tekmetric.com" />
     <section className={styles.intro}>
       <span className={styles.eyebrow}>Schedule service online</span>
       <h1>Book Your Appointment</h1>
-      <p>Choose a service and a time that works for you. After booking, we’ll collect your vehicle details so our team can prepare.</p>
+      <p>Choose a service and a time that works for you. Your appointment goes straight onto our shop schedule, and we’ll confirm by text and email.</p>
       <div className={styles.hours}><strong>Shop hours</strong><span>Mon–Fri 8am–6pm</span><span>Sat 8am–2pm</span><span>Sunday closed</span></div>
     </section>
-    <section className={styles.bookingCard} aria-label="Online appointment scheduler"><CalendlyEmbed /></section>
+    <section className={styles.bookingCard} aria-label="Online appointment scheduler"><TekmetricBooking /></section>
     <section className={styles.serviceList} aria-label="Available appointment types">
       <h2>Services you can schedule</h2><div>{appointmentTypes.map(item => <span key={item}>{item}</span>)}</div>
     </section>

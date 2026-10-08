@@ -1,6 +1,5 @@
 'use client'
 
-import { useSearchParams } from 'next/navigation'
 import { trackEvent } from '@/lib/analytics'
 import styles from '../scheduling.module.css'
 
@@ -12,13 +11,11 @@ const textFields = [
 ] as const
 
 export default function VehicleInformationForm() {
-  const params = useSearchParams()
   const formId = process.env.NEXT_PUBLIC_FORMSPREE_FORM_ID
   const action = formId ? `https://formspree.io/f/${formId}` : '/thank-you'
   return <form className={styles.formCard} action={action} method="POST" encType="multipart/form-data" onSubmit={() => trackEvent('vehicle_form_submitted')}>
     <input type="hidden" name="_subject" value="New Scheduled Appointment" />
     <input type="hidden" name="_next" value="https://www.rcompleteautocare.com/thank-you" />
-    <input type="hidden" name="calendly_invitee" value={params.get('invitee') || ''} />
     <div className={styles.formGrid}>
       {textFields.map(([name,label,type,required]) => <div className={styles.field} key={name}><label htmlFor={name}>{label}{required && ' *'}</label><input id={name} name={name} type={type} required={required} /></div>)}
       <fieldset className={styles.choice}><legend>Arrival plan *</legend><div>{['Waiting','Drop Off','Need Shuttle','Need Loaner'].map(option => <label key={option}><input type="radio" name="arrival_plan" value={option} required /> {option}</label>)}</div></fieldset>
