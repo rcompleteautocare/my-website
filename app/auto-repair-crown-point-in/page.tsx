@@ -175,7 +175,7 @@ export default function CrownPoint() {
       {
         "@type": "Question",
         "name": "Do you accept extended warranties in Crown Point?",
-        "acceptedAnswer": { "@type": "Answer", "text": "Yes! We work with most extended warranty providers and handle the entire claims process for you — no hassle on your end." }
+        "acceptedAnswer": { "@type": "Answer", "text": "Yes! We work with most extended warranty providers and handle the claim paperwork and talk to the adjuster for you — no hassle on your end." }
       },
       {
         "@type": "Question",

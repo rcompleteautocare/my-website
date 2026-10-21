@@ -128,7 +128,7 @@ export default function About() {
             { icon: "🔍", title: "Diagnostic First, Always", desc: "We find the root cause of your vehicle's problem before recommending any repair. Every time, no exceptions." },
             { icon: "🤝", title: "Honest Communication", desc: "We tell you exactly what's wrong, what's urgent, and what can wait — in plain language, without pressure." },
             { icon: "🔧", title: "Expert Repairs", desc: "Our technicians have the training, tools, and experience to fix it right the first time." },
-            { icon: "📋", title: "Extended Warranty Work", desc: "We accept most extended warranty plans and handle the entire claims process for you." },
+            { icon: "📋", title: "Extended Warranty Work", desc: "We accept most extended warranty plans and handle the claim paperwork and talk to the adjuster for you." },
             { icon: "🚗", title: "All Makes & Models", desc: "Foreign and domestic — Honda, Toyota, BMW, Ford, Chevrolet, Dodge, and everything in between." },
             { icon: "📍", title: "Proud to Serve Crown Point", desc: "We're your neighbors. We live and work in this community and we care about our reputation here." },
           ].map(item => (

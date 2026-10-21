@@ -104,7 +104,7 @@ export default function Diagnostics() {
           { q: "How much does a diagnostic cost in Crown Point?", a: "It depends on the complexity of the concern and how much testing the diagnosis requires. We tell you what the diagnosis involves before we begin, complete most diagnostics the same day, and call you with the findings before any repair is authorized." },
           { q: "Do you work on all makes and models?", a: "Yes — all foreign and domestic vehicles including Honda, Toyota, BMW, Mercedes, Ford, Chevrolet, Dodge, Subaru, and more." },
           { q: "Do you serve St. John, Schererville, and Merrillville for diagnostics?", a: "Yes! We're located in Crown Point and serve all of Lake County including St. John, Schererville, Merrillville, and Cedar Lake, Indiana." },
-          { q: "Do you accept extended warranties for diagnostic repairs?", a: "Yes! We work with most extended warranty providers and handle the entire claims process for you." },
+          { q: "Do you accept extended warranties for diagnostic repairs?", a: "Yes! We work with most extended warranty providers and handle the claim paperwork and talk to the adjuster for you." },
         ].map(item => (
           <div key={item.q} style={{ marginBottom: "20px", borderBottom: "1px solid #e0e0e0", paddingBottom: "20px" }}>
             <div style={{ fontWeight: "bold", fontSize: "16px", marginBottom: "8px" }}>{item.q}</div>
@@ -176,7 +176,7 @@ export default function Diagnostics() {
       {
         "@type": "Question",
         "name": "Do you accept extended warranties for diagnostic repairs?",
-        "acceptedAnswer": { "@type": "Answer", "text": "Yes! We work with most extended warranty providers and handle the entire claims process for you." }
+        "acceptedAnswer": { "@type": "Answer", "text": "Yes! We work with most extended warranty providers and handle the claim paperwork and talk to the adjuster for you." }
       }
     ]
   }).replace(/</g, "\u003c")}}

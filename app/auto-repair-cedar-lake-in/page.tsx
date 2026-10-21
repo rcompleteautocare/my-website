@@ -160,7 +160,7 @@ export default function CedarLake() {
       {
         "@type": "Question",
         "name": "Do you accept extended warranties for Cedar Lake drivers?",
-        "acceptedAnswer": { "@type": "Answer", "text": "Yes! We work with most extended warranty providers and handle the entire claims process. Cedar Lake drivers are welcome — call us at (219) 262-2711." }
+        "acceptedAnswer": { "@type": "Answer", "text": "Yes! We work with most extended warranty providers and handle the claim paperwork and talk to the adjuster for you. Cedar Lake drivers are welcome — call us at (219) 262-2711." }
       },
       {
         "@type": "Question",

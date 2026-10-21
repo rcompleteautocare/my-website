@@ -160,7 +160,7 @@ export default function Merrillville() {
       {
         "@type": "Question",
         "name": "Do you accept extended warranties for Merrillville drivers?",
-        "acceptedAnswer": { "@type": "Answer", "text": "Yes! We work with most extended warranty providers and handle the entire claims process. Merrillville drivers are welcome — call us at (219) 262-2711." }
+        "acceptedAnswer": { "@type": "Answer", "text": "Yes! We work with most extended warranty providers and handle the claim paperwork and talk to the adjuster for you. Merrillville drivers are welcome — call us at (219) 262-2711." }
       },
       {
         "@type": "Question",

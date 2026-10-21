@@ -164,7 +164,7 @@ export default function MechanicNearMe() {
         <div style={{ maxWidth: "800px", margin: "0 auto" }}>
           <h2 style={{ fontSize: "28px", marginBottom: "16px" }}>Extended Warranty? Your Mechanic Near Crown Point Handles Everything</h2>
           <p style={{ lineHeight: 1.8, color: "#444", marginBottom: "16px" }}>
-            One of the biggest reasons Crown Point and Lake County drivers choose R Complete Auto Care over other mechanics nearby is our extended warranty specialization. We accept CarShield, Endurance, CARS Protection Plus, AmTrust, and most major providers — and we handle the entire claims process for you.
+            One of the biggest reasons Crown Point and Lake County drivers choose R Complete Auto Care over other mechanics nearby is our extended warranty specialization. We accept CarShield, Endurance, CARS Protection Plus, AmTrust, and most major providers — and we handle the claim paperwork and talk to the adjuster for you.
           </p>
           <p style={{ lineHeight: 1.8, color: "#444", marginBottom: "24px" }}>
             We verify coverage before you bring the car in, obtain pre-authorization, document the repair, submit the claim, and explain the authorization before work begins.

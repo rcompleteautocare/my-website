@@ -63,7 +63,7 @@ export default function EngineRepair() {
           We work on all foreign and domestic vehicles — Honda, Toyota, BMW, Mercedes, Ford, Chevy, Dodge, Subaru, and more. Whether your engine has a minor oil leak or needs a full replacement, we have the tools, the equipment, and the experience to do it right.
         </p>
         <p style={{ lineHeight: 1.8, color: "#444", marginBottom: "40px" }}>
-          We also accept most extended warranty plans and handle the entire claims process for you — so if your engine repair is covered, you may owe nothing out of pocket.
+          We also accept most extended warranty plans and handle the claim paperwork and talk to the adjuster for you — so if your engine repair is covered, you may owe nothing out of pocket.
         </p>
 
         {/* Symptoms */}

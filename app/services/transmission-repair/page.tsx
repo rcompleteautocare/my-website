@@ -63,7 +63,7 @@ export default function TransmissionRepair() {
           We have found solenoid failures, low-fluid conditions, and sensor issues on vehicles that had already received rebuild recommendations. A thorough diagnostic tells you exactly what you&apos;re dealing with and whether a targeted repair or internal work is justified before you commit to anything.
         </p>
         <p style={{ lineHeight: 1.8, color: "#444", marginBottom: "40px" }}>
-          We service automatic, manual, and CVT transmissions on all makes and models. We also accept most extended warranty plans and handle the entire claims process — transmission repairs are among the most commonly covered repairs on extended warranty policies.
+          We service automatic, manual, and CVT transmissions on all makes and models. We also accept most extended warranty plans and handle the claim paperwork and talk to the adjuster for you — transmission repairs are among the most commonly covered repairs on extended warranty policies.
         </p>
 
         {/* Symptoms */}

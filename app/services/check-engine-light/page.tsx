@@ -107,7 +107,7 @@ export default function CheckEngineLight() {
               { title: "Honest Recommendations", desc: "We tell you exactly what's wrong and what's urgent — no upselling, no unnecessary repairs." },
               { title: "Same-Day Diagnostics", desc: "Most check engine light diagnostics completed the same day, with a call before any work begins." },
               { title: "All Makes & Models", desc: "Foreign and domestic vehicles welcome. Honda, Toyota, Ford, GM, BMW, Mercedes and more." },
-              { title: "Extended Warranty Accepted", desc: "We work with most extended warranty providers and handle the entire claims process for you." },
+              { title: "Extended Warranty Accepted", desc: "We work with most extended warranty providers and handle the claim paperwork and talk to the adjuster for you." },
               { title: `${YEARS_EXPERIENCE} Years Family Experience`, desc: "Diagnostic expertise built over decades — we've seen every code, every failure, every pattern." },
             ].map(item => (
               <div key={item.title} style={{ border: "1px solid #e0e0e0", borderLeft: "4px solid #e63946", borderRadius: "4px", padding: "16px" }}>
@@ -145,7 +145,7 @@ export default function CheckEngineLight() {
             { q: "Can you just clear the code without diagnosing it?", a: "We don't recommend it and we won't do it. Clearing the code without fixing the underlying issue means the light will come back on — often within 50–100 miles. We find the root cause first." },
             { q: "What are signs I need check engine light diagnosis?", a: "Any time the check engine light comes on — solid or flashing. Also if you notice rough running, reduced power, poor fuel economy, or if the light returned after another shop 'fixed' it." },
             { q: "My check engine light came back on after another shop fixed it — what do I do?", a: "This is one of the most common reasons people come to us. Many shops clear codes and replace the most obvious part without finding the actual root cause. We dig deeper. Bring it in and we'll find what was missed." },
-            { q: "Do you accept extended warranties for check engine light repairs?", a: "Yes! We work with most extended warranty providers and handle the entire claims process for you. Call us with your warranty info and we'll verify coverage before any work begins." },
+            { q: "Do you accept extended warranties for check engine light repairs?", a: "Yes! We work with most extended warranty providers and handle the claim paperwork and talk to the adjuster for you. Call us with your warranty info and we'll verify coverage before any work begins." },
           ].map(item => (
             <div key={item.q} style={{ marginBottom: "20px", borderBottom: "1px solid #e0e0e0", paddingBottom: "20px" }}>
               <div style={{ fontWeight: "bold", fontSize: "16px", marginBottom: "8px" }}>{item.q}</div>
@@ -212,7 +212,7 @@ export default function CheckEngineLight() {
       {
         "@type": "Question",
         "name": "Do you accept extended warranties for check engine light repairs?",
-        "acceptedAnswer": { "@type": "Answer", "text": "Yes! We work with most extended warranty providers and handle the entire claims process for you. Call us with your warranty info and we'll verify coverage before any work begins." }
+        "acceptedAnswer": { "@type": "Answer", "text": "Yes! We work with most extended warranty providers and handle the claim paperwork and talk to the adjuster for you. Call us with your warranty info and we'll verify coverage before any work begins." }
       }
     ]
   }).replace(/</g, "\u003c")}}
