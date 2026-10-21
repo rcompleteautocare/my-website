@@ -88,7 +88,7 @@ export default function About() {
               </div>
             </div>
             <div>
-              <div style={{ fontWeight: "bold", color: "#e63946", marginBottom: "6px" }}>Years in Business</div>
+              <div style={{ fontWeight: "bold", color: "#e63946", marginBottom: "6px" }}>Technician Experience</div>
               <div style={{ color: "#444", lineHeight: 1.7 }}>{YEARS_EXPERIENCE} years of combined technician experience — diagnostic-first auto repair since day one</div>
             </div>
             <div>

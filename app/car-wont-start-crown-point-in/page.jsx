@@ -164,7 +164,7 @@ export default function CarWontStart() {
           </div>
           <div className="feature-item">
             <strong>{YEARS_EXPERIENCE} Years Family Experience</strong>
-            <p>R Complete Auto Care has served Crown Point and Lake County for {YEARS_EXPERIENCE} years. We have diagnosed no-start conditions on every make and model.</p>
+            <p>Our technicians bring {YEARS_EXPERIENCE} years of combined experience to Crown Point and Lake County drivers. We have diagnosed no-start conditions on every make and model.</p>
           </div>
         </div>
 

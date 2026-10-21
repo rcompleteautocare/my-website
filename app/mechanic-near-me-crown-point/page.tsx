@@ -183,7 +183,7 @@ export default function MechanicNearMe() {
             { q: "What is the best mechanic near Crown Point, IN?", a: `R Complete Auto Care at 1305 E Summit St in Crown Point is rated ${RATING} stars on Google and specializes in diagnostic-first auto repair. We fix complex problems other shops can't figure out, accept most extended warranties, and offer same-day diagnostics. We serve Crown Point, St. John, Schererville, Merrillville, and Cedar Lake.` },
             { q: "What mechanic near me accepts extended warranties in Crown Point?", a: "R Complete Auto Care accepts most major extended warranty providers including CarShield, Endurance, CARS Protection Plus, and AmTrust. We handle verification, pre-authorization, and claim submission, then explain the authorization before work begins. Call (219) 262-2711 with your warranty info before you bring the car in." },
             { q: "Is there a mechanic near me open on Saturday in Crown Point?", a: "Yes — R Complete Auto Care is open Saturday 8am to 2pm at 1305 E Summit St, Crown Point IN. Monday through Friday we're open 8am to 6pm. Call (219) 262-2711 to schedule." },
-            { q: "How do I find a trustworthy mechanic near me in Crown Point?", a: `Look for detailed reviews, clear written estimates, a diagnostic-first approach, and extended warranty experience. R Complete Auto Care has all of these and has been serving Lake County Indiana for ${YEARS_EXPERIENCE} years.` },
+            { q: "How do I find a trustworthy mechanic near me in Crown Point?", a: `Look for detailed reviews, clear written estimates, a diagnostic-first approach, and extended warranty experience. R Complete Auto Care has all of these, and our technicians bring ${YEARS_EXPERIENCE} years of combined experience to Lake County Indiana drivers.` },
             { q: "What mechanic near Crown Point can diagnose complex car problems?", a: "R Complete Auto Care specializes in complex diagnostics — electrical faults, intermittent no-start conditions, check engine lights that other shops couldn't fix, and extended warranty repairs. If another mechanic near you couldn't figure it out, call us." },
             { q: "How far does R Complete Auto Care serve from Crown Point?", a: "We serve all of Lake County Indiana — Crown Point, St. John (10 min), Schererville (12 min), Merrillville (15 min), Cedar Lake (15 min), Lowell, Dyer, Munster, and surrounding areas." },
             { q: "Do you offer same-day mechanic service near Crown Point?", a: "Yes — most diagnostic appointments are completed the same day. Call before 10am for best availability. We'll contact you with our findings before doing any work." },
@@ -272,7 +272,7 @@ export default function MechanicNearMe() {
       {
         "@type": "Question",
         "name": "How do I find a trustworthy mechanic near me in Crown Point?",
-        "acceptedAnswer": { "@type": "Answer", "text": `Look for detailed reviews, clear written estimates, a diagnostic-first approach, and extended warranty experience. R Complete Auto Care has all of these and has been serving Lake County Indiana for ${YEARS_EXPERIENCE} years.` }
+        "acceptedAnswer": { "@type": "Answer", "text": `Look for detailed reviews, clear written estimates, a diagnostic-first approach, and extended warranty experience. R Complete Auto Care has all of these, and our technicians bring ${YEARS_EXPERIENCE} years of combined experience to Lake County Indiana drivers.` }
       },
       {
         "@type": "Question",

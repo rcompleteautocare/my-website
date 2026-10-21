@@ -192,7 +192,7 @@ export default function TransmissionSlipping() {
           </div>
           <div className="feature-item">
             <strong>{YEARS_EXPERIENCE} Years Family Experience</strong>
-            <p>R Complete Auto Care has served Crown Point and Lake County for {YEARS_EXPERIENCE} years. We have diagnosed transmission faults on every make and model — automatic, manual, and CVT.</p>
+            <p>Our technicians bring {YEARS_EXPERIENCE} years of combined experience to Crown Point and Lake County drivers. We have diagnosed transmission faults on every make and model — automatic, manual, and CVT.</p>
           </div>
         </div>
 
