@@ -137,6 +137,27 @@ export default function Home() {
         </div>
       </section>
 
+      <section className={styles.emergencySection} aria-labelledby="emergency-heading">
+        <div className={styles.emergencyHeader}>
+          <div>
+            <p className={styles.kicker}>Fast paths for urgent problems</p>
+            <h2 id="emergency-heading">Need Immediate Auto Repair?</h2>
+          </div>
+          <a className={styles.emergencyCall} href="tel:2192622711">
+            <Phone aria-hidden="true" size={19} /> Call Now
+          </a>
+        </div>
+        <div className={styles.emergencyGrid}>
+          {emergencyServices.map(({ title, href, icon: Icon }) => (
+            <Link href={href} key={title}>
+              <Icon aria-hidden="true" size={22} />
+              <span>{title}</span>
+              <ArrowRight aria-hidden="true" size={17} />
+            </Link>
+          ))}
+        </div>
+      </section>
+
       <section className={`${styles.photoFeature} ${styles.photoFeatureFirst}`} aria-labelledby="visit-shop-heading">
         <div className={styles.photoFrame}>
           <Image
@@ -158,27 +179,6 @@ export default function Home() {
           <BookButton className={styles.photoButton}>
             <CalendarDays aria-hidden="true" size={19} /> Book Appointment
           </BookButton>
-        </div>
-      </section>
-
-      <section className={styles.emergencySection} aria-labelledby="emergency-heading">
-        <div className={styles.emergencyHeader}>
-          <div>
-            <p className={styles.kicker}>Fast paths for urgent problems</p>
-            <h2 id="emergency-heading">Need Immediate Auto Repair?</h2>
-          </div>
-          <a className={styles.emergencyCall} href="tel:2192622711">
-            <Phone aria-hidden="true" size={19} /> Call Now
-          </a>
-        </div>
-        <div className={styles.emergencyGrid}>
-          {emergencyServices.map(({ title, href, icon: Icon }) => (
-            <Link href={href} key={title}>
-              <Icon aria-hidden="true" size={22} />
-              <span>{title}</span>
-              <ArrowRight aria-hidden="true" size={17} />
-            </Link>
-          ))}
         </div>
       </section>
 
