@@ -43,7 +43,7 @@ export default function HondaRepairHub() {
         <div className={styles.heroInner}>
           <nav className={styles.breadcrumbs} aria-label="Breadcrumb"><ol><li><Link href="/">Home</Link></li><li aria-current="page">Honda Repair</li></ol></nav>
           <p className={styles.eyebrow}>Independent Honda service in Crown Point</p>
-          <h1>Honda Repair and Diagnostics</h1>
+          <h1>Honda Repair and Diagnostics in Crown Point, IN</h1>
           <p className={styles.lead}>Complete diagnostics. Complete repairs. We service Honda vehicles with a test-first approach for engine, transmission, electrical, A/C, brake, suspension, maintenance, and extended warranty concerns.</p>
           <HondaCta compact />
         </div>
