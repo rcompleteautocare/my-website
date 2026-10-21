@@ -35,7 +35,7 @@ export default function BrakeRepair() {
         <h1 style={{ fontSize: "38px", fontWeight: "bold", marginBottom: "12px" }}>
           Brake Repair in Crown Point, IN
         </h1>
-        <p className="speakable" style={{ fontSize: "16px", color: "#f1626f", fontWeight: "600", marginBottom: "16px", fontStyle: "italic" }}>TL;DR: Brake repair starts with pad, rotor, caliper, fluid, and hardware measurements. We show you what is worn, explain what is urgent, and provide a clear estimate before authorized work.
+        <p className="speakable" style={{ fontSize: "16px", color: "#f1626f", fontWeight: "600", marginBottom: "16px", fontStyle: "italic" }}>In short: Brake repair starts with pad, rotor, caliper, fluid, and hardware measurements. We show you what is worn, explain what is urgent, and provide a clear estimate before authorized work.
         </p>
         <p style={{ fontSize: "18px", color: "#ccc", maxWidth: "600px", margin: "0 auto 32px" }}>
           Your brakes are the most important safety system on your vehicle. We perform thorough inspections with actual measurements — not a quick visual and an upsell.

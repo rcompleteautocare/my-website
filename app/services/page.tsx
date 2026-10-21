@@ -79,7 +79,7 @@ export default function ServicesIndex() {
           Auto Repair Services in Crown Point, IN
         </h1>
         <p className="speakable" style={{ fontSize: "16px", color: "#f1626f", fontWeight: "600", marginBottom: "16px", fontStyle: "italic" }}>
-          TL;DR: A diagnostic-first shop offering 11 services — from check-engine-light diagnostics and brake repair to full engine/transmission work and extended-warranty claims — all under one roof at 1305 E Summit St, Crown Point, IN.
+          In short: A diagnostic-first shop offering 11 services — from check-engine-light diagnostics and brake repair to full engine/transmission work and extended-warranty claims — all under one roof at 1305 E Summit St, Crown Point, IN.
         </p>
         <p style={{ fontSize: "18px", color: "#ccc", maxWidth: "600px", margin: "0 auto 32px" }}>
           Every repair starts with a proper diagnostic. We find the real problem, give you a clear estimate, and fix it right the first time.

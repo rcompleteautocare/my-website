@@ -36,7 +36,7 @@ export default function EngineRepair() {
         <h1 style={{ fontSize: "38px", fontWeight: "bold", marginBottom: "12px" }}>
           Engine Repair in Crown Point, IN
         </h1>
-        <p className="speakable" style={{ fontSize: "16px", color: "#f1626f", fontWeight: "600", marginBottom: "16px", fontStyle: "italic" }}>TL;DR: Engine repair scope depends on the verified failure, access, and any connected damage. We diagnose first and provide a clear estimate before authorized work. Extended warranties often cover engine repairs, and same-day diagnostics are available.
+        <p className="speakable" style={{ fontSize: "16px", color: "#f1626f", fontWeight: "600", marginBottom: "16px", fontStyle: "italic" }}>In short: Engine repair scope depends on the verified failure, access, and any connected damage. We diagnose first and provide a clear estimate before authorized work. Extended warranties often cover engine repairs, and same-day diagnostics are available.
         </p>
         <p style={{ fontSize: "18px", color: "#ccc", maxWidth: "600px", margin: "0 auto 32px" }}>
           From minor engine repairs to major overhauls — we diagnose the real problem first so you only pay for what your vehicle actually needs.

@@ -35,7 +35,7 @@ export default function OilChangeMaintenance() {
         <h1 style={{ fontSize: "38px", fontWeight: "bold", marginBottom: "12px" }}>
           Oil Change & Maintenance in Crown Point, IN
         </h1>
-        <p className="speakable" style={{ fontSize: "16px", color: "#f1626f", fontWeight: "600", marginBottom: "16px", fontStyle: "italic" }}>TL;DR: Oil service is matched to the vehicle&apos;s required oil specification and capacity and includes a multi-point inspection. Call ahead for same-day availability and an upfront estimate.
+        <p className="speakable" style={{ fontSize: "16px", color: "#f1626f", fontWeight: "600", marginBottom: "16px", fontStyle: "italic" }}>In short: Oil service is matched to the vehicle&apos;s required oil specification and capacity and includes a multi-point inspection. Call ahead for same-day availability and an upfront estimate.
         </p>
         <p style={{ fontSize: "18px", color: "#ccc", maxWidth: "600px", margin: "0 auto 32px" }}>
           Conventional and synthetic oil changes with a thorough multi-point inspection — so you know what&apos;s coming before it becomes an emergency.

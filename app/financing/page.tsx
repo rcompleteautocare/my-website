@@ -32,7 +32,7 @@ export const metadata: Metadata = {
 const FAQS = [
   {
     q: "Which financing providers do you offer?",
-    a: "We offer pay-over-time options through Affirm, Klarna, and Sunbit, integrated into the estimates we send from Tekmetric.",
+    a: "We offer pay-over-time options through Affirm, Klarna, and Sunbit, integrated into the digital estimates we send you.",
   },
   {
     q: "Does applying hurt my credit?",
@@ -85,7 +85,7 @@ export default function Financing() {
           Auto Repair Financing in Crown Point, IN
         </h1>
         <p className="speakable" style={{ fontSize: "16px", color: "#f1626f", fontWeight: "600", marginBottom: "16px", fontStyle: "italic", maxWidth: "760px", margin: "0 auto 16px" }}>
-          TL;DR: R Complete Auto Care offers pay-over-time financing right on your repair estimate through Affirm, Klarna, and Sunbit. A big or unexpected repair doesn&apos;t have to wait — apply in minutes, and if you&apos;re approved, we can start the work right away. Financing is provided by third-party lenders and is subject to approval.
+          In short: R Complete Auto Care offers pay-over-time financing right on your repair estimate through Affirm, Klarna, and Sunbit. A big or unexpected repair doesn&apos;t have to wait — apply in minutes, and if you&apos;re approved, we can start the work right away. Financing is provided by third-party lenders and is subject to approval.
         </p>
         <p style={{ fontSize: "18px", color: "#ccc", maxWidth: "620px", margin: "0 auto 32px" }}>
           Most of our customers don&apos;t know pay-over-time options are built right into their estimate. Here&apos;s how it works.
@@ -105,7 +105,7 @@ export default function Financing() {
       <section style={{ padding: "60px 24px", maxWidth: "800px", margin: "0 auto" }}>
         <h2 style={{ fontSize: "28px", marginBottom: "16px" }}>Pay over time — turn &ldquo;not today&rdquo; into &ldquo;yes, today&rdquo;</h2>
         <p style={{ lineHeight: 1.8, color: "#444", marginBottom: "20px" }}>
-          A big or unexpected repair shouldn&apos;t sideline your vehicle — or your week. When you receive an estimate from us, pay-over-time options from Affirm, Klarna, and Sunbit can appear right on it. That means you can move forward with the repair now and pay for it over time. It&apos;s built into our Tekmetric estimates; most customers simply don&apos;t know it&apos;s there.
+          A big or unexpected repair shouldn&apos;t sideline your vehicle — or your week. When you receive an estimate from us, pay-over-time options from Affirm, Klarna, and Sunbit can appear right on it. That means you can move forward with the repair now and pay for it over time. It&apos;s built into our digital estimates; most customers simply don&apos;t know it&apos;s there.
         </p>
 
         <h2 style={{ fontSize: "28px", marginBottom: "16px", marginTop: "40px" }}>When financing helps most</h2>
@@ -135,7 +135,7 @@ export default function Financing() {
 
         <h2 style={{ fontSize: "28px", marginBottom: "16px", marginTop: "40px" }}>Our financing providers</h2>
         <p style={{ lineHeight: 1.8, color: "#444", marginBottom: "16px" }}>
-          We work with three well-known pay-over-time providers, integrated directly into our Tekmetric estimates:
+          We work with three well-known pay-over-time providers, integrated directly into our digital estimates:
         </p>
         <ul style={{ lineHeight: 2, color: "#444", paddingLeft: "20px", marginBottom: "16px" }}>
           <li><strong>Affirm</strong> — pay-over-time plans you can select on your estimate.</li>

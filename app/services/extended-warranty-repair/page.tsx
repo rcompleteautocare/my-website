@@ -36,7 +36,7 @@ export default function ExtendedWarrantyRepair() {
         <h1 style={{ fontSize: "38px", fontWeight: "bold", marginBottom: "12px" }}>
           Extended Warranty Repairs — How We Do Warranty Work
         </h1>
-        <p className="speakable" style={{ fontSize: "16px", color: "#f1626f", fontWeight: "600", marginBottom: "16px", fontStyle: "italic" }}>TL;DR: We work with CarShield, Endurance, CARS Protection Plus, AmTrust, and most providers. We verify coverage, document the failure, obtain pre-authorisation, and explain the plan&apos;s customer responsibility before authorized work.
+        <p className="speakable" style={{ fontSize: "16px", color: "#f1626f", fontWeight: "600", marginBottom: "16px", fontStyle: "italic" }}>In short: We work with CarShield, Endurance, CARS Protection Plus, AmTrust, and most providers. We verify coverage, document the failure, obtain pre-authorisation, and explain the plan&apos;s customer responsibility before authorized work.
         </p>
         <p style={{ fontSize: "18px", color: "#ccc", maxWidth: "600px", margin: "0 auto 32px" }}>
           This is our operational warranty page. For urgent help with a denied or stuck claim, see our <Link href="/extended-warranty-auto-repair-crown-point-in" style={{ color: "#fff", textDecoration: "underline" }}>warranty claim help page →</Link>

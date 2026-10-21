@@ -39,7 +39,7 @@ export default function Diagnostics() {
         <h1 style={{ fontSize: "38px", fontWeight: "bold", marginBottom: "12px", lineHeight: 1.2 }}>
           Auto Diagnostics in Crown Point, IN
         </h1>
-        <p className="speakable" style={{ fontSize: "16px", color: "#f1626f", fontWeight: "600", marginBottom: "16px", fontStyle: "italic" }}>TL;DR: We complete most diagnostics the same day. We scan the relevant vehicle modules, test the affected system, identify the root cause, and call you with the findings and a clear estimate before authorized work.
+        <p className="speakable" style={{ fontSize: "16px", color: "#f1626f", fontWeight: "600", marginBottom: "16px", fontStyle: "italic" }}>In short: We complete most diagnostics the same day. We scan the relevant vehicle modules, test the affected system, identify the root cause, and call you with the findings and a clear estimate before authorized work.
         </p>
         <p style={{ fontSize: "18px", color: "#ccc", maxWidth: "600px", margin: "0 auto 32px" }}>
           We diagnose before we repair. Every time. No guesswork — just accurate answers and honest recommendations.

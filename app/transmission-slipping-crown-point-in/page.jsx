@@ -71,7 +71,7 @@ export default function TransmissionSlipping() {
         <p className="location-badge">Crown Point, Indiana</p>
         <h1>Transmission Slipping in Crown Point, IN? Diagnose Before You Rebuild.</h1>
         <p className="hero-description speakable">
-          TL;DR: Transmission slipping is one of the most over-diagnosed problems in auto repair.
+          In short: Transmission slipping is one of the most over-diagnosed problems in auto repair.
           Many shops see slipping and recommend a rebuild before testing the complete system. In many cases the real cause is
           a failed shift solenoid, burnt fluid, a valve-body fault, or a failing torque
           converter clutch. At R Complete Auto Care in Crown
