@@ -1,7 +1,7 @@
 import Link from "next/link";
 import { MAKE_DIRECTORY } from "@/lib/make-pages";
 import BookButton from "@/components/BookButton";
-import { OWNER_EMAIL } from "@/lib/business";
+import { OWNER_EMAIL, SERVICE_AREAS, CITY_PAGE_HREFS } from "@/lib/business";
 
 // Brand logos aren't part of lucide-react (it ships no social/brand marks),
 // so we use inline SVGs (viewBox 0 0 24 24, fill currentColor) for each profile.
@@ -84,17 +84,16 @@ export default function Footer() {
         <div>
           <div style={{ color: "#fff", fontWeight: "bold", marginBottom: "12px" }}>Serving</div>
           <div style={{ display: "flex", flexDirection: "column", gap: "8px" }}>
-            {[
-              ["Crown Point, IN", "/auto-repair-crown-point-in"],
-              ["St. John, IN", "/auto-repair-st-john-in"],
-              ["Schererville, IN", "/auto-repair-schererville-in"],
-              ["Merrillville, IN", "/auto-repair-merrillville-in"],
-              ["Cedar Lake, IN", "/auto-repair-cedar-lake-in"],
-              ["Lowell, IN", "/auto-repair-lowell-in"],
-              ["Hobart, IN", "/auto-repair-hobart-in"],
-            ].map(([name, href]) => (
-              <Link key={href} href={href} style={{ color: "#aaa", textDecoration: "none" }}>{name}</Link>
-            ))}
+            {/* Same list and order as the homepage cards; towns without a
+                landing page render as plain text. */}
+            {SERVICE_AREAS.map((city) => {
+              const href = CITY_PAGE_HREFS[city];
+              return href ? (
+                <Link key={city} href={href} style={{ color: "#aaa", textDecoration: "none" }}>{city}, IN</Link>
+              ) : (
+                <span key={city}>{city}, IN</span>
+              );
+            })}
           </div>
         </div>
         <div>
