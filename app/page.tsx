@@ -26,7 +26,7 @@ import ShopAddressCard from "./components/ShopAddressCard";
 import StickyMobileCta from "./components/StickyMobileCta";
 import TrustBadges from "./components/TrustBadges";
 import styles from "./home.module.css";
-import { SERVICE_AREAS, CITY_PAGE_HREFS, WARRANTY_PROVIDERS, SAME_DAY_COPY } from "@/lib/business";
+import { SERVICE_AREAS, CITY_PAGE_HREFS, WARRANTY_PROVIDERS, SAME_DAY_COPY, SHOP_WARRANTY } from "@/lib/business";
 
 export const metadata: Metadata = {
   title: "R Complete Auto Care | Auto Repair in Crown Point, IN",
@@ -129,6 +129,7 @@ export default function Home() {
             <span><Star aria-hidden="true" size={17} fill="currentColor" /><strong>{RATING} Google Rating</strong><small>{REVIEW_COUNT}+ Google reviews</small></span>
             <span><ShieldCheck aria-hidden="true" size={18} /><strong>Extended Warranty</strong><small>Claims accepted</small></span>
             <span><Timer aria-hidden="true" size={18} /><strong>{SAME_DAY_COPY}</strong><small>Call before 10am</small></span>
+            <span><Wrench aria-hidden="true" size={18} /><strong>Repair Warranty</strong><small>{SHOP_WARRANTY}</small></span>
           </div>
           <div className={styles.heroDetails}>
             <span>Mon–Fri 8am–6pm · Sat 8am–2pm</span>
