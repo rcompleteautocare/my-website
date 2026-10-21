@@ -52,7 +52,7 @@ export default function Nav() {
       <header style={{ background: "rgba(255,255,255,.97)", borderBottom: "2px solid #e63946", padding: "10px 20px", display: "flex", justifyContent: "space-between", alignItems: "center", position: "sticky", top: 0, zIndex: 100, boxShadow: "0 5px 20px rgba(0,0,0,.07)", backdropFilter: "blur(12px)" }}>
         <div style={{ display: "flex", alignItems: "center", gap: "18px" }}>
           <Link href="/" style={{ textDecoration: "none" }}>
-            <Image src="/logo.png" alt="R Complete Auto Care" width={150} height={65} sizes="150px" quality={75} priority style={{ objectFit: "contain", filter: "brightness(0)" }} />
+            <Image src="/logo.png" alt="R Complete Auto Care" width={150} height={65} sizes="150px" quality={75} preload style={{ objectFit: "contain", filter: "brightness(0)" }} />
           </Link>
           <div className="header-hours" style={{ paddingLeft: "18px", borderLeft: "1px solid #ddd", color: "#555", fontSize: "12px", lineHeight: 1.5 }}>
             <strong style={{ display: "block", color: "#1a1a1a" }}>Open Mon–Fri 8–6</strong>
