@@ -149,13 +149,15 @@ export default function Home() {
       <section className={`${styles.photoFeature} ${styles.photoFeatureFirst}`} aria-labelledby="visit-shop-heading">
         <div className={styles.photoFrame}>
           <Image
-            src="/images/shop/r-complete-auto-care-building-exterior.webp"
+            src="/images/building-exterior-1200x800.webp"
             alt="Exterior of R Complete Auto Care auto repair shop in Crown Point, Indiana"
-            fill
-            sizes="(max-width: 800px) 100vw, 55vw"
+            width={1200}
+            height={800}
+            sizes="(max-width: 768px) 100vw, 600px"
             quality={70}
             loading="lazy"
             className={styles.featureImage}
+            style={{ position: "absolute", inset: 0, width: "100%", height: "100%" }}
           />
         </div>
         <div className={styles.photoCopy}>
@@ -192,13 +194,15 @@ export default function Home() {
       <section className={styles.photoFeature} aria-labelledby="diagnostics-heading">
         <div className={styles.photoFrame}>
           <Image
-            src="/images/shop/r-complete-auto-care-service-bays.webp"
+            src="/images/repair-bay-1200x800.webp"
             alt="Service bays with vehicle lifts at R Complete Auto Care in Crown Point, IN"
-            fill
-            sizes="(max-width: 800px) 100vw, 55vw"
+            width={1200}
+            height={800}
+            sizes="(max-width: 768px) 100vw, 600px"
             quality={70}
             loading="lazy"
             className={styles.featureImage}
+            style={{ position: "absolute", inset: 0, width: "100%", height: "100%" }}
           />
         </div>
         <div className={styles.photoCopy}>
@@ -316,13 +320,15 @@ export default function Home() {
       <section className={`${styles.photoFeature} ${styles.photoFeatureCompact}`} aria-labelledby="waiting-area-heading">
         <div className={styles.photoFrame}>
           <Image
-            src="/images/shop/r-complete-auto-care-waiting-room.webp"
+            src="/images/waiting-room-1200x800.webp"
             alt="Customer waiting room at R Complete Auto Care"
-            fill
-            sizes="(max-width: 800px) 100vw, 48vw"
+            width={1200}
+            height={800}
+            sizes="(max-width: 768px) 100vw, 600px"
             quality={70}
             loading="lazy"
             className={styles.featureImage}
+            style={{ position: "absolute", inset: 0, width: "100%", height: "100%" }}
           />
         </div>
         <div className={styles.photoCopy}>

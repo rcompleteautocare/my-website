@@ -1,4 +1,5 @@
 import Link from "next/link";
+import Image from "next/image";
 import LastUpdated from "@/app/components/LastUpdated";
 import { RATING } from "@/lib/rating";
 
@@ -142,6 +143,18 @@ export default function About() {
 
         <div style={{ background: "#f9f9f9", borderRadius: "8px", padding: "32px", marginBottom: "40px" }}>
           <h2 style={{ fontSize: "24px", marginBottom: "20px" }}>Visit Us in Crown Point</h2>
+          <div style={{ position: "relative", width: "100%", aspectRatio: "3 / 2", overflow: "hidden", borderRadius: "8px", marginBottom: "24px", background: "#ededeb" }}>
+            <Image
+              src="/images/front-desk-1200x800.webp"
+              alt="Front desk and service counter at R Complete Auto Care in Crown Point, IN"
+              width={1200}
+              height={800}
+              sizes="(max-width: 768px) 100vw, 600px"
+              quality={70}
+              loading="lazy"
+              style={{ position: "absolute", inset: 0, width: "100%", height: "100%", objectFit: "cover" }}
+            />
+          </div>
           <div style={{ display: "grid", gridTemplateColumns: "repeat(auto-fit, minmax(200px, 1fr))", gap: "24px" }}>
             <div>
               <div style={{ fontWeight: "bold", marginBottom: "8px", color: "#e63946" }}>📍 Address</div>

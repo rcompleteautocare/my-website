@@ -57,7 +57,7 @@ export default function HondaRepairHub() {
         </section>
 
         <div className={styles.photoBand}>
-          <figure><Image src="/images/shop/r-complete-auto-care-service-bays.webp" alt="Service bays at R Complete Auto Care" fill sizes="(max-width:760px) 100vw, 50vw" quality={70} loading="lazy" /></figure>
+          <figure><Image src="/images/repair-bay-1200x800.webp" alt="Service bays at R Complete Auto Care" width={1200} height={800} sizes="(max-width: 768px) 100vw, 600px" quality={70} loading="lazy" style={{ position: "absolute", inset: 0, width: "100%", height: "100%" }} /></figure>
           <figure><Image src="/images/shop/r-complete-auto-care-office-overview.webp" alt="Reception area at R Complete Auto Care" fill sizes="(max-width:760px) 100vw, 50vw" quality={70} loading="lazy" /></figure>
         </div>
 
