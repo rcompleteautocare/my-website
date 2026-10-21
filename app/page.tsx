@@ -166,7 +166,7 @@ export default function Home() {
             alt="Exterior of R Complete Auto Care auto repair shop in Crown Point, Indiana"
             width={1200}
             height={800}
-            sizes="(max-width: 768px) 100vw, 600px"
+            sizes="(max-width: 800px) 100vw, 930px"
             quality={70}
             loading="lazy"
             className={styles.featureImage}
@@ -190,7 +190,7 @@ export default function Home() {
             alt="Service bays with vehicle lifts at R Complete Auto Care in Crown Point, IN"
             width={1200}
             height={800}
-            sizes="(max-width: 768px) 100vw, 600px"
+            sizes="(max-width: 800px) 100vw, 930px"
             quality={70}
             loading="lazy"
             className={styles.featureImage}
@@ -316,7 +316,7 @@ export default function Home() {
             alt="Customer waiting room at R Complete Auto Care"
             width={1200}
             height={800}
-            sizes="(max-width: 768px) 100vw, 600px"
+            sizes="(max-width: 800px) 100vw, 930px"
             quality={70}
             loading="lazy"
             className={styles.featureImage}
