@@ -229,7 +229,7 @@ export default function NoStartDiagnostics() {
   ]
 }).replace(/</g, "\u003c") }} />
 
-    <script type="application/ld+json" dangerouslySetInnerHTML={{ __html: "{\"@context\":\"https://schema.org\",\"@type\":\"Service\",\"@id\":\"https://www.rcompleteautocare.com/services/no-start-diagnostics#service\",\"name\":\"No-Start Diagnostics\",\"serviceType\":\"No-Start Vehicle Diagnostics\",\"url\":\"https://www.rcompleteautocare.com/services/no-start-diagnostics\",\"provider\":{\"@id\":\"https://www.rcompleteautocare.com/#business\"},\"areaServed\":" + JSON.stringify(AREA_SERVED_SCHEMA) + ",\"dateModified\":\"2026-04-18\"}".replace(/</g, "\u003c") }} />
+    <script type="application/ld+json" dangerouslySetInnerHTML={{ __html: ("{\"@context\":\"https://schema.org\",\"@type\":\"Service\",\"@id\":\"https://www.rcompleteautocare.com/services/no-start-diagnostics#service\",\"name\":\"No-Start Diagnostics\",\"serviceType\":\"No-Start Vehicle Diagnostics\",\"url\":\"https://www.rcompleteautocare.com/services/no-start-diagnostics\",\"provider\":{\"@id\":\"https://www.rcompleteautocare.com/#business\"},\"areaServed\":" + JSON.stringify(AREA_SERVED_SCHEMA) + ",\"dateModified\":\"2026-04-18\"}").replace(/</g, "\u003c") }} />
     <script type="application/ld+json" dangerouslySetInnerHTML={{ __html: "{\"@context\":\"https://schema.org\",\"@type\":\"WebPage\",\"@id\":\"https://www.rcompleteautocare.com/services/no-start-diagnostics#webpage\",\"url\":\"https://www.rcompleteautocare.com/services/no-start-diagnostics\",\"name\":\"No-Start Diagnostics in Crown Point, IN\",\"dateModified\":\"2026-04-18\",\"about\":{\"@id\":\"https://www.rcompleteautocare.com/#business\"}}".replace(/</g, "\u003c") }} />
   </div>
   );
