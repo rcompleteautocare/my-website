@@ -1,6 +1,7 @@
 import Link from "next/link";
 import BookButton from "@/components/BookButton";
 import ServiceSchema from "@/app/components/ServiceSchema";
+import { YEARS_EXPERIENCE } from "@/lib/business";
 
 export const metadata = {
   title: "Auto Repair in St. John, IN | R Complete Auto Care",
@@ -32,7 +33,7 @@ const FAQS = [
   { q: "Do you service the Lake Hills and Heron Lake neighborhoods?", a: "Yes — Lake Hills and Heron Lake drivers are frequent customers. The drive is typically 10–12 minutes via 109th Ave or Parrish Ave." },
   { q: "I commute US-41 and Route 231 daily — what should I watch for on my vehicle?", a: "Heavy stop-and-go on US-41 accelerates brake wear and torque-converter strain. Long highway stretches on 231 show their wear in tires and front-end alignment. We check all of those on a diagnostic so you know what's next on your maintenance timeline." },
   { q: "Can I drop off in St. John and get a ride back?", a: "We schedule drop-offs to make it easy for St. John commuters. Call ahead at (219) 262-2711 and we'll coordinate the time window and keep you updated by phone while your vehicle is in." },
-  { q: "Do you accept extended warranties for St. John drivers?", a: "Yes — we work with CarShield, Endurance, CARS Protection, Zurich, AmTrust and most providers. We verify coverage before you bring the vehicle in so you know exactly what's covered." },
+  { q: "Do you accept extended warranties for St. John drivers?", a: "Yes — we work with CarShield, Endurance, CARS Protection Plus, Zurich, AmTrust and most providers. We verify coverage before you bring the vehicle in so you know exactly what's covered." },
   { q: "Do you handle dealer-sold warranty work for vehicles bought in Schererville or Merrillville?", a: "Yes — as long as the plan allows an independent shop (most do), we can submit and service the claim. Bring us the contract and we'll read the fine print with you." },
 ];
 
@@ -62,7 +63,7 @@ export default function StJohn() {
       </section>
 
       <section style={{ background: "#e63946", color: "#fff", padding: "14px 24px", textAlign: "center", fontSize: "14px", fontWeight: "500" }}>
-        ✓ Diagnostic-First &nbsp;|&nbsp; ✓ Foreign & Domestic &nbsp;|&nbsp; ✓ Extended Warranty Accepted &nbsp;|&nbsp; ✓ 25+ Years Family Experience
+        ✓ Diagnostic-First &nbsp;|&nbsp; ✓ Foreign & Domestic &nbsp;|&nbsp; ✓ Extended Warranty Accepted &nbsp;|&nbsp; ✓ {YEARS_EXPERIENCE} Years Family Experience
       </section>
 
       <section style={{ padding: "60px 24px", maxWidth: "800px", margin: "0 auto" }}>
@@ -74,7 +75,7 @@ export default function StJohn() {
           St. John drivers come to us because we give straight answers, fair prices, and repairs that actually fix the problem. We work on all foreign and domestic vehicles and proudly accept most extended warranty plans.
         </p>
         <p style={{ lineHeight: 1.8, color: "#444", marginBottom: "20px" }}>
-          Built on over 25 years of family experience in auto repair, we serve St. John, Crown Point, Dyer, Lowell, and all of Lake County, Indiana.
+          Built on {YEARS_EXPERIENCE} years of family experience in auto repair, we serve St. John, Crown Point, Dyer, Lowell, and all of Lake County, Indiana.
         </p>
 <p style={{ lineHeight: 1.8, color: "#444", marginBottom: "20px" }}>
   St. John sits at the crossroads of US-41 and Route 231, which means a lot of daily commuting — and a lot of miles accumulating on vehicles faster than most drivers expect. The Lake Hills and Heron Lake neighborhoods feed directly into Summit Street via US-41 North, making our Crown Point shop a straightforward 10-minute drive with no highway required. Many St. John drivers heading to work in Crown Point or Lowell pass within a mile of our shop.

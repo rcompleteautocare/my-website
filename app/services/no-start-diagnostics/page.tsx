@@ -23,7 +23,7 @@ export const metadata = {
 
 import RelatedServices from "@/app/components/RelatedServices";
 import ServiceFaqHub from "@/app/components/ServiceFaqHub";
-import LastUpdated from "@/app/components/LastUpdated";
+import { SERVICE_AREAS, AREA_SERVED_SCHEMA } from "@/lib/business";
 export default function NoStartDiagnostics() {
   return (
     <div style={{ color: "#1a1a1a" }}>
@@ -34,7 +34,7 @@ export default function NoStartDiagnostics() {
         <h1 style={{ fontSize: "38px", fontWeight: "bold", marginBottom: "12px" }}>
           Car Won&apos;t Start in Crown Point, IN? We Find the Cause.
         </h1>
-        <p className="speakable" style={{ fontSize: "16px", color: "#f1626f", fontWeight: "600", marginBottom: "16px", fontStyle: "italic" }}>TL;DR: No-start diagnostics are completed same day in most cases. We test battery, starter, fuel delivery, spark, and electronic signals to find the exact cause — not guess with parts. Fuel pump, starter, and sensor failures are often covered by extended warranties.
+        <p className="speakable" style={{ fontSize: "16px", color: "#f1626f", fontWeight: "600", marginBottom: "16px", fontStyle: "italic" }}>In short: No-start diagnostics are completed same day in most cases. We test battery, starter, fuel delivery, spark, and electronic signals to find the exact cause — not guess with parts. Fuel pump, starter, and sensor failures are often covered by extended warranties.
         </p>
         <p style={{ fontSize: "18px", color: "#ccc", maxWidth: "600px", margin: "0 auto 32px" }}>
           A no-start condition can have dozens of causes. We don&apos;t guess and replace parts — we diagnose the exact reason your car won&apos;t start before recommending any repair.
@@ -47,12 +47,11 @@ export default function NoStartDiagnostics() {
 
       {/* Serving bar */}
       <section style={{ background: "#e63946", color: "#fff", padding: "14px 24px", textAlign: "center", fontSize: "14px" }}>
-        📍 Serving Crown Point · St. John · Schererville · Merrillville · Cedar Lake · Lowell · Hobart, IN
+        📍 Serving {SERVICE_AREAS.join(" · ")}, IN
       </section>
 
       {/* Intro */}
       <section style={{ padding: "60px 24px", maxWidth: "800px", margin: "0 auto" }}>
-        <LastUpdated date="2026-04-18" />
         <h2 style={{ fontSize: "28px", marginBottom: "16px" }}>No-Start Diagnosis — Done Right the First Time</h2>
         <p style={{ lineHeight: 1.8, color: "#444", marginBottom: "20px" }}>
           When your car won&apos;t start, the instinct is to start replacing parts — battery, starter, alternator. But no-start conditions have many possible causes, and replacing parts without a proper diagnosis wastes time and often doesn&apos;t solve the problem. We&apos;ve seen customers replace part after part at other shops, only to bring the car to us and find a failed crankshaft position sensor or a fuel pump issue that a proper diagnostic would have caught immediately.
@@ -230,7 +229,7 @@ export default function NoStartDiagnostics() {
   ]
 }).replace(/</g, "\u003c") }} />
 
-    <script type="application/ld+json" dangerouslySetInnerHTML={{ __html: "{\"@context\":\"https://schema.org\",\"@type\":\"Service\",\"@id\":\"https://www.rcompleteautocare.com/services/no-start-diagnostics#service\",\"name\":\"No-Start Diagnostics\",\"serviceType\":\"No-Start Vehicle Diagnostics\",\"url\":\"https://www.rcompleteautocare.com/services/no-start-diagnostics\",\"provider\":{\"@id\":\"https://www.rcompleteautocare.com/#business\"},\"areaServed\":[{\"@type\":\"City\",\"name\":\"Crown Point\",\"containedIn\":{\"@type\":\"State\",\"name\":\"Indiana\"}},{\"@type\":\"City\",\"name\":\"St. John\",\"containedIn\":{\"@type\":\"State\",\"name\":\"Indiana\"}},{\"@type\":\"City\",\"name\":\"Schererville\",\"containedIn\":{\"@type\":\"State\",\"name\":\"Indiana\"}},{\"@type\":\"City\",\"name\":\"Merrillville\",\"containedIn\":{\"@type\":\"State\",\"name\":\"Indiana\"}},{\"@type\":\"City\",\"name\":\"Cedar Lake\",\"containedIn\":{\"@type\":\"State\",\"name\":\"Indiana\"}}],\"dateModified\":\"2026-04-18\"}".replace(/</g, "\u003c") }} />
+    <script type="application/ld+json" dangerouslySetInnerHTML={{ __html: ("{\"@context\":\"https://schema.org\",\"@type\":\"Service\",\"@id\":\"https://www.rcompleteautocare.com/services/no-start-diagnostics#service\",\"name\":\"No-Start Diagnostics\",\"serviceType\":\"No-Start Vehicle Diagnostics\",\"url\":\"https://www.rcompleteautocare.com/services/no-start-diagnostics\",\"provider\":{\"@id\":\"https://www.rcompleteautocare.com/#business\"},\"areaServed\":" + JSON.stringify(AREA_SERVED_SCHEMA) + ",\"dateModified\":\"2026-04-18\"}").replace(/</g, "\u003c") }} />
     <script type="application/ld+json" dangerouslySetInnerHTML={{ __html: "{\"@context\":\"https://schema.org\",\"@type\":\"WebPage\",\"@id\":\"https://www.rcompleteautocare.com/services/no-start-diagnostics#webpage\",\"url\":\"https://www.rcompleteautocare.com/services/no-start-diagnostics\",\"name\":\"No-Start Diagnostics in Crown Point, IN\",\"dateModified\":\"2026-04-18\",\"about\":{\"@id\":\"https://www.rcompleteautocare.com/#business\"}}".replace(/</g, "\u003c") }} />
   </div>
   );

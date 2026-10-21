@@ -23,8 +23,8 @@ export const metadata = {
 
 import RelatedServices from "@/app/components/RelatedServices";
 import ServiceFaqHub from "@/app/components/ServiceFaqHub";
-import LastUpdated from "@/app/components/LastUpdated";
 import FinancingCallout from "@/app/components/FinancingCallout";
+import { SERVICE_AREAS, AREA_SERVED_SCHEMA } from "@/lib/business";
 export default function TransmissionRepair() {
   return (
     <div style={{ color: "#1a1a1a" }}>
@@ -35,7 +35,7 @@ export default function TransmissionRepair() {
         <h1 style={{ fontSize: "38px", fontWeight: "bold", marginBottom: "12px" }}>
           Transmission Repair in Crown Point, IN
         </h1>
-        <p className="speakable" style={{ fontSize: "16px", color: "#f1626f", fontWeight: "600", marginBottom: "16px", fontStyle: "italic" }}>TL;DR: Transmission repair scope depends entirely on the actual problem — a solenoid or sensor fix is a far smaller repair than the full rebuild it becomes later. We diagnose first so you don&apos;t authorize a rebuild you don&apos;t need. Transmission repairs are among the most commonly covered items on extended warranty plans.
+        <p className="speakable" style={{ fontSize: "16px", color: "#f1626f", fontWeight: "600", marginBottom: "16px", fontStyle: "italic" }}>In short: Transmission repair scope depends entirely on the actual problem — a solenoid or sensor fix is a far smaller repair than the full rebuild it becomes later. We diagnose first so you don&apos;t authorize a rebuild you don&apos;t need. Transmission repairs are among the most commonly covered items on extended warranty plans.
         </p>
         <p style={{ fontSize: "18px", color: "#ccc", maxWidth: "600px", margin: "0 auto 32px" }}>
           Transmission problems are serious — but the wrong diagnosis makes them even worse. We find the real cause before recommending a rebuild or replacement.
@@ -48,14 +48,13 @@ export default function TransmissionRepair() {
 
       {/* Serving bar */}
       <section style={{ background: "#e63946", color: "#fff", padding: "14px 24px", textAlign: "center", fontSize: "14px" }}>
-        📍 Serving Crown Point · St. John · Schererville · Merrillville · Cedar Lake · Lowell · Hobart, IN
+        📍 Serving {SERVICE_AREAS.join(" · ")}, IN
       </section>
 
       <FinancingCallout />
 
       {/* Intro */}
       <section style={{ padding: "60px 24px", maxWidth: "800px", margin: "0 auto" }}>
-        <LastUpdated date="2026-04-18" />
         <h2 style={{ fontSize: "28px", marginBottom: "16px" }}>Diagnose Before You Spend</h2>
         <p style={{ lineHeight: 1.8, color: "#444", marginBottom: "20px" }}>
           Transmission repair is one of the most misdiagnosed — and most consequential — areas of auto repair. Many shops jump straight to a rebuild or replacement at the first sign of slipping or shifting problems. At R Complete Auto Care in Crown Point, we do it differently. We diagnose first. Every time.
@@ -64,7 +63,7 @@ export default function TransmissionRepair() {
           We have found solenoid failures, low-fluid conditions, and sensor issues on vehicles that had already received rebuild recommendations. A thorough diagnostic tells you exactly what you&apos;re dealing with and whether a targeted repair or internal work is justified before you commit to anything.
         </p>
         <p style={{ lineHeight: 1.8, color: "#444", marginBottom: "40px" }}>
-          We service automatic, manual, and CVT transmissions on all makes and models. We also accept most extended warranty plans and handle the entire claims process — transmission repairs are among the most commonly covered repairs on extended warranty policies.
+          We service automatic, manual, and CVT transmissions on all makes and models. We also accept most extended warranty plans and handle the claim paperwork and talk to the adjuster for you — transmission repairs are among the most commonly covered repairs on extended warranty policies.
         </p>
 
         {/* Symptoms */}
@@ -142,7 +141,7 @@ export default function TransmissionRepair() {
       <section style={{ padding: "60px 24px", maxWidth: "800px", margin: "0 auto" }}>
         <h2 style={{ fontSize: "28px", marginBottom: "16px" }}>Extended Warranty Coverage for Transmission Repair</h2>
         <p style={{ lineHeight: 1.8, color: "#444", marginBottom: "16px" }}>
-          Transmission repairs are one of the most frequently covered items on extended warranty policies. If your vehicle has a warranty through CarShield, Endurance, CARS Protection, AmTrust, or another provider, you may owe nothing out of pocket for your transmission repair.
+          Transmission repairs are one of the most frequently covered items on extended warranty policies. If your vehicle has a warranty through CarShield, Endurance, CARS Protection Plus, AmTrust, or another provider, you may owe nothing out of pocket for your transmission repair.
         </p>
         <p style={{ lineHeight: 1.8, color: "#444", marginBottom: "24px" }}>
           Call us with your warranty information before you bring the vehicle in. We&apos;ll verify your coverage, communicate directly with your warranty company, and handle all the paperwork. We&apos;ve helped dozens of Crown Point drivers get major transmission repairs covered — don&apos;t assume you&apos;re not covered without checking first.
@@ -246,7 +245,7 @@ export default function TransmissionRepair() {
     { "@type": "ListItem", "position": 3, "name": "Transmission Repair" }
   ]
 }).replace(/</g, "\u003c") }} />
-    <script type="application/ld+json" dangerouslySetInnerHTML={{ __html: "{\"@context\":\"https://schema.org\",\"@type\":\"Service\",\"@id\":\"https://www.rcompleteautocare.com/services/transmission-repair#service\",\"name\":\"Transmission Repair\",\"serviceType\":\"Transmission Repair\",\"url\":\"https://www.rcompleteautocare.com/services/transmission-repair\",\"provider\":{\"@id\":\"https://www.rcompleteautocare.com/#business\"},\"areaServed\":[{\"@type\":\"City\",\"name\":\"Crown Point\",\"containedIn\":{\"@type\":\"State\",\"name\":\"Indiana\"}},{\"@type\":\"City\",\"name\":\"St. John\",\"containedIn\":{\"@type\":\"State\",\"name\":\"Indiana\"}},{\"@type\":\"City\",\"name\":\"Schererville\",\"containedIn\":{\"@type\":\"State\",\"name\":\"Indiana\"}},{\"@type\":\"City\",\"name\":\"Merrillville\",\"containedIn\":{\"@type\":\"State\",\"name\":\"Indiana\"}},{\"@type\":\"City\",\"name\":\"Cedar Lake\",\"containedIn\":{\"@type\":\"State\",\"name\":\"Indiana\"}}],\"dateModified\":\"2026-04-18\"}".replace(/</g, "\u003c") }} />
+    <script type="application/ld+json" dangerouslySetInnerHTML={{ __html: ("{\"@context\":\"https://schema.org\",\"@type\":\"Service\",\"@id\":\"https://www.rcompleteautocare.com/services/transmission-repair#service\",\"name\":\"Transmission Repair\",\"serviceType\":\"Transmission Repair\",\"url\":\"https://www.rcompleteautocare.com/services/transmission-repair\",\"provider\":{\"@id\":\"https://www.rcompleteautocare.com/#business\"},\"areaServed\":" + JSON.stringify(AREA_SERVED_SCHEMA) + ",\"dateModified\":\"2026-04-18\"}").replace(/</g, "\u003c") }} />
     <script type="application/ld+json" dangerouslySetInnerHTML={{ __html: "{\"@context\":\"https://schema.org\",\"@type\":\"WebPage\",\"@id\":\"https://www.rcompleteautocare.com/services/transmission-repair#webpage\",\"url\":\"https://www.rcompleteautocare.com/services/transmission-repair\",\"name\":\"Transmission Repair in Crown Point, IN\",\"dateModified\":\"2026-04-18\",\"about\":{\"@id\":\"https://www.rcompleteautocare.com/#business\"}}".replace(/</g, "\u003c") }} />
   </div>
   );

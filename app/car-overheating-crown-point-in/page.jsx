@@ -2,6 +2,7 @@ import Link from 'next/link'
 import ServiceSchema from '../components/ServiceSchema'
 import FaqAccordion from '../components/FaqAccordion'
 import FaqSchema from '../components/FaqSchema'
+import { SERVICE_AREAS, SAME_DAY_COPY } from '@/lib/business'
 export const metadata = {
   title: 'Car Overheating in Crown Point, IN | R Complete Auto Care',
   description:
@@ -75,7 +76,7 @@ export default function CarOverheating() {
       </p>
       <a href="tel:2192622711" className="cta-button">📞 Call (219) 262-2711 — Pull Over First, Then Call</a>
       <p className="address-line">1305 E Summit St, Crown Point, IN 46307 · Mon–Fri 8am–6pm · Sat 8am–2pm</p>
-      <p className="serving-line">Serving Crown Point · St. John · Schererville · Merrillville · Cedar Lake · Lowell · Hobart</p>
+      <p className="serving-line">Serving {SERVICE_AREAS.join(" · ")}</p>
 
       {/* ── DO THIS FIRST ── */}
       <h2>If Your Car Is Overheating Right Now — Do This First</h2>
@@ -125,7 +126,7 @@ export default function CarOverheating() {
         block — we find it before you spend money on cooling system parts that won&apos;t solve
         the underlying problem. Honest assessment first. Repair recommendation second.
       </p>
-      <a href="tel:2192622711" className="cta-button">📞 Call (219) 262-2711 — Same-Day Overheating Diagnostics</a>
+      <a href="tel:2192622711" className="cta-button">📞 Call (219) 262-2711 — {SAME_DAY_COPY}</a>
 
       {/* ── CAUSES ── */}
       <h2>Common Overheating Causes We Find in Crown Point</h2>
@@ -175,7 +176,7 @@ export default function CarOverheating() {
       <h2>Why Crown Point Drivers Trust R Complete Auto Care</h2>
       <div className="feature-grid">
         <div className="feature-item">
-          <strong>Same-Day Diagnostics Available</strong>
+          <strong>{SAME_DAY_COPY}</strong>
           <p>Call us when you pull over. We&apos;ll schedule you immediately and advise on towing versus driving in once cooled.</p>
         </div>
         <div className="feature-item">
@@ -202,7 +203,7 @@ export default function CarOverheating() {
       </p>
       <p>
         R Complete Auto Care accepts most major extended warranty providers including CARS
-        Protection Plus, Endurance, CarShield, CARCHEX, AmTrust/National Auto Care, and Zurich.
+        Protection Plus, Endurance, CarShield, CARCHEX, AmTrust, and Zurich.
         We handle the complete warranty process: coverage verification, documented diagnostic and
         post-overheating assessment, pre-authorisation call, repair, and claim submission. You
         understand the coverage authorization before work begins.

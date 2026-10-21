@@ -1,17 +1,18 @@
 import Link from "next/link";
-import LastUpdated from "@/app/components/LastUpdated";
+import Image from "next/image";
 import { RATING } from "@/lib/rating";
+import { YEARS_EXPERIENCE, SERVICE_AREAS, OWNER_EMAIL } from "@/lib/business";
 
 export const metadata = {
   title: "About Crown Point Auto Repair Shop | R Complete Auto Care",
-  description: "R Complete Auto Care in Crown Point, IN — diagnostic-first auto repair, ASE certified since 1993, 35+ years of technician experience. (219) 262-2711.",
+  description: `R Complete Auto Care in Crown Point, IN — diagnostic-first auto repair, ASE certified since 1993, ${YEARS_EXPERIENCE} years of technician experience. (219) 262-2711.`,
   alternates: {
     canonical: "https://www.rcompleteautocare.com/about",
   },
 
   openGraph: {
     title: "About Crown Point Auto Repair Shop | R Complete Auto Care",
-    description: "R Complete Auto Care in Crown Point, IN — diagnostic-first auto repair, ASE certified since 1993, 35+ years of technician experience. (219) 262-2711.",
+    description: `R Complete Auto Care in Crown Point, IN — diagnostic-first auto repair, ASE certified since 1993, ${YEARS_EXPERIENCE} years of technician experience. (219) 262-2711.`,
     url: "https://www.rcompleteautocare.com/about",
     siteName: "R Complete Auto Care",
     locale: "en_US",
@@ -21,7 +22,7 @@ export const metadata = {
   twitter: {
     card: "summary_large_image",
     title: "About Crown Point Auto Repair Shop | R Complete Auto Care",
-    description: "R Complete Auto Care in Crown Point, IN — diagnostic-first auto repair, ASE certified since 1993, 35+ years of technician experience. (219) 262-2711.",
+    description: `R Complete Auto Care in Crown Point, IN — diagnostic-first auto repair, ASE certified since 1993, ${YEARS_EXPERIENCE} years of technician experience. (219) 262-2711.`,
     images: ["/logo.png"],
   },
   robots: { index: true, follow: true },
@@ -39,7 +40,7 @@ export default function About() {
           About R Complete Auto Care
         </h1>
         <p className="speakable" style={{ fontSize: "18px", color: "#ccc", maxWidth: "620px", margin: "0 auto 32px" }}>
-          Crown Point&apos;s diagnostic-first auto repair shop — located at 1305 E Summit St, Crown Point, IN 46307. Built on 25+ years of family experience. Honest communication and repairs done right.
+          Crown Point&apos;s diagnostic-first auto repair shop — located at 1305 E Summit St, Crown Point, IN 46307. Built on {YEARS_EXPERIENCE} years of family experience. Honest communication and repairs done right.
         </p>
         <a href="tel:2192622711" style={{ background: "#e63946", color: "#fff", padding: "14px 32px", borderRadius: "6px", fontWeight: "bold", fontSize: "18px", textDecoration: "none" }}>
           📞 Call (219) 262-2711
@@ -50,11 +51,10 @@ export default function About() {
       </section>
 
       <section style={{ background: "#e63946", color: "#fff", padding: "14px 24px", textAlign: "center", fontSize: "14px", fontWeight: "500" }}>
-        📍 Serving Crown Point · St. John · Schererville · Merrillville · Cedar Lake · Lowell · Hobart, Indiana
+        📍 Serving {SERVICE_AREAS.join(" · ")}, Indiana
       </section>
 
       <section style={{ padding: "60px 24px", maxWidth: "800px", margin: "0 auto" }}>
-        <LastUpdated date="2026-04-18" />
 
         <h2 style={{ fontSize: "28px", marginBottom: "16px" }}>Why We Started R Complete Auto Care in Crown Point</h2>
         <p style={{ lineHeight: 1.8, color: "#444", marginBottom: "20px" }}>
@@ -88,8 +88,8 @@ export default function About() {
               </div>
             </div>
             <div>
-              <div style={{ fontWeight: "bold", color: "#e63946", marginBottom: "6px" }}>Years in Business</div>
-              <div style={{ color: "#444", lineHeight: 1.7 }}>35+ years of combined technician experience — diagnostic-first auto repair since day one</div>
+              <div style={{ fontWeight: "bold", color: "#e63946", marginBottom: "6px" }}>Technician Experience</div>
+              <div style={{ color: "#444", lineHeight: 1.7 }}>{YEARS_EXPERIENCE} years of combined technician experience — diagnostic-first auto repair since day one</div>
             </div>
             <div>
               <div style={{ fontWeight: "bold", color: "#e63946", marginBottom: "6px" }}>Customer Rating</div>
@@ -99,7 +99,7 @@ export default function About() {
             </div>
             <div>
               <div style={{ fontWeight: "bold", color: "#e63946", marginBottom: "6px" }}>Extended Warranty Approved</div>
-              <div style={{ color: "#444", lineHeight: 1.7 }}>Licensed repair facility — accepted by CarShield, Endurance, CARS Protection, AmTrust, and all major extended warranty providers</div>
+              <div style={{ color: "#444", lineHeight: 1.7 }}>Licensed repair facility — accepted by CarShield, Endurance, CARS Protection Plus, AmTrust, and all major extended warranty providers</div>
             </div>
             <div>
               <div style={{ fontWeight: "bold", color: "#e63946", marginBottom: "6px" }}>Yelp &amp; Facebook</div>
@@ -114,7 +114,7 @@ export default function About() {
           </div>
         </div>
 
-        <h2 style={{ fontSize: "28px", marginBottom: "24px" }}>35+ Years of Technician Experience</h2>
+        <h2 style={{ fontSize: "28px", marginBottom: "24px" }}>{YEARS_EXPERIENCE} Years of Technician Experience</h2>
         <p style={{ lineHeight: 1.8, color: "#444", marginBottom: "20px" }}>
           Dave has been diagnosing and repairing vehicles since 1989. That depth of experience shapes everything about how we run our shop — it&apos;s why we diagnose before we repair, why we explain what we find in plain language, and why we don&apos;t recommend work that isn&apos;t needed.
         </p>
@@ -128,7 +128,7 @@ export default function About() {
             { icon: "🔍", title: "Diagnostic First, Always", desc: "We find the root cause of your vehicle's problem before recommending any repair. Every time, no exceptions." },
             { icon: "🤝", title: "Honest Communication", desc: "We tell you exactly what's wrong, what's urgent, and what can wait — in plain language, without pressure." },
             { icon: "🔧", title: "Expert Repairs", desc: "Our technicians have the training, tools, and experience to fix it right the first time." },
-            { icon: "📋", title: "Extended Warranty Work", desc: "We accept most extended warranty plans and handle the entire claims process for you." },
+            { icon: "📋", title: "Extended Warranty Work", desc: "We accept most extended warranty plans and handle the claim paperwork and talk to the adjuster for you." },
             { icon: "🚗", title: "All Makes & Models", desc: "Foreign and domestic — Honda, Toyota, BMW, Ford, Chevrolet, Dodge, and everything in between." },
             { icon: "📍", title: "Proud to Serve Crown Point", desc: "We're your neighbors. We live and work in this community and we care about our reputation here." },
           ].map(item => (
@@ -142,6 +142,18 @@ export default function About() {
 
         <div style={{ background: "#f9f9f9", borderRadius: "8px", padding: "32px", marginBottom: "40px" }}>
           <h2 style={{ fontSize: "24px", marginBottom: "20px" }}>Visit Us in Crown Point</h2>
+          <div style={{ position: "relative", width: "100%", aspectRatio: "3 / 2", overflow: "hidden", borderRadius: "8px", marginBottom: "24px", background: "#ededeb" }}>
+            <Image
+              src="/images/front-desk-1200x800.webp"
+              alt="Front desk and service counter at R Complete Auto Care in Crown Point, IN"
+              width={1200}
+              height={800}
+              sizes="(max-width: 768px) 100vw, 600px"
+              quality={70}
+              loading="lazy"
+              style={{ position: "absolute", inset: 0, width: "100%", height: "100%", objectFit: "cover" }}
+            />
+          </div>
           <div style={{ display: "grid", gridTemplateColumns: "repeat(auto-fit, minmax(200px, 1fr))", gap: "24px" }}>
             <div>
               <div style={{ fontWeight: "bold", marginBottom: "8px", color: "#e63946" }}>📍 Address</div>
@@ -155,7 +167,7 @@ export default function About() {
               <div style={{ fontWeight: "bold", marginBottom: "8px", color: "#e63946" }}>📞 Phone</div>
               <div style={{ lineHeight: 1.8 }}>
                 <a href="tel:2192622711" style={{ color: "#1a1a1a", fontWeight: "bold" }}>(219) 262-2711</a><br />
-                <a href="mailto:Owner@rcompleteautocare.com" style={{ color: "#666", fontSize: "13px" }}>Owner@rcompleteautocare.com</a>
+                <a href={`mailto:${OWNER_EMAIL}`} style={{ color: "#666", fontSize: "13px" }}>{OWNER_EMAIL}</a>
               </div>
             </div>
           </div>

@@ -1,6 +1,7 @@
 import Link from "next/link";
 import BookButton from "@/components/BookButton";
 import ServiceSchema from "@/app/components/ServiceSchema";
+import { YEARS_EXPERIENCE } from "@/lib/business";
 
 export const metadata = {
   title: "Crown Point & NW Indiana Auto Repair | R Complete Auto Care",
@@ -53,7 +54,7 @@ export default function CrownPoint() {
       </section>
 
       <section style={{ background: "#e63946", color: "#fff", padding: "14px 24px", textAlign: "center", fontSize: "14px", fontWeight: "500" }}>
-        ✓ Diagnostic-First &nbsp;|&nbsp; ✓ Foreign & Domestic &nbsp;|&nbsp; ✓ Extended Warranty Accepted &nbsp;|&nbsp; ✓ 25+ Years Family Experience
+        ✓ Diagnostic-First &nbsp;|&nbsp; ✓ Foreign & Domestic &nbsp;|&nbsp; ✓ Extended Warranty Accepted &nbsp;|&nbsp; ✓ {YEARS_EXPERIENCE} Years Family Experience
       </section>
 
       <section style={{ padding: "60px 24px", maxWidth: "800px", margin: "0 auto" }}>
@@ -62,7 +63,7 @@ export default function CrownPoint() {
           Located at 1305 E Summit St in Crown Point, Indiana, R Complete Auto Care serves drivers throughout Lake County and Northwest Indiana. We&apos;re a diagnostic-first shop — meaning we find the real problem before recommending any repair. No guesswork, no unnecessary work, just honest answers and expert repairs.
         </p>
         <p style={{ lineHeight: 1.8, color: "#444", marginBottom: "20px" }}>
-          Built on over 25 years of family experience in the auto repair industry, we opened our Crown Point shop to give local drivers a place they could actually trust. A place that explains what&apos;s wrong, provides a clear estimate, and fixes it right the first time.
+          Built on {YEARS_EXPERIENCE} years of family experience in the auto repair industry, we opened our Crown Point shop to give local drivers a place they could actually trust. A place that explains what&apos;s wrong, provides a clear estimate, and fixes it right the first time.
         </p>
         <p style={{ lineHeight: 1.8, color: "#444", marginBottom: "20px" }}>
           We work on all foreign and domestic vehicles and proudly accept most extended warranty plans. Whether you need a check engine light diagnosed, brakes replaced, or a major engine repair — we have the expertise to get it done right in Crown Point.
@@ -134,7 +135,7 @@ export default function CrownPoint() {
           { q: "Can I drop off my car before the courthouse opens?", a: "Yes — we open at 8am Mon–Fri and 8am Saturday. We have a secure drop-off and will call you before any work begins. Many customers drop off on the way to morning appointments at the county complex." },
           { q: "Do you accept extended warranties for Crown Point residents?", a: "Yes — we handle the entire warranty claim on your behalf. Call us at (219) 262-2711 with your policy info and we'll verify coverage before you bring the vehicle in." },
           { q: "Do you offer same-day repair in Crown Point?", a: "Yes — most Crown Point diagnostics and many repairs complete the same day. Call by 10am and we'll do everything we can to get you back on the road before close." },
-          { q: "What makes R Complete Auto Care Crown Point's flagship shop?", a: "We're locally owned, diagnostic-first, ASE-certified, and built on 25+ years of family experience. We diagnose before we repair, explain findings in plain language, and never start work without your approval." },
+          { q: "What makes R Complete Auto Care Crown Point's flagship shop?", a: `We're locally owned, diagnostic-first, ASE-certified, and built on ${YEARS_EXPERIENCE} years of family experience. We diagnose before we repair, explain findings in plain language, and never start work without your approval.` },
         ].map(item => (
           <div key={item.q} style={{ marginBottom: "20px", borderBottom: "1px solid #e0e0e0", paddingBottom: "20px" }}>
             <div style={{ fontWeight: "bold", fontSize: "16px", marginBottom: "8px" }}>{item.q}</div>
@@ -164,7 +165,7 @@ export default function CrownPoint() {
       {
         "@type": "Question",
         "name": "What is the best auto repair shop in Crown Point, IN?",
-        "acceptedAnswer": { "@type": "Answer", "text": "R Complete Auto Care at 1305 E Summit St, Crown Point, IN 46307. We're a diagnostic-first shop built on 25+ years of family experience. Call (219) 262-2711." }
+        "acceptedAnswer": { "@type": "Answer", "text": `R Complete Auto Care at 1305 E Summit St, Crown Point, IN 46307. We're a diagnostic-first shop built on ${YEARS_EXPERIENCE} years of family experience. Call (219) 262-2711.` }
       },
       {
         "@type": "Question",
@@ -174,7 +175,7 @@ export default function CrownPoint() {
       {
         "@type": "Question",
         "name": "Do you accept extended warranties in Crown Point?",
-        "acceptedAnswer": { "@type": "Answer", "text": "Yes! We work with most extended warranty providers and handle the entire claims process for you — no hassle on your end." }
+        "acceptedAnswer": { "@type": "Answer", "text": "Yes! We work with most extended warranty providers and handle the claim paperwork and talk to the adjuster for you — no hassle on your end." }
       },
       {
         "@type": "Question",

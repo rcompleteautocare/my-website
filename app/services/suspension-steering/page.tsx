@@ -24,7 +24,7 @@ export const metadata = {
 import Image from "next/image";
 import RelatedServices from "@/app/components/RelatedServices";
 import ServiceFaqHub from "@/app/components/ServiceFaqHub";
-import LastUpdated from "@/app/components/LastUpdated";
+import { SERVICE_AREAS, AREA_SERVED_SCHEMA } from "@/lib/business";
 export default function SuspensionSteering() {
   return (
     <div style={{ color: "#1a1a1a" }}>
@@ -35,7 +35,7 @@ export default function SuspensionSteering() {
         <h1 style={{ fontSize: "38px", fontWeight: "bold", marginBottom: "12px" }}>
           Suspension &amp; Steering Repair in Crown Point, IN
         </h1>
-        <p className="speakable" style={{ fontSize: "16px", color: "#f1626f", fontWeight: "600", marginBottom: "16px", fontStyle: "italic" }}>TL;DR: Struts, ball joints, tie rod ends, wheel bearings, and alignment concerns require a measured inspection. We document the worn components and provide an upfront estimate before authorized work — especially when Indiana pothole damage affects more than one part.
+        <p className="speakable" style={{ fontSize: "16px", color: "#f1626f", fontWeight: "600", marginBottom: "16px", fontStyle: "italic" }}>In short: Struts, ball joints, tie rod ends, wheel bearings, and alignment concerns require a measured inspection. We document the worn components and provide an upfront estimate before authorized work — especially when Indiana pothole damage affects more than one part.
         </p>
         <p style={{ fontSize: "18px", color: "#ccc", maxWidth: "600px", margin: "0 auto 32px" }}>
           Indiana roads are hard on suspension. Potholes, frost heaves, and rough pavement wear out struts, shocks, and steering components faster than anywhere else. We keep your ride safe, stable, and in control.
@@ -48,12 +48,11 @@ export default function SuspensionSteering() {
 
       {/* Serving bar */}
       <section style={{ background: "#e63946", color: "#fff", padding: "14px 24px", textAlign: "center", fontSize: "14px" }}>
-        📍 Serving Crown Point · St. John · Schererville · Merrillville · Cedar Lake · Lowell · Hobart, IN
+        📍 Serving {SERVICE_AREAS.join(" · ")}, IN
       </section>
 
       {/* Intro */}
       <section style={{ padding: "60px 24px", maxWidth: "800px", margin: "0 auto" }}>
-        <LastUpdated date="2026-04-18" />
         <h2 style={{ fontSize: "28px", marginBottom: "16px" }}>Crown Point Suspension &amp; Steering Specialists</h2>
         <p style={{ lineHeight: 1.8, color: "#444", marginBottom: "20px" }}>
           Your suspension system does more than just absorb bumps — it controls how your vehicle handles, steers, and stops. Worn struts and shocks don&apos;t just make the ride uncomfortable — they increase stopping distances, cause uneven tire wear, and reduce your ability to control the vehicle in emergency situations.
@@ -258,7 +257,7 @@ export default function SuspensionSteering() {
     { "@type": "ListItem", "position": 3, "name": "Suspension & Steering Repair" }
   ]
 }).replace(/</g, "\u003c") }} />
-    <script type="application/ld+json" dangerouslySetInnerHTML={{ __html: "{\"@context\":\"https://schema.org\",\"@type\":\"Service\",\"@id\":\"https://www.rcompleteautocare.com/services/suspension-steering#service\",\"name\":\"Suspension & Steering Repair\",\"image\":\"https://www.rcompleteautocare.com/images/shop/hunter-wheel-alignment-machine.webp\",\"serviceType\":\"Suspension and Steering Repair\",\"url\":\"https://www.rcompleteautocare.com/services/suspension-steering\",\"provider\":{\"@id\":\"https://www.rcompleteautocare.com/#business\"},\"areaServed\":[{\"@type\":\"City\",\"name\":\"Crown Point\",\"containedIn\":{\"@type\":\"State\",\"name\":\"Indiana\"}},{\"@type\":\"City\",\"name\":\"St. John\",\"containedIn\":{\"@type\":\"State\",\"name\":\"Indiana\"}},{\"@type\":\"City\",\"name\":\"Schererville\",\"containedIn\":{\"@type\":\"State\",\"name\":\"Indiana\"}},{\"@type\":\"City\",\"name\":\"Merrillville\",\"containedIn\":{\"@type\":\"State\",\"name\":\"Indiana\"}},{\"@type\":\"City\",\"name\":\"Cedar Lake\",\"containedIn\":{\"@type\":\"State\",\"name\":\"Indiana\"}}],\"dateModified\":\"2026-04-18\"}".replace(/</g, "\u003c") }} />
+    <script type="application/ld+json" dangerouslySetInnerHTML={{ __html: ("{\"@context\":\"https://schema.org\",\"@type\":\"Service\",\"@id\":\"https://www.rcompleteautocare.com/services/suspension-steering#service\",\"name\":\"Suspension & Steering Repair\",\"image\":\"https://www.rcompleteautocare.com/images/shop/hunter-wheel-alignment-machine.webp\",\"serviceType\":\"Suspension and Steering Repair\",\"url\":\"https://www.rcompleteautocare.com/services/suspension-steering\",\"provider\":{\"@id\":\"https://www.rcompleteautocare.com/#business\"},\"areaServed\":" + JSON.stringify(AREA_SERVED_SCHEMA) + ",\"dateModified\":\"2026-04-18\"}").replace(/</g, "\u003c") }} />
     <script type="application/ld+json" dangerouslySetInnerHTML={{ __html: "{\"@context\":\"https://schema.org\",\"@type\":\"WebPage\",\"@id\":\"https://www.rcompleteautocare.com/services/suspension-steering#webpage\",\"url\":\"https://www.rcompleteautocare.com/services/suspension-steering\",\"name\":\"Suspension & Steering Repair in Crown Point, IN\",\"dateModified\":\"2026-04-18\",\"about\":{\"@id\":\"https://www.rcompleteautocare.com/#business\"}}".replace(/</g, "\u003c") }} />
   </div>
   );

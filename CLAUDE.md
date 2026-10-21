@@ -146,7 +146,7 @@ These must stay identical everywhere (JSON-LD, pages, `llms.txt`, footer):
 - **R Complete Auto Care**, 1305 E Summit St, Crown Point, IN 46307
 - Phone **(219) 262-2711** (link as `tel:2192622711`)
 - Hours: Mon–Fri 8am–6pm, Sat 8am–2pm, Sun closed
-- Serving: Crown Point · St. John · Schererville · Merrillville · Cedar Lake · Lowell · Hobart
+- Serving (from `SERVICE_AREAS` in `lib/business.js`, in this order): Crown Point · St. John · Schererville · Merrillville · Cedar Lake · Dyer · Lowell · Hobart · Munster · Valparaiso. Only the seven towns in `CITY_PAGE_HREFS` have landing pages.
 
 ### Redirects & junk paths
 Add permanent (308) redirects in `next.config.ts` `redirects()` when a URL

@@ -4,6 +4,7 @@ import Link from "next/link";
 import HondaCta from "../components/HondaCta";
 import { HONDA_BASE_URL, HONDA_MODELS, HONDA_SERVICES, type HondaFaq } from "@/lib/honda-pages";
 import styles from "../honda.module.css";
+import { SERVICE_AREAS, AREA_SERVED_SCHEMA } from "@/lib/business";
 
 const url = `${HONDA_BASE_URL}/honda-repair-crown-point-in`;
 
@@ -31,7 +32,7 @@ const faqs: HondaFaq[] = [
 
 const schemas = [
   { "@context": "https://schema.org", "@type": "BreadcrumbList", itemListElement: [{ "@type": "ListItem", position: 1, name: "Home", item: HONDA_BASE_URL }, { "@type": "ListItem", position: 2, name: "Honda Repair", item: url }] },
-  { "@context": "https://schema.org", "@type": "Service", name: "Honda Repair and Diagnostics", serviceType: "Honda vehicle repair and maintenance", url, provider: { "@id": `${HONDA_BASE_URL}/#business` }, areaServed: ["Crown Point", "St. John", "Schererville", "Merrillville", "Cedar Lake", "Lowell", "Dyer", "Munster", "Highland", "Hobart", "Valparaiso"].map((name) => ({ "@type": "City", name, containedIn: { "@type": "State", name: "Indiana" } })) },
+  { "@context": "https://schema.org", "@type": "Service", name: "Honda Repair and Diagnostics", serviceType: "Honda vehicle repair and maintenance", url, provider: { "@id": `${HONDA_BASE_URL}/#business` }, areaServed: AREA_SERVED_SCHEMA },
   { "@context": "https://schema.org", "@type": "FAQPage", mainEntity: faqs.map(({ question, answer }) => ({ "@type": "Question", name: question, acceptedAnswer: { "@type": "Answer", text: answer } })) },
 ];
 
@@ -42,7 +43,7 @@ export default function HondaRepairHub() {
         <div className={styles.heroInner}>
           <nav className={styles.breadcrumbs} aria-label="Breadcrumb"><ol><li><Link href="/">Home</Link></li><li aria-current="page">Honda Repair</li></ol></nav>
           <p className={styles.eyebrow}>Independent Honda service in Crown Point</p>
-          <h1>Honda Repair and Diagnostics</h1>
+          <h1>Honda Repair and Diagnostics in Crown Point, IN</h1>
           <p className={styles.lead}>Complete diagnostics. Complete repairs. We service Honda vehicles with a test-first approach for engine, transmission, electrical, A/C, brake, suspension, maintenance, and extended warranty concerns.</p>
           <HondaCta compact />
         </div>
@@ -53,11 +54,11 @@ export default function HondaRepairHub() {
           <p className={styles.kicker}>Start with the exact vehicle</p>
           <h2>Honda systems change by model, year, and configuration</h2>
           <p>A Civic CVT concern, Pilot timing-belt question, Odyssey sliding-door problem, and CR-V AWD warning require different information and tests. We identify the engine, transmission, and drivetrain, listen to when the symptom occurs, and verify the cause before asking you to approve a repair.</p>
-          <p>Our Crown Point shop serves Honda drivers from St. John, Schererville, Merrillville, Cedar Lake, Lowell, Dyer, Munster, Highland, Hobart, Valparaiso, and surrounding Northwest Indiana communities.</p>
+          <p>Our Crown Point shop serves Honda drivers from {SERVICE_AREAS.filter((c) => c !== "Crown Point").join(", ")}, and surrounding Northwest Indiana communities.</p>
         </section>
 
         <div className={styles.photoBand}>
-          <figure><Image src="/images/shop/r-complete-auto-care-service-bays.webp" alt="Service bays at R Complete Auto Care" fill sizes="(max-width:760px) 100vw, 50vw" quality={70} loading="lazy" /></figure>
+          <figure><Image src="/images/repair-bay-1200x800.webp" alt="Service bays at R Complete Auto Care" width={1200} height={800} sizes="(max-width: 768px) 100vw, 600px" quality={70} loading="lazy" style={{ position: "absolute", inset: 0, width: "100%", height: "100%" }} /></figure>
           <figure><Image src="/images/shop/r-complete-auto-care-office-overview.webp" alt="Reception area at R Complete Auto Care" fill sizes="(max-width:760px) 100vw, 50vw" quality={70} loading="lazy" /></figure>
         </div>
 

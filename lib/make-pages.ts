@@ -36,7 +36,7 @@ const makes: MakePageData[] = [
   {
     slug: "toyota-repair-crown-point-in",
     make: "Toyota",
-    title: "Toyota Repair Crown Point IN | R Complete Auto Care",
+    title: "Toyota Repair Crown Point, IN | R Complete Auto Care",
     description: "Toyota and Lexus diagnostics and repair in Crown Point, IN — oil consumption, water pumps, VVT-i, hybrid systems, and D-4S carbon. (219) 262-2711.",
     eyebrow: "Independent Toyota service in Crown Point",
     heading: "Toyota Repair and Diagnostics in Crown Point, IN",
@@ -91,7 +91,7 @@ const makes: MakePageData[] = [
   {
     slug: "chevrolet-repair-crown-point-in",
     make: "Chevrolet",
-    title: "Chevrolet Repair Crown Point IN | R Complete Auto Care",
+    title: "Chevrolet Repair Crown Point, IN | R Complete Auto Care",
     description: "Chevy diagnostics and repair in Crown Point, IN — AFM/DFM lifter failure, 8-speed shudder, timing chains, and oil consumption. (219) 262-2711.",
     eyebrow: "Independent Chevrolet service in Crown Point",
     heading: "Chevrolet Repair and Diagnostics in Crown Point, IN",
@@ -146,7 +146,7 @@ const makes: MakePageData[] = [
   {
     slug: "ford-repair-crown-point-in",
     make: "Ford",
-    title: "Ford Repair Crown Point IN | R Complete Auto Care",
+    title: "Ford Repair Crown Point, IN | R Complete Auto Care",
     description: "Ford diagnostics and repair in Crown Point, IN — cam phaser rattle, internal water pumps, EcoBoost turbo, and PowerShift shudder. (219) 262-2711.",
     eyebrow: "Independent Ford service in Crown Point",
     heading: "Ford Repair and Diagnostics in Crown Point, IN",
@@ -201,7 +201,7 @@ const makes: MakePageData[] = [
   {
     slug: "nissan-repair-crown-point-in",
     make: "Nissan",
-    title: "Nissan Repair Crown Point IN | R Complete Auto Care",
+    title: "Nissan Repair Crown Point, IN | R Complete Auto Care",
     description: "Nissan diagnostics and repair in Crown Point, IN — CVT judder and overheating, timing-chain rattle, and catalytic concerns. (219) 262-2711.",
     eyebrow: "Independent Nissan service in Crown Point",
     heading: "Nissan Repair and Diagnostics in Crown Point, IN",
@@ -256,7 +256,7 @@ const makes: MakePageData[] = [
   {
     slug: "subaru-repair-crown-point-in",
     make: "Subaru",
-    title: "Subaru Repair Crown Point IN | R Complete Auto Care",
+    title: "Subaru Repair Crown Point, IN | R Complete Auto Care",
     description: "Subaru diagnostics and repair in Crown Point, IN — head gaskets, oil consumption, CVT, wheel bearings, and AWD service. (219) 262-2711.",
     eyebrow: "Independent Subaru service in Crown Point",
     heading: "Subaru Repair and Diagnostics in Crown Point, IN",
@@ -311,7 +311,7 @@ const makes: MakePageData[] = [
   {
     slug: "jeep-repair-crown-point-in",
     make: "Jeep",
-    title: "Jeep Repair Crown Point IN | R Complete Auto Care",
+    title: "Jeep Repair Crown Point, IN | R Complete Auto Care",
     description: "Jeep diagnostics and repair in Crown Point, IN — 3.6 Pentastar heads, death wobble, oil filter housing leaks, and electrical. (219) 262-2711.",
     eyebrow: "Independent Jeep service in Crown Point",
     heading: "Jeep Repair and Diagnostics in Crown Point, IN",
@@ -366,7 +366,7 @@ const makes: MakePageData[] = [
   {
     slug: "chrysler-repair-crown-point-in",
     make: "Chrysler",
-    title: "Chrysler Repair Crown Point IN | R Complete Auto Care",
+    title: "Chrysler Repair Crown Point, IN | R Complete Auto Care",
     description: "Chrysler diagnostics and repair in Crown Point, IN — 3.6 Pentastar, Pacifica, Tigershark oil use, TIPM electrical, and A/C. (219) 262-2711.",
     eyebrow: "Independent Chrysler service in Crown Point",
     heading: "Chrysler Repair and Diagnostics in Crown Point, IN",
@@ -421,7 +421,7 @@ const makes: MakePageData[] = [
   {
     slug: "dodge-repair-crown-point-in",
     make: "Dodge",
-    title: "Dodge Repair Crown Point IN | R Complete Auto Care",
+    title: "Dodge Repair Crown Point, IN | R Complete Auto Care",
     description: "Dodge and Ram diagnostics and repair in Crown Point, IN — Hemi lifter tick, Pentastar, 8-speed, and exhaust manifold bolts. (219) 262-2711.",
     eyebrow: "Independent Dodge service in Crown Point",
     heading: "Dodge Repair and Diagnostics in Crown Point, IN",
@@ -476,7 +476,7 @@ const makes: MakePageData[] = [
   {
     slug: "gmc-repair-crown-point-in",
     make: "GMC",
-    title: "GMC Repair Crown Point IN | R Complete Auto Care",
+    title: "GMC Repair Crown Point, IN | R Complete Auto Care",
     description: "GMC diagnostics and repair in Crown Point, IN — AFM/DFM lifters, 8-speed shudder, timing chains, and Duramax concerns. (219) 262-2711.",
     eyebrow: "Independent GMC service in Crown Point",
     heading: "GMC Repair and Diagnostics in Crown Point, IN",
@@ -531,7 +531,7 @@ const makes: MakePageData[] = [
   {
     slug: "hyundai-repair-crown-point-in",
     make: "Hyundai",
-    title: "Hyundai Repair Crown Point IN | R Complete Auto Care",
+    title: "Hyundai Repair Crown Point, IN | R Complete Auto Care",
     description: "Hyundai diagnostics and repair in Crown Point, IN — Theta II engine concerns, GDI carbon, oil consumption, and catalytic faults. (219) 262-2711.",
     eyebrow: "Independent Hyundai service in Crown Point",
     heading: "Hyundai Repair and Diagnostics in Crown Point, IN",
@@ -586,7 +586,7 @@ const makes: MakePageData[] = [
   {
     slug: "kia-repair-crown-point-in",
     make: "Kia",
-    title: "Kia Repair Crown Point IN | R Complete Auto Care",
+    title: "Kia Repair Crown Point, IN | R Complete Auto Care",
     description: "Kia diagnostics and repair in Crown Point, IN — Theta II engine concerns, GDI carbon, oil consumption, and catalytic faults. (219) 262-2711.",
     eyebrow: "Independent Kia service in Crown Point",
     heading: "Kia Repair and Diagnostics in Crown Point, IN",
@@ -641,7 +641,7 @@ const makes: MakePageData[] = [
   {
     slug: "bmw-repair-crown-point-in",
     make: "BMW",
-    title: "BMW Repair Crown Point IN | R Complete Auto Care",
+    title: "BMW Repair Crown Point, IN | R Complete Auto Care",
     description: "BMW diagnostics and repair in Crown Point, IN — oil leaks, timing chains, turbo and HPFP, cooling system, and VANOS. (219) 262-2711.",
     eyebrow: "Independent BMW service in Crown Point",
     heading: "BMW Repair and Diagnostics in Crown Point, IN",
@@ -696,7 +696,7 @@ const makes: MakePageData[] = [
   {
     slug: "mercedes-benz-repair-crown-point-in",
     make: "Mercedes-Benz",
-    title: "Mercedes-Benz Repair Crown Point IN | R Complete Auto Care",
+    title: "Mercedes-Benz Repair Crown Point, IN | R Complete Auto Care",
     description: "Mercedes-Benz diagnostics and repair in Crown Point, IN — oil leaks, engine mounts, transmission conductor plate, and Airmatic. (219) 262-2711.",
     eyebrow: "Independent Mercedes-Benz service in Crown Point",
     heading: "Mercedes-Benz Repair and Diagnostics in Crown Point, IN",

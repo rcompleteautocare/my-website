@@ -2,6 +2,7 @@ import FaqSchema from '../components/FaqSchema'
 import ServiceSchema from '../components/ServiceSchema'
 import Link from 'next/link'
 import FaqAccordion from '../components/FaqAccordion'
+import { SERVICE_AREAS, SAME_DAY_COPY } from '@/lib/business'
 
 export const metadata = {
   title: 'Flashing Check Engine Light in Crown Point, IN',
@@ -76,7 +77,7 @@ export default function CheckEngineLightFlashing() {
         </p>
         <a href="tel:2192622711" className="cta-button">📞 Call (219) 262-2711 — This Is Urgent</a>
         <p className="address-line">1305 E Summit St, Crown Point, IN 46307 · Mon–Fri 8am–6pm · Sat 8am–2pm</p>
-        <p className="serving-line">Serving Crown Point · St. John · Schererville · Merrillville · Cedar Lake · Lowell · Hobart</p>
+        <p className="serving-line">Serving {SERVICE_AREAS.join(" · ")}</p>
 
         <h2>Flashing Check Engine Light Symptoms — What You May Be Experiencing</h2>
         <p>A flashing check engine light is always caused by an active engine misfire. These are the symptoms Crown Point drivers describe when they call us:</p>
@@ -123,7 +124,7 @@ export default function CheckEngineLightFlashing() {
           We confirm the exact cause and check for mechanical root causes before recommending any
           repair. We do not clear the code and send you home.
         </p>
-        <a href="tel:2192622711" className="cta-button">📞 Call (219) 262-2711 — Same-Day Misfire Diagnostics</a>
+        <a href="tel:2192622711" className="cta-button">📞 Call (219) 262-2711 — {SAME_DAY_COPY}</a>
 
         <h2>What Causes a Flashing Check Engine Light in Crown Point?</h2>
         <ul>
@@ -164,7 +165,7 @@ export default function CheckEngineLightFlashing() {
         <h2>Why Crown Point Drivers Choose R Complete Auto Care</h2>
         <div className="feature-grid">
           <div className="feature-item">
-            <strong>Same-Day Misfire Diagnostics</strong>
+            <strong>{SAME_DAY_COPY}</strong>
             <p>Call us and we will get your car in the same day. Most misfire diagnostics are completed within 1–3 hours.</p>
           </div>
           <div className="feature-item">
@@ -187,7 +188,7 @@ export default function CheckEngineLightFlashing() {
           Ignition coils, spark plugs, fuel injectors, fuel pumps, crankshaft sensors, and
           camshaft sensors are commonly listed components under most powertrain and comprehensive
           plans. R Complete Auto Care accepts most major extended warranty providers including
-          CARS Protection Plus, Endurance, CarShield, CARCHEX, AmTrust/National Auto Care, and Zurich.
+          CARS Protection Plus, Endurance, CarShield, CARCHEX, AmTrust, and Zurich.
         </p>
         <p>
           We handle the entire warranty process: coverage verification, documented diagnostic,

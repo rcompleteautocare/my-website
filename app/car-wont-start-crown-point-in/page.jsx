@@ -2,6 +2,7 @@ import Link from 'next/link'
 import ServiceSchema from '../components/ServiceSchema'
 import FaqAccordion from '../components/FaqAccordion'
 import FaqSchema from '../components/FaqSchema'
+import { YEARS_EXPERIENCE, SERVICE_AREAS, SAME_DAY_COPY } from '@/lib/business'
 
 export const metadata = {
   title: "Car Won't Start in Crown Point, IN | R Complete Auto Care",
@@ -70,12 +71,12 @@ export default function CarWontStart() {
         <p className="hero-description speakable">
           No crank, crank-no-start, intermittent no-start — each symptom points to a completely
           different system. At R Complete Auto Care in Crown Point, Indiana we run the full
-          diagnostic protocol before replacing a single part. 25+ years of family experience.
+          diagnostic protocol before replacing a single part. {YEARS_EXPERIENCE} years of family experience.
           Same-day appointments available. Extended warranty accepted.
         </p>
-        <a href="tel:2192622711" className="cta-button">📞 Call (219) 262-2711 — Same-Day Diagnostics Available</a>
+        <a href="tel:2192622711" className="cta-button">📞 Call (219) 262-2711 — {SAME_DAY_COPY}</a>
         <p className="address-line">1305 E Summit St, Crown Point, IN 46307 · Mon–Fri 8am–6pm · Sat 8am–2pm</p>
-        <p className="serving-line">Serving Crown Point · St. John · Schererville · Merrillville · Cedar Lake · Lowell · Hobart</p>
+        <p className="serving-line">Serving {SERVICE_AREAS.join(" · ")}</p>
 
         <h2>No-Start Symptoms — Which One Do You Have?</h2>
         <p>Every no-start symptom tells a different diagnostic story. Identifying the exact symptom is step one — it determines which systems we test first and eliminates guesswork from the start.</p>
@@ -150,7 +151,7 @@ export default function CarWontStart() {
         <h2>Why Crown Point Drivers Trust R Complete Auto Care</h2>
         <div className="feature-grid">
           <div className="feature-item">
-            <strong>Same-Day Diagnostics</strong>
+            <strong>{SAME_DAY_COPY}</strong>
             <p>Call by 10am and we will do everything possible to get your vehicle diagnosed the same day. Most no-start diagnostics are completed within 1–2 hours.</p>
           </div>
           <div className="feature-item">
@@ -162,8 +163,8 @@ export default function CarWontStart() {
             <p>You receive a clear estimate before any work begins. No surprises on the invoice. No work without your approval.</p>
           </div>
           <div className="feature-item">
-            <strong>25+ Years Family Experience</strong>
-            <p>R Complete Auto Care has served Crown Point and Lake County for over 25 years. We have diagnosed no-start conditions on every make and model.</p>
+            <strong>{YEARS_EXPERIENCE} Years Family Experience</strong>
+            <p>Our technicians bring {YEARS_EXPERIENCE} years of combined experience to Crown Point and Lake County drivers. We have diagnosed no-start conditions on every make and model.</p>
           </div>
         </div>
 
@@ -172,7 +173,7 @@ export default function CarWontStart() {
           Many no-start repairs are covered under third-party extended warranty plans — including
           starters, fuel pumps, crankshaft position sensors, and immobilizer components. R Complete
           Auto Care accepts most major extended warranty providers including CARS Protection Plus,
-          Endurance, CarShield, CARCHEX, AmTrust/National Auto Care, and Zurich.
+          Endurance, CarShield, CARCHEX, AmTrust, and Zurich.
         </p>
         <p>
           We handle the entire warranty process: we verify your coverage before you bring the vehicle

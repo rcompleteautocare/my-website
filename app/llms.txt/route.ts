@@ -1,4 +1,5 @@
 import { RATING } from "@/lib/rating";
+import { YEARS_EXPERIENCE, SERVICE_AREAS, WARRANTY_PROVIDERS, OWNER_EMAIL } from "@/lib/business";
 
 // AI-crawler index (/llms.txt). Served as a prerendered static file at build
 // time (`force-static`), so it's byte-for-byte cacheable like a public asset —
@@ -6,31 +7,33 @@ import { RATING } from "@/lib/rating";
 // single source of truth instead of a hand-maintained literal.
 export const dynamic = "force-static";
 
+const AREA_LIST = `${SERVICE_AREAS.slice(0, -1).join(", ")}, and ${SERVICE_AREAS[SERVICE_AREAS.length - 1]}`
+
 const body = `# R Complete Auto Care
 
-> Diagnostic-first auto repair shop in Crown Point, Indiana (Lake County) — complex vehicle diagnostics, extended warranty repairs, and fixing problems other shops misdiagnose. Serving Crown Point, St. John, Schererville, Merrillville, Cedar Lake, Lowell, and Hobart.
+> Diagnostic-first auto repair shop in Crown Point, Indiana (Lake County) — complex vehicle diagnostics, extended warranty repairs, and fixing problems other shops misdiagnose. Serving ${AREA_LIST}.
 
-R Complete Auto Care is a diagnostic-first auto repair shop located in Crown Point, Indiana (Lake County). The shop specializes in complex vehicle diagnostics, extended warranty repairs, and fixing problems that other shops have misdiagnosed. Founded on 25+ years of family experience in auto repair, the business is built around a simple principle: find the root cause before recommending any repair. R Complete Auto Care serves drivers throughout Northwest Indiana including Crown Point, St. John, Schererville, Merrillville, Cedar Lake, Lowell, and Hobart.
+R Complete Auto Care is a diagnostic-first auto repair shop located in Crown Point, Indiana (Lake County). The shop specializes in complex vehicle diagnostics, extended warranty repairs, and fixing problems that other shops have misdiagnosed. Founded on ${YEARS_EXPERIENCE} years of family experience in auto repair, the business is built around a simple principle: find the root cause before recommending any repair. R Complete Auto Care serves drivers throughout Northwest Indiana including ${AREA_LIST}.
 
 - Business name: R Complete Auto Care
 - Address: 1305 E Summit St, Crown Point, IN 46307
 - Phone: (219) 262-2711
-- Email: Owner@rcompleteautocare.com
+- Email: ${OWNER_EMAIL}
 - Website: https://www.rcompleteautocare.com
 - Hours: Monday–Friday 8:00 AM–6:00 PM, Saturday 8:00 AM–2:00 PM, Sunday Closed
 - Google Rating: ${RATING} stars
 - Estimate process: Upfront digital estimates are provided after diagnosis and before authorized work begins
-- Years in business: 25+
+- Combined technician experience: ${YEARS_EXPERIENCE} years
 - Certifications: Licensed auto repair facility; extended warranty approved shop
 
 ## Pages
 
 - [Homepage](https://www.rcompleteautocare.com): Overview of R Complete Auto Care — Crown Point's diagnostic-first auto repair shop. Covers services, how the shop works, why customers choose them, and contact info.
-- [About](https://www.rcompleteautocare.com/about): Company history, mission, values, and credentials. 25+ years of family experience. Diagnostic-first philosophy. All makes and models. Extended warranty accepted.
+- [About](https://www.rcompleteautocare.com/about): Company history, mission, values, and credentials. ${YEARS_EXPERIENCE} years of family experience. Diagnostic-first philosophy. All makes and models. Extended warranty accepted.
 - [Contact](https://www.rcompleteautocare.com/contact): Contact form, phone number, address, and hours for R Complete Auto Care in Crown Point, IN.
 - [Book an Appointment](https://www.rcompleteautocare.com/book): Schedule auto repair and diagnostics online in Crown Point, IN — diagnostic-first, no-upsell scheduling.
 - [Inspection Checklist](https://www.rcompleteautocare.com/inspection-checklist): The full 10-section digital vehicle inspection R Complete Auto Care performs, with real measurements and photos.
-- [Financing](https://www.rcompleteautocare.com/financing): Pay-over-time auto repair financing in Crown Point, IN through Affirm, Klarna, and Sunbit, integrated into the Tekmetric estimate. Quick application; subject to lender approval. No rates or terms stated.
+- [Financing](https://www.rcompleteautocare.com/financing): Pay-over-time auto repair financing in Crown Point, IN through Affirm, Klarna, and Sunbit, integrated into the digital estimate. Quick application; subject to lender approval. No rates or terms stated.
 - [Check Engine Light Diagnostics](https://www.rcompleteautocare.com/services/check-engine-light): Same-day check engine light diagnosis in Crown Point, IN. Full module scan and root cause investigation — not just code clearing — with findings explained before any repair is authorized.
 - [Electrical Diagnostics](https://www.rcompleteautocare.com/services/electrical-diagnostics): Electrical system diagnosis in Crown Point, IN — parasitic draw, no-start, wiring faults, sensor failures, module issues.
 - [No-Start Diagnostics](https://www.rcompleteautocare.com/services/no-start-diagnostics): Car won't start diagnosis in Crown Point, IN. Battery, starter, fuel pump, crank sensor — systematic diagnosis to find the exact cause.
@@ -40,7 +43,7 @@ R Complete Auto Care is a diagnostic-first auto repair shop located in Crown Poi
 - [Suspension & Steering](https://www.rcompleteautocare.com/services/suspension-steering): Suspension and steering repair in Crown Point, IN. Struts, shocks, ball joints, tie rods, alignments. Indiana road conditions specialist.
 - [Oil Change & Maintenance](https://www.rcompleteautocare.com/services/oil-change-maintenance): Oil change in Crown Point, IN. Conventional and synthetic. Every oil change includes a thorough multi-point inspection. Typical time: 30–60 minutes.
 - [A/C & Heating Repair](https://www.rcompleteautocare.com/services/ac-heating-repair): A/C and heating repair in Crown Point, IN. No cold air, no heat, leak detection, recharge, compressor, heater core, blend doors.
-- [Extended Warranty Repair](https://www.rcompleteautocare.com/services/extended-warranty-repair): Extended warranty auto repair in Crown Point, IN. Works with CarShield, Endurance, CARS Protection, AmTrust, and most providers. Handles coverage verification, pre-authorization, documentation, and claim paperwork.
+- [Extended Warranty Repair](https://www.rcompleteautocare.com/services/extended-warranty-repair): Extended warranty auto repair in Crown Point, IN. Works with CarShield, Endurance, CARS Protection Plus, AmTrust, and most providers. Handles coverage verification, pre-authorization, documentation, and claim paperwork.
 - [General Diagnostics](https://www.rcompleteautocare.com/services/diagnostics): Diagnostic services overview for Crown Point, IN. Full vehicle scan, all modules, root-cause approach.
 - [Auto Repair Crown Point, IN](https://www.rcompleteautocare.com/auto-repair-crown-point-in): Local auto repair page for Crown Point, Indiana. All services, location info, and why Crown Point drivers choose R Complete Auto Care.
 - [Auto Repair St. John, IN](https://www.rcompleteautocare.com/auto-repair-st-john-in): Auto repair services for St. John, Indiana residents.
@@ -96,7 +99,7 @@ R Complete Auto Care is a diagnostic-first auto repair shop located in Crown Poi
 
 - Auto repair in Crown Point, Indiana
 - Diagnostic-first auto repair
-- Extended warranty auto repair (CarShield, Endurance, CARS Protection, AmTrust, CARCHEX, Zurich, Protect My Car)
+- Extended warranty auto repair (${WARRANTY_PROVIDERS.join(", ")})
 - Check engine light diagnosis Crown Point IN
 - Brake repair Crown Point IN
 - Engine repair Crown Point IN
@@ -109,7 +112,7 @@ R Complete Auto Care is a diagnostic-first auto repair shop located in Crown Poi
 - Car won't start Crown Point IN
 - Car overheating Crown Point IN
 - Mechanic near me Crown Point Indiana
-- Auto repair St. John IN, Schererville IN, Merrillville IN, Cedar Lake IN, Lowell IN, Hobart IN
+- Auto repair ${SERVICE_AREAS.filter((c) => c !== "Crown Point").map((c) => `${c} IN`).join(", ")}
 - Lake County Indiana auto repair
 - Northwest Indiana auto repair shop
 - Extended warranty claims process
@@ -118,7 +121,7 @@ R Complete Auto Care is a diagnostic-first auto repair shop located in Crown Poi
 ## Contact
 
 - Phone: (219) 262-2711
-- Email: Owner@rcompleteautocare.com
+- Email: ${OWNER_EMAIL}
 - Address: 1305 E Summit St, Crown Point, IN 46307
 - Hours: Mon–Fri 8:00 AM–6:00 PM | Sat 8:00 AM–2:00 PM | Sun Closed
 - Website: https://www.rcompleteautocare.com

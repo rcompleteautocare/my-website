@@ -1,6 +1,6 @@
 import Link from "next/link";
-import LastUpdated from "@/app/components/LastUpdated";
 import ServiceFaqHub from "@/app/components/ServiceFaqHub";
+import { SERVICE_AREAS, AREA_SERVED_SCHEMA } from "@/lib/business";
 
 export const metadata = {
   title: "Auto Diagnostics Crown Point IN | R Complete Auto Care",
@@ -38,7 +38,7 @@ export default function Diagnostics() {
         <h1 style={{ fontSize: "38px", fontWeight: "bold", marginBottom: "12px", lineHeight: 1.2 }}>
           Auto Diagnostics in Crown Point, IN
         </h1>
-        <p className="speakable" style={{ fontSize: "16px", color: "#f1626f", fontWeight: "600", marginBottom: "16px", fontStyle: "italic" }}>TL;DR: We complete most diagnostics the same day. We scan the relevant vehicle modules, test the affected system, identify the root cause, and call you with the findings and a clear estimate before authorized work.
+        <p className="speakable" style={{ fontSize: "16px", color: "#f1626f", fontWeight: "600", marginBottom: "16px", fontStyle: "italic" }}>In short: We complete most diagnostics the same day. We scan the relevant vehicle modules, test the affected system, identify the root cause, and call you with the findings and a clear estimate before authorized work.
         </p>
         <p style={{ fontSize: "18px", color: "#ccc", maxWidth: "600px", margin: "0 auto 32px" }}>
           We diagnose before we repair. Every time. No guesswork — just accurate answers and honest recommendations.
@@ -52,11 +52,10 @@ export default function Diagnostics() {
       </section>
 
       <section style={{ background: "#e63946", color: "#fff", padding: "14px 24px", textAlign: "center", fontSize: "14px", fontWeight: "500" }}>
-        📍 Serving Crown Point · St. John · Schererville · Merrillville · Cedar Lake · Lowell · Hobart, Indiana
+        📍 Serving {SERVICE_AREAS.join(" · ")}, Indiana
       </section>
 
       <section style={{ padding: "60px 24px", maxWidth: "800px", margin: "0 auto" }}>
-        <LastUpdated date="2026-04-18" />
         <h2 style={{ fontSize: "28px", marginBottom: "16px" }}>Crown Point&apos;s Diagnostic-First Auto Repair Shop</h2>
         <p style={{ lineHeight: 1.8, color: "#444", marginBottom: "20px" }}>
           R Complete Auto Care is built around one principle: find the real problem before recommending a single repair. Too many shops skip the diagnostic process — they guess, replace parts, and hope for the best. That costs you time and money.
@@ -105,7 +104,7 @@ export default function Diagnostics() {
           { q: "How much does a diagnostic cost in Crown Point?", a: "It depends on the complexity of the concern and how much testing the diagnosis requires. We tell you what the diagnosis involves before we begin, complete most diagnostics the same day, and call you with the findings before any repair is authorized." },
           { q: "Do you work on all makes and models?", a: "Yes — all foreign and domestic vehicles including Honda, Toyota, BMW, Mercedes, Ford, Chevrolet, Dodge, Subaru, and more." },
           { q: "Do you serve St. John, Schererville, and Merrillville for diagnostics?", a: "Yes! We're located in Crown Point and serve all of Lake County including St. John, Schererville, Merrillville, and Cedar Lake, Indiana." },
-          { q: "Do you accept extended warranties for diagnostic repairs?", a: "Yes! We work with most extended warranty providers and handle the entire claims process for you." },
+          { q: "Do you accept extended warranties for diagnostic repairs?", a: "Yes! We work with most extended warranty providers and handle the claim paperwork and talk to the adjuster for you." },
         ].map(item => (
           <div key={item.q} style={{ marginBottom: "20px", borderBottom: "1px solid #e0e0e0", paddingBottom: "20px" }}>
             <div style={{ fontWeight: "bold", fontSize: "16px", marginBottom: "8px" }}>{item.q}</div>
@@ -177,7 +176,7 @@ export default function Diagnostics() {
       {
         "@type": "Question",
         "name": "Do you accept extended warranties for diagnostic repairs?",
-        "acceptedAnswer": { "@type": "Answer", "text": "Yes! We work with most extended warranty providers and handle the entire claims process for you." }
+        "acceptedAnswer": { "@type": "Answer", "text": "Yes! We work with most extended warranty providers and handle the claim paperwork and talk to the adjuster for you." }
       }
     ]
   }).replace(/</g, "\u003c")}}
@@ -203,7 +202,7 @@ export default function Diagnostics() {
     { "@type": "ListItem", "position": 3, "name": "Auto Diagnostics" }
   ]
 }).replace(/</g, "\u003c") }} />
-    <script type="application/ld+json" dangerouslySetInnerHTML={{ __html: "{\"@context\":\"https://schema.org\",\"@type\":\"Service\",\"@id\":\"https://www.rcompleteautocare.com/services/diagnostics#service\",\"name\":\"Auto Diagnostics\",\"serviceType\":\"Auto Diagnostics\",\"url\":\"https://www.rcompleteautocare.com/services/diagnostics\",\"provider\":{\"@id\":\"https://www.rcompleteautocare.com/#business\"},\"areaServed\":[{\"@type\":\"City\",\"name\":\"Crown Point\",\"containedIn\":{\"@type\":\"State\",\"name\":\"Indiana\"}},{\"@type\":\"City\",\"name\":\"St. John\",\"containedIn\":{\"@type\":\"State\",\"name\":\"Indiana\"}},{\"@type\":\"City\",\"name\":\"Schererville\",\"containedIn\":{\"@type\":\"State\",\"name\":\"Indiana\"}},{\"@type\":\"City\",\"name\":\"Merrillville\",\"containedIn\":{\"@type\":\"State\",\"name\":\"Indiana\"}},{\"@type\":\"City\",\"name\":\"Cedar Lake\",\"containedIn\":{\"@type\":\"State\",\"name\":\"Indiana\"}}],\"dateModified\":\"2026-04-18\"}".replace(/</g, "\u003c") }} />
+    <script type="application/ld+json" dangerouslySetInnerHTML={{ __html: ("{\"@context\":\"https://schema.org\",\"@type\":\"Service\",\"@id\":\"https://www.rcompleteautocare.com/services/diagnostics#service\",\"name\":\"Auto Diagnostics\",\"serviceType\":\"Auto Diagnostics\",\"url\":\"https://www.rcompleteautocare.com/services/diagnostics\",\"provider\":{\"@id\":\"https://www.rcompleteautocare.com/#business\"},\"areaServed\":" + JSON.stringify(AREA_SERVED_SCHEMA) + ",\"dateModified\":\"2026-04-18\"}").replace(/</g, "\u003c") }} />
     <script type="application/ld+json" dangerouslySetInnerHTML={{ __html: "{\"@context\":\"https://schema.org\",\"@type\":\"WebPage\",\"@id\":\"https://www.rcompleteautocare.com/services/diagnostics#webpage\",\"url\":\"https://www.rcompleteautocare.com/services/diagnostics\",\"name\":\"Auto Diagnostics in Crown Point, IN\",\"dateModified\":\"2026-04-18\",\"about\":{\"@id\":\"https://www.rcompleteautocare.com/#business\"}}".replace(/</g, "\u003c") }} />
   </div>
   );

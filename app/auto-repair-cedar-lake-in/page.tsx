@@ -1,6 +1,7 @@
 import Link from "next/link";
 import BookButton from "@/components/BookButton";
 import ServiceSchema from "@/app/components/ServiceSchema";
+import { YEARS_EXPERIENCE } from "@/lib/business";
 
 export const metadata = {
   title: "Auto Repair in Cedar Lake, IN | R Complete Auto Care",
@@ -53,7 +54,7 @@ export default function CedarLake() {
       </section>
 
       <section style={{ background: "#e63946", color: "#fff", padding: "14px 24px", textAlign: "center", fontSize: "14px", fontWeight: "500" }}>
-        ✓ Diagnostic-First &nbsp;|&nbsp; ✓ Foreign & Domestic &nbsp;|&nbsp; ✓ Extended Warranty Accepted &nbsp;|&nbsp; ✓ 25+ Years Family Experience
+        ✓ Diagnostic-First &nbsp;|&nbsp; ✓ Foreign & Domestic &nbsp;|&nbsp; ✓ Extended Warranty Accepted &nbsp;|&nbsp; ✓ {YEARS_EXPERIENCE} Years Family Experience
       </section>
 
       <section style={{ padding: "60px 24px", maxWidth: "800px", margin: "0 auto" }}>
@@ -118,7 +119,7 @@ export default function CedarLake() {
           { q: "My vehicle runs rural Cedar Lake roads and gravel — what suffers most?", a: "Gravel and patched-pavement wear hits suspension bushings, tie rods, and wheel alignment first. We also regularly see stone-chip damage to brake lines and undercarriage plastics on Cedar Lake vehicles. A proper inspection catches it before it becomes a brake-line leak." },
           { q: "Can you tow from Lake Dalecarlia or the Cedar Lake shoreline area?", a: "We coordinate with local tow partners and can have your vehicle recovered from Lake Dalecarlia, Town Center, or the US-41 / IN-2 corridor and brought to our Crown Point shop. Call (219) 262-2711 and we'll arrange it." },
           { q: "I commute IN-2 to Crown Point every day — what should I plan for?", a: "IN-2 sees heavy truck traffic and patched asphalt through the seasons — that combination is hard on struts, tie-rod ends, and alignment. We recommend an alignment check every 15–20k miles on IN-2 commuters to preserve tire life." },
-          { q: "Do you accept extended warranties for Cedar Lake residents?", a: "Yes — we work with CarShield, Endurance, CARS Protection, Zurich, AmTrust and most providers. Call us first so we can verify coverage before the tow." },
+          { q: "Do you accept extended warranties for Cedar Lake residents?", a: "Yes — we work with CarShield, Endurance, CARS Protection Plus, Zurich, AmTrust and most providers. Call us first so we can verify coverage before the tow." },
           { q: "How far am I from the shop if I'm by the lake?", a: "Most Cedar Lake neighborhoods are 12–15 minutes out via IN-2 east into Crown Point. Lake Dalecarlia is closer to 15. IN-2 is usually fastest outside rush hour." },
         ].map(item => (
           <div key={item.q} style={{ marginBottom: "20px", borderBottom: "1px solid #e0e0e0", paddingBottom: "20px" }}>
@@ -159,7 +160,7 @@ export default function CedarLake() {
       {
         "@type": "Question",
         "name": "Do you accept extended warranties for Cedar Lake drivers?",
-        "acceptedAnswer": { "@type": "Answer", "text": "Yes! We work with most extended warranty providers and handle the entire claims process. Cedar Lake drivers are welcome — call us at (219) 262-2711." }
+        "acceptedAnswer": { "@type": "Answer", "text": "Yes! We work with most extended warranty providers and handle the claim paperwork and talk to the adjuster for you. Cedar Lake drivers are welcome — call us at (219) 262-2711." }
       },
       {
         "@type": "Question",

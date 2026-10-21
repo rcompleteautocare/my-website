@@ -23,7 +23,7 @@ export const metadata = {
 
 import RelatedServices from "@/app/components/RelatedServices";
 import ServiceFaqHub from "@/app/components/ServiceFaqHub";
-import LastUpdated from "@/app/components/LastUpdated";
+import { SERVICE_AREAS, AREA_SERVED_SCHEMA } from "@/lib/business";
 export default function OilChangeMaintenance() {
   return (
     <div style={{ color: "#1a1a1a" }}>
@@ -34,7 +34,7 @@ export default function OilChangeMaintenance() {
         <h1 style={{ fontSize: "38px", fontWeight: "bold", marginBottom: "12px" }}>
           Oil Change & Maintenance in Crown Point, IN
         </h1>
-        <p className="speakable" style={{ fontSize: "16px", color: "#f1626f", fontWeight: "600", marginBottom: "16px", fontStyle: "italic" }}>TL;DR: Oil service is matched to the vehicle&apos;s required oil specification and capacity and includes a multi-point inspection. Call ahead for same-day availability and an upfront estimate.
+        <p className="speakable" style={{ fontSize: "16px", color: "#f1626f", fontWeight: "600", marginBottom: "16px", fontStyle: "italic" }}>In short: Oil service is matched to the vehicle&apos;s required oil specification and capacity and includes a multi-point inspection. Call ahead for same-day availability and an upfront estimate.
         </p>
         <p style={{ fontSize: "18px", color: "#ccc", maxWidth: "600px", margin: "0 auto 32px" }}>
           Conventional and synthetic oil changes with a thorough multi-point inspection — so you know what&apos;s coming before it becomes an emergency.
@@ -47,12 +47,11 @@ export default function OilChangeMaintenance() {
 
       {/* Serving bar */}
       <section style={{ background: "#e63946", color: "#fff", padding: "14px 24px", textAlign: "center", fontSize: "14px" }}>
-        📍 Serving Crown Point · St. John · Schererville · Merrillville · Cedar Lake · Lowell · Hobart, IN
+        📍 Serving {SERVICE_AREAS.join(" · ")}, IN
       </section>
 
       {/* Intro */}
       <section style={{ padding: "60px 24px", maxWidth: "800px", margin: "0 auto" }}>
-        <LastUpdated date="2026-04-18" />
         <h2 style={{ fontSize: "28px", marginBottom: "16px" }}>More Than Just an Oil Change</h2>
         <p style={{ lineHeight: 1.8, color: "#444", marginBottom: "20px" }}>
           At R Complete Auto Care in Crown Point, an oil change is never just an oil change. Every service includes a thorough multi-point inspection — we check fluid levels, brake pad thickness, tire condition, belt and hose condition, filters, lights, and anything else that could affect your vehicle&apos;s safety and reliability.
@@ -263,7 +262,7 @@ export default function OilChangeMaintenance() {
     { "@type": "ListItem", "position": 3, "name": "Oil Change & Maintenance" }
   ]
 }).replace(/</g, "\u003c") }} />
-    <script type="application/ld+json" dangerouslySetInnerHTML={{ __html: "{\"@context\":\"https://schema.org\",\"@type\":\"Service\",\"@id\":\"https://www.rcompleteautocare.com/services/oil-change-maintenance#service\",\"name\":\"Oil Change & Maintenance\",\"serviceType\":\"Oil Change and Maintenance\",\"url\":\"https://www.rcompleteautocare.com/services/oil-change-maintenance\",\"provider\":{\"@id\":\"https://www.rcompleteautocare.com/#business\"},\"areaServed\":[{\"@type\":\"City\",\"name\":\"Crown Point\",\"containedIn\":{\"@type\":\"State\",\"name\":\"Indiana\"}},{\"@type\":\"City\",\"name\":\"St. John\",\"containedIn\":{\"@type\":\"State\",\"name\":\"Indiana\"}},{\"@type\":\"City\",\"name\":\"Schererville\",\"containedIn\":{\"@type\":\"State\",\"name\":\"Indiana\"}},{\"@type\":\"City\",\"name\":\"Merrillville\",\"containedIn\":{\"@type\":\"State\",\"name\":\"Indiana\"}},{\"@type\":\"City\",\"name\":\"Cedar Lake\",\"containedIn\":{\"@type\":\"State\",\"name\":\"Indiana\"}}],\"dateModified\":\"2026-04-18\"}".replace(/</g, "\u003c") }} />
+    <script type="application/ld+json" dangerouslySetInnerHTML={{ __html: ("{\"@context\":\"https://schema.org\",\"@type\":\"Service\",\"@id\":\"https://www.rcompleteautocare.com/services/oil-change-maintenance#service\",\"name\":\"Oil Change & Maintenance\",\"serviceType\":\"Oil Change and Maintenance\",\"url\":\"https://www.rcompleteautocare.com/services/oil-change-maintenance\",\"provider\":{\"@id\":\"https://www.rcompleteautocare.com/#business\"},\"areaServed\":" + JSON.stringify(AREA_SERVED_SCHEMA) + ",\"dateModified\":\"2026-04-18\"}").replace(/</g, "\u003c") }} />
     <script type="application/ld+json" dangerouslySetInnerHTML={{ __html: "{\"@context\":\"https://schema.org\",\"@type\":\"WebPage\",\"@id\":\"https://www.rcompleteautocare.com/services/oil-change-maintenance#webpage\",\"url\":\"https://www.rcompleteautocare.com/services/oil-change-maintenance\",\"name\":\"Oil Change & Maintenance in Crown Point, IN\",\"dateModified\":\"2026-04-18\",\"about\":{\"@id\":\"https://www.rcompleteautocare.com/#business\"}}".replace(/</g, "\u003c") }} />
   </div>
   );

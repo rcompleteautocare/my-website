@@ -1,6 +1,7 @@
 import type { Metadata } from 'next'
 import TekmetricBooking from './TekmetricBooking'
 import styles from '../scheduling.module.css'
+import { SERVICE_TYPES } from '@/lib/business'
 
 export const metadata: Metadata = {
   title: 'Auto Repair Appointment Crown Point Indiana | Book Service Online',
@@ -27,7 +28,7 @@ export const metadata: Metadata = {
   },
 }
 
-const appointmentTypes = ['Oil Change', 'Diagnostics', 'Brakes', 'Suspension', 'Engine Repair', 'Transmission Repair', 'Electrical Diagnosis', 'A/C Repair', 'Check Engine Light', 'Pre-Purchase Inspection', 'Used Car Inspection']
+// Bookable service names come from lib/business.js (shared with the Contact form).
 
 export default function BookPage() {
   return <main className={styles.page}>
@@ -43,7 +44,7 @@ export default function BookPage() {
     </section>
     <section className={styles.bookingCard} aria-label="Online appointment scheduler"><TekmetricBooking /></section>
     <section className={styles.serviceList} aria-label="Available appointment types">
-      <h2>Services you can schedule</h2><div>{appointmentTypes.map(item => <span key={item}>{item}</span>)}</div>
+      <h2>Services you can schedule</h2><div>{SERVICE_TYPES.map(item => <span key={item}>{item}</span>)}</div>
     </section>
     <aside className={styles.help}>Prefer to speak with us? <a href="tel:2192622711">Call (219) 262-2711</a></aside>
   </main>

@@ -23,7 +23,7 @@ export const metadata = {
 
 import RelatedServices from "@/app/components/RelatedServices";
 import ServiceFaqHub from "@/app/components/ServiceFaqHub";
-import LastUpdated from "@/app/components/LastUpdated";
+import { YEARS_EXPERIENCE, AREA_SERVED_SCHEMA, SAME_DAY_COPY } from "@/lib/business";
 export default function CheckEngineLight() {
   return (
     <div style={{ color: "#1a1a1a" }}>
@@ -33,20 +33,19 @@ export default function CheckEngineLight() {
         <h1 style={{ fontSize: "38px", fontWeight: "bold", marginBottom: "12px" }}>
           Check Engine Light Diagnostics in Crown Point, IN
         </h1>
-        <p className="speakable" style={{ fontSize: "16px", color: "#f1626f", fontWeight: "600", marginBottom: "16px", fontStyle: "italic" }}>TL;DR: Check engine light diagnostics are completed the same day in most cases. We test the system behind the code and explain the findings before authorized work. A solid light may allow a brief careful drive; a flashing light means pull over and call us immediately.
+        <p className="speakable" style={{ fontSize: "16px", color: "#f1626f", fontWeight: "600", marginBottom: "16px", fontStyle: "italic" }}>In short: Check engine light diagnostics are completed the same day in most cases. We test the system behind the code and explain the findings before authorized work. A solid light may allow a brief careful drive; a flashing light means pull over and call us immediately.
         </p>
         <p style={{ fontSize: "18px", color: "#ccc", maxWidth: "600px", margin: "0 auto 32px" }}>
           Don&apos;t ignore that warning light. Our diagnostic-first approach finds the real problem — fast. We trace fault codes to their root cause, not just clear them and hope for the best.
         </p>
         <a href="tel:2192622711" style={{ background: "#e63946", color: "#fff", padding: "14px 32px", borderRadius: "6px", fontWeight: "bold", textDecoration: "none", fontSize: "18px" }}>
-          📞 Call (219) 262-2711 — Same-Day Diagnostics
+          📞 Call (219) 262-2711 — {SAME_DAY_COPY}
         </a>
         <p style={{ marginTop: "16px", color: "#aaa", fontSize: "14px" }}>Mon–Fri 8am–6pm · Sat 8am–2pm · 1305 E Summit St, Crown Point, IN 46307</p>
       </section>
 
       {/* What it means */}
       <section style={{ padding: "60px 24px", maxWidth: "800px", margin: "0 auto" }}>
-        <LastUpdated date="2026-04-18" />
         <h2 style={{ fontSize: "28px", marginBottom: "16px" }}>What Does a Check Engine Light Mean?</h2>
         <p style={{ lineHeight: 1.8, color: "#444", marginBottom: "24px" }}>
           Your check engine light can mean dozens of different things — from a loose gas cap to a failing catalytic converter or serious engine issue. The only way to know for sure is a proper diagnostic scan combined with hands-on inspection. At R Complete Auto Care, we don&apos;t just read the code number and guess. We trace the fault to its root cause before recommending a single repair.
@@ -108,8 +107,8 @@ export default function CheckEngineLight() {
               { title: "Honest Recommendations", desc: "We tell you exactly what's wrong and what's urgent — no upselling, no unnecessary repairs." },
               { title: "Same-Day Diagnostics", desc: "Most check engine light diagnostics completed the same day, with a call before any work begins." },
               { title: "All Makes & Models", desc: "Foreign and domestic vehicles welcome. Honda, Toyota, Ford, GM, BMW, Mercedes and more." },
-              { title: "Extended Warranty Accepted", desc: "We work with most extended warranty providers and handle the entire claims process for you." },
-              { title: "25+ Years Family Experience", desc: "Diagnostic expertise built over decades — we've seen every code, every failure, every pattern." },
+              { title: "Extended Warranty Accepted", desc: "We work with most extended warranty providers and handle the claim paperwork and talk to the adjuster for you." },
+              { title: `${YEARS_EXPERIENCE} Years Family Experience`, desc: "Diagnostic expertise built over decades — we've seen every code, every failure, every pattern." },
             ].map(item => (
               <div key={item.title} style={{ border: "1px solid #e0e0e0", borderLeft: "4px solid #e63946", borderRadius: "4px", padding: "16px" }}>
                 <div style={{ fontWeight: "bold", marginBottom: "8px" }}>{item.title}</div>
@@ -124,7 +123,7 @@ export default function CheckEngineLight() {
       <section style={{ padding: "60px 24px", maxWidth: "800px", margin: "0 auto" }}>
         <h2 style={{ fontSize: "28px", marginBottom: "16px" }}>Extended Warranty Coverage for Check Engine Light Repairs</h2>
         <p style={{ lineHeight: 1.8, color: "#444", marginBottom: "16px" }}>
-          If your vehicle is covered by an extended warranty and your check engine light is on, you may owe nothing out of pocket for the diagnosis and repair. R Complete Auto Care works with most major extended warranty providers including CarShield, Endurance, CARS Protection, and AmTrust.
+          If your vehicle is covered by an extended warranty and your check engine light is on, you may owe nothing out of pocket for the diagnosis and repair. R Complete Auto Care works with most major extended warranty providers including CarShield, Endurance, CARS Protection Plus, and AmTrust.
         </p>
         <p style={{ lineHeight: 1.8, color: "#444", marginBottom: "24px" }}>
           Call us with your warranty information before you bring the vehicle in and we&apos;ll verify your coverage, handle the claim paperwork, and communicate directly with your warranty company. You just approve the work and pick up your car.
@@ -146,7 +145,7 @@ export default function CheckEngineLight() {
             { q: "Can you just clear the code without diagnosing it?", a: "We don't recommend it and we won't do it. Clearing the code without fixing the underlying issue means the light will come back on — often within 50–100 miles. We find the root cause first." },
             { q: "What are signs I need check engine light diagnosis?", a: "Any time the check engine light comes on — solid or flashing. Also if you notice rough running, reduced power, poor fuel economy, or if the light returned after another shop 'fixed' it." },
             { q: "My check engine light came back on after another shop fixed it — what do I do?", a: "This is one of the most common reasons people come to us. Many shops clear codes and replace the most obvious part without finding the actual root cause. We dig deeper. Bring it in and we'll find what was missed." },
-            { q: "Do you accept extended warranties for check engine light repairs?", a: "Yes! We work with most extended warranty providers and handle the entire claims process for you. Call us with your warranty info and we'll verify coverage before any work begins." },
+            { q: "Do you accept extended warranties for check engine light repairs?", a: "Yes! We work with most extended warranty providers and handle the claim paperwork and talk to the adjuster for you. Call us with your warranty info and we'll verify coverage before any work begins." },
           ].map(item => (
             <div key={item.q} style={{ marginBottom: "20px", borderBottom: "1px solid #e0e0e0", paddingBottom: "20px" }}>
               <div style={{ fontWeight: "bold", fontSize: "16px", marginBottom: "8px" }}>{item.q}</div>
@@ -213,7 +212,7 @@ export default function CheckEngineLight() {
       {
         "@type": "Question",
         "name": "Do you accept extended warranties for check engine light repairs?",
-        "acceptedAnswer": { "@type": "Answer", "text": "Yes! We work with most extended warranty providers and handle the entire claims process for you. Call us with your warranty info and we'll verify coverage before any work begins." }
+        "acceptedAnswer": { "@type": "Answer", "text": "Yes! We work with most extended warranty providers and handle the claim paperwork and talk to the adjuster for you. Call us with your warranty info and we'll verify coverage before any work begins." }
       }
     ]
   }).replace(/</g, "\u003c")}}
@@ -240,7 +239,7 @@ export default function CheckEngineLight() {
     { "@type": "ListItem", "position": 3, "name": "Check Engine Light Diagnostics" }
   ]
 }).replace(/</g, "\u003c") }} />
-    <script type="application/ld+json" dangerouslySetInnerHTML={{ __html: "{\"@context\":\"https://schema.org\",\"@type\":\"Service\",\"@id\":\"https://www.rcompleteautocare.com/services/check-engine-light#service\",\"name\":\"Check Engine Light Diagnostics\",\"serviceType\":\"Check Engine Light Diagnostics\",\"url\":\"https://www.rcompleteautocare.com/services/check-engine-light\",\"provider\":{\"@id\":\"https://www.rcompleteautocare.com/#business\"},\"areaServed\":[{\"@type\":\"City\",\"name\":\"Crown Point\",\"containedIn\":{\"@type\":\"State\",\"name\":\"Indiana\"}},{\"@type\":\"City\",\"name\":\"St. John\",\"containedIn\":{\"@type\":\"State\",\"name\":\"Indiana\"}},{\"@type\":\"City\",\"name\":\"Schererville\",\"containedIn\":{\"@type\":\"State\",\"name\":\"Indiana\"}},{\"@type\":\"City\",\"name\":\"Merrillville\",\"containedIn\":{\"@type\":\"State\",\"name\":\"Indiana\"}},{\"@type\":\"City\",\"name\":\"Cedar Lake\",\"containedIn\":{\"@type\":\"State\",\"name\":\"Indiana\"}}],\"dateModified\":\"2026-04-18\"}".replace(/</g, "\u003c") }} />
+    <script type="application/ld+json" dangerouslySetInnerHTML={{ __html: ("{\"@context\":\"https://schema.org\",\"@type\":\"Service\",\"@id\":\"https://www.rcompleteautocare.com/services/check-engine-light#service\",\"name\":\"Check Engine Light Diagnostics\",\"serviceType\":\"Check Engine Light Diagnostics\",\"url\":\"https://www.rcompleteautocare.com/services/check-engine-light\",\"provider\":{\"@id\":\"https://www.rcompleteautocare.com/#business\"},\"areaServed\":" + JSON.stringify(AREA_SERVED_SCHEMA) + ",\"dateModified\":\"2026-04-18\"}").replace(/</g, "\u003c") }} />
     <script type="application/ld+json" dangerouslySetInnerHTML={{ __html: "{\"@context\":\"https://schema.org\",\"@type\":\"WebPage\",\"@id\":\"https://www.rcompleteautocare.com/services/check-engine-light#webpage\",\"url\":\"https://www.rcompleteautocare.com/services/check-engine-light\",\"name\":\"Check Engine Light Diagnostics in Crown Point, IN\",\"dateModified\":\"2026-04-18\",\"about\":{\"@id\":\"https://www.rcompleteautocare.com/#business\"}}".replace(/</g, "\u003c") }} />
   </div>
   );

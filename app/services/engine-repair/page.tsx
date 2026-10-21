@@ -23,8 +23,8 @@ export const metadata = {
 
 import RelatedServices from "@/app/components/RelatedServices";
 import ServiceFaqHub from "@/app/components/ServiceFaqHub";
-import LastUpdated from "@/app/components/LastUpdated";
 import FinancingCallout from "@/app/components/FinancingCallout";
+import { YEARS_EXPERIENCE, SERVICE_AREAS, AREA_SERVED_SCHEMA } from "@/lib/business";
 export default function EngineRepair() {
   return (
     <div style={{ color: "#1a1a1a" }}>
@@ -35,7 +35,7 @@ export default function EngineRepair() {
         <h1 style={{ fontSize: "38px", fontWeight: "bold", marginBottom: "12px" }}>
           Engine Repair in Crown Point, IN
         </h1>
-        <p className="speakable" style={{ fontSize: "16px", color: "#f1626f", fontWeight: "600", marginBottom: "16px", fontStyle: "italic" }}>TL;DR: Engine repair scope depends on the verified failure, access, and any connected damage. We diagnose first and provide a clear estimate before authorized work. Extended warranties often cover engine repairs, and same-day diagnostics are available.
+        <p className="speakable" style={{ fontSize: "16px", color: "#f1626f", fontWeight: "600", marginBottom: "16px", fontStyle: "italic" }}>In short: Engine repair scope depends on the verified failure, access, and any connected damage. We diagnose first and provide a clear estimate before authorized work. Extended warranties often cover engine repairs, and same-day diagnostics are available.
         </p>
         <p style={{ fontSize: "18px", color: "#ccc", maxWidth: "600px", margin: "0 auto 32px" }}>
           From minor engine repairs to major overhauls — we diagnose the real problem first so you only pay for what your vehicle actually needs.
@@ -48,14 +48,13 @@ export default function EngineRepair() {
 
       {/* Serving bar */}
       <section style={{ background: "#e63946", color: "#fff", padding: "14px 24px", textAlign: "center", fontSize: "14px" }}>
-        📍 Serving Crown Point · St. John · Schererville · Merrillville · Cedar Lake · Lowell · Hobart, IN
+        📍 Serving {SERVICE_AREAS.join(" · ")}, IN
       </section>
 
       <FinancingCallout />
 
       {/* Intro */}
       <section style={{ padding: "60px 24px", maxWidth: "800px", margin: "0 auto" }}>
-        <LastUpdated date="2026-04-18" />
         <h2 style={{ fontSize: "28px", marginBottom: "16px" }}>Crown Point&apos;s Engine Repair Specialists</h2>
         <p style={{ lineHeight: 1.8, color: "#444", marginBottom: "20px" }}>
           Your engine is the heart of your vehicle. At R Complete Auto Care in Crown Point, we treat engine problems with the diagnostic rigor they deserve. We don&apos;t replace parts and hope — we find the exact root cause of the failure before we recommend a single repair. That means fewer comebacks, no unnecessary expenses, and a fix that actually holds.
@@ -64,7 +63,7 @@ export default function EngineRepair() {
           We work on all foreign and domestic vehicles — Honda, Toyota, BMW, Mercedes, Ford, Chevy, Dodge, Subaru, and more. Whether your engine has a minor oil leak or needs a full replacement, we have the tools, the equipment, and the experience to do it right.
         </p>
         <p style={{ lineHeight: 1.8, color: "#444", marginBottom: "40px" }}>
-          We also accept most extended warranty plans and handle the entire claims process for you — so if your engine repair is covered, you may owe nothing out of pocket.
+          We also accept most extended warranty plans and handle the claim paperwork and talk to the adjuster for you — so if your engine repair is covered, you may owe nothing out of pocket.
         </p>
 
         {/* Symptoms */}
@@ -146,7 +145,7 @@ export default function EngineRepair() {
             { title: "Diagnose First, Always", desc: "We find the exact root cause before recommending any repair. No guessing, no unnecessary parts." },
             { title: "Honest Estimates", desc: "You get a clear estimate before we start. No unauthorized work and no surprises when you pick up your car." },
             { title: "Extended Warranty Accepted", desc: "We work with most warranty providers and handle all the paperwork. You may owe nothing." },
-            { title: "25+ Years Family Experience", desc: "Our shop is built on decades of engine diagnostic expertise. We've seen every failure pattern." },
+            { title: `${YEARS_EXPERIENCE} Years Family Experience`, desc: "Our shop is built on decades of engine diagnostic expertise. We've seen every failure pattern." },
             { title: "All Makes & Models", desc: "Foreign and domestic. Honda, Toyota, Ford, GM, BMW, Mercedes, Subaru, Dodge and more." },
             { title: "Same-Day Diagnostics", desc: "Most diagnostic appointments completed same day with a call before any work begins." },
           ].map(item => (
@@ -163,7 +162,7 @@ export default function EngineRepair() {
         <div style={{ maxWidth: "800px", margin: "0 auto" }}>
           <h2 style={{ fontSize: "28px", marginBottom: "16px" }}>Extended Warranty Coverage for Engine Repairs</h2>
           <p style={{ lineHeight: 1.8, color: "#444", marginBottom: "16px" }}>
-            Engine repairs are often the most significant repairs a vehicle owner faces — and one of the most commonly covered by extended warranties. If your vehicle has an extended warranty through CarShield, Endurance, CARS Protection, AmTrust, or another provider, call us before you bring the car in.
+            Engine repairs are often the most significant repairs a vehicle owner faces — and one of the most commonly covered by extended warranties. If your vehicle has an extended warranty through CarShield, Endurance, CARS Protection Plus, AmTrust, or another provider, call us before you bring the car in.
           </p>
           <p style={{ lineHeight: 1.8, color: "#444", marginBottom: "24px" }}>
             We&apos;ll verify your coverage, handle the claim directly with your warranty company, and keep you informed throughout the process. Many of our customers with engine problems pay little to nothing out of pocket. Don&apos;t assume you&apos;re not covered — call us first.
@@ -183,7 +182,7 @@ export default function EngineRepair() {
             { q: "How much does engine repair cost in Crown Point?", a: "It depends on the verified failure, your engine configuration, parts access, and any connected damage. We diagnose first, then give you a clear, upfront estimate before any work begins — and extended warranties often cover engine repairs. No surprises." },
             { q: "Is it worth repairing my engine or should I get a new car?", a: "We give you honest advice based on the vehicle's condition, the verified failure, and available warranty coverage. We explain the repair scope and estimate so you can make the right decision for your situation." },
             { q: "My engine is overheating — what should I do?", a: "Pull over safely and turn off the engine immediately. Do not continue driving an overheating engine — it can cause catastrophic damage very quickly. Call us and we'll help you figure out next steps and get the vehicle in for diagnosis." },
-            { q: "Do you accept extended warranties for engine repair?", a: "Yes — we work with most major extended warranty providers including CarShield, Endurance, CARS Protection, and AmTrust. Call us with your warranty info and we'll verify coverage before any work begins." },
+            { q: "Do you accept extended warranties for engine repair?", a: "Yes — we work with most major extended warranty providers including CarShield, Endurance, CARS Protection Plus, and AmTrust. Call us with your warranty info and we'll verify coverage before any work begins." },
             { q: "Do you serve St. John, Schererville, and Merrillville for engine repair?", a: "Yes — we serve all of Lake County including St. John, Schererville, Merrillville, Cedar Lake, and surrounding areas. We're located at 1305 E Summit St in Crown Point, easily accessible from all of Northwest Indiana." },
           ].map(item => (
             <div key={item.q} style={{ marginBottom: "20px", borderBottom: "1px solid #e0e0e0", paddingBottom: "20px" }}>
@@ -236,7 +235,7 @@ export default function EngineRepair() {
       {
         "@type": "Question",
         "name": "Do you accept extended warranties for engine repair?",
-        "acceptedAnswer": { "@type": "Answer", "text": "Yes — we work with most major extended warranty providers including CarShield, Endurance, CARS Protection, and AmTrust. Call us with your warranty info and we'll verify coverage before any work begins." }
+        "acceptedAnswer": { "@type": "Answer", "text": "Yes — we work with most major extended warranty providers including CarShield, Endurance, CARS Protection Plus, and AmTrust. Call us with your warranty info and we'll verify coverage before any work begins." }
       },
       {
         "@type": "Question",
@@ -268,7 +267,7 @@ export default function EngineRepair() {
     { "@type": "ListItem", "position": 3, "name": "Engine Repair" }
   ]
 }).replace(/</g, "\u003c") }} />
-    <script type="application/ld+json" dangerouslySetInnerHTML={{ __html: "{\"@context\":\"https://schema.org\",\"@type\":\"Service\",\"@id\":\"https://www.rcompleteautocare.com/services/engine-repair#service\",\"name\":\"Engine Repair\",\"serviceType\":\"Engine Repair\",\"url\":\"https://www.rcompleteautocare.com/services/engine-repair\",\"provider\":{\"@id\":\"https://www.rcompleteautocare.com/#business\"},\"areaServed\":[{\"@type\":\"City\",\"name\":\"Crown Point\",\"containedIn\":{\"@type\":\"State\",\"name\":\"Indiana\"}},{\"@type\":\"City\",\"name\":\"St. John\",\"containedIn\":{\"@type\":\"State\",\"name\":\"Indiana\"}},{\"@type\":\"City\",\"name\":\"Schererville\",\"containedIn\":{\"@type\":\"State\",\"name\":\"Indiana\"}},{\"@type\":\"City\",\"name\":\"Merrillville\",\"containedIn\":{\"@type\":\"State\",\"name\":\"Indiana\"}},{\"@type\":\"City\",\"name\":\"Cedar Lake\",\"containedIn\":{\"@type\":\"State\",\"name\":\"Indiana\"}}],\"dateModified\":\"2026-04-18\"}".replace(/</g, "\u003c") }} />
+    <script type="application/ld+json" dangerouslySetInnerHTML={{ __html: ("{\"@context\":\"https://schema.org\",\"@type\":\"Service\",\"@id\":\"https://www.rcompleteautocare.com/services/engine-repair#service\",\"name\":\"Engine Repair\",\"serviceType\":\"Engine Repair\",\"url\":\"https://www.rcompleteautocare.com/services/engine-repair\",\"provider\":{\"@id\":\"https://www.rcompleteautocare.com/#business\"},\"areaServed\":" + JSON.stringify(AREA_SERVED_SCHEMA) + ",\"dateModified\":\"2026-04-18\"}").replace(/</g, "\u003c") }} />
     <script type="application/ld+json" dangerouslySetInnerHTML={{ __html: "{\"@context\":\"https://schema.org\",\"@type\":\"WebPage\",\"@id\":\"https://www.rcompleteautocare.com/services/engine-repair#webpage\",\"url\":\"https://www.rcompleteautocare.com/services/engine-repair\",\"name\":\"Engine Repair in Crown Point, IN\",\"dateModified\":\"2026-04-18\",\"about\":{\"@id\":\"https://www.rcompleteautocare.com/#business\"}}".replace(/</g, "\u003c") }} />
   </div>
   );

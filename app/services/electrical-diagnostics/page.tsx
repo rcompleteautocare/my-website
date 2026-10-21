@@ -1,6 +1,6 @@
 import RelatedServices from "@/app/components/RelatedServices";
-import LastUpdated from "@/app/components/LastUpdated";
 import ServiceFaqHub from "@/app/components/ServiceFaqHub";
+import { SERVICE_AREAS, AREA_SERVED_SCHEMA } from "@/lib/business";
 
 export const metadata = {
   title: 'Electrical Diagnostics Crown Point | R Complete Auto Care',
@@ -36,7 +36,7 @@ export default function ElectricalDiagnostics() {
         <h1 style={{ fontSize: "38px", fontWeight: "bold", marginBottom: "12px", lineHeight: 1.2 }}>
           Electrical Diagnostics in Crown Point, IN
         </h1>
-        <p className="speakable" style={{ fontSize: "16px", color: "#f1626f", fontWeight: "600", marginBottom: "16px", fontStyle: "italic" }}>TL;DR: Electrical diagnostics in Crown Point are completed the same day in most cases. Testing covers the battery, alternator, parasitic draw, wiring faults, sensors, and module issues, with findings and an estimate provided before authorized work.
+        <p className="speakable" style={{ fontSize: "16px", color: "#f1626f", fontWeight: "600", marginBottom: "16px", fontStyle: "italic" }}>In short: Electrical diagnostics in Crown Point are completed the same day in most cases. Testing covers the battery, alternator, parasitic draw, wiring faults, sensors, and module issues, with findings and an estimate provided before authorized work.
         </p>
         <p style={{ fontSize: "18px", color: "#ccc", maxWidth: "600px", margin: "0 auto 32px" }}>
           Electrical problems are complex. We have the tools, equipment, and expertise to find the exact cause — and fix it right.
@@ -50,11 +50,10 @@ export default function ElectricalDiagnostics() {
       </section>
 
       <section style={{ background: "#e63946", color: "#fff", padding: "14px 24px", textAlign: "center", fontSize: "14px", fontWeight: "500" }}>
-        📍 Serving Crown Point · St. John · Schererville · Merrillville · Cedar Lake · Lowell · Hobart, Indiana
+        📍 Serving {SERVICE_AREAS.join(" · ")}, Indiana
       </section>
 
       <section style={{ padding: "60px 24px", maxWidth: "800px", margin: "0 auto" }}>
-        <LastUpdated date="2026-04-18" />
         <h2 style={{ fontSize: "28px", marginBottom: "16px" }}>Expert Auto Electrical Diagnostics in Crown Point</h2>
         <p style={{ lineHeight: 1.8, color: "#444", marginBottom: "20px" }}>
           Modern vehicles have incredibly complex electrical systems. A single faulty sensor, bad ground, or failing module can cause symptoms that seem unrelated and are difficult to diagnose without the right equipment and expertise. At R Complete Auto Care in Crown Point, Indiana, we use professional-grade diagnostic tools to pinpoint electrical problems accurately — the first time.
@@ -194,7 +193,7 @@ export default function ElectricalDiagnostics() {
     { "@type": "ListItem", "position": 3, "name": "Electrical Diagnostics" }
   ]
 }).replace(/</g, "\u003c") }} />
-    <script type="application/ld+json" dangerouslySetInnerHTML={{ __html: "{\"@context\":\"https://schema.org\",\"@type\":\"Service\",\"@id\":\"https://www.rcompleteautocare.com/services/electrical-diagnostics#service\",\"name\":\"Electrical Diagnostics\",\"serviceType\":\"Automotive Electrical Diagnostics\",\"url\":\"https://www.rcompleteautocare.com/services/electrical-diagnostics\",\"provider\":{\"@id\":\"https://www.rcompleteautocare.com/#business\"},\"areaServed\":[{\"@type\":\"City\",\"name\":\"Crown Point\",\"containedIn\":{\"@type\":\"State\",\"name\":\"Indiana\"}},{\"@type\":\"City\",\"name\":\"St. John\",\"containedIn\":{\"@type\":\"State\",\"name\":\"Indiana\"}},{\"@type\":\"City\",\"name\":\"Schererville\",\"containedIn\":{\"@type\":\"State\",\"name\":\"Indiana\"}},{\"@type\":\"City\",\"name\":\"Merrillville\",\"containedIn\":{\"@type\":\"State\",\"name\":\"Indiana\"}},{\"@type\":\"City\",\"name\":\"Cedar Lake\",\"containedIn\":{\"@type\":\"State\",\"name\":\"Indiana\"}}],\"dateModified\":\"2026-04-18\"}".replace(/</g, "\u003c") }} />
+    <script type="application/ld+json" dangerouslySetInnerHTML={{ __html: ("{\"@context\":\"https://schema.org\",\"@type\":\"Service\",\"@id\":\"https://www.rcompleteautocare.com/services/electrical-diagnostics#service\",\"name\":\"Electrical Diagnostics\",\"serviceType\":\"Automotive Electrical Diagnostics\",\"url\":\"https://www.rcompleteautocare.com/services/electrical-diagnostics\",\"provider\":{\"@id\":\"https://www.rcompleteautocare.com/#business\"},\"areaServed\":" + JSON.stringify(AREA_SERVED_SCHEMA) + ",\"dateModified\":\"2026-04-18\"}").replace(/</g, "\u003c") }} />
     <script type="application/ld+json" dangerouslySetInnerHTML={{ __html: "{\"@context\":\"https://schema.org\",\"@type\":\"WebPage\",\"@id\":\"https://www.rcompleteautocare.com/services/electrical-diagnostics#webpage\",\"url\":\"https://www.rcompleteautocare.com/services/electrical-diagnostics\",\"name\":\"Electrical Diagnostics in Crown Point, IN\",\"dateModified\":\"2026-04-18\",\"about\":{\"@id\":\"https://www.rcompleteautocare.com/#business\"}}".replace(/</g, "\u003c") }} />
   </div>
   );

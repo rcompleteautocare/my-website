@@ -1,8 +1,9 @@
 import { Clock3, ExternalLink, MapPin, Navigation } from "lucide-react";
 import styles from "./NeighborhoodMap.module.css";
 import InteractiveShopMap from "./InteractiveShopMap";
+import { SERVICE_AREAS } from "@/lib/business";
 
-const serviceAreas = ["Crown Point", "St. John", "Schererville", "Merrillville", "Cedar Lake"];
+const serviceAreas = SERVICE_AREAS;
 const destination = "R Complete Auto Care, 1305 E Summit St, Crown Point, IN 46307";
 
 export default function NeighborhoodMap() {

@@ -4,8 +4,9 @@ import { CheckCircle2, CircleAlert, Clock3, Gauge, ShieldCheck, Wrench } from "l
 import MakeCta from "./MakeCta";
 import { getModelPage, MODEL_BASE_URL, type ModelPageData } from "@/lib/model-pages";
 import styles from "../honda.module.css";
+import { SERVICE_AREAS } from "@/lib/business";
 
-const AREA_SERVED = ["Crown Point", "St. John", "Schererville", "Merrillville", "Cedar Lake"];
+const AREA_SERVED = SERVICE_AREAS;
 
 export function modelMetadata(page: ModelPageData): Metadata {
   const url = `${MODEL_BASE_URL}/${page.slug}`;

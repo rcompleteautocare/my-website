@@ -23,7 +23,7 @@ export const metadata = {
 
 import RelatedServices from "@/app/components/RelatedServices";
 import ServiceFaqHub from "@/app/components/ServiceFaqHub";
-import LastUpdated from "@/app/components/LastUpdated";
+import { SERVICE_AREAS, AREA_SERVED_SCHEMA } from "@/lib/business";
 export default function BrakeRepair() {
   return (
     <div style={{ color: "#1a1a1a" }}>
@@ -34,7 +34,7 @@ export default function BrakeRepair() {
         <h1 style={{ fontSize: "38px", fontWeight: "bold", marginBottom: "12px" }}>
           Brake Repair in Crown Point, IN
         </h1>
-        <p className="speakable" style={{ fontSize: "16px", color: "#f1626f", fontWeight: "600", marginBottom: "16px", fontStyle: "italic" }}>TL;DR: Brake repair starts with pad, rotor, caliper, fluid, and hardware measurements. We show you what is worn, explain what is urgent, and provide a clear estimate before authorized work.
+        <p className="speakable" style={{ fontSize: "16px", color: "#f1626f", fontWeight: "600", marginBottom: "16px", fontStyle: "italic" }}>In short: Brake repair starts with pad, rotor, caliper, fluid, and hardware measurements. We show you what is worn, explain what is urgent, and provide a clear estimate before authorized work.
         </p>
         <p style={{ fontSize: "18px", color: "#ccc", maxWidth: "600px", margin: "0 auto 32px" }}>
           Your brakes are the most important safety system on your vehicle. We perform thorough inspections with actual measurements — not a quick visual and an upsell.
@@ -47,12 +47,11 @@ export default function BrakeRepair() {
 
       {/* Serving bar */}
       <section style={{ background: "#e63946", color: "#fff", padding: "14px 24px", textAlign: "center", fontSize: "14px" }}>
-        📍 Serving Crown Point · St. John · Schererville · Merrillville · Cedar Lake · Lowell · Hobart, IN
+        📍 Serving {SERVICE_AREAS.join(" · ")}, IN
       </section>
 
       {/* Intro */}
       <section style={{ padding: "60px 24px", maxWidth: "800px", margin: "0 auto" }}>
-        <LastUpdated date="2026-04-18" />
 
         <h2 style={{ fontSize: "28px", marginBottom: "16px" }}>Honest Brake Inspections — No Pressure, No Upsell</h2>
         <p style={{ lineHeight: 1.8, color: "#444", marginBottom: "20px" }}>
@@ -62,7 +61,7 @@ export default function BrakeRepair() {
           Every brake inspection we perform includes actual pad thickness measurements, rotor thickness and condition assessment, caliper operation check, brake fluid condition, and brake line inspection. We give you the measurements, tell you what&apos;s urgent, and what can wait — then you decide.
         </p>
         <p style={{ lineHeight: 1.8, color: "#444", marginBottom: "40px" }}>
-          We service all makes and models and accept most extended warranty plans. If your brake repair is covered under your warranty, we handle the entire claims process for you.
+          We service all makes and models and accept most extended warranty plans. If your brake repair is covered under your warranty, we handle the claim paperwork and talk to the adjuster for you.
         </p>
 
         {/* Symptoms */}
@@ -231,7 +230,7 @@ export default function BrakeRepair() {
       ]
     }).replace(/</g, "\u003c") }} />
     
-    <script type="application/ld+json" dangerouslySetInnerHTML={{ __html: "{\"@context\":\"https://schema.org\",\"@type\":\"Service\",\"@id\":\"https://www.rcompleteautocare.com/services/brake-repair#service\",\"name\":\"Brake Repair\",\"serviceType\":\"Brake Repair\",\"url\":\"https://www.rcompleteautocare.com/services/brake-repair\",\"provider\":{\"@id\":\"https://www.rcompleteautocare.com/#business\"},\"areaServed\":[{\"@type\":\"City\",\"name\":\"Crown Point\",\"containedIn\":{\"@type\":\"State\",\"name\":\"Indiana\"}},{\"@type\":\"City\",\"name\":\"St. John\",\"containedIn\":{\"@type\":\"State\",\"name\":\"Indiana\"}},{\"@type\":\"City\",\"name\":\"Schererville\",\"containedIn\":{\"@type\":\"State\",\"name\":\"Indiana\"}},{\"@type\":\"City\",\"name\":\"Merrillville\",\"containedIn\":{\"@type\":\"State\",\"name\":\"Indiana\"}},{\"@type\":\"City\",\"name\":\"Cedar Lake\",\"containedIn\":{\"@type\":\"State\",\"name\":\"Indiana\"}}],\"dateModified\":\"2026-04-18\"}".replace(/</g, "\u003c") }} />
+    <script type="application/ld+json" dangerouslySetInnerHTML={{ __html: ("{\"@context\":\"https://schema.org\",\"@type\":\"Service\",\"@id\":\"https://www.rcompleteautocare.com/services/brake-repair#service\",\"name\":\"Brake Repair\",\"serviceType\":\"Brake Repair\",\"url\":\"https://www.rcompleteautocare.com/services/brake-repair\",\"provider\":{\"@id\":\"https://www.rcompleteautocare.com/#business\"},\"areaServed\":" + JSON.stringify(AREA_SERVED_SCHEMA) + ",\"dateModified\":\"2026-04-18\"}").replace(/</g, "\u003c") }} />
     <script type="application/ld+json" dangerouslySetInnerHTML={{ __html: "{\"@context\":\"https://schema.org\",\"@type\":\"WebPage\",\"@id\":\"https://www.rcompleteautocare.com/services/brake-repair#webpage\",\"url\":\"https://www.rcompleteautocare.com/services/brake-repair\",\"name\":\"Brake Repair in Crown Point, IN\",\"dateModified\":\"2026-04-18\",\"about\":{\"@id\":\"https://www.rcompleteautocare.com/#business\"}}".replace(/</g, "\u003c") }} />
   </div>
   );

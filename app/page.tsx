@@ -26,6 +26,7 @@ import ShopAddressCard from "./components/ShopAddressCard";
 import StickyMobileCta from "./components/StickyMobileCta";
 import TrustBadges from "./components/TrustBadges";
 import styles from "./home.module.css";
+import { SERVICE_AREAS, CITY_PAGE_HREFS, WARRANTY_PROVIDERS, SAME_DAY_COPY, SHOP_WARRANTY } from "@/lib/business";
 
 export const metadata: Metadata = {
   title: "R Complete Auto Care | Auto Repair in Crown Point, IN",
@@ -102,18 +103,8 @@ const emergencyServices = [
   { title: "Transmission Problems", href: "/transmission-slipping-crown-point-in", icon: Wrench },
 ];
 
-const serviceAreas = [
-  { city: "Crown Point", href: "/auto-repair-crown-point-in" },
-  { city: "St. John", href: "/auto-repair-st-john-in" },
-  { city: "Schererville", href: "/auto-repair-schererville-in" },
-  { city: "Dyer" },
-  { city: "Cedar Lake", href: "/auto-repair-cedar-lake-in" },
-  { city: "Lowell" },
-  { city: "Merrillville", href: "/auto-repair-merrillville-in" },
-  { city: "Valparaiso" },
-  { city: "Munster" },
-  { city: "Hobart" },
-];
+// Towns with a landing page link to it; the rest render as plain text.
+const serviceAreas = SERVICE_AREAS.map((city) => ({ city, href: CITY_PAGE_HREFS[city] }));
 
 export default function Home() {
   return (
@@ -137,34 +128,13 @@ export default function Home() {
           <div className={styles.heroProof} aria-label="Why drivers choose R Complete Auto Care">
             <span><Star aria-hidden="true" size={17} fill="currentColor" /><strong>{RATING} Google Rating</strong><small>{REVIEW_COUNT}+ Google reviews</small></span>
             <span><ShieldCheck aria-hidden="true" size={18} /><strong>Extended Warranty</strong><small>Claims accepted</small></span>
-            <span><Timer aria-hidden="true" size={18} /><strong>Same-Day Diagnostics</strong><small>Appointments available</small></span>
+            <span><Timer aria-hidden="true" size={18} /><strong>{SAME_DAY_COPY}</strong></span>
+            <span><Wrench aria-hidden="true" size={18} /><strong>Repair Warranty</strong><small>{SHOP_WARRANTY}</small></span>
           </div>
           <div className={styles.heroDetails}>
             <span>Mon–Fri 8am–6pm · Sat 8am–2pm</span>
             <span>1305 E Summit St, Crown Point, IN</span>
           </div>
-        </div>
-      </section>
-
-      <section className={`${styles.photoFeature} ${styles.photoFeatureFirst}`} aria-labelledby="visit-shop-heading">
-        <div className={styles.photoFrame}>
-          <Image
-            src="/images/shop/r-complete-auto-care-building-exterior.webp"
-            alt="Exterior of R Complete Auto Care auto repair shop in Crown Point, Indiana"
-            fill
-            sizes="(max-width: 800px) 100vw, 55vw"
-            quality={70}
-            loading="lazy"
-            className={styles.featureImage}
-          />
-        </div>
-        <div className={styles.photoCopy}>
-          <p className={styles.kicker}>Your local Crown Point shop</p>
-          <h2 id="visit-shop-heading">Visit R Complete Auto Care</h2>
-          <p>Our modern Crown Point facility provides diagnostic-first auto repair using professional equipment, experienced ASE-certified technicians, and transparent service from start to finish.</p>
-          <BookButton className={styles.photoButton}>
-            <CalendarDays aria-hidden="true" size={19} /> Book Appointment
-          </BookButton>
         </div>
       </section>
 
@@ -189,16 +159,42 @@ export default function Home() {
         </div>
       </section>
 
-      <section className={styles.photoFeature} aria-labelledby="diagnostics-heading">
+      <section className={`${styles.photoFeature} ${styles.photoFeatureFirst}`} aria-labelledby="visit-shop-heading">
         <div className={styles.photoFrame}>
           <Image
-            src="/images/shop/r-complete-auto-care-service-bays.webp"
-            alt="Service bays with vehicle lifts at R Complete Auto Care in Crown Point, IN"
-            fill
-            sizes="(max-width: 800px) 100vw, 55vw"
+            src="/images/building-exterior-1200x800.webp"
+            alt="Exterior of R Complete Auto Care auto repair shop in Crown Point, Indiana"
+            width={1200}
+            height={800}
+            sizes="(max-width: 800px) 100vw, 930px"
             quality={70}
             loading="lazy"
             className={styles.featureImage}
+            style={{ position: "absolute", inset: 0, width: "100%", height: "100%" }}
+          />
+        </div>
+        <div className={styles.photoCopy}>
+          <p className={styles.kicker}>Your local Crown Point shop</p>
+          <h2 id="visit-shop-heading">Visit R Complete Auto Care</h2>
+          <p>Our modern Crown Point facility provides diagnostic-first auto repair using professional equipment, experienced ASE-certified technicians, and transparent service from start to finish.</p>
+          <BookButton className={styles.photoButton}>
+            <CalendarDays aria-hidden="true" size={19} /> Book Appointment
+          </BookButton>
+        </div>
+      </section>
+
+      <section className={styles.photoFeature} aria-labelledby="diagnostics-heading">
+        <div className={styles.photoFrame}>
+          <Image
+            src="/images/repair-bay-1200x800.webp"
+            alt="Service bays with vehicle lifts at R Complete Auto Care in Crown Point, IN"
+            width={1200}
+            height={800}
+            sizes="(max-width: 800px) 100vw, 930px"
+            quality={70}
+            loading="lazy"
+            className={styles.featureImage}
+            style={{ position: "absolute", inset: 0, width: "100%", height: "100%" }}
           />
         </div>
         <div className={styles.photoCopy}>
@@ -218,7 +214,7 @@ export default function Home() {
             <Star size={18} fill="currentColor" />
           </span>
           <strong>{RATING} on Google</strong>
-          <span>{REVIEW_COUNT} customer reviews</span>
+          <span>{REVIEW_COUNT}+ customer reviews</span>
         </div>
         <TrustBadges />
       </section>
@@ -240,7 +236,7 @@ export default function Home() {
         <div className={styles.providerPanel} aria-label="Extended warranty providers we work with">
           <p>Common providers</p>
           <div>
-            {['CarShield', 'SilverRock', 'Endurance', 'Fidelity', 'Zurich', 'American Auto Shield'].map((provider) => (
+            {WARRANTY_PROVIDERS.map((provider) => (
               <span key={provider}>{provider}</span>
             ))}
           </div>
@@ -251,7 +247,7 @@ export default function Home() {
       <section className={styles.metricsSection} aria-label="Shop qualifications and service metrics">
         <article><Star aria-hidden="true" /><strong>{REVIEW_COUNT}+</strong><span>Google Reviews</span></article>
         <article><UserRoundCheck aria-hidden="true" /><strong>ASE-Certified</strong><span>Technicians</span></article>
-        <article><ScanSearch aria-hidden="true" /><strong>Same-Day</strong><span>Diagnostics Available</span></article>
+        <article><ScanSearch aria-hidden="true" /><strong>{SAME_DAY_COPY}</strong></article>
         <article><ClipboardCheck aria-hidden="true" /><strong>Processed Daily</strong><span>Extended Warranty Claims</span></article>
       </section>
 
@@ -316,13 +312,15 @@ export default function Home() {
       <section className={`${styles.photoFeature} ${styles.photoFeatureCompact}`} aria-labelledby="waiting-area-heading">
         <div className={styles.photoFrame}>
           <Image
-            src="/images/shop/r-complete-auto-care-waiting-room.webp"
+            src="/images/waiting-room-1200x800.webp"
             alt="Customer waiting room at R Complete Auto Care"
-            fill
-            sizes="(max-width: 800px) 100vw, 48vw"
+            width={1200}
+            height={800}
+            sizes="(max-width: 800px) 100vw, 930px"
             quality={70}
             loading="lazy"
             className={styles.featureImage}
+            style={{ position: "absolute", inset: 0, width: "100%", height: "100%" }}
           />
         </div>
         <div className={styles.photoCopy}>
@@ -377,7 +375,7 @@ export default function Home() {
         <div className={styles.sectionHeading}>
           <p className={styles.kicker}>Serving Northwest Indiana</p>
           <h2 id="service-area-heading">Your local diagnostic-first repair shop.</h2>
-          <p>Conveniently located in Crown Point for drivers from St. John, Schererville, Merrillville, Dyer, Cedar Lake, Lowell, Munster, Hobart, Valparaiso, and nearby communities.</p>
+          <p>Conveniently located in Crown Point for drivers from {SERVICE_AREAS.filter((c) => c !== "Crown Point").join(", ")}, and nearby communities.</p>
         </div>
         <div className={styles.serviceAreaGrid}>
           {serviceAreas.map(({ city, href }) => href ? (

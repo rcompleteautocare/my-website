@@ -1,6 +1,6 @@
 import Link from "next/link";
-import LastUpdated from "@/app/components/LastUpdated";
 import { MAKE_DIRECTORY } from "@/lib/make-pages";
+import { SERVICE_AREAS } from "@/lib/business";
 
 export const metadata = {
   title: "Auto Repair Services in Crown Point, IN | R Complete Auto Care",
@@ -35,7 +35,13 @@ const services = [
   { name: "Suspension & Steering", href: "/services/suspension-steering", desc: "Shocks, struts, tie rods, control arms, and alignment-related wear." },
   { name: "Oil Change & Maintenance", href: "/services/oil-change-maintenance", desc: "Conventional and full synthetic oil service with a multi-point inspection on every visit." },
   { name: "A/C & Heating Repair", href: "/services/ac-heating-repair", desc: "Weak cooling, no heat, strange smells — refrigerant service, heater cores, blend doors." },
-  { name: "Extended Warranty Repairs", href: "/services/extended-warranty-repair", desc: "CarShield, Endurance, CARS, Zurich and more. We verify coverage and handle the claim." },
+  { name: "Extended Warranty Repairs", href: "/services/extended-warranty-repair", desc: "CarShield, Endurance, CARS Protection Plus, Zurich and more. We verify coverage and handle the claim." },
+];
+
+// Bookable inspections. No dedicated page yet, so cards link to /book.
+const INSPECTIONS = [
+  { name: "Pre-Purchase Inspection", desc: "A thorough check of a vehicle you're thinking about buying, before you commit. We document its condition, flag hidden problems, and tell you what it would need." },
+  { name: "Used Car Inspection", desc: "A full look at a used vehicle you already own or just bought. We check the systems that fail most often and tell you what needs attention now versus later." },
 ];
 
 const SCHEMA = {
@@ -78,7 +84,7 @@ export default function ServicesIndex() {
           Auto Repair Services in Crown Point, IN
         </h1>
         <p className="speakable" style={{ fontSize: "16px", color: "#f1626f", fontWeight: "600", marginBottom: "16px", fontStyle: "italic" }}>
-          TL;DR: A diagnostic-first shop offering 11 services — from check-engine-light diagnostics and brake repair to full engine/transmission work and extended-warranty claims — all under one roof at 1305 E Summit St, Crown Point, IN.
+          In short: A diagnostic-first shop offering 11 services — from check-engine-light diagnostics and brake repair to full engine/transmission work and extended-warranty claims — all under one roof at 1305 E Summit St, Crown Point, IN.
         </p>
         <p style={{ fontSize: "18px", color: "#ccc", maxWidth: "600px", margin: "0 auto 32px" }}>
           Every repair starts with a proper diagnostic. We find the real problem, give you a clear estimate, and fix it right the first time.
@@ -92,14 +98,28 @@ export default function ServicesIndex() {
       </section>
 
       <section style={{ background: "#e63946", color: "#fff", padding: "14px 24px", textAlign: "center", fontSize: "14px", fontWeight: "500" }}>
-        📍 Serving Crown Point · St. John · Schererville · Merrillville · Cedar Lake · Lowell · Hobart, Indiana
+        📍 Serving {SERVICE_AREAS.join(" · ")}, Indiana
       </section>
 
       <section style={{ padding: "60px 24px", maxWidth: "960px", margin: "0 auto" }}>
-        <LastUpdated date="2026-04-18" />
         <div style={{ display: "grid", gridTemplateColumns: "repeat(auto-fit, minmax(280px, 1fr))", gap: "16px" }}>
           {services.map(s => (
             <Link key={s.href} href={s.href} style={{ border: "1px solid #e0e0e0", borderLeft: "4px solid #e63946", borderRadius: "6px", padding: "20px", textDecoration: "none", color: "#1a1a1a", display: "block" }}>
+              <div style={{ fontWeight: "bold", fontSize: "17px", marginBottom: "6px" }}>{s.name} →</div>
+              <div style={{ fontSize: "14px", color: "#555", lineHeight: 1.6 }}>{s.desc}</div>
+            </Link>
+          ))}
+        </div>
+      </section>
+
+      <section style={{ padding: "0 24px 60px", maxWidth: "960px", margin: "0 auto" }}>
+        <h2 style={{ fontSize: "28px", marginBottom: "8px" }}>Inspections</h2>
+        <p style={{ fontSize: "15px", color: "#555", lineHeight: 1.6, marginBottom: "20px" }}>
+          Schedule either inspection online or call (219) 262-2711.
+        </p>
+        <div style={{ display: "grid", gridTemplateColumns: "repeat(auto-fit, minmax(280px, 1fr))", gap: "16px" }}>
+          {INSPECTIONS.map(s => (
+            <Link key={s.name} href="/book" style={{ border: "1px solid #e0e0e0", borderLeft: "4px solid #e63946", borderRadius: "6px", padding: "20px", textDecoration: "none", color: "#1a1a1a", display: "block" }}>
               <div style={{ fontWeight: "bold", fontSize: "17px", marginBottom: "6px" }}>{s.name} →</div>
               <div style={{ fontSize: "14px", color: "#555", lineHeight: 1.6 }}>{s.desc}</div>
             </Link>

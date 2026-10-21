@@ -59,6 +59,17 @@ const nextConfig: NextConfig = {
         destination: "https://www.rcompleteautocare.com/:path*",
         permanent: true,
       },
+      // Shop photos replaced with 1200x800 versions (Oct 2026); old paths were
+      // live in the LocalBusiness JSON-LD, so keep them resolving.
+      { source: "/images/shop/r-complete-auto-care-building-exterior.webp", destination: "/images/building-exterior-1200x800.webp", permanent: true },
+      { source: "/images/shop/r-complete-auto-care-service-bays.webp", destination: "/images/repair-bay-1200x800.webp", permanent: true },
+      { source: "/images/shop/r-complete-auto-care-waiting-room.webp", destination: "/images/waiting-room-1200x800.webp", permanent: true },
+      // Old Google Ads sitelink URLs that never existed on this site (Oct 2026).
+      { source: "/suspension-repair-crown-point-in", destination: "/services/suspension-steering", permanent: true },
+      { source: "/check-engine-light-diagnostics-crown-point-in", destination: "/services/check-engine-light", permanent: true },
+      { source: "/extended-warranty-repair", destination: "/services/extended-warranty-repair", permanent: true },
+      { source: "/transmission-repair-crown-point-in", destination: "/services/transmission-repair", permanent: true },
+      { source: "/electrical-diagnostics-crown-point-in", destination: "/services/electrical-diagnostics", permanent: true },
       {
         source: "/schedule-service",
         destination: "/contact",

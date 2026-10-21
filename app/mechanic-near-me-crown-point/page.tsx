@@ -26,6 +26,7 @@ export const metadata = {
 
 import Link from "next/link";
 import BookButton from "@/components/BookButton";
+import { YEARS_EXPERIENCE, SERVICE_AREAS, SAME_DAY_COPY } from "@/lib/business";
 
 export default function MechanicNearMe() {
   return (
@@ -44,7 +45,7 @@ export default function MechanicNearMe() {
           1305 E Summit St, Crown Point, IN 46307 — minutes from downtown Crown Point and easily accessible from all of Lake County.
         </p>
         <a href="tel:2192622711" style={{ background: "#e63946", color: "#fff", padding: "14px 32px", borderRadius: "6px", fontWeight: "bold", textDecoration: "none", fontSize: "18px" }}>
-          📞 Call (219) 262-2711 — Same-Day Available
+          📞 Call (219) 262-2711 — {SAME_DAY_COPY}
         </a>
         <BookButton style={{ display: "inline-block", marginLeft: "12px", marginTop: "12px", background: "transparent", color: "#fff", border: "2px solid #fff", padding: "12px 30px", borderRadius: "6px", fontWeight: "bold", fontSize: "18px", textDecoration: "none" }}>
           Book Online
@@ -54,7 +55,7 @@ export default function MechanicNearMe() {
 
       {/* Serving bar */}
       <section style={{ background: "#e63946", color: "#fff", padding: "14px 24px", textAlign: "center", fontSize: "14px" }}>
-        📍 Crown Point · St. John · Schererville · Merrillville · Cedar Lake · Lowell · Hobart · All of Lake County IN
+        📍 {SERVICE_AREAS.join(" · ")} · All of Lake County IN
       </section>
 
       {/* Trust signals */}
@@ -64,8 +65,8 @@ export default function MechanicNearMe() {
             { icon: "⭐", stat: `${RATING} Stars`, label: "Google Rating" },
             { icon: "🔍", stat: "Diagnostic-First", label: "Always find root cause" },
             { icon: "📋", stat: "Warranty Accepted", label: "CarShield, Endurance & more" },
-            { icon: "⚡", stat: "Same-Day", label: "Diagnostics available" },
-            { icon: "🔧", stat: "25+ Years", label: "Family experience" },
+            { icon: "⚡", stat: SAME_DAY_COPY, label: "Call before 10am for best availability" },
+            { icon: "🔧", stat: `${YEARS_EXPERIENCE} Years`, label: "Family experience" },
             { icon: "🚗", stat: "All Makes", label: "Foreign & domestic" },
           ].map(item => (
             <div key={item.stat} style={{ background: "#fff", border: "1px solid #e0e0e0", borderTop: "3px solid #e63946", borderRadius: "4px", padding: "16px" }}>
@@ -116,7 +117,7 @@ export default function MechanicNearMe() {
         <ul style={{ lineHeight: 2.2, color: "#444", paddingLeft: "20px", marginBottom: "40px" }}>
           <li><strong>Diagnostic-first approach</strong> — A good mechanic finds the root cause before recommending parts.</li>
           <li><strong>Clear written estimates</strong> — You review the documented scope before any work begins.</li>
-          <li><strong>Extended warranty acceptance</strong> — We work with CarShield, Endurance, CARS Protection, AmTrust, and most major providers.</li>
+          <li><strong>Extended warranty acceptance</strong> — We work with CarShield, Endurance, CARS Protection Plus, AmTrust, and most major providers.</li>
           <li><strong>All makes and models</strong> — Honda, Toyota, BMW, Mercedes, Ford, Chevy, Subaru, Dodge — we handle all of them.</li>
           <li><strong>Strong local reviews</strong> — {RATING} stars on Google from real Crown Point area drivers.</li>
           <li><strong>Same-day diagnostics</strong> — Most vehicles diagnosed the same day.</li>
@@ -163,7 +164,7 @@ export default function MechanicNearMe() {
         <div style={{ maxWidth: "800px", margin: "0 auto" }}>
           <h2 style={{ fontSize: "28px", marginBottom: "16px" }}>Extended Warranty? Your Mechanic Near Crown Point Handles Everything</h2>
           <p style={{ lineHeight: 1.8, color: "#444", marginBottom: "16px" }}>
-            One of the biggest reasons Crown Point and Lake County drivers choose R Complete Auto Care over other mechanics nearby is our extended warranty specialization. We accept CarShield, Endurance, CARS Protection, AmTrust, and most major providers — and we handle the entire claims process for you.
+            One of the biggest reasons Crown Point and Lake County drivers choose R Complete Auto Care over other mechanics nearby is our extended warranty specialization. We accept CarShield, Endurance, CARS Protection Plus, AmTrust, and most major providers — and we handle the claim paperwork and talk to the adjuster for you.
           </p>
           <p style={{ lineHeight: 1.8, color: "#444", marginBottom: "24px" }}>
             We verify coverage before you bring the car in, obtain pre-authorization, document the repair, submit the claim, and explain the authorization before work begins.
@@ -180,9 +181,9 @@ export default function MechanicNearMe() {
           <h2 style={{ fontSize: "28px", marginBottom: "24px" }}>Frequently Asked Questions — Mechanic Near Crown Point IN</h2>
           {[
             { q: "What is the best mechanic near Crown Point, IN?", a: `R Complete Auto Care at 1305 E Summit St in Crown Point is rated ${RATING} stars on Google and specializes in diagnostic-first auto repair. We fix complex problems other shops can't figure out, accept most extended warranties, and offer same-day diagnostics. We serve Crown Point, St. John, Schererville, Merrillville, and Cedar Lake.` },
-            { q: "What mechanic near me accepts extended warranties in Crown Point?", a: "R Complete Auto Care accepts most major extended warranty providers including CarShield, Endurance, CARS Protection, and AmTrust. We handle verification, pre-authorization, and claim submission, then explain the authorization before work begins. Call (219) 262-2711 with your warranty info before you bring the car in." },
+            { q: "What mechanic near me accepts extended warranties in Crown Point?", a: "R Complete Auto Care accepts most major extended warranty providers including CarShield, Endurance, CARS Protection Plus, and AmTrust. We handle verification, pre-authorization, and claim submission, then explain the authorization before work begins. Call (219) 262-2711 with your warranty info before you bring the car in." },
             { q: "Is there a mechanic near me open on Saturday in Crown Point?", a: "Yes — R Complete Auto Care is open Saturday 8am to 2pm at 1305 E Summit St, Crown Point IN. Monday through Friday we're open 8am to 6pm. Call (219) 262-2711 to schedule." },
-            { q: "How do I find a trustworthy mechanic near me in Crown Point?", a: "Look for detailed reviews, clear written estimates, a diagnostic-first approach, and extended warranty experience. R Complete Auto Care has all of these and has been serving Lake County Indiana for over 25 years." },
+            { q: "How do I find a trustworthy mechanic near me in Crown Point?", a: `Look for detailed reviews, clear written estimates, a diagnostic-first approach, and extended warranty experience. R Complete Auto Care has all of these, and our technicians bring ${YEARS_EXPERIENCE} years of combined experience to Lake County Indiana drivers.` },
             { q: "What mechanic near Crown Point can diagnose complex car problems?", a: "R Complete Auto Care specializes in complex diagnostics — electrical faults, intermittent no-start conditions, check engine lights that other shops couldn't fix, and extended warranty repairs. If another mechanic near you couldn't figure it out, call us." },
             { q: "How far does R Complete Auto Care serve from Crown Point?", a: "We serve all of Lake County Indiana — Crown Point, St. John (10 min), Schererville (12 min), Merrillville (15 min), Cedar Lake (15 min), Lowell, Dyer, Munster, and surrounding areas." },
             { q: "Do you offer same-day mechanic service near Crown Point?", a: "Yes — most diagnostic appointments are completed the same day. Call before 10am for best availability. We'll contact you with our findings before doing any work." },
@@ -237,7 +238,7 @@ export default function MechanicNearMe() {
       {/* Final CTA */}
       <section style={{ background: "#e63946", color: "#fff", textAlign: "center", padding: "60px 24px" }}>
         <h2 style={{ fontSize: "28px", marginBottom: "12px" }}>Your Mechanic Near Crown Point — Call Now</h2>
-        <p style={{ marginBottom: "8px", opacity: 0.9 }}>{RATING} Stars · Diagnostic-First · Extended Warranty Accepted · Same-Day Available</p>
+        <p style={{ marginBottom: "8px", opacity: 0.9 }}>{RATING} Stars · Diagnostic-First · Extended Warranty Accepted · {SAME_DAY_COPY}</p>
         <p style={{ marginBottom: "24px", opacity: 0.75, fontSize: "14px" }}>1305 E Summit St, Crown Point, IN 46307 · Mon–Fri 8am–6pm · Sat 8am–2pm</p>
         <a href="tel:2192622711" style={{ background: "#fff", color: "#e63946", padding: "14px 36px", borderRadius: "6px", fontWeight: "bold", textDecoration: "none", fontSize: "18px" }}>
           📞 Call (219) 262-2711
@@ -261,7 +262,7 @@ export default function MechanicNearMe() {
       {
         "@type": "Question",
         "name": "What mechanic near me accepts extended warranties in Crown Point?",
-        "acceptedAnswer": { "@type": "Answer", "text": "R Complete Auto Care accepts most major extended warranty providers including CarShield, Endurance, CARS Protection, and AmTrust. We handle verification, pre-authorization, and claim submission, then explain the authorization before work begins. Call (219) 262-2711 with your warranty info before you bring the car in." }
+        "acceptedAnswer": { "@type": "Answer", "text": "R Complete Auto Care accepts most major extended warranty providers including CarShield, Endurance, CARS Protection Plus, and AmTrust. We handle verification, pre-authorization, and claim submission, then explain the authorization before work begins. Call (219) 262-2711 with your warranty info before you bring the car in." }
       },
       {
         "@type": "Question",
@@ -271,7 +272,7 @@ export default function MechanicNearMe() {
       {
         "@type": "Question",
         "name": "How do I find a trustworthy mechanic near me in Crown Point?",
-        "acceptedAnswer": { "@type": "Answer", "text": "Look for detailed reviews, clear written estimates, a diagnostic-first approach, and extended warranty experience. R Complete Auto Care has all of these and has been serving Lake County Indiana for over 25 years." }
+        "acceptedAnswer": { "@type": "Answer", "text": `Look for detailed reviews, clear written estimates, a diagnostic-first approach, and extended warranty experience. R Complete Auto Care has all of these, and our technicians bring ${YEARS_EXPERIENCE} years of combined experience to Lake County Indiana drivers.` }
       },
       {
         "@type": "Question",

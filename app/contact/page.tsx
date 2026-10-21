@@ -2,6 +2,7 @@
 import Image from "next/image";
 import { useState } from "react";
 import NeighborhoodMap from "../components/NeighborhoodMap";
+import { SERVICE_AREAS, OWNER_EMAIL, SERVICE_TYPES } from "@/lib/business";
 
 export default function Contact() {
   const [submitted, setSubmitted] = useState(false);
@@ -46,7 +47,7 @@ export default function Contact() {
 
       {/* Serving bar */}
       <section style={{ background: "#e63946", color: "#fff", padding: "14px 24px", textAlign: "center", fontSize: "14px" }}>
-        📍 Serving Crown Point · St. John · Schererville · Merrillville · Cedar Lake · Lowell · Hobart, IN
+        📍 Serving {SERVICE_AREAS.join(" · ")}, IN
       </section>
 
       {/* Contact info + Form */}
@@ -56,9 +57,21 @@ export default function Contact() {
           {/* Contact info */}
           <div>
             <h2 style={{ fontSize: "24px", fontWeight: "bold", marginBottom: "24px" }}>Get In Touch</h2>
+            <div style={{ position: "relative", width: "100%", aspectRatio: "3 / 2", overflow: "hidden", borderRadius: "8px", marginBottom: "24px", background: "#ededeb" }}>
+              <Image
+                src="/images/front-desk-1200x800.webp"
+                alt="Front desk and service counter at R Complete Auto Care in Crown Point, IN"
+                width={1200}
+                height={800}
+                sizes="(max-width: 768px) 100vw, 600px"
+                quality={70}
+                loading="lazy"
+                style={{ position: "absolute", inset: 0, width: "100%", height: "100%", objectFit: "cover" }}
+              />
+            </div>
             {[
               { icon: "📞", label: "Phone", value: "(219) 262-2711", href: "tel:2192622711" },
-              { icon: "✉️", label: "Email", value: "Owner@rcompleteautocare.com", href: "mailto:Owner@rcompleteautocare.com" },
+              { icon: "✉️", label: "Email", value: OWNER_EMAIL, href: `mailto:${OWNER_EMAIL}` },
               { icon: "📍", label: "Address", value: "1305 E Summit St, Crown Point, IN 46307", href: "https://maps.google.com/?q=1305+E+Summit+St+Crown+Point+IN+46307" },
             ].map(item => (
               <div key={item.label} style={{ background: "#f9f9f9", borderRadius: "8px", padding: "20px", marginBottom: "16px" }}>
@@ -116,16 +129,7 @@ export default function Contact() {
                     style={{ width: "100%", padding: "10px 14px", border: "1px solid #ddd", borderRadius: "6px", fontSize: "15px", boxSizing: "border-box" }}
                   >
                     <option value="">Select a service...</option>
-                    <option>Check Engine Light</option>
-                    <option>Engine Repair</option>
-                    <option>Transmission Repair</option>
-                    <option>Brake Repair</option>
-                    <option>Electrical Diagnostics</option>
-                    <option>Suspension & Steering</option>
-                    <option>No-Start Diagnostics</option>
-                    <option>Extended Warranty Repair</option>
-                    <option>AC & Heating Repair</option>
-                    <option>Oil Change & Maintenance</option>
+                    {SERVICE_TYPES.map((service) => <option key={service}>{service}</option>)}
                     <option>Other</option>
                   </select>
                 </div>

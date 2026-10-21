@@ -1,6 +1,7 @@
 import Link from "next/link";
 import BookButton from "@/components/BookButton";
 import ServiceSchema from "@/app/components/ServiceSchema";
+import { YEARS_EXPERIENCE, SERVICE_AREAS } from "@/lib/business";
 
 export const metadata = {
   title: "Auto Repair in Lowell, IN | R Complete Auto Care",
@@ -44,7 +45,7 @@ const FAQS = [
   { q: "How far is your shop from Lowell?", a: "About 15 minutes. Most Lowell drivers take I-65 north a few exits to US-231 and head west into Crown Point, or come straight up Colfax Street (SR-55) — no interstate required." },
   { q: "I drive a lot of I-65 and county-road miles — what should I watch for?", a: "Highway commuting on I-65 puts steady heat into tires, wheel bearings, and transmission fluid, while gravel and county roads around Lowell are hard on suspension, tie rods, and alignment. We check all of those on a diagnostic so nothing sneaks up on you." },
   { q: "Do you service trucks that tow boats and trailers near Cedar Lake?", a: "Yes. Towing to Cedar Lake and the campgrounds south of Lowell works the cooling system, brakes, and transmission hard. We inspect trailer-tow wear points and cooling capacity before the busy season, not after something overheats." },
-  { q: "Do you accept extended warranties for Lowell drivers?", a: "Yes — we work with CarShield, Endurance, CARS Protection, Zurich, AmTrust and most providers. We verify coverage before you bring the vehicle in so you know what's covered before any work begins." },
+  { q: "Do you accept extended warranties for Lowell drivers?", a: "Yes — we work with CarShield, Endurance, CARS Protection Plus, Zurich, AmTrust and most providers. We verify coverage before you bring the vehicle in so you know what's covered before any work begins." },
   { q: "Can you handle winter no-start and heater problems?", a: "Yes. Lowell's open, rural stretches get cold and windy, which is hard on batteries, glow plugs on diesels, and heater cores. If your vehicle is slow to start or slow to warm up, we test the actual cause before replacing parts." },
 ];
 
@@ -73,11 +74,11 @@ export default function Lowell() {
       </section>
 
       <section style={{ background: "#e63946", color: "#fff", padding: "14px 24px", textAlign: "center", fontSize: "14px", fontWeight: "500" }}>
-        ✓ Diagnostic-First &nbsp;|&nbsp; ✓ Foreign &amp; Domestic &nbsp;|&nbsp; ✓ Extended Warranty Accepted &nbsp;|&nbsp; ✓ 25+ Years Family Experience
+        ✓ Diagnostic-First &nbsp;|&nbsp; ✓ Foreign &amp; Domestic &nbsp;|&nbsp; ✓ Extended Warranty Accepted &nbsp;|&nbsp; ✓ {YEARS_EXPERIENCE} Years Family Experience
       </section>
 
       <section style={{ background: "#1a1a1a", color: "#ddd", padding: "12px 24px", textAlign: "center", fontSize: "13px" }}>
-        📍 Serving Crown Point · St. John · Schererville · Merrillville · Cedar Lake · Lowell · Hobart, Indiana
+        📍 Serving {SERVICE_AREAS.join(" · ")}, Indiana
       </section>
 
       <section style={{ padding: "60px 24px", maxWidth: "800px", margin: "0 auto" }}>
@@ -92,7 +93,7 @@ export default function Lowell() {
           The drive to our shop is simple: north on I-65 a few exits to US-231 and west into Crown Point, or straight up Colfax Street (SR-55). No interstate is required if you&apos;d rather stay on surface streets. We work on all foreign and domestic vehicles and accept most extended warranty plans.
         </p>
         <p style={{ lineHeight: 1.8, color: "#444", marginBottom: "40px" }}>
-          We see a lot of Lowell trucks and SUVs that tow — boats and campers heading to Cedar Lake, trailers for work, and equipment for the farms south of town. Towing is hard on cooling systems, brakes, and transmissions, so we pay close attention to those systems and flag wear before a hot summer haul turns into a roadside problem. Built on 25+ years of family experience, we serve Lowell, Cedar Lake, Crown Point, and all of southern Lake County, Indiana.
+          We see a lot of Lowell trucks and SUVs that tow — boats and campers heading to Cedar Lake, trailers for work, and equipment for the farms south of town. Towing is hard on cooling systems, brakes, and transmissions, so we pay close attention to those systems and flag wear before a hot summer haul turns into a roadside problem. Built on {YEARS_EXPERIENCE} years of family experience, we serve Lowell, Cedar Lake, Crown Point, and all of southern Lake County, Indiana.
         </p>
 
         <h2 style={{ fontSize: "28px", marginBottom: "24px" }}>Auto Repair Services for Lowell Drivers</h2>

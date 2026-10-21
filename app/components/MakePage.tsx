@@ -5,8 +5,9 @@ import MakeCta from "./MakeCta";
 import { getMakePage, MAKE_BASE_URL, MAKE_DIRECTORY, type MakePageData } from "@/lib/make-pages";
 import { MODEL_PAGES } from "@/lib/model-pages";
 import styles from "../honda.module.css";
+import { SERVICE_AREAS } from "@/lib/business";
 
-const AREA_SERVED = ["Crown Point", "St. John", "Schererville", "Merrillville", "Cedar Lake"];
+const AREA_SERVED = SERVICE_AREAS;
 
 export function makeMetadata(page: MakePageData): Metadata {
   const url = `${MAKE_BASE_URL}/${page.slug}`;
