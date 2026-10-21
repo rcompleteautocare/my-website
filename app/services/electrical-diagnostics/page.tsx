@@ -1,5 +1,4 @@
 import RelatedServices from "@/app/components/RelatedServices";
-import LastUpdated from "@/app/components/LastUpdated";
 import ServiceFaqHub from "@/app/components/ServiceFaqHub";
 import { SERVICE_AREAS, AREA_SERVED_SCHEMA } from "@/lib/business";
 
@@ -55,7 +54,6 @@ export default function ElectricalDiagnostics() {
       </section>
 
       <section style={{ padding: "60px 24px", maxWidth: "800px", margin: "0 auto" }}>
-        <LastUpdated date="2026-04-18" />
         <h2 style={{ fontSize: "28px", marginBottom: "16px" }}>Expert Auto Electrical Diagnostics in Crown Point</h2>
         <p style={{ lineHeight: 1.8, color: "#444", marginBottom: "20px" }}>
           Modern vehicles have incredibly complex electrical systems. A single faulty sensor, bad ground, or failing module can cause symptoms that seem unrelated and are difficult to diagnose without the right equipment and expertise. At R Complete Auto Care in Crown Point, Indiana, we use professional-grade diagnostic tools to pinpoint electrical problems accurately — the first time.

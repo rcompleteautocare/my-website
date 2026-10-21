@@ -1,5 +1,4 @@
 import RelatedServices from "@/app/components/RelatedServices";
-import LastUpdated from "@/app/components/LastUpdated";
 import ServiceFaqHub from "@/app/components/ServiceFaqHub";
 import FinancingCallout from "@/app/components/FinancingCallout";
 import { SERVICE_AREAS, AREA_SERVED_SCHEMA } from "@/lib/business";
@@ -58,7 +57,6 @@ export default function AcHeatingRepair() {
       <FinancingCallout />
 
       <section style={{ padding: "60px 24px", maxWidth: "800px", margin: "0 auto" }}>
-        <LastUpdated date="2026-04-18" />
         <h2 style={{ fontSize: "28px", marginBottom: "16px" }}>Expert A/C &amp; Heating Repair in Crown Point</h2>
         <p style={{ lineHeight: 1.8, color: "#444", marginBottom: "20px" }}>
           Crown Point summers are hot and Indiana winters are brutal. When your A/C or heat stops working, you need it fixed fast. At R Complete Auto Care, we perform a thorough diagnostic of your entire climate control system before recommending any repair — so you only pay for what you actually need.

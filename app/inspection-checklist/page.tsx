@@ -22,7 +22,6 @@ export const metadata = {
 }
 
 import Link from "next/link";
-import LastUpdated from "@/app/components/LastUpdated";
 import { SERVICE_AREAS } from "@/lib/business";
 
 const sections = [
@@ -167,7 +166,6 @@ export default function InspectionChecklist() {
 
       {/* Intro */}
       <section style={{ padding: "60px 24px", maxWidth: "800px", margin: "0 auto" }}>
-        <LastUpdated date="2026-04-18" />
 
         <h2 style={{ fontSize: "28px", marginBottom: "16px" }}>Measurements, Not Guesses</h2>
         <p style={{ lineHeight: 1.8, color: "#444", marginBottom: "20px" }}>

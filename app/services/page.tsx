@@ -1,5 +1,4 @@
 import Link from "next/link";
-import LastUpdated from "@/app/components/LastUpdated";
 import { MAKE_DIRECTORY } from "@/lib/make-pages";
 import { SERVICE_AREAS } from "@/lib/business";
 
@@ -97,7 +96,6 @@ export default function ServicesIndex() {
       </section>
 
       <section style={{ padding: "60px 24px", maxWidth: "960px", margin: "0 auto" }}>
-        <LastUpdated date="2026-04-18" />
         <div style={{ display: "grid", gridTemplateColumns: "repeat(auto-fit, minmax(280px, 1fr))", gap: "16px" }}>
           {services.map(s => (
             <Link key={s.href} href={s.href} style={{ border: "1px solid #e0e0e0", borderLeft: "4px solid #e63946", borderRadius: "6px", padding: "20px", textDecoration: "none", color: "#1a1a1a", display: "block" }}>

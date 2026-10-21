@@ -23,7 +23,6 @@ export const metadata = {
 
 import RelatedServices from "@/app/components/RelatedServices";
 import ServiceFaqHub from "@/app/components/ServiceFaqHub";
-import LastUpdated from "@/app/components/LastUpdated";
 import { YEARS_EXPERIENCE, AREA_SERVED_SCHEMA, SAME_DAY_COPY } from "@/lib/business";
 export default function CheckEngineLight() {
   return (
@@ -47,7 +46,6 @@ export default function CheckEngineLight() {
 
       {/* What it means */}
       <section style={{ padding: "60px 24px", maxWidth: "800px", margin: "0 auto" }}>
-        <LastUpdated date="2026-04-18" />
         <h2 style={{ fontSize: "28px", marginBottom: "16px" }}>What Does a Check Engine Light Mean?</h2>
         <p style={{ lineHeight: 1.8, color: "#444", marginBottom: "24px" }}>
           Your check engine light can mean dozens of different things — from a loose gas cap to a failing catalytic converter or serious engine issue. The only way to know for sure is a proper diagnostic scan combined with hands-on inspection. At R Complete Auto Care, we don&apos;t just read the code number and guess. We trace the fault to its root cause before recommending a single repair.

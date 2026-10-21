@@ -1,5 +1,4 @@
 import Link from "next/link";
-import LastUpdated from "@/app/components/LastUpdated";
 import ServiceFaqHub from "@/app/components/ServiceFaqHub";
 import { SERVICE_AREAS, AREA_SERVED_SCHEMA } from "@/lib/business";
 
@@ -57,7 +56,6 @@ export default function Diagnostics() {
       </section>
 
       <section style={{ padding: "60px 24px", maxWidth: "800px", margin: "0 auto" }}>
-        <LastUpdated date="2026-04-18" />
         <h2 style={{ fontSize: "28px", marginBottom: "16px" }}>Crown Point&apos;s Diagnostic-First Auto Repair Shop</h2>
         <p style={{ lineHeight: 1.8, color: "#444", marginBottom: "20px" }}>
           R Complete Auto Care is built around one principle: find the real problem before recommending a single repair. Too many shops skip the diagnostic process — they guess, replace parts, and hope for the best. That costs you time and money.

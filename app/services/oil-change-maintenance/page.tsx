@@ -23,7 +23,6 @@ export const metadata = {
 
 import RelatedServices from "@/app/components/RelatedServices";
 import ServiceFaqHub from "@/app/components/ServiceFaqHub";
-import LastUpdated from "@/app/components/LastUpdated";
 import { SERVICE_AREAS, AREA_SERVED_SCHEMA } from "@/lib/business";
 export default function OilChangeMaintenance() {
   return (
@@ -53,7 +52,6 @@ export default function OilChangeMaintenance() {
 
       {/* Intro */}
       <section style={{ padding: "60px 24px", maxWidth: "800px", margin: "0 auto" }}>
-        <LastUpdated date="2026-04-18" />
         <h2 style={{ fontSize: "28px", marginBottom: "16px" }}>More Than Just an Oil Change</h2>
         <p style={{ lineHeight: 1.8, color: "#444", marginBottom: "20px" }}>
           At R Complete Auto Care in Crown Point, an oil change is never just an oil change. Every service includes a thorough multi-point inspection — we check fluid levels, brake pad thickness, tire condition, belt and hose condition, filters, lights, and anything else that could affect your vehicle&apos;s safety and reliability.

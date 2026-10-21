@@ -23,7 +23,6 @@ export const metadata = {
 
 import RelatedServices from "@/app/components/RelatedServices";
 import ServiceFaqHub from "@/app/components/ServiceFaqHub";
-import LastUpdated from "@/app/components/LastUpdated";
 import FinancingCallout from "@/app/components/FinancingCallout";
 import { SERVICE_AREAS, AREA_SERVED_SCHEMA } from "@/lib/business";
 export default function TransmissionRepair() {
@@ -56,7 +55,6 @@ export default function TransmissionRepair() {
 
       {/* Intro */}
       <section style={{ padding: "60px 24px", maxWidth: "800px", margin: "0 auto" }}>
-        <LastUpdated date="2026-04-18" />
         <h2 style={{ fontSize: "28px", marginBottom: "16px" }}>Diagnose Before You Spend</h2>
         <p style={{ lineHeight: 1.8, color: "#444", marginBottom: "20px" }}>
           Transmission repair is one of the most misdiagnosed — and most consequential — areas of auto repair. Many shops jump straight to a rebuild or replacement at the first sign of slipping or shifting problems. At R Complete Auto Care in Crown Point, we do it differently. We diagnose first. Every time.

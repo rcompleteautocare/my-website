@@ -24,7 +24,6 @@ export const metadata = {
 import Link from "next/link";
 import RelatedServices from "@/app/components/RelatedServices";
 import ServiceFaqHub from "@/app/components/ServiceFaqHub";
-import LastUpdated from "@/app/components/LastUpdated";
 import { SERVICE_AREAS, AREA_SERVED_SCHEMA, WARRANTY_PROVIDERS } from "@/lib/business";
 export default function ExtendedWarrantyRepair() {
   return (
@@ -54,7 +53,6 @@ export default function ExtendedWarrantyRepair() {
 
       {/* Intro */}
       <section style={{ padding: "60px 24px", maxWidth: "800px", margin: "0 auto" }}>
-        <LastUpdated date="2026-04-18" />
         <h2 style={{ fontSize: "28px", marginBottom: "16px" }}>Crown Point&apos;s Extended Warranty Repair Specialists</h2>
         <p style={{ lineHeight: 1.8, color: "#444", marginBottom: "20px" }}>
           Most auto repair shops in Crown Point and Northwest Indiana refuse extended warranty work. The documentation requirements are too demanding, the pre-authorisation calls take too long, and the adjusters push back on claims that lack detailed diagnostic evidence. Those shops tell you to go somewhere else.

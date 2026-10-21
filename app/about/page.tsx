@@ -1,6 +1,5 @@
 import Link from "next/link";
 import Image from "next/image";
-import LastUpdated from "@/app/components/LastUpdated";
 import { RATING } from "@/lib/rating";
 import { YEARS_EXPERIENCE, SERVICE_AREAS, OWNER_EMAIL } from "@/lib/business";
 
@@ -56,7 +55,6 @@ export default function About() {
       </section>
 
       <section style={{ padding: "60px 24px", maxWidth: "800px", margin: "0 auto" }}>
-        <LastUpdated date="2026-04-18" />
 
         <h2 style={{ fontSize: "28px", marginBottom: "16px" }}>Why We Started R Complete Auto Care in Crown Point</h2>
         <p style={{ lineHeight: 1.8, color: "#444", marginBottom: "20px" }}>

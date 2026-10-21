@@ -23,7 +23,6 @@ export const metadata = {
 
 import RelatedServices from "@/app/components/RelatedServices";
 import ServiceFaqHub from "@/app/components/ServiceFaqHub";
-import LastUpdated from "@/app/components/LastUpdated";
 import { SERVICE_AREAS, AREA_SERVED_SCHEMA } from "@/lib/business";
 export default function NoStartDiagnostics() {
   return (
@@ -53,7 +52,6 @@ export default function NoStartDiagnostics() {
 
       {/* Intro */}
       <section style={{ padding: "60px 24px", maxWidth: "800px", margin: "0 auto" }}>
-        <LastUpdated date="2026-04-18" />
         <h2 style={{ fontSize: "28px", marginBottom: "16px" }}>No-Start Diagnosis — Done Right the First Time</h2>
         <p style={{ lineHeight: 1.8, color: "#444", marginBottom: "20px" }}>
           When your car won&apos;t start, the instinct is to start replacing parts — battery, starter, alternator. But no-start conditions have many possible causes, and replacing parts without a proper diagnosis wastes time and often doesn&apos;t solve the problem. We&apos;ve seen customers replace part after part at other shops, only to bring the car to us and find a failed crankshaft position sensor or a fuel pump issue that a proper diagnostic would have caught immediately.

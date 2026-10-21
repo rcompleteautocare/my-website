@@ -23,7 +23,6 @@ export const metadata = {
 
 import RelatedServices from "@/app/components/RelatedServices";
 import ServiceFaqHub from "@/app/components/ServiceFaqHub";
-import LastUpdated from "@/app/components/LastUpdated";
 import FinancingCallout from "@/app/components/FinancingCallout";
 import { YEARS_EXPERIENCE, SERVICE_AREAS, AREA_SERVED_SCHEMA } from "@/lib/business";
 export default function EngineRepair() {
@@ -56,7 +55,6 @@ export default function EngineRepair() {
 
       {/* Intro */}
       <section style={{ padding: "60px 24px", maxWidth: "800px", margin: "0 auto" }}>
-        <LastUpdated date="2026-04-18" />
         <h2 style={{ fontSize: "28px", marginBottom: "16px" }}>Crown Point&apos;s Engine Repair Specialists</h2>
         <p style={{ lineHeight: 1.8, color: "#444", marginBottom: "20px" }}>
           Your engine is the heart of your vehicle. At R Complete Auto Care in Crown Point, we treat engine problems with the diagnostic rigor they deserve. We don&apos;t replace parts and hope — we find the exact root cause of the failure before we recommend a single repair. That means fewer comebacks, no unnecessary expenses, and a fix that actually holds.

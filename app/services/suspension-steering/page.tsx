@@ -24,7 +24,6 @@ export const metadata = {
 import Image from "next/image";
 import RelatedServices from "@/app/components/RelatedServices";
 import ServiceFaqHub from "@/app/components/ServiceFaqHub";
-import LastUpdated from "@/app/components/LastUpdated";
 import { SERVICE_AREAS, AREA_SERVED_SCHEMA } from "@/lib/business";
 export default function SuspensionSteering() {
   return (
@@ -54,7 +53,6 @@ export default function SuspensionSteering() {
 
       {/* Intro */}
       <section style={{ padding: "60px 24px", maxWidth: "800px", margin: "0 auto" }}>
-        <LastUpdated date="2026-04-18" />
         <h2 style={{ fontSize: "28px", marginBottom: "16px" }}>Crown Point Suspension &amp; Steering Specialists</h2>
         <p style={{ lineHeight: 1.8, color: "#444", marginBottom: "20px" }}>
           Your suspension system does more than just absorb bumps — it controls how your vehicle handles, steers, and stops. Worn struts and shocks don&apos;t just make the ride uncomfortable — they increase stopping distances, cause uneven tire wear, and reduce your ability to control the vehicle in emergency situations.
