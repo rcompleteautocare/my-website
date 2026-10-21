@@ -26,7 +26,7 @@ import ShopAddressCard from "./components/ShopAddressCard";
 import StickyMobileCta from "./components/StickyMobileCta";
 import TrustBadges from "./components/TrustBadges";
 import styles from "./home.module.css";
-import { SERVICE_AREAS, WARRANTY_PROVIDERS, SAME_DAY_COPY } from "@/lib/business";
+import { SERVICE_AREAS, CITY_PAGE_HREFS, WARRANTY_PROVIDERS, SAME_DAY_COPY } from "@/lib/business";
 
 export const metadata: Metadata = {
   title: "R Complete Auto Care | Auto Repair in Crown Point, IN",
@@ -103,18 +103,8 @@ const emergencyServices = [
   { title: "Transmission Problems", href: "/transmission-slipping-crown-point-in", icon: Wrench },
 ];
 
-const serviceAreas = [
-  { city: "Crown Point", href: "/auto-repair-crown-point-in" },
-  { city: "St. John", href: "/auto-repair-st-john-in" },
-  { city: "Schererville", href: "/auto-repair-schererville-in" },
-  { city: "Dyer" },
-  { city: "Cedar Lake", href: "/auto-repair-cedar-lake-in" },
-  { city: "Lowell" },
-  { city: "Merrillville", href: "/auto-repair-merrillville-in" },
-  { city: "Valparaiso" },
-  { city: "Munster" },
-  { city: "Hobart" },
-];
+// Towns with a landing page link to it; the rest render as plain text.
+const serviceAreas = SERVICE_AREAS.map((city) => ({ city, href: CITY_PAGE_HREFS[city] }));
 
 export default function Home() {
   return (
