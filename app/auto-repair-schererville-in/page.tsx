@@ -1,6 +1,7 @@
 import Link from "next/link";
 import BookButton from "@/components/BookButton";
 import ServiceSchema from "@/app/components/ServiceSchema";
+import { YEARS_EXPERIENCE } from "@/lib/business";
 
 export const metadata = {
   title: "Auto Repair in Schererville, IN | R Complete Auto Care",
@@ -53,7 +54,7 @@ export default function Schererville() {
       </section>
 
       <section style={{ background: "#e63946", color: "#fff", padding: "14px 24px", textAlign: "center", fontSize: "14px", fontWeight: "500" }}>
-        ✓ Diagnostic-First &nbsp;|&nbsp; ✓ Foreign & Domestic &nbsp;|&nbsp; ✓ Extended Warranty Accepted &nbsp;|&nbsp; ✓ 25+ Years Family Experience
+        ✓ Diagnostic-First &nbsp;|&nbsp; ✓ Foreign & Domestic &nbsp;|&nbsp; ✓ Extended Warranty Accepted &nbsp;|&nbsp; ✓ {YEARS_EXPERIENCE} Years Family Experience
       </section>
 
       <section style={{ padding: "60px 24px", maxWidth: "800px", margin: "0 auto" }}>
@@ -65,7 +66,7 @@ export default function Schererville() {
           Schererville drivers come to us because we give straight answers, fair prices, and repairs that actually fix the problem. Tired of dealership prices and upselling? We built this shop for drivers like you. We work on all foreign and domestic vehicles and proudly accept most extended warranty plans.
         </p>
         <p style={{ lineHeight: 1.8, color: "#444", marginBottom: "40px" }}>
-          Built on over 25 years of family experience in auto repair, we serve Schererville, Crown Point, St. John, Merrillville, and all of Lake County, Indiana.
+          Built on {YEARS_EXPERIENCE} years of family experience in auto repair, we serve Schererville, Crown Point, St. John, Merrillville, and all of Lake County, Indiana.
         </p>
 <p style={{ lineHeight: 1.8, color: "#444", marginBottom: "20px" }}>
   Schererville&apos;s US-30 corridor — past the Shops at Crosspoint and through the Wicker Park area — generates some of the heaviest stop-and-go traffic in Lake County. That kind of driving is particularly hard on brakes, transmissions, and cooling systems. Drivers along the US-30 and US-41 interchange frequently come to us after local quick-lube shops miss developing problems during routine oil changes.
@@ -116,7 +117,7 @@ export default function Schererville() {
         {[
           { q: "Is there a reliable auto repair shop near Schererville, IN?", a: "R Complete Auto Care in Crown Point — about 15 minutes from Schererville via US-30 or 109th Ave. We're a diagnostic-first shop, accept most extended warranties, and offer same-day service. Call (219) 262-2711." },
           { q: "My car daily-drives the US-30 / Crosspoint corridor — what fails first?", a: "The heavy stop-and-go on US-30 past Crosspoint Mall is hard on transmissions, brakes, and cooling fans. We often see fan clutch failures, premature brake pad wear, and transmission-solenoid complaints on vehicles that live on that stretch." },
-          { q: "I bought my extended warranty at the Schererville dealership — can I still use it here?", a: "Almost always yes. Most dealer-sold third-party contracts (Zurich, Endurance, AmTrust, GWC, Fidelity) allow any licensed independent shop. Bring us the contract — we'll confirm coverage and handle the claim end-to-end." },
+          { q: "I bought my extended warranty at the Schererville dealership — can I still use it here?", a: "Almost always yes. Most dealer-sold third-party contracts (Zurich, Endurance, AmTrust, GWC, Fidelity Warranty Services) allow any licensed independent shop. Bring us the contract — we'll confirm coverage and handle the claim end-to-end." },
           { q: "Do you service the Wicker Park neighborhood of Schererville?", a: "Yes — Wicker Park, Chapel Lakes, and the subdivisions off Joliet/Cline are all 12–15 minutes from our shop. We've serviced vehicles from all three for years." },
           { q: "How long is the drive from Schererville?", a: "About 15 minutes via US-30 east to US-41, then south on 109th into Crown Point. Slightly faster via 93rd / 109th during rush hour." },
           { q: "Do you offer same-day diagnostics for Schererville drivers?", a: "Yes — call before 10am and we'll do everything we can to complete the diagnostic the same day and return the vehicle ready to drive." },

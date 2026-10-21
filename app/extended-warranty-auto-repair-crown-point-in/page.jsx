@@ -2,6 +2,7 @@ import FaqSchema from '../components/FaqSchema'
 import ServiceSchema from '../components/ServiceSchema'
 import Link from 'next/link'
 import FaqAccordion from '../components/FaqAccordion'
+import { SERVICE_AREAS, WARRANTY_PROVIDERS } from '@/lib/business'
 
 export const metadata = {
   title: 'Warranty Claim Help Crown Point, IN | R Complete Auto Care',
@@ -36,7 +37,7 @@ const FAQS = [
   },
   {
     q: 'What extended warranty companies do you work with?',
-    a: "We work with most third-party extended warranty providers including CARS Protection Plus, Endurance, CarShield, CARCHEX, AmTrust/National Auto Care, Zurich, and Protect My Car. Call us with your provider name to confirm before bringing the vehicle in.",
+    a: "We work with most third-party extended warranty providers including CARS Protection Plus, Endurance, CarShield, CARCHEX, AmTrust, Zurich, and Protect My Car. Call us with your provider name to confirm before bringing the vehicle in.",
   },
   {
     q: 'My warranty company wants to send an inspector to the shop. Is that okay?',
@@ -76,7 +77,7 @@ export default function ExtendedWarrantyRepair() {
         </p>
         <a href="tel:2192622711" className="cta-button">📞 Call (219) 262-2711 — We&apos;ll Fight for Your Claim</a>
         <p className="address-line">1305 E Summit St, Crown Point, IN 46307 · Mon–Fri 8am–6pm · Sat 8am–2pm</p>
-        <p className="serving-line">Serving Crown Point · St. John · Schererville · Merrillville · Cedar Lake · Lowell · Hobart</p>
+        <p className="serving-line">Serving {SERVICE_AREAS.join(" · ")}</p>
 
         <p style={{ background: "#fff7ed", border: "1px solid #fdba74", borderRadius: "6px", padding: "16px 20px", marginTop: "24px" }}>
           <strong>This page is for urgent help.</strong> If you just want to understand our general
@@ -123,13 +124,7 @@ export default function ExtendedWarrantyRepair() {
 
         <h2>Extended Warranty Providers We Work With in Crown Point</h2>
         <ul>
-          <li>CARS Protection Plus</li>
-          <li>Endurance Warranty Services</li>
-          <li>CarShield</li>
-          <li>CARCHEX</li>
-          <li>AmTrust Financial / National Auto Care</li>
-          <li>Zurich / Dealer-sold extended warranties</li>
-          <li>Protect My Car</li>
+          {WARRANTY_PROVIDERS.map((provider) => <li key={provider}>{provider}</li>)}
           <li>Most other third-party providers — call (219) 262-2711 to confirm yours</li>
         </ul>
 

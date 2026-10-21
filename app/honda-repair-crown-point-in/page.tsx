@@ -4,6 +4,7 @@ import Link from "next/link";
 import HondaCta from "../components/HondaCta";
 import { HONDA_BASE_URL, HONDA_MODELS, HONDA_SERVICES, type HondaFaq } from "@/lib/honda-pages";
 import styles from "../honda.module.css";
+import { SERVICE_AREAS, AREA_SERVED_SCHEMA } from "@/lib/business";
 
 const url = `${HONDA_BASE_URL}/honda-repair-crown-point-in`;
 
@@ -31,7 +32,7 @@ const faqs: HondaFaq[] = [
 
 const schemas = [
   { "@context": "https://schema.org", "@type": "BreadcrumbList", itemListElement: [{ "@type": "ListItem", position: 1, name: "Home", item: HONDA_BASE_URL }, { "@type": "ListItem", position: 2, name: "Honda Repair", item: url }] },
-  { "@context": "https://schema.org", "@type": "Service", name: "Honda Repair and Diagnostics", serviceType: "Honda vehicle repair and maintenance", url, provider: { "@id": `${HONDA_BASE_URL}/#business` }, areaServed: ["Crown Point", "St. John", "Schererville", "Merrillville", "Cedar Lake", "Lowell", "Dyer", "Munster", "Highland", "Hobart", "Valparaiso"].map((name) => ({ "@type": "City", name, containedIn: { "@type": "State", name: "Indiana" } })) },
+  { "@context": "https://schema.org", "@type": "Service", name: "Honda Repair and Diagnostics", serviceType: "Honda vehicle repair and maintenance", url, provider: { "@id": `${HONDA_BASE_URL}/#business` }, areaServed: AREA_SERVED_SCHEMA },
   { "@context": "https://schema.org", "@type": "FAQPage", mainEntity: faqs.map(({ question, answer }) => ({ "@type": "Question", name: question, acceptedAnswer: { "@type": "Answer", text: answer } })) },
 ];
 
@@ -53,7 +54,7 @@ export default function HondaRepairHub() {
           <p className={styles.kicker}>Start with the exact vehicle</p>
           <h2>Honda systems change by model, year, and configuration</h2>
           <p>A Civic CVT concern, Pilot timing-belt question, Odyssey sliding-door problem, and CR-V AWD warning require different information and tests. We identify the engine, transmission, and drivetrain, listen to when the symptom occurs, and verify the cause before asking you to approve a repair.</p>
-          <p>Our Crown Point shop serves Honda drivers from St. John, Schererville, Merrillville, Cedar Lake, Lowell, Dyer, Munster, Highland, Hobart, Valparaiso, and surrounding Northwest Indiana communities.</p>
+          <p>Our Crown Point shop serves Honda drivers from {SERVICE_AREAS.filter((c) => c !== "Crown Point").join(", ")}, and surrounding Northwest Indiana communities.</p>
         </section>
 
         <div className={styles.photoBand}>

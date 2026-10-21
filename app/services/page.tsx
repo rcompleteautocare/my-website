@@ -1,6 +1,7 @@
 import Link from "next/link";
 import LastUpdated from "@/app/components/LastUpdated";
 import { MAKE_DIRECTORY } from "@/lib/make-pages";
+import { SERVICE_AREAS } from "@/lib/business";
 
 export const metadata = {
   title: "Auto Repair Services in Crown Point, IN | R Complete Auto Care",
@@ -35,7 +36,7 @@ const services = [
   { name: "Suspension & Steering", href: "/services/suspension-steering", desc: "Shocks, struts, tie rods, control arms, and alignment-related wear." },
   { name: "Oil Change & Maintenance", href: "/services/oil-change-maintenance", desc: "Conventional and full synthetic oil service with a multi-point inspection on every visit." },
   { name: "A/C & Heating Repair", href: "/services/ac-heating-repair", desc: "Weak cooling, no heat, strange smells — refrigerant service, heater cores, blend doors." },
-  { name: "Extended Warranty Repairs", href: "/services/extended-warranty-repair", desc: "CarShield, Endurance, CARS, Zurich and more. We verify coverage and handle the claim." },
+  { name: "Extended Warranty Repairs", href: "/services/extended-warranty-repair", desc: "CarShield, Endurance, CARS Protection Plus, Zurich and more. We verify coverage and handle the claim." },
 ];
 
 const SCHEMA = {
@@ -92,7 +93,7 @@ export default function ServicesIndex() {
       </section>
 
       <section style={{ background: "#e63946", color: "#fff", padding: "14px 24px", textAlign: "center", fontSize: "14px", fontWeight: "500" }}>
-        📍 Serving Crown Point · St. John · Schererville · Merrillville · Cedar Lake · Lowell · Hobart, Indiana
+        📍 Serving {SERVICE_AREAS.join(" · ")}, Indiana
       </section>
 
       <section style={{ padding: "60px 24px", maxWidth: "960px", margin: "0 auto" }}>

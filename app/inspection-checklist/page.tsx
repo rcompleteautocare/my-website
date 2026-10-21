@@ -23,6 +23,7 @@ export const metadata = {
 
 import Link from "next/link";
 import LastUpdated from "@/app/components/LastUpdated";
+import { SERVICE_AREAS } from "@/lib/business";
 
 const sections = [
   {
@@ -161,7 +162,7 @@ export default function InspectionChecklist() {
 
       {/* Serving bar */}
       <section style={{ background: "#e63946", color: "#fff", padding: "14px 24px", textAlign: "center", fontSize: "14px" }}>
-        📍 Serving Crown Point · St. John · Schererville · Merrillville · Cedar Lake · Lowell · Hobart, IN
+        📍 Serving {SERVICE_AREAS.join(" · ")}, IN
       </section>
 
       {/* Intro */}

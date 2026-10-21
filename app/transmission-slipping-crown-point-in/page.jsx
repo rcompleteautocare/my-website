@@ -2,6 +2,7 @@ import Link from 'next/link'
 import ServiceSchema from '../components/ServiceSchema'
 import FaqAccordion from '../components/FaqAccordion'
 import FaqSchema from '../components/FaqSchema'
+import { YEARS_EXPERIENCE, SERVICE_AREAS, SAME_DAY_COPY } from '@/lib/business'
 
 export const metadata = {
   title: 'Transmission Slipping in Crown Point, IN | R Complete Auto Care',
@@ -79,7 +80,7 @@ export default function TransmissionSlipping() {
         </p>
         <a href="tel:2192622711" className="cta-button">📞 Call (219) 262-2711 — Before You Authorize a Rebuild</a>
         <p className="address-line">1305 E Summit St, Crown Point, IN 46307 · Mon–Fri 8am–6pm · Sat 8am–2pm</p>
-        <p className="serving-line">Serving Crown Point · St. John · Schererville · Merrillville · Cedar Lake · Lowell · Hobart</p>
+        <p className="serving-line">Serving {SERVICE_AREAS.join(" · ")}</p>
 
         {/* ── DO THIS FIRST ── */}
         <h2>If Your Transmission Is Slipping Right Now — Do This First</h2>
@@ -186,12 +187,12 @@ export default function TransmissionSlipping() {
             <p>Another shop recommended a rebuild? Call us before you authorize. A second-opinion diagnostic can confirm whether major internal work is actually required.</p>
           </div>
           <div className="feature-item">
-            <strong>Same-Day Diagnostics</strong>
+            <strong>{SAME_DAY_COPY}</strong>
             <p>Most transmission diagnostics are completed the same day. You get a call with the root cause, repair options, and a clear estimate before any work begins.</p>
           </div>
           <div className="feature-item">
-            <strong>25+ Years Family Experience</strong>
-            <p>R Complete Auto Care has served Crown Point and Lake County for over 25 years. We have diagnosed transmission faults on every make and model — automatic, manual, and CVT.</p>
+            <strong>{YEARS_EXPERIENCE} Years Family Experience</strong>
+            <p>R Complete Auto Care has served Crown Point and Lake County for {YEARS_EXPERIENCE} years. We have diagnosed transmission faults on every make and model — automatic, manual, and CVT.</p>
           </div>
         </div>
 
@@ -201,7 +202,7 @@ export default function TransmissionSlipping() {
           Transmission repairs are among the most frequently covered items on extended warranty
           policies — including solenoids, torque converters, valve bodies, clutch packs, and full
           rebuilds. If your vehicle has coverage through CARS Protection Plus, Endurance, CarShield,
-          CARCHEX, AmTrust/National Auto Care, Zurich, or most other major providers, you may owe
+          CARCHEX, AmTrust, Zurich, or most other major providers, you may owe
           the authorization and any contract-defined customer responsibility.
         </p>
         <p>

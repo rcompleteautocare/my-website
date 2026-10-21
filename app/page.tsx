@@ -26,6 +26,7 @@ import ShopAddressCard from "./components/ShopAddressCard";
 import StickyMobileCta from "./components/StickyMobileCta";
 import TrustBadges from "./components/TrustBadges";
 import styles from "./home.module.css";
+import { SERVICE_AREAS, WARRANTY_PROVIDERS, SAME_DAY_COPY } from "@/lib/business";
 
 export const metadata: Metadata = {
   title: "R Complete Auto Care | Auto Repair in Crown Point, IN",
@@ -137,7 +138,7 @@ export default function Home() {
           <div className={styles.heroProof} aria-label="Why drivers choose R Complete Auto Care">
             <span><Star aria-hidden="true" size={17} fill="currentColor" /><strong>{RATING} Google Rating</strong><small>{REVIEW_COUNT}+ Google reviews</small></span>
             <span><ShieldCheck aria-hidden="true" size={18} /><strong>Extended Warranty</strong><small>Claims accepted</small></span>
-            <span><Timer aria-hidden="true" size={18} /><strong>Same-Day Diagnostics</strong><small>Appointments available</small></span>
+            <span><Timer aria-hidden="true" size={18} /><strong>{SAME_DAY_COPY}</strong><small>Call before 10am</small></span>
           </div>
           <div className={styles.heroDetails}>
             <span>Mon–Fri 8am–6pm · Sat 8am–2pm</span>
@@ -222,7 +223,7 @@ export default function Home() {
             <Star size={18} fill="currentColor" />
           </span>
           <strong>{RATING} on Google</strong>
-          <span>{REVIEW_COUNT} customer reviews</span>
+          <span>{REVIEW_COUNT}+ customer reviews</span>
         </div>
         <TrustBadges />
       </section>
@@ -244,7 +245,7 @@ export default function Home() {
         <div className={styles.providerPanel} aria-label="Extended warranty providers we work with">
           <p>Common providers</p>
           <div>
-            {['CarShield', 'SilverRock', 'Endurance', 'Fidelity', 'Zurich', 'American Auto Shield'].map((provider) => (
+            {WARRANTY_PROVIDERS.map((provider) => (
               <span key={provider}>{provider}</span>
             ))}
           </div>
@@ -255,7 +256,7 @@ export default function Home() {
       <section className={styles.metricsSection} aria-label="Shop qualifications and service metrics">
         <article><Star aria-hidden="true" /><strong>{REVIEW_COUNT}+</strong><span>Google Reviews</span></article>
         <article><UserRoundCheck aria-hidden="true" /><strong>ASE-Certified</strong><span>Technicians</span></article>
-        <article><ScanSearch aria-hidden="true" /><strong>Same-Day</strong><span>Diagnostics Available</span></article>
+        <article><ScanSearch aria-hidden="true" /><strong>{SAME_DAY_COPY}</strong><span>Call before 10am</span></article>
         <article><ClipboardCheck aria-hidden="true" /><strong>Processed Daily</strong><span>Extended Warranty Claims</span></article>
       </section>
 
@@ -383,7 +384,7 @@ export default function Home() {
         <div className={styles.sectionHeading}>
           <p className={styles.kicker}>Serving Northwest Indiana</p>
           <h2 id="service-area-heading">Your local diagnostic-first repair shop.</h2>
-          <p>Conveniently located in Crown Point for drivers from St. John, Schererville, Merrillville, Dyer, Cedar Lake, Lowell, Munster, Hobart, Valparaiso, and nearby communities.</p>
+          <p>Conveniently located in Crown Point for drivers from {SERVICE_AREAS.filter((c) => c !== "Crown Point").join(", ")}, and nearby communities.</p>
         </div>
         <div className={styles.serviceAreaGrid}>
           {serviceAreas.map(({ city, href }) => href ? (

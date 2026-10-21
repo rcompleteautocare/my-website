@@ -2,6 +2,7 @@ import RelatedServices from "@/app/components/RelatedServices";
 import LastUpdated from "@/app/components/LastUpdated";
 import ServiceFaqHub from "@/app/components/ServiceFaqHub";
 import FinancingCallout from "@/app/components/FinancingCallout";
+import { SERVICE_AREAS, AREA_SERVED_SCHEMA } from "@/lib/business";
 
 export const metadata = {
   title: 'AC & Heat Repair Crown Point, IN | R Complete Auto Care',
@@ -51,7 +52,7 @@ export default function AcHeatingRepair() {
       </section>
 
       <section style={{ background: "#e63946", color: "#fff", padding: "14px 24px", textAlign: "center", fontSize: "14px", fontWeight: "500" }}>
-        📍 Serving Crown Point · St. John · Schererville · Merrillville · Cedar Lake · Lowell · Hobart, Indiana
+        📍 Serving {SERVICE_AREAS.join(" · ")}, Indiana
       </section>
 
       <FinancingCallout />
@@ -170,7 +171,7 @@ export default function AcHeatingRepair() {
         { "@type": "ListItem", "position": 3, "name": "A/C & Heating Repair" }
       ]
     }).replace(/</g, "\u003c") }} />
-    <script type="application/ld+json" dangerouslySetInnerHTML={{ __html: "{\"@context\":\"https://schema.org\",\"@type\":\"Service\",\"@id\":\"https://www.rcompleteautocare.com/services/ac-heating-repair#service\",\"name\":\"A/C & Heating Repair\",\"serviceType\":\"Automotive A/C and Heating Repair\",\"url\":\"https://www.rcompleteautocare.com/services/ac-heating-repair\",\"provider\":{\"@id\":\"https://www.rcompleteautocare.com/#business\"},\"areaServed\":[{\"@type\":\"City\",\"name\":\"Crown Point\",\"containedIn\":{\"@type\":\"State\",\"name\":\"Indiana\"}},{\"@type\":\"City\",\"name\":\"St. John\",\"containedIn\":{\"@type\":\"State\",\"name\":\"Indiana\"}},{\"@type\":\"City\",\"name\":\"Schererville\",\"containedIn\":{\"@type\":\"State\",\"name\":\"Indiana\"}},{\"@type\":\"City\",\"name\":\"Merrillville\",\"containedIn\":{\"@type\":\"State\",\"name\":\"Indiana\"}},{\"@type\":\"City\",\"name\":\"Cedar Lake\",\"containedIn\":{\"@type\":\"State\",\"name\":\"Indiana\"}}],\"dateModified\":\"2026-04-18\"}".replace(/</g, "\u003c") }} />
+    <script type="application/ld+json" dangerouslySetInnerHTML={{ __html: "{\"@context\":\"https://schema.org\",\"@type\":\"Service\",\"@id\":\"https://www.rcompleteautocare.com/services/ac-heating-repair#service\",\"name\":\"A/C & Heating Repair\",\"serviceType\":\"Automotive A/C and Heating Repair\",\"url\":\"https://www.rcompleteautocare.com/services/ac-heating-repair\",\"provider\":{\"@id\":\"https://www.rcompleteautocare.com/#business\"},\"areaServed\":" + JSON.stringify(AREA_SERVED_SCHEMA) + ",\"dateModified\":\"2026-04-18\"}".replace(/</g, "\u003c") }} />
     <script type="application/ld+json" dangerouslySetInnerHTML={{ __html: "{\"@context\":\"https://schema.org\",\"@type\":\"WebPage\",\"@id\":\"https://www.rcompleteautocare.com/services/ac-heating-repair#webpage\",\"url\":\"https://www.rcompleteautocare.com/services/ac-heating-repair\",\"name\":\"A/C & Heating Repair in Crown Point, IN\",\"dateModified\":\"2026-04-18\",\"about\":{\"@id\":\"https://www.rcompleteautocare.com/#business\"}}".replace(/</g, "\u003c") }} />
   </div>
   );

@@ -1,6 +1,7 @@
 import Link from "next/link";
 import { MAKE_DIRECTORY } from "@/lib/make-pages";
 import BookButton from "@/components/BookButton";
+import { OWNER_EMAIL } from "@/lib/business";
 
 // Brand logos aren't part of lucide-react (it ships no social/brand marks),
 // so we use inline SVGs (viewBox 0 0 24 24, fill currentColor) for each profile.
@@ -42,7 +43,7 @@ export default function Footer() {
             1305 E Summit St<br />
             Crown Point, IN 46307<br />
             <a href="tel:2192622711" style={{ color: "#e63946" }}>(219) 262-2711</a><br />
-            <a href="mailto:Owner@rcompleteautocare.com" style={{ color: "#aaa" }}>Owner@rcompleteautocare.com</a>
+            <a href={`mailto:${OWNER_EMAIL}`} style={{ color: "#aaa" }}>{OWNER_EMAIL}</a>
           </div>
           <div style={{ display: "flex", gap: "16px", marginTop: "16px" }}>
             {SOCIALS.map(({ label, href, path }) => (

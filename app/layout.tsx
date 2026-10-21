@@ -4,6 +4,7 @@ import Nav from "./components/Nav";
 import Footer from "./components/Footer";
 import { RATING, REVIEW_COUNT } from "@/lib/rating";
 import SiteTracking from "@/components/SiteTracking";
+import { AREA_SERVED_SCHEMA, OWNER_EMAIL } from "@/lib/business";
 
 const ADS_TAG_ID = process.env.NEXT_PUBLIC_ADS_TAG_ID;
 const ADS_PHONE_LABEL = process.env.NEXT_PUBLIC_ADS_PHONE_CONVERSION_LABEL;
@@ -68,7 +69,7 @@ const SCHEMA = {
   name: "R Complete Auto Care",
   url: "https://www.rcompleteautocare.com",
   telephone: "(219) 262-2711",
-  email: "Owner@rcompleteautocare.com",
+  email: OWNER_EMAIL,
   image: [
     "https://www.rcompleteautocare.com/images/building-exterior-1200x800.webp",
     "https://www.rcompleteautocare.com/images/repair-bay-1200x800.webp",
@@ -132,18 +133,7 @@ const SCHEMA = {
     // Add when ready: "https://www.carfax.com/...", "https://repairpal.com/..."
   ],
   description: "Crown Point, Indiana diagnostic-first auto repair shop. Specializing in complex diagnostics, extended warranty repairs, and issues other shops misdiagnose.",
-  areaServed: [
-    { "@type": "City", name: "Crown Point", containedIn: { "@type": "State", name: "Indiana" } },
-    { "@type": "City", name: "St. John", containedIn: { "@type": "State", name: "Indiana" } },
-    { "@type": "City", name: "Schererville", containedIn: { "@type": "State", name: "Indiana" } },
-    { "@type": "City", name: "Merrillville", containedIn: { "@type": "State", name: "Indiana" } },
-    { "@type": "City", name: "Cedar Lake", containedIn: { "@type": "State", name: "Indiana" } },
-    { "@type": "City", name: "Dyer", containedIn: { "@type": "State", name: "Indiana" } },
-    { "@type": "City", name: "Lowell", containedIn: { "@type": "State", name: "Indiana" } },
-    { "@type": "City", name: "Munster", containedIn: { "@type": "State", name: "Indiana" } },
-    { "@type": "City", name: "Hobart", containedIn: { "@type": "State", name: "Indiana" } },
-    { "@type": "City", name: "Valparaiso", containedIn: { "@type": "State", name: "Indiana" } },
-  ],
+  areaServed: AREA_SERVED_SCHEMA,
   hasOfferCatalog: {
     "@type": "OfferCatalog",
     name: "Auto Repair Services",

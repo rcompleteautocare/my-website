@@ -1,6 +1,7 @@
 import Link from "next/link";
 import LastUpdated from "@/app/components/LastUpdated";
 import ServiceFaqHub from "@/app/components/ServiceFaqHub";
+import { SERVICE_AREAS, AREA_SERVED_SCHEMA } from "@/lib/business";
 
 export const metadata = {
   title: "Auto Diagnostics Crown Point IN | R Complete Auto Care",
@@ -52,7 +53,7 @@ export default function Diagnostics() {
       </section>
 
       <section style={{ background: "#e63946", color: "#fff", padding: "14px 24px", textAlign: "center", fontSize: "14px", fontWeight: "500" }}>
-        📍 Serving Crown Point · St. John · Schererville · Merrillville · Cedar Lake · Lowell · Hobart, Indiana
+        📍 Serving {SERVICE_AREAS.join(" · ")}, Indiana
       </section>
 
       <section style={{ padding: "60px 24px", maxWidth: "800px", margin: "0 auto" }}>
@@ -203,7 +204,7 @@ export default function Diagnostics() {
     { "@type": "ListItem", "position": 3, "name": "Auto Diagnostics" }
   ]
 }).replace(/</g, "\u003c") }} />
-    <script type="application/ld+json" dangerouslySetInnerHTML={{ __html: "{\"@context\":\"https://schema.org\",\"@type\":\"Service\",\"@id\":\"https://www.rcompleteautocare.com/services/diagnostics#service\",\"name\":\"Auto Diagnostics\",\"serviceType\":\"Auto Diagnostics\",\"url\":\"https://www.rcompleteautocare.com/services/diagnostics\",\"provider\":{\"@id\":\"https://www.rcompleteautocare.com/#business\"},\"areaServed\":[{\"@type\":\"City\",\"name\":\"Crown Point\",\"containedIn\":{\"@type\":\"State\",\"name\":\"Indiana\"}},{\"@type\":\"City\",\"name\":\"St. John\",\"containedIn\":{\"@type\":\"State\",\"name\":\"Indiana\"}},{\"@type\":\"City\",\"name\":\"Schererville\",\"containedIn\":{\"@type\":\"State\",\"name\":\"Indiana\"}},{\"@type\":\"City\",\"name\":\"Merrillville\",\"containedIn\":{\"@type\":\"State\",\"name\":\"Indiana\"}},{\"@type\":\"City\",\"name\":\"Cedar Lake\",\"containedIn\":{\"@type\":\"State\",\"name\":\"Indiana\"}}],\"dateModified\":\"2026-04-18\"}".replace(/</g, "\u003c") }} />
+    <script type="application/ld+json" dangerouslySetInnerHTML={{ __html: "{\"@context\":\"https://schema.org\",\"@type\":\"Service\",\"@id\":\"https://www.rcompleteautocare.com/services/diagnostics#service\",\"name\":\"Auto Diagnostics\",\"serviceType\":\"Auto Diagnostics\",\"url\":\"https://www.rcompleteautocare.com/services/diagnostics\",\"provider\":{\"@id\":\"https://www.rcompleteautocare.com/#business\"},\"areaServed\":" + JSON.stringify(AREA_SERVED_SCHEMA) + ",\"dateModified\":\"2026-04-18\"}".replace(/</g, "\u003c") }} />
     <script type="application/ld+json" dangerouslySetInnerHTML={{ __html: "{\"@context\":\"https://schema.org\",\"@type\":\"WebPage\",\"@id\":\"https://www.rcompleteautocare.com/services/diagnostics#webpage\",\"url\":\"https://www.rcompleteautocare.com/services/diagnostics\",\"name\":\"Auto Diagnostics in Crown Point, IN\",\"dateModified\":\"2026-04-18\",\"about\":{\"@id\":\"https://www.rcompleteautocare.com/#business\"}}".replace(/</g, "\u003c") }} />
   </div>
   );

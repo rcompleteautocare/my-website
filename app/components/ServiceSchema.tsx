@@ -1,7 +1,8 @@
+import { SERVICE_AREAS } from "@/lib/business"
 // Shared Service JSON-LD tied to the LocalBusiness entity (#business).
 // Reuses the site-wide escaping pattern: JSON.stringify(...).replace(/</g, "<").
 const BASE = "https://www.rcompleteautocare.com";
-const AREA_SERVED = ["Crown Point", "St. John", "Schererville", "Merrillville", "Cedar Lake"];
+const AREA_SERVED = SERVICE_AREAS;
 
 export default function ServiceSchema({
   name,

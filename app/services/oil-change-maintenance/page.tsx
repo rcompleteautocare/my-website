@@ -24,6 +24,7 @@ export const metadata = {
 import RelatedServices from "@/app/components/RelatedServices";
 import ServiceFaqHub from "@/app/components/ServiceFaqHub";
 import LastUpdated from "@/app/components/LastUpdated";
+import { SERVICE_AREAS, AREA_SERVED_SCHEMA } from "@/lib/business";
 export default function OilChangeMaintenance() {
   return (
     <div style={{ color: "#1a1a1a" }}>
@@ -47,7 +48,7 @@ export default function OilChangeMaintenance() {
 
       {/* Serving bar */}
       <section style={{ background: "#e63946", color: "#fff", padding: "14px 24px", textAlign: "center", fontSize: "14px" }}>
-        📍 Serving Crown Point · St. John · Schererville · Merrillville · Cedar Lake · Lowell · Hobart, IN
+        📍 Serving {SERVICE_AREAS.join(" · ")}, IN
       </section>
 
       {/* Intro */}
@@ -263,7 +264,7 @@ export default function OilChangeMaintenance() {
     { "@type": "ListItem", "position": 3, "name": "Oil Change & Maintenance" }
   ]
 }).replace(/</g, "\u003c") }} />
-    <script type="application/ld+json" dangerouslySetInnerHTML={{ __html: "{\"@context\":\"https://schema.org\",\"@type\":\"Service\",\"@id\":\"https://www.rcompleteautocare.com/services/oil-change-maintenance#service\",\"name\":\"Oil Change & Maintenance\",\"serviceType\":\"Oil Change and Maintenance\",\"url\":\"https://www.rcompleteautocare.com/services/oil-change-maintenance\",\"provider\":{\"@id\":\"https://www.rcompleteautocare.com/#business\"},\"areaServed\":[{\"@type\":\"City\",\"name\":\"Crown Point\",\"containedIn\":{\"@type\":\"State\",\"name\":\"Indiana\"}},{\"@type\":\"City\",\"name\":\"St. John\",\"containedIn\":{\"@type\":\"State\",\"name\":\"Indiana\"}},{\"@type\":\"City\",\"name\":\"Schererville\",\"containedIn\":{\"@type\":\"State\",\"name\":\"Indiana\"}},{\"@type\":\"City\",\"name\":\"Merrillville\",\"containedIn\":{\"@type\":\"State\",\"name\":\"Indiana\"}},{\"@type\":\"City\",\"name\":\"Cedar Lake\",\"containedIn\":{\"@type\":\"State\",\"name\":\"Indiana\"}}],\"dateModified\":\"2026-04-18\"}".replace(/</g, "\u003c") }} />
+    <script type="application/ld+json" dangerouslySetInnerHTML={{ __html: "{\"@context\":\"https://schema.org\",\"@type\":\"Service\",\"@id\":\"https://www.rcompleteautocare.com/services/oil-change-maintenance#service\",\"name\":\"Oil Change & Maintenance\",\"serviceType\":\"Oil Change and Maintenance\",\"url\":\"https://www.rcompleteautocare.com/services/oil-change-maintenance\",\"provider\":{\"@id\":\"https://www.rcompleteautocare.com/#business\"},\"areaServed\":" + JSON.stringify(AREA_SERVED_SCHEMA) + ",\"dateModified\":\"2026-04-18\"}".replace(/</g, "\u003c") }} />
     <script type="application/ld+json" dangerouslySetInnerHTML={{ __html: "{\"@context\":\"https://schema.org\",\"@type\":\"WebPage\",\"@id\":\"https://www.rcompleteautocare.com/services/oil-change-maintenance#webpage\",\"url\":\"https://www.rcompleteautocare.com/services/oil-change-maintenance\",\"name\":\"Oil Change & Maintenance in Crown Point, IN\",\"dateModified\":\"2026-04-18\",\"about\":{\"@id\":\"https://www.rcompleteautocare.com/#business\"}}".replace(/</g, "\u003c") }} />
   </div>
   );

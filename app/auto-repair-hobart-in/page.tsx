@@ -1,6 +1,7 @@
 import Link from "next/link";
 import BookButton from "@/components/BookButton";
 import ServiceSchema from "@/app/components/ServiceSchema";
+import { YEARS_EXPERIENCE, SERVICE_AREAS } from "@/lib/business";
 
 export const metadata = {
   title: "Auto Repair in Hobart, IN | R Complete Auto Care",
@@ -44,7 +45,7 @@ const FAQS = [
   { q: "How far is your shop from Hobart?", a: "About 15 minutes. Most Hobart drivers head south on SR-51 (Colorado Street) to US-30 and into Crown Point, or take I-65 south a couple of exits — either way avoids the worst of the retail traffic." },
   { q: "I do a lot of stop-and-go on US-30 near Southlake Mall — what wears out first?", a: "Constant stop-and-go along the US-30 retail corridor and around Southlake Mall is hard on brakes, transmission torque converters, and cooling systems that sit idling in traffic. We measure brake and fluid condition on a diagnostic so you can plan ahead instead of reacting to a warning light." },
   { q: "Hobart winters get rough near the lake — can you help with cold-start problems?", a: "Yes. Lake-effect cold off Lake Michigan is hard on batteries, starters, and heater cores. If your vehicle cranks slowly, won't start, or is slow to blow warm air, we test the actual cause before replacing parts so the fix holds through the season." },
-  { q: "Do you accept extended warranties for Hobart drivers?", a: "Yes — we work with CarShield, Endurance, CARS Protection, Zurich, AmTrust and most providers. We verify coverage before you bring the vehicle in so you know what's covered before any work begins." },
+  { q: "Do you accept extended warranties for Hobart drivers?", a: "Yes — we work with CarShield, Endurance, CARS Protection Plus, Zurich, AmTrust and most providers. We verify coverage before you bring the vehicle in so you know what's covered before any work begins." },
   { q: "Do you service vehicles from the Deep River and downtown Lake George areas?", a: "Yes. Whether you're near Deep River County Park, downtown Hobart on Lake George, or out by US-6, the drive to our Crown Point shop is a straightforward 15 minutes. Call (219) 262-2711 and we'll coordinate a drop-off that fits your day." },
 ];
 
@@ -73,11 +74,11 @@ export default function Hobart() {
       </section>
 
       <section style={{ background: "#e63946", color: "#fff", padding: "14px 24px", textAlign: "center", fontSize: "14px", fontWeight: "500" }}>
-        ✓ Diagnostic-First &nbsp;|&nbsp; ✓ Foreign &amp; Domestic &nbsp;|&nbsp; ✓ Extended Warranty Accepted &nbsp;|&nbsp; ✓ 25+ Years Family Experience
+        ✓ Diagnostic-First &nbsp;|&nbsp; ✓ Foreign &amp; Domestic &nbsp;|&nbsp; ✓ Extended Warranty Accepted &nbsp;|&nbsp; ✓ {YEARS_EXPERIENCE} Years Family Experience
       </section>
 
       <section style={{ background: "#1a1a1a", color: "#ddd", padding: "12px 24px", textAlign: "center", fontSize: "13px" }}>
-        📍 Serving Crown Point · St. John · Schererville · Merrillville · Cedar Lake · Lowell · Hobart, Indiana
+        📍 Serving {SERVICE_AREAS.join(" · ")}, Indiana
       </section>
 
       <section style={{ padding: "60px 24px", maxWidth: "800px", margin: "0 auto" }}>
@@ -92,7 +93,7 @@ export default function Hobart() {
           Getting to us is easy: south on SR-51 (Colorado Street) to US-30 and west into Crown Point, or a couple of exits down I-65. We work on all foreign and domestic vehicles and accept most extended warranty plans.
         </p>
         <p style={{ lineHeight: 1.8, color: "#444", marginBottom: "40px" }}>
-          Hobart&apos;s spot near Lake Michigan means real lake-effect winters, and that&apos;s hard on batteries, starters, and heater cores. Every fall we see cold-start and no-heat complaints from Hobart, Lake Station, and the Deep River area — and we test the actual cause instead of throwing a battery at it and hoping. Built on 25+ years of family experience, we serve Hobart, Merrillville, Crown Point, and all of northern Lake County, Indiana.
+          Hobart&apos;s spot near Lake Michigan means real lake-effect winters, and that&apos;s hard on batteries, starters, and heater cores. Every fall we see cold-start and no-heat complaints from Hobart, Lake Station, and the Deep River area — and we test the actual cause instead of throwing a battery at it and hoping. Built on {YEARS_EXPERIENCE} years of family experience, we serve Hobart, Merrillville, Crown Point, and all of northern Lake County, Indiana.
         </p>
 
         <h2 style={{ fontSize: "28px", marginBottom: "24px" }}>Auto Repair Services for Hobart Drivers</h2>

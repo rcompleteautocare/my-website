@@ -5,6 +5,7 @@ import HondaBreadcrumbs from "./HondaBreadcrumbs";
 import HondaCta from "./HondaCta";
 import { getHondaPage, HONDA_BASE_URL, type HondaPageData } from "@/lib/honda-pages";
 import styles from "../honda.module.css";
+import { AREA_SERVED_SCHEMA } from "@/lib/business";
 
 const generalServiceLinks: Record<string, { href: string; label: string }[]> = {
   "honda-transmission-repair-crown-point-in": [{ href: "/services/transmission-repair", label: "General transmission repair" }],
@@ -46,7 +47,7 @@ const schema = (page: HondaPageData) => {
       serviceType: page.shortName,
       url,
       provider: { "@id": `${HONDA_BASE_URL}/#business` },
-      areaServed: ["Crown Point", "St. John", "Schererville", "Merrillville", "Cedar Lake", "Lowell", "Dyer", "Munster", "Highland", "Hobart", "Valparaiso"].map((name) => ({ "@type": "City", name, containedIn: { "@type": "State", name: "Indiana" } })),
+      areaServed: AREA_SERVED_SCHEMA,
     },
     {
       "@context": "https://schema.org",

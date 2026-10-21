@@ -24,6 +24,7 @@ export const metadata = {
 import RelatedServices from "@/app/components/RelatedServices";
 import ServiceFaqHub from "@/app/components/ServiceFaqHub";
 import LastUpdated from "@/app/components/LastUpdated";
+import { YEARS_EXPERIENCE, AREA_SERVED_SCHEMA, SAME_DAY_COPY } from "@/lib/business";
 export default function CheckEngineLight() {
   return (
     <div style={{ color: "#1a1a1a" }}>
@@ -39,7 +40,7 @@ export default function CheckEngineLight() {
           Don&apos;t ignore that warning light. Our diagnostic-first approach finds the real problem — fast. We trace fault codes to their root cause, not just clear them and hope for the best.
         </p>
         <a href="tel:2192622711" style={{ background: "#e63946", color: "#fff", padding: "14px 32px", borderRadius: "6px", fontWeight: "bold", textDecoration: "none", fontSize: "18px" }}>
-          📞 Call (219) 262-2711 — Same-Day Diagnostics
+          📞 Call (219) 262-2711 — {SAME_DAY_COPY}
         </a>
         <p style={{ marginTop: "16px", color: "#aaa", fontSize: "14px" }}>Mon–Fri 8am–6pm · Sat 8am–2pm · 1305 E Summit St, Crown Point, IN 46307</p>
       </section>
@@ -109,7 +110,7 @@ export default function CheckEngineLight() {
               { title: "Same-Day Diagnostics", desc: "Most check engine light diagnostics completed the same day, with a call before any work begins." },
               { title: "All Makes & Models", desc: "Foreign and domestic vehicles welcome. Honda, Toyota, Ford, GM, BMW, Mercedes and more." },
               { title: "Extended Warranty Accepted", desc: "We work with most extended warranty providers and handle the entire claims process for you." },
-              { title: "25+ Years Family Experience", desc: "Diagnostic expertise built over decades — we've seen every code, every failure, every pattern." },
+              { title: `${YEARS_EXPERIENCE} Years Family Experience`, desc: "Diagnostic expertise built over decades — we've seen every code, every failure, every pattern." },
             ].map(item => (
               <div key={item.title} style={{ border: "1px solid #e0e0e0", borderLeft: "4px solid #e63946", borderRadius: "4px", padding: "16px" }}>
                 <div style={{ fontWeight: "bold", marginBottom: "8px" }}>{item.title}</div>
@@ -124,7 +125,7 @@ export default function CheckEngineLight() {
       <section style={{ padding: "60px 24px", maxWidth: "800px", margin: "0 auto" }}>
         <h2 style={{ fontSize: "28px", marginBottom: "16px" }}>Extended Warranty Coverage for Check Engine Light Repairs</h2>
         <p style={{ lineHeight: 1.8, color: "#444", marginBottom: "16px" }}>
-          If your vehicle is covered by an extended warranty and your check engine light is on, you may owe nothing out of pocket for the diagnosis and repair. R Complete Auto Care works with most major extended warranty providers including CarShield, Endurance, CARS Protection, and AmTrust.
+          If your vehicle is covered by an extended warranty and your check engine light is on, you may owe nothing out of pocket for the diagnosis and repair. R Complete Auto Care works with most major extended warranty providers including CarShield, Endurance, CARS Protection Plus, and AmTrust.
         </p>
         <p style={{ lineHeight: 1.8, color: "#444", marginBottom: "24px" }}>
           Call us with your warranty information before you bring the vehicle in and we&apos;ll verify your coverage, handle the claim paperwork, and communicate directly with your warranty company. You just approve the work and pick up your car.
@@ -240,7 +241,7 @@ export default function CheckEngineLight() {
     { "@type": "ListItem", "position": 3, "name": "Check Engine Light Diagnostics" }
   ]
 }).replace(/</g, "\u003c") }} />
-    <script type="application/ld+json" dangerouslySetInnerHTML={{ __html: "{\"@context\":\"https://schema.org\",\"@type\":\"Service\",\"@id\":\"https://www.rcompleteautocare.com/services/check-engine-light#service\",\"name\":\"Check Engine Light Diagnostics\",\"serviceType\":\"Check Engine Light Diagnostics\",\"url\":\"https://www.rcompleteautocare.com/services/check-engine-light\",\"provider\":{\"@id\":\"https://www.rcompleteautocare.com/#business\"},\"areaServed\":[{\"@type\":\"City\",\"name\":\"Crown Point\",\"containedIn\":{\"@type\":\"State\",\"name\":\"Indiana\"}},{\"@type\":\"City\",\"name\":\"St. John\",\"containedIn\":{\"@type\":\"State\",\"name\":\"Indiana\"}},{\"@type\":\"City\",\"name\":\"Schererville\",\"containedIn\":{\"@type\":\"State\",\"name\":\"Indiana\"}},{\"@type\":\"City\",\"name\":\"Merrillville\",\"containedIn\":{\"@type\":\"State\",\"name\":\"Indiana\"}},{\"@type\":\"City\",\"name\":\"Cedar Lake\",\"containedIn\":{\"@type\":\"State\",\"name\":\"Indiana\"}}],\"dateModified\":\"2026-04-18\"}".replace(/</g, "\u003c") }} />
+    <script type="application/ld+json" dangerouslySetInnerHTML={{ __html: "{\"@context\":\"https://schema.org\",\"@type\":\"Service\",\"@id\":\"https://www.rcompleteautocare.com/services/check-engine-light#service\",\"name\":\"Check Engine Light Diagnostics\",\"serviceType\":\"Check Engine Light Diagnostics\",\"url\":\"https://www.rcompleteautocare.com/services/check-engine-light\",\"provider\":{\"@id\":\"https://www.rcompleteautocare.com/#business\"},\"areaServed\":" + JSON.stringify(AREA_SERVED_SCHEMA) + ",\"dateModified\":\"2026-04-18\"}".replace(/</g, "\u003c") }} />
     <script type="application/ld+json" dangerouslySetInnerHTML={{ __html: "{\"@context\":\"https://schema.org\",\"@type\":\"WebPage\",\"@id\":\"https://www.rcompleteautocare.com/services/check-engine-light#webpage\",\"url\":\"https://www.rcompleteautocare.com/services/check-engine-light\",\"name\":\"Check Engine Light Diagnostics in Crown Point, IN\",\"dateModified\":\"2026-04-18\",\"about\":{\"@id\":\"https://www.rcompleteautocare.com/#business\"}}".replace(/</g, "\u003c") }} />
   </div>
   );
