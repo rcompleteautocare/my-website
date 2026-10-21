@@ -23,7 +23,7 @@ R Complete Auto Care is a diagnostic-first auto repair shop located in Crown Poi
 - Hours: Monday–Friday 8:00 AM–6:00 PM, Saturday 8:00 AM–2:00 PM, Sunday Closed
 - Google Rating: ${RATING} stars
 - Estimate process: Upfront digital estimates are provided after diagnosis and before authorized work begins
-- Years in business: 25+
+- Combined technician experience: ${YEARS_EXPERIENCE} years
 - Certifications: Licensed auto repair facility; extended warranty approved shop
 
 ## Pages
