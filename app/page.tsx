@@ -128,7 +128,7 @@ export default function Home() {
           <div className={styles.heroProof} aria-label="Why drivers choose R Complete Auto Care">
             <span><Star aria-hidden="true" size={17} fill="currentColor" /><strong>{RATING} Google Rating</strong><small>{REVIEW_COUNT}+ Google reviews</small></span>
             <span><ShieldCheck aria-hidden="true" size={18} /><strong>Extended Warranty</strong><small>Claims accepted</small></span>
-            <span><Timer aria-hidden="true" size={18} /><strong>{SAME_DAY_COPY}</strong><small>Call before 10am</small></span>
+            <span><Timer aria-hidden="true" size={18} /><strong>{SAME_DAY_COPY}</strong></span>
             <span><Wrench aria-hidden="true" size={18} /><strong>Repair Warranty</strong><small>{SHOP_WARRANTY}</small></span>
           </div>
           <div className={styles.heroDetails}>
@@ -247,7 +247,7 @@ export default function Home() {
       <section className={styles.metricsSection} aria-label="Shop qualifications and service metrics">
         <article><Star aria-hidden="true" /><strong>{REVIEW_COUNT}+</strong><span>Google Reviews</span></article>
         <article><UserRoundCheck aria-hidden="true" /><strong>ASE-Certified</strong><span>Technicians</span></article>
-        <article><ScanSearch aria-hidden="true" /><strong>{SAME_DAY_COPY}</strong><span>Call before 10am</span></article>
+        <article><ScanSearch aria-hidden="true" /><strong>{SAME_DAY_COPY}</strong></article>
         <article><ClipboardCheck aria-hidden="true" /><strong>Processed Daily</strong><span>Extended Warranty Claims</span></article>
       </section>
 
