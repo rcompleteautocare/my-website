@@ -27,7 +27,8 @@ export const metadata: Metadata = {
   },
 }
 
-const appointmentTypes = ['Oil Change', 'Diagnostics', 'Brakes', 'Suspension', 'Engine Repair', 'Transmission Repair', 'Electrical Diagnosis', 'A/C Repair', 'Check Engine Light', 'Pre-Purchase Inspection', 'Used Car Inspection']
+// Keep in sync with the /services cards and the Contact form dropdown.
+const appointmentTypes = ['Auto Diagnostics', 'Check Engine Light Diagnostics', 'Electrical Diagnostics', 'No-Start Diagnostics', 'Engine Repair', 'Transmission Repair', 'Brake Repair', 'Suspension & Steering', 'Oil Change & Maintenance', 'A/C & Heating Repair', 'Extended Warranty Repairs', 'Pre-Purchase Inspection', 'Used Car Inspection']
 
 export default function BookPage() {
   return <main className={styles.page}>

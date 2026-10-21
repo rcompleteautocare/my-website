@@ -129,16 +129,19 @@ export default function Contact() {
                     style={{ width: "100%", padding: "10px 14px", border: "1px solid #ddd", borderRadius: "6px", fontSize: "15px", boxSizing: "border-box" }}
                   >
                     <option value="">Select a service...</option>
-                    <option>Check Engine Light</option>
+                    <option>Auto Diagnostics</option>
+                    <option>Check Engine Light Diagnostics</option>
+                    <option>Electrical Diagnostics</option>
+                    <option>No-Start Diagnostics</option>
                     <option>Engine Repair</option>
                     <option>Transmission Repair</option>
                     <option>Brake Repair</option>
-                    <option>Electrical Diagnostics</option>
                     <option>Suspension & Steering</option>
-                    <option>No-Start Diagnostics</option>
-                    <option>Extended Warranty Repair</option>
-                    <option>AC & Heating Repair</option>
                     <option>Oil Change & Maintenance</option>
+                    <option>A/C & Heating Repair</option>
+                    <option>Extended Warranty Repairs</option>
+                    <option>Pre-Purchase Inspection</option>
+                    <option>Used Car Inspection</option>
                     <option>Other</option>
                   </select>
                 </div>

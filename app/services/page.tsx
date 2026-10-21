@@ -38,6 +38,12 @@ const services = [
   { name: "Extended Warranty Repairs", href: "/services/extended-warranty-repair", desc: "CarShield, Endurance, CARS Protection Plus, Zurich and more. We verify coverage and handle the claim." },
 ];
 
+// Bookable inspections. No dedicated page yet, so cards link to /book.
+const INSPECTIONS = [
+  { name: "Pre-Purchase Inspection", desc: "A thorough check of a vehicle you're thinking about buying, before you commit. We document its condition, flag hidden problems, and tell you what it would need." },
+  { name: "Used Car Inspection", desc: "A full look at a used vehicle you already own or just bought. We check the systems that fail most often and tell you what needs attention now versus later." },
+];
+
 const SCHEMA = {
   "@context": "https://schema.org",
   "@type": "CollectionPage",
@@ -99,6 +105,21 @@ export default function ServicesIndex() {
         <div style={{ display: "grid", gridTemplateColumns: "repeat(auto-fit, minmax(280px, 1fr))", gap: "16px" }}>
           {services.map(s => (
             <Link key={s.href} href={s.href} style={{ border: "1px solid #e0e0e0", borderLeft: "4px solid #e63946", borderRadius: "6px", padding: "20px", textDecoration: "none", color: "#1a1a1a", display: "block" }}>
+              <div style={{ fontWeight: "bold", fontSize: "17px", marginBottom: "6px" }}>{s.name} →</div>
+              <div style={{ fontSize: "14px", color: "#555", lineHeight: 1.6 }}>{s.desc}</div>
+            </Link>
+          ))}
+        </div>
+      </section>
+
+      <section style={{ padding: "0 24px 60px", maxWidth: "960px", margin: "0 auto" }}>
+        <h2 style={{ fontSize: "28px", marginBottom: "8px" }}>Inspections</h2>
+        <p style={{ fontSize: "15px", color: "#555", lineHeight: 1.6, marginBottom: "20px" }}>
+          Schedule either inspection online or call (219) 262-2711.
+        </p>
+        <div style={{ display: "grid", gridTemplateColumns: "repeat(auto-fit, minmax(280px, 1fr))", gap: "16px" }}>
+          {INSPECTIONS.map(s => (
+            <Link key={s.name} href="/book" style={{ border: "1px solid #e0e0e0", borderLeft: "4px solid #e63946", borderRadius: "6px", padding: "20px", textDecoration: "none", color: "#1a1a1a", display: "block" }}>
               <div style={{ fontWeight: "bold", fontSize: "17px", marginBottom: "6px" }}>{s.name} →</div>
               <div style={{ fontSize: "14px", color: "#555", lineHeight: 1.6 }}>{s.desc}</div>
             </Link>
