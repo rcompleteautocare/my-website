@@ -33,12 +33,12 @@ export default function Nav() {
           the header markup below, otherwise mobile first paint renders the full
           desktop nav and then collapses it to the hamburger. */}
       <style>{`
-        @media (max-width: 768px) {
+        @media (max-width: 1000px) {
           .desktop-nav { display: none !important; }
           .mobile-menu-btn { display: block !important; }
           .header-hours { display: none !important; }
         }
-        @media (min-width: 769px) {
+        @media (min-width: 1001px) {
           .mobile-menu { display: none !important; }
         }
       `}</style>
