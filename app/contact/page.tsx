@@ -1,6 +1,7 @@
 "use client";
 import Image from "next/image";
-import { useState } from "react";
+import { useRef, useState } from "react";
+import { trackEvent } from "@/lib/analytics";
 import NeighborhoodMap from "../components/NeighborhoodMap";
 import { SERVICE_AREAS, OWNER_EMAIL, SERVICE_TYPES } from "@/lib/business";
 
@@ -8,6 +9,9 @@ export default function Contact() {
   const [status, setStatus] = useState<"idle" | "sending" | "success" | "error">("idle");
   const submitted = status === "success";
   const sending = status === "sending";
+  // Double-submit guard. A ref flips synchronously, so a second submit fired
+  // before React re-renders with the "sending" state is still ignored.
+  const submissionPending = useRef(false);
   const [form, setForm] = useState({
     name: "", phone: "", email: "", vehicle: "", service: "", message: ""
   });
@@ -18,13 +22,14 @@ export default function Contact() {
 
   const handleSubmit = async (e: React.FormEvent<HTMLFormElement>) => {
     e.preventDefault();
-    if (sending) return;
+    if (submissionPending.current) return;
     // Belt and braces on top of the native `required` attributes: a
     // whitespace-only value passes browser validation but is useless to us.
     if (!form.name.trim() || !form.phone.trim()) {
       setStatus("error");
       return;
     }
+    submissionPending.current = true;
     setStatus("sending");
     try {
       const res = await fetch("https://formspree.io/f/xykbqraj", {
@@ -34,9 +39,20 @@ export default function Contact() {
       });
       // fetch() only rejects on network failure; a 4xx/5xx from Formspree
       // resolves normally, so success must be decided by res.ok.
-      setStatus(res.ok ? "success" : "error");
+      if (!res.ok) {
+        setStatus("error");
+        return;
+      }
+      setStatus("success");
+      // Track only requests Formspree actually accepted.
+      trackEvent("generate_lead", { method: "contact_form" });
+      const tagId = process.env.NEXT_PUBLIC_ADS_TAG_ID;
+      const label = process.env.NEXT_PUBLIC_ADS_CONTACT_CONVERSION_LABEL;
+      if (tagId && label) trackEvent("conversion", { send_to: `${tagId}/${label}` });
     } catch {
       setStatus("error");
+    } finally {
+      submissionPending.current = false;
     }
   };
 
