@@ -258,11 +258,18 @@ export default function About() {
         ]
       }).replace(/</g, "\u003c") }} />
 
-      {/* Speakable */}
+      {/* AboutPage (a WebPage subtype) carrying the speakable selectors */}
       <script type="application/ld+json" dangerouslySetInnerHTML={{ __html: JSON.stringify({
         "@context": "https://schema.org",
-        "@type": "SpeakableSpecification",
-        "cssSelector": [".speakable", "h1"]
+        "@type": ["WebPage", "AboutPage"],
+        "@id": "https://www.rcompleteautocare.com/about#webpage",
+        "url": "https://www.rcompleteautocare.com/about",
+        "name": "About R Complete Auto Care",
+        "about": { "@id": "https://www.rcompleteautocare.com/#business" },
+        "speakable": {
+          "@type": "SpeakableSpecification",
+          "cssSelector": [".speakable", "h1"]
+        }
       }).replace(/</g, "\u003c") }} />
 
     </div>

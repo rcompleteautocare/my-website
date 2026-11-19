@@ -167,10 +167,25 @@ const SCHEMA = {
   ],
 };
 
-const SPEAKABLE_SCHEMA = {
+// Speakable must hang off a WebPage (or Article) node: a free-standing
+// SpeakableSpecification is not attached to anything and is ignored. This
+// generic WebPage node describes whichever page the layout is rendering (the
+// layout cannot know the URL, so it carries no url/@id) and points the
+// speakable selectors at the H1 and the .speakable TL;DR on that page.
+const WEBPAGE_SCHEMA = {
   "@context": "https://schema.org",
-  "@type": "SpeakableSpecification",
-  "cssSelector": ["h1", ".speakable"],
+  "@type": "WebPage",
+  isPartOf: {
+    "@type": "WebSite",
+    "@id": "https://www.rcompleteautocare.com/#website",
+    name: "R Complete Auto Care",
+    url: "https://www.rcompleteautocare.com",
+  },
+  about: { "@id": "https://www.rcompleteautocare.com/#business" },
+  speakable: {
+    "@type": "SpeakableSpecification",
+    cssSelector: ["h1", ".speakable"],
+  },
 };
 
 export default function RootLayout({ children }: { children: React.ReactNode }) {
@@ -192,7 +207,7 @@ export default function RootLayout({ children }: { children: React.ReactNode }) 
         />
         <script
           type="application/ld+json"
-          dangerouslySetInnerHTML={{ __html: JSON.stringify(SPEAKABLE_SCHEMA).replace(/</g, "\\u003c") }}
+          dangerouslySetInnerHTML={{ __html: JSON.stringify(WEBPAGE_SCHEMA).replace(/</g, "\\u003c") }}
         />
         <Nav />
         <main>{children}</main>
