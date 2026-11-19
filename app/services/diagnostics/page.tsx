@@ -27,6 +27,19 @@ export const metadata = {
   robots: { index: true, follow: true },
 };
 
+// This page's own FAQs. Rendered (and emitted as the page's single FAQPage
+// schema) by <ServiceFaqHub>, which appends the shared service questions this
+// page does not already answer — see lib/service-faqs.ts.
+const FAQS = [
+  { q: "Where can I get auto diagnostics in Crown Point, IN?", a: "R Complete Auto Care at 1305 E Summit St, Crown Point, IN 46307. Call (219) 262-2711. Open Mon–Fri 8am–6pm, Sat 8am–2pm. Most diagnostics completed same day." },
+  { q: "Why is a diagnostic important before repairs?", a: "Without a proper diagnosis, repairs are guesswork. We identify the exact problem so you only pay for what your vehicle actually needs — saving you time and money at our Crown Point shop." },
+  { q: "How long does an auto diagnostic take in Crown Point?", a: "Most diagnostics at our Crown Point location are completed the same day. We call you with our findings before doing any repair work." },
+  { q: "How much does a diagnostic cost in Crown Point?", a: "It depends on the complexity of the concern and how much testing the diagnosis requires. We tell you what the diagnosis involves before we begin, complete most diagnostics the same day, and call you with the findings before any repair is authorized." },
+  { q: "Do you work on all makes and models?", a: "Yes — all foreign and domestic vehicles including Honda, Toyota, BMW, Mercedes, Ford, Chevrolet, Dodge, Subaru, and more." },
+  { q: "Do you serve St. John, Schererville, and Merrillville for diagnostics?", a: "Yes! We're located in Crown Point and serve all of Lake County including St. John, Schererville, Merrillville, and Cedar Lake, Indiana." },
+  { q: "Do you accept extended warranties for diagnostic repairs?", a: "Yes! We work with most extended warranty providers and handle the claim paperwork and talk to the adjuster for you." },
+];
+
 export default function Diagnostics() {
   return (
     <div style={{ color: "#1a1a1a" }}>
@@ -96,21 +109,6 @@ export default function Diagnostics() {
           ))}
         </div>
 
-        <h2 style={{ fontSize: "28px", marginBottom: "24px" }}>Frequently Asked Questions — Auto Diagnostics in Crown Point, IN</h2>
-        {[
-          { q: "Where can I get auto diagnostics in Crown Point, IN?", a: "R Complete Auto Care at 1305 E Summit St, Crown Point, IN 46307. Call (219) 262-2711. Open Mon–Fri 8am–6pm, Sat 8am–2pm. Most diagnostics completed same day." },
-          { q: "Why is a diagnostic important before repairs?", a: "Without a proper diagnosis, repairs are guesswork. We identify the exact problem so you only pay for what your vehicle actually needs — saving you time and money at our Crown Point shop." },
-          { q: "How long does an auto diagnostic take in Crown Point?", a: "Most diagnostics at our Crown Point location are completed the same day. We call you with our findings before doing any repair work." },
-          { q: "How much does a diagnostic cost in Crown Point?", a: "It depends on the complexity of the concern and how much testing the diagnosis requires. We tell you what the diagnosis involves before we begin, complete most diagnostics the same day, and call you with the findings before any repair is authorized." },
-          { q: "Do you work on all makes and models?", a: "Yes — all foreign and domestic vehicles including Honda, Toyota, BMW, Mercedes, Ford, Chevrolet, Dodge, Subaru, and more." },
-          { q: "Do you serve St. John, Schererville, and Merrillville for diagnostics?", a: "Yes! We're located in Crown Point and serve all of Lake County including St. John, Schererville, Merrillville, and Cedar Lake, Indiana." },
-          { q: "Do you accept extended warranties for diagnostic repairs?", a: "Yes! We work with most extended warranty providers and handle the claim paperwork and talk to the adjuster for you." },
-        ].map(item => (
-          <div key={item.q} style={{ marginBottom: "20px", borderBottom: "1px solid #e0e0e0", paddingBottom: "20px" }}>
-            <div style={{ fontWeight: "bold", fontSize: "16px", marginBottom: "8px" }}>{item.q}</div>
-            <div style={{ color: "#555", lineHeight: 1.7 }}>{item.a}</div>
-          </div>
-        ))}
 
         <h2 style={{ fontSize: "24px", marginBottom: "16px" }}>Related Services</h2>
         <div style={{ display: "grid", gridTemplateColumns: "repeat(auto-fit, minmax(220px, 1fr))", gap: "12px" }}>
@@ -136,51 +134,7 @@ export default function Diagnostics() {
         </a>
       </section>
 
-      <ServiceFaqHub slug="diagnostics" />
-      <script
-  type="application/ld+json"
-  dangerouslySetInnerHTML={{ __html: JSON.stringify({
-    "@context": "https://schema.org",
-    "@type": "FAQPage",
-    "mainEntity": [
-      {
-        "@type": "Question",
-        "name": "Where can I get auto diagnostics in Crown Point, IN?",
-        "acceptedAnswer": { "@type": "Answer", "text": "R Complete Auto Care at 1305 E Summit St, Crown Point, IN 46307. Call (219) 262-2711. Open Mon–Fri 8am–6pm, Sat 8am–2pm. Most diagnostics completed same day." }
-      },
-      {
-        "@type": "Question",
-        "name": "Why is a diagnostic important before repairs?",
-        "acceptedAnswer": { "@type": "Answer", "text": "Without a proper diagnosis, repairs are guesswork. We identify the exact problem so you only pay for what your vehicle actually needs — saving you time and money at our Crown Point shop." }
-      },
-      {
-        "@type": "Question",
-        "name": "How long does an auto diagnostic take in Crown Point?",
-        "acceptedAnswer": { "@type": "Answer", "text": "Most diagnostics at our Crown Point location are completed the same day. We call you with our findings before doing any repair work." }
-      },
-      {
-        "@type": "Question",
-        "name": "How much does a diagnostic cost in Crown Point?",
-        "acceptedAnswer": { "@type": "Answer", "text": "It depends on the complexity of the concern and how much testing the diagnosis requires. We tell you what the diagnosis involves before we begin, complete most diagnostics the same day, and call you with the findings before any repair is authorized." }
-      },
-      {
-        "@type": "Question",
-        "name": "Do you work on all makes and models?",
-        "acceptedAnswer": { "@type": "Answer", "text": "Yes — all foreign and domestic vehicles including Honda, Toyota, BMW, Mercedes, Ford, Chevrolet, Dodge, Subaru, and more." }
-      },
-      {
-        "@type": "Question",
-        "name": "Do you serve St. John, Schererville, and Merrillville for diagnostics?",
-        "acceptedAnswer": { "@type": "Answer", "text": "Yes! We're located in Crown Point and serve all of Lake County including St. John, Schererville, Merrillville, and Cedar Lake, Indiana." }
-      },
-      {
-        "@type": "Question",
-        "name": "Do you accept extended warranties for diagnostic repairs?",
-        "acceptedAnswer": { "@type": "Answer", "text": "Yes! We work with most extended warranty providers and handle the claim paperwork and talk to the adjuster for you." }
-      }
-    ]
-  }).replace(/</g, "\u003c")}}
-/>
+      <ServiceFaqHub slug="diagnostics" faqs={FAQS} />
 <script type="application/ld+json" dangerouslySetInnerHTML={{ __html: JSON.stringify({
   "@context": "https://schema.org",
   "@type": "HowTo",

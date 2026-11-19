@@ -26,6 +26,19 @@ export const metadata = {
   robots: { index: true, follow: true },
 }
 
+// This page's own FAQs. Rendered (and emitted as the page's single FAQPage
+// schema) by <ServiceFaqHub>, which appends the shared service questions this
+// page does not already answer — see lib/service-faqs.ts.
+const FAQS = [
+  { q: "Where can I get A/C repair in Crown Point, IN?", a: "R Complete Auto Care at 1305 E Summit St, Crown Point, IN 46307. Call (219) 262-2711. Open Mon–Fri 8am–6pm, Sat 8am–2pm." },
+  { q: "Why is my A/C blowing warm air in Crown Point?", a: "Common causes include low refrigerant, a faulty compressor, a leaking condenser, or a failing expansion valve. We perform a full diagnostic to find the exact cause before recommending any repair." },
+  { q: "Why is my heater not working in my car?", a: "Common causes include a clogged heater core, low coolant, a faulty thermostat, or a blend door actuator failure. Crown Point winters make this a critical repair — call us today." },
+  { q: "How much does A/C repair cost in Crown Point?", a: "It depends on the specific repair needed. A refrigerant recharge often resolves the problem without replacing the compressor. We diagnose first and give you a clear estimate before any work begins." },
+  { q: "How long does A/C repair take?", a: "A refrigerant recharge can be done same-day. More complex repairs like a compressor or heater core replacement take longer. We give you an accurate timeline after diagnosis." },
+  { q: "Do you serve St. John, Schererville, and Merrillville for A/C repair?", a: "Yes! We're located in Crown Point and serve all of Lake County including St. John, Schererville, Merrillville, and Cedar Lake, Indiana." },
+  { q: "Do you accept extended warranties for A/C and heating repair?", a: "Yes! We work with most extended warranty providers. Call us to verify your coverage before scheduling." },
+];
+
 export default function AcHeatingRepair() {
   return (
     <div style={{ color: "#1a1a1a" }}>
@@ -101,26 +114,11 @@ export default function AcHeatingRepair() {
           ))}
         </div>
 
-        <h2 style={{ fontSize: "28px", marginBottom: "24px" }}>Frequently Asked Questions — A/C & Heating Repair in Crown Point, IN</h2>
-        {[
-          { q: "Where can I get A/C repair in Crown Point, IN?", a: "R Complete Auto Care at 1305 E Summit St, Crown Point, IN 46307. Call (219) 262-2711. Open Mon–Fri 8am–6pm, Sat 8am–2pm." },
-          { q: "Why is my A/C blowing warm air in Crown Point?", a: "Common causes include low refrigerant, a faulty compressor, a leaking condenser, or a failing expansion valve. We perform a full diagnostic to find the exact cause before recommending any repair." },
-          { q: "Why is my heater not working in my car?", a: "Common causes include a clogged heater core, low coolant, a faulty thermostat, or a blend door actuator failure. Crown Point winters make this a critical repair — call us today." },
-          { q: "How much does A/C repair cost in Crown Point?", a: "It depends on the specific repair needed. A refrigerant recharge often resolves the problem without replacing the compressor. We diagnose first and give you a clear estimate before any work begins." },
-          { q: "How long does A/C repair take?", a: "A refrigerant recharge can be done same-day. More complex repairs like a compressor or heater core replacement take longer. We give you an accurate timeline after diagnosis." },
-          { q: "Do you serve St. John, Schererville, and Merrillville for A/C repair?", a: "Yes! We're located in Crown Point and serve all of Lake County including St. John, Schererville, Merrillville, and Cedar Lake, Indiana." },
-          { q: "Do you accept extended warranties for A/C and heating repair?", a: "Yes! We work with most extended warranty providers. Call us to verify your coverage before scheduling." },
-        ].map(item => (
-          <div key={item.q} style={{ marginBottom: "20px", borderBottom: "1px solid #e0e0e0", paddingBottom: "20px" }}>
-            <div style={{ fontWeight: "bold", fontSize: "16px", marginBottom: "8px" }}>{item.q}</div>
-            <div style={{ color: "#555", lineHeight: 1.7 }}>{item.a}</div>
-          </div>
-        ))}
 
       </section>
 
       <RelatedServices slug="ac-heating-repair" />
-      <ServiceFaqHub slug="ac-heating-repair" />
+      <ServiceFaqHub slug="ac-heating-repair" faqs={FAQS} />
 
       <section style={{ background: "#e63946", color: "#fff", textAlign: "center", padding: "60px 24px" }}>
         <h2 style={{ fontSize: "28px", marginBottom: "12px" }}>A/C or Heat Not Working in Crown Point? Call Us Today.</h2>
@@ -131,22 +129,6 @@ export default function AcHeatingRepair() {
         </a>
       </section>
 
-      <script
-        type="application/ld+json"
-        dangerouslySetInnerHTML={{ __html: JSON.stringify({
-          "@context": "https://schema.org",
-          "@type": "FAQPage",
-          "mainEntity": [
-            { "@type": "Question", "name": "Where can I get A/C repair in Crown Point, IN?", "acceptedAnswer": { "@type": "Answer", "text": "R Complete Auto Care at 1305 E Summit St, Crown Point, IN 46307. Call (219) 262-2711. Open Mon–Fri 8am–6pm, Sat 8am–2pm." } },
-            { "@type": "Question", "name": "Why is my A/C blowing warm air in Crown Point?", "acceptedAnswer": { "@type": "Answer", "text": "Common causes include low refrigerant, a faulty compressor, a leaking condenser, or a failing expansion valve. We perform a full diagnostic to find the exact cause before recommending any repair." } },
-            { "@type": "Question", "name": "Why is my heater not working in my car?", "acceptedAnswer": { "@type": "Answer", "text": "Common causes include a clogged heater core, low coolant, a faulty thermostat, or a blend door actuator failure. Crown Point winters make this a critical repair — call us today." } },
-            { "@type": "Question", "name": "How much does A/C repair cost in Crown Point?", "acceptedAnswer": { "@type": "Answer", "text": "It depends on the specific repair needed. A refrigerant recharge often resolves the problem without replacing the compressor. We diagnose first and give you a clear estimate before any work begins." } },
-            { "@type": "Question", "name": "How long does A/C repair take?", "acceptedAnswer": { "@type": "Answer", "text": "A refrigerant recharge can be done same-day. More complex repairs like a compressor or heater core replacement take longer. We give you an accurate timeline after diagnosis." } },
-            { "@type": "Question", "name": "Do you serve St. John, Schererville, and Merrillville for A/C repair?", "acceptedAnswer": { "@type": "Answer", "text": "Yes! We're located in Crown Point and serve all of Lake County including St. John, Schererville, Merrillville, and Cedar Lake, Indiana." } },
-            { "@type": "Question", "name": "Do you accept extended warranties for A/C and heating repair?", "acceptedAnswer": { "@type": "Answer", "text": "Yes! We work with most extended warranty providers. Call us to verify your coverage before scheduling." } }
-          ]
-        }).replace(/</g, "\u003c")}}
-      />
 
     <script type="application/ld+json" dangerouslySetInnerHTML={{ __html: JSON.stringify({
       "@context": "https://schema.org",

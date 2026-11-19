@@ -23,24 +23,95 @@ export const serviceFaqConfig: Record<string, ServiceFaqConfig> = {
   "extended-warranty-repair": { name: "extended warranty repair", problem: "a covered vehicle component may have failed under the terms of a service contract", symptoms: "any mechanical or electrical concern that may qualify under the customer’s contract", diagnosis: "documenting the symptom and failed component with the tests required to establish cause of failure", unsafe: "Driving guidance depends on the failed system; stop for safety, overheating, oil-pressure, or severe drivability concerns.", maintenance: "keeping maintenance records and following the vehicle and contract requirements" },
 };
 
-export function buildServiceFaqs(slug: string): Faq[] {
+// The shared questions every service page can show, keyed by topic so a page
+// can leave one out when its own FAQ already answers it.
+//
+// Four former questions were removed outright because their templated answer
+// was not a real answer ("it depends", "may be available", a sales pitch):
+// "How much does <service> usually cost?", "How long does <service> take?",
+// "Do you offer same-day diagnostics?" and "Why choose R Complete Auto Care in
+// Crown Point?". Pages answer cost and timing specifically where they can.
+export type ServiceFaqTopic =
+  | "what" | "causes" | "symptoms" | "diagnosis" | "drive" | "makes"
+  | "code" | "estimate" | "warranty" | "prevent" | "bring";
+
+type TopicFaq = Faq & { topic: ServiceFaqTopic };
+
+function sharedFaqs(c: ServiceFaqConfig): TopicFaq[] {
+  return [
+    { topic: "what", q: `What is ${c.name}?`, a: `${c.name[0].toUpperCase()}${c.name.slice(1)} is the process of identifying or correcting ${c.problem}. R Complete Auto Care confirms the cause before recommending parts.` },
+    { topic: "causes", q: `What commonly causes the need for ${c.name}?`, a: `Common causes include ${c.problem}. The exact cause cannot be confirmed from a symptom or trouble code alone.` },
+    { topic: "symptoms", q: `What symptoms indicate I may need ${c.name}?`, a: `Watch for ${c.symptoms}. New, worsening, or intermittent symptoms are worth documenting and testing.` },
+    { topic: "diagnosis", q: `How does R Complete Auto Care diagnose this problem?`, a: `We begin with ${c.diagnosis}. We compare test results with specifications before presenting a repair plan.` },
+    { topic: "drive", q: `Can I keep driving before it is diagnosed?`, a: c.unsafe },
+    { topic: "makes", q: `Do you service both domestic and foreign vehicles?`, a: `Yes. We diagnose and service domestic, Asian, and European vehicles using procedures and information appropriate to the specific year, make, model, and system.` },
+    { topic: "code", q: `Will a trouble code identify the failed part?`, a: `No. A code identifies a system condition detected by the vehicle. Testing is needed to distinguish wiring, mechanical, control, and component causes.` },
+    { topic: "estimate", q: `Do you provide an estimate before repairs?`, a: `Yes. We explain the findings, priorities, estimate, and expected timing. No repair begins without customer approval.` },
+    { topic: "warranty", q: `Can this service be covered by an extended warranty?`, a: `Possibly. Coverage depends entirely on the customer’s contract, exclusions, maintenance requirements, failure cause, and administrator authorization. We can document the diagnosis and communicate with the administrator.` },
+    { topic: "prevent", q: `What can help prevent this problem?`, a: `Helpful steps include ${c.maintenance}. Prevention reduces risk but cannot eliminate normal wear or unexpected failures.` },
+    { topic: "bring", q: `What should I bring to my appointment?`, a: `Bring the vehicle, keys, relevant service records, warning details, and any extended-warranty contract or claim information. Note when the symptom occurs and what changes it.` },
+  ];
+}
+
+// Shared topics each page leaves out, because one of that page's own FAQs
+// (the `FAQS` array in app/services/<slug>/page.tsx) already answers the same
+// thing, or because the templated question does not make sense for the service.
+// The reason is noted per entry. Update this when a page's own FAQs change.
+export const omittedSharedTopics: Record<string, ServiceFaqTopic[]> = {
+  // page: "Do you accept extended warranties for A/C and heating repair?"
+  "ac-heating-repair": ["warranty"],
+  // page: "How do I know when my brakes need to be replaced?", "Is it safe to
+  // drive with grinding brakes?", "Do you accept extended warranties ...?"
+  "brake-repair": ["symptoms", "drive", "warranty"],
+  // page: "What are signs I need check engine light diagnosis?", "Is it safe to
+  // drive with my check engine light on?", "Do you accept extended warranties ...?"
+  "check-engine-light": ["symptoms", "drive", "warranty"],
+  // page: "Do you work on all makes and models?", "Do you accept extended warranties ...?"
+  diagnostics: ["makes", "warranty"],
+  // page: "How do I know if I have an electrical problem?", "Do you work on all
+  // makes and models for electrical issues?", "Do you accept extended warranties ...?"
+  "electrical-diagnostics": ["symptoms", "makes", "warranty"],
+  // page: "How do I know if my engine needs repair?", "Do you accept extended warranties ...?"
+  "engine-repair": ["symptoms", "warranty"],
+  // The whole page is about warranty claims, so the templated causes /
+  // symptoms / trouble-code / prevention / "can this be covered" questions
+  // have no meaningful answer here.
+  "extended-warranty-repair": ["causes", "symptoms", "code", "warranty", "prevent"],
+  // page: "Do you accept extended warranties for no-start repairs?"
+  "no-start-diagnostics": ["warranty"],
+  // Trouble codes and service-contract coverage are not relevant to routine
+  // maintenance.
+  "oil-change-maintenance": ["code", "warranty"],
+  // page: "How do I know if my struts are bad?", "Can I drive with bad struts
+  // or shocks?", "Do you accept extended warranties ...?". Suspension wear is
+  // found by inspection, not trouble codes.
+  "suspension-steering": ["symptoms", "drive", "code", "warranty"],
+  // page: "What are the warning signs of transmission trouble?", "Do you accept
+  // extended warranties for transmission repair?"
+  "transmission-repair": ["symptoms", "warranty"],
+};
+
+const normalize = (q: string) => q.toLowerCase().replace(/[^a-z0-9]+/g, " ").trim();
+
+/**
+ * The single FAQ list for a service page: the page's own questions first, then
+ * the shared questions that page has not already covered. Exact duplicate
+ * questions are removed. ServiceFaqHub renders this one list as both the
+ * visible accordion and the page's only FAQPage JSON-LD, so the two can never
+ * drift apart.
+ */
+export function buildServiceFaqs(slug: string, pageFaqs: Faq[] = []): Faq[] {
   const c = serviceFaqConfig[slug];
   if (!c) return [];
-  return [
-    { q: `What is ${c.name}?`, a: `${c.name[0].toUpperCase()}${c.name.slice(1)} is the process of identifying or correcting ${c.problem}. R Complete Auto Care confirms the cause before recommending parts.` },
-    { q: `What commonly causes the need for ${c.name}?`, a: `Common causes include ${c.problem}. The exact cause cannot be confirmed from a symptom or trouble code alone.` },
-    { q: `What symptoms indicate I may need ${c.name}?`, a: `Watch for ${c.symptoms}. New, worsening, or intermittent symptoms are worth documenting and testing.` },
-    { q: `How does R Complete Auto Care diagnose this problem?`, a: `We begin with ${c.diagnosis}. We compare test results with specifications before presenting a repair plan.` },
-    { q: `Can I keep driving before it is diagnosed?`, a: c.unsafe },
-    { q: `How much does ${c.name} usually cost?`, a: `Cost depends on the vehicle, test time, failure, parts, and access required. We provide a transparent estimate after diagnosis and do not begin repairs without your approval.` },
-    { q: `How long does ${c.name} take?`, a: `Timing depends on symptom complexity, parts availability, and repair scope. Same-day diagnostics may be available, and we explain the expected timeline before authorized work begins.` },
-    { q: `Do you service both domestic and foreign vehicles?`, a: `Yes. We diagnose and service domestic, Asian, and European vehicles using procedures and information appropriate to the specific year, make, model, and system.` },
-    { q: `Will a trouble code identify the failed part?`, a: `No. A code identifies a system condition detected by the vehicle. Testing is needed to distinguish wiring, mechanical, control, and component causes.` },
-    { q: `Do you provide an estimate before repairs?`, a: `Yes. We explain the findings, priorities, estimate, and expected timing. No repair begins without customer approval.` },
-    { q: `Can this service be covered by an extended warranty?`, a: `Possibly. Coverage depends entirely on the customer’s contract, exclusions, maintenance requirements, failure cause, and administrator authorization. We can document the diagnosis and communicate with the administrator.` },
-    { q: `What can help prevent this problem?`, a: `Helpful steps include ${c.maintenance}. Prevention reduces risk but cannot eliminate normal wear or unexpected failures.` },
-    { q: `What should I bring to my appointment?`, a: `Bring the vehicle, keys, relevant service records, warning details, and any extended-warranty contract or claim information. Note when the symptom occurs and what changes it.` },
-    { q: `Do you offer same-day diagnostics?`, a: `Same-day diagnostics may be available depending on the schedule and complexity. Call ahead so we can set a realistic arrival and completion window.` },
-    { q: `Why choose R Complete Auto Care in Crown Point?`, a: `We are a family-owned, diagnostic-first shop with experienced ASE-certified technicians, professional equipment, transparent estimates, and no repairs performed without your approval.` },
-  ];
+  const omitted = new Set<ServiceFaqTopic>(omittedSharedTopics[slug] ?? []);
+  const seen = new Set<string>();
+  const merged: Faq[] = [];
+  const shared = sharedFaqs(c).filter((faq) => !omitted.has(faq.topic));
+  for (const { q, a } of [...pageFaqs, ...shared]) {
+    const key = normalize(q);
+    if (!q.trim() || !a.trim() || seen.has(key)) continue;
+    seen.add(key);
+    merged.push({ q, a });
+  }
+  return merged;
 }

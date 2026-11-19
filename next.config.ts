@@ -5,7 +5,30 @@ const withBundleAnalyzer = bundleAnalyzer({
   enabled: process.env.ANALYZE === "true",
 });
 
+// Baseline security headers sent on every response.
+//
+// No Content-Security-Policy on purpose: the site loads Tekmetric booking,
+// Google Maps, gtag, Formspree and Vercel analytics, and an enforcing CSP that
+// misses one of their origins breaks it silently. If CSP is added later, ship
+// it as Content-Security-Policy-Report-Only first and watch the reports.
+const securityHeaders = [
+  // HTTPS only for two years. includeSubDomains/preload are deliberately left
+  // off: they bind every subdomain and preload is slow to undo, so that is an
+  // owner decision (confirm no subdomain is served over plain HTTP first).
+  { key: "Strict-Transport-Security", value: "max-age=63072000" },
+  { key: "X-Content-Type-Options", value: "nosniff" },
+  { key: "Referrer-Policy", value: "strict-origin-when-cross-origin" },
+  // Stops other sites framing ours (clickjacking). Does not affect the
+  // third-party frames we embed ourselves (Tekmetric booking, Google Maps).
+  { key: "X-Frame-Options", value: "SAMEORIGIN" },
+  // Features no page uses are switched off; geolocation stays available to
+  // our own origin for the interactive map.
+  { key: "Permissions-Policy", value: "camera=(), microphone=(), usb=(), geolocation=(self)" },
+];
+
 const nextConfig: NextConfig = {
+  // Do not advertise the framework in an X-Powered-By header.
+  poweredByHeader: false,
   images: {
     // Serve AVIF first, WebP as fallback.
     formats: ["image/avif", "image/webp"],
@@ -20,6 +43,10 @@ const nextConfig: NextConfig = {
   },
   async headers() {
     return [
+      {
+        source: "/:path*",
+        headers: securityHeaders,
+      },
       {
         // Everything under /images/ is content-addressed by name and only ever
         // replaced by a new filename, so it is safe to pin for a year.
@@ -51,7 +78,8 @@ const nextConfig: NextConfig = {
   async redirects() {
     return [
       // NOTE: Junk/malformed paths (bracket-wrapped URLs, pasted full URLs) are
-      // no longer redirected here. They're handled in middleware.ts, which
+      // no longer redirected here. They're handled in proxy.ts (Next 16's
+      // replacement for middleware.ts; classifier in lib/junk-paths.js), which
       // returns 410 Gone — a cleaner deindex signal than a 308 to "/".
       {
         source: "/:path*",

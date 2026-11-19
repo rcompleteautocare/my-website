@@ -2,20 +2,20 @@ import Link from 'next/link'
 import ServiceSchema from '../components/ServiceSchema'
 import FaqAccordion from '../components/FaqAccordion'
 import FaqSchema from '../components/FaqSchema'
-import { YEARS_EXPERIENCE, SERVICE_AREAS, SAME_DAY_COPY } from '@/lib/business'
+import { EXPERIENCE_CLAIM, EXPERIENCE_SHORT, SERVICE_AREAS, SAME_DAY_COPY } from '@/lib/business'
 
 export const metadata = {
-  title: 'Transmission Slipping in Crown Point, IN | R Complete Auto Care',
+  title: 'Transmission Slipping Crown Point, IN | R Complete Auto Care',
   description:
-    'Transmission slipping in Crown Point, IN? Get a real diagnosis before you authorize a rebuild. Solenoid, fluid, torque-converter, and internal faults require different repairs. Call (219) 262-2711.',
+    'Transmission slipping in Crown Point, IN? Get a real diagnosis before you authorize a rebuild. Solenoid, fluid and converter faults differ. (219) 262-2711.',
   alternates: {
     canonical: 'https://www.rcompleteautocare.com/transmission-slipping-crown-point-in',
   },
 
   openGraph: {
-    title: 'Transmission Slipping in Crown Point, IN | R Complete Auto Care',
+    title: 'Transmission Slipping Crown Point, IN | R Complete Auto Care',
     description:
-      'Transmission slipping in Crown Point, IN? Get a real diagnosis before you authorize a rebuild. Solenoid, fluid, torque-converter, and internal faults require different repairs. Call (219) 262-2711.',
+      'Transmission slipping in Crown Point, IN? Get a real diagnosis before you authorize a rebuild. Solenoid, fluid and converter faults differ. (219) 262-2711.',
     url: 'https://www.rcompleteautocare.com/transmission-slipping-crown-point-in',
     siteName: 'R Complete Auto Care',
     locale: 'en_US',
@@ -24,9 +24,9 @@ export const metadata = {
   },
   twitter: {
     card: 'summary_large_image',
-    title: 'Transmission Slipping in Crown Point, IN | R Complete Auto Care',
+    title: 'Transmission Slipping Crown Point, IN | R Complete Auto Care',
     description:
-      'Transmission slipping in Crown Point, IN? Get a real diagnosis before you authorize a rebuild. Solenoid, fluid, torque-converter, and internal faults require different repairs. Call (219) 262-2711.',
+      'Transmission slipping in Crown Point, IN? Get a real diagnosis before you authorize a rebuild. Solenoid, fluid and converter faults differ. (219) 262-2711.',
     images: ['/logo.png'],
   },
   robots: { index: true, follow: true },
@@ -131,6 +131,11 @@ export default function TransmissionSlipping() {
           the least invasive to the most. If a rebuild is actually warranted, we say so. If it
           isn&apos;t, we recommend the targeted repair instead. That is the only sequence we follow.
         </p>
+        <p>
+          Slipping is one symptom among several. For the full picture of what we test and fix,
+          including fluid service, solenoids, valve bodies, torque converters, and CVTs, see
+          our <Link href="/services/transmission-repair">transmission repair service in Crown Point</Link>.
+        </p>
         <a href="tel:2192622711" className="cta-button">📞 Call (219) 262-2711 — Second Opinion Before You Authorize a Rebuild</a>
 
         {/* ── CAUSES ── */}
@@ -191,8 +196,8 @@ export default function TransmissionSlipping() {
             <p>Most transmission diagnostics are completed the same day. You get a call with the root cause, repair options, and a clear estimate before any work begins.</p>
           </div>
           <div className="feature-item">
-            <strong>{YEARS_EXPERIENCE} Years Family Experience</strong>
-            <p>Our technicians bring {YEARS_EXPERIENCE} years of combined experience to Crown Point and Lake County drivers. We have diagnosed transmission faults on every make and model — automatic, manual, and CVT.</p>
+            <strong>{EXPERIENCE_SHORT}</strong>
+            <p>{EXPERIENCE_CLAIM}. We have diagnosed transmission faults on every make and model — automatic, manual, and CVT.</p>
           </div>
         </div>
 

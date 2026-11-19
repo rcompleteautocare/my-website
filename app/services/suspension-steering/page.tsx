@@ -1,11 +1,11 @@
 export const metadata = {
   title: 'Suspension Repair Crown Point, IN | R Complete Auto Care',
-  description: 'Suspension repair in Crown Point, IN. Struts, shocks, tie rods, alignments. Indiana roads are rough — we keep your ride safe and controlled. Call (219) 262-2711.',
+  description: 'Suspension repair in Crown Point, IN. Struts, shocks, tie rods, alignments. Indiana roads are rough — we keep your ride safe and controlled. (219) 262-2711.',
   alternates: { canonical: 'https://www.rcompleteautocare.com/services/suspension-steering' },
 
   openGraph: {
     title: "Suspension Repair Crown Point, IN | R Complete Auto Care",
-    description: "Suspension repair in Crown Point, IN. Struts, shocks, tie rods, alignments. Indiana roads are rough — we keep your ride safe and controlled. Call (219) 262-2711.",
+    description: "Suspension repair in Crown Point, IN. Struts, shocks, tie rods, alignments. Indiana roads are rough — we keep your ride safe and controlled. (219) 262-2711.",
     url: "https://www.rcompleteautocare.com/services/suspension-steering",
     siteName: "R Complete Auto Care",
     locale: "en_US",
@@ -15,7 +15,7 @@ export const metadata = {
   twitter: {
     card: "summary_large_image",
     title: "Suspension Repair Crown Point, IN | R Complete Auto Care",
-    description: "Suspension repair in Crown Point, IN. Struts, shocks, tie rods, alignments. Indiana roads are rough — we keep your ride safe and controlled. Call (219) 262-2711.",
+    description: "Suspension repair in Crown Point, IN. Struts, shocks, tie rods, alignments. Indiana roads are rough — we keep your ride safe and controlled. (219) 262-2711.",
     images: ["/logo.png"],
   },
   robots: { index: true, follow: true },
@@ -25,6 +25,18 @@ import Image from "next/image";
 import RelatedServices from "@/app/components/RelatedServices";
 import ServiceFaqHub from "@/app/components/ServiceFaqHub";
 import { SERVICE_AREAS, AREA_SERVED_SCHEMA } from "@/lib/business";
+// This page's own FAQs. Rendered (and emitted as the page's single FAQPage
+// schema) by <ServiceFaqHub>, which appends the shared service questions this
+// page does not already answer — see lib/service-faqs.ts.
+const FAQS = [
+  { q: "How do I know if my struts are bad?", a: "Common signs include excessive bouncing after bumps, nose-diving when braking, a rough or uncomfortable ride, clunking noises, or visible fluid leaking from the strut body. A bounce test — pushing down on each corner of the car — can reveal worn struts, but a proper inspection is the only definitive way to assess their condition." },
+  { q: "Can I drive with bad struts or shocks?", a: "Technically yes, but it's not safe. Worn struts increase stopping distances, reduce your ability to control the vehicle in emergency maneuvers, and cause accelerated tire wear. The longer you drive on them, the more secondary damage accumulates." },
+  { q: "Why is my steering wheel shaking at highway speeds?", a: "Steering wheel vibration at highway speeds is usually caused by wheel imbalance, worn tie rod ends, worn ball joints, or loose wheel bearings. Less commonly it can be a bent wheel or tire with a flat spot. A proper inspection will identify the exact cause." },
+  { q: "How often should I get an alignment?", a: "We recommend an alignment check once a year and any time you replace steering or suspension components. In Northwest Indiana, we also recommend checking alignment after any significant pothole impact — hitting a deep pothole at speed can knock your alignment out noticeably." },
+  { q: "Why are my tires wearing unevenly?", a: "Uneven tire wear almost always points to a suspension or alignment issue. Edge wear suggests misalignment. Cupping or scalloping indicates worn shocks or struts. Feathering suggests worn tie rod ends. We can diagnose the cause from the wear pattern." },
+  { q: "Do you accept extended warranties for suspension repairs?", a: "Some suspension components are covered under extended warranty policies. Call us with your warranty information and we'll verify what's covered before any work begins." },
+];
+
 export default function SuspensionSteering() {
   return (
     <div style={{ color: "#1a1a1a" }}>
@@ -163,28 +175,9 @@ export default function SuspensionSteering() {
         </p>
       </section>
 
-      {/* FAQ */}
-      <section style={{ background: "#f5f5f5", padding: "60px 24px" }}>
-        <div style={{ maxWidth: "800px", margin: "0 auto" }}>
-          <h2 style={{ fontSize: "28px", marginBottom: "24px" }}>Frequently Asked Questions — Suspension & Steering</h2>
-          {[
-            { q: "How do I know if my struts are bad?", a: "Common signs include excessive bouncing after bumps, nose-diving when braking, a rough or uncomfortable ride, clunking noises, or visible fluid leaking from the strut body. A bounce test — pushing down on each corner of the car — can reveal worn struts, but a proper inspection is the only definitive way to assess their condition." },
-            { q: "Can I drive with bad struts or shocks?", a: "Technically yes, but it's not safe. Worn struts increase stopping distances, reduce your ability to control the vehicle in emergency maneuvers, and cause accelerated tire wear. The longer you drive on them, the more secondary damage accumulates." },
-            { q: "Why is my steering wheel shaking at highway speeds?", a: "Steering wheel vibration at highway speeds is usually caused by wheel imbalance, worn tie rod ends, worn ball joints, or loose wheel bearings. Less commonly it can be a bent wheel or tire with a flat spot. A proper inspection will identify the exact cause." },
-            { q: "How often should I get an alignment?", a: "We recommend an alignment check once a year and any time you replace steering or suspension components. In Northwest Indiana, we also recommend checking alignment after any significant pothole impact — hitting a deep pothole at speed can knock your alignment out noticeably." },
-            { q: "Why are my tires wearing unevenly?", a: "Uneven tire wear almost always points to a suspension or alignment issue. Edge wear suggests misalignment. Cupping or scalloping indicates worn shocks or struts. Feathering suggests worn tie rod ends. We can diagnose the cause from the wear pattern." },
-            { q: "Do you accept extended warranties for suspension repairs?", a: "Some suspension components are covered under extended warranty policies. Call us with your warranty information and we'll verify what's covered before any work begins." },
-          ].map(item => (
-            <div key={item.q} style={{ marginBottom: "20px", borderBottom: "1px solid #e0e0e0", paddingBottom: "20px" }}>
-              <div style={{ fontWeight: "bold", fontSize: "16px", marginBottom: "8px" }}>{item.q}</div>
-              <div style={{ color: "#555", lineHeight: 1.7 }}>{item.a}</div>
-            </div>
-          ))}
-        </div>
-      </section>
 
       <RelatedServices slug="suspension-steering" />
-      <ServiceFaqHub slug="suspension-steering" />
+      <ServiceFaqHub slug="suspension-steering" faqs={FAQS} />
 
       {/* Final CTA */}
       <section style={{ background: "#e63946", color: "#fff", textAlign: "center", padding: "60px 24px" }}>
@@ -196,45 +189,6 @@ export default function SuspensionSteering() {
         </a>
       </section>
 
-    <script
-  type="application/ld+json"
-  dangerouslySetInnerHTML={{ __html: JSON.stringify({
-    "@context": "https://schema.org",
-    "@type": "FAQPage",
-    "mainEntity": [
-      {
-        "@type": "Question",
-        "name": "How do I know if my struts are bad?",
-        "acceptedAnswer": { "@type": "Answer", "text": "Common signs include excessive bouncing after bumps, nose-diving when braking, a rough or uncomfortable ride, clunking noises, or visible fluid leaking from the strut body. A bounce test can reveal worn struts, but a proper inspection is the only definitive way to assess their condition." }
-      },
-      {
-        "@type": "Question",
-        "name": "Can I drive with bad struts or shocks?",
-        "acceptedAnswer": { "@type": "Answer", "text": "Technically yes, but it's not safe. Worn struts increase stopping distances, reduce your ability to control the vehicle in emergency maneuvers, and cause accelerated tire wear. The longer you drive on them, the more secondary damage accumulates." }
-      },
-      {
-        "@type": "Question",
-        "name": "Why is my steering wheel shaking at highway speeds?",
-        "acceptedAnswer": { "@type": "Answer", "text": "Steering wheel vibration at highway speeds is usually caused by wheel imbalance, worn tie rod ends, worn ball joints, or loose wheel bearings. Less commonly it can be a bent wheel or tire with a flat spot. A proper inspection will identify the exact cause." }
-      },
-      {
-        "@type": "Question",
-        "name": "How often should I get an alignment?",
-        "acceptedAnswer": { "@type": "Answer", "text": "We recommend an alignment check once a year and any time you replace steering or suspension components. In Northwest Indiana, we also recommend checking alignment after any significant pothole impact — hitting a deep pothole at speed can knock your alignment out noticeably." }
-      },
-      {
-        "@type": "Question",
-        "name": "Why are my tires wearing unevenly?",
-        "acceptedAnswer": { "@type": "Answer", "text": "Uneven tire wear almost always points to a suspension or alignment issue. Edge wear suggests misalignment. Cupping or scalloping indicates worn shocks or struts. Feathering suggests worn tie rod ends. We can diagnose the cause from the wear pattern." }
-      },
-      {
-        "@type": "Question",
-        "name": "Do you accept extended warranties for suspension repairs?",
-        "acceptedAnswer": { "@type": "Answer", "text": "Some suspension components are covered under extended warranty policies. Call us with your warranty information and we'll verify what's covered before any work begins." }
-      }
-    ]
-  }).replace(/</g, "\u003c")}}
-/>
 <script type="application/ld+json" dangerouslySetInnerHTML={{ __html: JSON.stringify({
   "@context": "https://schema.org",
   "@type": "HowTo",

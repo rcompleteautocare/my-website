@@ -2,7 +2,7 @@ import Link from 'next/link'
 import ServiceSchema from '../components/ServiceSchema'
 import FaqAccordion from '../components/FaqAccordion'
 import FaqSchema from '../components/FaqSchema'
-import { YEARS_EXPERIENCE, SERVICE_AREAS, SAME_DAY_COPY } from '@/lib/business'
+import { EXPERIENCE_CLAIM, EXPERIENCE_SHORT, SERVICE_AREAS, SAME_DAY_COPY } from '@/lib/business'
 
 export const metadata = {
   title: "Car Won't Start in Crown Point, IN | R Complete Auto Care",
@@ -71,7 +71,7 @@ export default function CarWontStart() {
         <p className="hero-description speakable">
           No crank, crank-no-start, intermittent no-start — each symptom points to a completely
           different system. At R Complete Auto Care in Crown Point, Indiana we run the full
-          diagnostic protocol before replacing a single part. {YEARS_EXPERIENCE} years of family experience.
+          diagnostic protocol before replacing a single part. {EXPERIENCE_CLAIM}.
           Same-day appointments available. Extended warranty accepted.
         </p>
         <a href="tel:2192622711" className="cta-button">📞 Call (219) 262-2711 — {SAME_DAY_COPY}</a>
@@ -163,8 +163,8 @@ export default function CarWontStart() {
             <p>You receive a clear estimate before any work begins. No surprises on the invoice. No work without your approval.</p>
           </div>
           <div className="feature-item">
-            <strong>{YEARS_EXPERIENCE} Years Family Experience</strong>
-            <p>Our technicians bring {YEARS_EXPERIENCE} years of combined experience to Crown Point and Lake County drivers. We have diagnosed no-start conditions on every make and model.</p>
+            <strong>{EXPERIENCE_SHORT}</strong>
+            <p>{EXPERIENCE_CLAIM}. We have diagnosed no-start conditions on every make and model.</p>
           </div>
         </div>
 

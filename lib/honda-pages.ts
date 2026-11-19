@@ -144,7 +144,7 @@ const models: HondaPageData[] = [
   },
   {
     slug: "honda-ridgeline-repair-crown-point-in", shortName: "Honda Ridgeline", kind: "model",
-    title: "Honda Ridgeline Repair Crown Point, IN | R Complete Auto Care",
+    title: "Honda Ridgeline Repair Crown Point | R Complete Auto Care",
     description: "Honda Ridgeline repair in Crown Point for AWD service, timing belts, suspension, transmissions, oil leaks, brakes, and towing maintenance.",
     eyebrow: "Honda Ridgeline service in Crown Point", heading: "Honda Ridgeline Repair and Diagnostics",
     intro: "Ridgeline maintenance and diagnosis should account for its drivetrain, truck use, cargo or towing demands, and exact generation. We inspect the system under concern rather than treating it like a generic pickup.",
@@ -256,7 +256,7 @@ const services: HondaPageData[] = [
   {
     slug: "honda-check-engine-light-diagnostics-crown-point-in", shortName: "Honda Check-Engine-Light Diagnostics", kind: "service",
     title: "Honda Check Engine Light Crown Point | R Complete Auto Care",
-    description: "Honda check-engine-light diagnosis in Crown Point using codes, freeze-frame and live data, circuit testing, smoke testing, compression testing, and verification.",
+    description: "Honda check-engine-light diagnosis in Crown Point using codes, freeze-frame and live data, circuit, smoke and compression testing, and verification.",
     eyebrow: "Codes are clues, not conclusions", heading: "Honda Check-Engine-Light Diagnostics",
     intro: "A diagnostic trouble code identifies a system, circuit, or operating condition. It does not automatically identify a failed part. We use the code as a path into testing and verify the cause before recommending replacement.",
     problems: ["Steady or flashing check-engine light", "Misfire, rough idle, stalling, or poor acceleration", "Fuel-trim, oxygen-sensor, catalyst, or evaporative-emissions faults", "Electrical circuit and communication faults", "Intermittent light with few obvious symptoms"],

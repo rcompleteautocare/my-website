@@ -3,8 +3,8 @@ import { MAKE_DIRECTORY } from "@/lib/make-pages";
 import { SERVICE_AREAS } from "@/lib/business";
 
 export const metadata = {
-  title: "Auto Repair Services in Crown Point, IN | R Complete Auto Care",
-  description: "Full list of auto repair services at R Complete Auto Care in Crown Point, IN — diagnostics, engine, transmission, brakes, electrical, A/C, extended warranty. (219) 262-2711.",
+  title: "Auto Repair Services Crown Point, IN | R Complete Auto Care",
+  description: "Auto repair services at R Complete Auto Care in Crown Point, IN: diagnostics, engine, transmission, brakes, electrical, A/C and more. (219) 262-2711.",
   alternates: { canonical: "https://www.rcompleteautocare.com/services" },
   openGraph: {
     title: "Auto Repair Services — R Complete Auto Care",

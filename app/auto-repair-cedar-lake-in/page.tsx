@@ -1,7 +1,8 @@
+import FaqSchema from "@/app/components/FaqSchema";
 import Link from "next/link";
 import BookButton from "@/components/BookButton";
 import ServiceSchema from "@/app/components/ServiceSchema";
-import { YEARS_EXPERIENCE } from "@/lib/business";
+import { EXPERIENCE_SHORT } from "@/lib/business";
 
 export const metadata = {
   title: "Auto Repair in Cedar Lake, IN | R Complete Auto Care",
@@ -27,6 +28,17 @@ export const metadata = {
   },
   robots: { index: true, follow: true },
 };
+
+// Single source for this page's FAQ: rendered in the FAQ section below and
+// emitted as the page's FAQPage schema, so the two always match.
+const FAQS = [
+  { q: "Is there an honest auto repair shop near Cedar Lake, IN?", a: "R Complete Auto Care in Crown Point — about 12–15 minutes from Cedar Lake via IN-2 or West 133rd Ave. We're a diagnostic-first shop, accept most extended warranties, and offer same-day service. Call (219) 262-2711." },
+  { q: "My vehicle runs rural Cedar Lake roads and gravel — what suffers most?", a: "Gravel and patched-pavement wear hits suspension bushings, tie rods, and wheel alignment first. We also regularly see stone-chip damage to brake lines and undercarriage plastics on Cedar Lake vehicles. A proper inspection catches it before it becomes a brake-line leak." },
+  { q: "Can you tow from Lake Dalecarlia or the Cedar Lake shoreline area?", a: "We coordinate with local tow partners and can have your vehicle recovered from Lake Dalecarlia, Town Center, or the US-41 / IN-2 corridor and brought to our Crown Point shop. Call (219) 262-2711 and we'll arrange it." },
+  { q: "I commute IN-2 to Crown Point every day — what should I plan for?", a: "IN-2 sees heavy truck traffic and patched asphalt through the seasons — that combination is hard on struts, tie-rod ends, and alignment. We recommend an alignment check every 15–20k miles on IN-2 commuters to preserve tire life." },
+  { q: "Do you accept extended warranties for Cedar Lake residents?", a: "Yes — we work with CarShield, Endurance, CARS Protection Plus, Zurich, AmTrust and most providers. Call us first so we can verify coverage before the tow." },
+  { q: "How far am I from the shop if I'm by the lake?", a: "Most Cedar Lake neighborhoods are 12–15 minutes out via IN-2 east into Crown Point. Lake Dalecarlia is closer to 15. IN-2 is usually fastest outside rush hour." },
+];
 
 export default function CedarLake() {
   return (
@@ -54,7 +66,7 @@ export default function CedarLake() {
       </section>
 
       <section style={{ background: "#e63946", color: "#fff", padding: "14px 24px", textAlign: "center", fontSize: "14px", fontWeight: "500" }}>
-        ✓ Diagnostic-First &nbsp;|&nbsp; ✓ Foreign & Domestic &nbsp;|&nbsp; ✓ Extended Warranty Accepted &nbsp;|&nbsp; ✓ {YEARS_EXPERIENCE} Years Family Experience
+        ✓ Diagnostic-First &nbsp;|&nbsp; ✓ Foreign & Domestic &nbsp;|&nbsp; ✓ Extended Warranty Accepted &nbsp;|&nbsp; ✓ {EXPERIENCE_SHORT}
       </section>
 
       <section style={{ padding: "60px 24px", maxWidth: "800px", margin: "0 auto" }}>
@@ -114,14 +126,7 @@ export default function CedarLake() {
         </div>
 
         <h2 style={{ fontSize: "28px", marginBottom: "24px" }}>Frequently Asked Questions — Auto Repair Near Cedar Lake, IN</h2>
-        {[
-          { q: "Is there an honest auto repair shop near Cedar Lake, IN?", a: "R Complete Auto Care in Crown Point — about 12–15 minutes from Cedar Lake via IN-2 or West 133rd Ave. We're a diagnostic-first shop, accept most extended warranties, and offer same-day service. Call (219) 262-2711." },
-          { q: "My vehicle runs rural Cedar Lake roads and gravel — what suffers most?", a: "Gravel and patched-pavement wear hits suspension bushings, tie rods, and wheel alignment first. We also regularly see stone-chip damage to brake lines and undercarriage plastics on Cedar Lake vehicles. A proper inspection catches it before it becomes a brake-line leak." },
-          { q: "Can you tow from Lake Dalecarlia or the Cedar Lake shoreline area?", a: "We coordinate with local tow partners and can have your vehicle recovered from Lake Dalecarlia, Town Center, or the US-41 / IN-2 corridor and brought to our Crown Point shop. Call (219) 262-2711 and we'll arrange it." },
-          { q: "I commute IN-2 to Crown Point every day — what should I plan for?", a: "IN-2 sees heavy truck traffic and patched asphalt through the seasons — that combination is hard on struts, tie-rod ends, and alignment. We recommend an alignment check every 15–20k miles on IN-2 commuters to preserve tire life." },
-          { q: "Do you accept extended warranties for Cedar Lake residents?", a: "Yes — we work with CarShield, Endurance, CARS Protection Plus, Zurich, AmTrust and most providers. Call us first so we can verify coverage before the tow." },
-          { q: "How far am I from the shop if I'm by the lake?", a: "Most Cedar Lake neighborhoods are 12–15 minutes out via IN-2 east into Crown Point. Lake Dalecarlia is closer to 15. IN-2 is usually fastest outside rush hour." },
-        ].map(item => (
+        {FAQS.map(item => (
           <div key={item.q} style={{ marginBottom: "20px", borderBottom: "1px solid #e0e0e0", paddingBottom: "20px" }}>
             <div style={{ fontWeight: "bold", fontSize: "16px", marginBottom: "8px" }}>{item.q}</div>
             <div style={{ color: "#555", lineHeight: 1.7 }}>{item.a}</div>
@@ -141,45 +146,7 @@ export default function CedarLake() {
         </BookButton>
       </section>
 
-    <script
-  type="application/ld+json"
-  dangerouslySetInnerHTML={{ __html: JSON.stringify({
-    "@context": "https://schema.org",
-    "@type": "FAQPage",
-    "mainEntity": [
-      {
-        "@type": "Question",
-        "name": "Where is the best auto repair shop near Cedar Lake, IN?",
-        "acceptedAnswer": { "@type": "Answer", "text": "R Complete Auto Care at 1305 E Summit St, Crown Point, IN 46307 — about 10 minutes from Cedar Lake. Call (219) 262-2711." }
-      },
-      {
-        "@type": "Question",
-        "name": "How far is R Complete Auto Care from Cedar Lake?",
-        "acceptedAnswer": { "@type": "Answer", "text": "We're located about 10 minutes from Cedar Lake, Indiana at 1305 E Summit St in Crown Point, IN 46307." }
-      },
-      {
-        "@type": "Question",
-        "name": "Do you accept extended warranties for Cedar Lake drivers?",
-        "acceptedAnswer": { "@type": "Answer", "text": "Yes! We work with most extended warranty providers and handle the claim paperwork and talk to the adjuster for you. Cedar Lake drivers are welcome — call us at (219) 262-2711." }
-      },
-      {
-        "@type": "Question",
-        "name": "Do you work on foreign and domestic vehicles?",
-        "acceptedAnswer": { "@type": "Answer", "text": "Absolutely — all makes and models including Honda, Toyota, BMW, Mercedes, Ford, Chevrolet, Dodge, Subaru, and more." }
-      },
-      {
-        "@type": "Question",
-        "name": "What are your hours?",
-        "acceptedAnswer": { "@type": "Answer", "text": "Monday through Friday 8:00 AM to 6:00 PM and Saturday 8:00 AM to 2:00 PM. Closed Sunday." }
-      },
-      {
-        "@type": "Question",
-        "name": "Do you offer same-day service for Cedar Lake drivers?",
-        "acceptedAnswer": { "@type": "Answer", "text": "Yes — most diagnostic appointments and many repairs are completed the same day. Call (219) 262-2711 to schedule." }
-      }
-    ]
-  }).replace(/</g, "\u003c")}}
-/>
+    <FaqSchema faqs={FAQS} />
     <script type="application/ld+json" dangerouslySetInnerHTML={{ __html: "{\"@context\":\"https://schema.org\",\"@type\":\"BreadcrumbList\",\"itemListElement\":[{\"@type\":\"ListItem\",\"position\":1,\"name\":\"Home\",\"item\":\"https://www.rcompleteautocare.com\"},{\"@type\":\"ListItem\",\"position\":2,\"name\":\"Auto Repair Cedar Lake, IN\"}]}".replace(/</g, "\u003c") }} />
     <script type="application/ld+json" dangerouslySetInnerHTML={{ __html: "{\"@context\":\"https://schema.org\",\"@type\":\"WebPage\",\"@id\":\"https://www.rcompleteautocare.com/auto-repair-cedar-lake-in#webpage\",\"url\":\"https://www.rcompleteautocare.com/auto-repair-cedar-lake-in\",\"name\":\"Auto Repair Cedar Lake, IN | R Complete Auto Care\",\"dateModified\":\"2026-04-18\",\"about\":{\"@id\":\"https://www.rcompleteautocare.com/#business\"}}".replace(/</g, "\u003c") }} />
     <ServiceSchema name="Auto Repair Near Cedar Lake, IN" serviceType="Auto repair" path="/auto-repair-cedar-lake-in" />

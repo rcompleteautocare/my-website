@@ -6,9 +6,11 @@ import NeighborhoodMap from "../components/NeighborhoodMap";
 import { SERVICE_AREAS, OWNER_EMAIL, SERVICE_TYPES } from "@/lib/business";
 
 export default function Contact() {
-  const [submitted, setSubmitted] = useState(false);
-  const [submitting, setSubmitting] = useState(false);
-  const [error, setError] = useState("");
+  const [status, setStatus] = useState<"idle" | "sending" | "success" | "error">("idle");
+  const submitted = status === "success";
+  const sending = status === "sending";
+  // Double-submit guard. A ref flips synchronously, so a second submit fired
+  // before React re-renders with the "sending" state is still ignored.
   const submissionPending = useRef(false);
   const [form, setForm] = useState({
     name: "", phone: "", email: "", vehicle: "", service: "", message: ""
@@ -21,26 +23,36 @@ export default function Contact() {
   const handleSubmit = async (e: React.FormEvent<HTMLFormElement>) => {
     e.preventDefault();
     if (submissionPending.current) return;
+    // Belt and braces on top of the native `required` attributes: a
+    // whitespace-only value passes browser validation but is useless to us.
+    if (!form.name.trim() || !form.phone.trim()) {
+      setStatus("error");
+      return;
+    }
     submissionPending.current = true;
-    setSubmitting(true);
-    setError("");
+    setStatus("sending");
     try {
-      const response = await fetch("https://formspree.io/f/xykbqraj", {
+      const res = await fetch("https://formspree.io/f/xykbqraj", {
         method: "POST",
         headers: { "Content-Type": "application/json", Accept: "application/json" },
         body: JSON.stringify(form),
       });
-      if (!response.ok) throw new Error("Request not accepted");
-      setSubmitted(true);
+      // fetch() only rejects on network failure; a 4xx/5xx from Formspree
+      // resolves normally, so success must be decided by res.ok.
+      if (!res.ok) {
+        setStatus("error");
+        return;
+      }
+      setStatus("success");
+      // Track only requests Formspree actually accepted.
       trackEvent("generate_lead", { method: "contact_form" });
       const tagId = process.env.NEXT_PUBLIC_ADS_TAG_ID;
       const label = process.env.NEXT_PUBLIC_ADS_CONTACT_CONVERSION_LABEL;
       if (tagId && label) trackEvent("conversion", { send_to: `${tagId}/${label}` });
     } catch {
-      setError("Your request could not be sent. Please try again or call (219) 262-2711.");
+      setStatus("error");
     } finally {
       submissionPending.current = false;
-      setSubmitting(false);
     }
   };
 
@@ -111,7 +123,7 @@ export default function Contact() {
           <div>
             <h2 style={{ fontSize: "24px", fontWeight: "bold", marginBottom: "24px" }}>Request Service</h2>
             {submitted ? (
-              <div style={{ background: "#f0fdf4", border: "1px solid #86efac", borderRadius: "8px", padding: "32px", textAlign: "center" }}>
+              <div role="status" style={{ background: "#f0fdf4", border: "1px solid #86efac", borderRadius: "8px", padding: "32px", textAlign: "center" }}>
                 <div style={{ fontSize: "48px", marginBottom: "16px" }}>✅</div>
                 <div style={{ fontWeight: "bold", fontSize: "20px", marginBottom: "8px" }}>Request Received!</div>
                 <p style={{ color: "#555" }}>We&apos;ll call you back shortly to confirm your appointment. If you need immediate assistance, call us at <a href="tel:2192622711" style={{ color: "#e63946" }}>(219) 262-2711</a>.</p>
@@ -119,18 +131,20 @@ export default function Contact() {
             ) : (
               <form onSubmit={handleSubmit} style={{ display: "flex", flexDirection: "column", gap: "16px" }}>
                 {[
-                  { name: "name", label: "Your Name *", type: "text", placeholder: "John Smith" },
-                  { name: "phone", label: "Phone Number *", type: "tel", placeholder: "(219) 555-0000" },
-                  { name: "email", label: "Email Address", type: "email", placeholder: "john@example.com" },
-                  { name: "vehicle", label: "Year, Make & Model", type: "text", placeholder: "2018 Honda Civic" },
+                  { name: "name", label: "Your Name *", type: "text", placeholder: "John Smith", required: true, autoComplete: "name" },
+                  { name: "phone", label: "Phone Number *", type: "tel", placeholder: "(219) 555-0000", required: true, autoComplete: "tel" },
+                  { name: "email", label: "Email Address", type: "email", placeholder: "john@example.com", required: false, autoComplete: "email" },
+                  { name: "vehicle", label: "Year, Make & Model", type: "text", placeholder: "2018 Honda Civic", required: false, autoComplete: "off" },
                 ].map(field => (
                   <div key={field.name}>
                     <label htmlFor={`contact-${field.name}`} style={{ display: "block", fontWeight: "500", marginBottom: "6px", fontSize: "14px" }}>{field.label}</label>
                     <input
                       id={`contact-${field.name}`}
-                      required={field.name === "name" || field.name === "phone"}
                       type={field.type}
                       name={field.name}
+                      required={field.required}
+                      aria-required={field.required}
+                      autoComplete={field.autoComplete}
                       placeholder={field.placeholder}
                       value={form[field.name as keyof typeof form]}
                       onChange={handleChange}
@@ -164,15 +178,23 @@ export default function Contact() {
                     style={{ width: "100%", padding: "10px 14px", border: "1px solid #ddd", borderRadius: "6px", fontSize: "15px", boxSizing: "border-box", resize: "vertical" }}
                   />
                 </div>
+                {status === "error" && (
+                  <div role="alert" style={{ background: "#fef2f2", border: "1px solid #e63946", borderRadius: "8px", padding: "16px", color: "#1a1a1a", fontSize: "14px", lineHeight: 1.6 }}>
+                    <strong>Your request was not sent.</strong>{" "}
+                    {!form.name.trim() || !form.phone.trim()
+                      ? "Please enter your name and phone number, then try again."
+                      : "Something went wrong on our end. Please try again,"}{" "}
+                    or call us at <a href="tel:2192622711" style={{ color: "#e63946", fontWeight: "bold" }}>(219) 262-2711</a>.
+                  </div>
+                )}
                 <button
                   type="submit"
-                  disabled={submitting}
-                  aria-busy={submitting}
-                  style={{ background: "#e63946", color: "#fff", padding: "14px", borderRadius: "6px", fontWeight: "bold", fontSize: "16px", border: "none", cursor: "pointer" }}
+                  disabled={sending}
+                  aria-busy={sending}
+                  style={{ background: "#e63946", color: "#fff", padding: "14px", borderRadius: "6px", fontWeight: "bold", fontSize: "16px", border: "none", cursor: sending ? "not-allowed" : "pointer", opacity: sending ? 0.7 : 1 }}
                 >
-                  {submitting ? "Sending request…" : "📅 Request Service Appointment"}
+                  {sending ? "Sending…" : "📅 Request Service Appointment"}
                 </button>
-                {error ? <p role="alert" style={{ color: "#b91c1c", margin: 0 }}>{error}</p> : null}
                 <p style={{ fontSize: "12px", color: "#888", textAlign: "center", margin: 0 }}>
                   We&apos;ll call you back to confirm. For same-day service call <a href="tel:2192622711" style={{ color: "#e63946" }}>(219) 262-2711</a>.
                 </p>

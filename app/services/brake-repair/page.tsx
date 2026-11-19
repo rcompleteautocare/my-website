@@ -24,6 +24,20 @@ export const metadata = {
 import RelatedServices from "@/app/components/RelatedServices";
 import ServiceFaqHub from "@/app/components/ServiceFaqHub";
 import { SERVICE_AREAS, AREA_SERVED_SCHEMA } from "@/lib/business";
+// This page's own FAQs. Rendered (and emitted as the page's single FAQPage
+// schema) by <ServiceFaqHub>, which appends the shared service questions this
+// page does not already answer — see lib/service-faqs.ts.
+const FAQS = [
+  { q: "How much does brake repair cost in Crown Point, IN?", a: "It depends on your vehicle and which components are worn — pads, rotors, calipers, and hardware all factor in. We take exact measurements first, show you what actually needs attention, and give you a clear, upfront estimate before authorizing any work. No surprises." },
+  { q: "How long does brake repair take?", a: "Most brake pad replacements take 1–2 hours. A full brake job (pads and rotors on all four wheels) typically takes 2–3 hours. We work efficiently and most repairs are completed same day." },
+  { q: "Do I need an appointment for brake repair in Crown Point?", a: "We recommend calling ahead at (219) 262-2711. Same-day appointments are often available. We're open Mon–Fri 8am–6pm and Sat 8am–2pm." },
+  { q: "How do I know when my brakes need to be replaced?", a: "Common signs include squealing, grinding, a soft pedal, pulling to one side, or a brake warning light. The most accurate way is a proper inspection with pad thickness and rotor measurements — which we provide at every brake service." },
+  { q: "Is it safe to drive with grinding brakes?", a: "No. Grinding means your brake pads are worn through to the metal backing plate, which is metal-on-metal contact with your rotors. This reduces stopping power and damages your rotors quickly. Get it in as soon as possible." },
+  { q: "How long do brake pads last?", a: "It depends heavily on driving habits and conditions. City driving with frequent stops wears pads much faster than highway driving. Most pads last between 30,000 and 70,000 miles — but the only way to know for sure is a measurement." },
+  { q: "Why is my car shaking when I brake?", a: "Shaking when braking — especially at highway speeds — is almost always warped rotors. Heat and stress cause rotors to develop thickness variations that cause vibration when the pads clamp down. Rotor replacement or resurfacing resolves this." },
+  { q: "Do you accept extended warranties for brake repair?", a: "Yes — some brake components are covered under extended warranty policies. Call us with your warranty information and we'll verify what's covered before any work begins." },
+];
+
 export default function BrakeRepair() {
   return (
     <div style={{ color: "#1a1a1a" }}>
@@ -155,30 +169,9 @@ export default function BrakeRepair() {
         </div>
       </section>
 
-      {/* FAQ */}
-      <section style={{ background: "#f5f5f5", padding: "60px 24px" }}>
-        <div style={{ maxWidth: "800px", margin: "0 auto" }}>
-          <h2 style={{ fontSize: "28px", marginBottom: "24px" }}>Frequently Asked Questions — Brake Repair</h2>
-          {[
-            { q: "How much does brake repair cost in Crown Point, IN?", a: "It depends on your vehicle and which components are worn — pads, rotors, calipers, and hardware all factor in. We take exact measurements first, show you what actually needs attention, and give you a clear, upfront estimate before authorizing any work. No surprises." },
-            { q: "How long does brake repair take?", a: "Most brake pad replacements take 1–2 hours. A full brake job (pads and rotors on all four wheels) typically takes 2–3 hours. We work efficiently and most repairs are completed same day." },
-            { q: "Do I need an appointment for brake repair in Crown Point?", a: "We recommend calling ahead at (219) 262-2711. Same-day appointments are often available. We're open Mon–Fri 8am–6pm and Sat 8am–2pm." },
-            { q: "How do I know when my brakes need to be replaced?", a: "Common signs include squealing, grinding, a soft pedal, pulling to one side, or a brake warning light. The most accurate way is a proper inspection with pad thickness and rotor measurements — which we provide at every brake service." },
-            { q: "Is it safe to drive with grinding brakes?", a: "No. Grinding means your brake pads are worn through to the metal backing plate, which is metal-on-metal contact with your rotors. This reduces stopping power and damages your rotors quickly. Get it in as soon as possible." },
-            { q: "How long do brake pads last?", a: "It depends heavily on driving habits and conditions. City driving with frequent stops wears pads much faster than highway driving. Most pads last between 30,000 and 70,000 miles — but the only way to know for sure is a measurement." },
-            { q: "Why is my car shaking when I brake?", a: "Shaking when braking — especially at highway speeds — is almost always warped rotors. Heat and stress cause rotors to develop thickness variations that cause vibration when the pads clamp down. Rotor replacement or resurfacing resolves this." },
-            { q: "Do you accept extended warranties for brake repair?", a: "Yes — some brake components are covered under extended warranty policies. Call us with your warranty information and we'll verify what's covered before any work begins." },
-          ].map(item => (
-            <div key={item.q} style={{ marginBottom: "20px", borderBottom: "1px solid #e0e0e0", paddingBottom: "20px" }}>
-              <div style={{ fontWeight: "bold", fontSize: "16px", marginBottom: "8px" }}>{item.q}</div>
-              <div style={{ color: "#555", lineHeight: 1.7 }}>{item.a}</div>
-            </div>
-          ))}
-        </div>
-      </section>
 
       <RelatedServices slug="brake-repair" />
-      <ServiceFaqHub slug="brake-repair" />
+      <ServiceFaqHub slug="brake-repair" faqs={FAQS} />
 
       {/* Final CTA */}
       <section style={{ background: "#e63946", color: "#fff", textAlign: "center", padding: "60px 24px" }}>
@@ -190,20 +183,6 @@ export default function BrakeRepair() {
         </a>
       </section>
 
-    <script type="application/ld+json" dangerouslySetInnerHTML={{ __html: JSON.stringify({
-      "@context": "https://schema.org",
-      "@type": "FAQPage",
-      "mainEntity": [
-        { "@type": "Question", "name": "How much does brake repair cost in Crown Point, IN?", "acceptedAnswer": { "@type": "Answer", "text": "It depends on your vehicle and which components are worn — pads, rotors, calipers, and hardware all factor in. We take exact measurements first, show you what actually needs attention, and give you a clear, upfront estimate before authorizing any work. No surprises." } },
-        { "@type": "Question", "name": "How long does brake repair take?", "acceptedAnswer": { "@type": "Answer", "text": "Most brake pad replacements take 1–2 hours. A full brake job (pads and rotors on all four wheels) typically takes 2–3 hours. We work efficiently and most repairs are completed same day." } },
-        { "@type": "Question", "name": "Do I need an appointment for brake repair in Crown Point?", "acceptedAnswer": { "@type": "Answer", "text": "We recommend calling ahead at (219) 262-2711. Same-day appointments are often available. We're open Mon–Fri 8am–6pm and Sat 8am–2pm." } },
-        { "@type": "Question", "name": "How do I know when my brakes need to be replaced?", "acceptedAnswer": { "@type": "Answer", "text": "Common signs include squealing, grinding, a soft pedal, pulling to one side, or a brake warning light. The most accurate way is a proper inspection with pad thickness and rotor measurements — which we provide at every brake service." } },
-        { "@type": "Question", "name": "Is it safe to drive with grinding brakes?", "acceptedAnswer": { "@type": "Answer", "text": "No. Grinding means your brake pads are worn through to the metal backing plate, which is metal-on-metal contact with your rotors. This reduces stopping power and damages your rotors quickly. Get it in as soon as possible." } },
-        { "@type": "Question", "name": "How long do brake pads last?", "acceptedAnswer": { "@type": "Answer", "text": "It depends heavily on driving habits and conditions. City driving with frequent stops wears pads much faster than highway driving. Most pads last between 30,000 and 70,000 miles — but the only way to know for sure is a measurement." } },
-        { "@type": "Question", "name": "Why is my car shaking when I brake?", "acceptedAnswer": { "@type": "Answer", "text": "Shaking when braking — especially at highway speeds — is almost always warped rotors. Heat and stress cause rotors to develop thickness variations that cause vibration when the pads clamp down. Rotor replacement or resurfacing resolves this." } },
-        { "@type": "Question", "name": "Do you accept extended warranties for brake repair?", "acceptedAnswer": { "@type": "Answer", "text": "Yes — some brake components are covered under extended warranty policies. Call us with your warranty information and we'll verify what's covered before any work begins." } }
-      ]
-    }).replace(/</g, "\u003c") }} />
 
     <script type="application/ld+json" dangerouslySetInnerHTML={{ __html: JSON.stringify({
       "@context": "https://schema.org",

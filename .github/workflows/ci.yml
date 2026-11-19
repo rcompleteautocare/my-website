@@ -5,7 +5,7 @@ on:
 
 jobs:
   build:
-    name: Lint & Build
+    name: Lint, Build, Typecheck & Test
     runs-on: ubuntu-latest
     steps:
       - name: Checkout
@@ -25,3 +25,15 @@ jobs:
 
       - name: Build
         run: npm run build
+
+      # Runs after the build so the generated Prisma client and Next.js route
+      # types exist. The build needs no secrets: every integration fails safe
+      # when its variables are unset.
+      - name: Typecheck
+        run: npx tsc --noEmit
+
+      - name: Unit tests
+        run: npm test
+
+      - name: Sitemap coverage
+        run: python3 scripts/check-sitemap-coverage.py

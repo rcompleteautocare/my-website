@@ -5,6 +5,7 @@ import Footer from "./components/Footer";
 import { RATING, REVIEW_COUNT } from "@/lib/rating";
 import SiteTracking from "@/components/SiteTracking";
 import { AREA_SERVED_SCHEMA, OWNER_EMAIL } from "@/lib/business";
+import { SITE_OPEN_GRAPH, SITE_TWITTER } from "@/lib/seo";
 
 const ADS_TAG_ID = process.env.NEXT_PUBLIC_ADS_TAG_ID;
 const ADS_PHONE_LABEL = process.env.NEXT_PUBLIC_ADS_PHONE_CONVERSION_LABEL;
@@ -58,6 +59,11 @@ const phoneConversionBootstrap = (tagId: string, label: string) => `
 
 export const metadata: Metadata = {
   metadataBase: new URL("https://www.rcompleteautocare.com"),
+  // Site-wide share-card defaults (site name, locale, 1200x630 image) for any
+  // page that does not set its own. No default og:title/og:url on purpose: a
+  // page without its own would otherwise advertise the homepage's.
+  openGraph: SITE_OPEN_GRAPH,
+  twitter: SITE_TWITTER,
   title: "R Complete Auto Care | Auto Repair Crown Point, IN",
   description: "Diagnostic-first auto repair shop in Crown Point, IN. Honest estimates, expert repairs, extended warranty accepted. Serving Crown Point, St. John, Schererville, Merrillville, Cedar Lake.",
 }
@@ -161,10 +167,25 @@ const SCHEMA = {
   ],
 };
 
-const SPEAKABLE_SCHEMA = {
+// Speakable must hang off a WebPage (or Article) node: a free-standing
+// SpeakableSpecification is not attached to anything and is ignored. This
+// generic WebPage node describes whichever page the layout is rendering (the
+// layout cannot know the URL, so it carries no url/@id) and points the
+// speakable selectors at the H1 and the .speakable TL;DR on that page.
+const WEBPAGE_SCHEMA = {
   "@context": "https://schema.org",
-  "@type": "SpeakableSpecification",
-  "cssSelector": ["h1", ".speakable"],
+  "@type": "WebPage",
+  isPartOf: {
+    "@type": "WebSite",
+    "@id": "https://www.rcompleteautocare.com/#website",
+    name: "R Complete Auto Care",
+    url: "https://www.rcompleteautocare.com",
+  },
+  about: { "@id": "https://www.rcompleteautocare.com/#business" },
+  speakable: {
+    "@type": "SpeakableSpecification",
+    cssSelector: ["h1", ".speakable"],
+  },
 };
 
 export default function RootLayout({ children }: { children: React.ReactNode }) {
@@ -186,7 +207,7 @@ export default function RootLayout({ children }: { children: React.ReactNode }) 
         />
         <script
           type="application/ld+json"
-          dangerouslySetInnerHTML={{ __html: JSON.stringify(SPEAKABLE_SCHEMA).replace(/</g, "\\u003c") }}
+          dangerouslySetInnerHTML={{ __html: JSON.stringify(WEBPAGE_SCHEMA).replace(/</g, "\\u003c") }}
         />
         <Nav />
         <main>{children}</main>

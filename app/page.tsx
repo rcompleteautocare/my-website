@@ -359,11 +359,11 @@ export default function Home() {
       <section className={styles.storySection}>
         <div className={`${styles.storyCard} ${styles.storyCardTextOnly}`}>
           <div className={styles.storyCopy}>
-            <p className={styles.kicker}>Family experience, local accountability</p>
+            <p className={styles.kicker}>Since 1989 · Local accountability</p>
             <h2>Locally Owned.<br />Professionally Operated.</h2>
             <p>
-              Our family-owned team brings decades of experience and ASE-certified expertise to
-              every vehicle. We diagnose first, explain what is urgent and what can wait, provide a
+              Diagnosing and repairing vehicles since 1989, our family-owned team brings
+              ASE-certified expertise to every vehicle. We diagnose first, explain what is urgent and what can wait, provide a
               transparent estimate, and perform no repair without customer approval.
             </p>
             <Link href="/about">Meet R Complete Auto Care <ArrowRight aria-hidden="true" size={17} /></Link>
@@ -375,7 +375,7 @@ export default function Home() {
         <div className={styles.sectionHeading}>
           <p className={styles.kicker}>Serving Northwest Indiana</p>
           <h2 id="service-area-heading">Your local diagnostic-first repair shop.</h2>
-          <p>Conveniently located in Crown Point for drivers from {SERVICE_AREAS.filter((c) => c !== "Crown Point").join(", ")}, and nearby communities.</p>
+          <p>Conveniently located in Crown Point for drivers from {SERVICE_AREAS.filter((c) => c !== "Crown Point").join(", ")}, and nearby communities. Comparing shops? See what to look for in a <Link href="/mechanic-near-me-crown-point">mechanic near you in Crown Point</Link> and how far we are from your town.</p>
         </div>
         <div className={styles.serviceAreaGrid}>
           {serviceAreas.map(({ city, href }) => href ? (

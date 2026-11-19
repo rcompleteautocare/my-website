@@ -10,8 +10,8 @@ export const metadata: Metadata = {
 }
 
 export default function VehicleInformationPage() {
-  return <main className={styles.page}>
+  return <div className={styles.page}>
     <section className={styles.intro}><span className={styles.eyebrow}>Appointment intake</span><h1>Tell us about your vehicle</h1><p>Your appointment is reserved. These details help our service advisor prepare before you arrive.</p></section>
     <Suspense fallback={<div className={styles.formCard}>Loading secure intake form…</div>}><VehicleInformationForm /></Suspense>
-  </main>
+  </div>
 }

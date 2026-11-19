@@ -14,6 +14,7 @@ const PATHS = [
   '/auto-repair-crown-point-in', '/auto-repair-st-john-in', '/auto-repair-schererville-in',
   '/auto-repair-merrillville-in', '/auto-repair-cedar-lake-in',
   '/auto-repair-lowell-in', '/auto-repair-hobart-in',
+  '/auto-repair-dyer-in', '/auto-repair-munster-in', '/auto-repair-valparaiso-in',
   '/car-overheating-crown-point-in', '/car-wont-start-crown-point-in',
   '/check-engine-light-flashing-crown-point', '/extended-warranty-auto-repair-crown-point-in',
   '/mechanic-near-me-crown-point',

@@ -1,17 +1,17 @@
 import Link from "next/link";
 import BookButton from "@/components/BookButton";
 import ServiceSchema from "@/app/components/ServiceSchema";
-import { YEARS_EXPERIENCE, SERVICE_AREAS } from "@/lib/business";
+import { EXPERIENCE_CLAIM, EXPERIENCE_SHORT, SERVICE_AREAS } from "@/lib/business";
 
 export const metadata = {
   title: "Auto Repair in Lowell, IN | R Complete Auto Care",
-  description: "Auto repair near Lowell, IN — R Complete Auto Care in Crown Point, about 15 minutes north via I-65. Diagnostic-first, extended warranty accepted. (219) 262-2711.",
+  description: "Auto repair near Lowell, IN: R Complete Auto Care in Crown Point, about 15 minutes north via I-65. Diagnostic-first, extended warranty accepted. (219) 262-2711.",
   alternates: {
     canonical: "https://www.rcompleteautocare.com/auto-repair-lowell-in",
   },
   openGraph: {
     title: "Auto Repair in Lowell, IN | R Complete Auto Care",
-    description: "Auto repair near Lowell, IN — R Complete Auto Care in Crown Point, about 15 minutes north via I-65. Diagnostic-first, extended warranty accepted. (219) 262-2711.",
+    description: "Auto repair near Lowell, IN: R Complete Auto Care in Crown Point, about 15 minutes north via I-65. Diagnostic-first, extended warranty accepted. (219) 262-2711.",
     url: "https://www.rcompleteautocare.com/auto-repair-lowell-in",
     siteName: "R Complete Auto Care",
     locale: "en_US",
@@ -21,7 +21,7 @@ export const metadata = {
   twitter: {
     card: "summary_large_image",
     title: "Auto Repair in Lowell, IN | R Complete Auto Care",
-    description: "Auto repair near Lowell, IN — R Complete Auto Care in Crown Point, about 15 minutes north via I-65. Diagnostic-first, extended warranty accepted. (219) 262-2711.",
+    description: "Auto repair near Lowell, IN: R Complete Auto Care in Crown Point, about 15 minutes north via I-65. Diagnostic-first, extended warranty accepted. (219) 262-2711.",
     images: ["/logo.png"],
   },
   robots: { index: true, follow: true },
@@ -74,7 +74,7 @@ export default function Lowell() {
       </section>
 
       <section style={{ background: "#e63946", color: "#fff", padding: "14px 24px", textAlign: "center", fontSize: "14px", fontWeight: "500" }}>
-        ✓ Diagnostic-First &nbsp;|&nbsp; ✓ Foreign &amp; Domestic &nbsp;|&nbsp; ✓ Extended Warranty Accepted &nbsp;|&nbsp; ✓ {YEARS_EXPERIENCE} Years Family Experience
+        ✓ Diagnostic-First &nbsp;|&nbsp; ✓ Foreign &amp; Domestic &nbsp;|&nbsp; ✓ Extended Warranty Accepted &nbsp;|&nbsp; ✓ {EXPERIENCE_SHORT}
       </section>
 
       <section style={{ background: "#1a1a1a", color: "#ddd", padding: "12px 24px", textAlign: "center", fontSize: "13px" }}>
@@ -93,7 +93,7 @@ export default function Lowell() {
           The drive to our shop is simple: north on I-65 a few exits to US-231 and west into Crown Point, or straight up Colfax Street (SR-55). No interstate is required if you&apos;d rather stay on surface streets. We work on all foreign and domestic vehicles and accept most extended warranty plans.
         </p>
         <p style={{ lineHeight: 1.8, color: "#444", marginBottom: "40px" }}>
-          We see a lot of Lowell trucks and SUVs that tow — boats and campers heading to Cedar Lake, trailers for work, and equipment for the farms south of town. Towing is hard on cooling systems, brakes, and transmissions, so we pay close attention to those systems and flag wear before a hot summer haul turns into a roadside problem. Built on {YEARS_EXPERIENCE} years of family experience, we serve Lowell, Cedar Lake, Crown Point, and all of southern Lake County, Indiana.
+          We see a lot of Lowell trucks and SUVs that tow — boats and campers heading to Cedar Lake, trailers for work, and equipment for the farms south of town. Towing is hard on cooling systems, brakes, and transmissions, so we pay close attention to those systems and flag wear before a hot summer haul turns into a roadside problem. {EXPERIENCE_CLAIM}, we serve Lowell, Cedar Lake, Crown Point, and all of southern Lake County, Indiana.
         </p>
 
         <h2 style={{ fontSize: "28px", marginBottom: "24px" }}>Auto Repair Services for Lowell Drivers</h2>

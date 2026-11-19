@@ -33,7 +33,7 @@ body {
 .faq-item { border-bottom:1px solid #e8e8e8; }
 .faq-question { width:100%; text-align:left; background:none; border:none; padding:18px 0; font-size:16px; font-weight:600; color:#1a1a1a; cursor:pointer; display:flex; justify-content:space-between; align-items:center; }
 .faq-question::after { content:'+'; font-size:22px; color:#c0392b; margin-left:16px; }
-.faq-question[aria-expanded="true"]::after { content:'−'; }
+.faq-item[open] > .faq-question::after { content:'−'; }
 .faq-answer { font-size:15px; line-height:1.75; color:#555; padding:0 0 18px; margin:0; }
 .related-links { list-style:none; padding:0; margin:16px 0 40px; }
 .related-links li { margin-bottom:8px; }
@@ -220,7 +220,23 @@ ul li strong, ol li strong {
   margin-left: 16px;
 }
 
-.faq-question[aria-expanded="true"]::after {
+/* <summary> reset: drop the native disclosure triangle (the +/− above replaces
+   it) and keep the keyboard focus ring visible. */
+summary.faq-question {
+  list-style: none;
+  box-sizing: border-box;
+}
+
+summary.faq-question::-webkit-details-marker {
+  display: none;
+}
+
+summary.faq-question:focus-visible {
+  outline: 2px solid #c0392b;
+  outline-offset: 2px;
+}
+
+.faq-item[open] > .faq-question::after {
   content: '−';
 }
 

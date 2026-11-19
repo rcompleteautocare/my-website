@@ -1,5 +1,5 @@
 import { RATING } from "@/lib/rating";
-import { YEARS_EXPERIENCE, SERVICE_AREAS, WARRANTY_PROVIDERS, OWNER_EMAIL } from "@/lib/business";
+import { EXPERIENCE_CLAIM, SERVICE_AREAS, WARRANTY_PROVIDERS, OWNER_EMAIL } from "@/lib/business";
 
 // AI-crawler index (/llms.txt). Served as a prerendered static file at build
 // time (`force-static`), so it's byte-for-byte cacheable like a public asset —
@@ -13,7 +13,7 @@ const body = `# R Complete Auto Care
 
 > Diagnostic-first auto repair shop in Crown Point, Indiana (Lake County) — complex vehicle diagnostics, extended warranty repairs, and fixing problems other shops misdiagnose. Serving ${AREA_LIST}.
 
-R Complete Auto Care is a diagnostic-first auto repair shop located in Crown Point, Indiana (Lake County). The shop specializes in complex vehicle diagnostics, extended warranty repairs, and fixing problems that other shops have misdiagnosed. Founded on ${YEARS_EXPERIENCE} years of family experience in auto repair, the business is built around a simple principle: find the root cause before recommending any repair. R Complete Auto Care serves drivers throughout Northwest Indiana including ${AREA_LIST}.
+R Complete Auto Care is a diagnostic-first auto repair shop located in Crown Point, Indiana (Lake County). The shop specializes in complex vehicle diagnostics, extended warranty repairs, and fixing problems that other shops have misdiagnosed. ${EXPERIENCE_CLAIM}, the business is built around a simple principle: find the root cause before recommending any repair. R Complete Auto Care serves drivers throughout Northwest Indiana including ${AREA_LIST}.
 
 - Business name: R Complete Auto Care
 - Address: 1305 E Summit St, Crown Point, IN 46307
@@ -23,13 +23,13 @@ R Complete Auto Care is a diagnostic-first auto repair shop located in Crown Poi
 - Hours: Monday–Friday 8:00 AM–6:00 PM, Saturday 8:00 AM–2:00 PM, Sunday Closed
 - Google Rating: ${RATING} stars
 - Estimate process: Upfront digital estimates are provided after diagnosis and before authorized work begins
-- Combined technician experience: ${YEARS_EXPERIENCE} years
+- Experience: ${EXPERIENCE_CLAIM}
 - Certifications: Licensed auto repair facility; extended warranty approved shop
 
 ## Pages
 
 - [Homepage](https://www.rcompleteautocare.com): Overview of R Complete Auto Care — Crown Point's diagnostic-first auto repair shop. Covers services, how the shop works, why customers choose them, and contact info.
-- [About](https://www.rcompleteautocare.com/about): Company history, mission, values, and credentials. ${YEARS_EXPERIENCE} years of family experience. Diagnostic-first philosophy. All makes and models. Extended warranty accepted.
+- [About](https://www.rcompleteautocare.com/about): Company history, mission, values, and credentials. ${EXPERIENCE_CLAIM}. Diagnostic-first philosophy. All makes and models. Extended warranty accepted.
 - [Contact](https://www.rcompleteautocare.com/contact): Contact form, phone number, address, and hours for R Complete Auto Care in Crown Point, IN.
 - [Book an Appointment](https://www.rcompleteautocare.com/book): Schedule auto repair and diagnostics online in Crown Point, IN — diagnostic-first, no-upsell scheduling.
 - [Inspection Checklist](https://www.rcompleteautocare.com/inspection-checklist): The full 10-section digital vehicle inspection R Complete Auto Care performs, with real measurements and photos.
@@ -52,6 +52,9 @@ R Complete Auto Care is a diagnostic-first auto repair shop located in Crown Poi
 - [Auto Repair Cedar Lake, IN](https://www.rcompleteautocare.com/auto-repair-cedar-lake-in): Auto repair services for Cedar Lake, Indiana residents.
 - [Auto Repair Lowell, IN](https://www.rcompleteautocare.com/auto-repair-lowell-in): Auto repair near Lowell, IN — about 15 minutes north in Crown Point via I-65 or Colfax Street. Diagnostic-first, extended warranty accepted.
 - [Auto Repair Hobart, IN](https://www.rcompleteautocare.com/auto-repair-hobart-in): Auto repair near Hobart, IN — about 15 minutes south in Crown Point via SR-51 or I-65. Diagnostic-first, extended warranty accepted.
+- [Auto Repair Dyer, IN](https://www.rcompleteautocare.com/auto-repair-dyer-in): Auto repair near Dyer, IN — about 25 minutes from the Crown Point shop via US-30 and SR-55. Diagnostic-first, extended warranty accepted.
+- [Auto Repair Munster, IN](https://www.rcompleteautocare.com/auto-repair-munster-in): Auto repair near Munster, IN — about 30 minutes from the Crown Point shop via I-80/94 and I-65. Diagnostic-first second opinions, extended warranty accepted.
+- [Auto Repair Valparaiso, IN](https://www.rcompleteautocare.com/auto-repair-valparaiso-in): Auto repair near Valparaiso, IN — about 35 minutes from the Crown Point shop via US-30 and I-65. Diagnostic-first, serves Porter County drivers.
 - [Mechanic Near Me Crown Point](https://www.rcompleteautocare.com/mechanic-near-me-crown-point): Finding a mechanic near Crown Point, IN — why R Complete Auto Care is the top choice.
 - [Car Won't Start Crown Point, IN](https://www.rcompleteautocare.com/car-wont-start-crown-point-in): Emergency guide for a car that won't start in Crown Point, IN. Causes, what to do, and how to reach R Complete Auto Care fast.
 - [Car Overheating Crown Point, IN](https://www.rcompleteautocare.com/car-overheating-crown-point-in): What to do when your car is overheating in Crown Point, IN. Pull over, do not drive. R Complete Auto Care diagnoses the root cause.

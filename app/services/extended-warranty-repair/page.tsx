@@ -25,6 +25,19 @@ import Link from "next/link";
 import RelatedServices from "@/app/components/RelatedServices";
 import ServiceFaqHub from "@/app/components/ServiceFaqHub";
 import { SERVICE_AREAS, AREA_SERVED_SCHEMA, WARRANTY_PROVIDERS } from "@/lib/business";
+// This page's own FAQs. Rendered (and emitted as the page's single FAQPage
+// schema) by <ServiceFaqHub>, which appends the shared service questions this
+// page does not already answer — see lib/service-faqs.ts.
+const FAQS = [
+  { q: "Do I need to call my warranty company first, or do you handle that?", a: "Just call us first at (219) 262-2711 with your warranty contract information. We verify your coverage directly with the provider and handle the pre-authorisation call before any work begins. You don't need to navigate the warranty process yourself." },
+  { q: "What extended warranty companies do you work with?", a: "We work with most third-party providers including CARS Protection Plus, Endurance, CarShield, CARCHEX, AmTrust, Zurich, and Protect My Car. Call us with your provider name to confirm." },
+  { q: "What if my warranty company denies the claim?", a: "We advise you on the denial reason and whether it's worth appealing. Some denials are based on insufficient documentation from a previous shop — our detailed diagnostic records are often sufficient to support a successful reconsideration." },
+  { q: "Does my extended warranty cover diagnosis?", a: "Diagnostic coverage varies by contract and by the component that failed. We check your plan terms, document the findings, and explain what the administrator authorizes before work begins." },
+  { q: "My warranty company wants to send an inspector. Is that okay?", a: "Yes — inspector visits are standard for larger claims and we're fully prepared. Our diagnostic documentation supports the inspection process. We have successfully passed every warranty inspector visit." },
+  { q: "Why do so many shops refuse extended warranty work?", a: "Extended warranty repairs require detailed documentation, pre-authorisation calls, specific labor operation codes, and post-repair paperwork that most shops aren't set up to handle. We built our process around this — warranty work is a significant part of our business." },
+  { q: "Do you accept extended warranties for all types of repairs?", a: "We handle warranty claims for engine, transmission, electrical, suspension, A/C, fuel system, cooling system, and most other covered components. Call us with your provider name and we'll tell you exactly what's covered." },
+];
+
 export default function ExtendedWarrantyRepair() {
   return (
     <div style={{ color: "#1a1a1a" }}>
@@ -179,29 +192,9 @@ export default function ExtendedWarrantyRepair() {
         </div>
       </section>
 
-      {/* FAQ */}
-      <section style={{ background: "#f5f5f5", padding: "60px 24px" }}>
-        <div style={{ maxWidth: "800px", margin: "0 auto" }}>
-          <h2 style={{ fontSize: "28px", marginBottom: "24px" }}>Frequently Asked Questions — Extended Warranty Repair</h2>
-          {[
-            { q: "Do I need to call my warranty company first, or do you handle that?", a: "Just call us first at (219) 262-2711 with your warranty contract information. We verify your coverage directly with the provider and handle the pre-authorisation call before any work begins. You don't need to navigate the warranty process yourself." },
-            { q: "What extended warranty companies do you work with?", a: "We work with most third-party providers including CARS Protection Plus, Endurance, CarShield, CARCHEX, AmTrust, Zurich, and Protect My Car. Call us with your provider name to confirm." },
-            { q: "What if my warranty company denies the claim?", a: "We advise you on the denial reason and whether it's worth appealing. Some denials are based on insufficient documentation from a previous shop — our detailed diagnostic records are often sufficient to support a successful reconsideration." },
-            { q: "Does my extended warranty cover diagnosis?", a: "Diagnostic coverage varies by contract and by the component that failed. We check your plan terms, document the findings, and explain what the administrator authorizes before work begins." },
-            { q: "My warranty company wants to send an inspector. Is that okay?", a: "Yes — inspector visits are standard for larger claims and we're fully prepared. Our diagnostic documentation supports the inspection process. We have successfully passed every warranty inspector visit." },
-            { q: "Why do so many shops refuse extended warranty work?", a: "Extended warranty repairs require detailed documentation, pre-authorisation calls, specific labor operation codes, and post-repair paperwork that most shops aren't set up to handle. We built our process around this — warranty work is a significant part of our business." },
-            { q: "Do you accept extended warranties for all types of repairs?", a: "We handle warranty claims for engine, transmission, electrical, suspension, A/C, fuel system, cooling system, and most other covered components. Call us with your provider name and we'll tell you exactly what's covered." },
-          ].map(item => (
-            <div key={item.q} style={{ marginBottom: "20px", borderBottom: "1px solid #e0e0e0", paddingBottom: "20px" }}>
-              <div style={{ fontWeight: "bold", fontSize: "16px", marginBottom: "8px" }}>{item.q}</div>
-              <div style={{ color: "#555", lineHeight: 1.7 }}>{item.a}</div>
-            </div>
-          ))}
-        </div>
-      </section>
 
       <RelatedServices slug="extended-warranty-repair" />
-      <ServiceFaqHub slug="extended-warranty-repair" />
+      <ServiceFaqHub slug="extended-warranty-repair" faqs={FAQS} />
 
       {/* Final CTA */}
       <section style={{ background: "#e63946", color: "#fff", textAlign: "center", padding: "60px 24px" }}>
@@ -213,50 +206,6 @@ export default function ExtendedWarrantyRepair() {
         </a>
       </section>
 
-    <script
-  type="application/ld+json"
-  dangerouslySetInnerHTML={{ __html: JSON.stringify({
-    "@context": "https://schema.org",
-    "@type": "FAQPage",
-    "mainEntity": [
-      {
-        "@type": "Question",
-        "name": "Do I need to call my warranty company first, or do you handle that?",
-        "acceptedAnswer": { "@type": "Answer", "text": "Just call us first at (219) 262-2711 with your warranty contract information. We verify your coverage directly with the provider and handle the pre-authorisation call before any work begins. You don't need to navigate the warranty process yourself." }
-      },
-      {
-        "@type": "Question",
-        "name": "What extended warranty companies do you work with?",
-        "acceptedAnswer": { "@type": "Answer", "text": "We work with most third-party providers including CARS Protection Plus, Endurance, CarShield, CARCHEX, AmTrust, Zurich, and Protect My Car. Call us with your provider name to confirm." }
-      },
-      {
-        "@type": "Question",
-        "name": "What if my warranty company denies the claim?",
-        "acceptedAnswer": { "@type": "Answer", "text": "We advise you on the denial reason and whether it's worth appealing. Some denials are based on insufficient documentation from a previous shop — our detailed diagnostic records are often sufficient to support a successful reconsideration." }
-      },
-      {
-        "@type": "Question",
-        "name": "Does my extended warranty cover diagnosis?",
-        "acceptedAnswer": { "@type": "Answer", "text": "Diagnostic coverage varies by contract and by the component that failed. We check your plan terms, document the findings, and explain what the administrator authorizes before work begins." }
-      },
-      {
-        "@type": "Question",
-        "name": "My warranty company wants to send an inspector. Is that okay?",
-        "acceptedAnswer": { "@type": "Answer", "text": "Yes — inspector visits are standard for larger claims and we're fully prepared. Our diagnostic documentation supports the inspection process. We have successfully passed every warranty inspector visit." }
-      },
-      {
-        "@type": "Question",
-        "name": "Why do so many shops refuse extended warranty work?",
-        "acceptedAnswer": { "@type": "Answer", "text": "Extended warranty repairs require detailed documentation, pre-authorisation calls, specific labor operation codes, and post-repair paperwork that most shops aren't set up to handle. We built our process around this — warranty work is a significant part of our business." }
-      },
-      {
-        "@type": "Question",
-        "name": "Do you accept extended warranties for all types of repairs?",
-        "acceptedAnswer": { "@type": "Answer", "text": "We handle warranty claims for engine, transmission, electrical, suspension, A/C, fuel system, cooling system, and most other covered components. Call us with your provider name and we'll tell you exactly what's covered." }
-      }
-    ]
-  }).replace(/</g, "\u003c")}}
-/>
 <script type="application/ld+json" dangerouslySetInnerHTML={{ __html: JSON.stringify({
   "@context": "https://schema.org",
   "@type": "HowTo",

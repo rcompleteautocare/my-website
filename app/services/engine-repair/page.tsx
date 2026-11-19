@@ -24,7 +24,19 @@ export const metadata = {
 import RelatedServices from "@/app/components/RelatedServices";
 import ServiceFaqHub from "@/app/components/ServiceFaqHub";
 import FinancingCallout from "@/app/components/FinancingCallout";
-import { YEARS_EXPERIENCE, SERVICE_AREAS, AREA_SERVED_SCHEMA } from "@/lib/business";
+import { EXPERIENCE_CLAIM, EXPERIENCE_SHORT, SERVICE_AREAS, AREA_SERVED_SCHEMA } from "@/lib/business";
+// This page's own FAQs. Rendered (and emitted as the page's single FAQPage
+// schema) by <ServiceFaqHub>, which appends the shared service questions this
+// page does not already answer — see lib/service-faqs.ts.
+const FAQS = [
+  { q: "How do I know if my engine needs repair?", a: "Common signs include a check engine light, knocking or ticking noises, loss of power, overheating, excessive oil consumption, smoke from the exhaust, or oil leaks. If you notice any of these, bring it in for a diagnostic before the problem gets worse." },
+  { q: "How much does engine repair cost in Crown Point?", a: "It depends on the verified failure, your engine configuration, parts access, and any connected damage. We diagnose first, then give you a clear, upfront estimate before any work begins — and extended warranties often cover engine repairs. No surprises." },
+  { q: "Is it worth repairing my engine or should I get a new car?", a: "We give you honest advice based on the vehicle's condition, the verified failure, and available warranty coverage. We explain the repair scope and estimate so you can make the right decision for your situation." },
+  { q: "My engine is overheating — what should I do?", a: "Pull over safely and turn off the engine immediately. Do not continue driving an overheating engine — it can cause catastrophic damage very quickly. Call us and we'll help you figure out next steps and get the vehicle in for diagnosis." },
+  { q: "Do you accept extended warranties for engine repair?", a: "Yes — we work with most major extended warranty providers including CarShield, Endurance, CARS Protection Plus, and AmTrust. Call us with your warranty info and we'll verify coverage before any work begins." },
+  { q: "Do you serve St. John, Schererville, and Merrillville for engine repair?", a: "Yes — we serve all of Lake County including St. John, Schererville, Merrillville, Cedar Lake, and surrounding areas. We're located at 1305 E Summit St in Crown Point, easily accessible from all of Northwest Indiana." },
+];
+
 export default function EngineRepair() {
   return (
     <div style={{ color: "#1a1a1a" }}>
@@ -145,7 +157,7 @@ export default function EngineRepair() {
             { title: "Diagnose First, Always", desc: "We find the exact root cause before recommending any repair. No guessing, no unnecessary parts." },
             { title: "Honest Estimates", desc: "You get a clear estimate before we start. No unauthorized work and no surprises when you pick up your car." },
             { title: "Extended Warranty Accepted", desc: "We work with most warranty providers and handle all the paperwork. You may owe nothing." },
-            { title: `${YEARS_EXPERIENCE} Years Family Experience`, desc: "Our shop is built on decades of engine diagnostic expertise. We've seen every failure pattern." },
+            { title: EXPERIENCE_SHORT, desc: `${EXPERIENCE_CLAIM}. We've seen every failure pattern.` },
             { title: "All Makes & Models", desc: "Foreign and domestic. Honda, Toyota, Ford, GM, BMW, Mercedes, Subaru, Dodge and more." },
             { title: "Same-Day Diagnostics", desc: "Most diagnostic appointments completed same day with a call before any work begins." },
           ].map(item => (
@@ -173,28 +185,9 @@ export default function EngineRepair() {
         </div>
       </section>
 
-      {/* FAQ */}
-      <section style={{ padding: "60px 24px" }}>
-        <div style={{ maxWidth: "800px", margin: "0 auto" }}>
-          <h2 style={{ fontSize: "28px", marginBottom: "24px" }}>Frequently Asked Questions — Engine Repair</h2>
-          {[
-            { q: "How do I know if my engine needs repair?", a: "Common signs include a check engine light, knocking or ticking noises, loss of power, overheating, excessive oil consumption, smoke from the exhaust, or oil leaks. If you notice any of these, bring it in for a diagnostic before the problem gets worse." },
-            { q: "How much does engine repair cost in Crown Point?", a: "It depends on the verified failure, your engine configuration, parts access, and any connected damage. We diagnose first, then give you a clear, upfront estimate before any work begins — and extended warranties often cover engine repairs. No surprises." },
-            { q: "Is it worth repairing my engine or should I get a new car?", a: "We give you honest advice based on the vehicle's condition, the verified failure, and available warranty coverage. We explain the repair scope and estimate so you can make the right decision for your situation." },
-            { q: "My engine is overheating — what should I do?", a: "Pull over safely and turn off the engine immediately. Do not continue driving an overheating engine — it can cause catastrophic damage very quickly. Call us and we'll help you figure out next steps and get the vehicle in for diagnosis." },
-            { q: "Do you accept extended warranties for engine repair?", a: "Yes — we work with most major extended warranty providers including CarShield, Endurance, CARS Protection Plus, and AmTrust. Call us with your warranty info and we'll verify coverage before any work begins." },
-            { q: "Do you serve St. John, Schererville, and Merrillville for engine repair?", a: "Yes — we serve all of Lake County including St. John, Schererville, Merrillville, Cedar Lake, and surrounding areas. We're located at 1305 E Summit St in Crown Point, easily accessible from all of Northwest Indiana." },
-          ].map(item => (
-            <div key={item.q} style={{ marginBottom: "20px", borderBottom: "1px solid #e0e0e0", paddingBottom: "20px" }}>
-              <div style={{ fontWeight: "bold", fontSize: "16px", marginBottom: "8px" }}>{item.q}</div>
-              <div style={{ color: "#555", lineHeight: 1.7 }}>{item.a}</div>
-            </div>
-          ))}
-        </div>
-      </section>
 
       <RelatedServices slug="engine-repair" />
-      <ServiceFaqHub slug="engine-repair" />
+      <ServiceFaqHub slug="engine-repair" faqs={FAQS} />
 
       {/* Final CTA */}
       <section style={{ background: "#e63946", color: "#fff", textAlign: "center", padding: "60px 24px" }}>
@@ -206,45 +199,6 @@ export default function EngineRepair() {
         </a>
       </section>
 
-    <script
-  type="application/ld+json"
-  dangerouslySetInnerHTML={{ __html: JSON.stringify({
-    "@context": "https://schema.org",
-    "@type": "FAQPage",
-    "mainEntity": [
-      {
-        "@type": "Question",
-        "name": "How do I know if my engine needs repair?",
-        "acceptedAnswer": { "@type": "Answer", "text": "Common signs include a check engine light, knocking or ticking noises, loss of power, overheating, excessive oil consumption, smoke from the exhaust, or oil leaks. If you notice any of these, bring it in for a diagnostic before the problem gets worse." }
-      },
-      {
-        "@type": "Question",
-        "name": "How much does engine repair cost in Crown Point?",
-        "acceptedAnswer": { "@type": "Answer", "text": "It depends on the verified failure, your engine configuration, parts access, and any connected damage. We diagnose first, then give you a clear, upfront estimate before any work begins — and extended warranties often cover engine repairs. No surprises." }
-      },
-      {
-        "@type": "Question",
-        "name": "Is it worth repairing my engine or should I get a new car?",
-        "acceptedAnswer": { "@type": "Answer", "text": "We give you honest advice based on the vehicle's condition, the verified failure, and available warranty coverage. We explain the repair scope and estimate so you can make the right decision for your situation." }
-      },
-      {
-        "@type": "Question",
-        "name": "My engine is overheating — what should I do?",
-        "acceptedAnswer": { "@type": "Answer", "text": "Pull over safely and turn off the engine immediately. Do not continue driving an overheating engine — it can cause catastrophic damage very quickly. Call us and we'll help you figure out next steps and get the vehicle in for diagnosis." }
-      },
-      {
-        "@type": "Question",
-        "name": "Do you accept extended warranties for engine repair?",
-        "acceptedAnswer": { "@type": "Answer", "text": "Yes — we work with most major extended warranty providers including CarShield, Endurance, CARS Protection Plus, and AmTrust. Call us with your warranty info and we'll verify coverage before any work begins." }
-      },
-      {
-        "@type": "Question",
-        "name": "Do you serve St. John, Schererville, and Merrillville for engine repair?",
-        "acceptedAnswer": { "@type": "Answer", "text": "Yes — we serve all of Lake County including St. John, Schererville, Merrillville, Cedar Lake, and surrounding areas. We're located at 1305 E Summit St in Crown Point, easily accessible from all of Northwest Indiana." }
-      }
-    ]
-  }).replace(/</g, "\u003c")}}
-/>
 <script type="application/ld+json" dangerouslySetInnerHTML={{ __html: JSON.stringify({
   "@context": "https://schema.org",
   "@type": "HowTo",
