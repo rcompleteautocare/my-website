@@ -25,6 +25,19 @@ import RelatedServices from "@/app/components/RelatedServices";
 import ServiceFaqHub from "@/app/components/ServiceFaqHub";
 import FinancingCallout from "@/app/components/FinancingCallout";
 import { SERVICE_AREAS, AREA_SERVED_SCHEMA } from "@/lib/business";
+// This page's own FAQs. Rendered (and emitted as the page's single FAQPage
+// schema) by <ServiceFaqHub>, which appends the shared service questions this
+// page does not already answer — see lib/service-faqs.ts.
+// Slipping-specific questions live on /transmission-slipping-crown-point-in;
+// the two pages must not share FAQ questions.
+const FAQS = [
+  { q: "What are the warning signs of transmission trouble?", a: "The common ones are delayed or harsh engagement when you shift into Drive or Reverse, hard or erratic shifts, a shudder under light acceleration, the engine revving without the car picking up speed, red or brown fluid spots under the vehicle, and a transmission or check engine warning light. Any one of them is a reason to have the transmission tested before the problem grows." },
+  { q: "How much does transmission repair cost in Crown Point?", a: "It depends entirely on what's actually wrong. A fluid service or solenoid replacement is a far smaller repair than the full rebuild it becomes later. That's why we always diagnose first — so you're not authorizing a rebuild when a targeted repair would solve it." },
+  { q: "What is torque converter shudder?", a: "Torque converter shudder feels like driving over rumble strips at 40–50mph during light acceleration. It's caused by the torque converter clutch not locking up smoothly and is often mistaken for an engine misfire. It can sometimes be resolved with a fluid service — but it requires a proper diagnosis to confirm." },
+  { q: "Do you work on CVT transmissions?", a: "Yes — CVT (continuously variable transmission) transmissions require specific expertise and fluid. We have the equipment and experience to properly diagnose and service CVT transmissions found in Nissan, Subaru, Honda, Toyota, and other vehicles." },
+  { q: "Do you accept extended warranties for transmission repair?", a: "Yes — transmission repairs are among the most commonly covered repairs on extended warranty policies. Call us with your warranty info and we'll verify coverage before any work begins." },
+];
+
 export default function TransmissionRepair() {
   return (
     <div style={{ color: "#1a1a1a" }}>
@@ -151,28 +164,9 @@ export default function TransmissionRepair() {
         </a>
       </section>
 
-      {/* FAQ */}
-      <section style={{ background: "#f5f5f5", padding: "60px 24px" }}>
-        <div style={{ maxWidth: "800px", margin: "0 auto" }}>
-          <h2 style={{ fontSize: "28px", marginBottom: "24px" }}>Frequently Asked Questions — Transmission Repair</h2>
-          {[
-            { q: "How do I know if my transmission is slipping?", a: "Transmission slipping feels like your engine revs up but the car doesn't accelerate the way it should — like the power isn't connecting. You may also notice the car shifting at the wrong times or feeling like it's hunting for a gear." },
-            { q: "How much does transmission repair cost in Crown Point?", a: "It depends entirely on what's actually wrong. A fluid service or solenoid replacement is a far smaller repair than the full rebuild it becomes later. That's why we always diagnose first — so you're not authorizing a rebuild when a targeted repair would solve it." },
-            { q: "Can I drive with a slipping transmission?", a: "Short distances only, and with caution. Continuing to drive on a slipping transmission can cause additional damage and turn a smaller repair into a much larger one. Get it diagnosed as soon as possible." },
-            { q: "What is torque converter shudder?", a: "Torque converter shudder feels like driving over rumble strips at 40–50mph during light acceleration. It's caused by the torque converter clutch not locking up smoothly and is often mistaken for an engine misfire. It can sometimes be resolved with a fluid service — but it requires a proper diagnosis to confirm." },
-            { q: "Do you work on CVT transmissions?", a: "Yes — CVT (continuously variable transmission) transmissions require specific expertise and fluid. We have the equipment and experience to properly diagnose and service CVT transmissions found in Nissan, Subaru, Honda, Toyota, and other vehicles." },
-            { q: "Do you accept extended warranties for transmission repair?", a: "Yes — transmission repairs are among the most commonly covered repairs on extended warranty policies. Call us with your warranty info and we'll verify coverage before any work begins." },
-          ].map(item => (
-            <div key={item.q} style={{ marginBottom: "20px", borderBottom: "1px solid #e0e0e0", paddingBottom: "20px" }}>
-              <div style={{ fontWeight: "bold", fontSize: "16px", marginBottom: "8px" }}>{item.q}</div>
-              <div style={{ color: "#555", lineHeight: 1.7 }}>{item.a}</div>
-            </div>
-          ))}
-        </div>
-      </section>
 
       <RelatedServices slug="transmission-repair" />
-      <ServiceFaqHub slug="transmission-repair" />
+      <ServiceFaqHub slug="transmission-repair" faqs={FAQS} />
 
       {/* Final CTA */}
       <section style={{ background: "#e63946", color: "#fff", textAlign: "center", padding: "60px 24px" }}>
@@ -184,45 +178,6 @@ export default function TransmissionRepair() {
         </a>
       </section>
 
-    <script
-  type="application/ld+json"
-  dangerouslySetInnerHTML={{ __html: JSON.stringify({
-    "@context": "https://schema.org",
-    "@type": "FAQPage",
-    "mainEntity": [
-      {
-        "@type": "Question",
-        "name": "How do I know if my transmission is slipping?",
-        "acceptedAnswer": { "@type": "Answer", "text": "Transmission slipping feels like your engine revs up but the car doesn't accelerate the way it should — like the power isn't connecting. You may also notice the car shifting at the wrong times or feeling like it's hunting for a gear." }
-      },
-      {
-        "@type": "Question",
-        "name": "How much does transmission repair cost in Crown Point?",
-        "acceptedAnswer": { "@type": "Answer", "text": "It depends entirely on what's actually wrong. A fluid service or solenoid replacement is a far smaller repair than the full rebuild it becomes later. That's why we always diagnose first — so you're not authorizing a rebuild when a targeted repair would solve it." }
-      },
-      {
-        "@type": "Question",
-        "name": "Can I drive with a slipping transmission?",
-        "acceptedAnswer": { "@type": "Answer", "text": "Short distances only, and with caution. Continuing to drive on a slipping transmission can cause additional damage and turn a smaller repair into a much larger one. Get it diagnosed as soon as possible." }
-      },
-      {
-        "@type": "Question",
-        "name": "What is torque converter shudder?",
-        "acceptedAnswer": { "@type": "Answer", "text": "Torque converter shudder feels like driving over rumble strips at 40–50mph during light acceleration. It's caused by the torque converter clutch not locking up smoothly and is often mistaken for an engine misfire. It can sometimes be resolved with a fluid service — but it requires a proper diagnosis to confirm." }
-      },
-      {
-        "@type": "Question",
-        "name": "Do you work on CVT transmissions?",
-        "acceptedAnswer": { "@type": "Answer", "text": "Yes — CVT transmissions require specific expertise and fluid. We have the equipment and experience to properly diagnose and service CVT transmissions found in Nissan, Subaru, Honda, Toyota, and other vehicles." }
-      },
-      {
-        "@type": "Question",
-        "name": "Do you accept extended warranties for transmission repair?",
-        "acceptedAnswer": { "@type": "Answer", "text": "Yes — transmission repairs are among the most commonly covered repairs on extended warranty policies. Call us with your warranty info and we'll verify coverage before any work begins." }
-      }
-    ]
-  }).replace(/</g, "\u003c")}}
-/>
 <script type="application/ld+json" dangerouslySetInnerHTML={{ __html: JSON.stringify({
   "@context": "https://schema.org",
   "@type": "HowTo",

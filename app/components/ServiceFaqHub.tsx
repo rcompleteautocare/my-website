@@ -1,5 +1,6 @@
 import FaqAccordion from "./FaqAccordion";
-import { buildServiceFaqs, serviceFaqConfig } from "@/lib/service-faqs";
+import FaqSchema from "./FaqSchema";
+import { buildServiceFaqs, serviceFaqConfig, type Faq } from "@/lib/service-faqs";
 
 // Service names in lib/service-faqs.ts are lowercase for use mid-sentence;
 // the section heading needs Title Case ("Brake Repair", "No-Start Diagnostics").
@@ -7,8 +8,13 @@ function titleCase(name: string) {
   return name.replace(/(^|[\s-])([a-z])/g, (_, sep, ch) => sep + ch.toUpperCase()).replace(/ And /g, " and ");
 }
 
-export default function ServiceFaqHub({ slug }: { slug: string }) {
-  const faqs = buildServiceFaqs(slug);
+// The one FAQ section on a service page. `faqs` are the page's own questions;
+// they are merged with the shared service questions the page has not already
+// answered (see buildServiceFaqs). The same merged list feeds the visible
+// accordion and the page's single FAQPage JSON-LD block. Service pages must not
+// render another FAQ list or emit their own FAQPage schema.
+export default function ServiceFaqHub({ slug, faqs: pageFaqs = [] }: { slug: string; faqs?: Faq[] }) {
+  const faqs = buildServiceFaqs(slug, pageFaqs);
   const service = serviceFaqConfig[slug];
   if (!service || !faqs.length) return null;
   return (
@@ -17,7 +23,7 @@ export default function ServiceFaqHub({ slug }: { slug: string }) {
       <h2 id={`${slug}-complete-faq`} style={{ fontSize: "clamp(30px, 4vw, 44px)", lineHeight: 1.15, margin: "0 0 14px" }}>Frequently Asked Questions About {titleCase(service.name)}</h2>
       <p style={{ color: "#5d5d5d", lineHeight: 1.7, margin: "0 0 32px" }}>Concise guidance for Crown Point and Northwest Indiana drivers. A vehicle-specific inspection is always required for a confirmed diagnosis and estimate.</p>
       <FaqAccordion faqs={faqs} />
-      <script type="application/ld+json" dangerouslySetInnerHTML={{ __html: JSON.stringify({ "@context": "https://schema.org", "@type": "FAQPage", mainEntity: faqs.map(({ q, a }) => ({ "@type": "Question", name: q, acceptedAnswer: { "@type": "Answer", text: a } })) }).replace(/</g, "\\u003c") }} />
+      <FaqSchema faqs={faqs} />
     </section>
   );
 }

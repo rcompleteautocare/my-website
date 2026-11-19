@@ -1,3 +1,4 @@
+import FaqSchema from "@/app/components/FaqSchema";
 import Link from "next/link";
 import BookButton from "@/components/BookButton";
 import ServiceSchema from "@/app/components/ServiceSchema";
@@ -27,6 +28,17 @@ export const metadata = {
   },
   robots: { index: true, follow: true },
 };
+
+// Single source for this page's FAQ: rendered in the FAQ section below and
+// emitted as the page's FAQPage schema, so the two always match.
+const FAQS = [
+  { q: "Where is R Complete Auto Care in Crown Point, IN?", a: "We're at 1305 E Summit St, Crown Point, IN 46307 — a few blocks east of the Crown Point courthouse square, easily reached from the IN-55 / US-231 intersection and under 5 minutes from the Winfield area." },
+  { q: "Do you service the Winfield area and Crown Point subdivisions off 109th Ave?", a: "Yes — we're the closest diagnostic-first shop to Winfield and the newer subdivisions south of 109th. Most Crown Point drivers are 5–8 minutes from our shop door." },
+  { q: "Can I drop off my car before the courthouse opens?", a: "Yes — we open at 8am Mon–Fri and 8am Saturday. We have a secure drop-off and will call you before any work begins. Many customers drop off on the way to morning appointments at the county complex." },
+  { q: "Do you accept extended warranties for Crown Point residents?", a: "Yes — we handle the entire warranty claim on your behalf. Call us at (219) 262-2711 with your policy info and we'll verify coverage before you bring the vehicle in." },
+  { q: "Do you offer same-day repair in Crown Point?", a: "Yes — most Crown Point diagnostics and many repairs complete the same day. Call by 10am and we'll do everything we can to get you back on the road before close." },
+  { q: "What makes R Complete Auto Care Crown Point's flagship shop?", a: `We're locally owned, diagnostic-first, ASE-certified, and built on ${YEARS_EXPERIENCE} years of family experience. We diagnose before we repair, explain findings in plain language, and never start work without your approval.` },
+];
 
 export default function CrownPoint() {
   return (
@@ -129,14 +141,7 @@ export default function CrownPoint() {
         </div>
 
         <h2 style={{ fontSize: "28px", marginBottom: "24px" }}>Frequently Asked Questions — Auto Repair in Crown Point, IN</h2>
-        {[
-          { q: "Where is R Complete Auto Care in Crown Point, IN?", a: "We're at 1305 E Summit St, Crown Point, IN 46307 — a few blocks east of the Crown Point courthouse square, easily reached from the IN-55 / US-231 intersection and under 5 minutes from the Winfield area." },
-          { q: "Do you service the Winfield area and Crown Point subdivisions off 109th Ave?", a: "Yes — we're the closest diagnostic-first shop to Winfield and the newer subdivisions south of 109th. Most Crown Point drivers are 5–8 minutes from our shop door." },
-          { q: "Can I drop off my car before the courthouse opens?", a: "Yes — we open at 8am Mon–Fri and 8am Saturday. We have a secure drop-off and will call you before any work begins. Many customers drop off on the way to morning appointments at the county complex." },
-          { q: "Do you accept extended warranties for Crown Point residents?", a: "Yes — we handle the entire warranty claim on your behalf. Call us at (219) 262-2711 with your policy info and we'll verify coverage before you bring the vehicle in." },
-          { q: "Do you offer same-day repair in Crown Point?", a: "Yes — most Crown Point diagnostics and many repairs complete the same day. Call by 10am and we'll do everything we can to get you back on the road before close." },
-          { q: "What makes R Complete Auto Care Crown Point's flagship shop?", a: `We're locally owned, diagnostic-first, ASE-certified, and built on ${YEARS_EXPERIENCE} years of family experience. We diagnose before we repair, explain findings in plain language, and never start work without your approval.` },
-        ].map(item => (
+        {FAQS.map(item => (
           <div key={item.q} style={{ marginBottom: "20px", borderBottom: "1px solid #e0e0e0", paddingBottom: "20px" }}>
             <div style={{ fontWeight: "bold", fontSize: "16px", marginBottom: "8px" }}>{item.q}</div>
             <div style={{ color: "#555", lineHeight: 1.7 }}>{item.a}</div>
@@ -156,45 +161,7 @@ export default function CrownPoint() {
         </BookButton>
       </section>
 
-    <script
-  type="application/ld+json"
-  dangerouslySetInnerHTML={{ __html: JSON.stringify({
-    "@context": "https://schema.org",
-    "@type": "FAQPage",
-    "mainEntity": [
-      {
-        "@type": "Question",
-        "name": "What is the best auto repair shop in Crown Point, IN?",
-        "acceptedAnswer": { "@type": "Answer", "text": `R Complete Auto Care at 1305 E Summit St, Crown Point, IN 46307. We're a diagnostic-first shop built on ${YEARS_EXPERIENCE} years of family experience. Call (219) 262-2711.` }
-      },
-      {
-        "@type": "Question",
-        "name": "What are your hours in Crown Point?",
-        "acceptedAnswer": { "@type": "Answer", "text": "We're open Monday through Friday 8:00 AM to 6:00 PM and Saturday 8:00 AM to 2:00 PM. Closed Sunday." }
-      },
-      {
-        "@type": "Question",
-        "name": "Do you accept extended warranties in Crown Point?",
-        "acceptedAnswer": { "@type": "Answer", "text": "Yes! We work with most extended warranty providers and handle the claim paperwork and talk to the adjuster for you — no hassle on your end." }
-      },
-      {
-        "@type": "Question",
-        "name": "Do you work on foreign and domestic vehicles in Crown Point?",
-        "acceptedAnswer": { "@type": "Answer", "text": "Absolutely — all makes and models including Honda, Toyota, BMW, Mercedes, Ford, Chevrolet, Dodge, Subaru, and more." }
-      },
-      {
-        "@type": "Question",
-        "name": "How does your diagnostic process work?",
-        "acceptedAnswer": { "@type": "Answer", "text": "Every vehicle gets a thorough diagnostic first. We find the root cause, call you with our findings and a clear estimate, get your approval, then fix it. You never pay for work you didn't approve." }
-      },
-      {
-        "@type": "Question",
-        "name": "Do you offer same-day service in Crown Point?",
-        "acceptedAnswer": { "@type": "Answer", "text": "Yes — most diagnostic appointments and many repairs are completed the same day. Call us at (219) 262-2711 to schedule." }
-      }
-    ]
-  }).replace(/</g, "\u003c")}}
-/>
+    <FaqSchema faqs={FAQS} />
     <script type="application/ld+json" dangerouslySetInnerHTML={{ __html: "{\"@context\":\"https://schema.org\",\"@type\":\"BreadcrumbList\",\"itemListElement\":[{\"@type\":\"ListItem\",\"position\":1,\"name\":\"Home\",\"item\":\"https://www.rcompleteautocare.com\"},{\"@type\":\"ListItem\",\"position\":2,\"name\":\"Auto Repair Crown Point, IN\"}]}".replace(/</g, "\u003c") }} />
     <script type="application/ld+json" dangerouslySetInnerHTML={{ __html: "{\"@context\":\"https://schema.org\",\"@type\":\"WebPage\",\"@id\":\"https://www.rcompleteautocare.com/auto-repair-crown-point-in#webpage\",\"url\":\"https://www.rcompleteautocare.com/auto-repair-crown-point-in\",\"name\":\"Crown Point & NW Indiana Auto Repair | R Complete Auto Care\",\"dateModified\":\"2026-07-11\",\"about\":{\"@id\":\"https://www.rcompleteautocare.com/#business\"}}".replace(/</g, "\u003c") }} />
     <ServiceSchema name="Auto Repair in Crown Point, IN" serviceType="Auto repair" path="/auto-repair-crown-point-in" />

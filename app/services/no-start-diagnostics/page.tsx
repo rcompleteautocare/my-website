@@ -24,6 +24,18 @@ export const metadata = {
 import RelatedServices from "@/app/components/RelatedServices";
 import ServiceFaqHub from "@/app/components/ServiceFaqHub";
 import { SERVICE_AREAS, AREA_SERVED_SCHEMA } from "@/lib/business";
+// This page's own FAQs. Rendered (and emitted as the page's single FAQPage
+// schema) by <ServiceFaqHub>, which appends the shared service questions this
+// page does not already answer — see lib/service-faqs.ts.
+const FAQS = [
+  { q: "My car just clicks when I try to start it — what's wrong?", a: "One loud click usually means the starter solenoid is engaging but the starter motor isn't turning — often a failed starter or, less commonly, a seized engine. Rapid clicking usually means the battery has enough voltage to trigger the solenoid but not enough amperage to crank the engine — typically a weak battery or corroded connections." },
+  { q: "My car cranks but won't start — what should I check?", a: "A car that cranks normally but won't fire is missing fuel, spark, or a trigger signal. The most common causes are a failed crankshaft position sensor, failed fuel pump, ignition system failure, or a security system lockout. This requires a proper diagnostic to identify — you won't find it by guessing." },
+  { q: "My battery is new but my car still won't start — why?", a: "A new battery rules out battery failure but doesn't rule out a parasitic draw that killed the battery, a bad alternator that isn't charging it, a failed starter, or any number of other causes. A new battery is one variable — there are many others to check." },
+  { q: "Can a bad crankshaft sensor cause a no-start?", a: "Yes — the crankshaft position sensor tells the ECM where the engine is in its rotation cycle. Without this signal, the ECM won't trigger spark or fuel injection. A failed crank sensor is one of the most common no-start causes we see, and it won't always leave an obvious fault code." },
+  { q: "My car started fine yesterday — why won't it start today?", a: "Intermittent no-start conditions are often caused by a failing component that works when cool but fails when hot, or vice versa. Fuel pumps, crankshaft sensors, and ignition modules commonly fail this way. A proper diagnostic during the failure condition is the best way to catch it." },
+  { q: "Do you accept extended warranties for no-start repairs?", a: "Yes — many no-start causes including fuel pump failure, starter failure, and sensor failures are covered under extended warranty policies. Call us with your warranty information and we'll verify coverage before any work begins." },
+];
+
 export default function NoStartDiagnostics() {
   return (
     <div style={{ color: "#1a1a1a" }}>
@@ -134,28 +146,9 @@ export default function NoStartDiagnostics() {
         </div>
       </section>
 
-      {/* FAQ */}
-      <section style={{ padding: "60px 24px" }}>
-        <div style={{ maxWidth: "800px", margin: "0 auto" }}>
-          <h2 style={{ fontSize: "28px", marginBottom: "24px" }}>Frequently Asked Questions — No-Start Diagnostics</h2>
-          {[
-            { q: "My car just clicks when I try to start it — what's wrong?", a: "One loud click usually means the starter solenoid is engaging but the starter motor isn't turning — often a failed starter or, less commonly, a seized engine. Rapid clicking usually means the battery has enough voltage to trigger the solenoid but not enough amperage to crank the engine — typically a weak battery or corroded connections." },
-            { q: "My car cranks but won't start — what should I check?", a: "A car that cranks normally but won't fire is missing fuel, spark, or a trigger signal. The most common causes are a failed crankshaft position sensor, failed fuel pump, ignition system failure, or a security system lockout. This requires a proper diagnostic to identify — you won't find it by guessing." },
-            { q: "My battery is new but my car still won't start — why?", a: "A new battery rules out battery failure but doesn't rule out a parasitic draw that killed the battery, a bad alternator that isn't charging it, a failed starter, or any number of other causes. A new battery is one variable — there are many others to check." },
-            { q: "Can a bad crankshaft sensor cause a no-start?", a: "Yes — the crankshaft position sensor tells the ECM where the engine is in its rotation cycle. Without this signal, the ECM won't trigger spark or fuel injection. A failed crank sensor is one of the most common no-start causes we see, and it won't always leave an obvious fault code." },
-            { q: "My car started fine yesterday — why won't it start today?", a: "Intermittent no-start conditions are often caused by a failing component that works when cool but fails when hot, or vice versa. Fuel pumps, crankshaft sensors, and ignition modules commonly fail this way. A proper diagnostic during the failure condition is the best way to catch it." },
-            { q: "Do you accept extended warranties for no-start repairs?", a: "Yes — many no-start causes including fuel pump failure, starter failure, and sensor failures are covered under extended warranty policies. Call us with your warranty information and we'll verify coverage before any work begins." },
-          ].map(item => (
-            <div key={item.q} style={{ marginBottom: "20px", borderBottom: "1px solid #e0e0e0", paddingBottom: "20px" }}>
-              <div style={{ fontWeight: "bold", fontSize: "16px", marginBottom: "8px" }}>{item.q}</div>
-              <div style={{ color: "#555", lineHeight: 1.7 }}>{item.a}</div>
-            </div>
-          ))}
-        </div>
-      </section>
 
       <RelatedServices slug="no-start-diagnostics" />
-      <ServiceFaqHub slug="no-start-diagnostics" />
+      <ServiceFaqHub slug="no-start-diagnostics" faqs={FAQS} />
 
       {/* Final CTA */}
       <section style={{ background: "#e63946", color: "#fff", textAlign: "center", padding: "60px 24px" }}>
@@ -167,45 +160,6 @@ export default function NoStartDiagnostics() {
         </a>
       </section>
 
-    <script
-  type="application/ld+json"
-  dangerouslySetInnerHTML={{ __html: JSON.stringify({
-    "@context": "https://schema.org",
-    "@type": "FAQPage",
-    "mainEntity": [
-      {
-        "@type": "Question",
-        "name": "My car just clicks when I try to start it — what's wrong?",
-        "acceptedAnswer": { "@type": "Answer", "text": "One loud click usually means the starter solenoid is engaging but the starter motor isn't turning — often a failed starter or a seized engine. Rapid clicking usually means the battery has enough voltage to trigger the solenoid but not enough amperage to crank the engine — typically a weak battery or corroded connections." }
-      },
-      {
-        "@type": "Question",
-        "name": "My car cranks but won't start — what should I check?",
-        "acceptedAnswer": { "@type": "Answer", "text": "A car that cranks normally but won't fire is missing fuel, spark, or a trigger signal. The most common causes are a failed crankshaft position sensor, failed fuel pump, ignition system failure, or a security system lockout. This requires a proper diagnostic to identify — you won't find it by guessing." }
-      },
-      {
-        "@type": "Question",
-        "name": "My battery is new but my car still won't start — why?",
-        "acceptedAnswer": { "@type": "Answer", "text": "A new battery rules out battery failure but doesn't rule out a parasitic draw that killed the battery, a bad alternator that isn't charging it, a failed starter, or any number of other causes. A new battery is one variable — there are many others to check." }
-      },
-      {
-        "@type": "Question",
-        "name": "Can a bad crankshaft sensor cause a no-start?",
-        "acceptedAnswer": { "@type": "Answer", "text": "Yes — the crankshaft position sensor tells the ECM where the engine is in its rotation cycle. Without this signal, the ECM won't trigger spark or fuel injection. A failed crank sensor is one of the most common no-start causes we see, and it won't always leave an obvious fault code." }
-      },
-      {
-        "@type": "Question",
-        "name": "My car started fine yesterday — why won't it start today?",
-        "acceptedAnswer": { "@type": "Answer", "text": "Intermittent no-start conditions are often caused by a failing component that works when cool but fails when hot, or vice versa. Fuel pumps, crankshaft sensors, and ignition modules commonly fail this way. A proper diagnostic during the failure condition is the best way to catch it." }
-      },
-      {
-        "@type": "Question",
-        "name": "Do you accept extended warranties for no-start repairs?",
-        "acceptedAnswer": { "@type": "Answer", "text": "Yes — many no-start causes including fuel pump failure, starter failure, and sensor failures are covered under extended warranty policies. Call us with your warranty information and we'll verify coverage before any work begins." }
-      }
-    ]
-  }).replace(/</g, "\u003c")}}
-/>
 <script type="application/ld+json" dangerouslySetInnerHTML={{ __html: JSON.stringify({
   "@context": "https://schema.org",
   "@type": "HowTo",

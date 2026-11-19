@@ -24,6 +24,20 @@ export const metadata = {
 import RelatedServices from "@/app/components/RelatedServices";
 import ServiceFaqHub from "@/app/components/ServiceFaqHub";
 import { YEARS_EXPERIENCE, AREA_SERVED_SCHEMA, SAME_DAY_COPY } from "@/lib/business";
+// This page's own FAQs. Rendered (and emitted as the page's single FAQPage
+// schema) by <ServiceFaqHub>, which appends the shared service questions this
+// page does not already answer — see lib/service-faqs.ts.
+const FAQS = [
+  { q: "How much does a check engine light diagnostic cost in Crown Point?", a: "It depends on how involved the diagnosis is — some faults are confirmed quickly, others need deeper testing across multiple systems. We tell you what the diagnosis involves before any work begins and call you with our findings before recommending a repair. Call (219) 262-2711 to get started." },
+  { q: "How long does a check engine light diagnostic take?", a: "Most diagnostics are completed the same day, often within a few hours. We'll call you with our findings before doing any work." },
+  { q: "Do I need an appointment for check engine light diagnostics in Crown Point?", a: "We recommend calling ahead at (219) 262-2711. Same-day appointments are often available Mon–Fri 8am–6pm and Sat 8am–2pm." },
+  { q: "Is it safe to drive with my check engine light on?", a: "It depends. If the light is flashing, pull over immediately — it indicates a serious misfire that can damage your catalytic converter. If it's solid, it's generally safe to drive short distances but you should get it checked within a day or two." },
+  { q: "Can you just clear the code without diagnosing it?", a: "We don't recommend it and we won't do it. Clearing the code without fixing the underlying issue means the light will come back on — often within 50–100 miles. We find the root cause first." },
+  { q: "What are signs I need check engine light diagnosis?", a: "Any time the check engine light comes on — solid or flashing. Also if you notice rough running, reduced power, poor fuel economy, or if the light returned after another shop 'fixed' it." },
+  { q: "My check engine light came back on after another shop fixed it — what do I do?", a: "This is one of the most common reasons people come to us. Many shops clear codes and replace the most obvious part without finding the actual root cause. We dig deeper. Bring it in and we'll find what was missed." },
+  { q: "Do you accept extended warranties for check engine light repairs?", a: "Yes! We work with most extended warranty providers and handle the claim paperwork and talk to the adjuster for you. Call us with your warranty info and we'll verify coverage before any work begins." },
+];
+
 export default function CheckEngineLight() {
   return (
     <div style={{ color: "#1a1a1a" }}>
@@ -133,30 +147,9 @@ export default function CheckEngineLight() {
         </a>
       </section>
 
-      {/* FAQ */}
-      <section style={{ background: "#f5f5f5", padding: "60px 24px" }}>
-        <div style={{ maxWidth: "800px", margin: "0 auto" }}>
-          <h2 style={{ fontSize: "28px", marginBottom: "24px" }}>Frequently Asked Questions — Check Engine Light</h2>
-          {[
-            { q: "How much does a check engine light diagnostic cost in Crown Point?", a: "It depends on how involved the diagnosis is — some faults are confirmed quickly, others need deeper testing across multiple systems. We tell you what the diagnosis involves before any work begins and call you with our findings before recommending a repair. Call (219) 262-2711 to get started." },
-            { q: "How long does a check engine light diagnostic take?", a: "Most diagnostics are completed the same day, often within a few hours. We'll call you with our findings before doing any work." },
-            { q: "Do I need an appointment for check engine light diagnostics in Crown Point?", a: "We recommend calling ahead at (219) 262-2711. Same-day appointments are often available Mon–Fri 8am–6pm and Sat 8am–2pm." },
-            { q: "Is it safe to drive with my check engine light on?", a: "It depends. If the light is flashing, pull over immediately — it indicates a serious misfire that can damage your catalytic converter. If it's solid, it's generally safe to drive short distances but you should get it checked within a day or two." },
-            { q: "Can you just clear the code without diagnosing it?", a: "We don't recommend it and we won't do it. Clearing the code without fixing the underlying issue means the light will come back on — often within 50–100 miles. We find the root cause first." },
-            { q: "What are signs I need check engine light diagnosis?", a: "Any time the check engine light comes on — solid or flashing. Also if you notice rough running, reduced power, poor fuel economy, or if the light returned after another shop 'fixed' it." },
-            { q: "My check engine light came back on after another shop fixed it — what do I do?", a: "This is one of the most common reasons people come to us. Many shops clear codes and replace the most obvious part without finding the actual root cause. We dig deeper. Bring it in and we'll find what was missed." },
-            { q: "Do you accept extended warranties for check engine light repairs?", a: "Yes! We work with most extended warranty providers and handle the claim paperwork and talk to the adjuster for you. Call us with your warranty info and we'll verify coverage before any work begins." },
-          ].map(item => (
-            <div key={item.q} style={{ marginBottom: "20px", borderBottom: "1px solid #e0e0e0", paddingBottom: "20px" }}>
-              <div style={{ fontWeight: "bold", fontSize: "16px", marginBottom: "8px" }}>{item.q}</div>
-              <div style={{ color: "#555", lineHeight: 1.7 }}>{item.a}</div>
-            </div>
-          ))}
-        </div>
-      </section>
 
       <RelatedServices slug="check-engine-light" />
-      <ServiceFaqHub slug="check-engine-light" />
+      <ServiceFaqHub slug="check-engine-light" faqs={FAQS} />
 
       {/* Final CTA */}
       <section style={{ background: "#e63946", color: "#fff", textAlign: "center", padding: "60px 24px" }}>
@@ -168,55 +161,6 @@ export default function CheckEngineLight() {
         </a>
       </section>
 
-    <script
-  type="application/ld+json"
-  dangerouslySetInnerHTML={{ __html: JSON.stringify({
-    "@context": "https://schema.org",
-    "@type": "FAQPage",
-    "mainEntity": [
-      {
-        "@type": "Question",
-        "name": "How much does a check engine light diagnostic cost in Crown Point?",
-        "acceptedAnswer": { "@type": "Answer", "text": "It depends on how involved the diagnosis is — some faults are confirmed quickly, others need deeper testing across multiple systems. We tell you what the diagnosis involves before any work begins and call you with our findings before recommending a repair. Call (219) 262-2711 to get started." }
-      },
-      {
-        "@type": "Question",
-        "name": "How long does a check engine light diagnostic take?",
-        "acceptedAnswer": { "@type": "Answer", "text": "Most diagnostics are completed the same day, often within a few hours. We'll call you with our findings before doing any work." }
-      },
-      {
-        "@type": "Question",
-        "name": "Do I need an appointment for check engine light diagnostics in Crown Point?",
-        "acceptedAnswer": { "@type": "Answer", "text": "We recommend calling ahead at (219) 262-2711. Same-day appointments are often available Mon–Fri 8am–6pm and Sat 8am–2pm." }
-      },
-      {
-        "@type": "Question",
-        "name": "Is it safe to drive with my check engine light on?",
-        "acceptedAnswer": { "@type": "Answer", "text": "It depends. If the light is flashing, pull over immediately — it indicates a serious misfire that can damage your catalytic converter. If it's solid, it's generally safe to drive short distances but you should get it checked within a day or two." }
-      },
-      {
-        "@type": "Question",
-        "name": "Can you just clear the code without diagnosing it?",
-        "acceptedAnswer": { "@type": "Answer", "text": "We don't recommend it and we won't do it. Clearing the code without fixing the underlying issue means the light will come back on — often within 50–100 miles. We find the root cause first." }
-      },
-      {
-        "@type": "Question",
-        "name": "What are signs I need check engine light diagnosis?",
-        "acceptedAnswer": { "@type": "Answer", "text": "Any time the check engine light comes on — solid or flashing. Also if you notice rough running, reduced power, poor fuel economy, or if the light returned after another shop 'fixed' it." }
-      },
-      {
-        "@type": "Question",
-        "name": "My check engine light came back on after another shop fixed it — what do I do?",
-        "acceptedAnswer": { "@type": "Answer", "text": "This is one of the most common reasons people come to us. Many shops clear codes and replace the most obvious part without finding the actual root cause. We dig deeper. Bring it in and we'll find what was missed." }
-      },
-      {
-        "@type": "Question",
-        "name": "Do you accept extended warranties for check engine light repairs?",
-        "acceptedAnswer": { "@type": "Answer", "text": "Yes! We work with most extended warranty providers and handle the claim paperwork and talk to the adjuster for you. Call us with your warranty info and we'll verify coverage before any work begins." }
-      }
-    ]
-  }).replace(/</g, "\u003c")}}
-/>
 <script type="application/ld+json" dangerouslySetInnerHTML={{ __html: JSON.stringify({
   "@context": "https://schema.org",
   "@type": "HowTo",

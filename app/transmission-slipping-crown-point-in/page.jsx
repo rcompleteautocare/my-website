@@ -131,6 +131,11 @@ export default function TransmissionSlipping() {
           the least invasive to the most. If a rebuild is actually warranted, we say so. If it
           isn&apos;t, we recommend the targeted repair instead. That is the only sequence we follow.
         </p>
+        <p>
+          Slipping is one symptom among several. For the full picture of what we test and fix,
+          including fluid service, solenoids, valve bodies, torque converters, and CVTs, see
+          our <Link href="/services/transmission-repair">transmission repair service in Crown Point</Link>.
+        </p>
         <a href="tel:2192622711" className="cta-button">📞 Call (219) 262-2711 — Second Opinion Before You Authorize a Rebuild</a>
 
         {/* ── CAUSES ── */}
