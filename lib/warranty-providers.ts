@@ -11,10 +11,11 @@
 // makes no statement about what any named company covers, charges, requires or
 // approves. Do not add such statements from memory or from marketing pages.
 //
-// Provider-specific facts belong ONLY in the `verified` block of each entry,
-// and only after someone at the shop has confirmed them with the provider or
-// from first-hand claim experience. Every `verified` field is an owner TODO
-// and renders nothing while it is empty.
+// Provider-specific facts belong ONLY in the `verified` block of each entry.
+// Contact details there are copied from the provider's own official website,
+// with the source URL in a comment beside each value; never use third-party
+// directories, forums or review sites. `shopNotes` is for the shop's own
+// first-hand experience and is an owner TODO. Empty fields render nothing.
 
 export type ProviderFaq = { q: string; a: string };
 
@@ -86,6 +87,7 @@ export const warrantyProviders = {
       { q: "Who decides whether a problem was pre-existing?", a: "The contract administrator, based on the evidence: the diagnosis, the condition of the failed part, repair history and stored vehicle data. The repair shop documents what it finds but does not make the coverage decision." },
       { q: "Should I wait to report a problem until after the waiting period?", a: "No. Describe the problem and when it started accurately. Misstating when a symptom began can give the administrator grounds to deny the claim or cancel the contract, and continuing to drive on a known fault can make the damage worse." },
     ],
+    // 2026-11-19: carshield.com refused automated access (HTTP 403), so nothing could be read. All TODO(owner).
     verified: UNVERIFIED,
   },
 
@@ -114,6 +116,7 @@ export const warrantyProviders = {
       { q: "Can the administrator require used or remanufactured parts?", a: "Many contracts allow it. If you would prefer a different part than the one authorized, ask whether you can pay the difference, and compare the warranty that comes with each option." },
       { q: "Does an inspection mean my claim is being denied?", a: "No. Inspections are a routine step on larger or less clear claims. They verify the failure and its cause before the administrator commits to paying." },
     ],
+    // 2026-11-19: silverrockinc.com states no claims administrator, claims-labeled phone, claims hours or claim URL. All TODO(owner).
     verified: UNVERIFIED,
   },
 
@@ -142,7 +145,19 @@ export const warrantyProviders = {
       { q: "What does a teardown involve?", a: "The shop disassembles the engine or transmission far enough to expose the failed parts, documents what it finds, and reports to the administrator. How far it has to go depends on where the failure is." },
       { q: "Can I get an estimate for the teardown before approving it?", a: "Yes. Ask for the teardown labor as a separate written figure from the repair estimate, so you know the amount at risk if the claim is not approved." },
     ],
-    verified: UNVERIFIED,
+    // Values below are copied from Endurance's official website on 2026-11-19.
+    verified: {
+      // Not named on the official site (it says "in most cases, Endurance"). TODO(owner).
+      administratorName: "",
+      // Source: https://www.endurancewarranty.com/contact/ ("Repair Facility Claim")
+      claimsPhone: "(877) 414-0134 (repair facility claims line)",
+      // Source: https://www.endurancewarranty.com/contact/ (hours listed for the Repair Facility Claim line)
+      claimsHours: "Mon–Fri 7am–7pm CT; Sat–Sun closed",
+      // Source: https://www.endurancewarranty.com/file-a-claim/
+      claimsUrl: "https://www.endurancewarranty.com/file-a-claim/",
+      shopNotes: "",
+      lastVerified: "2026-11-19",
+    },
   },
 
   fidelity: {
@@ -170,7 +185,19 @@ export const warrantyProviders = {
       { q: "I can't find my service contract paperwork. What should I do?", a: "Contact the selling dealer's finance office or the administrator with your VIN. They can usually look up the contract and send a copy. You will need the contract number and the coverage level before a claim can be opened." },
       { q: "Is a dealer-sold service contract the same as the factory warranty?", a: "No. The factory warranty comes from the vehicle manufacturer. A service contract is a separate agreement, sold for an additional cost, with its own terms, exclusions and claim process." },
     ],
-    verified: UNVERIFIED,
+    // Values below are copied from Fidelity Warranty Services' official website on 2026-11-19.
+    verified: {
+      // Source: https://www.fidelitywarrantyservices.com/products/vehicle-service-contract ("Administered by Fidelity Warranty Services, Inc.")
+      administratorName: "Fidelity Warranty Services, Inc.",
+      // Source: https://www.fidelitywarrantyservices.com/customer-support ("Claims & Customer Service")
+      claimsPhone: "1-800-327-5172 (claims and customer service)",
+      // Source: https://www.fidelitywarrantyservices.com/customer-support ("hours of operation for the claims group")
+      claimsHours: "Mon–Fri 8am–9pm ET; Sat 9am–4pm ET",
+      // No online claim page for vehicle service contracts on the official site. TODO(owner).
+      claimsUrl: "",
+      shopNotes: "",
+      lastVerified: "2026-11-19",
+    },
   },
 
   zurich: {
@@ -198,6 +225,7 @@ export const warrantyProviders = {
       { q: "My contract covers the engine. Why was a sensor on the engine not covered?", a: "On a stated-component contract, engine coverage usually means a specific list of internal parts. Sensors, modules, seals and gaskets may be listed separately, covered only at higher levels, or covered only when replaced as part of a covered repair." },
       { q: "Does exclusionary coverage mean everything is covered?", a: "No. It means everything except the listed exclusions, and the cause of failure still has to be a covered one. The exclusions list is the part of the contract to read most carefully." },
     ],
+    // 2026-11-19: zurichna.com pages returned no readable text to an automated fetch. All TODO(owner).
     verified: UNVERIFIED,
   },
 
@@ -226,7 +254,19 @@ export const warrantyProviders = {
       { q: "Do I have to use a dealer for maintenance to keep my service contract valid?", a: "Service contracts generally require that maintenance is done and documented, not that a particular business does it. Check your contract's maintenance section for any specific requirement." },
       { q: "How should I store maintenance records?", a: "Keep paper invoices together in the vehicle file and take a photo of each one as a backup. Make sure each shows the date, the mileage and the VIN or plate." },
     ],
-    verified: UNVERIFIED,
+    // Values below are copied from American Auto Shield's official website on 2026-11-19.
+    verified: {
+      // The official site names an administrator for Florida contracts only. TODO(owner).
+      administratorName: "",
+      // Source: https://americanautoshield.com/contact-us/ ("Claims" > "Toll Free") and https://americanautoshield.com/claims/
+      claimsPhone: "1-800-531-1925",
+      // The official site lists headquarters business hours only, not claims hours. TODO(owner).
+      claimsHours: "",
+      // Source: https://americanautoshield.com/claims/ ("Report a Claim Online")
+      claimsUrl: "https://americanautoshield.com/report-a-claim/",
+      shopNotes: "",
+      lastVerified: "2026-11-19",
+    },
   },
 
   carchex: {
@@ -254,6 +294,7 @@ export const warrantyProviders = {
       { q: "Which phone number should the repair shop call?", a: "The claims or authorization number listed in the contract for the administrator. A general customer service or sales number will usually have to transfer the call." },
       { q: "What is an obligor?", a: "The party that is contractually responsible for paying covered claims. The contract names it, and it is often backed by an insurance company that is also identified in the contract." },
     ],
+    // 2026-11-19: carchex.com routes claims to different administrators by contract prefix, and the claims number shown on its contact page (1-800-886-4048) does not match that page's dial link. Left as TODO(owner) until confirmed.
     verified: UNVERIFIED,
   },
 } as const satisfies Record<string, WarrantyProvider>;
