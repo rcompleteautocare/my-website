@@ -5,13 +5,13 @@ import { EXPERIENCE_CLAIM, EXPERIENCE_SHORT, SERVICE_AREAS } from "@/lib/busines
 
 export const metadata = {
   title: "Auto Repair in Lowell, IN | R Complete Auto Care",
-  description: "Auto repair near Lowell, IN — R Complete Auto Care in Crown Point, about 15 minutes north via I-65. Diagnostic-first, extended warranty accepted. (219) 262-2711.",
+  description: "Auto repair near Lowell, IN: R Complete Auto Care in Crown Point, about 15 minutes north via I-65. Diagnostic-first, extended warranty accepted. (219) 262-2711.",
   alternates: {
     canonical: "https://www.rcompleteautocare.com/auto-repair-lowell-in",
   },
   openGraph: {
     title: "Auto Repair in Lowell, IN | R Complete Auto Care",
-    description: "Auto repair near Lowell, IN — R Complete Auto Care in Crown Point, about 15 minutes north via I-65. Diagnostic-first, extended warranty accepted. (219) 262-2711.",
+    description: "Auto repair near Lowell, IN: R Complete Auto Care in Crown Point, about 15 minutes north via I-65. Diagnostic-first, extended warranty accepted. (219) 262-2711.",
     url: "https://www.rcompleteautocare.com/auto-repair-lowell-in",
     siteName: "R Complete Auto Care",
     locale: "en_US",
@@ -21,7 +21,7 @@ export const metadata = {
   twitter: {
     card: "summary_large_image",
     title: "Auto Repair in Lowell, IN | R Complete Auto Care",
-    description: "Auto repair near Lowell, IN — R Complete Auto Care in Crown Point, about 15 minutes north via I-65. Diagnostic-first, extended warranty accepted. (219) 262-2711.",
+    description: "Auto repair near Lowell, IN: R Complete Auto Care in Crown Point, about 15 minutes north via I-65. Diagnostic-first, extended warranty accepted. (219) 262-2711.",
     images: ["/logo.png"],
   },
   robots: { index: true, follow: true },

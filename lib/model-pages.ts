@@ -43,9 +43,9 @@ const models: ModelPageData[] = [
     makeSlug: "chevrolet-repair-crown-point-in",
     model: "Silverado",
     shortName: "Chevrolet Silverado",
-    title: "Chevrolet Silverado Repair Crown Point, IN | R Complete Auto Care",
+    title: "Silverado Repair Crown Point, IN | R Complete Auto Care",
     description:
-      "Chevrolet Silverado diagnostics in Crown Point, IN — AFM/DFM lifters, 8-speed shudder, 5.3L/6.2L V8 oil consumption, cooling, and Duramax concerns. (219) 262-2711.",
+      "Chevrolet Silverado diagnostics in Crown Point, IN — AFM/DFM lifters, 8-speed shudder, 5.3L/6.2L oil consumption, cooling and Duramax concerns. (219) 262-2711.",
     eyebrow: "Chevrolet Silverado service in Crown Point",
     heading: "Chevrolet Silverado Repair and Diagnostics in Crown Point, IN",
     tldr: "R Complete Auto Care diagnoses and repairs the Chevrolet Silverado at our Crown Point, IN shop — from GMT800 and GMT900 trucks to K2XX and T1XX 5.3L, 6.2L, and Duramax platforms. We identify the exact engine and transmission and test the system before recommending parts, handle extended-warranty claims, and serve Crown Point, St. John, Schererville, Merrillville, and Cedar Lake.",

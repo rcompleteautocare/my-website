@@ -1,11 +1,11 @@
 export const metadata = {
   title: 'Suspension Repair Crown Point, IN | R Complete Auto Care',
-  description: 'Suspension repair in Crown Point, IN. Struts, shocks, tie rods, alignments. Indiana roads are rough — we keep your ride safe and controlled. Call (219) 262-2711.',
+  description: 'Suspension repair in Crown Point, IN. Struts, shocks, tie rods, alignments. Indiana roads are rough — we keep your ride safe and controlled. (219) 262-2711.',
   alternates: { canonical: 'https://www.rcompleteautocare.com/services/suspension-steering' },
 
   openGraph: {
     title: "Suspension Repair Crown Point, IN | R Complete Auto Care",
-    description: "Suspension repair in Crown Point, IN. Struts, shocks, tie rods, alignments. Indiana roads are rough — we keep your ride safe and controlled. Call (219) 262-2711.",
+    description: "Suspension repair in Crown Point, IN. Struts, shocks, tie rods, alignments. Indiana roads are rough — we keep your ride safe and controlled. (219) 262-2711.",
     url: "https://www.rcompleteautocare.com/services/suspension-steering",
     siteName: "R Complete Auto Care",
     locale: "en_US",
@@ -15,7 +15,7 @@ export const metadata = {
   twitter: {
     card: "summary_large_image",
     title: "Suspension Repair Crown Point, IN | R Complete Auto Care",
-    description: "Suspension repair in Crown Point, IN. Struts, shocks, tie rods, alignments. Indiana roads are rough — we keep your ride safe and controlled. Call (219) 262-2711.",
+    description: "Suspension repair in Crown Point, IN. Struts, shocks, tie rods, alignments. Indiana roads are rough — we keep your ride safe and controlled. (219) 262-2711.",
     images: ["/logo.png"],
   },
   robots: { index: true, follow: true },

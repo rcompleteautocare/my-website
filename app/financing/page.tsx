@@ -5,13 +5,13 @@ import FaqSchema from "../components/FaqSchema";
 import BookButton from "@/components/BookButton";
 
 export const metadata: Metadata = {
-  title: "Auto Repair Financing in Crown Point, IN | R Complete Auto Care",
+  title: "Auto Repair Financing Crown Point, IN | R Complete Auto Care",
   description:
     "Pay-over-time auto repair financing in Crown Point, IN — Affirm, Klarna, and Sunbit. Options appear on your estimate; quick application, subject to approval.",
   alternates: { canonical: "https://www.rcompleteautocare.com/financing" },
   robots: { index: true, follow: true },
   openGraph: {
-    title: "Auto Repair Financing in Crown Point, IN | R Complete Auto Care",
+    title: "Auto Repair Financing Crown Point, IN | R Complete Auto Care",
     description:
       "Pay-over-time auto repair financing in Crown Point, IN — Affirm, Klarna, and Sunbit. Options appear on your estimate; quick application, subject to approval.",
     url: "https://www.rcompleteautocare.com/financing",
@@ -22,7 +22,7 @@ export const metadata: Metadata = {
   },
   twitter: {
     card: "summary_large_image",
-    title: "Auto Repair Financing in Crown Point, IN | R Complete Auto Care",
+    title: "Auto Repair Financing Crown Point, IN | R Complete Auto Care",
     description:
       "Pay-over-time auto repair financing in Crown Point, IN — Affirm, Klarna, and Sunbit. Options appear on your estimate; quick application, subject to approval.",
     images: ["/og.png"],

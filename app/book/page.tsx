@@ -4,11 +4,11 @@ import styles from '../scheduling.module.css'
 import { SERVICE_TYPES } from '@/lib/business'
 
 export const metadata: Metadata = {
-  title: 'Auto Repair Appointment Crown Point Indiana | Book Service Online',
+  title: 'Book Auto Repair in Crown Point, IN | R Complete Auto Care',
   description: 'Book auto repair service online with R Complete Auto Care in Crown Point, Indiana.',
   alternates: { canonical: 'https://www.rcompleteautocare.com/book' },
   openGraph: {
-    title: 'Auto Repair Appointment Crown Point Indiana | Book Service Online',
+    title: 'Book Auto Repair in Crown Point, IN | R Complete Auto Care',
     description: 'Book auto repair service online with R Complete Auto Care in Crown Point, Indiana.',
     url: 'https://www.rcompleteautocare.com/book',
     images: [
@@ -22,7 +22,7 @@ export const metadata: Metadata = {
   },
   twitter: {
     card: 'summary_large_image',
-    title: 'Auto Repair Appointment Crown Point Indiana | Book Service Online',
+    title: 'Book Auto Repair in Crown Point, IN | R Complete Auto Care',
     description: 'Book auto repair service online with R Complete Auto Care in Crown Point, Indiana.',
     images: ['https://www.rcompleteautocare.com/og.png'],
   },

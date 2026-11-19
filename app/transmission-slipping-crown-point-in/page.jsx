@@ -5,7 +5,7 @@ import FaqSchema from '../components/FaqSchema'
 import { EXPERIENCE_CLAIM, EXPERIENCE_SHORT, SERVICE_AREAS, SAME_DAY_COPY } from '@/lib/business'
 
 export const metadata = {
-  title: 'Transmission Slipping in Crown Point, IN | R Complete Auto Care',
+  title: 'Transmission Slipping Crown Point, IN | R Complete Auto Care',
   description:
     'Transmission slipping in Crown Point, IN? Get a real diagnosis before you authorize a rebuild. Solenoid, fluid and converter faults differ. (219) 262-2711.',
   alternates: {
@@ -13,7 +13,7 @@ export const metadata = {
   },
 
   openGraph: {
-    title: 'Transmission Slipping in Crown Point, IN | R Complete Auto Care',
+    title: 'Transmission Slipping Crown Point, IN | R Complete Auto Care',
     description:
       'Transmission slipping in Crown Point, IN? Get a real diagnosis before you authorize a rebuild. Solenoid, fluid and converter faults differ. (219) 262-2711.',
     url: 'https://www.rcompleteautocare.com/transmission-slipping-crown-point-in',
@@ -24,7 +24,7 @@ export const metadata = {
   },
   twitter: {
     card: 'summary_large_image',
-    title: 'Transmission Slipping in Crown Point, IN | R Complete Auto Care',
+    title: 'Transmission Slipping Crown Point, IN | R Complete Auto Care',
     description:
       'Transmission slipping in Crown Point, IN? Get a real diagnosis before you authorize a rebuild. Solenoid, fluid and converter faults differ. (219) 262-2711.',
     images: ['/logo.png'],
