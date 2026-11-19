@@ -2,8 +2,13 @@ import type { Metadata } from "next";
 import Link from "next/link";
 import { notFound } from "next/navigation";
 import { repairGuides, type RepairGuideSlug } from "@/lib/repair-guides";
+import { socialMetadata } from "@/lib/seo";
 export function generateStaticParams() { return Object.keys(repairGuides).map(guide => ({ guide })); }
-export async function generateMetadata({ params }: { params: Promise<{ guide: string }> }): Promise<Metadata> { const { guide } = await params; const g = repairGuides[guide as RepairGuideSlug]; if (!g) return {}; return { title: `${g.title} | Crown Point, IN`, description: `${g.title}: symptoms, common causes, diagnostic process, driving guidance, and repair decisions from a Crown Point diagnostic-first shop.`, alternates: { canonical: `/repair-guides/${guide}` } }; }
+export async function generateMetadata({ params }: { params: Promise<{ guide: string }> }): Promise<Metadata> { const { guide } = await params; const g = repairGuides[guide as RepairGuideSlug]; if (!g) return {};
+  const title = `${g.title} | Crown Point, IN`;
+  const description = `${g.title}: symptoms, common causes, diagnostic process, driving guidance, and repair decisions from a Crown Point diagnostic-first shop.`;
+  return { title, description, alternates: { canonical: `/repair-guides/${guide}` }, ...socialMetadata({ title, description, path: `/repair-guides/${guide}`, type: "article" }) };
+}
 export default async function RepairGuide({ params }: { params: Promise<{ guide: string }> }) {
   const { guide } = await params; const g = repairGuides[guide as RepairGuideSlug]; if (!g) notFound(); const url = `https://www.rcompleteautocare.com/repair-guides/${guide}`;
   const driving = guide.includes("coolant") ? "Do not keep driving if the engine is overheating, misfiring severely, or losing coolant rapidly. Shut it off and arrange a tow to reduce the risk of engine damage." : guide.includes("cvt") ? "Stop driving if the vehicle cannot accelerate normally, displays an overheating warning, slips severely, or cannot engage reliably. Continuing can increase damage and create a traffic hazard." : "Stop and seek guidance for low oil pressure, overheating, smoke, severe noise, a flashing warning light, or a major loss of power. Mild symptoms still deserve prompt diagnosis.";

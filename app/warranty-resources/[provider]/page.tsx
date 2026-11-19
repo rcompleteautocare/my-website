@@ -2,11 +2,14 @@ import type { Metadata } from "next";
 import Link from "next/link";
 import { notFound } from "next/navigation";
 import { warrantyProviders, type WarrantySlug } from "@/lib/warranty-providers";
+import { socialMetadata } from "@/lib/seo";
 
 export function generateStaticParams() { return Object.keys(warrantyProviders).map(provider => ({ provider })); }
 export async function generateMetadata({ params }: { params: Promise<{ provider: string }> }): Promise<Metadata> {
   const { provider } = await params; const p = warrantyProviders[provider as WarrantySlug]; if (!p) return {};
-  return { title: `${p.name} Warranty Repair Guide | Crown Point, IN`, description: `Independent educational guide to ${p.name} vehicle service contract diagnosis, claim authorization, estimates, and customer responsibilities in Crown Point.`, alternates: { canonical: `/warranty-resources/${provider}` } };
+  const title = `${p.name} Warranty Repair Guide | Crown Point, IN`;
+  const description = `Independent educational guide to ${p.name} vehicle service contract diagnosis, claim authorization, estimates, and customer responsibilities in Crown Point.`;
+  return { title, description, alternates: { canonical: `/warranty-resources/${provider}` }, ...socialMetadata({ title, description, path: `/warranty-resources/${provider}`, type: "article" }) };
 }
 
 export default async function ProviderGuide({ params }: { params: Promise<{ provider: string }> }) {

@@ -1,11 +1,16 @@
 import type { Metadata } from "next";
 import Link from "next/link";
 import { warrantyProviders } from "@/lib/warranty-providers";
+import { socialMetadata } from "@/lib/seo";
+
+const TITLE = "Extended Warranty Repair Resource Center | Crown Point, IN";
+const DESCRIPTION = "Learn how vehicle service contract diagnosis, claims, authorization, estimates, deductibles, and customer responsibilities work in Crown Point, Indiana.";
 
 export const metadata: Metadata = {
-  title: "Extended Warranty Repair Resource Center | Crown Point, IN",
-  description: "Learn how vehicle service contract diagnosis, claims, authorization, estimates, deductibles, and customer responsibilities work in Crown Point, Indiana.",
+  title: TITLE,
+  description: DESCRIPTION,
   alternates: { canonical: "/warranty-resources" },
+  ...socialMetadata({ title: TITLE, description: DESCRIPTION, path: "/warranty-resources" }),
 };
 
 export default function WarrantyResources() {
