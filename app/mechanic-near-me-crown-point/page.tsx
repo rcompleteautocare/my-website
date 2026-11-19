@@ -1,5 +1,6 @@
 import { RATING } from "@/lib/rating";
 import ServiceSchema from "@/app/components/ServiceSchema";
+import { CITY_PAGE_HREFS } from "@/lib/business";
 
 export const metadata = {
   title: 'Mechanic Near Me Crown Point, IN | R Complete Auto Care',
@@ -101,11 +102,17 @@ export default function MechanicNearMe() {
             { city: "Merrillville, IN", distance: "~15 min", note: "Via US-30 West" },
             { city: "Cedar Lake, IN", distance: "~15 min", note: "Via IN-2 West" },
             { city: "Lowell, IN", distance: "~20 min", note: "Via IN-2 South" },
-            { city: "Dyer, IN", distance: "~20 min", note: "Via US-41 North" },
-            { city: "Munster, IN", distance: "~25 min", note: "Via US-41 North" },
+            { city: "Hobart, IN", distance: "~15 min", note: "Via SR-51 or I-65" },
+            { city: "Dyer, IN", distance: "~25 min", note: "Via US-30 East" },
+            { city: "Munster, IN", distance: "~30 min", note: "Via I-80/94 and I-65" },
+            { city: "Valparaiso, IN", distance: "~35 min", note: "Via US-30 and I-65" },
           ].map(item => (
             <div key={item.city} style={{ border: "1px solid #e0e0e0", borderLeft: "4px solid #e63946", padding: "16px", borderRadius: "4px" }}>
-              <div style={{ fontWeight: "bold", marginBottom: "4px" }}>{item.city}</div>
+              <div style={{ fontWeight: "bold", marginBottom: "4px" }}>
+                {CITY_PAGE_HREFS[item.city.replace(", IN", "")] ? (
+                  <Link href={CITY_PAGE_HREFS[item.city.replace(", IN", "")]} style={{ color: "#1a1a1a" }}>{item.city}</Link>
+                ) : item.city}
+              </div>
               <div style={{ color: "#e63946", fontWeight: "bold", fontSize: "18px", marginBottom: "4px" }}>{item.distance}</div>
               <div style={{ fontSize: "13px", color: "#666" }}>{item.note}</div>
             </div>
