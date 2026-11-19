@@ -23,7 +23,9 @@ export const metadata = {
 
 import RelatedServices from "@/app/components/RelatedServices";
 import ServiceFaqHub from "@/app/components/ServiceFaqHub";
-import FinancingCallout from "@/app/components/FinancingCallout";
+import Link from "next/link";
+import BookButton from "@/components/BookButton";
+import { RepairRebuildReplace, TransmissionPhotos, TransmissionReviews } from "@/app/components/TransmissionEvidence";
 import { SERVICE_AREAS, AREA_SERVED_SCHEMA } from "@/lib/business";
 // This page's own FAQs. Rendered (and emitted as the page's single FAQPage
 // schema) by <ServiceFaqHub>, which appends the shared service questions this
@@ -56,15 +58,21 @@ export default function TransmissionRepair() {
         <a href="tel:2192622711" style={{ background: "#e63946", color: "#fff", padding: "14px 32px", borderRadius: "6px", fontWeight: "bold", textDecoration: "none", fontSize: "18px" }}>
           📞 Call (219) 262-2711
         </a>
-        <p style={{ color: "#666", fontSize: "13px", marginTop: "16px" }}>1305 E Summit St, Crown Point, IN 46307 · Mon–Fri 8am–6pm · Sat 8am–2pm</p>
+        <BookButton style={{ display: "inline-block", marginLeft: "12px", marginTop: "12px", background: "transparent", color: "#fff", border: "2px solid #fff", padding: "12px 30px", borderRadius: "6px", fontWeight: "bold", fontSize: "18px", textDecoration: "none" }}>
+          Book Online
+        </BookButton>
+        {/* Financing sits with the primary CTA: cost is the main objection on this page. */}
+        <p style={{ color: "#ddd", fontSize: "15px", margin: "20px 0 0" }}>
+          💳 Financing available with <strong style={{ color: "#fff" }}>Affirm, Klarna &amp; Sunbit</strong>.{" "}
+          <Link href="/financing" style={{ color: "#f1626f", fontWeight: 700 }}>Pay over time on your estimate →</Link>
+        </p>
+        <p style={{ color: "#999", fontSize: "13px", marginTop: "16px" }}>1305 E Summit St, Crown Point, IN 46307 · Mon–Fri 8am–6pm · Sat 8am–2pm</p>
       </section>
 
       {/* Serving bar */}
       <section style={{ background: "#e63946", color: "#fff", padding: "14px 24px", textAlign: "center", fontSize: "14px" }}>
         📍 Serving {SERVICE_AREAS.join(" · ")}, IN
       </section>
-
-      <FinancingCallout />
 
       {/* Intro */}
       <section style={{ padding: "60px 24px", maxWidth: "800px", margin: "0 auto" }}>
@@ -149,6 +157,14 @@ export default function TransmissionRepair() {
           ))}
         </div>
       </section>
+
+      {/* Repair vs. rebuild vs. replace (+ owner-supplied prices when present) */}
+      <RepairRebuildReplace />
+
+      {/* Owner-supplied job photos and Google reviews. Both render nothing
+          until lib/transmission-page.ts is filled in. */}
+      <TransmissionPhotos />
+      <TransmissionReviews />
 
       {/* Extended Warranty */}
       <section style={{ padding: "60px 24px", maxWidth: "800px", margin: "0 auto" }}>
