@@ -1,11 +1,15 @@
 "use client";
 import Image from "next/image";
-import { useState } from "react";
+import { useRef, useState } from "react";
+import { trackEvent } from "@/lib/analytics";
 import NeighborhoodMap from "../components/NeighborhoodMap";
 import { SERVICE_AREAS, OWNER_EMAIL, SERVICE_TYPES } from "@/lib/business";
 
 export default function Contact() {
   const [submitted, setSubmitted] = useState(false);
+  const [submitting, setSubmitting] = useState(false);
+  const [error, setError] = useState("");
+  const submissionPending = useRef(false);
   const [form, setForm] = useState({
     name: "", phone: "", email: "", vehicle: "", service: "", message: ""
   });
@@ -14,17 +18,29 @@ export default function Contact() {
     setForm({ ...form, [e.target.name]: e.target.value });
   };
 
-  const handleSubmit = async (e: React.MouseEvent) => {
+  const handleSubmit = async (e: React.FormEvent<HTMLFormElement>) => {
     e.preventDefault();
+    if (submissionPending.current) return;
+    submissionPending.current = true;
+    setSubmitting(true);
+    setError("");
     try {
-      await fetch("https://formspree.io/f/xykbqraj", {
+      const response = await fetch("https://formspree.io/f/xykbqraj", {
         method: "POST",
-        headers: { "Content-Type": "application/json" },
+        headers: { "Content-Type": "application/json", Accept: "application/json" },
         body: JSON.stringify(form),
       });
+      if (!response.ok) throw new Error("Request not accepted");
       setSubmitted(true);
+      trackEvent("generate_lead", { method: "contact_form" });
+      const tagId = process.env.NEXT_PUBLIC_ADS_TAG_ID;
+      const label = process.env.NEXT_PUBLIC_ADS_CONTACT_CONVERSION_LABEL;
+      if (tagId && label) trackEvent("conversion", { send_to: `${tagId}/${label}` });
     } catch {
-      setSubmitted(true);
+      setError("Your request could not be sent. Please try again or call (219) 262-2711.");
+    } finally {
+      submissionPending.current = false;
+      setSubmitting(false);
     }
   };
 
@@ -101,7 +117,7 @@ export default function Contact() {
                 <p style={{ color: "#555" }}>We&apos;ll call you back shortly to confirm your appointment. If you need immediate assistance, call us at <a href="tel:2192622711" style={{ color: "#e63946" }}>(219) 262-2711</a>.</p>
               </div>
             ) : (
-              <div style={{ display: "flex", flexDirection: "column", gap: "16px" }}>
+              <form onSubmit={handleSubmit} style={{ display: "flex", flexDirection: "column", gap: "16px" }}>
                 {[
                   { name: "name", label: "Your Name *", type: "text", placeholder: "John Smith" },
                   { name: "phone", label: "Phone Number *", type: "tel", placeholder: "(219) 555-0000" },
@@ -109,8 +125,10 @@ export default function Contact() {
                   { name: "vehicle", label: "Year, Make & Model", type: "text", placeholder: "2018 Honda Civic" },
                 ].map(field => (
                   <div key={field.name}>
-                    <label style={{ display: "block", fontWeight: "500", marginBottom: "6px", fontSize: "14px" }}>{field.label}</label>
+                    <label htmlFor={`contact-${field.name}`} style={{ display: "block", fontWeight: "500", marginBottom: "6px", fontSize: "14px" }}>{field.label}</label>
                     <input
+                      id={`contact-${field.name}`}
+                      required={field.name === "name" || field.name === "phone"}
                       type={field.type}
                       name={field.name}
                       placeholder={field.placeholder}
@@ -121,8 +139,9 @@ export default function Contact() {
                   </div>
                 ))}
                 <div>
-                  <label style={{ display: "block", fontWeight: "500", marginBottom: "6px", fontSize: "14px" }}>Service Needed</label>
+                  <label htmlFor="contact-service" style={{ display: "block", fontWeight: "500", marginBottom: "6px", fontSize: "14px" }}>Service Needed</label>
                   <select
+                    id="contact-service"
                     name="service"
                     value={form.service}
                     onChange={handleChange}
@@ -134,8 +153,9 @@ export default function Contact() {
                   </select>
                 </div>
                 <div>
-                  <label style={{ display: "block", fontWeight: "500", marginBottom: "6px", fontSize: "14px" }}>Describe the Problem</label>
+                  <label htmlFor="contact-message" style={{ display: "block", fontWeight: "500", marginBottom: "6px", fontSize: "14px" }}>Describe the Problem</label>
                   <textarea
+                    id="contact-message"
                     name="message"
                     placeholder="Tell us what your vehicle is doing..."
                     value={form.message}
@@ -145,15 +165,18 @@ export default function Contact() {
                   />
                 </div>
                 <button
-                  onClick={handleSubmit}
+                  type="submit"
+                  disabled={submitting}
+                  aria-busy={submitting}
                   style={{ background: "#e63946", color: "#fff", padding: "14px", borderRadius: "6px", fontWeight: "bold", fontSize: "16px", border: "none", cursor: "pointer" }}
                 >
-                  📅 Request Service Appointment
+                  {submitting ? "Sending request…" : "📅 Request Service Appointment"}
                 </button>
+                {error ? <p role="alert" style={{ color: "#b91c1c", margin: 0 }}>{error}</p> : null}
                 <p style={{ fontSize: "12px", color: "#888", textAlign: "center", margin: 0 }}>
                   We&apos;ll call you back to confirm. For same-day service call <a href="tel:2192622711" style={{ color: "#e63946" }}>(219) 262-2711</a>.
                 </p>
-              </div>
+              </form>
             )}
           </div>
         </div>
