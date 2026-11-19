@@ -103,7 +103,7 @@ export default async function ProviderGuide({ params }: { params: Promise<{ prov
       {/* Owner-verified provider facts. Renders only once lib/warranty-providers.ts has them. */}
       {hasVerifiedFacts(v) && (
         <>
-          <h2 style={h2}>{p.name} claim details we have verified</h2>
+          <h2 style={h2}>{p.name} claims contact details</h2>
           <dl style={{ lineHeight: 1.75, margin: "0 0 16px" }}>
             {v.administratorName && (<><dt style={{ fontWeight: 700 }}>Claims administrator</dt><dd style={{ margin: "0 0 10px" }}>{v.administratorName}</dd></>)}
             {v.claimsPhone && (<><dt style={{ fontWeight: 700 }}>Claims phone</dt><dd style={{ margin: "0 0 10px" }}>{v.claimsPhone}</dd></>)}
@@ -111,7 +111,7 @@ export default async function ProviderGuide({ params }: { params: Promise<{ prov
             {v.claimsUrl && (<><dt style={{ fontWeight: 700 }}>Start or check a claim</dt><dd style={{ margin: "0 0 10px" }}><a href={v.claimsUrl} rel="nofollow external">{v.claimsUrl}</a></dd></>)}
             {v.shopNotes && (<><dt style={{ fontWeight: 700 }}>From our experience</dt><dd style={{ margin: "0 0 10px" }}>{v.shopNotes}</dd></>)}
           </dl>
-          {v.lastVerified && <p style={{ fontSize: 13, color: "#666" }}>Last verified {v.lastVerified}. Confirm current details with {p.name} before relying on them.</p>}
+          {v.lastVerified && <p style={{ fontSize: 13, color: "#666" }}>Contact details taken from {p.name}&apos;s official website; last checked {v.lastVerified}. Confirm current details with {p.name} before relying on them.</p>}
         </>
       )}
 
