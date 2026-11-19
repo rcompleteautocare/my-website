@@ -375,7 +375,7 @@ export default function Home() {
         <div className={styles.sectionHeading}>
           <p className={styles.kicker}>Serving Northwest Indiana</p>
           <h2 id="service-area-heading">Your local diagnostic-first repair shop.</h2>
-          <p>Conveniently located in Crown Point for drivers from {SERVICE_AREAS.filter((c) => c !== "Crown Point").join(", ")}, and nearby communities.</p>
+          <p>Conveniently located in Crown Point for drivers from {SERVICE_AREAS.filter((c) => c !== "Crown Point").join(", ")}, and nearby communities. Comparing shops? See what to look for in a <Link href="/mechanic-near-me-crown-point">mechanic near you in Crown Point</Link> and how far we are from your town.</p>
         </div>
         <div className={styles.serviceAreaGrid}>
           {serviceAreas.map(({ city, href }) => href ? (

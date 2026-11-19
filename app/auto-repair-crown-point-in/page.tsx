@@ -2,7 +2,7 @@ import FaqSchema from "@/app/components/FaqSchema";
 import Link from "next/link";
 import BookButton from "@/components/BookButton";
 import ServiceSchema from "@/app/components/ServiceSchema";
-import { EXPERIENCE_CLAIM, EXPERIENCE_SHORT } from "@/lib/business";
+import { EXPERIENCE_CLAIM, EXPERIENCE_SHORT, CITY_PAGE_HREFS } from "@/lib/business";
 
 export const metadata = {
   title: "Crown Point & NW Indiana Auto Repair | R Complete Auto Care",
@@ -78,7 +78,7 @@ export default function CrownPoint() {
           {EXPERIENCE_CLAIM}, we opened our Crown Point shop to give local drivers a place they could actually trust. A place that explains what&apos;s wrong, provides a clear estimate, and fixes it right the first time.
         </p>
         <p style={{ lineHeight: 1.8, color: "#444", marginBottom: "20px" }}>
-          We work on all foreign and domestic vehicles and proudly accept most extended warranty plans. Whether you need a check engine light diagnosed, brakes replaced, or a major engine repair — we have the expertise to get it done right in Crown Point.
+          We work on all foreign and domestic vehicles and proudly accept most extended warranty plans. Whether you need a check engine light diagnosed, brakes replaced, or a major engine repair — we have the expertise to get it done right in Crown Point. If you are still deciding where to take your vehicle, our guide to choosing a <Link href="/mechanic-near-me-crown-point" style={{ color: "#e63946" }}>mechanic near you in Crown Point</Link> covers what to look for and what to ask.
         </p>
 <p style={{ lineHeight: 1.8, color: "#444", marginBottom: "40px" }}>
   We&apos;re located on E Summit St, a few blocks from the historic Crown Point courthouse square and easily accessible from the IN-55 and US-231 intersection. Whether you&apos;re coming from the Winfield area, from south of downtown near the Lake County Fairgrounds, or from the newer subdivisions off 109th Avenue, we&apos;re within 5 minutes of most of Crown Point.
@@ -88,13 +88,7 @@ export default function CrownPoint() {
           Our Crown Point location keeps us within a short drive of most of Lake County. Drivers throughout Northwest Indiana rely on us for the same diagnostic-first approach — pick your community for local details:
         </p>
         <div style={{ display: "flex", flexWrap: "wrap", gap: "10px", marginBottom: "40px" }}>
-          {[
-            { name: "Crown Point, IN", href: "/auto-repair-crown-point-in" },
-            { name: "St. John, IN", href: "/auto-repair-st-john-in" },
-            { name: "Schererville, IN", href: "/auto-repair-schererville-in" },
-            { name: "Merrillville, IN", href: "/auto-repair-merrillville-in" },
-            { name: "Cedar Lake, IN", href: "/auto-repair-cedar-lake-in" },
-          ].map(c => (
+          {Object.entries(CITY_PAGE_HREFS).map(([city, href]) => ({ name: `${city}, IN`, href })).map(c => (
             <Link key={c.href} href={c.href} style={{ border: "1px solid #e0e0e0", borderRadius: "999px", padding: "8px 16px", textDecoration: "none", color: "#1a1a1a", fontSize: "14px", fontWeight: "600" }}>
               {c.name} →
             </Link>
