@@ -38,8 +38,10 @@ yarn-error.log*
 .searchconsole-token.json
 lib/client_secret*.json
 
-# Lighthouse / audit reports
+# Lighthouse / audit reports (generated output, never commit)
 lh-report.json
+lighthouse.json
+lighthouse.latest.json
 
 # vercel
 .vercel
