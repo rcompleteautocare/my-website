@@ -2,7 +2,7 @@ import FaqSchema from "@/app/components/FaqSchema";
 import Link from "next/link";
 import BookButton from "@/components/BookButton";
 import ServiceSchema from "@/app/components/ServiceSchema";
-import { YEARS_EXPERIENCE } from "@/lib/business";
+import { EXPERIENCE_SHORT } from "@/lib/business";
 
 export const metadata = {
   title: "Auto Repair in Cedar Lake, IN | R Complete Auto Care",
@@ -66,7 +66,7 @@ export default function CedarLake() {
       </section>
 
       <section style={{ background: "#e63946", color: "#fff", padding: "14px 24px", textAlign: "center", fontSize: "14px", fontWeight: "500" }}>
-        ✓ Diagnostic-First &nbsp;|&nbsp; ✓ Foreign & Domestic &nbsp;|&nbsp; ✓ Extended Warranty Accepted &nbsp;|&nbsp; ✓ {YEARS_EXPERIENCE} Years Family Experience
+        ✓ Diagnostic-First &nbsp;|&nbsp; ✓ Foreign & Domestic &nbsp;|&nbsp; ✓ Extended Warranty Accepted &nbsp;|&nbsp; ✓ {EXPERIENCE_SHORT}
       </section>
 
       <section style={{ padding: "60px 24px", maxWidth: "800px", margin: "0 auto" }}>

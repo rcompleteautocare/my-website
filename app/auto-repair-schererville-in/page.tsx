@@ -2,7 +2,7 @@ import FaqSchema from "@/app/components/FaqSchema";
 import Link from "next/link";
 import BookButton from "@/components/BookButton";
 import ServiceSchema from "@/app/components/ServiceSchema";
-import { YEARS_EXPERIENCE } from "@/lib/business";
+import { EXPERIENCE_CLAIM, EXPERIENCE_SHORT } from "@/lib/business";
 
 export const metadata = {
   title: "Auto Repair in Schererville, IN | R Complete Auto Care",
@@ -66,7 +66,7 @@ export default function Schererville() {
       </section>
 
       <section style={{ background: "#e63946", color: "#fff", padding: "14px 24px", textAlign: "center", fontSize: "14px", fontWeight: "500" }}>
-        ✓ Diagnostic-First &nbsp;|&nbsp; ✓ Foreign & Domestic &nbsp;|&nbsp; ✓ Extended Warranty Accepted &nbsp;|&nbsp; ✓ {YEARS_EXPERIENCE} Years Family Experience
+        ✓ Diagnostic-First &nbsp;|&nbsp; ✓ Foreign & Domestic &nbsp;|&nbsp; ✓ Extended Warranty Accepted &nbsp;|&nbsp; ✓ {EXPERIENCE_SHORT}
       </section>
 
       <section style={{ padding: "60px 24px", maxWidth: "800px", margin: "0 auto" }}>
@@ -78,7 +78,7 @@ export default function Schererville() {
           Schererville drivers come to us because we give straight answers, fair prices, and repairs that actually fix the problem. Tired of dealership prices and upselling? We built this shop for drivers like you. We work on all foreign and domestic vehicles and proudly accept most extended warranty plans.
         </p>
         <p style={{ lineHeight: 1.8, color: "#444", marginBottom: "40px" }}>
-          Built on {YEARS_EXPERIENCE} years of family experience in auto repair, we serve Schererville, Crown Point, St. John, Merrillville, and all of Lake County, Indiana.
+          {EXPERIENCE_CLAIM}, we serve Schererville, Crown Point, St. John, Merrillville, and all of Lake County, Indiana.
         </p>
 <p style={{ lineHeight: 1.8, color: "#444", marginBottom: "20px" }}>
   Schererville&apos;s US-30 corridor — past the Shops at Crosspoint and through the Wicker Park area — generates some of the heaviest stop-and-go traffic in Lake County. That kind of driving is particularly hard on brakes, transmissions, and cooling systems. Drivers along the US-30 and US-41 interchange frequently come to us after local quick-lube shops miss developing problems during routine oil changes.

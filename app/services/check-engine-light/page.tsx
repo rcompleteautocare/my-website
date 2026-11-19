@@ -23,7 +23,7 @@ export const metadata = {
 
 import RelatedServices from "@/app/components/RelatedServices";
 import ServiceFaqHub from "@/app/components/ServiceFaqHub";
-import { YEARS_EXPERIENCE, AREA_SERVED_SCHEMA, SAME_DAY_COPY } from "@/lib/business";
+import { EXPERIENCE_CLAIM, EXPERIENCE_SHORT, AREA_SERVED_SCHEMA, SAME_DAY_COPY } from "@/lib/business";
 // This page's own FAQs. Rendered (and emitted as the page's single FAQPage
 // schema) by <ServiceFaqHub>, which appends the shared service questions this
 // page does not already answer — see lib/service-faqs.ts.
@@ -122,7 +122,7 @@ export default function CheckEngineLight() {
               { title: "Same-Day Diagnostics", desc: "Most check engine light diagnostics completed the same day, with a call before any work begins." },
               { title: "All Makes & Models", desc: "Foreign and domestic vehicles welcome. Honda, Toyota, Ford, GM, BMW, Mercedes and more." },
               { title: "Extended Warranty Accepted", desc: "We work with most extended warranty providers and handle the claim paperwork and talk to the adjuster for you." },
-              { title: `${YEARS_EXPERIENCE} Years Family Experience`, desc: "Diagnostic expertise built over decades — we've seen every code, every failure, every pattern." },
+              { title: EXPERIENCE_SHORT, desc: `${EXPERIENCE_CLAIM}. We've seen every code, every failure, every pattern.` },
             ].map(item => (
               <div key={item.title} style={{ border: "1px solid #e0e0e0", borderLeft: "4px solid #e63946", borderRadius: "4px", padding: "16px" }}>
                 <div style={{ fontWeight: "bold", marginBottom: "8px" }}>{item.title}</div>

@@ -2,7 +2,7 @@ import Link from "next/link";
 import BookButton from "@/components/BookButton";
 import ServiceSchema from "@/app/components/ServiceSchema";
 import FaqSchema from "@/app/components/FaqSchema";
-import { SERVICE_AREAS } from "@/lib/business";
+import { SERVICE_AREAS, EXPERIENCE_SHORT } from "@/lib/business";
 
 // Shared layout for city landing pages (Dyer, Munster, Valparaiso). Same
 // sections and look as the hand-built city pages such as
@@ -80,7 +80,7 @@ export default function CityPage({ data }: { data: CityPageData }) {
       </section>
 
       <section style={{ background: "#e63946", color: "#fff", padding: "14px 24px", textAlign: "center", fontSize: "14px", fontWeight: "500" }}>
-        ✓ Diagnostic-First &nbsp;|&nbsp; ✓ Foreign &amp; Domestic &nbsp;|&nbsp; ✓ Extended Warranty Accepted
+        ✓ Diagnostic-First &nbsp;|&nbsp; ✓ Foreign &amp; Domestic &nbsp;|&nbsp; ✓ Extended Warranty Accepted &nbsp;|&nbsp; ✓ {EXPERIENCE_SHORT}
       </section>
 
       <section style={{ background: "#1a1a1a", color: "#ddd", padding: "12px 24px", textAlign: "center", fontSize: "13px" }}>

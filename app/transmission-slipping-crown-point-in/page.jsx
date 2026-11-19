@@ -2,7 +2,7 @@ import Link from 'next/link'
 import ServiceSchema from '../components/ServiceSchema'
 import FaqAccordion from '../components/FaqAccordion'
 import FaqSchema from '../components/FaqSchema'
-import { YEARS_EXPERIENCE, SERVICE_AREAS, SAME_DAY_COPY } from '@/lib/business'
+import { EXPERIENCE_CLAIM, EXPERIENCE_SHORT, SERVICE_AREAS, SAME_DAY_COPY } from '@/lib/business'
 
 export const metadata = {
   title: 'Transmission Slipping in Crown Point, IN | R Complete Auto Care',
@@ -196,8 +196,8 @@ export default function TransmissionSlipping() {
             <p>Most transmission diagnostics are completed the same day. You get a call with the root cause, repair options, and a clear estimate before any work begins.</p>
           </div>
           <div className="feature-item">
-            <strong>{YEARS_EXPERIENCE} Years Family Experience</strong>
-            <p>Our technicians bring {YEARS_EXPERIENCE} years of combined experience to Crown Point and Lake County drivers. We have diagnosed transmission faults on every make and model — automatic, manual, and CVT.</p>
+            <strong>{EXPERIENCE_SHORT}</strong>
+            <p>{EXPERIENCE_CLAIM}. We have diagnosed transmission faults on every make and model — automatic, manual, and CVT.</p>
           </div>
         </div>
 

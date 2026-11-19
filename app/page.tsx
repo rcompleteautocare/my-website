@@ -359,11 +359,11 @@ export default function Home() {
       <section className={styles.storySection}>
         <div className={`${styles.storyCard} ${styles.storyCardTextOnly}`}>
           <div className={styles.storyCopy}>
-            <p className={styles.kicker}>Family experience, local accountability</p>
+            <p className={styles.kicker}>Since 1989 · Local accountability</p>
             <h2>Locally Owned.<br />Professionally Operated.</h2>
             <p>
-              Our family-owned team brings decades of experience and ASE-certified expertise to
-              every vehicle. We diagnose first, explain what is urgent and what can wait, provide a
+              Diagnosing and repairing vehicles since 1989, our family-owned team brings
+              ASE-certified expertise to every vehicle. We diagnose first, explain what is urgent and what can wait, provide a
               transparent estimate, and perform no repair without customer approval.
             </p>
             <Link href="/about">Meet R Complete Auto Care <ArrowRight aria-hidden="true" size={17} /></Link>

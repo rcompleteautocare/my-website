@@ -24,7 +24,7 @@ export const metadata = {
 import RelatedServices from "@/app/components/RelatedServices";
 import ServiceFaqHub from "@/app/components/ServiceFaqHub";
 import FinancingCallout from "@/app/components/FinancingCallout";
-import { YEARS_EXPERIENCE, SERVICE_AREAS, AREA_SERVED_SCHEMA } from "@/lib/business";
+import { EXPERIENCE_CLAIM, EXPERIENCE_SHORT, SERVICE_AREAS, AREA_SERVED_SCHEMA } from "@/lib/business";
 // This page's own FAQs. Rendered (and emitted as the page's single FAQPage
 // schema) by <ServiceFaqHub>, which appends the shared service questions this
 // page does not already answer — see lib/service-faqs.ts.
@@ -157,7 +157,7 @@ export default function EngineRepair() {
             { title: "Diagnose First, Always", desc: "We find the exact root cause before recommending any repair. No guessing, no unnecessary parts." },
             { title: "Honest Estimates", desc: "You get a clear estimate before we start. No unauthorized work and no surprises when you pick up your car." },
             { title: "Extended Warranty Accepted", desc: "We work with most warranty providers and handle all the paperwork. You may owe nothing." },
-            { title: `${YEARS_EXPERIENCE} Years Family Experience`, desc: "Our shop is built on decades of engine diagnostic expertise. We've seen every failure pattern." },
+            { title: EXPERIENCE_SHORT, desc: `${EXPERIENCE_CLAIM}. We've seen every failure pattern.` },
             { title: "All Makes & Models", desc: "Foreign and domestic. Honda, Toyota, Ford, GM, BMW, Mercedes, Subaru, Dodge and more." },
             { title: "Same-Day Diagnostics", desc: "Most diagnostic appointments completed same day with a call before any work begins." },
           ].map(item => (
