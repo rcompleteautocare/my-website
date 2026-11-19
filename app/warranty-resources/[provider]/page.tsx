@@ -7,8 +7,10 @@ import { socialMetadata } from "@/lib/seo";
 export function generateStaticParams() { return Object.keys(warrantyProviders).map(provider => ({ provider })); }
 export async function generateMetadata({ params }: { params: Promise<{ provider: string }> }): Promise<Metadata> {
   const { provider } = await params; const p = warrantyProviders[provider as WarrantySlug]; if (!p) return {};
-  const title = `${p.name} Warranty Repair Guide | Crown Point, IN`;
-  const description = `Independent educational guide to ${p.name} vehicle service contract diagnosis, claim authorization, estimates, and customer responsibilities in Crown Point.`;
+  // "Fidelity Warranty Services Warranty Repair Guide" ran past 60 characters, so
+  // names that already contain "Warranty" do not get the word twice.
+  const title = `${p.name}${/warranty/i.test(p.name) ? "" : " Warranty"} Repair Guide | Crown Point, IN`;
+  const description = `Independent guide to ${p.name} service contract repairs in Crown Point, IN: diagnosis, claim authorization, estimates and what you may owe.`;
   return { title, description, alternates: { canonical: `/warranty-resources/${provider}` }, ...socialMetadata({ title, description, path: `/warranty-resources/${provider}`, type: "article" }) };
 }
 

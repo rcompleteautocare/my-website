@@ -6,7 +6,7 @@ import { socialMetadata } from "@/lib/seo";
 export function generateStaticParams() { return Object.keys(repairGuides).map(guide => ({ guide })); }
 export async function generateMetadata({ params }: { params: Promise<{ guide: string }> }): Promise<Metadata> { const { guide } = await params; const g = repairGuides[guide as RepairGuideSlug]; if (!g) return {};
   const title = `${g.title} | Crown Point, IN`;
-  const description = `${g.title}: symptoms, common causes, diagnostic process, driving guidance, and repair decisions from a Crown Point diagnostic-first shop.`;
+  const description = `${g.title}: symptoms, common causes, how it is diagnosed and when to stop driving. From a diagnostic-first shop in Crown Point, IN.`;
   return { title, description, alternates: { canonical: `/repair-guides/${guide}` }, ...socialMetadata({ title, description, path: `/repair-guides/${guide}`, type: "article" }) };
 }
 export default async function RepairGuide({ params }: { params: Promise<{ guide: string }> }) {

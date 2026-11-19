@@ -1,11 +1,11 @@
 export const metadata = {
-  title: 'What We Check on Every Inspection — R Complete Auto Care Crown Point, IN',
-  description: 'See the full 10-section vehicle inspection we perform in Crown Point, IN. Real measurements, color-coded results, and photos on every red item. Honest, documented, no pressure. Call (219) 262-2711.',
+  title: 'What We Check on Every Inspection | Crown Point, IN',
+  description: 'See the 10-section vehicle inspection we perform in Crown Point, IN: real measurements, color-coded results and photos of every red item. (219) 262-2711.',
   alternates: { canonical: 'https://www.rcompleteautocare.com/inspection-checklist' },
 
   openGraph: {
-    title: "What We Check on Every Inspection — R Complete Auto Care Crown Point, IN",
-    description: "See the full 10-section vehicle inspection we perform in Crown Point, IN. Real measurements, color-coded results, and photos on every red item. Honest, documented, no pressure. Call (219) 262-2711.",
+    title: "What We Check on Every Inspection | Crown Point, IN",
+    description: "See the 10-section vehicle inspection we perform in Crown Point, IN: real measurements, color-coded results and photos of every red item. (219) 262-2711.",
     url: "https://www.rcompleteautocare.com/inspection-checklist",
     siteName: "R Complete Auto Care",
     locale: "en_US",
@@ -14,8 +14,8 @@ export const metadata = {
   },
   twitter: {
     card: "summary_large_image",
-    title: "What We Check on Every Inspection — R Complete Auto Care Crown Point, IN",
-    description: "See the full 10-section vehicle inspection we perform in Crown Point, IN. Real measurements, color-coded results, and photos on every red item. Honest, documented, no pressure. Call (219) 262-2711.",
+    title: "What We Check on Every Inspection | Crown Point, IN",
+    description: "See the 10-section vehicle inspection we perform in Crown Point, IN: real measurements, color-coded results and photos of every red item. (219) 262-2711.",
     images: ["/logo.png"],
   },
   robots: { index: true, follow: true },

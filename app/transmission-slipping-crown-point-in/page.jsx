@@ -7,7 +7,7 @@ import { EXPERIENCE_CLAIM, EXPERIENCE_SHORT, SERVICE_AREAS, SAME_DAY_COPY } from
 export const metadata = {
   title: 'Transmission Slipping in Crown Point, IN | R Complete Auto Care',
   description:
-    'Transmission slipping in Crown Point, IN? Get a real diagnosis before you authorize a rebuild. Solenoid, fluid, torque-converter, and internal faults require different repairs. Call (219) 262-2711.',
+    'Transmission slipping in Crown Point, IN? Get a real diagnosis before you authorize a rebuild. Solenoid, fluid and converter faults differ. (219) 262-2711.',
   alternates: {
     canonical: 'https://www.rcompleteautocare.com/transmission-slipping-crown-point-in',
   },
@@ -15,7 +15,7 @@ export const metadata = {
   openGraph: {
     title: 'Transmission Slipping in Crown Point, IN | R Complete Auto Care',
     description:
-      'Transmission slipping in Crown Point, IN? Get a real diagnosis before you authorize a rebuild. Solenoid, fluid, torque-converter, and internal faults require different repairs. Call (219) 262-2711.',
+      'Transmission slipping in Crown Point, IN? Get a real diagnosis before you authorize a rebuild. Solenoid, fluid and converter faults differ. (219) 262-2711.',
     url: 'https://www.rcompleteautocare.com/transmission-slipping-crown-point-in',
     siteName: 'R Complete Auto Care',
     locale: 'en_US',
@@ -26,7 +26,7 @@ export const metadata = {
     card: 'summary_large_image',
     title: 'Transmission Slipping in Crown Point, IN | R Complete Auto Care',
     description:
-      'Transmission slipping in Crown Point, IN? Get a real diagnosis before you authorize a rebuild. Solenoid, fluid, torque-converter, and internal faults require different repairs. Call (219) 262-2711.',
+      'Transmission slipping in Crown Point, IN? Get a real diagnosis before you authorize a rebuild. Solenoid, fluid and converter faults differ. (219) 262-2711.',
     images: ['/logo.png'],
   },
   robots: { index: true, follow: true },
