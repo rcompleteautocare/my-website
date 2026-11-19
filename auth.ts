@@ -1,8 +1,8 @@
-import { createHash, timingSafeEqual } from "node:crypto";
 import bcrypt from "bcryptjs";
 import NextAuth from "next-auth";
 import Credentials from "next-auth/providers/credentials";
 import { z } from "zod";
+import { safeEqual } from "@/lib/safe-equal";
 import { loginThrottle, MAX_FAILURES_PER_EMAIL, MAX_FAILURES_PER_IP } from "@/lib/login-throttle";
 
 const credentialsSchema = z.object({ email: z.string().email().max(254), password: z.string().min(8).max(200) });
@@ -14,13 +14,6 @@ const BCRYPT_HASH = /^\$2[aby]\$\d{2}\$[./A-Za-z0-9]{53}$/;
 // same bcrypt work as a wrong password and the response time does not reveal
 // which one was wrong. It is the hash of a discarded random string.
 const DUMMY_HASH = "$2b$12$hafSZ6Wdbg0m5QnMH46IZ.m.GHJUzTtwXUbJ6wLQCXud0OeDSzn7u";
-
-// Constant-time string equality. Hashing both sides first gives timingSafeEqual
-// the equal-length buffers it requires without leaking the length.
-function safeEqual(a: string, b: string) {
-  const digest = (value: string) => createHash("sha256").update(value).digest();
-  return timingSafeEqual(digest(a), digest(b));
-}
 
 function clientIp(request: Request | undefined) {
   const forwarded = request?.headers.get("x-forwarded-for");

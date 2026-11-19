@@ -1,5 +1,6 @@
 import { RATING, REVIEW_COUNT } from "@/lib/rating";
 import { PLACE_ID } from "@/lib/place";
+import { safeEqual } from "@/lib/safe-equal";
 
 // Never cache: this is an on-demand, weekly drift check.
 export const dynamic = "force-dynamic";
@@ -48,7 +49,8 @@ export async function GET(req: Request) {
   }
 
   const auth = req.headers.get("authorization") ?? "";
-  if (auth !== `Bearer ${cronSecret}`) {
+  // Constant-time comparison so response timing cannot be used to guess the secret.
+  if (!safeEqual(auth, `Bearer ${cronSecret}`)) {
     return json({ error: "Unauthorized" }, 401);
   }
 
