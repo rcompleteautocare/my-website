@@ -15,7 +15,7 @@ export const metadata: Metadata = {
 
 export default function RepairGuides() {
   return (
-    <main style={{ maxWidth: 1050, margin: "0 auto", padding: "72px 24px", color: "#222" }}>
+    <div style={{ maxWidth: 1050, margin: "0 auto", padding: "72px 24px", color: "#222" }}>
       <p style={{ color: "#c92f3b", fontWeight: 800 }}>R COMPLETE AUTO CARE RESOURCE LIBRARY</p>
       <h1 style={{ fontSize: "clamp(40px, 6vw, 64px)", marginBottom: 18 }}>Vehicle-Specific Repair Guides</h1>
       <p className="speakable" style={{ maxWidth: 760, fontSize: 19, lineHeight: 1.75 }}>
@@ -42,6 +42,6 @@ export default function RepairGuides() {
       <p style={{ marginTop: 42, lineHeight: 1.8 }}>
         For an answer about your own vehicle, <Link href="/book">book a diagnostic appointment</Link>, call <a href="tel:2192622711">(219) 262-2711</a>, or review <Link href="/services">all services</Link>.
       </p>
-    </main>
+    </div>
   );
 }
