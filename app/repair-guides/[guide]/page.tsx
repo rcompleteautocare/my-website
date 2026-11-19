@@ -3,6 +3,9 @@ import Link from "next/link";
 import { notFound } from "next/navigation";
 import { repairGuides, type RepairGuideSlug } from "@/lib/repair-guides";
 import { socialMetadata } from "@/lib/seo";
+// Only the slugs from generateStaticParams exist. Anything else is a plain 404
+// served by app/not-found.tsx instead of being rendered on demand.
+export const dynamicParams = false;
 export function generateStaticParams() { return Object.keys(repairGuides).map(guide => ({ guide })); }
 export async function generateMetadata({ params }: { params: Promise<{ guide: string }> }): Promise<Metadata> { const { guide } = await params; const g = repairGuides[guide as RepairGuideSlug]; if (!g) return {};
   const title = `${g.title} | Crown Point, IN`;

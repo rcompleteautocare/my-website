@@ -4,6 +4,9 @@ import { notFound } from "next/navigation";
 import { warrantyProviders, type WarrantySlug } from "@/lib/warranty-providers";
 import { socialMetadata } from "@/lib/seo";
 
+// Only the slugs from generateStaticParams exist. Anything else is a plain 404
+// served by app/not-found.tsx instead of being rendered on demand.
+export const dynamicParams = false;
 export function generateStaticParams() { return Object.keys(warrantyProviders).map(provider => ({ provider })); }
 export async function generateMetadata({ params }: { params: Promise<{ provider: string }> }): Promise<Metadata> {
   const { provider } = await params; const p = warrantyProviders[provider as WarrantySlug]; if (!p) return {};
