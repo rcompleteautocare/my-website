@@ -78,7 +78,8 @@ const nextConfig: NextConfig = {
   async redirects() {
     return [
       // NOTE: Junk/malformed paths (bracket-wrapped URLs, pasted full URLs) are
-      // no longer redirected here. They're handled in middleware.ts, which
+      // no longer redirected here. They're handled in proxy.ts (Next 16's
+      // replacement for middleware.ts; classifier in lib/junk-paths.js), which
       // returns 410 Gone — a cleaner deindex signal than a 308 to "/".
       {
         source: "/:path*",
