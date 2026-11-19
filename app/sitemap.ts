@@ -12,6 +12,16 @@ import { warrantyProviders } from "@/lib/warranty-providers";
 export default function sitemap(): MetadataRoute.Sitemap {
   const baseUrl = "https://www.rcompleteautocare.com";
 
+  // Generated pages share one data file, so they carry the generated-page
+  // date unless the individual page changed later. List those here.
+  const GENERATED_DEFAULT = "2026-10-21";
+  const GENERATED_OVERRIDES: Record<string, string> = {
+    "honda-ridgeline-repair-crown-point-in": "2026-11-19",
+    "honda-check-engine-light-diagnostics-crown-point-in": "2026-11-19",
+    "chevrolet-silverado-repair-crown-point-in": "2026-11-19",
+  };
+  const generatedDate = (slug: string) => GENERATED_OVERRIDES[slug] ?? GENERATED_DEFAULT;
+
   const core: MetadataRoute.Sitemap = [
     { url: baseUrl, lastModified: "2026-11-19", changeFrequency: "weekly", priority: 1 },
     { url: `${baseUrl}/about`, lastModified: "2026-11-19", changeFrequency: "monthly", priority: 0.8 },
@@ -50,19 +60,19 @@ export default function sitemap(): MetadataRoute.Sitemap {
     { url: `${baseUrl}/honda-repair-crown-point-in`, lastModified: "2026-10-21", changeFrequency: "monthly", priority: 0.9 },
     ...HONDA_PAGES.map((page) => ({
       url: `${baseUrl}/${page.slug}`,
-      lastModified: "2026-10-21",
+      lastModified: generatedDate(page.slug),
       changeFrequency: "monthly" as const,
       priority: 0.8,
     })),
     ...MAKE_PAGES.map((page) => ({
       url: `${baseUrl}/${page.slug}`,
-      lastModified: "2026-10-21",
+      lastModified: generatedDate(page.slug),
       changeFrequency: "monthly" as const,
       priority: 0.8,
     })),
     ...MODEL_PAGES.map((page) => ({
       url: `${baseUrl}/${page.slug}`,
-      lastModified: "2026-10-21",
+      lastModified: generatedDate(page.slug),
       changeFrequency: "monthly" as const,
       priority: 0.8,
     })),
