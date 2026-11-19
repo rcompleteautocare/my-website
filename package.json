@@ -11,6 +11,7 @@
     "check:sitemap": "python scripts/check-sitemap-coverage.py",
     "test": "node --test scripts/*.test.mjs",
     "postinstall": "prisma generate",
+    "hash-password": "node scripts/hash-password.mjs",
     "resolve-place-id": "node scripts/resolve-place-id.mjs",
     "db:generate": "prisma generate",
     "db:migrate": "prisma migrate dev",
