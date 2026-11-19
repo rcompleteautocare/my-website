@@ -52,9 +52,9 @@ ANALYZE=true npm run build    # bundle analysis (@next/bundle-analyzer)
 
 **Tests and CI exist.** `npm test` runs the Node test runner over
 `scripts/*.test.mjs` (junk-path classifier, login throttle). GitHub Actions
-(`.github/workflows/ci.yml`) runs `npm run lint` and `npm run build` on every
-pull request; it does not currently run `npm test`, `tsc` or the sitemap check,
-so run those locally. Before pushing, all of these should pass: `npm run lint`,
+(`.github/workflows/ci.yml`) runs lint, build, `npx tsc --noEmit`, `npm test`
+and the sitemap coverage check on every pull request. Run them locally first
+too. Before pushing, all of these should pass: `npm run lint`,
 `npx tsc --noEmit`, `npm test`, `npm run build`,
 `python scripts/check-sitemap-coverage.py`. For content/SEO changes, also run
 `node scripts/seo-audit.mjs` (defaults to the production URL; override with
@@ -326,5 +326,6 @@ needs `DATABASE_URL`, `AUTH_SECRET`, `AUTH_TRUST_HOST`, `DEMO_ADMIN_EMAIL` and
 - Work happens on feature branches; changes land on `main` via PR (see recent
   history — PRs are squash/merge-titled with `(#NN)`).
 - Do **not** open a pull request unless explicitly asked.
-- CI (`.github/workflows/ci.yml`) runs lint and build on pull requests. Run the
-  full local list in "Commands" before pushing.
+- CI (`.github/workflows/ci.yml`) runs lint, build, typecheck, unit tests and
+  the sitemap coverage check on pull requests. Run the full local list in
+  "Commands" before pushing.
