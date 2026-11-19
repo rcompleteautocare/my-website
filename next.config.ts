@@ -59,6 +59,12 @@ const nextConfig: NextConfig = {
         destination: "https://www.rcompleteautocare.com/:path*",
         permanent: true,
       },
+      // Preserve legacy URLs reported as 404s in Search Console.
+      { source: "/home", destination: "/", permanent: true },
+      { source: "/engine-diagnostics-crown-point-in", destination: "/services/diagnostics", permanent: true },
+      { source: "/ac-repair-crown-point-in", destination: "/services/ac-heating-repair", permanent: true },
+      { source: "/diagnostics-check-engine-light-crown-point-in", destination: "/services/check-engine-light", permanent: true },
+      { source: "/faq", destination: "/#faq", permanent: true },
       // Shop photos replaced with 1200x800 versions (Oct 2026); old paths were
       // live in the LocalBusiness JSON-LD, so keep them resolving.
       { source: "/images/shop/r-complete-auto-care-building-exterior.webp", destination: "/images/building-exterior-1200x800.webp", permanent: true },

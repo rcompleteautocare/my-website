@@ -389,7 +389,7 @@ export default function Home() {
 
       <FinancingPlaceholder />
 
-      <section className={styles.faqSection}>
+      <section id="faq" className={styles.faqSection}>
         <div className={styles.sectionHeading}>
           <p className={styles.kicker}>Questions, answered</p>
           <h2>Before you bring in your vehicle.</h2>
